@@ -17,10 +17,10 @@ test('max-range prop', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.zv-alendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
-  wrapper.find('.van-calendar__confirm').trigger('click');
+  wrapper.find('.zv-alendar__confirm').trigger('click');
 
   expect(wrapper.emitted('confirm')).toBeFalsy();
 });
@@ -32,9 +32,9 @@ test('show-title prop', () => {
     },
   });
 
-  expect(wrapper.contains('.van-calendar__header-title')).toBeTruthy();
+  expect(wrapper.contains('.zv-alendar__header-title')).toBeTruthy();
   wrapper.setProps({ showTitle: false });
-  expect(wrapper.contains('.van-calendar__header-title')).toBeFalsy();
+  expect(wrapper.contains('.zv-alendar__header-title')).toBeFalsy();
 });
 
 test('show-subtitle prop', () => {
@@ -44,9 +44,9 @@ test('show-subtitle prop', () => {
     },
   });
 
-  expect(wrapper.contains('.van-calendar__header-subtitle')).toBeTruthy();
+  expect(wrapper.contains('.zv-alendar__header-subtitle')).toBeTruthy();
   wrapper.setProps({ showSubtitle: false });
-  expect(wrapper.contains('.van-calendar__header-subtitle')).toBeFalsy();
+  expect(wrapper.contains('.zv-alendar__header-subtitle')).toBeFalsy();
 });
 
 test('hide close icon when there is no title', () => {
@@ -56,13 +56,13 @@ test('hide close icon when there is no title', () => {
     },
   });
 
-  expect(wrapper.contains('.van-popup__close-icon')).toBeTruthy();
+  expect(wrapper.contains('.zv-opup__close-icon')).toBeTruthy();
 
   wrapper.setProps({
     showTitle: false,
     showSubtitle: false,
   });
-  expect(wrapper.contains('.van-popup__close-icon')).toBeFalsy();
+  expect(wrapper.contains('.zv-opup__close-icon')).toBeFalsy();
 });
 
 test('allow-same-day prop', async () => {
@@ -81,7 +81,7 @@ test('allow-same-day prop', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.van-calendar__day');
+  const days = wrapper.findAll('.zv-alendar__day');
   days.at(9).trigger('click');
   days.at(9).trigger('click');
 

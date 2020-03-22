@@ -1,36 +1,36 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-button type="primary" @click="showImagePreview">
+      <zv-button type="primary" @click="showImagePreview">
         {{ t('button1') }}
-      </van-button>
+      </zv-button>
     </demo-block>
 
     <demo-block :title="t('button2')">
-      <van-button type="primary" @click="showImagePreview(1)">
+      <zv-button type="primary" @click="showImagePreview(1)">
         {{ t('button2') }}
-      </van-button>
+      </zv-button>
     </demo-block>
 
     <demo-block :title="t('button4')">
-      <van-button type="primary" @click="showImagePreview(0, 0, true)">
+      <zv-button type="primary" @click="showImagePreview(0, 0, true)">
         {{ t('button4') }}
-      </van-button>
+      </zv-button>
     </demo-block>
 
     <demo-block :title="t('button3')">
-      <van-button type="primary" @click="showImagePreview(0, 3000)">
+      <zv-button type="primary" @click="showImagePreview(0, 3000)">
         {{ t('button3') }}
-      </van-button>
+      </zv-button>
     </demo-block>
 
     <demo-block :title="t('componentCall')">
-      <van-button type="primary" @click="componentCall">
+      <zv-button type="primary" @click="componentCall">
         {{ t('componentCall') }}
-      </van-button>
-      <van-image-preview v-model="show" :images="images" @change="onChange">
+      </zv-button>
+      <zv-image-preview v-model="show" :images="images" @change="onChange">
         <template #index>{{ t('index', index) }}</template>
-      </van-image-preview>
+      </zv-image-preview>
     </demo-block>
   </demo-section>
 </template>
@@ -109,7 +109,7 @@ export default {
 .demo-image-preview {
   background-color: @white;
 
-  .van-button {
+  .zv-utton {
     margin-left: @padding-md;
   }
 }

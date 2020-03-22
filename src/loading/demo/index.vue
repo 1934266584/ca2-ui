@@ -1,30 +1,30 @@
 <template>
   <demo-section>
     <demo-block :title="t('type')">
-      <van-loading />
-      <van-loading type="spinner" />
+      <zv-loading />
+      <zv-loading type="spinner" />
     </demo-block>
 
     <demo-block :title="t('color')">
-      <van-loading color="#1989fa" />
-      <van-loading type="spinner" color="#1989fa" />
+      <zv-loading color="#1989fa" />
+      <zv-loading type="spinner" color="#1989fa" />
     </demo-block>
 
     <demo-block :title="t('size')">
-      <van-loading size="24" />
-      <van-loading type="spinner" size="24" />
+      <zv-loading size="24" />
+      <zv-loading type="spinner" size="24" />
     </demo-block>
 
     <demo-block :title="t('text')">
-      <van-loading size="24px">
+      <zv-loading size="24px">
         {{ t('loading') }}
-      </van-loading>
+      </zv-loading>
     </demo-block>
 
     <demo-block :title="t('vertical')">
-      <van-loading size="24px" vertical>
+      <zv-loading size="24px" vertical>
         {{ t('loading') }}
-      </van-loading>
+      </zv-loading>
     </demo-block>
   </demo-section>
 </template>
@@ -56,7 +56,7 @@ export default {
 .demo-loading {
   background: @white;
 
-  .van-loading {
+  .zv-oading {
     display: inline-block;
     margin: 5px 0 5px 20px;
 

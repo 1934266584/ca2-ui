@@ -17,15 +17,15 @@ Vue.use(SwipeItem);
 Use `autoplay` prop to set autoplay interval
 
 ```html
-<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 
 <style>
-.my-swipe .van-swipe-item {
+.my-swipe .zv-wipe-item {
   color: #fff;
   font-size: 20px;
   line-height: 150px;
@@ -40,11 +40,11 @@ Use `autoplay` prop to set autoplay interval
 Use [Lazyload](#/en-US/lazyload) component to lazyload image
 
 ```html
-<van-swipe>
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<zv-swipe>
+  <zv-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </zv-swipe-item>
+</zv-swipe>
 ```
 
 ```js
@@ -68,12 +68,12 @@ export default {
 ### Change Event
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe @change="onChange">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 ```
 
 ```js
@@ -91,23 +91,23 @@ export default {
 ### Vertical Scrolling
 
 ```html
-<van-swipe :autoplay="3000" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe :autoplay="3000" vertical>
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 ```
 
 ### Set SwipeItem Size
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe :loop="false" :width="300">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 ```
 
 > It's not supported to set SwipeItem size in the loop mode
@@ -115,25 +115,26 @@ export default {
 ### Custom Indicator
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<zv-swipe @change="onChange">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
   <template #indicator>
     <div class="custom-indicator">
       {{ current + 1 }}/4
     </div>
   </template>
-</van-swipe>
+</zv-swipe>
 
 <style>
-  .van-swipe-item {
-    background-color: #39a9ed;
+  .zv-wipe-item {
     font-size: 20px;
     line-height: 150px;
     text-align: center;
+    background-color: #39a9ed;
   }
+
   .custom-indicator {
     position: absolute;
     right: 5px;

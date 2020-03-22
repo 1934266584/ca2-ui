@@ -40,7 +40,7 @@ test('select event', () => {
     },
   });
 
-  wrapper.find('.van-radio__icon').trigger('click');
+  wrapper.find('.zv-adio__icon').trigger('click');
 
   expect(onSelect).toHaveBeenCalledTimes(1);
 });
@@ -58,7 +58,7 @@ test('click-item event', () => {
     },
   });
 
-  wrapper.find('.van-address-item').trigger('click');
+  wrapper.find('.zv-ddress-item').trigger('click');
 
   expect(onClickItem).toHaveBeenCalledTimes(1);
 });

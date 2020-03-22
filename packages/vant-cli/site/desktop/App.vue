@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <van-doc
+    <zv-doc
       :lang="lang"
       :config="config"
       :versions="versions"
@@ -8,7 +8,7 @@
       :lang-configs="langConfigs"
     >
       <router-view />
-    </van-doc>
+    </zv-doc>
   </div>
 </template>
 
@@ -93,7 +93,7 @@ export default {
 @import '../common/style/base';
 @import '../common/style/highlight';
 
-.van-doc-intro {
+.zv-doc-intro {
   padding-top: 20px;
   font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   text-align: center;

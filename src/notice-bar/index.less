@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-notice-bar {
+.zv-otice-bar {
   position: relative;
   display: flex;
   align-items: center;
@@ -33,16 +33,16 @@
     position: absolute;
     white-space: nowrap;
 
-    &.van-ellipsis {
+    &.zv-llipsis {
       max-width: 100%;
     }
   }
 
   &__play {
-    animation: van-notice-bar-play linear both;
+    animation: zv-notice-bar-play linear both;
 
     &--infinite {
-      animation: van-notice-bar-play-infinite linear infinite both;
+      animation: zv-notice-bar-play-infinite linear infinite both;
     }
   }
 
@@ -50,7 +50,7 @@
     height: auto;
     padding: @notice-bar-wrapable-padding;
 
-    .van-notice-bar {
+    .zv-otice-bar {
       &__wrap {
         height: auto;
       }
@@ -68,13 +68,13 @@
  * Declare two same keyframes
  * In case that some mobile browsers can continue animation when className changed
  */
-@keyframes van-notice-bar-play {
+@keyframes zv-notice-bar-play {
   to {
     transform: translate3d(-100%, 0, 0);
   }
 }
 
-@keyframes van-notice-bar-play-infinite {
+@keyframes zv-notice-bar-play-infinite {
   to {
     transform: translate3d(-100%, 0, 0);
   }

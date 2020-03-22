@@ -1,15 +1,15 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-contact-card
+      <zv-contact-card
         :type="cardType"
         :name="currentContact.name"
         :tel="currentContact.tel"
         @click="showList = true"
       />
 
-      <van-popup v-model="showList" position="bottom" :lazy-render="false">
-        <van-contact-list
+      <zv-popup v-model="showList" position="bottom" :lazy-render="false">
+        <zv-contact-list
           v-model="chosenContactId"
           :list="list"
           :default-tag-text="t('defaultTagText')"
@@ -17,10 +17,10 @@
           @edit="onEdit"
           @select="onSelect"
         />
-      </van-popup>
+      </zv-popup>
 
-      <van-popup v-model="showEdit" position="bottom" :lazy-render="false">
-        <van-contact-edit
+      <zv-popup v-model="showEdit" position="bottom" :lazy-render="false">
+        <zv-contact-edit
           show-set-default
           :set-default-label="t('defaultLabel')"
           :contact-info="editingContact"
@@ -28,11 +28,11 @@
           @save="onSave"
           @delete="onDelete"
         />
-      </van-popup>
+      </zv-popup>
     </demo-block>
 
     <demo-block :title="t('uneditable')">
-      <van-contact-card
+      <zv-contact-card
         type="edit"
         :name="mockContact.name"
         :tel="mockContact.tel"
@@ -134,7 +134,7 @@ export default {
 
 <style lang="less">
 .demo-contact-card {
-  .van-popup {
+  .zv-opup {
     height: 100%;
     background-color: #f2f2f2;
   }

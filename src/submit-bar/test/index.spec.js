@@ -12,7 +12,7 @@ test('submit event', () => {
     },
   });
 
-  const button = wrapper.find('.van-button');
+  const button = wrapper.find('.zv-utton');
   button.trigger('click');
   expect(submit).toHaveBeenCalled();
 });
@@ -32,7 +32,7 @@ test('disable submit', () => {
   expect(wrapper).toMatchSnapshot();
 
   // disabled
-  const button = wrapper.find('.van-button');
+  const button = wrapper.find('.zv-utton');
   button.trigger('click');
   expect(submit).toHaveBeenCalledTimes(0);
 });

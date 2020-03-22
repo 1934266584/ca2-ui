@@ -1,83 +1,83 @@
 <template>
   <demo-section>
-    <van-tabs v-model="tab" sticky :color="BLUE">
-      <van-tab :title="t('demo')">
+    <zv-tabs v-model="tab" sticky :color="BLUE">
+      <zv-tab :title="t('demo')">
         <demo-block :title="t('basicUsage')">
-          <van-col span="6" @click="copy(demoIcon)">
-            <van-icon :name="demoIcon" />
-          </van-col>
-          <van-col span="6" @click="copy(demoImage)">
-            <van-icon :name="demoImage" />
-          </van-col>
+          <zv-col span="6" @click="copy(demoIcon)">
+            <zv-icon :name="demoIcon" />
+          </zv-col>
+          <zv-col span="6" @click="copy(demoImage)">
+            <zv-icon :name="demoImage" />
+          </zv-col>
         </demo-block>
 
         <demo-block :title="t('badge')">
-          <van-col span="6" @click="copy(demoIcon, { dot: true })">
-            <van-icon :name="demoIcon" dot />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { badge: '9' })">
-            <van-icon :name="demoIcon" badge="9" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { badge: '99+' })">
-            <van-icon :name="demoIcon" badge="99+" />
-          </van-col>
+          <zv-col span="6" @click="copy(demoIcon, { dot: true })">
+            <zv-icon :name="demoIcon" dot />
+          </zv-col>
+          <zv-col span="6" @click="copy(demoIcon, { badge: '9' })">
+            <zv-icon :name="demoIcon" badge="9" />
+          </zv-col>
+          <zv-col span="6" @click="copy(demoIcon, { badge: '99+' })">
+            <zv-icon :name="demoIcon" badge="99+" />
+          </zv-col>
         </demo-block>
 
         <demo-block :title="t('color')">
-          <van-col span="6" @click="copy(demoIcon, { color: BLUE })">
-            <van-icon :name="demoIcon" :color="BLUE" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { color: GREEN })">
-            <van-icon :name="demoIcon" :color="GREEN" />
-          </van-col>
+          <zv-col span="6" @click="copy(demoIcon, { color: BLUE })">
+            <zv-icon :name="demoIcon" :color="BLUE" />
+          </zv-col>
+          <zv-col span="6" @click="copy(demoIcon, { color: GREEN })">
+            <zv-icon :name="demoIcon" :color="GREEN" />
+          </zv-col>
         </demo-block>
 
         <demo-block :title="t('size')">
-          <van-col span="6" @click="copy(demoIcon, { size: '40' })">
-            <van-icon :name="demoIcon" size="40" />
-          </van-col>
-          <van-col span="6" @click="copy(demoIcon, { size: '3rem' })">
-            <van-icon :name="demoIcon" size="3rem" />
-          </van-col>
+          <zv-col span="6" @click="copy(demoIcon, { size: '40' })">
+            <zv-icon :name="demoIcon" size="40" />
+          </zv-col>
+          <zv-col span="6" @click="copy(demoIcon, { size: '3rem' })">
+            <zv-icon :name="demoIcon" size="3rem" />
+          </zv-col>
         </demo-block>
-      </van-tab>
+      </zv-tab>
 
-      <van-tab :title="t('basic')">
-        <van-col
+      <zv-tab :title="t('basic')">
+        <zv-col
           v-for="icon in icons.basic"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <zv-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
+        </zv-col>
+      </zv-tab>
 
-      <van-tab :title="t('outline')">
-        <van-col
+      <zv-tab :title="t('outline')">
+        <zv-col
           v-for="icon in icons.outline"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <zv-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
+        </zv-col>
+      </zv-tab>
 
-      <van-tab :title="t('filled')">
-        <van-col
+      <zv-tab :title="t('filled')">
+        <zv-col
           v-for="icon in icons.filled"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <van-icon :name="icon" />
+          <zv-icon :name="icon" />
           <span>{{ icon }}</span>
-        </van-col>
-      </van-tab>
-    </van-tabs>
+        </zv-col>
+      </zv-tab>
+    </zv-tabs>
   </demo-section>
 </template>
 
@@ -148,7 +148,7 @@ export default {
 
   methods: {
     copy(icon, option = {}) {
-      let tag = `<van-icon name="${icon}"`;
+      let tag = `<zv-icon name="${icon}"`;
       if ('dot' in option) {
         tag = `${tag} ${option.dot ? 'dot' : ''}`;
       }
@@ -191,7 +191,7 @@ export default {
     font-size: 13px;
   }
 
-  .van-col {
+  .zv-ol {
     display: inline-block;
     float: none;
     text-align: center;
@@ -213,13 +213,13 @@ export default {
     }
   }
 
-  .van-icon {
+  .zv-con {
     margin: 16px 0 16px;
     color: @text-color;
     font-size: 32px;
   }
 
-  .van-tab__pane {
+  .zv-ab__pane {
     width: auto;
     margin: 20px;
     background-color: #fff;

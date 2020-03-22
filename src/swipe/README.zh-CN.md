@@ -17,15 +17,15 @@ Vue.use(SwipeItem);
 每个 SwipeItem 代表一张轮播卡片，可以通过`autoplay`属性设置自动轮播的间隔
 
 ```html
-<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 
 <style>
-.my-swipe .van-swipe-item {
+.my-swipe .zv-wipe-item {
   color: #fff;
   font-size: 20px;
   line-height: 150px;
@@ -40,11 +40,11 @@ Vue.use(SwipeItem);
 当 Swipe 中含有图片时，可以配合 [Lazyload](#/zh-CN/lazyload) 组件实现图片懒加载
 
 ```html
-<van-swipe :autoplay="3000">
-  <van-swipe-item v-for="(image, index) in images" :key="index">
+<zv-swipe :autoplay="3000">
+  <zv-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </van-swipe-item>
-</van-swipe>
+  </zv-swipe-item>
+</zv-swipe>
 ```
 
 ```js
@@ -68,12 +68,12 @@ export default {
 ### 监听 change 事件
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe @change="onChange">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 ```
 
 ```js
@@ -93,12 +93,12 @@ export default {
 设置`vertical`属性后滑块会纵向排列，此时需要指定滑块容器的高度
 
 ```html
-<van-swipe style="height: 200px;" vertical>
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe style="height: 200px;" vertical>
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 ```
 
 ### 自定义滑块大小
@@ -106,12 +106,12 @@ export default {
 滑块默认宽度为`100%`，可以通过`width`属性设置单个滑块的宽度。纵向滚动模式下，可以通过`height`属性设置单个滑块的高度。
 
 ```html
-<van-swipe :loop="false" :width="300">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
-</van-swipe>
+<zv-swipe :loop="false" :width="300">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
+</zv-swipe>
 ```
 
 > 目前不支持在循环滚动模式下自定义滑块大小，因此需要将 loop 设置为 false
@@ -121,25 +121,26 @@ export default {
 通过`indicator`插槽可以自定义指示器的样式
 
 ```html
-<van-swipe @change="onChange">
-  <van-swipe-item>1</van-swipe-item>
-  <van-swipe-item>2</van-swipe-item>
-  <van-swipe-item>3</van-swipe-item>
-  <van-swipe-item>4</van-swipe-item>
+<zv-swipe @change="onChange">
+  <zv-swipe-item>1</zv-swipe-item>
+  <zv-swipe-item>2</zv-swipe-item>
+  <zv-swipe-item>3</zv-swipe-item>
+  <zv-swipe-item>4</zv-swipe-item>
   <template #indicator>
     <div class="custom-indicator">
       {{ current + 1 }}/4
     </div>
   </template>
-</van-swipe>
+</zv-swipe>
 
 <style>
-  .van-swipe-item {
-    background-color: #39a9ed;
+  .zv-wipe-item {
     font-size: 20px;
     line-height: 150px;
     text-align: center;
+    background-color: #39a9ed;
   }
+
   .custom-indicator {
     position: absolute;
     right: 5px;

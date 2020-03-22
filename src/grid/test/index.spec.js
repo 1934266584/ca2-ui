@@ -4,16 +4,16 @@ test('click grid item', () => {
   const onClick = jest.fn();
   const wrapper = mount({
     template: `
-      <van-grid>
-        <van-grid-item @click="onClick" />
-      </van-grid>
+      <zv-grid>
+        <zv-grid-item @click="onClick" />
+      </zv-grid>
     `,
     methods: {
       onClick,
     },
   });
 
-  const Item = wrapper.find('.van-grid-item__content');
+  const Item = wrapper.find('.zv-rid-item__content');
   Item.trigger('click');
 
   expect(onClick).toHaveBeenCalledTimes(1);
@@ -22,11 +22,11 @@ test('click grid item', () => {
 test('sqaure and set gutter', () => {
   const wrapper = mount({
     template: `
-      <van-grid square :column-num="2" gutter="10rem">
-        <van-grid-item />
-        <van-grid-item />
-        <van-grid-item />
-      </van-grid>
+      <zv-grid square :column-num="2" gutter="10rem">
+        <zv-grid-item />
+        <zv-grid-item />
+        <zv-grid-item />
+      </zv-grid>
     `,
   });
 
@@ -36,9 +36,9 @@ test('sqaure and set gutter', () => {
 test('icon-size prop', () => {
   const wrapper = mount({
     template: `
-      <van-grid icon-size="10">
-        <van-grid-item icon="success" />
-      </van-grid>
+      <zv-grid icon-size="10">
+        <zv-grid-item icon="success" />
+      </zv-grid>
     `,
   });
 
@@ -48,11 +48,11 @@ test('icon-size prop', () => {
 test('render icon-slot', () => {
   const wrapper = mount({
     template: `
-      <van-grid icon-size="10">
-        <van-grid-item info="1">
+      <zv-grid icon-size="10">
+        <zv-grid-item info="1">
           <div slot="icon" />
-        </van-grid-item>
-      </van-grid>
+        </zv-grid-item>
+      </zv-grid>
     `,
   });
 

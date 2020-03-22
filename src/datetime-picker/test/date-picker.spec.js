@@ -36,8 +36,8 @@ test('formatter prop', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.zv-icker-column'), 0, -100);
+  wrapper.find('.zv-icker-column ul').trigger('transitionend');
   await later();
 
   expect(wrapper.emitted('change')[0][0].getValues()).toEqual([
@@ -60,18 +60,18 @@ test('confirm event', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.zv-icker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0].getFullYear()).toEqual(2020);
 
-  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
-  wrapper.find('.van-picker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.zv-icker-column'), 0, -100);
+  wrapper.find('.zv-icker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0].getFullYear()).toEqual(2025);
 });
 
 test('cancel event', () => {
   const wrapper = mount(DatePicker);
 
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.zv-icker__cancel').trigger('click');
   expect(wrapper.emitted('cancel')).toBeTruthy();
 });
 
@@ -84,7 +84,7 @@ test('max-date prop', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.zv-icker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(maxDate);
 });
 
@@ -97,7 +97,7 @@ test('min-date prop', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.zv-icker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(minDate);
 });
 
@@ -109,9 +109,9 @@ test('dynamic set value', () => {
   });
 
   wrapper.setProps({ value: new Date(2019, 1, 1) });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.zv-icker__confirm').trigger('click');
   wrapper.setProps({ value: new Date(2025, 1, 1) });
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.zv-icker__confirm').trigger('click');
 
   expect(wrapper.emitted('confirm')[0][0].getFullYear()).toEqual(2019);
   expect(wrapper.emitted('confirm')[1][0].getFullYear()).toEqual(2025);
@@ -138,6 +138,6 @@ test('use min-date with filter', async () => {
 
   await later();
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.zv-icker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(new Date(2030, 0, 0, 0, 30));
 });

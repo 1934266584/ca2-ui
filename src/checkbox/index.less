@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-checkbox {
+.zv-heckbox {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -26,7 +26,7 @@
     line-height: 1em;
     cursor: pointer;
 
-    .van-icon {
+    .zv-con {
       display: block;
       box-sizing: border-box;
       width: 1.25em;
@@ -41,13 +41,13 @@
     }
 
     &--round {
-      .van-icon {
+      .zv-con {
         border-radius: 100%;
       }
     }
 
     &--checked {
-      .van-icon {
+      .zv-con {
         color: @white;
         background-color: @checkbox-checked-icon-color;
         border-color: @checkbox-checked-icon-color;
@@ -57,14 +57,14 @@
     &--disabled {
       cursor: not-allowed;
 
-      .van-icon {
+      .zv-con {
         background-color: @checkbox-disabled-background-color;
         border-color: @checkbox-disabled-icon-color;
       }
     }
 
     &--disabled&--checked {
-      .van-icon {
+      .zv-con {
         color: @checkbox-disabled-icon-color;
       }
     }

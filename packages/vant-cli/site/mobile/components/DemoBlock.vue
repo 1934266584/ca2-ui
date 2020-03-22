@@ -1,6 +1,6 @@
 <template>
-  <div class="van-doc-demo-block">
-    <h2 class="van-doc-demo-block__title">{{ title }}</h2>
+  <div class="zv-doc-demo-block">
+    <h2 class="zv-doc-demo-block__title">{{ title }}</h2>
     <slot />
   </div>
 </template>
@@ -18,18 +18,18 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-demo-block {
+.zv-oc-demo-block {
   &__title {
     margin: 0;
     padding: 32px 16px 16px;
-    color: @van-doc-text-light-blue;
+    color: @zv-doc-text-light-blue;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
   }
 
   &:first-of-type {
-    .van-doc-demo-block__title {
+    .zv-oc-demo-block__title {
       padding-top: 20px;
     }
   }

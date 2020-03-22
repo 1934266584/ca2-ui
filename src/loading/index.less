@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.van-loading {
+.zv-oading {
   position: relative;
   color: @loading-spinner-color;
   font-size: 0;
@@ -15,7 +15,7 @@
     height: @loading-spinner-size;
     max-height: 100%;
     vertical-align: middle;
-    animation: van-rotate @loading-spinner-animation-duration linear infinite;
+    animation: zv-rotate @loading-spinner-animation-duration linear infinite;
 
     &--spinner {
       animation-timing-function: steps(12);
@@ -50,7 +50,7 @@
     height: 100%;
 
     circle {
-      animation: van-circular 1.5s ease-in-out infinite;
+      animation: zv-circular 1.5s ease-in-out infinite;
       stroke: currentColor;
       stroke-width: 3;
       stroke-linecap: round;
@@ -70,13 +70,13 @@
     flex-direction: column;
     align-items: center;
 
-    .van-loading__text {
+    .zv-oading__text {
       margin: @padding-xs 0 0;
     }
   }
 }
 
-@keyframes van-circular {
+@keyframes zv-circular {
   0% {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
@@ -94,7 +94,7 @@
 }
 
 .generate-spinner(@n, @i: 1) when (@i =< @n) {
-  .van-loading__spinner--spinner i:nth-of-type(@{i}) {
+  .zv-oading__spinner--spinner i:nth-of-type(@{i}) {
     transform: rotate(@i * 30deg);
     opacity: 1 - (0.75 / 12) * (@i - 1);
   }

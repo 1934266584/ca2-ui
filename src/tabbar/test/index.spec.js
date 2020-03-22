@@ -10,26 +10,26 @@ test('route mode', async () => {
   const wrapper = mount({
     router,
     template: `
-      <van-tabbar route>
-        <van-tabbar-item replace to="/">
+      <zv-tabbar route>
+        <zv-tabbar-item replace to="/">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item replace to="/search">
+        </zv-tabbar-item>
+        <zv-tabbar-item replace to="/search">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item replace :to="{ path: '/star' }">
+        </zv-tabbar-item>
+        <zv-tabbar-item replace :to="{ path: '/star' }">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item>
+        </zv-tabbar-item>
+        <zv-tabbar-item>
           Tab
-        </van-tabbar-item>
-      </van-tabbar>
+        </zv-tabbar-item>
+      </zv-tabbar>
     `,
   });
 
   expect(wrapper).toMatchSnapshot();
 
-  const items = wrapper.findAll('.van-tabbar-item');
+  const items = wrapper.findAll('.zv-abbar-item');
 
   items.at(1).trigger('click');
   await later();
@@ -54,18 +54,18 @@ test('route mode match by name', async () => {
   const wrapper = mount({
     router,
     template: `
-      <van-tabbar route>
-        <van-tabbar-item :to="{ name: 'foo' }">
+      <zv-tabbar route>
+        <zv-tabbar-item :to="{ name: 'foo' }">
           Tab
-        </van-tabbar-item>
-        <van-tabbar-item :to="{ name: 'bar' }">
+        </zv-tabbar-item>
+        <zv-tabbar-item :to="{ name: 'bar' }">
           Tab
-        </van-tabbar-item>
-      </van-tabbar>
+        </zv-tabbar-item>
+      </zv-tabbar>
     `,
   });
 
-  const items = wrapper.findAll('.van-tabbar-item');
+  const items = wrapper.findAll('.zv-abbar-item');
   items.at(0).trigger('click');
   await later();
   expect(wrapper).toMatchSnapshot();
@@ -81,15 +81,15 @@ test('router NavigationDuplicated', async done => {
     const wrapper = mount({
       router,
       template: `
-      <van-tabbar route>
-        <van-tabbar-item replace to="/home">
+      <zv-tabbar route>
+        <zv-tabbar-item replace to="/home">
           Tab
-        </van-tabbar-item>
-      </van-tabbar>
+        </zv-tabbar-item>
+      </zv-tabbar>
     `,
     });
 
-    const item = wrapper.find('.van-tabbar-item');
+    const item = wrapper.find('.zv-abbar-item');
     item.trigger('click');
     item.trigger('click');
 
@@ -101,10 +101,10 @@ test('router NavigationDuplicated', async done => {
 test('watch tabbar value', () => {
   const wrapper = mount({
     template: `
-      <van-tabbar :value="value">
-        <van-tabbar-item>Tab</van-tabbar-item>
-        <van-tabbar-item>Tab</van-tabbar-item>
-      </van-tabbar>
+      <zv-tabbar :value="value">
+        <zv-tabbar-item>Tab</zv-tabbar-item>
+        <zv-tabbar-item>Tab</zv-tabbar-item>
+      </zv-tabbar>
     `,
     data() {
       return {
@@ -123,9 +123,9 @@ test('click event', () => {
 
   const wrapper = mount({
     template: `
-      <van-tabbar @change="onChange">
-        <van-tabbar-item @click="onClick">Tab</van-tabbar-item>
-      </van-tabbar>
+      <zv-tabbar @change="onChange">
+        <zv-tabbar-item @click="onClick">Tab</zv-tabbar-item>
+      </zv-tabbar>
     `,
     methods: {
       onClick,
@@ -133,7 +133,7 @@ test('click event', () => {
     },
   });
 
-  wrapper.find('.van-tabbar-item').trigger('click');
+  wrapper.find('.zv-abbar-item').trigger('click');
   expect(onClick).toHaveBeenCalledTimes(1);
   expect(onChange).toHaveBeenCalledTimes(0);
 });
@@ -142,10 +142,10 @@ test('name prop', () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabbar :value="value" @change="onChange">
-        <van-tabbar-item name="a">Tab</van-tabbar-item>
-        <van-tabbar-item name="b">Tab</van-tabbar-item>
-      </van-tabbar>
+      <zv-tabbar :value="value" @change="onChange">
+        <zv-tabbar-item name="a">Tab</zv-tabbar-item>
+        <zv-tabbar-item name="b">Tab</zv-tabbar-item>
+      </zv-tabbar>
     `,
     data() {
       return {
@@ -158,7 +158,7 @@ test('name prop', () => {
   });
 
   wrapper
-    .findAll('.van-tabbar-item')
+    .findAll('.zv-abbar-item')
     .at(1)
     .trigger('click');
 

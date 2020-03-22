@@ -31,7 +31,7 @@ test('popup lock scroll', () => {
       value: true,
     },
   });
-  expect(document.body.classList.contains('van-overflow-hidden')).toBeTruthy();
+  expect(document.body.classList.contains('zv-overflow-hidden')).toBeTruthy();
   triggerDrag(document, 0, 100);
   triggerDrag(document, 0, -150);
 
@@ -41,10 +41,10 @@ test('popup lock scroll', () => {
     },
   });
   wrapper1.vm.$destroy();
-  expect(document.body.classList.contains('van-overflow-hidden')).toBeTruthy();
+  expect(document.body.classList.contains('zv-overflow-hidden')).toBeTruthy();
 
   wrapper2.vm.$destroy();
-  expect(document.body.classList.contains('van-overflow-hidden')).toBeFalsy();
+  expect(document.body.classList.contains('zv-overflow-hidden')).toBeFalsy();
 });
 
 test('get container with parent', () => {
@@ -65,7 +65,7 @@ test('get container with parent', () => {
       };
     },
   });
-  const popup = wrapper.find('.van-popup').element;
+  const popup = wrapper.find('.zv-opup').element;
 
   expect(popup.parentNode).toEqual(div1);
   wrapper.vm.getContainer = () => div2;
@@ -114,7 +114,7 @@ test('render overlay', async () => {
 
   await later();
 
-  expect(div.querySelector('.van-overlay')).toBeTruthy();
+  expect(div.querySelector('.zv-verlay')).toBeTruthy();
 });
 
 test('watch overlay prop', async () => {
@@ -138,15 +138,15 @@ test('watch overlay prop', async () => {
   });
 
   await later();
-  expect(div.querySelector('.van-overlay')).toBeFalsy();
+  expect(div.querySelector('.zv-verlay')).toBeFalsy();
 
   wrapper.setData({ overlay: true });
   await later();
-  expect(div.querySelector('.van-overlay')).toBeFalsy();
+  expect(div.querySelector('.zv-verlay')).toBeFalsy();
 
   wrapper.setData({ show: true });
   await later();
-  expect(div.querySelector('.van-overlay')).toBeTruthy();
+  expect(div.querySelector('.zv-verlay')).toBeTruthy();
 });
 
 test('close on click overlay', async () => {
@@ -179,7 +179,7 @@ test('close on click overlay', async () => {
 
   await later();
 
-  const modal = div.querySelector('.van-overlay');
+  const modal = div.querySelector('.zv-verlay');
   triggerDrag(modal, 0, -30);
   modal.click();
 
@@ -248,7 +248,7 @@ test('closeable prop', () => {
     },
   });
 
-  wrapper.find('.van-popup__close-icon').trigger('click');
+  wrapper.find('.zv-opup__close-icon').trigger('click');
   expect(wrapper.emitted('input')[0][0]).toEqual(false);
 });
 

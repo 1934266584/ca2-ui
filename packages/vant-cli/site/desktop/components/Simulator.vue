@@ -1,12 +1,12 @@
 <template>
-  <div :class="['van-doc-simulator', { 'van-doc-simulator-fixed': isFixed }]">
+  <div :class="['zv-doc-simulator', { 'zv-doc-simulator-fixed': isFixed }]">
     <iframe ref="iframe" :src="src" :style="simulatorStyle" frameborder="0" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'van-doc-simulator',
+  name: 'zv-doc-simulator',
 
   props: {
     src: String,
@@ -46,17 +46,17 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-simulator {
+.zv-oc-simulator {
   position: absolute;
-  top: @van-doc-padding + @van-doc-header-top-height;
-  right: @van-doc-padding;
+  top: @zv-doc-padding + @zv-doc-header-top-height;
+  right: @zv-doc-padding;
   z-index: 1;
   box-sizing: border-box;
-  width: @van-doc-simulator-width;
-  min-width: @van-doc-simulator-width;
+  width: @zv-doc-simulator-width;
+  min-width: @zv-doc-simulator-width;
   overflow: hidden;
   background: #fafafa;
-  border-radius: @van-doc-border-radius;
+  border-radius: @zv-doc-border-radius;
   box-shadow: #ebedf0 0 4px 12px;
 
   @media (max-width: 1100px) {
@@ -64,14 +64,14 @@ export default {
     left: 750px;
   }
 
-  @media (min-width: @van-doc-row-max-width) {
+  @media (min-width: @zv-doc-row-max-width) {
     right: 50%;
-    margin-right: -@van-doc-row-max-width / 2 + 40px;
+    margin-right: -@zv-doc-row-max-width / 2 + 40px;
   }
 
   &-fixed {
     position: fixed;
-    top: @van-doc-padding;
+    top: @zv-doc-padding;
   }
 
   iframe {

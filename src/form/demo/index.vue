@@ -25,7 +25,7 @@ export default {
   width: 100vw;
   overflow: hidden;
 
-  .van-hairline--bottom::after {
+  .zv-airline--bottom::after {
     margin-left: 16px;
   }
 }

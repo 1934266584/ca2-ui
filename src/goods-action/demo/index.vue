@@ -1,73 +1,73 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-goods-action>
-        <van-goods-action-icon
+      <zv-goods-action>
+        <zv-goods-action-icon
           icon="chat-o"
           :text="t('icon1')"
           @click="onClickIcon"
         />
-        <van-goods-action-icon
+        <zv-goods-action-icon
           icon="cart-o"
           :text="t('icon2')"
           @click="onClickIcon"
         />
-        <van-goods-action-button
+        <zv-goods-action-button
           type="warning"
           :text="t('button1')"
           @click="onClickButton"
         />
-        <van-goods-action-button
+        <zv-goods-action-button
           type="danger"
           :text="t('button2')"
           @click="onClickButton"
         />
-      </van-goods-action>
+      </zv-goods-action>
     </demo-block>
 
     <demo-block :title="t('iconBadge')">
-      <van-goods-action>
-        <van-goods-action-icon icon="chat-o" dot :text="t('icon1')" />
-        <van-goods-action-icon icon="cart-o" badge="5" :text="t('icon2')" />
-        <van-goods-action-icon icon="shop-o" badge="12" :text="t('icon3')" />
-        <van-goods-action-button type="warning" :text="t('button1')" />
-        <van-goods-action-button type="danger" :text="t('button2')" />
-      </van-goods-action>
+      <zv-goods-action>
+        <zv-goods-action-icon icon="chat-o" dot :text="t('icon1')" />
+        <zv-goods-action-icon icon="cart-o" badge="5" :text="t('icon2')" />
+        <zv-goods-action-icon icon="shop-o" badge="12" :text="t('icon3')" />
+        <zv-goods-action-button type="warning" :text="t('button1')" />
+        <zv-goods-action-button type="danger" :text="t('button2')" />
+      </zv-goods-action>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('customIconColor')">
-      <van-goods-action>
-        <van-goods-action-icon
+      <zv-goods-action>
+        <zv-goods-action-icon
           icon="chat-o"
           :text="t('icon1')"
           color="#07c160"
         />
-        <van-goods-action-icon icon="cart-o" :text="t('icon2')" />
-        <van-goods-action-icon
+        <zv-goods-action-icon icon="cart-o" :text="t('icon2')" />
+        <zv-goods-action-icon
           icon="star"
           :text="t('collected')"
           color="#ff5000"
         />
-        <van-goods-action-button type="warning" :text="t('button1')" />
-        <van-goods-action-button type="danger" :text="t('button2')" />
-      </van-goods-action>
+        <zv-goods-action-button type="warning" :text="t('button1')" />
+        <zv-goods-action-button type="danger" :text="t('button2')" />
+      </zv-goods-action>
     </demo-block>
 
     <demo-block :title="t('customButtonColor')">
-      <van-goods-action>
-        <van-goods-action-icon icon="chat-o" :text="t('icon1')" />
-        <van-goods-action-icon icon="cart-o" :text="t('icon2')" />
-        <van-goods-action-button
+      <zv-goods-action>
+        <zv-goods-action-icon icon="chat-o" :text="t('icon1')" />
+        <zv-goods-action-icon icon="cart-o" :text="t('icon2')" />
+        <zv-goods-action-button
           color="#be99ff"
           type="warning"
           :text="t('button1')"
         />
-        <van-goods-action-button
+        <zv-goods-action-button
           color="#7232dd"
           type="danger"
           :text="t('button2')"
         />
-      </van-goods-action>
+      </zv-goods-action>
     </demo-block>
   </demo-section>
 </template>
@@ -115,7 +115,7 @@ export default {
 
 <style lang="less">
 .demo-goods-action {
-  .van-goods-action {
+  .zv-oods-action {
     position: relative;
   }
 }

@@ -6,7 +6,7 @@ module.exports = {
       publicPath: 'https://b.yzcdn.cn/vant/',
     },
     vetur: {
-      tagPrefix: 'van-',
+      tagPrefix: 'zv-',
     },
   },
   site: {

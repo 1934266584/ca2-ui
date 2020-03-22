@@ -1,25 +1,25 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-progress :percentage="50" />
+      <zv-progress :percentage="50" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('strokeWidth')">
-      <van-progress :percentage="50" stroke-width="8" />
+      <zv-progress :percentage="50" stroke-width="8" />
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <van-progress inactive :percentage="50" />
+      <zv-progress inactive :percentage="50" />
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <van-progress
+      <zv-progress
         color="#f2826a"
         :percentage="25"
         :pivot-text="t('orange')"
       />
-      <van-progress color="#ee0a24" :percentage="50" :pivot-text="t('red')" />
-      <van-progress
+      <zv-progress color="#ee0a24" :percentage="50" :pivot-text="t('red')" />
+      <zv-progress
         :percentage="75"
         :pivot-text="t('purple')"
         pivot-color="#7232dd"
@@ -52,7 +52,7 @@ export default {
 .demo-progress {
   background: @white;
 
-  .van-progress {
+  .zv-rogress {
     margin: 20px;
 
     &:first-of-type {

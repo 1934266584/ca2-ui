@@ -1,15 +1,15 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-rate v-model="value1" />
+      <zv-rate v-model="value1" />
     </demo-block>
 
     <demo-block :title="t('customIcon')">
-      <van-rate v-model="value2" icon="like" void-icon="like-o" />
+      <zv-rate v-model="value2" icon="like" void-icon="like-o" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-rate
+      <zv-rate
         v-model="value3"
         :size="25"
         color="#ee0a24"
@@ -19,7 +19,7 @@
     </demo-block>
 
     <demo-block :title="t('halfStar')">
-      <van-rate
+      <zv-rate
         v-model="value4"
         :size="25"
         allow-half
@@ -29,19 +29,19 @@
     </demo-block>
 
     <demo-block :title="t('customCount')">
-      <van-rate v-model="value5" :count="6" />
+      <zv-rate v-model="value5" :count="6" />
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <van-rate v-model="value6" disabled />
+      <zv-rate v-model="value6" disabled />
     </demo-block>
 
     <demo-block :title="t('readonly')">
-      <van-rate v-model="value6" readonly />
+      <zv-rate v-model="value6" readonly />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('changeEvent')">
-      <van-rate v-model="value7" @change="onChange" />
+      <zv-rate v-model="value7" @change="onChange" />
     </demo-block>
   </demo-section>
 </template>
@@ -99,7 +99,7 @@ export default {
   padding-bottom: 20px;
   background-color: #fff;
 
-  .van-rate {
+  .zv-ate {
     margin-left: @padding-md;
   }
 }

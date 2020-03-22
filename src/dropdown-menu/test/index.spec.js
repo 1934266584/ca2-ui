@@ -3,10 +3,10 @@ import { mount, later } from '../../../test';
 function renderWrapper(options = {}) {
   return mount({
     template: `
-      <van-dropdown-menu :direction="direction" :close-on-click-outside="closeOnClickOutside">
-        <van-dropdown-item v-model="value" :title="title" :options="options" />
-        <van-dropdown-item v-model="value" :title="title" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu :direction="direction" :close-on-click-outside="closeOnClickOutside">
+        <zv-dropdown-item v-model="value" :title="title" :options="options" />
+        <zv-dropdown-item v-model="value" :title="title" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -28,7 +28,7 @@ test('show dropdown item', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-ropdown-menu__title');
 
   titles.at(0).trigger('click');
   expect(wrapper).toMatchSnapshot();
@@ -47,7 +47,7 @@ test('render option icon', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-ropdown-menu__title');
 
   titles.at(0).trigger('click');
   expect(wrapper).toMatchSnapshot();
@@ -60,7 +60,7 @@ test('close-on-click-outside', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-ropdown-menu__title');
 
   titles.at(0).trigger('click');
   document.body.click();
@@ -74,7 +74,7 @@ test('disable close-on-click-outside', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-ropdown-menu__title');
 
   titles.at(0).trigger('click');
   document.body.click();
@@ -92,7 +92,7 @@ test('direction up', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-ropdown-menu__title');
   titles.at(0).trigger('click');
   expect(wrapper).toMatchSnapshot();
 
@@ -104,10 +104,10 @@ test('click option', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-ropdown-menu__title');
   titles.at(0).trigger('click');
 
-  const options = wrapper.findAll('.van-dropdown-item .van-cell');
+  const options = wrapper.findAll('.zv-ropdown-item ..zv-ll');
   options.at(1).trigger('click');
 
   await later();
@@ -129,10 +129,10 @@ test('didn`t find matched option', async () => {
 test('destroy one item', async () => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item v-if="render" v-model="value" :options="options" />
-        <van-dropdown-item v-model="value" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item v-if="render" v-model="value" :options="options" />
+        <zv-dropdown-item v-model="value" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -154,9 +154,9 @@ test('destroy one item', async () => {
 test('disable dropdown item', async () => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item disabled v-model="value" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item disabled v-model="value" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -169,7 +169,7 @@ test('disable dropdown item', async () => {
     },
   });
 
-  const title = wrapper.find('.van-dropdown-menu__title');
+  const title = wrapper.find('.zv-ropdown-menu__title');
   title.trigger('click');
   expect(wrapper).toMatchSnapshot();
 });
@@ -179,10 +179,10 @@ test('change event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item v-model="value" :options="options" @change="onChange" />
-        <van-dropdown-item v-model="value" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item v-model="value" :options="options" @change="onChange" />
+        <zv-dropdown-item v-model="value" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -200,10 +200,10 @@ test('change event', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-ropdown-menu__title');
   titles.at(0).trigger('click');
 
-  const options = wrapper.findAll('.van-dropdown-item .van-cell');
+  const options = wrapper.findAll('.zv-ropdown-item ..zv-ll');
   options.at(0).trigger('click');
 
   expect(onChange).toHaveBeenCalledTimes(0);
@@ -216,9 +216,9 @@ test('change event', async () => {
 test('toggle method', async done => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item ref="item" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item ref="item" />
+      </zv-dropdown-menu>
     `,
     async mounted() {
       // show
@@ -239,13 +239,13 @@ test('toggle method', async done => {
 test('title slot', () => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item>
+      <zv-dropdown-menu>
+        <zv-dropdown-item>
           <template #title>
             Custom Title
           </template>
-        </van-dropdown-item>
-      </van-dropdown-menu>
+        </zv-dropdown-item>
+      </zv-dropdown-menu>
     `,
   });
 
