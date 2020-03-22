@@ -1,30 +1,30 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-cell :title="t('buttonBasic')" is-link @click="showBasic = true" />
-      <zv-popup v-model="showBasic" :style="{ padding: '30px 50px' }">
+      <van-cell :title="t('buttonBasic')" is-link @click="showBasic = true" />
+      <van-popup v-model="showBasic" :style="{ padding: '30px 50px' }">
         {{ t('content') }}
-      </zv-popup>
+      </van-popup>
     </demo-block>
 
     <demo-block :title="t('position')">
-      <zv-cell :title="t('buttonTop')" is-link @click="showTop = true" />
-      <zv-cell :title="t('buttonBottom')" is-link @click="showBottom = true" />
-      <zv-cell :title="t('buttonLeft')" is-link @click="showLeft = true" />
-      <zv-cell :title="t('buttonRight')" is-link @click="showRight = true" />
+      <van-cell :title="t('buttonTop')" is-link @click="showTop = true" />
+      <van-cell :title="t('buttonBottom')" is-link @click="showBottom = true" />
+      <van-cell :title="t('buttonLeft')" is-link @click="showLeft = true" />
+      <van-cell :title="t('buttonRight')" is-link @click="showRight = true" />
 
-      <zv-popup v-model="showTop" position="top" :style="{ height: '30%' }" />
-      <zv-popup
+      <van-popup v-model="showTop" position="top" :style="{ height: '30%' }" />
+      <van-popup
         v-model="showBottom"
         position="bottom"
         :style="{ height: '30%' }"
       />
-      <zv-popup
+      <van-popup
         v-model="showLeft"
         position="left"
         :style="{ width: '30%', height: '100%' }"
       />
-      <zv-popup
+      <van-popup
         v-model="showRight"
         position="right"
         :style="{ width: '30%', height: '100%' }"
@@ -32,32 +32,32 @@
     </demo-block>
 
     <demo-block :title="t('closeIcon')">
-      <zv-cell :title="t('closeIcon')" is-link @click="showCloseIcon = true" />
-      <zv-cell
+      <van-cell :title="t('closeIcon')" is-link @click="showCloseIcon = true" />
+      <van-cell
         :title="t('customCloseIcon')"
         is-link
         @click="showCustomCloseIcon = true"
       />
-      <zv-cell
+      <van-cell
         :title="t('customIconPosition')"
         is-link
         @click="showCustomIconPosition = true"
       />
 
-      <zv-popup
+      <van-popup
         v-model="showCloseIcon"
         closeable
         position="bottom"
         :style="{ height: '30%' }"
       />
-      <zv-popup
+      <van-popup
         v-model="showCustomCloseIcon"
         closeable
         close-icon="close"
         position="bottom"
         :style="{ height: '30%' }"
       />
-      <zv-popup
+      <van-popup
         v-model="showCustomIconPosition"
         closeable
         close-icon-position="top-left"
@@ -67,12 +67,12 @@
     </demo-block>
 
     <demo-block :title="t('roundCorner')">
-      <zv-cell
+      <van-cell
         :title="t('roundCorner')"
         is-link
         @click="showRoundCorner = true"
       />
-      <zv-popup
+      <van-popup
         v-model="showRoundCorner"
         round
         position="bottom"
@@ -81,12 +81,12 @@
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('getContainer')">
-      <zv-cell
+      <van-cell
         :title="t('getContainer')"
         is-link
         @click="showGetContainer = true"
       />
-      <zv-popup
+      <van-popup
         v-model="showGetContainer"
         get-container="body"
         :style="{ padding: '30px 50px' }"
@@ -147,11 +147,11 @@ export default {
 @import '../../style/var';
 
 .demo-popup {
-  .zv-ow {
+  .van-row {
     margin-bottom: @padding-md;
   }
 
-  .zv-utton {
+  .van-button {
     margin-left: @padding-md;
   }
 }

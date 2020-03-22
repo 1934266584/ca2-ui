@@ -1,66 +1,66 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-swipe :autoplay="3000" indicator-color="white">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+      <van-swipe :autoplay="3000" indicator-color="white">
+        <van-swipe-item>1</van-swipe-item>
+        <van-swipe-item>2</van-swipe-item>
+        <van-swipe-item>3</van-swipe-item>
+        <van-swipe-item>4</van-swipe-item>
+      </van-swipe>
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <zv-swipe :autoplay="3000">
-        <zv-swipe-item v-for="(image, index) in images" :key="index">
+      <van-swipe :autoplay="3000">
+        <van-swipe-item v-for="(image, index) in images" :key="index">
           <img v-lazy="image" />
-        </zv-swipe-item>
-      </zv-swipe>
+        </van-swipe-item>
+      </van-swipe>
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-swipe indicator-color="white" @change="onChange1">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+      <van-swipe indicator-color="white" @change="onChange1">
+        <van-swipe-item>1</van-swipe-item>
+        <van-swipe-item>2</van-swipe-item>
+        <van-swipe-item>3</van-swipe-item>
+        <van-swipe-item>4</van-swipe-item>
+      </van-swipe>
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <zv-swipe
+      <van-swipe
         vertical
         :autoplay="3000"
         indicator-color="white"
         style="height: 200px;"
         class="demo-swipe--vertical"
       >
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+        <van-swipe-item>1</van-swipe-item>
+        <van-swipe-item>2</van-swipe-item>
+        <van-swipe-item>3</van-swipe-item>
+        <van-swipe-item>4</van-swipe-item>
+      </van-swipe>
     </demo-block>
 
     <demo-block :title="t('title5')">
-      <zv-swipe :width="300" :loop="false" indicator-color="white">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+      <van-swipe :width="300" :loop="false" indicator-color="white">
+        <van-swipe-item>1</van-swipe-item>
+        <van-swipe-item>2</van-swipe-item>
+        <van-swipe-item>3</van-swipe-item>
+        <van-swipe-item>4</van-swipe-item>
+      </van-swipe>
     </demo-block>
 
     <demo-block :title="t('title6')">
-      <zv-swipe @change="onChange2">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
+      <van-swipe @change="onChange2">
+        <van-swipe-item>1</van-swipe-item>
+        <van-swipe-item>2</van-swipe-item>
+        <van-swipe-item>3</van-swipe-item>
+        <van-swipe-item>4</van-swipe-item>
 
         <template #indicator>
           <div class="custom-indicator">{{ current + 1 }}/4</div>
         </template>
-      </zv-swipe>
+      </van-swipe>
     </demo-block>
   </demo-section>
 </template>
@@ -116,7 +116,7 @@ export default {
 .demo-swipe {
   padding-bottom: 30px;
 
-  .zv-wipe {
+  .van-swipe {
     &-item {
       color: @white;
       font-size: 20px;
@@ -144,7 +144,7 @@ export default {
   }
 
   &--vertical {
-    .zv-wipe-item {
+    .van-swipe-item {
       line-height: 200px;
     }
   }

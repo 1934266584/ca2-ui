@@ -1,11 +1,11 @@
 <template>
   <demo-section>
     <demo-block :title="t('default')">
-      <zv-button type="primary" @touchstart.stop="keyboard = 'default'">
+      <van-button type="primary" @touchstart.stop="keyboard = 'default'">
         {{ t('button1') }}
-      </zv-button>
+      </van-button>
 
-      <zv-number-keyboard
+      <van-number-keyboard
         :show="keyboard === 'default'"
         :close-button-text="t('close')"
         extra-key="."
@@ -16,11 +16,11 @@
     </demo-block>
 
     <demo-block :title="t('custom')">
-      <zv-button type="info" @touchstart.stop="keyboard = 'custom'">
+      <van-button type="info" @touchstart.stop="keyboard = 'custom'">
         {{ t('button2') }}
-      </zv-button>
+      </van-button>
 
-      <zv-number-keyboard
+      <van-number-keyboard
         :show="keyboard === 'custom'"
         :close-button-text="t('close')"
         theme="custom"
@@ -32,7 +32,7 @@
     </demo-block>
 
     <demo-block :title="t('bindValue')">
-      <zv-field
+      <van-field
         readonly
         clickable
         :value="value"
@@ -40,7 +40,7 @@
         @touchstart.native.stop="keyboard = 'bindValue'"
       />
 
-      <zv-number-keyboard
+      <van-number-keyboard
         v-model="value"
         :show="keyboard === 'bindValue'"
         maxlength="6"
@@ -49,11 +49,11 @@
     </demo-block>
 
     <demo-block :title="t('extraKey')">
-      <zv-button plain type="primary" @touchstart.stop="keyboard = 'extraKey'">
+      <van-button plain type="primary" @touchstart.stop="keyboard = 'extraKey'">
         {{ t('button3') }}
-      </zv-button>
+      </van-button>
 
-      <zv-number-keyboard
+      <van-number-keyboard
         :show="keyboard === 'extraKey'"
         :close-button-text="t('close')"
         extra-key="X"
@@ -64,11 +64,11 @@
     </demo-block>
 
     <demo-block :title="t('title')">
-      <zv-button plain type="info" @touchstart.stop="keyboard = 'title'">
+      <van-button plain type="info" @touchstart.stop="keyboard = 'title'">
         {{ t('button4') }}
-      </zv-button>
+      </van-button>
 
-      <zv-number-keyboard
+      <van-number-keyboard
         :show="keyboard === 'title'"
         :close-button-text="t('close')"
         :title="t('title')"
@@ -137,7 +137,7 @@ export default {
 @import '../../style/var';
 
 .demo-number-keyboard {
-  .zv-utton {
+  .van-button {
     margin-left: @padding-md;
   }
 }

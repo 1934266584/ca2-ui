@@ -4,7 +4,7 @@ import { mount, later, triggerDrag, mockScrollTop } from '../../../test';
 function createWrapper(options = {}) {
   return mount({
     template: `
-      <zv-tabs
+      <van-tabs
         :color="color"
         :type="type"
         :sticky="sticky"
@@ -13,10 +13,10 @@ function createWrapper(options = {}) {
         @change="onChange"
       >
         ${options.extraTemplate || ''}
-        <zv-tab title="title1">Text</zv-tab>
-        <zv-tab title="title2">Text</zv-tab>
-        <zv-tab title="title3" disabled>Text</zv-tab>
-      </zv-tabs>
+        <van-tab title="title1">Text</van-tab>
+        <van-tab title="title2">Text</van-tab>
+        <van-tab title="title3" disabled>Text</van-tab>
+      </van-tabs>
     `,
     data() {
       return {
@@ -35,11 +35,11 @@ test('click to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <zv-tabs @change="onChange">
-        <zv-tab title="title1">Text</zv-tab>
-        <zv-tab title="title2">Text</zv-tab>
-        <zv-tab title="title3" disabled>Text</zv-tab>
-      </zv-tabs>
+      <van-tabs @change="onChange">
+        <van-tab title="title1">Text</van-tab>
+        <van-tab title="title2">Text</van-tab>
+        <van-tab title="title3" disabled>Text</van-tab>
+      </van-tabs>
     `,
     methods: {
       onChange,
@@ -49,7 +49,7 @@ test('click to switch tab', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.zv-ab');
+  const tabs = wrapper.findAll('.van-tab');
   tabs.at(1).trigger('click');
   tabs.at(2).trigger('click');
   await later();
@@ -61,18 +61,18 @@ test('swipe to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <zv-tabs swipeable @change="onChange">
-        <zv-tab title="title1">Text</zv-tab>
-        <zv-tab title="title2">Text</zv-tab>
-        <zv-tab title="title3" disabled>Text</zv-tab>
-      </zv-tabs>
+      <van-tabs swipeable @change="onChange">
+        <van-tab title="title1">Text</van-tab>
+        <van-tab title="title2">Text</van-tab>
+        <van-tab title="title3" disabled>Text</van-tab>
+      </van-tabs>
     `,
     methods: {
       onChange,
     },
   });
 
-  const content = wrapper.find('.zv-abs__content');
+  const content = wrapper.find('.van-tabs__content');
   await later();
   expect(wrapper).toMatchSnapshot();
 
@@ -147,10 +147,10 @@ test('click event', async () => {
 
   const wrapper = mount({
     template: `
-      <zv-tabs @click="onClick" @disabled="onDisabled">
-        <zv-tab title="title1">Text</zv-tab>
-        <zv-tab title="title2" disabled>Text</zv-tab>
-      </zv-tabs>
+      <van-tabs @click="onClick" @disabled="onDisabled">
+        <van-tab title="title1">Text</van-tab>
+        <van-tab title="title2" disabled>Text</van-tab>
+      </van-tabs>
     `,
     methods: {
       onClick,
@@ -158,7 +158,7 @@ test('click event', async () => {
     },
   });
 
-  const tabs = wrapper.findAll('.zv-ab');
+  const tabs = wrapper.findAll('.van-tab');
 
   tabs.at(0).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title1');
@@ -174,11 +174,11 @@ test('name prop', async () => {
 
   const wrapper = mount({
     template: `
-      <zv-tabs @click="onClick" @disabled="onDisabled" @change="onChange">
-        <zv-tab title="title1" name="a">Text</zv-tab>
-        <zv-tab title="title2" name="b">Text</zv-tab>
-        <zv-tab title="title3" name="c" disabled>Text</zv-tab>
-      </zv-tabs>
+      <van-tabs @click="onClick" @disabled="onDisabled" @change="onChange">
+        <van-tab title="title1" name="a">Text</van-tab>
+        <van-tab title="title2" name="b">Text</van-tab>
+        <van-tab title="title3" name="c" disabled>Text</van-tab>
+      </van-tabs>
     `,
     methods: {
       onClick,
@@ -190,7 +190,7 @@ test('name prop', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.zv-ab');
+  const tabs = wrapper.findAll('.van-tab');
   tabs.at(1).trigger('click');
 
   expect(onClick).toHaveBeenCalledWith('b', 'title2');
@@ -207,17 +207,17 @@ test('set name to zero', async () => {
 
   const wrapper = mount({
     template: `
-      <zv-tabs @click="onClick">
-        <zv-tab title="title1" :name="1">Text</zv-tab>
-        <zv-tab title="title2" :name="0">Text</zv-tab>
-      </zv-tabs>
+      <van-tabs @click="onClick">
+        <van-tab title="title1" :name="1">Text</van-tab>
+        <van-tab title="title2" :name="0">Text</van-tab>
+      </van-tabs>
     `,
     methods: {
       onClick,
     },
   });
 
-  const tabs = wrapper.findAll('.zv-ab');
+  const tabs = wrapper.findAll('.van-tab');
   tabs.at(1).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title2');
 });
@@ -225,21 +225,21 @@ test('set name to zero', async () => {
 test('title-style prop', () => {
   const wrapper = mount({
     template: `
-      <zv-tabs>
-        <zv-tab title="title1" title-style="color: red;">Text</zv-tab>
-      </zv-tabs>
+      <van-tabs>
+        <van-tab title="title1" title-style="color: red;">Text</van-tab>
+      </van-tabs>
     `,
   });
 
-  expect(wrapper.find('.zv-ab').element.style.color).toEqual('red');
+  expect(wrapper.find('.van-tab').element.style.color).toEqual('red');
 });
 
 test('dot prop', () => {
   const wrapper = mount({
     template: `
-      <zv-tabs>
-        <zv-tab dot>Text</zv-tab>
-      </zv-tabs>
+      <van-tabs>
+        <van-tab dot>Text</van-tab>
+      </van-tabs>
     `,
   });
 
@@ -249,9 +249,9 @@ test('dot prop', () => {
 test('info prop', () => {
   const wrapper = mount({
     template: `
-      <zv-tabs>
-        <zv-tab info="10">Text</zv-tab>
-      </zv-tabs>
+      <van-tabs>
+        <van-tab info="10">Text</van-tab>
+      </van-tabs>
     `,
   });
 
@@ -264,11 +264,11 @@ test('scrollspy', async () => {
 
   const wrapper = mount({
     template: `
-      <zv-tabs scrollspy sticky @change="onChange">
-        <zv-tab name="a" title="title1">Text</zv-tab>
-        <zv-tab name="b" title="title2">Text</zv-tab>
-        <zv-tab name="c" title="title3">Text</zv-tab>
-      </zv-tabs>
+      <van-tabs scrollspy sticky @change="onChange">
+        <van-tab name="a" title="title1">Text</van-tab>
+        <van-tab name="b" title="title2">Text</van-tab>
+        <van-tab name="c" title="title3">Text</van-tab>
+      </van-tabs>
     `,
     methods: {
       onChange,
@@ -278,7 +278,7 @@ test('scrollspy', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.zv-ab');
+  const tabs = wrapper.findAll('.van-tab');
   tabs.at(2).trigger('click');
   expect(onChange).toHaveBeenCalledWith('c', 'title3');
 
@@ -293,10 +293,10 @@ test('rendered event', async () => {
 
   const wrapper = mount({
     template: `
-      <zv-tabs v-model="active" @rendered="onRendered">
-        <zv-tab name="a" title="title1">Text</zv-tab>
-        <zv-tab name="b" title="title2">Title2</zv-tab>
-      </zv-tabs>
+      <van-tabs v-model="active" @rendered="onRendered">
+        <van-tab name="a" title="title1">Text</van-tab>
+        <van-tab name="b" title="title2">Title2</van-tab>
+      </van-tabs>
     `,
     data() {
       return {
@@ -310,9 +310,9 @@ test('rendered event', async () => {
 
   await later();
   expect(onRendered).toHaveBeenCalledWith('a', 'title1');
-  expect(wrapper.find('.zv-ab__pane')).toMatchSnapshot();
+  expect(wrapper.find('.van-tab__pane')).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.zv-ab');
+  const tabs = wrapper.findAll('.van-tab');
   tabs.at(1).trigger('click');
   tabs.at(0).trigger('click');
 
@@ -325,10 +325,10 @@ test('should not trigger rendered event when disable lazy-render', async () => {
 
   mount({
     template: `
-      <zv-tabs :lazy-render="false" @rendered="onRendered">
-        <zv-tab>Text</zv-tab>
-        <zv-tab>Title2</zv-tab>
-      </zv-tabs>
+      <van-tabs :lazy-render="false" @rendered="onRendered">
+        <van-tab>Text</van-tab>
+        <van-tab>Title2</van-tab>
+      </van-tabs>
     `,
     methods: {
       onRendered,

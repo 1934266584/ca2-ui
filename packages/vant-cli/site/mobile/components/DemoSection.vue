@@ -1,5 +1,5 @@
 <template>
-  <section class="zv-doc-demo-section" :class="demoName">
+  <section class="van-doc-demo-section" :class="demoName">
     <slot />
   </section>
 </template>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="less">
-.zv-oc-demo-section {
+.van-doc-demo-section {
   box-sizing: border-box;
   min-height: calc(100vh - 56px);
   padding-bottom: 20px;

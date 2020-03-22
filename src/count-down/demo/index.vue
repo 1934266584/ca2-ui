@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-count-down :time="time" />
+      <van-count-down :time="time" />
     </demo-block>
 
     <demo-block :title="t('customFormat')">
-      <zv-count-down :time="time" :format="t('formatWithDay')" />
+      <van-count-down :time="time" :format="t('formatWithDay')" />
     </demo-block>
 
     <demo-block :title="t('millisecond')">
-      <zv-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+      <van-count-down millisecond :time="time" format="HH:mm:ss:SS" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-count-down :time="time">
+      <van-count-down :time="time">
         <template v-slot="currentTime">
           <span class="item">{{ currentTime.hours }}</span>
           <span class="item">{{ currentTime.minutes }}</span>
           <span class="item">{{ currentTime.seconds }}</span>
         </template>
-      </zv-count-down>
+      </van-count-down>
     </demo-block>
 
     <demo-block :title="t('manualControl')">
-      <zv-count-down
+      <van-count-down
         ref="countDown"
         millisecond
         :time="3000"
@@ -31,15 +31,15 @@
         format="ss:SSS"
         @finish="$toast(t('finished'))"
       />
-      <zv-grid clickable :column-num="3">
-        <zv-grid-item icon="play-circle-o" :text="t('start')" @click="start" />
-        <zv-grid-item
+      <van-grid clickable :column-num="3">
+        <van-grid-item icon="play-circle-o" :text="t('start')" @click="start" />
+        <van-grid-item
           icon="pause-circle-o"
           :text="t('pause')"
           @click="pause"
         />
-        <zv-grid-item icon="replay" :text="t('reset')" @click="reset" />
-      </zv-grid>
+        <van-grid-item icon="replay" :text="t('reset')" @click="reset" />
+      </van-grid>
     </demo-block>
   </demo-section>
 </template>
@@ -99,7 +99,7 @@ export default {
 .demo-count-down {
   background-color: @white;
 
-  .zv-ount-down {
+  .van-count-down {
     margin-left: @padding-md;
   }
 
@@ -114,7 +114,7 @@ export default {
     border-radius: 2px;
   }
 
-  .zv-rid {
+  .van-grid {
     margin-top: 10px;
   }
 }

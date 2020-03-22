@@ -1,24 +1,24 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-notice-bar :text="t('text')" left-icon="volume-o" />
+      <van-notice-bar :text="t('text')" left-icon="volume-o" />
     </demo-block>
 
     <demo-block :title="t('unscrollable')">
-      <zv-notice-bar :scrollable="false" :text="t('text')" />
+      <van-notice-bar :scrollable="false" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('wrapable')">
-      <zv-notice-bar wrapable :scrollable="false" :text="t('text')" />
+      <van-notice-bar wrapable :scrollable="false" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('mode')">
-      <zv-notice-bar mode="closeable" :text="t('text')" />
-      <zv-notice-bar mode="link" :text="t('text')" />
+      <van-notice-bar mode="closeable" :text="t('text')" />
+      <van-notice-bar mode="link" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-notice-bar
+      <van-notice-bar
         :text="t('text')"
         color="#1989fa"
         background="#ecf9ff"
@@ -57,11 +57,11 @@ export default {
 .demo-notice-bar {
   background: @white;
 
-  .zv-otice-bar:not(:first-of-type) {
+  .van-notice-bar:not(:first-of-type) {
     margin-top: 4px;
   }
 
-  .zv-oc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-top: 24px;
   }
 }

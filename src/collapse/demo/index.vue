@@ -1,49 +1,49 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-collapse v-model="active1">
-        <zv-collapse-item :title="t('title') + 1">
+      <van-collapse v-model="active1">
+        <van-collapse-item :title="t('title') + 1">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 2">
+        </van-collapse-item>
+        <van-collapse-item :title="t('title') + 2">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 3" disabled>
+        </van-collapse-item>
+        <van-collapse-item :title="t('title') + 3" disabled>
           {{ t('text') }}
-        </zv-collapse-item>
-      </zv-collapse>
+        </van-collapse-item>
+      </van-collapse>
     </demo-block>
 
     <demo-block :title="t('accordion')">
-      <zv-collapse v-model="active2" accordion>
-        <zv-collapse-item :title="t('title') + 1">
+      <van-collapse v-model="active2" accordion>
+        <van-collapse-item :title="t('title') + 1">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 2">
+        </van-collapse-item>
+        <van-collapse-item :title="t('title') + 2">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 3">
+        </van-collapse-item>
+        <van-collapse-item :title="t('title') + 3">
           {{ t('text') }}
-        </zv-collapse-item>
-      </zv-collapse>
+        </van-collapse-item>
+      </van-collapse>
     </demo-block>
 
     <demo-block :title="t('titleSlot')">
-      <zv-collapse v-model="active3">
-        <zv-collapse-item>
+      <van-collapse v-model="active3">
+        <van-collapse-item>
           <template #title>
-            {{ t('title') + 1 }}<zv-icon name="question-o" />
+            {{ t('title') + 1 }}<van-icon name="question-o" />
           </template>
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item
+        </van-collapse-item>
+        <van-collapse-item
           :title="t('title') + 2"
           :value="t('content')"
           icon="shop-o"
         >
           {{ t('text') }}
-        </zv-collapse-item>
-      </zv-collapse>
+        </van-collapse-item>
+      </van-collapse>
     </demo-block>
   </demo-section>
 </template>
@@ -77,7 +77,7 @@ export default {
 @import '../../style/var';
 
 .demo-collapse {
-  .zv-con-question-o {
+  .van-icon-question-o {
     margin-left: 5px;
     color: @blue;
     font-size: 15px;

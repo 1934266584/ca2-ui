@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('title1')">
-      <zv-slider v-model="value1" @change="onChange" />
+      <van-slider v-model="value1" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <zv-slider v-model="value2" :min="-50" :max="50" @change="onChange" />
+      <van-slider v-model="value2" :min="-50" :max="50" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-slider v-model="value3" disabled />
+      <van-slider v-model="value3" disabled />
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <zv-slider v-model="value4" :step="10" @change="onChange" />
+      <van-slider v-model="value4" :step="10" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-slider
+      <van-slider
         v-model="value5"
         bar-height="4px"
         active-color="#ee0a24"
@@ -26,16 +26,16 @@
     </demo-block>
 
     <demo-block :title="t('customButton')">
-      <zv-slider v-model="value6" active-color="#ee0a24">
+      <van-slider v-model="value6" active-color="#ee0a24">
         <template #button>
           <div class="custom-button">{{ value6 }}</div>
         </template>
-      </zv-slider>
+      </van-slider>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('vertical')">
       <div :style="{ height: '120px', paddingLeft: '30px' }">
-        <zv-slider v-model="value7" vertical @change="onChange" />
+        <van-slider v-model="value7" vertical @change="onChange" />
       </div>
     </demo-block>
   </demo-section>
@@ -93,11 +93,11 @@ export default {
   background: @white;
   user-select: none;
 
-  .zv-oc-demo-block {
+  .van-doc-demo-block {
     padding: 0 @padding-md 20px;
   }
 
-  .zv-oc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-left: 0;
   }
 

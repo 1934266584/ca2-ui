@@ -106,7 +106,7 @@ test('render empty coupon list', () => {
     },
   });
   wrapper
-    .findAll('.zv-ab')
+    .findAll('.van-tab')
     .at(1)
     .trigger('click');
   expect(wrapper).toMatchSnapshot();
@@ -124,7 +124,7 @@ test('empty-image prop', () => {
 
 test('exchange coupon', () => {
   const wrapper = mount(CouponList);
-  const exchange = wrapper.find('.zv-oupon-list__exchange');
+  const exchange = wrapper.find('.van-coupon-list__exchange');
 
   wrapper.setData({
     currentCode: '1',

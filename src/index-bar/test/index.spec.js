@@ -11,10 +11,10 @@ function mockOffsetHeight(offsetHeight) {
 test('custom anchor text', () => {
   const wrapper = mount({
     template: `
-      <zv-index-bar>
-        <zv-index-anchor index="A">Title A</zv-index-anchor>
-        <zv-index-anchor index="B">Title B</zv-index-anchor>
-      </zv-index-bar>
+      <van-index-bar>
+        <van-index-anchor index="A">Title A</van-index-anchor>
+        <van-index-anchor index="B">Title B</van-index-anchor>
+      </van-index-bar>
     `,
   });
 
@@ -25,10 +25,10 @@ test('click and scroll to anchor', () => {
   const onSelect = jest.fn();
   const wrapper = mount({
     template: `
-      <zv-index-bar @select="onSelect">
-        <zv-index-anchor index="A" />
-        <zv-index-anchor index="B" />
-      </zv-index-bar>
+      <van-index-bar @select="onSelect">
+        <van-index-anchor index="A" />
+        <van-index-anchor index="B" />
+      </van-index-bar>
     `,
     methods: {
       onSelect,
@@ -36,7 +36,7 @@ test('click and scroll to anchor', () => {
   });
 
   const fn = mockScrollIntoView();
-  const indexes = wrapper.findAll('.zv-ndex-bar__index');
+  const indexes = wrapper.findAll('.van-index-bar__index');
   indexes.at(0).trigger('click');
 
   expect(fn).toHaveBeenCalledTimes(1);
@@ -47,11 +47,11 @@ test('touch and scroll to anchor', () => {
   const onSelect = jest.fn();
   const wrapper = mount({
     template: `
-      <zv-index-bar @select="onSelect">
-        <zv-index-anchor index="A" />
-        <zv-index-anchor index="B" />
-        <zv-index-anchor index="XXX" />
-      </zv-index-bar>
+      <van-index-bar @select="onSelect">
+        <van-index-anchor index="A" />
+        <van-index-anchor index="B" />
+        <van-index-anchor index="XXX" />
+      </van-index-bar>
     `,
     methods: {
       onSelect,
@@ -59,8 +59,8 @@ test('touch and scroll to anchor', () => {
   });
 
   const fn = mockScrollIntoView();
-  const sidebar = wrapper.find('.zv-ndex-bar__sidebar');
-  const indexes = wrapper.findAll('.zv-ndex-bar__index');
+  const sidebar = wrapper.find('.van-index-bar__sidebar');
+  const indexes = wrapper.findAll('.van-index-bar__index');
 
   document.elementFromPoint = function(x, y) {
     const index = y / 100;
@@ -104,14 +104,14 @@ test('scroll and update active anchor', () => {
 
   const wrapper = mount({
     template: `
-      <zv-index-bar :sticky="sticky">
-        <zv-index-anchor
+      <van-index-bar :sticky="sticky">
+        <van-index-anchor
           v-for="index in 4"
           :key="index"
           :index="index"
           :data-index="index - 1"
         />
-      </zv-index-bar>
+      </van-index-bar>
     `,
     data() {
       return {

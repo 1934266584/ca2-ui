@@ -1,35 +1,35 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-uploader :after-read="afterRead" />
+      <van-uploader :after-read="afterRead" />
     </demo-block>
 
     <demo-block :title="t('preview')">
-      <zv-uploader v-model="fileList" multiple accept="*" />
+      <van-uploader v-model="fileList" multiple accept="*" />
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <zv-uploader :after-read="afterRead" disabled />
+      <van-uploader :after-read="afterRead" disabled />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('status')">
-      <zv-uploader v-model="statusFileList" :after-read="afterReadFailed" />
+      <van-uploader v-model="statusFileList" :after-read="afterReadFailed" />
     </demo-block>
 
     <demo-block :title="t('maxCount')">
-      <zv-uploader v-model="fileList2" multiple :max-count="2" />
+      <van-uploader v-model="fileList2" multiple :max-count="2" />
     </demo-block>
 
     <demo-block :title="t('uploadStyle')">
-      <zv-uploader>
-        <zv-button type="primary" icon="photo">
+      <van-uploader>
+        <van-button type="primary" icon="photo">
           {{ this.t('upload') }}
-        </zv-button>
-      </zv-uploader>
+        </van-button>
+      </van-uploader>
     </demo-block>
 
     <demo-block :title="t('beforeRead')">
-      <zv-uploader v-model="fileList3" :before-read="beforeRead" />
+      <van-uploader v-model="fileList3" :before-read="beforeRead" />
     </demo-block>
   </demo-section>
 </template>
@@ -123,7 +123,7 @@ export default {
 .demo-uploader {
   background-color: @white;
 
-  .zv-ploader {
+  .van-uploader {
     margin-left: @padding-md;
   }
 }

@@ -55,8 +55,8 @@ test('formatter prop', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  triggerDrag(wrapper.find('.zv-icker-column'), 0, -100);
-  wrapper.find('.zv-icker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
+  wrapper.find('.van-picker-column ul').trigger('transitionend');
   await later();
 
   expect(wrapper.emitted('change')[0][0].getValues()).toEqual([
@@ -72,15 +72,15 @@ test('confirm event', () => {
     },
   });
 
-  triggerDrag(wrapper.find('.zv-icker-column'), 0, -100);
-  wrapper.find('.zv-icker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
+  wrapper.find('.van-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('23:00');
 });
 
 test('cancel event', () => {
   const wrapper = mount(TimePicker);
 
-  wrapper.find('.zv-icker__cancel').trigger('click');
+  wrapper.find('.van-picker__cancel').trigger('click');
   expect(wrapper.emitted('cancel')).toBeTruthy();
 });
 
@@ -88,9 +88,9 @@ test('dynamic set value', () => {
   const wrapper = mount(TimePicker);
 
   wrapper.setProps({ value: '00:00' });
-  wrapper.find('.zv-icker__confirm').trigger('click');
+  wrapper.find('.van-picker__confirm').trigger('click');
   wrapper.setProps({ value: '22:30' });
-  wrapper.find('.zv-icker__confirm').trigger('click');
+  wrapper.find('.van-picker__confirm').trigger('click');
 
   expect(wrapper.emitted('confirm')[0][0]).toEqual('00:00');
   expect(wrapper.emitted('confirm')[1][0]).toEqual('22:30');
@@ -107,7 +107,7 @@ test('change min-minute and emit correct value', async () => {
   await later();
 
   wrapper.setProps({ minMinute: 30 });
-  wrapper.find('.zv-icker__confirm').trigger('click');
+  wrapper.find('.van-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('12:30');
 });
 
@@ -123,14 +123,14 @@ test('set max-hour & max-minute smaller than current then emit correct value', a
     maxMinute: 2,
   });
 
-  wrapper.find('.zv-icker__confirm').trigger('click');
+  wrapper.find('.van-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('00:00');
 });
 
 test('set min-minute dynamically', async () => {
   const wrapper = mount({
     template: `
-      <zv-datetime-picker
+      <van-datetime-picker
         v-model="currentTime"
         type="time"
         :min-minute="currentTime.split(':')[0] > 12 ? 0 : 30"
@@ -146,7 +146,7 @@ test('set min-minute dynamically', async () => {
     },
   });
 
-  triggerDrag(wrapper.find('.zv-icker-column'), 0, -100);
-  wrapper.find('.zv-icker__confirm').trigger('click');
+  triggerDrag(wrapper.find('.van-picker-column'), 0, -100);
+  wrapper.find('.van-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual('13:00');
 });

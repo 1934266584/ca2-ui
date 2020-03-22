@@ -35,7 +35,7 @@ test('cancel event', () => {
     },
   });
 
-  const cancel = wrapper.find('.zv-earch__action');
+  const cancel = wrapper.find('.van-search__action');
   cancel.trigger('click');
 
   expect(onInput).toHaveBeenCalledWith('');

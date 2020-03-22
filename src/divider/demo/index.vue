@@ -1,37 +1,37 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-divider />
+      <van-divider />
     </demo-block>
 
     <demo-block :title="t('withText')">
-      <zv-divider>
+      <van-divider>
         {{ t('text') }}
-      </zv-divider>
+      </van-divider>
     </demo-block>
 
     <demo-block :title="t('contentPosition')">
-      <zv-divider content-position="left">
+      <van-divider content-position="left">
         {{ t('text') }}
-      </zv-divider>
+      </van-divider>
 
-      <zv-divider content-position="right">
+      <van-divider content-position="right">
         {{ t('text') }}
-      </zv-divider>
+      </van-divider>
     </demo-block>
 
     <demo-block :title="t('dashed')">
-      <zv-divider dashed :hairline="false">
+      <van-divider dashed :hairline="false">
         {{ t('text') }}
-      </zv-divider>
+      </van-divider>
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-divider
+      <van-divider
         :style="{ borderColor: BLUE, color: BLUE, padding: '0 16px' }"
       >
         {{ t('text') }}
-      </zv-divider>
+      </van-divider>
     </demo-block>
   </demo-section>
 </template>
@@ -71,7 +71,7 @@ export default {
 .demo-divider {
   background-color: @white;
 
-  .zv-oc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-top: @padding-md;
   }
 }

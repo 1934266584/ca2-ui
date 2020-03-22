@@ -1,7 +1,7 @@
 import { mount, later } from '../../../test';
 
 export async function submitForm(wrapper) {
-  wrapper.find('.zv-utton').trigger('click');
+  wrapper.find('.van-button').trigger('click');
   return later();
 }
 
@@ -19,11 +19,11 @@ export function getSimpleRules() {
 export function mountSimpleRulesForm(options) {
   return mountForm({
     template: `
-      <zv-form ref="form" @failed="onFailed">
-        <zv-field name="A" :rules="rulesA" value="" />
-        <zv-field name="B" :rules="rulesB" value="" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <van-form ref="form" @failed="onFailed">
+        <van-field name="A" :rules="rulesA" value="" />
+        <van-field name="B" :rules="rulesB" value="" />
+        <van-button native-type="submit" />
+      </van-form>
     `,
     data: getSimpleRules,
     ...options,

@@ -1,45 +1,45 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-steps :active="active">
-        <zv-step>{{ t('step1') }}</zv-step>
-        <zv-step>{{ t('step2') }}</zv-step>
-        <zv-step>{{ t('step3') }}</zv-step>
-        <zv-step>{{ t('step4') }}</zv-step>
-      </zv-steps>
+      <van-steps :active="active">
+        <van-step>{{ t('step1') }}</van-step>
+        <van-step>{{ t('step2') }}</van-step>
+        <van-step>{{ t('step3') }}</van-step>
+        <van-step>{{ t('step4') }}</van-step>
+      </van-steps>
 
-      <zv-button @click="nextStep">{{ t('nextStep') }}</zv-button>
+      <van-button @click="nextStep">{{ t('nextStep') }}</van-button>
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-steps
+      <van-steps
         :active="active"
         active-icon="success"
         inactive-icon="arrow"
         active-color="#38f"
       >
-        <zv-step>{{ t('step1') }}</zv-step>
-        <zv-step>{{ t('step2') }}</zv-step>
-        <zv-step>{{ t('step3') }}</zv-step>
-        <zv-step>{{ t('step4') }}</zv-step>
-      </zv-steps>
+        <van-step>{{ t('step1') }}</van-step>
+        <van-step>{{ t('step2') }}</van-step>
+        <van-step>{{ t('step3') }}</van-step>
+        <van-step>{{ t('step4') }}</van-step>
+      </van-steps>
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-steps :active="0" direction="vertical">
-        <zv-step>
+      <van-steps :active="0" direction="vertical">
+        <van-step>
           <h3>{{ t('status1') }}</h3>
           <p>2016-07-12 12:40</p>
-        </zv-step>
-        <zv-step>
+        </van-step>
+        <van-step>
           <h3>{{ t('status2') }}</h3>
           <p>2016-07-11 10:00</p>
-        </zv-step>
-        <zv-step>
+        </van-step>
+        <van-step>
           <h3>{{ t('status3') }}</h3>
           <p>2016-07-10 09:30</p>
-        </zv-step>
-      </zv-steps>
+        </van-step>
+      </van-steps>
     </demo-block>
   </demo-section>
 </template>
@@ -94,15 +94,15 @@ export default {
 
 .demo-steps {
   .steps-success,
-  .zv-con-location {
+  .van-icon-location {
     color: @green;
   }
 
-  .zv-utton {
+  .van-button {
     margin: @padding-md 0 0 @padding-md;
   }
 
-  .zv-teps__message + p {
+  .van-steps__message + p {
     margin-bottom: 10px;
   }
 

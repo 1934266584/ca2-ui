@@ -6,10 +6,10 @@ test('submit method', async () => {
 
   mountForm({
     template: `
-        <zv-form ref="form" @submit="onSubmit">
-          <zv-field name="A" value="bar" />
-          <zv-button native-type="submit" />
-        </zv-form>
+        <van-form ref="form" @submit="onSubmit">
+          <van-field name="A" value="bar" />
+          <van-button native-type="submit" />
+        </van-form>
       `,
     mounted() {
       this.$refs.form.submit();
@@ -51,11 +51,11 @@ test('validate method - validate one field and passed', done => {
 test('validate method - validate one field and failed', done => {
   mountForm({
     template: `
-      <zv-form ref="form" @failed="onFailed">
-        <zv-field name="A" :rules="rulesA" value="123" />
-        <zv-field name="B" :rules="rulesB" value="" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <van-form ref="form" @failed="onFailed">
+        <van-field name="A" :rules="rulesA" value="123" />
+        <van-field name="B" :rules="rulesB" value="" />
+        <van-button native-type="submit" />
+      </van-form>
     `,
     data: getSimpleRules,
     mounted() {
@@ -77,7 +77,7 @@ test('resetValidation method - reset all fields', done => {
     mounted() {
       this.$refs.form.validate().catch(() => {
         this.$refs.form.resetValidation();
-        const errors = wrapper.findAll('.zv-ield__error-message');
+        const errors = wrapper.findAll('.van-field__error-message');
         expect(errors.length).toEqual(0);
         done();
       });

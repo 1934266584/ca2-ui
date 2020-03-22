@@ -1,12 +1,12 @@
 <template>
   <demo-section>
     <demo-block :title="t('title1')">
-      <zv-button
+      <van-button
         type="primary"
         :text="t('title1')"
         @click="$toast(t('text'))"
       />
-      <zv-button
+      <van-button
         type="primary"
         :text="t('longTextButton')"
         @click="$toast(t('longText'))"
@@ -14,12 +14,12 @@
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <zv-button
+      <van-button
         type="primary"
         :text="t('title2')"
         @click="showLoadingToast()"
       />
-      <zv-button
+      <van-button
         type="primary"
         :text="t('loadingType')"
         @click="showLoadingToast('spinner')"
@@ -27,17 +27,17 @@
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-button type="info" :text="t('success')" @click="showSuccessToast" />
-      <zv-button type="danger" :text="t('fail')" @click="showFailToast" />
+      <van-button type="info" :text="t('success')" @click="showSuccessToast" />
+      <van-button type="danger" :text="t('fail')" @click="showFailToast" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('customIcon')">
-      <zv-button
+      <van-button
         type="primary"
         :text="t('customIcon')"
         @click="showIconToast"
       />
-      <zv-button
+      <van-button
         type="primary"
         :text="t('customImage')"
         @click="showImageToast"
@@ -45,7 +45,7 @@
     </demo-block>
 
     <demo-block :title="t('updateMessage')">
-      <zv-button
+      <van-button
         type="primary"
         :text="t('updateMessage')"
         @click="showCustomizedToast"
@@ -153,7 +153,7 @@ export default {
 .demo-toast {
   background-color: @white;
 
-  .zv-utton {
+  .van-button {
     margin-left: @padding-md;
   }
 }

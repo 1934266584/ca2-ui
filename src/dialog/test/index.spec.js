@@ -13,7 +13,7 @@ test('Dialog function call', async () => {
   await later();
 
   const callback = jest.fn();
-  const dialog = document.querySelector('.zv-ialog');
+  const dialog = document.querySelector('.van-dialog');
 
   expect(dialog.style.display).toEqual('');
   Dialog.close();
@@ -21,12 +21,12 @@ test('Dialog function call', async () => {
   await later();
   expect(dialog.style.display).toEqual('none');
   Dialog.confirm().catch(callback);
-  document.querySelector('.zv-ialog__cancel').click();
+  document.querySelector('.van-dialog__cancel').click();
 
   await later();
   expect(callback).toHaveBeenCalledWith('cancel');
   Dialog.confirm().then(callback);
-  document.querySelector('.zv-ialog__confirm').click();
+  document.querySelector('.van-dialog__confirm').click();
 
   await later();
   expect(callback).toHaveBeenNthCalledWith(2, 'confirm');
@@ -42,7 +42,7 @@ test('before close', () => {
     },
   });
 
-  const cancel = wrapper.find('.zv-ialog__cancel');
+  const cancel = wrapper.find('.van-dialog__cancel');
 
   cancel.trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
@@ -55,7 +55,7 @@ test('before close', () => {
     },
   });
 
-  const overlay = document.querySelector('.zv-verlay');
+  const overlay = document.querySelector('.van-overlay');
   trigger(overlay, 'click');
   expect(wrapper.emitted('input')).toBeFalsy();
 

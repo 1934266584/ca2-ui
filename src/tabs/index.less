@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.zv-ab {
+.van-tab {
   position: relative;
   flex: 1;
   box-sizing: border-box;
@@ -27,7 +27,7 @@
   }
 }
 
-.zv-abs {
+.van-tabs {
   position: relative;
 
   &__wrap {
@@ -43,7 +43,7 @@
     }
 
     &--scrollable {
-      .zv-ab {
+      .van-tab {
         flex: 0 0 22%;
 
         &--complete {
@@ -51,7 +51,7 @@
         }
       }
 
-      .zv-abs__nav {
+      .van-tabs__nav {
         overflow: hidden;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -82,7 +82,7 @@
       border: @border-width-base solid @tabs-default-color;
       border-radius: @border-radius-sm;
 
-      .zv-ab {
+      .van-tab {
         color: @tabs-default-color;
         line-height: @tabs-card-height - 2px;
         border-right: @border-width-base solid @tabs-default-color;
@@ -91,7 +91,7 @@
           border-right: none;
         }
 
-        &.zv-ab--active {
+        &.van-tab--active {
           color: @white;
           background-color: @tabs-default-color;
         }
@@ -128,13 +128,13 @@
   }
 
   &--line {
-    .zv-abs__wrap {
+    .van-tabs__wrap {
       height: @tabs-line-height;
     }
   }
 
   &--card {
-    > .zv-abs__wrap {
+    > .van-tabs__wrap {
       height: @tabs-card-height;
     }
   }

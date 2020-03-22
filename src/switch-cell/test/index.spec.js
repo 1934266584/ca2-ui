@@ -11,7 +11,7 @@ test('change event', () => {
     },
   });
 
-  wrapper.find('.zv-witch').trigger('click');
+  wrapper.find('.van-switch').trigger('click');
 
   expect(onChange).toHaveBeenCalledWith(true);
 });

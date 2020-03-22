@@ -1,12 +1,12 @@
 <template>
-  <div :class="['zv-doc-content', `zv-doc-content--${currentPage}`]">
+  <div :class="['van-doc-content', `van-doc-content--${currentPage}`]">
     <slot />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'zv-doc-content',
+  name: 'van-doc-content',
 
   computed: {
     currentPage() {
@@ -23,7 +23,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.zv-oc-content {
+.van-doc-content {
   position: relative;
   flex: 1;
   padding: 0 0 75px;
@@ -32,21 +32,21 @@ export default {
     margin-bottom: 24px;
     padding: 24px;
     background-color: #fff;
-    border-radius: @zv-doc-border-radius;
+    border-radius: @van-doc-border-radius;
     box-shadow: 0 8px 12px #ebedf0;
   }
 
   a {
     margin: 0 1px;
-    color: @zv-doc-blue;
+    color: @van-doc-blue;
     -webkit-font-smoothing: auto;
 
     &:hover {
-      color: darken(@zv-doc-blue, 10%);
+      color: darken(@van-doc-blue, 10%);
     }
 
     &:active {
-      color: darken(@zv-doc-blue, 20%);
+      color: darken(@van-doc-blue, 20%);
     }
   }
 
@@ -56,7 +56,7 @@ export default {
   h4,
   h5,
   h6 {
-    color: @zv-doc-black;
+    color: @van-doc-black;
     font-weight: normal;
     line-height: 1.5;
 
@@ -95,7 +95,7 @@ export default {
   }
 
   p {
-    color: @zv-doc-text-color;
+    color: @van-doc-text-color;
     font-size: 14px;
     line-height: 26px;
   }
@@ -103,7 +103,7 @@ export default {
   table {
     width: 100%;
     margin-top: 12px;
-    color: @zv-doc-text-color;
+    color: @van-doc-text-color;
     font-size: 13px;
     line-height: 1.5;
     border-collapse: collapse;
@@ -124,7 +124,7 @@ export default {
 
     td {
       padding: 8px;
-      border-top: 1px solid @zv-doc-code-background-color;
+      border-top: 1px solid @van-doc-code-background-color;
 
       &:first-child {
         padding-left: 0;
@@ -133,10 +133,10 @@ export default {
         code {
           margin: 0;
           padding: 2px 6px;
-          color: @zv-doc-blue;
+          color: @van-doc-blue;
           font-weight: 500;
           font-size: 10px;
-          background-color: fade(@zv-doc-blue, 10%);
+          background-color: fade(@van-doc-blue, 10%);
           border-radius: 20px;
         }
       }
@@ -147,9 +147,9 @@ export default {
     }
 
     em {
-      color: @zv-doc-green;
+      color: @van-doc-green;
       font-size: 12.5px;
-      font-family: @zv-doc-code-font-family;
+      font-family: @van-doc-code-font-family;
       font-style: normal;
       -webkit-font-smoothing: auto;
     }
@@ -160,7 +160,7 @@ export default {
     position: relative;
     margin: 5px 0 5px 10px;
     padding-left: 15px;
-    color: @zv-doc-text-color;
+    color: @van-doc-text-color;
     font-size: 14px;
     line-height: 26px;
 
@@ -172,7 +172,7 @@ export default {
       width: 6px;
       height: 6px;
       margin-top: 10px;
-      border: 1px solid @zv-doc-dark-grey;
+      border: 1px solid @van-doc-dark-grey;
       border-radius: 50%;
       content: '';
     }
@@ -214,13 +214,13 @@ export default {
     font-weight: 500;
     font-size: 14px;
     background-color: #ecf9ff;
-    border-radius: @zv-doc-border-radius;
+    border-radius: @van-doc-border-radius;
   }
 
   img {
     width: 100%;
     margin: 16px 0;
-    border-radius: @zv-doc-border-radius;
+    border-radius: @van-doc-border-radius;
   }
 
   &--changelog {

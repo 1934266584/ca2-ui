@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-address-list
+      <van-address-list
         v-model="chosenAddressId"
         :list="t('list')"
         :disabled-list="t('disabledList')"
@@ -97,7 +97,7 @@ export default {
 
 <style lang="less">
 .demo-address-list {
-  .zv-oc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-bottom: 0;
   }
 }

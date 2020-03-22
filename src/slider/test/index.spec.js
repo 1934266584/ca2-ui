@@ -29,7 +29,7 @@ test('drag button', () => {
     wrapper.setProps({ value });
   });
 
-  const button = wrapper.find('.zv-lider__button');
+  const button = wrapper.find('.van-slider__button');
   triggerDrag(button, 50, 0);
   expect(wrapper).toMatchSnapshot();
   expect(wrapper.emitted('drag-start')).toBeFalsy();
@@ -84,7 +84,7 @@ test('drag button vertical', () => {
     wrapper.setProps({ value });
   });
 
-  const button = wrapper.find('.zv-lider__button');
+  const button = wrapper.find('.van-slider__button');
   triggerDrag(button, 0, 50);
   expect(wrapper).toMatchSnapshot();
 

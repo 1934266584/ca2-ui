@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-switch v-model="checked" />
+      <van-switch v-model="checked" />
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <zv-switch v-model="checked" disabled />
+      <van-switch v-model="checked" disabled />
     </demo-block>
 
     <demo-block :title="t('loadingStatus')">
-      <zv-switch v-model="checked" loading />
+      <van-switch v-model="checked" loading />
     </demo-block>
 
     <demo-block :title="t('customSize')">
-      <zv-switch v-model="checked2" size="24px" />
+      <van-switch v-model="checked2" size="24px" />
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <zv-switch
+      <van-switch
         v-model="checked3"
         active-color="#07c160"
         inactive-color="#ee0a24"
@@ -25,13 +25,13 @@
     </demo-block>
 
     <demo-block :title="t('asyncControl')">
-      <zv-switch :value="checked4" @input="onInput" />
+      <van-switch :value="checked4" @input="onInput" />
     </demo-block>
 
     <demo-block :title="t('withCell')">
-      <zv-cell center :title="t('title')">
-        <zv-switch v-model="checked5" slot="right-icon" size="24" />
-      </zv-cell>
+      <van-cell center :title="t('title')">
+        <van-switch v-model="checked5" slot="right-icon" size="24" />
+      </van-cell>
     </demo-block>
   </demo-section>
 </template>
@@ -89,7 +89,7 @@ export default {
 @import '../../style/var';
 
 .demo-switch {
-  .zv-witch {
+  .van-switch {
     margin-left: @padding-md;
   }
 }

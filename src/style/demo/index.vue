@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('ellipsis')">
-      <div class="zv-ellipsis">{{ t('text1') }}</div>
-      <div class="zv-multi-ellipsis--l2">{{ t('text2') }}</div>
+      <div class="van-ellipsis">{{ t('text1') }}</div>
+      <div class="van-multi-ellipsis--l2">{{ t('text2') }}</div>
     </demo-block>
 
     <demo-block :title="t('hairline')">
-      <div class="zv-hairline--top" />
+      <div class="van-hairline--top" />
     </demo-block>
 
     <demo-block :title="t('animation')">
-      <zv-cell is-link title="Fade" @click="animate('zv-fade')" />
-      <zv-cell is-link title="Slide Up" @click="animate('zv-slide-up')" />
-      <zv-cell is-link title="Slide Down" @click="animate('zv-slide-down')" />
-      <zv-cell is-link title="Slide Left" @click="animate('zv-slide-left')" />
-      <zv-cell
+      <van-cell is-link title="Fade" @click="animate('van-fade')" />
+      <van-cell is-link title="Slide Up" @click="animate('van-slide-up')" />
+      <van-cell is-link title="Slide Down" @click="animate('van-slide-down')" />
+      <van-cell is-link title="Slide Left" @click="animate('van-slide-left')" />
+      <van-cell
         is-link
         title="Slide Right"
-        @click="animate('zv-slide-right')"
+        @click="animate('van-slide-right')"
       />
     </demo-block>
 
@@ -75,19 +75,19 @@ export default {
 @import '../../style/var';
 
 .demo-style {
-  .zv-llipsis,
-  .zv-ulti-ellipsis--l2 {
+  .van-ellipsis,
+  .van-multi-ellipsis--l2 {
     max-width: 300px;
     margin-left: @padding-md;
     font-size: 14px;
     line-height: 18px;
   }
 
-  .zv-llipsis {
+  .van-ellipsis {
     margin-bottom: @padding-md;
   }
 
-  .zv-airline--top {
+  .van-hairline--top {
     height: 30px;
     background-color: @white;
 

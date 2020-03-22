@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-address-edit
+      <van-address-edit
         :area-list="areaList"
         show-postal
         show-delete
@@ -81,7 +81,7 @@ export default {
 
 <style lang="less">
 .demo-address-edit {
-  .zv-oc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-bottom: 0;
   }
 }

@@ -1,94 +1,94 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-radio-group v-model="radio1" class="demo-radio-group">
-        <zv-radio name="1">{{ t('radio') }} 1</zv-radio>
-        <zv-radio name="2">{{ t('radio') }} 2</zv-radio>
-      </zv-radio-group>
+      <van-radio-group v-model="radio1" class="demo-radio-group">
+        <van-radio name="1">{{ t('radio') }} 1</van-radio>
+        <van-radio name="2">{{ t('radio') }} 2</van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('horizontal')">
-      <zv-radio-group
+      <van-radio-group
         v-model="radioHorizontal"
         class="demo-radio-group"
         direction="horizontal"
       >
-        <zv-radio name="1">{{ t('radio') }} 1</zv-radio>
-        <zv-radio name="2">{{ t('radio') }} 2</zv-radio>
-      </zv-radio-group>
+        <van-radio name="1">{{ t('radio') }} 1</van-radio>
+        <van-radio name="2">{{ t('radio') }} 2</van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <zv-radio-group v-model="radio2" class="demo-radio-group" disabled>
-        <zv-radio name="1">{{ t('radio') }} 1</zv-radio>
-        <zv-radio name="2">{{ t('radio') }} 2</zv-radio>
-      </zv-radio-group>
+      <van-radio-group v-model="radio2" class="demo-radio-group" disabled>
+        <van-radio name="1">{{ t('radio') }} 1</van-radio>
+        <van-radio name="2">{{ t('radio') }} 2</van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block :title="t('customShape')">
-      <zv-radio-group v-model="radioShape" class="demo-radio-group">
-        <zv-radio name="1" shape="square">{{ t('radio') }} 1</zv-radio>
-        <zv-radio name="2" shape="square">{{ t('radio') }} 2</zv-radio>
-      </zv-radio-group>
+      <van-radio-group v-model="radioShape" class="demo-radio-group">
+        <van-radio name="1" shape="square">{{ t('radio') }} 1</van-radio>
+        <van-radio name="2" shape="square">{{ t('radio') }} 2</van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <zv-radio-group v-model="radio3" class="demo-radio-group">
-        <zv-radio name="1" checked-color="#07c160">
+      <van-radio-group v-model="radio3" class="demo-radio-group">
+        <van-radio name="1" checked-color="#07c160">
           {{ t('radio') }} 1
-        </zv-radio>
-        <zv-radio name="2" checked-color="#07c160">
+        </van-radio>
+        <van-radio name="2" checked-color="#07c160">
           {{ t('radio') }} 2
-        </zv-radio>
-      </zv-radio-group>
+        </van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block :title="t('customIconSize')">
-      <zv-radio-group v-model="radioIconSize" class="demo-radio-group">
-        <zv-radio name="1" checked-color="#07c160" icon-size="24px">
+      <van-radio-group v-model="radioIconSize" class="demo-radio-group">
+        <van-radio name="1" checked-color="#07c160" icon-size="24px">
           {{ t('radio') }} 1
-        </zv-radio>
-        <zv-radio name="2" checked-color="#07c160" icon-size="24px">
+        </van-radio>
+        <van-radio name="2" checked-color="#07c160" icon-size="24px">
           {{ t('radio') }} 2
-        </zv-radio>
-      </zv-radio-group>
+        </van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block :title="t('customIcon')">
-      <zv-radio-group v-model="radio4" class="demo-radio-group">
-        <zv-radio name="1">
+      <van-radio-group v-model="radio4" class="demo-radio-group">
+        <van-radio name="1">
           {{ t('radio') }} 1
           <template #icon="{ checked }">
             <img :src="checked ? icon.active : icon.inactive" />
           </template>
-        </zv-radio>
-        <zv-radio name="2">
+        </van-radio>
+        <van-radio name="2">
           {{ t('radio') }} 2
           <template #icon="{ checked }">
             <img :src="checked ? icon.active : icon.inactive" />
           </template>
-        </zv-radio>
-      </zv-radio-group>
+        </van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block :title="t('disableLabel')">
-      <zv-radio-group v-model="radioLabel" class="demo-radio-group">
-        <zv-radio name="1" label-disabled>{{ t('radio') }} 1</zv-radio>
-        <zv-radio name="2" label-disabled>{{ t('radio') }} 2</zv-radio>
-      </zv-radio-group>
+      <van-radio-group v-model="radioLabel" class="demo-radio-group">
+        <van-radio name="1" label-disabled>{{ t('radio') }} 1</van-radio>
+        <van-radio name="2" label-disabled>{{ t('radio') }} 2</van-radio>
+      </van-radio-group>
     </demo-block>
 
     <demo-block :title="t('withCell')">
-      <zv-radio-group v-model="radio5">
-        <zv-cell-group>
-          <zv-cell clickable :title="t('radio') + 1" @click="radio5 = '1'">
-            <zv-radio name="1" slot="right-icon" />
-          </zv-cell>
-          <zv-cell clickable :title="t('radio') + 2" @click="radio5 = '2'">
-            <zv-radio name="2" slot="right-icon" />
-          </zv-cell>
-        </zv-cell-group>
-      </zv-radio-group>
+      <van-radio-group v-model="radio5">
+        <van-cell-group>
+          <van-cell clickable :title="t('radio') + 1" @click="radio5 = '1'">
+            <van-radio name="1" slot="right-icon" />
+          </van-cell>
+          <van-cell clickable :title="t('radio') + 2" @click="radio5 = '2'">
+            <van-radio name="2" slot="right-icon" />
+          </van-cell>
+        </van-cell-group>
+      </van-radio-group>
     </demo-block>
   </demo-section>
 </template>
@@ -151,7 +151,7 @@ export default {
   &-group {
     padding: 0 16px;
 
-    .zv-adio {
+    .van-radio {
       margin-bottom: 8px;
     }
   }
@@ -160,7 +160,7 @@ export default {
     height: 20px;
   }
 
-  .zv-oc-demo-block__title {
+  .van-doc-demo-block__title {
     margin-top: -8px;
   }
 }

@@ -1,28 +1,28 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-sticky>
-        <zv-button type="primary" style="margin-left: 15px;">
+      <van-sticky>
+        <van-button type="primary" style="margin-left: 15px;">
           {{ t('basicUsage') }}
-        </zv-button>
-      </zv-sticky>
+        </van-button>
+      </van-sticky>
     </demo-block>
 
     <demo-block :title="t('offsetTop')">
-      <zv-sticky :offset-top="50">
-        <zv-button type="info" style="margin-left: 115px;">
+      <van-sticky :offset-top="50">
+        <van-button type="info" style="margin-left: 115px;">
           {{ t('offsetTop') }}
-        </zv-button>
-      </zv-sticky>
+        </van-button>
+      </van-sticky>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('setContainer')">
       <div ref="container" style="height: 150px; background-color: #fff;">
-        <zv-sticky :container="container">
-          <zv-button type="warning" style="margin-left: 215px;">
+        <van-sticky :container="container">
+          <van-button type="warning" style="margin-left: 215px;">
             {{ t('setContainer') }}
-          </zv-button>
-        </zv-sticky>
+          </van-button>
+        </van-sticky>
       </div>
     </demo-block>
   </demo-section>
@@ -59,7 +59,7 @@ export default {
 .demo-sticky {
   height: 200vh;
 
-  .zv-utton {
+  .van-button {
     margin-left: @padding-md;
   }
 }

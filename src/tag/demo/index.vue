@@ -1,53 +1,53 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-tag>{{ t('tag') }}</zv-tag>
-      <zv-tag type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag type="warning">{{ t('tag') }}</zv-tag>
+      <van-tag>{{ t('tag') }}</van-tag>
+      <van-tag type="primary">{{ t('tag') }}</van-tag>
+      <van-tag type="success">{{ t('tag') }}</van-tag>
+      <van-tag type="danger">{{ t('tag') }}</van-tag>
+      <van-tag type="warning">{{ t('tag') }}</van-tag>
     </demo-block>
 
     <demo-block :title="t('round')">
-      <zv-tag round>{{ t('tag') }}</zv-tag>
-      <zv-tag round type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag round type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag round type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag round type="warning">{{ t('tag') }}</zv-tag>
+      <van-tag round>{{ t('tag') }}</van-tag>
+      <van-tag round type="primary">{{ t('tag') }}</van-tag>
+      <van-tag round type="success">{{ t('tag') }}</van-tag>
+      <van-tag round type="danger">{{ t('tag') }}</van-tag>
+      <van-tag round type="warning">{{ t('tag') }}</van-tag>
     </demo-block>
 
     <demo-block :title="t('mark')">
-      <zv-tag mark>{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="warning">{{ t('tag') }}</zv-tag>
+      <van-tag mark>{{ t('tag') }}</van-tag>
+      <van-tag mark type="primary">{{ t('tag') }}</van-tag>
+      <van-tag mark type="success">{{ t('tag') }}</van-tag>
+      <van-tag mark type="danger">{{ t('tag') }}</van-tag>
+      <van-tag mark type="warning">{{ t('tag') }}</van-tag>
     </demo-block>
 
     <demo-block :title="t('plain')">
-      <zv-tag plain>{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="warning">{{ t('tag') }}</zv-tag>
+      <van-tag plain>{{ t('tag') }}</van-tag>
+      <van-tag plain type="primary">{{ t('tag') }}</van-tag>
+      <van-tag plain type="success">{{ t('tag') }}</van-tag>
+      <van-tag plain type="danger">{{ t('tag') }}</van-tag>
+      <van-tag plain type="warning">{{ t('tag') }}</van-tag>
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <zv-tag color="#f2826a">{{ t('tag') }}</zv-tag>
-      <zv-tag color="#f2826a" plain>{{ t('tag') }}</zv-tag>
-      <zv-tag color="#7232dd">{{ t('tag') }}</zv-tag>
-      <zv-tag color="#7232dd" plain>{{ t('tag') }}</zv-tag>
-      <zv-tag color="#ffe1e1" text-color="#ad0000">{{ t('tag') }}</zv-tag>
+      <van-tag color="#f2826a">{{ t('tag') }}</van-tag>
+      <van-tag color="#f2826a" plain>{{ t('tag') }}</van-tag>
+      <van-tag color="#7232dd">{{ t('tag') }}</van-tag>
+      <van-tag color="#7232dd" plain>{{ t('tag') }}</van-tag>
+      <van-tag color="#ffe1e1" text-color="#ad0000">{{ t('tag') }}</van-tag>
     </demo-block>
 
     <demo-block :title="t('customSize')">
-      <zv-tag type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag type="success" size="medium">{{ t('tag') }}</zv-tag>
-      <zv-tag type="success" size="large">{{ t('tag') }}</zv-tag>
+      <van-tag type="success">{{ t('tag') }}</van-tag>
+      <van-tag type="success" size="medium">{{ t('tag') }}</van-tag>
+      <van-tag type="success" size="large">{{ t('tag') }}</van-tag>
     </demo-block>
 
     <demo-block :title="t('closeable')">
-      <zv-tag
+      <van-tag
         v-if="show.primary"
         size="medium"
         closeable
@@ -55,8 +55,8 @@
         @close="close('primary')"
       >
         {{ t('tag') }}
-      </zv-tag>
-      <zv-tag
+      </van-tag>
+      <van-tag
         v-if="show.success"
         size="medium"
         closeable
@@ -64,7 +64,7 @@
         @close="close('success')"
       >
         {{ t('tag') }}
-      </zv-tag>
+      </van-tag>
     </demo-block>
   </demo-section>
 </template>
@@ -113,11 +113,11 @@ export default {
 .demo-tag {
   background-color: @white;
 
-  .zv-ag + ..zv-g {
+  .van-tag + .van-tag {
     margin-left: @padding-xs;
   }
 
-  .zv-ag {
+  .van-tag {
     &:first-of-type {
       margin-left: @padding-md;
     }

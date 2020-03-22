@@ -1,42 +1,42 @@
 <template>
   <demo-section>
-    <zv-grid :column-num="2" :border="false">
-      <zv-grid-item>
+    <van-grid :column-num="2" :border="false">
+      <van-grid-item>
         <h3 class="demo-sidebar-title">{{ t('basicUsage') }}</h3>
-        <zv-sidebar v-model="activeKey1">
-          <zv-sidebar-item :title="t('title')" />
-          <zv-sidebar-item :title="t('title')" />
-          <zv-sidebar-item :title="t('title')" />
-        </zv-sidebar>
-      </zv-grid-item>
+        <van-sidebar v-model="activeKey1">
+          <van-sidebar-item :title="t('title')" />
+          <van-sidebar-item :title="t('title')" />
+          <van-sidebar-item :title="t('title')" />
+        </van-sidebar>
+      </van-grid-item>
 
-      <zv-grid-item>
+      <van-grid-item>
         <h3 class="demo-sidebar-title">{{ t('showBadge') }}</h3>
-        <zv-sidebar v-model="activeKey2">
-          <zv-sidebar-item :title="t('title')" dot />
-          <zv-sidebar-item :title="t('title')" badge="5" />
-          <zv-sidebar-item :title="t('title')" badge="99+" />
-        </zv-sidebar>
-      </zv-grid-item>
+        <van-sidebar v-model="activeKey2">
+          <van-sidebar-item :title="t('title')" dot />
+          <van-sidebar-item :title="t('title')" badge="5" />
+          <van-sidebar-item :title="t('title')" badge="99+" />
+        </van-sidebar>
+      </van-grid-item>
 
-      <zv-grid-item>
+      <van-grid-item>
         <h3 class="demo-sidebar-title">{{ t('disabled') }}</h3>
-        <zv-sidebar v-model="activeKey3">
-          <zv-sidebar-item :title="t('title')" />
-          <zv-sidebar-item :title="t('title')" disabled />
-          <zv-sidebar-item :title="t('title')" />
-        </zv-sidebar>
-      </zv-grid-item>
+        <van-sidebar v-model="activeKey3">
+          <van-sidebar-item :title="t('title')" />
+          <van-sidebar-item :title="t('title')" disabled />
+          <van-sidebar-item :title="t('title')" />
+        </van-sidebar>
+      </van-grid-item>
 
-      <zv-grid-item>
+      <van-grid-item>
         <h3 class="demo-sidebar-title">{{ t('changeEvent') }}</h3>
-        <zv-sidebar v-model="activeKey4" @change="onChange">
-          <zv-sidebar-item :title="t('title') + 1" />
-          <zv-sidebar-item :title="t('title') + 2" />
-          <zv-sidebar-item :title="t('title') + 3" />
-        </zv-sidebar>
-      </zv-grid-item>
-    </zv-grid>
+        <van-sidebar v-model="activeKey4" @change="onChange">
+          <van-sidebar-item :title="t('title') + 1" />
+          <van-sidebar-item :title="t('title') + 2" />
+          <van-sidebar-item :title="t('title') + 3" />
+        </van-sidebar>
+      </van-grid-item>
+    </van-grid>
   </demo-section>
 </template>
 
@@ -84,7 +84,7 @@ export default {
 .demo-sidebar {
   background-color: @white;
 
-  .zv-idebar {
+  .van-sidebar {
     margin-left: @padding-md;
   }
 
