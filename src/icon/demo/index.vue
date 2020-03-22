@@ -191,7 +191,7 @@ export default {
     font-size: 13px;
   }
 
-  .van-col {
+  .zv-col {
     display: inline-block;
     float: none;
     text-align: center;
@@ -213,13 +213,13 @@ export default {
     }
   }
 
-  .van-icon {
+  .zv-icon {
     margin: 16px 0 16px;
     color: @text-color;
     font-size: 32px;
   }
 
-  .van-tab__pane {
+  .zv-tab__pane {
     width: auto;
     margin: 20px;
     background-color: #fff;

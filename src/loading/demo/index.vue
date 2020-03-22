@@ -56,7 +56,7 @@ export default {
 .demo-loading {
   background: @white;
 
-  .van-loading {
+  .zv-loading {
     display: inline-block;
     margin: 5px 0 5px 20px;
 

@@ -84,7 +84,7 @@ export default {
 .demo-sidebar {
   background-color: @white;
 
-  .van-sidebar {
+  .zv-sidebar {
     margin-left: @padding-md;
   }
 

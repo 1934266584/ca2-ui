@@ -279,11 +279,11 @@ test('validate-trigger - onBlur', async () => {
 
   input.trigger('input');
   await later();
-  expect(wrapper.contains('.van-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
 
   input.trigger('blur');
   await later();
-  expect(wrapper.contains('.van-field__error-message')).toBeTruthy();
+  expect(wrapper.contains('.zv-field__error-message')).toBeTruthy();
 });
 
 test('validate-trigger - onChange', async () => {
@@ -305,15 +305,15 @@ test('validate-trigger - onChange', async () => {
 
   input.trigger('blur');
   await later();
-  expect(wrapper.contains('.van-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
 
   wrapper.setData({ value: '1' });
   await later();
-  expect(wrapper.contains('.van-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
 
   wrapper.setData({ value: '' });
   await later();
-  expect(wrapper.contains('.van-field__error-message')).toBeTruthy();
+  expect(wrapper.contains('.zv-field__error-message')).toBeTruthy();
 });
 
 test('validate-trigger - custom trigger in rules', async () => {
@@ -353,7 +353,7 @@ test('validate-trigger - custom trigger in rules', async () => {
   await later();
   wrapper.setData({ valueB: '' });
   await later();
-  expect(wrapper.contains('.van-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
 
   inputs.at(1).trigger('blur');
   wrapper.setData({ valueA: '1' });
@@ -361,7 +361,7 @@ test('validate-trigger - custom trigger in rules', async () => {
   wrapper.setData({ valueA: '' });
   await later();
   expect(
-    wrapper.element.querySelectorAll('.van-field__error-message').length
+    wrapper.element.querySelectorAll('.zv-field__error-message').length
   ).toEqual(2);
 });
 

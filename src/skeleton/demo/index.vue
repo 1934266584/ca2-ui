@@ -55,7 +55,7 @@ export default {
 .demo-skeleton {
   background-color: @white;
 
-  .van-switch {
+  .zv-switch {
     margin: 0 @padding-md @padding-xs;
   }
 

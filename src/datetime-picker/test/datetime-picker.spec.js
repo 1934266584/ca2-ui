@@ -12,10 +12,10 @@ test('confirm & cancel event', () => {
     },
   });
 
-  wrapper.find('.van-picker__confirm').trigger('click');
+  wrapper.find('.zv-picker__confirm').trigger('click');
   expect(onConfirm).toHaveBeenCalledTimes(1);
 
-  wrapper.find('.van-picker__cancel').trigger('click');
+  wrapper.find('.zv-picker__cancel').trigger('click');
   expect(onCancel).toHaveBeenCalledTimes(1);
 });
 

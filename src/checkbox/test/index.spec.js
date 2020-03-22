@@ -8,7 +8,7 @@ test('switch checkbox', async () => {
     wrapper.setData({ value });
   });
 
-  const icon = wrapper.find('.van-checkbox__icon');
+  const icon = wrapper.find('.zv-checkbox__icon');
   icon.trigger('click');
   await later();
   icon.trigger('click');
@@ -24,7 +24,7 @@ test('disabled', () => {
     },
   });
 
-  wrapper.find('.van-checkbox__icon').trigger('click');
+  wrapper.find('.zv-checkbox__icon').trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
 });
 
@@ -38,7 +38,7 @@ test('label disabled', () => {
     },
   });
 
-  wrapper.find('.van-checkbox__label').trigger('click');
+  wrapper.find('.zv-checkbox__label').trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
   expect(wrapper).toMatchSnapshot();
 });
@@ -59,7 +59,7 @@ test('checkbox group', async () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-checkbox__icon');
+  const icons = wrapper.findAll('.zv-checkbox__icon');
   icons.at(0).trigger('click');
   await later();
   icons.at(1).trigger('click');
@@ -84,7 +84,7 @@ test('click event', () => {
   wrapper.trigger('click');
   expect(onClick).toHaveBeenCalledTimes(1);
 
-  const icon = wrapper.find('.van-checkbox__icon');
+  const icon = wrapper.find('.zv-checkbox__icon');
   icon.trigger('click');
   expect(onClick).toHaveBeenCalledTimes(2);
 });
@@ -145,7 +145,7 @@ test('bind-group prop', async () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-checkbox__icon');
+  const icons = wrapper.findAll('.zv-checkbox__icon');
   icons.at(0).trigger('click');
   await later();
   expect(wrapper.vm.result).toEqual([]);

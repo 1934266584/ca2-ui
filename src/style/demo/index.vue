@@ -75,19 +75,19 @@ export default {
 @import '../../style/var';
 
 .demo-style {
-  .van-ellipsis,
-  .van-multi-ellipsis--l2 {
+  .zv-ellipsis,
+  .zv-multi-ellipsis--l2 {
     max-width: 300px;
     margin-left: @padding-md;
     font-size: 14px;
     line-height: 18px;
   }
 
-  .van-ellipsis {
+  .zv-ellipsis {
     margin-bottom: @padding-md;
   }
 
-  .van-hairline--top {
+  .zv-hairline--top {
     height: 30px;
     background-color: @white;
 

@@ -25,7 +25,7 @@ Vue.use(SwipeItem);
 </van-swipe>
 
 <style>
-.my-swipe .van-swipe-item {
+.my-swipe .zv-swipe-item {
   color: #fff;
   font-size: 20px;
   line-height: 150px;
@@ -134,12 +134,13 @@ export default {
 </van-swipe>
 
 <style>
-  .van-swipe-item {
-    background-color: #39a9ed;
+  .zv-swipe-item {
     font-size: 20px;
     line-height: 150px;
     text-align: center;
+    background-color: #39a9ed;
   }
+
   .custom-indicator {
     position: absolute;
     right: 5px;

@@ -57,11 +57,11 @@ export default {
 .demo-notice-bar {
   background: @white;
 
-  .van-notice-bar:not(:first-of-type) {
+  .zv-notice-bar:not(:first-of-type) {
     margin-top: 4px;
   }
 
-  .van-doc-demo-block__title {
+  .zv-doc-demo-block__title {
     padding-top: 24px;
   }
 }

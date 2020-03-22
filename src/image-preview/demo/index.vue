@@ -109,7 +109,7 @@ export default {
 .demo-image-preview {
   background-color: @white;
 
-  .van-button {
+  .zv-button {
     margin-left: @padding-md;
   }
 }

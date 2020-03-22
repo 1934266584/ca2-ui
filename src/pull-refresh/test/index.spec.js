@@ -13,7 +13,7 @@ test('change head content when pulling down', async () => {
     },
   });
 
-  const track = wrapper.find('.van-pull-refresh__track');
+  const track = wrapper.find('.zv-pull-refresh__track');
 
   // pulling
   trigger(track, 'touchstart', 0, 0);
@@ -58,7 +58,7 @@ test('custom content by slots', async () => {
     },
   });
 
-  const track = wrapper.find('.van-pull-refresh__track');
+  const track = wrapper.find('.zv-pull-refresh__track');
 
   // pulling
   trigger(track, 'touchstart', 0, 0);
@@ -82,7 +82,7 @@ test('pull a short distance', () => {
     },
   });
 
-  const track = wrapper.find('.van-pull-refresh__track');
+  const track = wrapper.find('.zv-pull-refresh__track');
   triggerDrag(track, 0, 10);
   expect(wrapper.emitted('input')).toBeFalsy();
 });
@@ -96,7 +96,7 @@ test('not in page top', () => {
 
   window.scrollTop = 100;
 
-  const track = wrapper.find('.van-pull-refresh__track');
+  const track = wrapper.find('.zv-pull-refresh__track');
   // ignore touch event when not at page top
   triggerDrag(track, 0, 100);
   window.scrollTop = 0;
@@ -118,7 +118,7 @@ test('render success text', async () => {
     },
   });
 
-  const track = wrapper.find('.van-pull-refresh__track');
+  const track = wrapper.find('.zv-pull-refresh__track');
   triggerDrag(track, 0, 100);
 
   await later();
@@ -147,7 +147,7 @@ test('render success slot', async () => {
     },
   });
 
-  const track = wrapper.find('.van-pull-refresh__track');
+  const track = wrapper.find('.zv-pull-refresh__track');
   triggerDrag(track, 0, 100);
 
   await later();

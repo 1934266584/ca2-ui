@@ -122,11 +122,11 @@ export default {
 @import '../../style/var';
 
 .demo-circle {
-  .van-circle {
+  .zv-circle {
     margin-left: @padding-md;
   }
 
-  .van-button {
+  .zv-button {
     margin: @padding-md 0 0 10px;
 
     &:first-of-type {

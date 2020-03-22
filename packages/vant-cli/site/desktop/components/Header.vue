@@ -138,7 +138,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-header {
+.zv-doc-header {
   width: 100%;
   user-select: none;
 
@@ -263,7 +263,7 @@ export default {
   }
 }
 
-.van-doc-dropdown {
+.zv-doc-dropdown {
   &-enter,
   &-leave-active {
     transform: scaleY(0);

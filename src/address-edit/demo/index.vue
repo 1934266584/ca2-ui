@@ -81,7 +81,7 @@ export default {
 
 <style lang="less">
 .demo-address-edit {
-  .van-doc-demo-block__title {
+  .zv-doc-demo-block__title {
     padding-bottom: 0;
   }
 }

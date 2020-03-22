@@ -28,7 +28,7 @@ test('show dropdown item', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-dropdown-menu__title');
 
   titles.at(0).trigger('click');
   expect(wrapper).toMatchSnapshot();
@@ -47,7 +47,7 @@ test('render option icon', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-dropdown-menu__title');
 
   titles.at(0).trigger('click');
   expect(wrapper).toMatchSnapshot();
@@ -60,7 +60,7 @@ test('close-on-click-outside', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-dropdown-menu__title');
 
   titles.at(0).trigger('click');
   document.body.click();
@@ -74,7 +74,7 @@ test('disable close-on-click-outside', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-dropdown-menu__title');
 
   titles.at(0).trigger('click');
   document.body.click();
@@ -92,7 +92,7 @@ test('direction up', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-dropdown-menu__title');
   titles.at(0).trigger('click');
   expect(wrapper).toMatchSnapshot();
 
@@ -104,10 +104,10 @@ test('click option', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-dropdown-menu__title');
   titles.at(0).trigger('click');
 
-  const options = wrapper.findAll('.van-dropdown-item .van-cell');
+  const options = wrapper.findAll('.zv-dropdown-item .zv-cell');
   options.at(1).trigger('click');
 
   await later();
@@ -169,7 +169,7 @@ test('disable dropdown item', async () => {
     },
   });
 
-  const title = wrapper.find('.van-dropdown-menu__title');
+  const title = wrapper.find('.zv-dropdown-menu__title');
   title.trigger('click');
   expect(wrapper).toMatchSnapshot();
 });
@@ -200,10 +200,10 @@ test('change event', async () => {
 
   await later();
 
-  const titles = wrapper.findAll('.van-dropdown-menu__title');
+  const titles = wrapper.findAll('.zv-dropdown-menu__title');
   titles.at(0).trigger('click');
 
-  const options = wrapper.findAll('.van-dropdown-item .van-cell');
+  const options = wrapper.findAll('.zv-dropdown-item .zv-cell');
   options.at(0).trigger('click');
 
   expect(onChange).toHaveBeenCalledTimes(0);

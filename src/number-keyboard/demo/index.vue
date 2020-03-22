@@ -137,7 +137,7 @@ export default {
 @import '../../style/var';
 
 .demo-number-keyboard {
-  .van-button {
+  .zv-button {
     margin-left: @padding-md;
   }
 }

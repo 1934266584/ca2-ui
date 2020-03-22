@@ -97,7 +97,7 @@ test('vertical swipe', () => {
     },
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.zv-swipe__track');
 
   triggerDrag(track, 0, -100);
   expect(swipe.active).toEqual(1);
@@ -110,7 +110,7 @@ test('untouchable', () => {
     },
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.zv-swipe__track');
 
   triggerDrag(track, 100, 0);
   expect(swipe.active).toEqual(0);
@@ -119,7 +119,7 @@ test('untouchable', () => {
 test('loop', () => {
   const wrapper = mount(Component);
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.zv-swipe__track');
 
   triggerDrag(track, -100, 0);
   expect(swipe.active).toEqual(1);
@@ -144,7 +144,7 @@ test('not loop', () => {
     },
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.van-swipe__track');
+  const track = wrapper.find('.zv-swipe__track');
 
   triggerDrag(track, -100, 0);
   expect(swipe.active).toEqual(1);

@@ -73,7 +73,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-nav {
+.zv-doc-nav {
   position: fixed;
   top: 60px;
   bottom: 0;

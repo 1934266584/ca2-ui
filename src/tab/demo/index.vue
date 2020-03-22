@@ -156,17 +156,17 @@ export default {
 .demo-tab {
   margin-bottom: 80vh;
 
-  .van-tab .van-icon {
+  .zv-tab .zv-icon {
     margin-right: 5px;
     vertical-align: -2px;
   }
 
-  .van-tab__pane {
+  .zv-tab__pane {
     padding: 25px 20px;
     background-color: @white;
   }
 
-  .van-tabs--card .van-tab__pane {
+  .zv-tabs--card .zv-tab__pane {
     background-color: transparent;
   }
 }

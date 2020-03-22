@@ -153,7 +153,7 @@ export default {
 .demo-toast {
   background-color: @white;
 
-  .van-button {
+  .zv-button {
     margin-left: @padding-md;
   }
 }

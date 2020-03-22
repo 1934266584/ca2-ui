@@ -129,7 +129,7 @@ export default {
 @import '../../style/var';
 
 .demo-list {
-  .van-cell {
+  .zv-cell {
     text-align: center;
   }
 
@@ -149,7 +149,7 @@ export default {
     }
   }
 
-  .van-checkbox__label {
+  .zv-checkbox__label {
     color: @gray-7;
   }
 }

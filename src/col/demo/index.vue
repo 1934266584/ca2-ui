@@ -84,15 +84,15 @@ export default {
 .demo-col {
   background: @white;
 
-  .van-doc-demo-block {
+  .zv-doc-demo-block {
     padding: 0 @padding-md;
   }
 
-  .van-doc-demo-block__title {
+  .zv-doc-demo-block__title {
     padding-left: 0;
   }
 
-  .van-col {
+  .zv-col {
     margin-bottom: 10px;
     color: @white;
     font-size: 13px;

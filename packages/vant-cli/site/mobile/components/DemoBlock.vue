@@ -18,7 +18,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-demo-block {
+.zv-doc-demo-block {
   &__title {
     margin: 0;
     padding: 32px 16px 16px;
@@ -29,7 +29,7 @@ export default {
   }
 
   &:first-of-type {
-    .van-doc-demo-block__title {
+    .zv-doc-demo-block__title {
       padding-top: 20px;
     }
   }

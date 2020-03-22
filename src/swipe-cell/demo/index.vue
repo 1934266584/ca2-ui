@@ -109,7 +109,7 @@ export default {
 .demo-swipe-cell {
   user-select: none;
 
-  .van-card {
+  .zv-card {
     margin: 0;
     background-color: @white;
   }

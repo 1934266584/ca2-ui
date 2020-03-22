@@ -123,7 +123,7 @@ export default {
 .demo-uploader {
   background-color: @white;
 
-  .van-uploader {
+  .zv-uploader {
     margin-left: @padding-md;
   }
 }

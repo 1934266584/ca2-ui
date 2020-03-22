@@ -77,7 +77,7 @@ export default {
 @import '../../style/var';
 
 .demo-collapse {
-  .van-icon-question-o {
+  .zv-icon-question-o {
     margin-left: 5px;
     color: @blue;
     font-size: 15px;

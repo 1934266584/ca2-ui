@@ -108,7 +108,7 @@ export default {
 .demo-notify {
   background-color: @white;
 
-  .van-button {
+  .zv-button {
     margin-left: @padding-md;
   }
 }

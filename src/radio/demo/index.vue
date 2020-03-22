@@ -151,7 +151,7 @@ export default {
   &-group {
     padding: 0 16px;
 
-    .van-radio {
+    .zv-radio {
       margin-bottom: 8px;
     }
   }
@@ -160,7 +160,7 @@ export default {
     height: 20px;
   }
 
-  .van-doc-demo-block__title {
+  .zv-doc-demo-block__title {
     margin-top: -8px;
   }
 }

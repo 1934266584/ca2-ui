@@ -27,7 +27,7 @@ test('render image', async () => {
 
   await later();
 
-  const swipe = wrapper.find('.van-swipe__track');
+  const swipe = wrapper.find('.zv-swipe__track');
   triggerDrag(swipe, 500, 0);
   expect(wrapper.emitted('input')).toBeFalsy();
   triggerDrag(swipe, 0, 0);
@@ -47,7 +47,7 @@ test('closeable prop', () => {
     },
   });
 
-  wrapper.find('.van-image-preview__close-icon').trigger('click');
+  wrapper.find('.zv-image-preview__close-icon').trigger('click');
   expect(wrapper.emitted('input')[0][0]).toEqual(false);
 });
 
@@ -90,7 +90,7 @@ test('async close prop', async () => {
     },
   });
 
-  const swipe = wrapper.find('.van-swipe__track');
+  const swipe = wrapper.find('.zv-swipe__track');
 
   // should not emit input or close event when tapped
   triggerDrag(swipe, 0, 0);
@@ -107,8 +107,8 @@ test('function call', done => {
   ImagePreview(images);
   ImagePreview(images.slice(0, 1));
   Vue.nextTick(() => {
-    const wrapper = document.querySelector('.van-image-preview');
-    const swipe = wrapper.querySelector('.van-swipe__track');
+    const wrapper = document.querySelector('.zv-image-preview');
+    const swipe = wrapper.querySelector('.zv-swipe__track');
     triggerDrag(swipe, 0, 0);
 
     expect(wrapper.querySelectorAll('img').length).toEqual(1);
@@ -119,7 +119,7 @@ test('function call', done => {
 test('double click', async done => {
   const instance = ImagePreview(images);
 
-  const swipe = instance.$el.querySelector('.van-swipe__track');
+  const swipe = instance.$el.querySelector('.zv-swipe__track');
   triggerDrag(swipe, 0, 0);
   triggerDrag(swipe, 0, 0);
   expect(instance.scale).toEqual(2);
@@ -159,7 +159,7 @@ test('onChange option', async done => {
     },
   });
 
-  const swipe = instance.$el.querySelector('.van-swipe__track');
+  const swipe = instance.$el.querySelector('.zv-swipe__track');
   triggerDrag(swipe, 1000, 0);
 });
 

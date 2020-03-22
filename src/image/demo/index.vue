@@ -99,11 +99,11 @@ export default {
   overflow-x: hidden;
   background-color: @white;
 
-  .van-row {
+  .zv-row {
     padding: 0 @padding-md;
   }
 
-  .van-col {
+  .zv-col {
     margin-bottom: 20px;
   }
 

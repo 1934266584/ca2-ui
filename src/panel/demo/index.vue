@@ -26,15 +26,15 @@ export default {};
 
 <style lang="less">
 .demo-panel {
-  .van-panel__footer {
+  .zv-panel__footer {
     text-align: right;
 
-    .van-button {
+    .zv-button {
       margin-left: 5px;
     }
   }
 
-  .van-panel__content {
+  .zv-panel__content {
     padding: 20px;
   }
 }

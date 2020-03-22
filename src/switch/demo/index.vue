@@ -89,7 +89,7 @@ export default {
 @import '../../style/var';
 
 .demo-switch {
-  .van-switch {
+  .zv-switch {
     margin-left: @padding-md;
   }
 }

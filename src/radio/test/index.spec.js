@@ -22,8 +22,8 @@ test('radio-group change', () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-radio__icon');
-  const labels = wrapper.findAll('.van-radio__label');
+  const icons = wrapper.findAll('.zv-radio__icon');
+  const labels = wrapper.findAll('.zv-radio__label');
 
   icons.at(2).trigger('click');
   expect(wrapper.vm.result).toEqual('c');
@@ -59,7 +59,7 @@ test('radio group disabled', () => {
     },
   });
 
-  const icons = wrapper.findAll('.van-radio__icon');
+  const icons = wrapper.findAll('.zv-radio__icon');
   icons.at(2).trigger('click');
 
   expect(wrapper.emitted('change')).toBeFalsy();

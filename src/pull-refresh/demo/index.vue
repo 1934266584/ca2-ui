@@ -113,7 +113,7 @@ export default {
 .demo-pull-refresh {
   background-color: @white;
 
-  .van-pull-refresh {
+  .zv-pull-refresh {
     &,
     &__track {
       height: calc(100vh - 50px);

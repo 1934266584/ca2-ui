@@ -16,7 +16,7 @@ test('click event & change event', () => {
     },
   });
 
-  wrapper.find('.van-sidebar-item').trigger('click');
+  wrapper.find('.zv-sidebar-item').trigger('click');
   expect(onClick).toHaveBeenCalledWith(0);
   expect(onChange).toHaveBeenCalledWith(0);
   wrapper.vm.$destroy();
@@ -38,7 +38,7 @@ test('v-model', () => {
   });
 
   wrapper
-    .findAll('.van-sidebar-item')
+    .findAll('.zv-sidebar-item')
     .at(1)
     .trigger('click');
   expect(wrapper.vm.active).toEqual(1);
@@ -60,7 +60,7 @@ test('disabled prop', () => {
   });
 
   wrapper
-    .findAll('.van-sidebar-item')
+    .findAll('.zv-sidebar-item')
     .at(1)
     .trigger('click');
   expect(wrapper.vm.active).toEqual(0);

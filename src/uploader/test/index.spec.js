@@ -306,10 +306,10 @@ test('deletable prop', () => {
     },
   });
 
-  expect(wrapper.find('.van-uploader__preview-delete').element).toBeTruthy();
+  expect(wrapper.find('.zv-uploader__preview-delete').element).toBeTruthy();
 
   wrapper.setProps({ deletable: false });
-  expect(wrapper.find('.van-uploader__preview-delete').element).toBeFalsy();
+  expect(wrapper.find('.zv-uploader__preview-delete').element).toBeFalsy();
 });
 
 test('delete preview image', () => {
@@ -325,7 +325,7 @@ test('delete preview image', () => {
     },
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.zv-uploader__preview-delete').trigger('click');
   expect(wrapper.vm.fileList.length).toEqual(0);
 
   expect(wrapper).toMatchSnapshot();
@@ -340,7 +340,7 @@ test('before-delete prop return false', () => {
     },
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.zv-uploader__preview-delete').trigger('click');
   expect(wrapper.emitted('delete')).toBeFalsy();
 });
 
@@ -352,7 +352,7 @@ test('before-delete prop return true', () => {
     },
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.zv-uploader__preview-delete').trigger('click');
   expect(wrapper.emitted('delete')).toBeTruthy();
 });
 
@@ -364,7 +364,7 @@ test('before-delete prop resolved', async () => {
     },
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.zv-uploader__preview-delete').trigger('click');
   await later();
   expect(wrapper.emitted('delete')).toBeTruthy();
 });
@@ -377,7 +377,7 @@ test('before-delete prop rejected', async () => {
     },
   });
 
-  wrapper.find('.van-uploader__preview-delete').trigger('click');
+  wrapper.find('.zv-uploader__preview-delete').trigger('click');
   await later();
   expect(wrapper.emitted('delete')).toBeFalsy();
 });
@@ -390,16 +390,16 @@ test('click to preview image', () => {
     },
   });
 
-  wrapper.find('.van-image').trigger('click');
-  const imagePreviewNode = document.querySelector('.van-image-preview');
+  wrapper.find('.zv-image').trigger('click');
+  const imagePreviewNode = document.querySelector('.zv-image-preview');
   expect(imagePreviewNode).toBeFalsy();
 
   wrapper.setProps({ previewFullImage: true });
-  wrapper.find('.van-image').trigger('click');
+  wrapper.find('.zv-image').trigger('click');
 
-  const imagePreviewNode2 = document.querySelector('.van-image-preview');
+  const imagePreviewNode2 = document.querySelector('.zv-image-preview');
   const images = imagePreviewNode2.querySelectorAll(
-    '.van-image-preview__image'
+    '.zv-image-preview__image'
   );
   expect(images.length).toEqual(1);
 });
@@ -430,7 +430,7 @@ test('click-preview event', () => {
     },
   });
 
-  wrapper.find('.van-image').trigger('click');
+  wrapper.find('.zv-image').trigger('click');
   expect(wrapper.emitted('click-preview')[0][0]).toEqual({ url: IMAGE });
   expect(wrapper.emitted('click-preview')[0][1]).toEqual({
     name: '',
@@ -445,10 +445,10 @@ test('close-preview event', async () => {
     },
   });
 
-  wrapper.find('.van-image').trigger('click');
+  wrapper.find('.zv-image').trigger('click');
 
-  const preview = document.querySelector('.van-image-preview');
-  const swipe = preview.querySelector('.van-swipe__track');
+  const preview = document.querySelector('.zv-image-preview');
+  const swipe = preview.querySelector('.zv-swipe__track');
   triggerDrag(swipe, 0, 0);
 
   await later(300);
@@ -457,7 +457,7 @@ test('close-preview event', async () => {
 
 test('show-upload prop', () => {
   const wrapper = mount(Uploader);
-  expect(wrapper.contains('.van-uploader__upload')).toBeTruthy();
+  expect(wrapper.contains('.zv-uploader__upload')).toBeTruthy();
   wrapper.setProps({ showUpload: false });
-  expect(wrapper.contains('.van-uploader__upload')).toBeFalsy();
+  expect(wrapper.contains('.zv-uploader__upload')).toBeFalsy();
 });

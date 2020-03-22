@@ -29,7 +29,7 @@ test('route mode', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  const items = wrapper.findAll('.van-tabbar-item');
+  const items = wrapper.findAll('.zv-tabbar-item');
 
   items.at(1).trigger('click');
   await later();
@@ -65,7 +65,7 @@ test('route mode match by name', async () => {
     `,
   });
 
-  const items = wrapper.findAll('.van-tabbar-item');
+  const items = wrapper.findAll('.zv-tabbar-item');
   items.at(0).trigger('click');
   await later();
   expect(wrapper).toMatchSnapshot();
@@ -89,7 +89,7 @@ test('router NavigationDuplicated', async done => {
     `,
     });
 
-    const item = wrapper.find('.van-tabbar-item');
+    const item = wrapper.find('.zv-tabbar-item');
     item.trigger('click');
     item.trigger('click');
 
@@ -133,7 +133,7 @@ test('click event', () => {
     },
   });
 
-  wrapper.find('.van-tabbar-item').trigger('click');
+  wrapper.find('.zv-tabbar-item').trigger('click');
   expect(onClick).toHaveBeenCalledTimes(1);
   expect(onChange).toHaveBeenCalledTimes(0);
 });
@@ -158,7 +158,7 @@ test('name prop', () => {
   });
 
   wrapper
-    .findAll('.van-tabbar-item')
+    .findAll('.zv-tabbar-item')
     .at(1)
     .trigger('click');
 

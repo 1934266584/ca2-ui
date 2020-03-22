@@ -134,7 +134,7 @@ export default {
 
 <style lang="less">
 .demo-contact-card {
-  .van-popup {
+  .zv-popup {
     height: 100%;
     background-color: #f2f2f2;
   }

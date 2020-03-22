@@ -125,7 +125,7 @@ export default {
 
 <style lang="less">
 .demo-tabbar {
-  .van-tabbar {
+  .zv-tabbar {
     position: relative;
   }
 }

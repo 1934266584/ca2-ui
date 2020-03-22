@@ -52,7 +52,7 @@ export default {
 .demo-progress {
   background: @white;
 
-  .van-progress {
+  .zv-progress {
     margin: 20px;
 
     &:first-of-type {

@@ -46,7 +46,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-simulator {
+.zv-doc-simulator {
   position: absolute;
   top: @van-doc-padding + @van-doc-header-top-height;
   right: @van-doc-padding;

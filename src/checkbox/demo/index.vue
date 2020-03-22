@@ -181,12 +181,12 @@ export default {
 .demo-checkbox {
   background: @white;
 
-  .van-checkbox {
+  .zv-checkbox {
     margin: 0 0 8px 20px;
   }
 
-  .van-cell {
-    .van-checkbox {
+  .zv-cell {
+    .zv-checkbox {
       margin: 0;
     }
   }
@@ -198,12 +198,12 @@ export default {
   &-buttons {
     margin-top: @padding-md;
 
-    .van-button {
+    .zv-button {
       margin-left: @padding-md;
     }
   }
 
-  .van-doc-demo-block__title {
+  .zv-doc-demo-block__title {
     margin-top: -8px;
   }
 }

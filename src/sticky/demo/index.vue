@@ -59,7 +59,7 @@ export default {
 .demo-sticky {
   height: 200vh;
 
-  .van-button {
+  .zv-button {
     margin-left: @padding-md;
   }
 }

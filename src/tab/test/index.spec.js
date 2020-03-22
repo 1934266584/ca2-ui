@@ -49,7 +49,7 @@ test('click to switch tab', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.zv-tab');
   tabs.at(1).trigger('click');
   tabs.at(2).trigger('click');
   await later();
@@ -72,7 +72,7 @@ test('swipe to switch tab', async () => {
     },
   });
 
-  const content = wrapper.find('.van-tabs__content');
+  const content = wrapper.find('.zv-tabs__content');
   await later();
   expect(wrapper).toMatchSnapshot();
 
@@ -158,7 +158,7 @@ test('click event', async () => {
     },
   });
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.zv-tab');
 
   tabs.at(0).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title1');
@@ -190,7 +190,7 @@ test('name prop', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.zv-tab');
   tabs.at(1).trigger('click');
 
   expect(onClick).toHaveBeenCalledWith('b', 'title2');
@@ -217,7 +217,7 @@ test('set name to zero', async () => {
     },
   });
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.zv-tab');
   tabs.at(1).trigger('click');
   expect(onClick).toHaveBeenCalledWith(0, 'title2');
 });
@@ -231,7 +231,7 @@ test('title-style prop', () => {
     `,
   });
 
-  expect(wrapper.find('.van-tab').element.style.color).toEqual('red');
+  expect(wrapper.find('.zv-tab').element.style.color).toEqual('red');
 });
 
 test('dot prop', () => {
@@ -278,7 +278,7 @@ test('scrollspy', async () => {
   await later();
   expect(wrapper).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.zv-tab');
   tabs.at(2).trigger('click');
   expect(onChange).toHaveBeenCalledWith('c', 'title3');
 
@@ -310,9 +310,9 @@ test('rendered event', async () => {
 
   await later();
   expect(onRendered).toHaveBeenCalledWith('a', 'title1');
-  expect(wrapper.find('.van-tab__pane')).toMatchSnapshot();
+  expect(wrapper.find('.zv-tab__pane')).toMatchSnapshot();
 
-  const tabs = wrapper.findAll('.van-tab');
+  const tabs = wrapper.findAll('.zv-tab');
   tabs.at(1).trigger('click');
   tabs.at(0).trigger('click');
 

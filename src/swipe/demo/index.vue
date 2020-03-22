@@ -116,7 +116,7 @@ export default {
 .demo-swipe {
   padding-bottom: 30px;
 
-  .van-swipe {
+  .zv-swipe {
     &-item {
       color: @white;
       font-size: 20px;
@@ -144,7 +144,7 @@ export default {
   }
 
   &--vertical {
-    .van-swipe-item {
+    .zv-swipe-item {
       line-height: 200px;
     }
   }

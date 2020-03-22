@@ -93,7 +93,7 @@ export default {
 @import '../common/style/base';
 @import '../common/style/highlight';
 
-.van-doc-intro {
+.zv-doc-intro {
   padding-top: 20px;
   font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   text-align: center;

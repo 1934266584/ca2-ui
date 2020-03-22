@@ -23,7 +23,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-content {
+.zv-doc-content {
   position: relative;
   flex: 1;
   padding: 0 0 75px;

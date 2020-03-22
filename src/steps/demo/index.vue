@@ -94,15 +94,15 @@ export default {
 
 .demo-steps {
   .steps-success,
-  .van-icon-location {
+  .zv-icon-location {
     color: @green;
   }
 
-  .van-button {
+  .zv-button {
     margin: @padding-md 0 0 @padding-md;
   }
 
-  .van-steps__message + p {
+  .zv-steps__message + p {
     margin-bottom: 10px;
   }
 

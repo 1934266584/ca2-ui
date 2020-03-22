@@ -147,11 +147,11 @@ export default {
 @import '../../style/var';
 
 .demo-popup {
-  .van-row {
+  .zv-row {
     margin-bottom: @padding-md;
   }
 
-  .van-button {
+  .zv-button {
     margin-left: @padding-md;
   }
 }

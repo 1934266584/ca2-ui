@@ -77,7 +77,7 @@ test('resetValidation method - reset all fields', done => {
     mounted() {
       this.$refs.form.validate().catch(() => {
         this.$refs.form.resetValidation();
-        const errors = wrapper.findAll('.van-field__error-message');
+        const errors = wrapper.findAll('.zv-field__error-message');
         expect(errors.length).toEqual(0);
         done();
       });

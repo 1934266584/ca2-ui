@@ -27,7 +27,7 @@ const component = {
 test('basic mode', async () => {
   const wrapper = mount(component);
 
-  const titles = wrapper.findAll('.van-collapse-item__title');
+  const titles = wrapper.findAll('.zv-collapse-item__title');
   titles.at(0).trigger('click');
   expect(wrapper.vm.active).toEqual(['first']);
 
@@ -49,7 +49,7 @@ test('accordion', async () => {
     },
   });
 
-  const titles = wrapper.findAll('.van-collapse-item__title');
+  const titles = wrapper.findAll('.zv-collapse-item__title');
   titles.at(0).trigger('click');
   expect(wrapper.vm.active).toEqual('first');
 
@@ -116,7 +116,7 @@ test('lazy render collapse content', async () => {
     },
   });
 
-  const titles = wrapper.findAll('.van-collapse-item__title');
+  const titles = wrapper.findAll('.zv-collapse-item__title');
 
   titles.at(1).trigger('click');
   wrapper.vm.content = 'content';

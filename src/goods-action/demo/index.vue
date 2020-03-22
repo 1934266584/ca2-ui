@@ -115,7 +115,7 @@ export default {
 
 <style lang="less">
 .demo-goods-action {
-  .van-goods-action {
+  .zv-goods-action {
     position: relative;
   }
 }

@@ -99,7 +99,7 @@ export default {
 .demo-count-down {
   background-color: @white;
 
-  .van-count-down {
+  .zv-count-down {
     margin-left: @padding-md;
   }
 
@@ -114,7 +114,7 @@ export default {
     border-radius: 2px;
   }
 
-  .van-grid {
+  .zv-grid {
     margin-top: 10px;
   }
 }

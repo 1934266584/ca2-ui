@@ -36,7 +36,7 @@ test('click and scroll to anchor', () => {
   });
 
   const fn = mockScrollIntoView();
-  const indexes = wrapper.findAll('.van-index-bar__index');
+  const indexes = wrapper.findAll('.zv-index-bar__index');
   indexes.at(0).trigger('click');
 
   expect(fn).toHaveBeenCalledTimes(1);
@@ -59,8 +59,8 @@ test('touch and scroll to anchor', () => {
   });
 
   const fn = mockScrollIntoView();
-  const sidebar = wrapper.find('.van-index-bar__sidebar');
-  const indexes = wrapper.findAll('.van-index-bar__index');
+  const sidebar = wrapper.find('.zv-index-bar__sidebar');
+  const indexes = wrapper.findAll('.zv-index-bar__index');
 
   document.elementFromPoint = function(x, y) {
     const index = y / 100;

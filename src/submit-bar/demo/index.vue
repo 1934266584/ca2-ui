@@ -90,7 +90,7 @@ export default {
 @import '../../style/var';
 
 .demo-submit-bar {
-  .van-submit-bar {
+  .zv-submit-bar {
     position: relative;
   }
 
@@ -98,7 +98,7 @@ export default {
     color: @blue;
   }
 
-  .van-checkbox {
+  .zv-checkbox {
     margin-right: @padding-sm;
   }
 }

@@ -20,7 +20,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-container {
+.zv-doc-container {
   box-sizing: border-box;
   padding-left: @van-doc-nav-width;
   overflow: hidden;

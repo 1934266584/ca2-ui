@@ -99,7 +99,7 @@ export default {
   padding-bottom: 20px;
   background-color: #fff;
 
-  .van-rate {
+  .zv-rate {
     margin-left: @padding-md;
   }
 }

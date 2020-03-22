@@ -1,7 +1,7 @@
 import { mount, later } from '../../../test';
 
 export async function submitForm(wrapper) {
-  wrapper.find('.van-button').trigger('click');
+  wrapper.find('.zv-button').trigger('click');
   return later();
 }
 

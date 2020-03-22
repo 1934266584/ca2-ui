@@ -29,7 +29,7 @@ export default {
     if (this.searchConfig) {
       this.docsearchInstance = window.docsearch({
         ...this.searchConfig,
-        inputSelector: '.van-doc-search',
+        inputSelector: '.zv-doc-search',
         algoliaOptions: {
           facetFilters: [`lang:${this.lang}`],
         },
@@ -42,7 +42,7 @@ export default {
 <style lang="less">
 @import '../../common/style/var';
 
-.van-doc-search {
+.zv-doc-search {
   width: 200px;
   height: 60px;
   margin-left: 140px;
