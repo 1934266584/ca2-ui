@@ -175,8 +175,8 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-icon {
   font-size: 0;
@@ -203,19 +203,19 @@ export default {
       height: 36px;
       margin: -4px 0 4px;
       padding: 0 5px;
-      color: @gray-7;
+      color: $gray-7;
       font-size: 12px;
       line-height: 18px;
     }
 
     &:active {
-      background-color: @active-color;
+      background-color: $active-color;
     }
   }
 
   .zv-icon {
     margin: 16px 0 16px;
-    color: @text-color;
+    color: $text-color;
     font-size: 32px;
   }
 

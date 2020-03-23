@@ -9,6 +9,11 @@ module.exports = {
       tagPrefix: 'zv-',
     },
   },
+  build: {
+    css: {
+      preprocessor: 'sass'
+    }
+  },
   site: {
     defaultLang: 'en-US',
     versions: [{ label: '1.x', link: 'https://youzan.github.io/vant/1.x/' }],

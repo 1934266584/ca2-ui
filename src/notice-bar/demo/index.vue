@@ -51,11 +51,11 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-notice-bar {
-  background: @white;
+  background: $white;
 
   .zv-notice-bar:not(:first-of-type) {
     margin-top: 4px;

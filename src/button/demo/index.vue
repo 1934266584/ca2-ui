@@ -143,25 +143,25 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-button {
-  background: @white;
+  background: $white;
 
   .zv-button {
     &--large {
-      margin-bottom: @padding-md;
+      margin-bottom: $padding-md;
     }
 
     &--small,
     &--normal:not(:last-child) {
-      margin-right: @padding-md;
+      margin-right: $padding-md;
     }
   }
 
   .zv-doc-demo-block {
-    padding: 0 @padding-md;
+    padding: 0 $padding-md;
   }
 
   .zv-doc-demo-block__title {
@@ -169,7 +169,7 @@ export default {
   }
 
   &-row {
-    margin-bottom: @padding-sm;
+    margin-bottom: $padding-sm;
   }
 }
 </style>

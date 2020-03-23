@@ -24,7 +24,7 @@
 export default {};
 </script>
 
-<style lang="less">
+<style lang="scss">
 .demo-panel {
   .zv-panel__footer {
     text-align: right;

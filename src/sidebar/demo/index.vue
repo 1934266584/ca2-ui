@@ -78,19 +78,19 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-sidebar {
-  background-color: @white;
+  background-color: $white;
 
   .zv-sidebar {
-    margin-left: @padding-md;
+    margin-left: $padding-md;
   }
 
   &-title {
     margin-bottom: 16px;
-    color: @gray-6;
+    color: $gray-6;
     font-weight: normal;
     font-size: 14px;
   }

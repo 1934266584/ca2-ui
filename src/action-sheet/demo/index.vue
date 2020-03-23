@@ -126,12 +126,12 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-action-sheet {
   &-content {
-    padding: @padding-md @padding-md @padding-md * 10;
+    padding: $padding-md $padding-md $padding-md * 10;
   }
 }
 </style>

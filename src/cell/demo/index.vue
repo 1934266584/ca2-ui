@@ -111,7 +111,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .demo-cell {
   .custom-title {
     margin-right: 5px;

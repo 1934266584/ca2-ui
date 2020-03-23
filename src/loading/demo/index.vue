@@ -50,11 +50,11 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-loading {
-  background: @white;
+  background: $white;
 
   .zv-loading {
     display: inline-block;

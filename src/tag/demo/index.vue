@@ -107,19 +107,19 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-tag {
-  background-color: @white;
+  background-color: $white;
 
   .zv-tag + .zv-tag {
-    margin-left: @padding-xs;
+    margin-left: $padding-xs;
   }
 
   .zv-tag {
     &:first-of-type {
-      margin-left: @padding-md;
+      margin-left: $padding-md;
     }
   }
 }

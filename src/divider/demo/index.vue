@@ -65,14 +65,14 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-divider {
-  background-color: @white;
+  background-color: $white;
 
   .zv-doc-demo-block__title {
-    padding-top: @padding-md;
+    padding-top: $padding-md;
   }
 }
 </style>

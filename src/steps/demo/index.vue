@@ -89,17 +89,17 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-steps {
   .steps-success,
   .zv-icon-location {
-    color: @green;
+    color: $green;
   }
 
   .zv-button {
-    margin: @padding-md 0 0 @padding-md;
+    margin: $padding-md 0 0 $padding-md;
   }
 
   .zv-steps__message + p {

@@ -125,8 +125,8 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-list {
   .zv-cell {
@@ -136,7 +136,7 @@ export default {
   .page-desc {
     margin: 0;
     padding: 5px 0;
-    color: @gray-7;
+    color: $gray-7;
     font-size: 14px;
     text-align: center;
 
@@ -150,7 +150,7 @@ export default {
   }
 
   .zv-checkbox__label {
-    color: @gray-7;
+    color: $gray-7;
   }
 }
 </style>

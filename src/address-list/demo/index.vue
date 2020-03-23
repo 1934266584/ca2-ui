@@ -95,7 +95,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .demo-address-list {
   .zv-doc-demo-block__title {
     padding-bottom: 0;

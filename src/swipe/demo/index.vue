@@ -110,15 +110,15 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-swipe {
   padding-bottom: 30px;
 
   .zv-swipe {
     &-item {
-      color: @white;
+      color: $white;
       font-size: 20px;
       line-height: 150px;
       text-align: center;
@@ -138,7 +138,7 @@ export default {
       width: 100%;
       height: 240px;
       padding: 30px 60px;
-      background-color: @white;
+      background-color: $white;
       pointer-events: none;
     }
   }
@@ -154,7 +154,7 @@ export default {
     right: 5px;
     bottom: 5px;
     padding: 2px 5px;
-    color: @white;
+    color: $white;
     font-size: 12px;
     background: rgba(0, 0, 0, 0.1);
   }

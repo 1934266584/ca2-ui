@@ -85,12 +85,12 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-switch {
   .zv-switch {
-    margin-left: @padding-md;
+    margin-left: $padding-md;
   }
 }
 </style>

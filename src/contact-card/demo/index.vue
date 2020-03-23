@@ -132,7 +132,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .demo-contact-card {
   .zv-popup {
     height: 100%;

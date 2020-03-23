@@ -61,8 +61,8 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-pagination {
   .zv-pagination {
@@ -71,7 +71,7 @@ export default {
   }
 
   .zv-doc-demo-block {
-    padding: 0 @padding-md;
+    padding: 0 $padding-md;
   }
 
   .zv-doc-demo-block__title {

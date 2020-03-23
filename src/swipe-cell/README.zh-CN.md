@@ -55,7 +55,7 @@ Vue.use(SwipeCell);
 <style>
 .goods-card {
   margin: 0;
-  background-color: @white;
+  background-color: $white;
 }
 
 .delete-button {

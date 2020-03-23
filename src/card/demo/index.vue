@@ -78,10 +78,10 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-card {
-  background-color: @white;
+  background-color: $white;
 }
 </style>

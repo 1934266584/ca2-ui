@@ -1,0 +1,8 @@
+@import '../style/var.scss';
+
+.zv-checkbox-group {
+  &--horizontal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

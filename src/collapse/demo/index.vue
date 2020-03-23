@@ -73,13 +73,13 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-collapse {
   .zv-icon-question-o {
     margin-left: 5px;
-    color: @blue;
+    color: $blue;
     font-size: 15px;
     vertical-align: -3px;
   }

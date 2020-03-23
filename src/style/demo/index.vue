@@ -71,25 +71,25 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-style {
   .zv-ellipsis,
   .zv-multi-ellipsis--l2 {
     max-width: 300px;
-    margin-left: @padding-md;
+    margin-left: $padding-md;
     font-size: 14px;
     line-height: 18px;
   }
 
   .zv-ellipsis {
-    margin-bottom: @padding-md;
+    margin-bottom: $padding-md;
   }
 
   .zv-hairline--top {
     height: 30px;
-    background-color: @white;
+    background-color: $white;
 
     &::after {
       top: 5px;
@@ -103,7 +103,7 @@ export default {
     width: 100px;
     height: 100px;
     margin: -50px 0 0 -50px;
-    background-color: @blue;
+    background-color: $blue;
     border-radius: 3px;
   }
 }

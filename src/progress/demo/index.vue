@@ -46,11 +46,11 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-progress {
-  background: @white;
+  background: $white;
 
   .zv-progress {
     margin: 20px;

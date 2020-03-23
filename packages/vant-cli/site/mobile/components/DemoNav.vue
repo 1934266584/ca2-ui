@@ -32,7 +32,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .demo-nav {
   position: relative;
   height: 56px;

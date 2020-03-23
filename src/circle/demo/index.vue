@@ -118,19 +118,19 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-circle {
   .zv-circle {
-    margin-left: @padding-md;
+    margin-left: $padding-md;
   }
 
   .zv-button {
-    margin: @padding-md 0 0 10px;
+    margin: $padding-md 0 0 10px;
 
     &:first-of-type {
-      margin-left: @padding-md;
+      margin-left: $padding-md;
     }
   }
 }

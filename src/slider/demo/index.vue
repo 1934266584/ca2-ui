@@ -86,15 +86,15 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-slider {
-  background: @white;
+  background: $white;
   user-select: none;
 
   .zv-doc-demo-block {
-    padding: 0 @padding-md 20px;
+    padding: 0 $padding-md 20px;
   }
 
   .zv-doc-demo-block__title {
@@ -107,7 +107,7 @@ export default {
     font-size: 10px;
     line-height: 18px;
     text-align: center;
-    background-color: @red;
+    background-color: $red;
     border-radius: 100px;
   }
 }

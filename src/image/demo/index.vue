@@ -92,15 +92,15 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-image {
   overflow-x: hidden;
-  background-color: @white;
+  background-color: $white;
 
   .zv-row {
-    padding: 0 @padding-md;
+    padding: 0 $padding-md;
   }
 
   .zv-col {
@@ -109,7 +109,7 @@ export default {
 
   .text {
     margin-top: 5px;
-    color: @gray-7;
+    color: $gray-7;
     font-size: 14px;
     text-align: center;
   }

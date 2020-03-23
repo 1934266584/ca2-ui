@@ -50,11 +50,11 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-overlay {
-  background: @white;
+  background: $white;
 
   .wrapper {
     display: flex;
@@ -66,7 +66,7 @@ export default {
   .block {
     width: 120px;
     height: 120px;
-    background-color: @white;
+    background-color: $white;
   }
 }
 </style>

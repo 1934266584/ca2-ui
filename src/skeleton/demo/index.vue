@@ -49,19 +49,19 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-skeleton {
-  background-color: @white;
+  background-color: $white;
 
   .zv-switch {
-    margin: 0 @padding-md @padding-xs;
+    margin: 0 $padding-md $padding-xs;
   }
 
   .demo-preview {
     display: flex;
-    padding: 0 @padding-md;
+    padding: 0 $padding-md;
 
     .demo-content {
       padding-top: 6px;
@@ -83,7 +83,7 @@ export default {
       flex-shrink: 0;
       width: 32px;
       height: 32px;
-      margin-right: @padding-md;
+      margin-right: $padding-md;
     }
   }
 }

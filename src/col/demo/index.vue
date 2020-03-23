@@ -78,14 +78,14 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-col {
-  background: @white;
+  background: $white;
 
   .zv-doc-demo-block {
-    padding: 0 @padding-md;
+    padding: 0 $padding-md;
   }
 
   .zv-doc-demo-block__title {
@@ -94,7 +94,7 @@ export default {
 
   .zv-col {
     margin-bottom: 10px;
-    color: @white;
+    color: $white;
     font-size: 13px;
     line-height: 30px;
     text-align: center;

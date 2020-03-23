@@ -175,11 +175,11 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-checkbox {
-  background: @white;
+  background: $white;
 
   .zv-checkbox {
     margin: 0 0 8px 20px;
@@ -196,10 +196,10 @@ export default {
   }
 
   &-buttons {
-    margin-top: @padding-md;
+    margin-top: $padding-md;
 
     .zv-button {
-      margin-left: @padding-md;
+      margin-left: $padding-md;
     }
   }
 

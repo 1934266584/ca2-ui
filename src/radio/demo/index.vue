@@ -142,11 +142,11 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-radio {
-  background: @white;
+  background: $white;
 
   &-group {
     padding: 0 16px;

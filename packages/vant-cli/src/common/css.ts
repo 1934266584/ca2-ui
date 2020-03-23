@@ -8,7 +8,7 @@ type CSS_LANG = 'css' | 'less' | 'scss';
 
 function getCssLang(): CSS_LANG {
   const vantConfig = getVantConfig();
-  const preprocessor = get(vantConfig, 'build.css.preprocessor', 'less');
+  const preprocessor = get(vantConfig, 'build.css.preprocessor', 'scss');
 
   if (preprocessor === 'sass') {
     return 'scss';

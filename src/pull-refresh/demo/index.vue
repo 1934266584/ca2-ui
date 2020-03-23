@@ -107,11 +107,11 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-pull-refresh {
-  background-color: @white;
+  background-color: $white;
 
   .zv-pull-refresh {
     &,
@@ -129,7 +129,7 @@ export default {
 
   p {
     margin: 0;
-    padding: @padding-md 0 0 @padding-md;
+    padding: $padding-md 0 0 $padding-md;
   }
 }
 </style>

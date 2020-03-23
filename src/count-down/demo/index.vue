@@ -93,14 +93,14 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-count-down {
-  background-color: @white;
+  background-color: $white;
 
   .zv-count-down {
-    margin-left: @padding-md;
+    margin-left: $padding-md;
   }
 
   .item {
@@ -110,7 +110,7 @@ export default {
     color: #fff;
     font-size: 12px;
     text-align: center;
-    background-color: @blue;
+    background-color: $blue;
     border-radius: 2px;
   }
 

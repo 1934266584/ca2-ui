@@ -147,14 +147,14 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-toast {
-  background-color: @white;
+  background-color: $white;
 
   .zv-button {
-    margin-left: @padding-md;
+    margin-left: $padding-md;
   }
 }
 </style>

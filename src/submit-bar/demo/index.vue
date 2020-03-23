@@ -86,8 +86,8 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-submit-bar {
   .zv-submit-bar {
@@ -95,11 +95,11 @@ export default {
   }
 
   .edit-address {
-    color: @blue;
+    color: $blue;
   }
 
   .zv-checkbox {
-    margin-right: @padding-sm;
+    margin-right: $padding-sm;
   }
 }
 </style>

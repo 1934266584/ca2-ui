@@ -5,6 +5,7 @@ ls:
     .tsx: kebab-case | PascalCase
     .vue: kebab-case | PascalCase
     .less: kebab-case
+    .scss: kebab-case
     .spec.js: kebab-case
 
   types:

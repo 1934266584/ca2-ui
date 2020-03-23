@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 .demo-form {
   width: 100vw;
   overflow: hidden;

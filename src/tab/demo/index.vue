@@ -150,8 +150,8 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-tab {
   margin-bottom: 80vh;
@@ -163,7 +163,7 @@ export default {
 
   .zv-tab__pane {
     padding: 25px 20px;
-    background-color: @white;
+    background-color: $white;
   }
 
   .zv-tabs--card .zv-tab__pane {

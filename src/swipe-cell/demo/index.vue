@@ -103,15 +103,15 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../style/var';
+<style lang="scss">
+@import '../../style/var.scss';
 
 .demo-swipe-cell {
   user-select: none;
 
   .zv-card {
     margin: 0;
-    background-color: @white;
+    background-color: $white;
   }
 
   .delete-button {

@@ -574,7 +574,7 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 - 修复 Sku 内容最小高度错误的问题 [\#4942](https://github.com/youzan/vant/pull/4942)
 - 修复 List 在初始化时可能同时触发两次 load 事件的问题 [\#4953](https://github.com/youzan/vant/pull/4953)
-- 修复 @border-color 变量无法定制某些组件边框颜色的问题 [\#4939](https://github.com/youzan/vant/pull/4939)
+- 修复 $border-color 变量无法定制某些组件边框颜色的问题 [\#4939](https://github.com/youzan/vant/pull/4939)
 
 ### [v2.2.11](https://github.com/youzan/vant/tree/v2.2.11)
 
