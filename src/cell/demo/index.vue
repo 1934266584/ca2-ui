@@ -1,15 +1,15 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-cell-group>
-        <van-cell :title="t('cell')" :value="t('content')" />
-        <van-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
-      </van-cell-group>
+      <zv-cell-group>
+        <zv-cell :title="t('cell')" :value="t('content')" />
+        <zv-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
+      </zv-cell-group>
     </demo-block>
 
     <demo-block :title="t('largeSize')">
-      <van-cell :title="t('cell')" :value="t('content')" size="large" />
-      <van-cell
+      <zv-cell :title="t('cell')" :value="t('content')" size="large" />
+      <zv-cell
         :title="t('cell')"
         :value="t('content')"
         size="large"
@@ -18,17 +18,17 @@
     </demo-block>
 
     <demo-block :title="t('showIcon')">
-      <van-cell :title="t('cell')" :value="t('content')" icon="location-o" />
+      <zv-cell :title="t('cell')" :value="t('content')" icon="location-o" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('valueOnly')">
-      <van-cell :value="t('content')" />
+      <zv-cell :value="t('content')" />
     </demo-block>
 
     <demo-block :title="t('showArrow')">
-      <van-cell :title="t('cell')" is-link />
-      <van-cell :title="t('cell')" is-link :value="t('content')" />
-      <van-cell
+      <zv-cell :title="t('cell')" is-link />
+      <zv-cell :title="t('cell')" is-link :value="t('content')" />
+      <zv-cell
         :title="t('cell')"
         is-link
         arrow-direction="down"
@@ -37,36 +37,36 @@
     </demo-block>
 
     <demo-block :title="t('router')">
-      <van-cell :title="t('urlRoute')" is-link url="/vant/mobile.html" />
-      <van-cell :title="t('vueRoute')" is-link to="index" />
+      <zv-cell :title="t('urlRoute')" is-link url="/vant/mobile.html" />
+      <zv-cell :title="t('vueRoute')" is-link to="index" />
     </demo-block>
 
     <demo-block :title="t('groupTitle')">
-      <van-cell-group :title="`${t('group')} 1`">
-        <van-cell :title="t('cell')" :value="t('content')" />
-      </van-cell-group>
-      <van-cell-group :title="`${t('group')} 2`">
-        <van-cell :title="t('cell')" :value="t('content')" />
-      </van-cell-group>
+      <zv-cell-group :title="`${t('group')} 1`">
+        <zv-cell :title="t('cell')" :value="t('content')" />
+      </zv-cell-group>
+      <zv-cell-group :title="`${t('group')} 2`">
+        <zv-cell :title="t('cell')" :value="t('content')" />
+      </zv-cell-group>
     </demo-block>
 
     <demo-block :title="t('useSlots')">
-      <van-cell :value="t('content')" is-link>
+      <zv-cell :value="t('content')" is-link>
         <template #title>
           <span class="custom-title">{{ t('cell') }}</span>
-          <van-tag type="danger">{{ t('tag') }}</van-tag>
+          <zv-tag type="danger">{{ t('tag') }}</zv-tag>
         </template>
-      </van-cell>
+      </zv-cell>
 
-      <van-cell icon="shop-o" :title="t('cell')">
+      <zv-cell icon="shop-o" :title="t('cell')">
         <template #right-icon>
-          <van-icon name="search" style="line-height: inherit;" />
+          <zv-icon name="search" style="line-height: inherit;" />
         </template>
-      </van-cell>
+      </zv-cell>
     </demo-block>
 
     <demo-block :title="t('verticalCenter')">
-      <van-cell
+      <zv-cell
         center
         :title="t('cell')"
         :value="t('content')"

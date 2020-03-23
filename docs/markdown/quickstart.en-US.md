@@ -107,7 +107,7 @@ The easiest way to use Vant is to include a CDN link in the html file, after whi
   // Render the Button component
   new Vue({
     el: '#app',
-    template: `<van-button>Button</van-button>`
+    template: `<zv-button>Button</zv-button>`
   });
 
   // Call function component

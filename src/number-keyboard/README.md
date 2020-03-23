@@ -14,10 +14,10 @@ Vue.use(NumberKeyboard);
 ### Default Style
 
 ```html
-<van-button @touchstart.stop="show = true">
+<zv-button @touchstart.stop="show = true">
   Show Keyboard
-</van-button>
-<van-number-keyboard
+</zv-button>
+<zv-number-keyboard
   :show="show"
   extra-key="."
   close-button-text="Close"
@@ -50,7 +50,7 @@ export default {
 ### Custom Style
 
 ```html
-<van-number-keyboard
+<zv-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -64,14 +64,14 @@ export default {
 ### Bind Value
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
 
-<van-number-keyboard
+<zv-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"
@@ -95,11 +95,11 @@ export default {
 Use `extra-key` prop to set the content of bottom left button
 
 ```html
-<van-button plain type="primary" @touchstart.stop="show = true">
+<zv-button plain type="primary" @touchstart.stop="show = true">
   Show Id Card Number Keyboard
-</van-button>
+</zv-button>
 
-<van-number-keyboard
+<zv-number-keyboard
   :show="show"
   close-button-text="Close"
   extra-key="X"
@@ -114,11 +114,11 @@ Use `extra-key` prop to set the content of bottom left button
 Use `title` prop to set keyboard title
 
 ```html
-<van-button plain type="info" @touchstart.stop="show = true">
+<zv-button plain type="info" @touchstart.stop="show = true">
   Show Custom Title Keyboard
-</van-button>
+</zv-button>
 
-<van-number-keyboard
+<zv-number-keyboard
   :show="show"
   close-button-text="Close"
   title="Keyboard Title"

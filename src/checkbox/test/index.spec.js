@@ -46,11 +46,11 @@ test('label disabled', () => {
 test('checkbox group', async () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group v-model="result" :max="2">
-        <van-checkbox name="a" />
-        <van-checkbox name="b" />
-        <van-checkbox name="c" />
-      </van-checkbox-group>
+      <zv-checkbox-group v-model="result" :max="2">
+        <zv-checkbox name="a" />
+        <zv-checkbox name="b" />
+        <zv-checkbox name="c" />
+      </zv-checkbox-group>
     `,
     data() {
       return {
@@ -105,10 +105,10 @@ test('label-position prop', () => {
 test('icon-size prop', () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group icon-size="10rem">
-        <van-checkbox>label</van-checkbox>
-        <van-checkbox icon-size="5rem">label</van-checkbox>
-      </van-checkbox-group>
+      <zv-checkbox-group icon-size="10rem">
+        <zv-checkbox>label</zv-checkbox>
+        <zv-checkbox icon-size="5rem">label</zv-checkbox>
+      </zv-checkbox-group>
     `,
   });
 
@@ -118,10 +118,10 @@ test('icon-size prop', () => {
 test('checked-color prop', () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group :value="['a', 'b']" checked-color="black">
-        <van-checkbox name="a" :value="true">label</van-checkbox>
-        <van-checkbox name="b" :value="true" checked-color="white">label</van-checkbox>
-      </van-checkbox-group>
+      <zv-checkbox-group :value="['a', 'b']" checked-color="black">
+        <zv-checkbox name="a" :value="true">label</zv-checkbox>
+        <zv-checkbox name="b" :value="true" checked-color="white">label</zv-checkbox>
+      </zv-checkbox-group>
     `,
   });
 
@@ -131,10 +131,10 @@ test('checked-color prop', () => {
 test('bind-group prop', async () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group v-model="result">
-        <van-checkbox v-model="value" :bind-group="false" />
-        <van-checkbox v-for="item in list" :key="item" :name="item"></van-checkbox>
-      </van-checkbox-group>
+      <zv-checkbox-group v-model="result">
+        <zv-checkbox v-model="value" :bind-group="false" />
+        <zv-checkbox v-for="item in list" :key="item" :name="item"></zv-checkbox>
+      </zv-checkbox-group>
     `,
     data() {
       return {
@@ -155,11 +155,11 @@ test('bind-group prop', async () => {
 test('toggleAll method', async () => {
   const wrapper = mount({
     template: `
-      <van-checkbox-group v-model="result" ref="group">
-        <van-checkbox name="a" />
-        <van-checkbox name="b" />
-        <van-checkbox name="c" />
-      </van-checkbox-group>
+      <zv-checkbox-group v-model="result" ref="group">
+        <zv-checkbox name="a" />
+        <zv-checkbox name="b" />
+        <zv-checkbox name="c" />
+      </zv-checkbox-group>
     `,
     data() {
       return {

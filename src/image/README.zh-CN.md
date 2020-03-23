@@ -20,7 +20,7 @@ Vue.use(Image);
 基础用法与原生`img`标签一致，可以设置`src`、`width`、`height`、`alt`等原生属性
 
 ```html
-<van-image
+<zv-image
   width="100"
   height="100"
   src="https://img.yzcdn.cn/vant/cat.jpeg"
@@ -32,7 +32,7 @@ Vue.use(Image);
 通过`fit`属性可以设置图片填充模式，可选值见下方表格
 
 ```html
-<van-image
+<zv-image
   width="10rem"
   height="10rem"
   fit="contain"
@@ -45,7 +45,7 @@ Vue.use(Image);
 通过`round`属性可以设置图片变圆，注意当图片宽高不相等且`fit`为`contain`或`scale-down`时，将无法填充一个完整的圆形。
 
 ```html
-<van-image
+<zv-image
   round
   width="10rem"
   height="10rem"
@@ -58,7 +58,7 @@ Vue.use(Image);
 设置`lazy-load`属性来开启图片懒加载，需要搭配 [Lazyload](#/zh-CN/lazyload) 组件使用
 
 ```html
-<van-image
+<zv-image
   width="100"
   height="100"
   lazy-load
@@ -78,11 +78,11 @@ Vue.use(Lazyload);
 `Image`组件提供了默认的加载中提示，支持通过`loading`插槽自定义内容
 
 ```html
-<van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
+<zv-image src="https://img.yzcdn.cn/vant/cat.jpeg">
   <template v-slot:loading>
-    <van-loading type="spinner" size="20" />
+    <zv-loading type="spinner" size="20" />
   </template>
-</van-image>
+</zv-image>
 ```
 
 ### 加载失败提示
@@ -90,9 +90,9 @@ Vue.use(Lazyload);
 `Image`组件提供了默认的加载失败提示，支持通过`error`插槽自定义内容
 
 ```html
-<van-image src="https://img.yzcdn.cn/vant/cat.jpeg">
+<zv-image src="https://img.yzcdn.cn/vant/cat.jpeg">
   <template v-slot:error>加载失败</template>
-</van-image>
+</zv-image>
 ```
 
 ## API
@@ -147,10 +147,10 @@ Vue.use(Lazyload);
 
 ```html
 <!-- 错误写法 -->
-<van-image src="./image.png" />
+<zv-image src="./image.png" />
 
 <!-- 正确写法 -->
-<van-image :src="require('./image.png')" />
+<zv-image :src="require('./image.png')" />
 ```
 
 > 对此更详细的解释可以参考 vue-loader 的[处理资源路径](https://vue-loader.vuejs.org/zh/guide/asset-url.html)章节。
@@ -175,4 +175,4 @@ export default {
 <script>
 ```
 
-这是因为 \<image> 标签是原生的 SVG 标签，Vue 不允许将原生标签名注册为组件名，使用 \<van-image> 即可规避这个问题。
+这是因为 \<image> 标签是原生的 SVG 标签，Vue 不允许将原生标签名注册为组件名，使用 \<zv-image> 即可规避这个问题。

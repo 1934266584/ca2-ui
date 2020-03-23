@@ -21,7 +21,7 @@ Vue.use(ContactEdit);
 
 ```html
 <!-- 联系人卡片 -->
-<van-contact-card
+<zv-contact-card
   :type="cardType"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -29,25 +29,25 @@ Vue.use(ContactEdit);
 />
 
 <!-- 联系人列表 -->
-<van-popup v-model="showList" position="bottom">
-  <van-contact-list
+<zv-popup v-model="showList" position="bottom">
+  <zv-contact-list
     v-model="chosenContactId"
     :list="list"
     @add="onAdd"
     @edit="onEdit"
     @select="onSelect"
   />
-</van-popup>
+</zv-popup>
 
 <!-- 联系人编辑 -->
-<van-popup v-model="showEdit" position="bottom">
-  <van-contact-edit
+<zv-popup v-model="showEdit" position="bottom">
+  <zv-contact-edit
     :contact-info="editingContact"
     :is-edit="isEdit"
     @save="onSave"
     @delete="onDelete"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -126,7 +126,7 @@ export default {
 ### 不可编辑
 
 ```html
-<van-contact-card
+<zv-contact-card
   type="edit"
   name="张三"
   tel="13000000000"

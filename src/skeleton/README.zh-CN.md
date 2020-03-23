@@ -16,7 +16,7 @@ Vue.use(Skeleton);
 通过`title`属性显示标题占位图，通过`row`属性配置占位段落行数
 
 ```html
-<van-skeleton title :row="3" />
+<zv-skeleton title :row="3" />
 ```
 
 ### 显示头像
@@ -24,7 +24,7 @@ Vue.use(Skeleton);
 通过`avatar`属性显示头像占位图
 
 ```html
-<van-skeleton title avatar :row="3" />
+<zv-skeleton title avatar :row="3" />
 ```
 
 ### 展示子组件
@@ -32,14 +32,14 @@ Vue.use(Skeleton);
 将`loading`属性设置成`false`表示内容加载完成，此时会隐藏占位图，并显示`Skeleton`的子组件
 
 ```html
-<van-skeleton
+<zv-skeleton
   title
   avatar
   :row="3"
   :loading="loading"
 >
   <div>实际内容</div>
-</van-skeleton>
+</zv-skeleton>
 ```
 
 ```js

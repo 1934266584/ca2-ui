@@ -15,10 +15,10 @@ Vue.use(DropdownItem);
 ### Basic Usage
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<zv-dropdown-menu>
+  <zv-dropdown-item v-model="value1" :options="option1" />
+  <zv-dropdown-item v-model="value2" :options="option2" />
+</zv-dropdown-menu>
 ```
 
 ```js
@@ -45,14 +45,14 @@ export default {
 ### Custom Content
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value" :options="option" />
-  <van-dropdown-item title="Title" ref="item">
-    <van-switch-cell v-model="switch1" title="Title" />
-    <van-switch-cell v-model="switch2" title="Title" />
-    <van-button block type="info" @click="onConfirm">Confirm</van-button>
-  </van-dropdown-item>
-</van-dropdown-menu>
+<zv-dropdown-menu>
+  <zv-dropdown-item v-model="value" :options="option" />
+  <zv-dropdown-item title="Title" ref="item">
+    <zv-switch-cell v-model="switch1" title="Title" />
+    <zv-switch-cell v-model="switch2" title="Title" />
+    <zv-button block type="info" @click="onConfirm">Confirm</zv-button>
+  </zv-dropdown-item>
+</zv-dropdown-menu>
 ```
 
 ```js
@@ -82,28 +82,28 @@ export default {
 Use `active-color` prop to custom active color of the title and options
 
 ```html
-<van-dropdown-menu active-color="#ee0a24">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<zv-dropdown-menu active-color="#ee0a24">
+  <zv-dropdown-item v-model="value1" :options="option1" />
+  <zv-dropdown-item v-model="value2" :options="option2" />
+</zv-dropdown-menu>
 ```
 
 ### Expand Direction
 
 ```html
-<van-dropdown-menu direction="up">
-  <van-dropdown-item v-model="value1" :options="option1" />
-  <van-dropdown-item v-model="value2" :options="option2" />
-</van-dropdown-menu>
+<zv-dropdown-menu direction="up">
+  <zv-dropdown-item v-model="value1" :options="option1" />
+  <zv-dropdown-item v-model="value2" :options="option2" />
+</zv-dropdown-menu>
 ```
 
 ### Disabled
 
 ```html
-<van-dropdown-menu>
-  <van-dropdown-item v-model="value1" disabled :options="option1" />
-  <van-dropdown-item v-model="value2" disabled :options="option2" />
-</van-dropdown-menu>
+<zv-dropdown-menu>
+  <zv-dropdown-item v-model="value1" disabled :options="option1" />
+  <zv-dropdown-item v-model="value2" disabled :options="option2" />
+</zv-dropdown-menu>
 ```
 
 ## API

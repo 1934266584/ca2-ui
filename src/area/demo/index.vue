@@ -1,15 +1,15 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-area :area-list="t('areaList')" />
+      <zv-area :area-list="t('areaList')" />
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <van-area :area-list="t('areaList')" :value="value" />
+      <zv-area :area-list="t('areaList')" :value="value" />
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <van-area
+      <zv-area
         :area-list="t('areaList')"
         :columns-num="2"
         :title="t('title')"
@@ -17,7 +17,7 @@
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <van-area
+      <zv-area
         :area-list="t('areaList')"
         :columns-placeholder="t('columnsPlaceholder')"
         :title="t('title')"

@@ -145,7 +145,7 @@ Toast.resetDefaultOptions('loading');
 | position | 位置，可选值为 `top` `bottom` | *string* | `middle` |
 | message | 文本内容，支持通过`\n`换行 | *string* | `''` | - |
 | icon `v2.0.1` | 自定义图标，支持传入[图标名称](#/zh-CN/icon)或图片链接 | *string* | - |
-| iconPrefix `v2.0.9` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `van-icon` |
+| iconPrefix `v2.0.9` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `zv-icon` |
 | overlay `v2.2.13` | 是否显示背景遮罩层 | *boolean* | `false` |
 | forbidClick | 是否禁止背景点击 | *boolean* | `false` |
 | closeOnClick `v2.1.5` | 是否在点击后关闭 | *boolean* | `false` |
@@ -155,5 +155,5 @@ Toast.resetDefaultOptions('loading');
 | className | 自定义类名 | *any* | - |
 | onOpened | 完全展示后的回调函数 | *Function* | - |
 | onClose | 关闭时的回调函数 | *Function* | - |
-| transition `v2.2.6` | 动画类名，等价于 [transtion](https://cn.vuejs.org/v2/api/index.html#transition) 的`name`属性 | *string* | `van-fade` |
+| transition `v2.2.6` | 动画类名，等价于 [transtion](https://cn.vuejs.org/v2/api/index.html#transition) 的`name`属性 | *string* | `zv-fade` |
 | getContainer | 指定挂载的节点，[用法示例](#/zh-CN/popup#zhi-ding-gua-zai-wei-zhi) | *string \| () => Element* | `body` |

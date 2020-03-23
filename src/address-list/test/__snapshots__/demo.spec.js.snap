@@ -3,44 +3,44 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-address-list">
-      <div role="radiogroup" class="van-radio-group">
-        <div class="van-address-item">
-          <div class="van-cell van-cell--borderless">
-            <div class="van-cell__value van-cell__value--alone van-address-item__value">
-              <div role="radio" tabindex="0" aria-checked="true" class="van-radio">
-                <div class="van-radio__icon van-radio__icon--round van-radio__icon--checked" style="font-size: 18px;"><i class="van-icon van-icon-success">
-                    <!----></i></div><span class="van-radio__label"><div class="van-address-item__name">张三 13000000000<span class="van-tag van-tag--round van-tag--danger van-address-item__tag">默认</span>
+    <div class="zv-address-list">
+      <div role="radiogroup" class="zv-radio-group">
+        <div class="zv-address-item">
+          <div class="zv-cell zv-cell--borderless">
+            <div class="zv-cell__value zv-cell__value--alone zv-address-item__value">
+              <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
+                <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked" style="font-size: 18px;"><i class="zv-icon zv-icon-success">
+                    <!----></i></div><span class="zv-radio__label"><div class="zv-address-item__name">张三 13000000000<span class="zv-tag zv-tag--round zv-tag--danger zv-address-item__tag">默认</span>
               </div>
-              <div class="van-address-item__address">浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室</div></span>
+              <div class="zv-address-item__address">浙江省杭州市西湖区文三路 138 号东方通信大厦 7 楼 501 室</div></span>
             </div>
-          </div><i class="van-icon van-icon-edit van-address-item__edit">
+          </div><i class="zv-icon zv-icon-edit zv-address-item__edit">
             <!----></i>
         </div>
       </div>
-      <div class="van-address-item">
-        <div class="van-cell van-cell--borderless">
-          <div class="van-cell__value van-cell__value--alone van-address-item__value">
-            <div role="radio" tabindex="-1" aria-checked="false" class="van-radio">
-              <div class="van-radio__icon van-radio__icon--round" style="font-size: 18px;"><i class="van-icon van-icon-success">
-                  <!----></i></div><span class="van-radio__label"><div class="van-address-item__name">李四 1310000000</div><div class="van-address-item__address">浙江省杭州市拱墅区莫干山路 50 号</div></span>
+      <div class="zv-address-item">
+        <div class="zv-cell zv-cell--borderless">
+          <div class="zv-cell__value zv-cell__value--alone zv-address-item__value">
+            <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
+              <div class="zv-radio__icon zv-radio__icon--round" style="font-size: 18px;"><i class="zv-icon zv-icon-success">
+                  <!----></i></div><span class="zv-radio__label"><div class="zv-address-item__name">李四 1310000000</div><div class="zv-address-item__address">浙江省杭州市拱墅区莫干山路 50 号</div></span>
             </div>
-          </div><i class="van-icon van-icon-edit van-address-item__edit">
+          </div><i class="zv-icon zv-icon-edit zv-address-item__edit">
             <!----></i>
         </div>
       </div>
     </div>
-    <div class="van-address-list__disabled-text">以下地址超出配送范围</div>
-    <div class="van-address-item van-address-item--disabled">
-      <div class="van-cell van-cell--borderless">
-        <div class="van-cell__value van-cell__value--alone van-address-item__value">
-          <div class="van-address-item__name">王五 1320000000</div>
-          <div class="van-address-item__address">浙江省杭州市滨江区江南大道 15 号</div>
-        </div><i class="van-icon van-icon-edit van-address-item__edit">
+    <div class="zv-address-list__disabled-text">以下地址超出配送范围</div>
+    <div class="zv-address-item zv-address-item--disabled">
+      <div class="zv-cell zv-cell--borderless">
+        <div class="zv-cell__value zv-cell__value--alone zv-address-item__value">
+          <div class="zv-address-item__name">王五 1320000000</div>
+          <div class="zv-address-item__address">浙江省杭州市滨江区江南大道 15 号</div>
+        </div><i class="zv-icon zv-icon-edit zv-address-item__edit">
           <!----></i>
       </div>
     </div>
-    <div class="van-address-list__bottom"><button class="van-button van-button--danger van-button--normal van-button--block van-button--round van-address-list__add"><span class="van-button__text">新增地址</span></button></div>
+    <div class="zv-address-list__bottom"><button class="zv-button zv-button--danger zv-button--normal zv-button--block zv-button--round zv-address-list__add"><span class="zv-button__text">新增地址</span></button></div>
   </div>
 </div>
 </div>

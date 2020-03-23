@@ -16,7 +16,7 @@ Vue.use(TreeSelect);
 `item`为分类显示所需的数据，数据格式见下方示例。`main-active-index`表示左侧高亮选项的索引，`active-id`表示右侧高亮选项的 id
 
 ```html
-<van-tree-select
+<zv-tree-select
   :items="items"
   :active-id.sync="activeId"
   :main-active-index.sync="activeIndex"
@@ -40,7 +40,7 @@ export default {
 `active-id`为数组格式时，可以选中多个右侧选项
 
 ```html
-<van-tree-select
+<zv-tree-select
   :items="items"
   :active-id.sync="activeIds"
   :main-active-index.sync="activeIndex"
@@ -64,16 +64,16 @@ export default {
 通过`content`插槽可以自定义右侧区域的内容
 
 ```html
-<van-tree-select
+<zv-tree-select
   height="55vw"
   :items="items"
   :main-active-index.sync="active"
 >
   <template #content>
-    <van-image v-if="active === 0" src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-    <van-image v-if="active === 1" src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+    <zv-image v-if="active === 0" src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+    <zv-image v-if="active === 1" src="https://img.yzcdn.cn/vant/apple-2.jpg" />
   </template>
-</van-tree-select>
+</zv-tree-select>
 ```
 
 ```js
@@ -92,7 +92,7 @@ export default {
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`badge`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<van-tree-select
+<zv-tree-select
   height="55vw"
   :items="items"
   :main-active-index.sync="activeIndex"

@@ -16,8 +16,8 @@ Vue.use(Icon);
 Use `name` prop to set icon name or icon URL
 
 ```html
-<van-icon name="chat-o" />
-<van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
+<zv-icon name="chat-o" />
+<zv-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png" />
 ```
 
 ### Show Badge
@@ -27,9 +27,9 @@ Use `dot` prop, a small red dot will be displayed in the upper right corner of t
 Use `badge` prop, the badge will be displayed in the upper right corner of the icon.
 
 ```html
-<van-icon name="chat-o" dot />
-<van-icon name="chat-o" badge="9" />
-<van-icon name="chat-o" badge="99+" />
+<zv-icon name="chat-o" dot />
+<zv-icon name="chat-o" badge="9" />
+<zv-icon name="chat-o" badge="99+" />
 ```
 
 ### Icon Color
@@ -37,8 +37,8 @@ Use `badge` prop, the badge will be displayed in the upper right corner of the i
 Use `color` prop to set icon color
 
 ```html
-<van-icon name="chat-o" color="#1989fa" />
-<van-icon name="chat-o" color="#07c160" />
+<zv-icon name="chat-o" color="#1989fa" />
+<zv-icon name="chat-o" color="#07c160" />
 ```
 
 ### Icon Size
@@ -46,8 +46,8 @@ Use `color` prop to set icon color
 Use `size` prop to set icon size
 
 ```html
-<van-icon name="chat-o" size="40" />
-<van-icon name="chat-o" size="3rem" />
+<zv-icon name="chat-o" size="40" />
+<zv-icon name="chat-o" size="3rem" />
 ```
 
 ### Use local font file
@@ -76,7 +76,7 @@ import 'vant/lib/icon/local.css';
 ```
 
 ```html
-<van-icon class-prefix="my-icon" name="extra" />
+<zv-icon class-prefix="my-icon" name="extra" />
 ```
 
 ## API
@@ -90,7 +90,7 @@ import 'vant/lib/icon/local.css';
 | badge `v2.5.6` | Content of the badge | *number \| string* | `''` |
 | color | Icon color | *string* | `inherit` |
 | size | Icon size | *number \| string* | `inherit` |
-| class-prefix | ClassName prefix | *string* | `van-icon` |
+| class-prefix | ClassName prefix | *string* | `zv-icon` |
 | tag | HTML Tag | *string* | `i` |
 
 ### Events

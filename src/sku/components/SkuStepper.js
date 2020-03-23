@@ -155,14 +155,14 @@ export default createComponent({
 
   render() {
     return (
-      <div class="van-sku-stepper-stock">
-        <div class="van-sku-stepper-container">
-          <div class="van-sku__stepper-title">
+      <div class="zv-sku-stepper-stock">
+        <div class="zv-sku-stepper-container">
+          <div class="zv-sku__stepper-title">
             {this.stepperTitle || t('num')}
           </div>
           <Stepper
             vModel={this.currentNum}
-            class="van-sku__stepper"
+            class="zv-sku__stepper"
             min={this.stepperMinLimit}
             max={this.stepperLimit}
             disableInput={this.disableStepperInput}
@@ -171,7 +171,7 @@ export default createComponent({
             onChange={this.onChange}
           />
           {!this.hideQuotaText && this.quotaText && (
-            <span class="van-sku__stepper-quota">({this.quotaText})</span>
+            <span class="zv-sku__stepper-quota">({this.quotaText})</span>
           )}
         </div>
       </div>

@@ -14,7 +14,7 @@ Vue.use(Rate);
 ### 基础用法
 
 ```html
-<van-rate v-model="value" />
+<zv-rate v-model="value" />
 ```
 
 ```js
@@ -30,7 +30,7 @@ export default {
 ### 自定义图标
 
 ```html
-<van-rate
+<zv-rate
   v-model="value"
   icon="like"
   void-icon="like-o"
@@ -40,7 +40,7 @@ export default {
 ### 自定义样式
 
 ```html
-<van-rate
+<zv-rate
   v-model="value"
   :size="25"
   color="#ee0a24"
@@ -52,7 +52,7 @@ export default {
 ### 半星
 
 ```html
-<van-rate
+<zv-rate
   v-model="value"
   allow-half
   void-icon="star"
@@ -73,25 +73,25 @@ export default {
 ### 自定义数量
 
 ```html
-<van-rate v-model="value" :count="6" />
+<zv-rate v-model="value" :count="6" />
 ```
 
 ### 禁用状态
 
 ```html
-<van-rate v-model="value" disabled />
+<zv-rate v-model="value" disabled />
 ```
 
 ### 只读状态
 
 ```html
-<van-rate v-model="value" readonly />
+<zv-rate v-model="value" readonly />
 ```
 
 ### 监听 change 事件
 
 ```html
-<van-rate v-model="value" @change="onChange" />
+<zv-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript
@@ -119,7 +119,7 @@ export default {
 | disabled-color | 禁用时的颜色 | *string* | `#bdbdbd` |
 | icon | 选中时的[图标名称](#/zh-CN/icon)或图片链接 | *string* | `star` |
 | void-icon | 未选中时的[图标名称](#/zh-CN/icon)或图片链接 | *string* | `star-o` |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `zv-icon` |
 | allow-half | 是否允许半选 | *boolean* | `false` |
 | readonly | 是否为只读状态 | *boolean* | `false` |
 | disabled | 是否禁用评分 | *boolean* | `false` |

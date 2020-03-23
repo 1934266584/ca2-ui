@@ -18,8 +18,8 @@ Vue.use(Overlay);
 ### 基础用法
 
 ```html
-<van-button type="primary" text="显示遮罩层" @click="show = true" />
-<van-overlay :show="show" @click="show = false" />
+<zv-button type="primary" text="显示遮罩层" @click="show = true" />
+<zv-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -37,11 +37,11 @@ export default {
 通过默认插槽可以在遮罩层上嵌入任意内容
 
 ```html
-<van-overlay :show="show" @click="show = false">
+<zv-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>
-</van-overlay>
+</zv-overlay>
 
 <style>
 .wrapper {

@@ -14,85 +14,85 @@ Vue.use(Button);
 ### Type
 
 ```html
-<van-button type="default">Default</van-button>
-<van-button type="primary">Primary</van-button>
-<van-button type="info">Info</van-button>
-<van-button type="danger">Danger</van-button>
-<van-button type="warning">Warning</van-button>
+<zv-button type="default">Default</zv-button>
+<zv-button type="primary">Primary</zv-button>
+<zv-button type="info">Info</zv-button>
+<zv-button type="danger">Danger</zv-button>
+<zv-button type="warning">Warning</zv-button>
 ```
 
 ### Plain
 
 ```html
-<van-button plain type="primary">Primary</van-button>
-<van-button plain type="info">Danger</van-button>
+<zv-button plain type="primary">Primary</zv-button>
+<zv-button plain type="info">Danger</zv-button>
 ```
 
 ### Hairline
 
 ```html
-<van-button plain hairline type="primary">Hairline</van-button>
-<van-button plain hairline type="info">Hairline</van-button>
+<zv-button plain hairline type="primary">Hairline</zv-button>
+<zv-button plain hairline type="info">Hairline</zv-button>
 ```
 
 ### Disabled
 
 ```html
-<van-button disabled type="primary">Diabled</van-button>
-<van-button disabled type="info">Diabled</van-button>
+<zv-button disabled type="primary">Diabled</zv-button>
+<zv-button disabled type="info">Diabled</zv-button>
 ```
 
 ### Loading
 
 ```html 
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="info" loading-text="Loading..." />
+<zv-button loading type="primary" />
+<zv-button loading type="primary" loading-type="spinner" />
+<zv-button loading type="info" loading-text="Loading..." />
 ```
 
 ### Shape
 
 ```html 
-<van-button square type="primary">Square</van-button>
-<van-button round type="info">Round</van-button>
+<zv-button square type="primary">Square</zv-button>
+<zv-button round type="info">Round</zv-button>
 ```
 
 ### Icon
 
 ```html 
-<van-button icon="star-o" type="primary" />
-<van-button icon="star-o" type="primary">Button</van-button>
-<van-button icon="https://img.yzcdn.cn/vant/logo.png" type="info">Button</van-button>
+<zv-button icon="star-o" type="primary" />
+<zv-button icon="star-o" type="primary">Button</zv-button>
+<zv-button icon="https://img.yzcdn.cn/vant/logo.png" type="info">Button</zv-button>
 ```
 
 ### Size
 
 ```html 
-<van-button type="primary" size="large">Large</van-button>
-<van-button type="primary" size="normal">Normal</van-button>
-<van-button type="primary" size="small">Small</van-button>
-<van-button type="primary" size="mini">Mini</van-button>
+<zv-button type="primary" size="large">Large</zv-button>
+<zv-button type="primary" size="normal">Normal</zv-button>
+<zv-button type="primary" size="small">Small</zv-button>
+<zv-button type="primary" size="mini">Mini</zv-button>
 ```
 
 ### Block Element
 
 ```html
-<van-button type="primary" block>Block Element</van-button>
+<zv-button type="primary" block>Block Element</zv-button>
 ```
 
 ### Route
 
 ```html
-<van-button type="primary" url="/vant/mobile.html">URL</van-button>
-<van-button type="primary" to="index">Vue Router</van-button>
+<zv-button type="primary" url="/vant/mobile.html">URL</zv-button>
+<zv-button type="primary" to="index">Vue Router</zv-button>
 ```
 
 ### Custom Color
 
 ```html
-<van-button color="#7232dd">Pure</van-button>
-<van-button color="#7232dd" plain>Pure</van-button>
-<van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">Gradient</van-button>
+<zv-button color="#7232dd">Pure</zv-button>
+<zv-button color="#7232dd" plain>Pure</zv-button>
+<zv-button color="linear-gradient(to right, #4bb0ff, #6149f6)">Gradient</zv-button>
 ```
 
 ## API
@@ -106,7 +106,7 @@ Vue.use(Button);
 | text | Text | *string* | - |
 | color `v2.1.8` | Color, support linear-gradient | *string* | - |
 | icon | Left Icon | *string* | - |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
 | tag | HTML Tag | *string* | `button` |
 | native-type | Native Type Attribute | *string* | `''` |
 | plain | Whether to be plain button | *boolean* | `false` |

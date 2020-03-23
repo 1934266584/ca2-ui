@@ -16,9 +16,9 @@ Vue.use(PullRefresh);
 下拉刷新时会触发 `refresh` 事件，在事件的回调函数中可以进行同步或异步操作，操作完成后将 `v-model` 设置为 `false`，表示加载完成。
 
 ```html
-<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<zv-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</zv-pull-refresh>
 ```
 
 ```js
@@ -48,13 +48,13 @@ export default {
 通过`success-text`可以设置刷新成功后的顶部提示文案
 
 ```html
-<van-pull-refresh
+<zv-pull-refresh
   v-model="isLoading"
   success-text="刷新成功"
   @refresh="onRefresh"
 >
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</zv-pull-refresh>
 ```
 
 ### 自定义提示
@@ -62,7 +62,7 @@ export default {
 通过插槽可以自定义下拉刷新过程中的提示内容
 
 ```html
-<van-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<zv-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <!-- 下拉提示，通过 scale 实现一个缩放效果 -->
   <template #pulling="props">
     <img
@@ -88,7 +88,7 @@ export default {
     />
   </template>
   <p>刷新次数: {{ count }}</p>
-</van-pull-refresh>
+</zv-pull-refresh>
 
 <style>
 .doge {

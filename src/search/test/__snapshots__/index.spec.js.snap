@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`action-text prop 1`] = `
-<div class="van-search van-search--show-action">
-  <div class="van-search__content van-search__content--square">
-    <div class="van-cell van-cell--borderless van-field">
-      <div class="van-field__left-icon"><i class="van-icon van-icon-search">
+<div class="zv-search zv-search--show-action">
+  <div class="zv-search__content zv-search__content--square">
+    <div class="zv-cell zv-cell--borderless zv-field">
+      <div class="zv-field__left-icon"><i class="zv-icon zv-icon-search">
           <!----></i></div>
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="search" class="van-field__control"></div>
+      <div class="zv-cell__value zv-cell__value--alone zv-field__value">
+        <div class="zv-field__body"><input type="search" class="zv-field__control"></div>
       </div>
     </div>
   </div>
-  <div role="button" tabindex="0" class="van-search__action">Custom Text</div>
+  <div role="button" tabindex="0" class="zv-search__action">Custom Text</div>
 </div>
 `;
 
 exports[`label slot 1`] = `
-<div class="van-search">
-  <div class="van-search__content van-search__content--square">
-    <div class="van-search__label">Custom Label</div>
-    <div class="van-cell van-cell--borderless van-field">
-      <div class="van-field__left-icon"><i class="van-icon van-icon-search">
+<div class="zv-search">
+  <div class="zv-search__content zv-search__content--square">
+    <div class="zv-search__label">Custom Label</div>
+    <div class="zv-cell zv-cell--borderless zv-field">
+      <div class="zv-field__left-icon"><i class="zv-icon zv-icon-search">
           <!----></i></div>
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="search" class="van-field__control"></div>
+      <div class="zv-cell__value zv-cell__value--alone zv-field__value">
+        <div class="zv-field__body"><input type="search" class="zv-field__control"></div>
       </div>
     </div>
   </div>
@@ -31,12 +31,12 @@ exports[`label slot 1`] = `
 `;
 
 exports[`left slot 1`] = `
-<div class="van-search">Custom Left Content<div class="van-search__content van-search__content--square">
-    <div class="van-cell van-cell--borderless van-field">
-      <div class="van-field__left-icon"><i class="van-icon van-icon-search">
+<div class="zv-search">Custom Left Content<div class="zv-search__content zv-search__content--square">
+    <div class="zv-cell zv-cell--borderless zv-field">
+      <div class="zv-field__left-icon"><i class="zv-icon zv-icon-search">
           <!----></i></div>
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="search" class="van-field__control"></div>
+      <div class="zv-cell__value zv-cell__value--alone zv-field__value">
+        <div class="zv-field__body"><input type="search" class="zv-field__control"></div>
       </div>
     </div>
   </div>
@@ -44,13 +44,13 @@ exports[`left slot 1`] = `
 `;
 
 exports[`left-icon prop 1`] = `
-<div class="van-search">
-  <div class="van-search__content van-search__content--square">
-    <div class="van-cell van-cell--borderless van-field">
-      <div class="van-field__left-icon"><i class="van-icon van-icon-setting-o">
+<div class="zv-search">
+  <div class="zv-search__content zv-search__content--square">
+    <div class="zv-cell zv-cell--borderless zv-field">
+      <div class="zv-field__left-icon"><i class="zv-icon zv-icon-setting-o">
           <!----></i></div>
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="search" class="van-field__control"></div>
+      <div class="zv-cell__value zv-cell__value--alone zv-field__value">
+        <div class="zv-field__body"><input type="search" class="zv-field__control"></div>
       </div>
     </div>
   </div>
@@ -58,14 +58,14 @@ exports[`left-icon prop 1`] = `
 `;
 
 exports[`right-icon prop 1`] = `
-<div class="van-search">
-  <div class="van-search__content van-search__content--square">
-    <div class="van-cell van-cell--borderless van-field">
-      <div class="van-field__left-icon"><i class="van-icon van-icon-search">
+<div class="zv-search">
+  <div class="zv-search__content zv-search__content--square">
+    <div class="zv-cell zv-cell--borderless zv-field">
+      <div class="zv-field__left-icon"><i class="zv-icon zv-icon-search">
           <!----></i></div>
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="search" class="van-field__control">
-          <div class="van-field__right-icon"><i class="van-icon van-icon-setting-o">
+      <div class="zv-cell__value zv-cell__value--alone zv-field__value">
+        <div class="zv-field__body"><input type="search" class="zv-field__control">
+          <div class="zv-field__right-icon"><i class="zv-icon zv-icon-setting-o">
               <!----></i></div>
         </div>
       </div>
@@ -75,14 +75,14 @@ exports[`right-icon prop 1`] = `
 `;
 
 exports[`right-icon slot 1`] = `
-<div class="van-search">
-  <div class="van-search__content van-search__content--square">
-    <div class="van-cell van-cell--borderless van-field">
-      <div class="van-field__left-icon"><i class="van-icon van-icon-search">
+<div class="zv-search">
+  <div class="zv-search__content zv-search__content--square">
+    <div class="zv-cell zv-cell--borderless zv-field">
+      <div class="zv-field__left-icon"><i class="zv-icon zv-icon-search">
           <!----></i></div>
-      <div class="van-cell__value van-cell__value--alone van-field__value">
-        <div class="van-field__body"><input type="search" class="van-field__control">
-          <div class="van-field__right-icon">Custom Right Icon</div>
+      <div class="zv-cell__value zv-cell__value--alone zv-field__value">
+        <div class="zv-field__body"><input type="search" class="zv-field__control">
+          <div class="zv-field__right-icon">Custom Right Icon</div>
         </div>
       </div>
     </div>

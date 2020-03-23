@@ -14,21 +14,21 @@ Vue.use(Panel);
 ### Basic Usage
 
 ```html
-<van-panel title="Title" desc="Description" status="Status">
+<zv-panel title="Title" desc="Description" status="Status">
   <div>Content</div>
-</van-panel>
+</zv-panel>
 ```
 
 ### Advanced Usage
 
 ```html
-<van-panel title="Title" desc="Description" status="Status">
+<zv-panel title="Title" desc="Description" status="Status">
   <div>Content</div>
   <template #footer>
-    <van-button size="small">Button</van-button>
-    <van-button size="small" type="danger">Button</van-button>
+    <zv-button size="small">Button</zv-button>
+    <zv-button size="small" type="danger">Button</zv-button>
   </template>
-</van-panel>
+</zv-panel>
 ```
 
 ## API

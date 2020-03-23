@@ -23,7 +23,7 @@ export default createComponent({
     showCancelButton: Boolean,
     transition: {
       type: String,
-      default: 'van-dialog-bounce',
+      default: 'zv-dialog-bounce',
     },
     showConfirmButton: {
       type: Boolean,

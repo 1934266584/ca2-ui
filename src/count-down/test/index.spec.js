@@ -185,7 +185,7 @@ test('pause when deactivated', async () => {
   const wrapper = mount({
     template: `
       <keep-alive>
-        <van-count-down v-if="render" ref="countDown" time="100" />
+        <zv-count-down v-if="render" ref="countDown" time="100" />
       </keep-alive>
     `,
     data() {

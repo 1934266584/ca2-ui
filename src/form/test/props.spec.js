@@ -5,10 +5,10 @@ test('rules prop - execute order', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @failed="onFailed">
-        <van-field name="A" :rules="rules" value="123" />
-        <van-button native-type="submit" />
-      </van-form>
+      <zv-form @failed="onFailed">
+        <zv-field name="A" :rules="rules" value="123" />
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data() {
       return {
@@ -36,10 +36,10 @@ test('rules prop - pattern', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @failed="onFailed">
-        <van-field name="A" :rules="rules" value="123" />
-        <van-button native-type="submit" />
-      </van-form>
+      <zv-form @failed="onFailed">
+        <zv-field name="A" :rules="rules" value="123" />
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data() {
       return {
@@ -63,10 +63,10 @@ test('rules prop - message function', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @failed="onFailed">
-        <van-field name="A" :rules="rules" value="123" />
-        <van-button native-type="submit" />
-      </van-form>
+      <zv-form @failed="onFailed">
+        <zv-field name="A" :rules="rules" value="123" />
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data() {
       return {
@@ -90,10 +90,10 @@ test('rules prop - formatter', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @failed="onFailed">
-        <van-field name="A" :rules="rules" value=" " />
-        <van-button native-type="submit" />
-      </van-form>
+      <zv-form @failed="onFailed">
+        <zv-field name="A" :rules="rules" value=" " />
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data() {
       return {
@@ -126,10 +126,10 @@ test('rules prop - async validator', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @failed="onFailed">
-        <van-field name="A" :rules="rules" value="123" />
-        <van-button native-type="submit" />
-      </van-form>
+      <zv-form @failed="onFailed">
+        <zv-field name="A" :rules="rules" value="123" />
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data() {
       return {
@@ -168,11 +168,11 @@ test('validate-first prop', async () => {
 
   const wrapper = mountForm({
     template: `
-      <van-form validate-first @submit="onSubmit" @failed="onFailed">
-        <van-field name="A" :rules="rulesA" :value="value" />
-        <van-field name="B" :rules="rulesB" :value="value" />
-        <van-button native-type="submit" />
-      </van-form>
+      <zv-form validate-first @submit="onSubmit" @failed="onFailed">
+        <zv-field name="A" :rules="rulesA" :value="value" />
+        <zv-field name="B" :rules="rulesB" :value="value" />
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data() {
       return {
@@ -203,12 +203,12 @@ test('validate-first prop', async () => {
 test('colon prop', () => {
   const wrapper = mountForm({
     template: `
-      <van-form colon>
-        <van-field label="Label" />
-        <van-field>
+      <zv-form colon>
+        <zv-field label="Label" />
+        <zv-field>
           <template #label>Custom Label</template>
-        </van-field>
-      </van-form>
+        </zv-field>
+      </zv-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -217,10 +217,10 @@ test('colon prop', () => {
 test('label-align prop', () => {
   const wrapper = mountForm({
     template: `
-      <van-form label-align="right">
-        <van-field label="Label" />
-        <van-field label="Label" label-align="center" />
-      </van-form>
+      <zv-form label-align="right">
+        <zv-field label="Label" />
+        <zv-field label="Label" label-align="center" />
+      </zv-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -229,10 +229,10 @@ test('label-align prop', () => {
 test('label-width prop', () => {
   const wrapper = mountForm({
     template: `
-      <van-form label-width="5rem">
-        <van-field label="Label" />
-        <van-field label="Label" label-width="10vw" />
-      </van-form>
+      <zv-form label-width="5rem">
+        <zv-field label="Label" />
+        <zv-field label="Label" label-width="10vw" />
+      </zv-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -241,14 +241,14 @@ test('label-width prop', () => {
 test('input-align prop', () => {
   const wrapper = mountForm({
     template: `
-      <van-form input-align="right">
-        <van-field />
-        <van-field>
+      <zv-form input-align="right">
+        <zv-field />
+        <zv-field>
           <template #input>
             <div />
           </template>
-        </van-field>
-      </van-form>
+        </zv-field>
+      </zv-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -257,9 +257,9 @@ test('input-align prop', () => {
 test('error-message-align prop', () => {
   const wrapper = mountForm({
     template: `
-      <van-form error-message-align="right">
-        <van-field error-message="Error" />
-      </van-form>
+      <zv-form error-message-align="right">
+        <zv-field error-message="Error" />
+      </zv-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -268,9 +268,9 @@ test('error-message-align prop', () => {
 test('validate-trigger - onBlur', async () => {
   const wrapper = mountForm({
     template: `
-      <van-form ref="form">
-        <van-field name="A" :rules="rulesA" value="" />
-      </van-form>
+      <zv-form ref="form">
+        <zv-field name="A" :rules="rulesA" value="" />
+      </zv-form>
     `,
     data: getSimpleRules,
   });
@@ -289,9 +289,9 @@ test('validate-trigger - onBlur', async () => {
 test('validate-trigger - onChange', async () => {
   const wrapper = mountForm({
     template: `
-      <van-form validate-trigger="onChange" ref="form">
-        <van-field v-model="value" name="A" :rules="rulesA" />
-      </van-form>
+      <zv-form validate-trigger="onChange" ref="form">
+        <zv-field v-model="value" name="A" :rules="rulesA" />
+      </zv-form>
     `,
     data() {
       return {
@@ -319,10 +319,10 @@ test('validate-trigger - onChange', async () => {
 test('validate-trigger - custom trigger in rules', async () => {
   const wrapper = mountForm({
     template: `
-      <van-form validate-trigger="none" ref="form">
-        <van-field name="A" :rules="rulesA" :value="valueA" />
-        <van-field name="B" :rules="rulesB" :value="valueB" />
-      </van-form>
+      <zv-form validate-trigger="none" ref="form">
+        <zv-field name="A" :rules="rulesA" :value="valueA" />
+        <zv-field name="B" :rules="rulesB" :value="valueB" />
+      </zv-form>
     `,
     data() {
       return {
@@ -369,10 +369,10 @@ test('scroll-to-error prop', async () => {
   const fn = mockScrollIntoView();
   const wrapper = mountForm({
     template: `
-      <van-form scroll-to-error>
-        <van-field name="A" :rules="rulesA" value="" />
-        <van-button native-type="submit" />
-      </van-form>
+      <zv-form scroll-to-error>
+        <zv-field name="A" :rules="rulesA" value="" />
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data: getSimpleRules,
   });

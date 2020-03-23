@@ -4,15 +4,15 @@ test('dynamic add/remove fileds', async () => {
   const onSubmit = jest.fn();
   const wrapper = mountForm({
     template: `
-      <van-form @submit="onSubmit">
-        <van-field
+      <zv-form @submit="onSubmit">
+        <zv-field
           v-for="item in list"
           :key="item"
           :name="item"
           value=""
         />
-        <van-button native-type="submit" />
-      </van-form>
+        <zv-button native-type="submit" />
+      </zv-form>
     `,
     data() {
       return { list: ['A'] };

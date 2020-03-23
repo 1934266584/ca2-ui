@@ -14,7 +14,7 @@ Vue.use(NavBar);
 ### Basic Usage
 
 ```html
-<van-nav-bar
+<zv-nav-bar
   title="Title"
   left-text="Back"
   right-text="Button"
@@ -42,11 +42,11 @@ export default {
 ### Advanced Usage
 
 ```html
-<van-nav-bar title="Title" left-text="Back" left-arrow>
+<zv-nav-bar title="Title" left-text="Back" left-arrow>
   <template #right>
-    <van-icon name="search"/> 
+    <zv-icon name="search"/> 
   </template>
-</van-nav-bar>
+</zv-nav-bar>
 ```
 
 ## API

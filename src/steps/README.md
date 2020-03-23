@@ -15,12 +15,12 @@ Vue.use(Steps);
 ### Basic Usage
 
 ```html
-<van-steps :active="active">
-  <van-step>Step1</van-step>
-  <van-step>Step2</van-step>
-  <van-step>Step3</van-step>
-  <van-step>Step4</van-step>
-</van-steps>
+<zv-steps :active="active">
+  <zv-step>Step1</zv-step>
+  <zv-step>Step2</zv-step>
+  <zv-step>Step3</zv-step>
+  <zv-step>Step4</zv-step>
+</zv-steps>
 ```
 
 ```js
@@ -36,35 +36,35 @@ export default {
 ### Custom Style
 
 ```html
-<van-steps
+<zv-steps
   :active="active"
   active-icon="success"
   active-color="#38f"
 >
-  <van-step>Step1</van-step>
-  <van-step>Step2</van-step>
-  <van-step>Step3</van-step>
-  <van-step>Step4</van-step>
-</van-steps>
+  <zv-step>Step1</zv-step>
+  <zv-step>Step2</zv-step>
+  <zv-step>Step3</zv-step>
+  <zv-step>Step4</zv-step>
+</zv-steps>
 ```
 
 ### Vertical Steps
 
 ```html
-<van-steps direction="vertical" :active="0">
-  <van-step>
+<zv-steps direction="vertical" :active="0">
+  <zv-step>
     <h3>【City】Status1</h3>
     <p>2016-07-12 12:40</p>
-  </van-step>
-  <van-step>
+  </zv-step>
+  <zv-step>
     <h3>【City】Status2</h3>
     <p>2016-07-11 10:00</p>
-  </van-step>
-  <van-step>
+  </zv-step>
+  <zv-step>
     <h3>【City】Status3</h3>
     <p>2016-07-10 09:30</p>
-  </van-step>
-</van-steps>
+  </zv-step>
+</zv-steps>
 ```
 
 ## API

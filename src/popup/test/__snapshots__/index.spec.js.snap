@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`close-icon prop 1`] = `
-<div class="van-popup van-popup--center" name="van-fade"><i role="button" tabindex="0" class="van-icon van-icon-success van-popup__close-icon van-popup__close-icon--top-right">
+<div class="zv-popup zv-popup--center" name="zv-fade"><i role="button" tabindex="0" class="zv-icon zv-icon-success zv-popup__close-icon zv-popup__close-icon--top-right">
     <!----></i></div>
 `;
 
-exports[`duration prop when position is center 1`] = `<div class="van-popup van-popup--center" style="animation-duration: 0.5s;" name="van-fade"></div>`;
+exports[`duration prop when position is center 1`] = `<div class="zv-popup zv-popup--center" style="animation-duration: 0.5s;" name="zv-fade"></div>`;
 
-exports[`duration prop when position is top 1`] = `<div class="van-popup van-popup--top" style="transition-duration: 0.5s;" name="van-popup-slide-top"></div>`;
+exports[`duration prop when position is top 1`] = `<div class="zv-popup zv-popup--top" style="transition-duration: 0.5s;" name="zv-popup-slide-top"></div>`;
 
-exports[`reset z-index 1`] = `<div class="van-popup van-popup--center" name="van-fade"></div>`;
+exports[`reset z-index 1`] = `<div class="zv-popup zv-popup--center" name="zv-fade"></div>`;
 
-exports[`round prop 1`] = `<div class="van-popup van-popup--round van-popup--center" name="van-fade"></div>`;
+exports[`round prop 1`] = `<div class="zv-popup zv-popup--round zv-popup--center" name="zv-fade"></div>`;

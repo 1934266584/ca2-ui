@@ -14,7 +14,7 @@ Vue.use(Pagination);
 ### Basic Usage
 
 ```html
-<van-pagination 
+<zv-pagination 
   v-model="currentPage" 
   :total-items="24" 
   :items-per-page="5"
@@ -34,7 +34,7 @@ export default {
 ### Simple mode
 
 ```html
-<van-pagination 
+<zv-pagination 
   v-model="currentPage" 
   :page-count="12"
   mode="simple" 
@@ -44,7 +44,7 @@ export default {
 ### Show ellipses
 
 ```html
-<van-pagination 
+<zv-pagination 
   v-model="currentPage" 
   :total-items="125" 
   :show-page-size="3" 

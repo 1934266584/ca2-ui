@@ -1,10 +1,10 @@
 <template>
-  <input class="van-doc-search" :placeholder="placeholder" />
+  <input class="zv-doc-search" :placeholder="placeholder" />
 </template>
 
 <script>
 export default {
-  name: 'van-doc-search',
+  name: 'zv-doc-search',
 
   props: {
     lang: String,
@@ -67,7 +67,7 @@ export default {
 
 .algolia-autocomplete {
   .algolia-docsearch-suggestion--highlight {
-    color: @van-doc-blue;
+    color: @zv-doc-blue;
     background-color: transparent;
   }
 
@@ -77,7 +77,7 @@ export default {
 
   .algolia-docsearch-suggestion--text {
     .algolia-docsearch-suggestion--highlight {
-      box-shadow: inset 0 -1px 0 0 @van-doc-blue;
+      box-shadow: inset 0 -1px 0 0 @zv-doc-blue;
     }
   }
 

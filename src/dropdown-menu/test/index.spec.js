@@ -3,10 +3,10 @@ import { mount, later } from '../../../test';
 function renderWrapper(options = {}) {
   return mount({
     template: `
-      <van-dropdown-menu :direction="direction" :close-on-click-outside="closeOnClickOutside">
-        <van-dropdown-item v-model="value" :title="title" :options="options" />
-        <van-dropdown-item v-model="value" :title="title" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu :direction="direction" :close-on-click-outside="closeOnClickOutside">
+        <zv-dropdown-item v-model="value" :title="title" :options="options" />
+        <zv-dropdown-item v-model="value" :title="title" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -129,10 +129,10 @@ test('didn`t find matched option', async () => {
 test('destroy one item', async () => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item v-if="render" v-model="value" :options="options" />
-        <van-dropdown-item v-model="value" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item v-if="render" v-model="value" :options="options" />
+        <zv-dropdown-item v-model="value" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -154,9 +154,9 @@ test('destroy one item', async () => {
 test('disable dropdown item', async () => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item disabled v-model="value" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item disabled v-model="value" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -179,10 +179,10 @@ test('change event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item v-model="value" :options="options" @change="onChange" />
-        <van-dropdown-item v-model="value" :options="options" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item v-model="value" :options="options" @change="onChange" />
+        <zv-dropdown-item v-model="value" :options="options" />
+      </zv-dropdown-menu>
     `,
     data() {
       return {
@@ -216,9 +216,9 @@ test('change event', async () => {
 test('toggle method', async done => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item ref="item" />
-      </van-dropdown-menu>
+      <zv-dropdown-menu>
+        <zv-dropdown-item ref="item" />
+      </zv-dropdown-menu>
     `,
     async mounted() {
       // show
@@ -239,13 +239,13 @@ test('toggle method', async done => {
 test('title slot', () => {
   const wrapper = mount({
     template: `
-      <van-dropdown-menu>
-        <van-dropdown-item>
+      <zv-dropdown-menu>
+        <zv-dropdown-item>
           <template #title>
             Custom Title
           </template>
-        </van-dropdown-item>
-      </van-dropdown-menu>
+        </zv-dropdown-item>
+      </zv-dropdown-menu>
     `,
   });
 

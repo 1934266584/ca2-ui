@@ -14,7 +14,7 @@ Vue.use(Image);
 ### Basic Usage
 
 ```html
-<van-image
+<zv-image
   width="100"
   height="100"
   src="https://img.yzcdn.cn/vant/cat.jpeg"
@@ -24,7 +24,7 @@ Vue.use(Image);
 ### Fit Mode
 
 ```html
-<van-image
+<zv-image
   width="10rem"
   height="10rem"
   fit="contain"
@@ -37,7 +37,7 @@ Vue.use(Image);
 Show round image, it may not works at `fit=contain` and `fit=scale-down`
 
 ```html
-<van-image
+<zv-image
   round
   width="10rem"
   height="10rem"
@@ -48,7 +48,7 @@ Show round image, it may not works at `fit=contain` and `fit=scale-down`
 ### Lazy Load
 
 ```html
-<van-image
+<zv-image
   width="100"
   height="100"
   lazy-load

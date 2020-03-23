@@ -15,11 +15,11 @@ Vue.use(SidebarItem);
 ### Basic Usage
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<zv-sidebar v-model="activeKey">
+  <zv-sidebar-item title="Title" />
+  <zv-sidebar-item title="Title" />
+  <zv-sidebar-item title="Title" />
+</zv-sidebar>
 ```
 
 ```js
@@ -35,31 +35,31 @@ export default {
 ### Show Badge
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" dot />
-  <van-sidebar-item title="Title" badge="5" />
-  <van-sidebar-item title="Title" badge="99+" />
-</van-sidebar>
+<zv-sidebar v-model="activeKey">
+  <zv-sidebar-item title="Title" dot />
+  <zv-sidebar-item title="Title" badge="5" />
+  <zv-sidebar-item title="Title" badge="99+" />
+</zv-sidebar>
 ```
 
 ### Disabled
 
 ```html
-<van-sidebar v-model="activeKey">
-  <van-sidebar-item title="Title" />
-  <van-sidebar-item title="Title" disabled />
-  <van-sidebar-item title="Title" />
-</van-sidebar>
+<zv-sidebar v-model="activeKey">
+  <zv-sidebar-item title="Title" />
+  <zv-sidebar-item title="Title" disabled />
+  <zv-sidebar-item title="Title" />
+</zv-sidebar>
 ```
 
 ### Change Event
 
 ```html
-<van-sidebar v-model="activeKey" @change="onChange">
-  <van-sidebar-item title="Title1" />
-  <van-sidebar-item title="Title2" />
-  <van-sidebar-item title="Title3" />
-</van-sidebar>
+<zv-sidebar v-model="activeKey" @change="onChange">
+  <zv-sidebar-item title="Title1" />
+  <zv-sidebar-item title="Title2" />
+  <zv-sidebar-item title="Title3" />
+</zv-sidebar>
 ```
 
 ```js

@@ -165,7 +165,7 @@ test('nav info', () => {
 test('use sync modifier in main-active-index', () => {
   const wrapper = mount({
     template: `
-      <van-tree-select
+      <zv-tree-select
         :items="items"
         :main-active-index.sync="mainActiveIndex"
       />
@@ -187,7 +187,7 @@ test('use sync modifier in main-active-index', () => {
 test('use sync modifier in active-id', () => {
   const wrapper = mount({
     template: `
-      <van-tree-select
+      <zv-tree-select
         :items="items"
         :main-active-index="0"
         :active-id.sync="activeId"
@@ -216,7 +216,7 @@ test('use sync modifier in active-id', () => {
 test('multiple select', () => {
   const wrapper = mount({
     template: `
-      <van-tree-select
+      <zv-tree-select
         :items="items"
         :main-active-index="0"
         :active-id.sync="activeId"
@@ -249,7 +249,7 @@ test('multiple select', () => {
 test('max prop', () => {
   const wrapper = mount({
     template: `
-      <van-tree-select
+      <zv-tree-select
         :max="1"
         :items="items"
         :main-active-index="0"
@@ -296,7 +296,7 @@ test('className of nav', () => {
 test('should sync value before trigger click-item event', done => {
   const wrapper = mount({
     template: `
-      <van-tree-select
+      <zv-tree-select
         :items="items"
         :main-active-index="0"
         :active-id.sync="activeId"

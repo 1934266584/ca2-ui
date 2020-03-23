@@ -1,12 +1,12 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-search v-model="value1" :placeholder="t('placeholder')" />
+      <zv-search v-model="value1" :placeholder="t('placeholder')" />
     </demo-block>
 
     <demo-block :title="t('listenToEvents')">
       <form action="/">
-        <van-search
+        <zv-search
           v-model="value5"
           :placeholder="t('placeholder')"
           show-action
@@ -17,7 +17,7 @@
     </demo-block>
 
     <demo-block :title="t('inputAlign')">
-      <van-search
+      <zv-search
         v-model="value4"
         :placeholder="t('placeholder')"
         input-align="center"
@@ -25,11 +25,11 @@
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <van-search v-model="value3" :placeholder="t('placeholder')" disabled />
+      <zv-search v-model="value3" :placeholder="t('placeholder')" disabled />
     </demo-block>
 
     <demo-block :title="t('background')">
-      <van-search
+      <zv-search
         v-model="value2"
         :placeholder="t('placeholder')"
         shape="round"
@@ -38,7 +38,7 @@
     </demo-block>
 
     <demo-block :title="t('customButton')">
-      <van-search
+      <zv-search
         v-model="value6"
         show-action
         :label="t('label')"
@@ -48,7 +48,7 @@
         <template #action>
           <div @click="onSearch">{{ t('search') }}</div>
         </template>
-      </van-search>
+      </zv-search>
     </demo-block>
   </demo-section>
 </template>

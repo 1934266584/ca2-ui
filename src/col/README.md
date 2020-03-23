@@ -2,7 +2,7 @@
 
 ### Intro
 
-Quickly and easily create layouts with `van-row` and `van-col`
+Quickly and easily create layouts with `zv-row` and `zv-col`
 
 ### Install
 
@@ -21,21 +21,21 @@ Vue.use(Row);
 Layout are based on 24-column. The attribute `span` in `Col` means the number of column the grid spans. Of course, You can use `offset` attribute to set number of spacing on the left side of the grid.
 
 ```html
-<van-row>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-</van-row>
+<zv-row>
+  <zv-col span="8">span: 8</zv-col>
+  <zv-col span="8">span: 8</zv-col>
+  <zv-col span="8">span: 8</zv-col>
+</zv-row>
 
-<van-row>
-  <van-col span="4">span: 4</van-col>
-  <van-col span="10" offset="4">offset: 4, span: 10</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<zv-row>
+  <zv-col span="4">span: 4</zv-col>
+  <zv-col span="10" offset="4">offset: 4, span: 10</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+</zv-row>
 
-<van-row>
-  <van-col offset="12" span="12">offset: 12, span: 12</van-col>
-</van-row>
+<zv-row>
+  <zv-col offset="12" span="12">offset: 12, span: 12</zv-col>
+</zv-row>
 ```
 
 
@@ -45,11 +45,11 @@ Set grid spacing using `gutter` attribute. The default value is 0
 
 
 ```html
-<van-row gutter="20">
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-  <van-col span="8">span: 8</van-col>
-</van-row>
+<zv-row gutter="20">
+  <zv-col span="8">span: 8</zv-col>
+  <zv-col span="8">span: 8</zv-col>
+  <zv-col span="8">span: 8</zv-col>
+</zv-row>
 ```
 
 ### Flex Layout
@@ -57,35 +57,35 @@ Set grid spacing using `gutter` attribute. The default value is 0
 Setting `type` to `flex` to enable flex layout
 
 ```html
-<van-row type="flex">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<zv-row type="flex">
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+</zv-row>
 
-<van-row type="flex" justify="center">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<zv-row type="flex" justify="center">
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+</zv-row>
 
-<van-row type="flex" justify="end">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<zv-row type="flex" justify="end">
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+</zv-row>
 
-<van-row type="flex" justify="space-between">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<zv-row type="flex" justify="space-between">
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+</zv-row>
 
-<van-row type="flex" justify="space-around">
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-  <van-col span="6">span: 6</van-col>
-</van-row>
+<zv-row type="flex" justify="space-around">
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+  <zv-col span="6">span: 6</zv-col>
+</zv-row>
 ```
 
 ## API

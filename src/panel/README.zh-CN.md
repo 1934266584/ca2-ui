@@ -16,9 +16,9 @@ Vue.use(Panel);
 面板只是一个容器，里面可以放入自定义的内容
 
 ```html
-<van-panel title="标题" desc="描述信息" status="状态">
+<zv-panel title="标题" desc="描述信息" status="状态">
   <div>内容</div>
-</van-panel>
+</zv-panel>
 ```
 
 ### 高级用法
@@ -26,13 +26,13 @@ Vue.use(Panel);
 使用`slot`自定义内容
 
 ```html
-<van-panel title="标题" desc="描述信息" status="状态">
+<zv-panel title="标题" desc="描述信息" status="状态">
   <div>内容</div>
   <template #footer>
-    <van-button size="small">按钮</van-button>
-    <van-button size="small" type="danger">按钮</van-button>
+    <zv-button size="small">按钮</zv-button>
+    <zv-button size="small" type="danger">按钮</zv-button>
   </template>
-</van-panel>
+</zv-panel>
 ```
 
 ## API

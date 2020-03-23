@@ -17,7 +17,7 @@ Vue.use(ContactEdit);
 
 ```html
 <!-- Contact Card -->
-<van-contact-card
+<zv-contact-card
   :type="cardType"
   :name="currentContact.name"
   :tel="currentContact.tel"
@@ -25,25 +25,25 @@ Vue.use(ContactEdit);
 />
 
 <!-- Contact List -->
-<van-popup v-model="showList" position="bottom">
-  <van-contact-list
+<zv-popup v-model="showList" position="bottom">
+  <zv-contact-list
     v-model="chosenContactId"
     :list="list"
     @add="onAdd"
     @edit="onEdit"
     @select="onSelect"
   />
-</van-popup>
+</zv-popup>
 
 <!-- Contact Edit -->
-<van-popup v-model="showEdit" position="bottom">
-  <van-contact-edit
+<zv-popup v-model="showEdit" position="bottom">
+  <zv-contact-edit
     :contact-info="editingContact"
     :is-edit="isEdit"
     @save="onSave"
     @delete="onDelete"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -122,7 +122,7 @@ export default {
 ### Uneditable
 
 ```html
-<van-contact-card
+<zv-contact-card
   type="edit"
   name="John Snow"
   tel="13000000000"

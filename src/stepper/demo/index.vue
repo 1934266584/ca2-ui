@@ -1,40 +1,40 @@
 <template>
   <demo-section>
-    <van-cell center :title="t('basicUsage')">
-      <van-stepper v-model="stepper1" />
-    </van-cell>
+    <zv-cell center :title="t('basicUsage')">
+      <zv-stepper v-model="stepper1" />
+    </zv-cell>
 
-    <van-cell center :title="t('step')">
-      <van-stepper v-model="stepper2" step="2" />
-    </van-cell>
+    <zv-cell center :title="t('step')">
+      <zv-stepper v-model="stepper2" step="2" />
+    </zv-cell>
 
-    <van-cell center :title="t('range')">
-      <van-stepper v-model="stepper3" :min="5" :max="8" />
-    </van-cell>
+    <zv-cell center :title="t('range')">
+      <zv-stepper v-model="stepper3" :min="5" :max="8" />
+    </zv-cell>
 
-    <van-cell center :title="t('integer')">
-      <van-stepper v-model="stepper4" integer />
-    </van-cell>
+    <zv-cell center :title="t('integer')">
+      <zv-stepper v-model="stepper4" integer />
+    </zv-cell>
 
-    <van-cell center :title="t('disabled')">
-      <van-stepper v-model="stepper5" disabled />
-    </van-cell>
+    <zv-cell center :title="t('disabled')">
+      <zv-stepper v-model="stepper5" disabled />
+    </zv-cell>
 
-    <van-cell center :title="t('disableInput')">
-      <van-stepper v-model="disabledInput" disable-input />
-    </van-cell>
+    <zv-cell center :title="t('disableInput')">
+      <zv-stepper v-model="disabledInput" disable-input />
+    </zv-cell>
 
-    <van-cell center :title="t('decimalLength')">
-      <van-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
-    </van-cell>
+    <zv-cell center :title="t('decimalLength')">
+      <zv-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
+    </zv-cell>
 
-    <van-cell center :title="t('customSize')">
-      <van-stepper v-model="stepper7" button-size="32px" input-width="40px" />
-    </van-cell>
+    <zv-cell center :title="t('customSize')">
+      <zv-stepper v-model="stepper7" button-size="32px" input-width="40px" />
+    </zv-cell>
 
-    <van-cell center :title="t('asyncChange')">
-      <van-stepper :value="stepper6" async-change @change="onChange" />
-    </van-cell>
+    <zv-cell center :title="t('asyncChange')">
+      <zv-stepper :value="stepper6" async-change @change="onChange" />
+    </zv-cell>
   </demo-section>
 </template>
 

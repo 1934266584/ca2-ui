@@ -18,7 +18,7 @@ Vue.use(DatetimePicker);
 ### Choose DateTime
 
 ```html
-<van-datetime-picker
+<zv-datetime-picker
   v-model="currentDate"
   type="datetime"
   :min-date="minDate"
@@ -41,7 +41,7 @@ export default {
 ### Choose Date
 
 ```html
-<van-datetime-picker
+<zv-datetime-picker
   v-model="currentDate"
   type="date"
   :min-date="minDate"
@@ -64,7 +64,7 @@ export default {
 ### Choose Year-Month
 
 ```html
-<van-datetime-picker
+<zv-datetime-picker
   v-model="currentDate"
   type="year-month"
   :min-date="minDate"
@@ -98,7 +98,7 @@ export default {
 ### Choose Time
 
 ```html
-<van-datetime-picker
+<zv-datetime-picker
   v-model="currentTime"
   type="time"
   :min-hour="10"
@@ -119,7 +119,7 @@ export default {
 ### Option Filter
 
 ```html
-<van-datetime-picker
+<zv-datetime-picker
   v-model="currentTime"
   type="time"
   :filter="filter"

@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('title1')">
-      <van-slider v-model="value1" @change="onChange" />
+      <zv-slider v-model="value1" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <van-slider v-model="value2" :min="-50" :max="50" @change="onChange" />
+      <zv-slider v-model="value2" :min="-50" :max="50" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <van-slider v-model="value3" disabled />
+      <zv-slider v-model="value3" disabled />
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <van-slider v-model="value4" :step="10" @change="onChange" />
+      <zv-slider v-model="value4" :step="10" @change="onChange" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-slider
+      <zv-slider
         v-model="value5"
         bar-height="4px"
         active-color="#ee0a24"
@@ -26,16 +26,16 @@
     </demo-block>
 
     <demo-block :title="t('customButton')">
-      <van-slider v-model="value6" active-color="#ee0a24">
+      <zv-slider v-model="value6" active-color="#ee0a24">
         <template #button>
           <div class="custom-button">{{ value6 }}</div>
         </template>
-      </van-slider>
+      </zv-slider>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('vertical')">
       <div :style="{ height: '120px', paddingLeft: '30px' }">
-        <van-slider v-model="value7" vertical @change="onChange" />
+        <zv-slider v-model="value7" vertical @change="onChange" />
       </div>
     </demo-block>
   </demo-section>

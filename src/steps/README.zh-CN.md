@@ -17,12 +17,12 @@ Vue.use(Steps);
 `active`属性表示当前步骤的索引，从 0 起计
 
 ```html
-<van-steps :active="active">
-  <van-step>买家下单</van-step>
-  <van-step>商家接单</van-step>
-  <van-step>买家提货</van-step>
-  <van-step>交易完成</van-step>
-</van-steps>
+<zv-steps :active="active">
+  <zv-step>买家下单</zv-step>
+  <zv-step>商家接单</zv-step>
+  <zv-step>买家提货</zv-step>
+  <zv-step>交易完成</zv-step>
+</zv-steps>
 ```
 
 ```js
@@ -40,16 +40,16 @@ export default {
 可以通过`active-icon`和`active-color`属性设置激活状态下的图标和颜色
 
 ```html
-<van-steps
+<zv-steps
   :active="active"
   active-icon="success"
   active-color="#38f"
 >
-  <van-step>买家下单</van-step>
-  <van-step>商家接单</van-step>
-  <van-step>买家提货</van-step>
-  <van-step>交易完成</van-step>
-</van-steps>
+  <zv-step>买家下单</zv-step>
+  <zv-step>商家接单</zv-step>
+  <zv-step>买家提货</zv-step>
+  <zv-step>交易完成</zv-step>
+</zv-steps>
 ```
 
 ### 竖向步骤条
@@ -57,20 +57,20 @@ export default {
 可以通过设置`direction`属性来改变步骤条的显示方向
 
 ```html
-<van-steps direction="vertical" :active="0">
-  <van-step>
+<zv-steps direction="vertical" :active="0">
+  <zv-step>
     <h3>【城市】物流状态1</h3>
     <p>2016-07-12 12:40</p>
-  </van-step>
-  <van-step>
+  </zv-step>
+  <zv-step>
     <h3>【城市】物流状态2</h3>
     <p>2016-07-11 10:00</p>
-  </van-step>
-  <van-step>
+  </zv-step>
+  <zv-step>
     <h3>快件已发货</h3>
     <p>2016-07-10 09:30</p>
-  </van-step>
-</van-steps>
+  </zv-step>
+</zv-steps>
 ```
 
 ## API

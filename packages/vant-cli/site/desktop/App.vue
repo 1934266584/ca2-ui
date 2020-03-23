@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <van-doc
+    <zv-doc
       :lang="lang"
       :config="config"
       :versions="versions"
@@ -8,18 +8,18 @@
       :lang-configs="langConfigs"
     >
       <router-view />
-    </van-doc>
+    </zv-doc>
   </div>
 </template>
 
 <script>
-import VanDoc from './components';
+import ZvDoc from './components';
 import { config, packageVersion } from 'site-desktop-shared';
 import { setLang } from '../common/locales';
 
 export default {
   components: {
-    VanDoc,
+    ZvDoc,
   },
 
   data() {

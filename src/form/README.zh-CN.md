@@ -20,15 +20,15 @@ Vue.use(Form);
 在表单中，每个 [Field 组件](#/zh-CN/field) 代表一个表单项，使用 Field 的`rules`属性定义校验规则
 
 ```html
-<van-form @submit="onSubmit">
-  <van-field
+<zv-form @submit="onSubmit">
+  <zv-field
     v-model="username"
     name="用户名"
     label="用户名"
     placeholder="用户名"
     :rules="[{ required: true, message: '请填写用户名' }]"
   />
-  <van-field
+  <zv-field
     v-model="password"
     type="password"
     name="密码"
@@ -37,11 +37,11 @@ Vue.use(Form);
     :rules="[{ required: true, message: '请填写密码' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">
+    <zv-button round block type="info" native-type="submit">
       提交
-    </van-button>
+    </zv-button>
   </div>
-</van-form>
+</zv-form>
 ```
 
 ```js
@@ -65,34 +65,34 @@ export default {
 通过`rules`定义表单校验规则，可用字段见[下方表格](#/zh-CN/form#rule-shu-ju-jie-gou)
 
 ```html
-<van-form validate-first @failed="onFailed">
+<zv-form validate-first @failed="onFailed">
   <!-- 通过 pattern 进行正则校验 -->
-  <van-field
+  <zv-field
     v-model="value1"
     name="pattern"
     placeholder="正则校验"
     :rules="[{ pattern, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行函数校验 -->
-  <van-field
+  <zv-field
     v-model="value2"
     name="validator"
     placeholder="函数校验"
     :rules="[{ validator, message: '请输入正确内容' }]"
   />
   <!-- 通过 validator 进行异步函数校验 -->
-  <van-field
+  <zv-field
     v-model="value3"
     name="asyncValidator"
     placeholder="异步函数校验"
     :rules="[{ validator: asyncValidator, message: '请输入正确内容' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">
+    <zv-button round block type="info" native-type="submit">
       提交
-    </van-button>
+    </zv-button>
   </div>
-</van-form>
+</zv-form>
 ```
 
 ```js
@@ -135,11 +135,11 @@ export default {
 在表单中使用 [Switch 组件](#/zh-CN/switch)
 
 ```html
-<van-field name="switch" label="开关">
+<zv-field name="switch" label="开关">
   <template #input>
-    <van-switch v-model="switchChecked" size="20" />
+    <zv-switch v-model="switchChecked" size="20" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -157,19 +157,19 @@ export default {
 在表单中使用 [Checkbox 组件](#/zh-CN/checkbox)
 
 ```html
-<van-field name="checkbox" label="复选框">
+<zv-field name="checkbox" label="复选框">
   <template #input>
-    <van-checkbox v-model="checkbox" shape="square" />
+    <zv-checkbox v-model="checkbox" shape="square" />
   </template>
-</van-field>
-<van-field name="checkboxGroup" label="复选框组">
+</zv-field>
+<zv-field name="checkboxGroup" label="复选框组">
   <template #input>
-    <van-checkbox-group v-model="checkboxGroup" direction="horizontal">
-      <van-checkbox name="1" shape="square">复选框 1</van-checkbox>
-      <van-checkbox name="2" shape="square">复选框 2</van-checkbox>
-    </van-checkbox-group>
+    <zv-checkbox-group v-model="checkboxGroup" direction="horizontal">
+      <zv-checkbox name="1" shape="square">复选框 1</zv-checkbox>
+      <zv-checkbox name="2" shape="square">复选框 2</zv-checkbox>
+    </zv-checkbox-group>
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -188,14 +188,14 @@ export default {
 在表单中使用 [Radio 组件](#/zh-CN/radio)
 
 ```html
-<van-field name="radio" label="单选框">
+<zv-field name="radio" label="单选框">
   <template #input>
-    <van-radio-group v-model="radio" direction="horizontal">
-      <van-radio name="1">单选框 1</van-radio>
-      <van-radio name="2">单选框 2</van-radio>
-    </van-radio-group>
+    <zv-radio-group v-model="radio" direction="horizontal">
+      <zv-radio name="1">单选框 1</zv-radio>
+      <zv-radio name="2">单选框 2</zv-radio>
+    </zv-radio-group>
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -213,11 +213,11 @@ export default {
 在表单中使用 [Stepper 组件](#/zh-CN/stepper)
 
 ```html
-<van-field name="stepper" label="步进器">
+<zv-field name="stepper" label="步进器">
   <template #input>
-    <van-stepper v-model="stepper" />
+    <zv-stepper v-model="stepper" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -235,11 +235,11 @@ export default {
 在表单中使用 [Rate 组件](#/zh-CN/rate)
 
 ```html
-<van-field name="rate" label="评分">
+<zv-field name="rate" label="评分">
   <template #input>
-    <van-rate v-model="rate" />
+    <zv-rate v-model="rate" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -257,11 +257,11 @@ export default {
 在表单中使用 [Slider 组件](#/zh-CN/slider)
 
 ```html
-<van-field name="slider" label="滑块">
+<zv-field name="slider" label="滑块">
   <template #input>
-    <van-slider v-model="slider" />
+    <zv-slider v-model="slider" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -279,11 +279,11 @@ export default {
 在表单中使用 [Uploader 组件](#/zh-CN/uploader)
 
 ```html
-<van-field name="uploader" label="文件上传">
+<zv-field name="uploader" label="文件上传">
   <template #input>
-    <van-uploader v-model="uploader" />
+    <zv-uploader v-model="uploader" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -301,7 +301,7 @@ export default {
 在表单中使用 [Picker 组件](#/zh-CN/picker)
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="picker"
@@ -310,14 +310,14 @@ export default {
   placeholder="点击选择城市"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-picker
+<zv-popup v-model="showPicker" position="bottom">
+  <zv-picker
     show-toolbar
     :columns="columns"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -343,7 +343,7 @@ export default {
 在表单中使用 [DatetimePicker 组件](#/zh-CN/datetime-picker)
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="datetimePicker"
@@ -352,13 +352,13 @@ export default {
   placeholder="点击选择时间"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-datetime-picker
+<zv-popup v-model="showPicker" position="bottom">
+  <zv-datetime-picker
     type="time"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -383,7 +383,7 @@ export default {
 在表单中使用 [Area 组件](#/zh-CN/area)
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="area"
@@ -392,13 +392,13 @@ export default {
   placeholder="点击选择省市区"
   @click="showArea = true"
 />
-<van-popup v-model="showArea" position="bottom">
-  <van-area
+<zv-popup v-model="showArea" position="bottom">
+  <zv-area
     :area-list="areaList"
     @confirm="onConfirm"
     @cancel="showArea = false"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -424,7 +424,7 @@ export default {
 在表单中使用 [Calendar 组件](#/zh-CN/calendar)
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="calendar"
@@ -433,7 +433,7 @@ export default {
   placeholder="点击选择日期"
   @click="showCalendar = true"
 />
-<van-calendar v-model="showCalendar" @confirm="onConfirm" />
+<zv-calendar v-model="showCalendar" @confirm="onConfirm" />
 ```
 
 ```js
@@ -514,9 +514,9 @@ export default {
 在表单中，除了提交按钮外，可能还有一些其他的功能性按钮，如发送验证码按钮。在使用这些按钮时，要注意将`native-type`设置为`button`，否则会触发表单提交。
 
 ```html
-<van-button native-type="button">
+<zv-button native-type="button">
   发送验证码
-</van-button>
+</zv-button>
 ```
 
 这个问题的原因是浏览器中 button 标签 type 属性的默认值为`submit`，导致触发表单提交。我们会在下个大版本中将 type 的默认值调整为`button`来避免这个问题。

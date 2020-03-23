@@ -17,11 +17,11 @@ Vue.use(CollapseItem);
 通过`v-model`控制展开的面板列表，`activeNames`为数组格式
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item title="标题1" name="1">内容</van-collapse-item>
-  <van-collapse-item title="标题2" name="2">内容</van-collapse-item>
-  <van-collapse-item title="标题3" name="3" disabled>内容</van-collapse-item>
-</van-collapse>
+<zv-collapse v-model="activeNames">
+  <zv-collapse-item title="标题1" name="1">内容</zv-collapse-item>
+  <zv-collapse-item title="标题2" name="2">内容</zv-collapse-item>
+  <zv-collapse-item title="标题3" name="3" disabled>内容</zv-collapse-item>
+</zv-collapse>
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 通过`accordion`可以设置为手风琴模式，最多展开一个面板，此时`activeName`为字符串格式
 
 ```html
-<van-collapse v-model="activeName" accordion>
-  <van-collapse-item title="标题1" name="1">内容</van-collapse-item>
-  <van-collapse-item title="标题2" name="2">内容</van-collapse-item>
-  <van-collapse-item title="标题3" name="3">内容</van-collapse-item>
-</van-collapse>
+<zv-collapse v-model="activeName" accordion>
+  <zv-collapse-item title="标题1" name="1">内容</zv-collapse-item>
+  <zv-collapse-item title="标题2" name="2">内容</zv-collapse-item>
+  <zv-collapse-item title="标题3" name="3">内容</zv-collapse-item>
+</zv-collapse>
 ```
 
 ```js
@@ -59,17 +59,17 @@ export default {
 ### 自定义标题内容
 
 ```html
-<van-collapse v-model="activeNames">
-  <van-collapse-item name="1">
+<zv-collapse v-model="activeNames">
+  <zv-collapse-item name="1">
     <template #title>
-      <div>标题1 <van-icon name="question-o" /></div>
+      <div>标题1 <zv-icon name="question-o" /></div>
     </template>
     内容
-  </van-collapse-item>
-  <van-collapse-item title="标题2" name="2" icon="shop-o">
+  </zv-collapse-item>
+  <zv-collapse-item title="标题2" name="2" icon="shop-o">
     内容
-  </van-collapse-item>
-</van-collapse>
+  </zv-collapse-item>
+</zv-collapse>
 ```
 
 ```js

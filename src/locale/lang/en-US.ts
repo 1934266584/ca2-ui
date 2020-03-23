@@ -12,7 +12,7 @@ export default {
   nameInvalid: 'Malformed name',
   confirmDelete: 'Are you sure you want to delete?',
   telInvalid: 'Malformed phone number',
-  vanCalendar: {
+  zvCalendar: {
     end: 'End',
     start: 'Start',
     title: 'Calendar',
@@ -21,34 +21,34 @@ export default {
     monthTitle: (year: number, month: number) => `${year}/${month}`,
     rangePrompt: (maxRange: number) => `Choose no more than ${maxRange} days`,
   },
-  vanContactCard: {
+  zvContactCard: {
     addText: 'Add contact info',
   },
-  vanContactList: {
+  zvContactList: {
     addText: 'Add new contact',
   },
-  vanPagination: {
+  zvPagination: {
     prev: 'Previous',
     next: 'Next',
   },
-  vanPullRefresh: {
+  zvPullRefresh: {
     pulling: 'Pull to refresh...',
     loosing: 'Loose to refresh...',
   },
-  vanSubmitBar: {
+  zvSubmitBar: {
     label: 'Total：',
   },
-  vanCoupon: {
+  zvCoupon: {
     unlimited: 'Unlimited',
     discount: (discount: number) => `${discount * 10}% off`,
     condition: (condition: number) => `At least ${condition}`,
   },
-  vanCouponCell: {
+  zvCouponCell: {
     title: 'Coupon',
     tips: 'No coupons',
     count: (count: number) => `You have ${count} coupons`,
   },
-  vanCouponList: {
+  zvCouponList: {
     empty: 'No coupons',
     exchange: 'Exchange',
     close: 'Close',
@@ -56,7 +56,7 @@ export default {
     disabled: 'Unavailable',
     placeholder: 'Coupon code',
   },
-  vanAddressEdit: {
+  zvAddressEdit: {
     area: 'Area',
     postal: 'Postal',
     areaEmpty: 'Please select a receiving area',
@@ -67,11 +67,11 @@ export default {
     namePlaceholder: 'Name',
     areaPlaceholder: 'Area',
   },
-  vanAddressEditDetail: {
+  zvAddressEditDetail: {
     label: 'Address',
     placeholder: 'Address',
   },
-  vanAddressList: {
+  zvAddressList: {
     add: 'Add new address',
   },
 };

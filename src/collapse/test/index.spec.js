@@ -4,11 +4,11 @@ import { later, mount } from '../../../test';
 
 const component = {
   template: `
-  <van-collapse v-model="active" :accordion="accordion" :border="border">
-    <van-collapse-item title="a" name="first">content</van-collapse-item>
-    <van-collapse-item title="b">content</van-collapse-item>
-    <van-collapse-item title="c">content</van-collapse-item>
-  </van-collapse>
+  <zv-collapse v-model="active" :accordion="accordion" :border="border">
+    <zv-collapse-item title="a" name="first">content</zv-collapse-item>
+    <zv-collapse-item title="b">content</zv-collapse-item>
+    <zv-collapse-item title="c">content</zv-collapse-item>
+  </zv-collapse>
   `,
   props: {
     accordion: Boolean,
@@ -67,14 +67,14 @@ test('accordion', async () => {
 test('render collapse-item slot', () => {
   const wrapper = mount({
     template: `
-      <van-collapse v-model="active">
-        <van-collapse-item>
+      <zv-collapse v-model="active">
+        <zv-collapse-item>
           <template v-slot:title>this is title</template>
           <template v-slot:value>this is value</template>
           <template v-slot:icon>this is icon</template>
           <template v-slot:right-icon>this is right icon</template>
-        </van-collapse-item>
-      </van-collapse>
+        </zv-collapse-item>
+      </zv-collapse>
       `,
     data() {
       return {
@@ -130,9 +130,9 @@ test('warn when value type is incorrect', () => {
 
   mount({
     template: `
-    <van-collapse v-model="active">
-      <van-collapse-item title="a" name="first"></van-collapse-item>
-    </van-collapse>
+    <zv-collapse v-model="active">
+      <zv-collapse-item title="a" name="first"></zv-collapse-item>
+    </zv-collapse>
     `,
     data() {
       return {

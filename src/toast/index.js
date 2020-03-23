@@ -17,7 +17,7 @@ const defaultOptions = {
   duration: 2000,
   iconPrefix: undefined,
   position: 'middle',
-  transition: 'van-fade',
+  transition: 'zv-fade',
   forbidClick: false,
   loadingType: undefined,
   getContainer: 'body',

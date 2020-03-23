@@ -14,7 +14,7 @@ Vue.use(Stepper);
 ### Basic Usage
 
 ```html
-<van-stepper v-model="value" />
+<zv-stepper v-model="value" />
 ```
 
 ```js
@@ -30,49 +30,49 @@ export default {
 ### Step
 
 ```html
-<van-stepper v-model="value" step="2" />
+<zv-stepper v-model="value" step="2" />
 ```
 
 ### Range
 
 ```html
-<van-stepper v-model="value" min="5" max="8" />
+<zv-stepper v-model="value" min="5" max="8" />
 ```
 
 ### Integer
 
 ```html
-<van-stepper v-model="value" integer />
+<zv-stepper v-model="value" integer />
 ```
 
 ### Disabled
 
 ```html
-<van-stepper v-model="value" disabled />
+<zv-stepper v-model="value" disabled />
 ```
 
 ### Disable Input
 
 ```html
-<van-stepper v-model="value" disabled-input />
+<zv-stepper v-model="value" disabled-input />
 ```
 
 ### Decimal Length
 
 ```html
-<van-stepper v-model="value" step="0.2" :decimal-length="1" />
+<zv-stepper v-model="value" step="0.2" :decimal-length="1" />
 ```
 
 ### Custom Size
 
 ```html
-<van-stepper v-model="value" input-width="40px" button-size="32px" />
+<zv-stepper v-model="value" input-width="40px" button-size="32px" />
 ```
 
 ### Async Change
 
 ```html
-<van-stepper
+<zv-stepper
   :value="value"
   async-change
   @change="onChange"

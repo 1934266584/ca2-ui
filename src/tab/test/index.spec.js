@@ -4,7 +4,7 @@ import { mount, later, triggerDrag, mockScrollTop } from '../../../test';
 function createWrapper(options = {}) {
   return mount({
     template: `
-      <van-tabs
+      <zv-tabs
         :color="color"
         :type="type"
         :sticky="sticky"
@@ -13,10 +13,10 @@ function createWrapper(options = {}) {
         @change="onChange"
       >
         ${options.extraTemplate || ''}
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+        <zv-tab title="title1">Text</zv-tab>
+        <zv-tab title="title2">Text</zv-tab>
+        <zv-tab title="title3" disabled>Text</zv-tab>
+      </zv-tabs>
     `,
     data() {
       return {
@@ -35,11 +35,11 @@ test('click to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabs @change="onChange">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+      <zv-tabs @change="onChange">
+        <zv-tab title="title1">Text</zv-tab>
+        <zv-tab title="title2">Text</zv-tab>
+        <zv-tab title="title3" disabled>Text</zv-tab>
+      </zv-tabs>
     `,
     methods: {
       onChange,
@@ -61,11 +61,11 @@ test('swipe to switch tab', async () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-tabs swipeable @change="onChange">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2">Text</van-tab>
-        <van-tab title="title3" disabled>Text</van-tab>
-      </van-tabs>
+      <zv-tabs swipeable @change="onChange">
+        <zv-tab title="title1">Text</zv-tab>
+        <zv-tab title="title2">Text</zv-tab>
+        <zv-tab title="title3" disabled>Text</zv-tab>
+      </zv-tabs>
     `,
     methods: {
       onChange,
@@ -147,10 +147,10 @@ test('click event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick" @disabled="onDisabled">
-        <van-tab title="title1">Text</van-tab>
-        <van-tab title="title2" disabled>Text</van-tab>
-      </van-tabs>
+      <zv-tabs @click="onClick" @disabled="onDisabled">
+        <zv-tab title="title1">Text</zv-tab>
+        <zv-tab title="title2" disabled>Text</zv-tab>
+      </zv-tabs>
     `,
     methods: {
       onClick,
@@ -174,11 +174,11 @@ test('name prop', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick" @disabled="onDisabled" @change="onChange">
-        <van-tab title="title1" name="a">Text</van-tab>
-        <van-tab title="title2" name="b">Text</van-tab>
-        <van-tab title="title3" name="c" disabled>Text</van-tab>
-      </van-tabs>
+      <zv-tabs @click="onClick" @disabled="onDisabled" @change="onChange">
+        <zv-tab title="title1" name="a">Text</zv-tab>
+        <zv-tab title="title2" name="b">Text</zv-tab>
+        <zv-tab title="title3" name="c" disabled>Text</zv-tab>
+      </zv-tabs>
     `,
     methods: {
       onClick,
@@ -207,10 +207,10 @@ test('set name to zero', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs @click="onClick">
-        <van-tab title="title1" :name="1">Text</van-tab>
-        <van-tab title="title2" :name="0">Text</van-tab>
-      </van-tabs>
+      <zv-tabs @click="onClick">
+        <zv-tab title="title1" :name="1">Text</zv-tab>
+        <zv-tab title="title2" :name="0">Text</zv-tab>
+      </zv-tabs>
     `,
     methods: {
       onClick,
@@ -225,9 +225,9 @@ test('set name to zero', async () => {
 test('title-style prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab title="title1" title-style="color: red;">Text</van-tab>
-      </van-tabs>
+      <zv-tabs>
+        <zv-tab title="title1" title-style="color: red;">Text</zv-tab>
+      </zv-tabs>
     `,
   });
 
@@ -237,9 +237,9 @@ test('title-style prop', () => {
 test('dot prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab dot>Text</van-tab>
-      </van-tabs>
+      <zv-tabs>
+        <zv-tab dot>Text</zv-tab>
+      </zv-tabs>
     `,
   });
 
@@ -249,9 +249,9 @@ test('dot prop', () => {
 test('info prop', () => {
   const wrapper = mount({
     template: `
-      <van-tabs>
-        <van-tab info="10">Text</van-tab>
-      </van-tabs>
+      <zv-tabs>
+        <zv-tab info="10">Text</zv-tab>
+      </zv-tabs>
     `,
   });
 
@@ -264,11 +264,11 @@ test('scrollspy', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs scrollspy sticky @change="onChange">
-        <van-tab name="a" title="title1">Text</van-tab>
-        <van-tab name="b" title="title2">Text</van-tab>
-        <van-tab name="c" title="title3">Text</van-tab>
-      </van-tabs>
+      <zv-tabs scrollspy sticky @change="onChange">
+        <zv-tab name="a" title="title1">Text</zv-tab>
+        <zv-tab name="b" title="title2">Text</zv-tab>
+        <zv-tab name="c" title="title3">Text</zv-tab>
+      </zv-tabs>
     `,
     methods: {
       onChange,
@@ -293,10 +293,10 @@ test('rendered event', async () => {
 
   const wrapper = mount({
     template: `
-      <van-tabs v-model="active" @rendered="onRendered">
-        <van-tab name="a" title="title1">Text</van-tab>
-        <van-tab name="b" title="title2">Title2</van-tab>
-      </van-tabs>
+      <zv-tabs v-model="active" @rendered="onRendered">
+        <zv-tab name="a" title="title1">Text</zv-tab>
+        <zv-tab name="b" title="title2">Title2</zv-tab>
+      </zv-tabs>
     `,
     data() {
       return {
@@ -325,10 +325,10 @@ test('should not trigger rendered event when disable lazy-render', async () => {
 
   mount({
     template: `
-      <van-tabs :lazy-render="false" @rendered="onRendered">
-        <van-tab>Text</van-tab>
-        <van-tab>Title2</van-tab>
-      </van-tabs>
+      <zv-tabs :lazy-render="false" @rendered="onRendered">
+        <zv-tab>Text</zv-tab>
+        <zv-tab>Title2</zv-tab>
+      </zv-tabs>
     `,
     methods: {
       onRendered,

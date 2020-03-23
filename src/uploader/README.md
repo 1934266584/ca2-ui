@@ -14,7 +14,7 @@ Vue.use(Uploader);
 ### Basic Usage
 
 ```html
-<van-uploader :after-read="afterRead" />
+<zv-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -30,7 +30,7 @@ export default {
 ### Preview File
 
 ```html
-<van-uploader v-model="fileList" multiple />
+<zv-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -47,13 +47,13 @@ export default {
 ### Disabled
 
 ```html
-<van-uploader disabled />
+<zv-uploader disabled />
 ```
 
 ### Upload Status
 
 ```html
-<van-uploader v-model="fileList" :after-read="afterRead" />
+<zv-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -91,7 +91,7 @@ export default {
 ### Max Count
 
 ```html
-<van-uploader
+<zv-uploader
   v-model="fileList"
   multiple
   :max-count="2"
@@ -111,15 +111,15 @@ export default {
 ### Upload Style
 
 ```html
-<van-uploader>
-  <van-button icon="photo" type="primary">Upload Image</van-button>
-</van-uploader>
+<zv-uploader>
+  <zv-button icon="photo" type="primary">Upload Image</zv-button>
+</zv-uploader>
 ```
 
 ### Before Read
 
 ```html
-<van-uploader :before-read="beforeRead" />
+<zv-uploader :before-read="beforeRead" />
 ```
 
 ```js

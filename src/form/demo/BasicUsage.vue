@@ -1,14 +1,14 @@
 <template>
   <demo-block :title="t('basicUsage')">
-    <van-form @submit="onSubmit" @failed="onFailed">
-      <van-field
+    <zv-form @submit="onSubmit" @failed="onFailed">
+      <zv-field
         v-model="username"
         name="username"
         :label="t('username')"
         :rules="[{ required: true, message: t('requireUsername') }]"
         :placeholder="t('username')"
       />
-      <van-field
+      <zv-field
         v-model="password"
         type="password"
         name="password"
@@ -17,11 +17,11 @@
         :placeholder="t('password')"
       />
       <div style="margin: 16px 16px 0;">
-        <van-button round block type="info" native-type="submit">
+        <zv-button round block type="info" native-type="submit">
           {{ t('submit') }}
-        </van-button>
+        </zv-button>
       </div>
-    </van-form>
+    </zv-form>
   </demo-block>
 </template>
 

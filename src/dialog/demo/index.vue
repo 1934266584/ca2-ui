@@ -1,38 +1,38 @@
 <template>
   <demo-section>
     <demo-block :title="t('alert1')">
-      <van-button type="primary" @click="onClickAlert">
+      <zv-button type="primary" @click="onClickAlert">
         {{ t('alert1') }}
-      </van-button>
-      <van-button type="primary" @click="onClickAlert2">
+      </zv-button>
+      <zv-button type="primary" @click="onClickAlert2">
         {{ t('alert2') }}
-      </van-button>
+      </zv-button>
     </demo-block>
 
     <demo-block :title="t('confirm')">
-      <van-button type="primary" @click="onClickConfirm">
+      <zv-button type="primary" @click="onClickConfirm">
         {{ t('confirm') }}
-      </van-button>
+      </zv-button>
     </demo-block>
 
     <demo-block :title="t('asyncClose')">
-      <van-button type="primary" @click="onClickAsyncClose">
+      <zv-button type="primary" @click="onClickAsyncClose">
         {{ t('asyncClose') }}
-      </van-button>
+      </zv-button>
     </demo-block>
 
     <demo-block :title="t('componentCall')">
-      <van-button type="primary" @click="show = true">
+      <zv-button type="primary" @click="show = true">
         {{ t('componentCall') }}
-      </van-button>
-      <van-dialog
+      </zv-button>
+      <zv-dialog
         v-model="show"
         :title="t('title')"
         show-cancel-button
         :lazy-render="false"
       >
         <img :src="image" />
-      </van-dialog>
+      </zv-dialog>
     </demo-block>
   </demo-section>
 </template>

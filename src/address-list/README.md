@@ -14,7 +14,7 @@ Vue.use(AddressList);
 ### Basic Usage
 
 ```html
-<van-address-list
+<zv-address-list
   v-model="chosenAddressId"
   :list="list"
   :disabled-list="disabledList"

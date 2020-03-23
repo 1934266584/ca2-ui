@@ -14,23 +14,23 @@ Vue.use(SwipeCell);
 ### Basic Usage
 
 ```html
-<van-swipe-cell>
+<zv-swipe-cell>
   <template #left>
-    <van-button square type="primary" text="Select" />
+    <zv-button square type="primary" text="Select" />
   </template>
-  <van-cell :border="false" title="Cell" value="Cell Content" />
+  <zv-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <van-button square type="danger" text="Delete" />
-    <van-button square type="primary" text="Collect"/>
+    <zv-button square type="danger" text="Delete" />
+    <zv-button square type="primary" text="Collect"/>
   </template>
-</van-swipe-cell>
+</zv-swipe-cell>
 ```
 
 ### Custom Content
 
 ```html
-<van-swipe-cell>
-  <van-card
+<zv-swipe-cell>
+  <zv-card
     num="2"
     price="2.00"
     desc="Description"
@@ -39,14 +39,14 @@ Vue.use(SwipeCell);
     thumb="https://img.yzcdn.cn/vant/cat.jpeg"
   />
   <template #right>
-    <van-button
+    <zv-button
       square
       text="Delete"
       type="danger"
       class="delete-button"
     />
   </template>
-</van-swipe-cell>
+</zv-swipe-cell>
 
 <style>
 .goods-card {
@@ -63,15 +63,15 @@ Vue.use(SwipeCell);
 ### Before Close
 
 ```html
-<van-swipe-cell :before-close="beforeClose">
+<zv-swipe-cell :before-close="beforeClose">
   <template #left>
-    <van-button square type="primary" text="Select" />
+    <zv-button square type="primary" text="Select" />
   </template>
-  <van-cell :border="false" title="Cell" value="Cell Content" />
+  <zv-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <van-button square type="danger" text="Delete" />
+    <zv-button square type="danger" text="Delete" />
   </template>
-</van-swipe-cell>
+</zv-swipe-cell>
 ```
 
 ```js

@@ -125,7 +125,7 @@ Vue.use(Vant);
 // 在 #app 标签下渲染一个按钮组件
 new Vue({
   el: '#app',
-  template: `<van-button>按钮</van-button>`
+  template: `<zv-button>按钮</zv-button>`
 });
 
 // 调用函数组件，弹出一个 Toast
@@ -187,7 +187,7 @@ iPhone X 等机型底部存在底部指示条，指示条的操作区域与页�
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 
 <!-- 开启 safe-area-inset-bottom 属性 -->
-<van-number-keyboard safe-area-inset-bottom />
+<zv-number-keyboard safe-area-inset-bottom />
 ```
 
 <img src="https://b.yzcdn.cn/vant/safearea.png">
@@ -198,9 +198,9 @@ Vant 中的许多组件提供了实例方法，调用实例方法时，我们需
 
 ```html
 <!-- 将该组件绑定到 this.$refs.checkbox 上 -->
-<van-checkbox v-model="checked" ref="checkbox">
+<zv-checkbox v-model="checked" ref="checkbox">
   复选框
-</van-checkbox>
+</zv-checkbox>
 ```
 
 ```js
@@ -224,19 +224,19 @@ export default {
 在 HTML 中使用 Vant 组件时，你可能会碰到部分示例代码无法正确渲染的情况，比如下面的用法：
 
 ```html
-<van-cell-group>
-  <van-cell title="单元格" value="内容" />
-  <van-cell title="单元格" value="内容" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell title="单元格" value="内容" />
+  <zv-cell title="单元格" value="内容" />
+</zv-cell-group>
 ```
 
-这是因为 HTML 并不支持自闭合的自定义元素，也就是说 `<van-cell />` 这样的语法是不被识别的，使用完整的闭合标签可以避免这个问题：
+这是因为 HTML 并不支持自闭合的自定义元素，也就是说 `<zv-cell />` 这样的语法是不被识别的，使用完整的闭合标签可以避免这个问题：
 
 ```html
-<van-cell-group>
-  <van-cell title="单元格" value="内容"></van-cell>
-  <van-cell title="单元格" value="内容"></van-cell>
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell title="单元格" value="内容"></zv-cell>
+  <zv-cell title="单元格" value="内容"></zv-cell>
+</zv-cell-group>
 ```
 
 在单文件组件、字符串模板和 JSX 中可以使用自闭合的自定义元素，因此不会出现这个问题。

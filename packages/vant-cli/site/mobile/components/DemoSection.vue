@@ -1,5 +1,5 @@
 <template>
-  <section class="van-doc-demo-section" :class="demoName">
+  <section class="zv-doc-demo-section" :class="demoName">
     <slot />
   </section>
 </template>

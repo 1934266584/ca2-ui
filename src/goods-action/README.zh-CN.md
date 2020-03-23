@@ -16,12 +16,12 @@ Vue.use(GoodsActionIcon);
 ### 基础用法
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="客服" @click="onClickIcon" />
-  <van-goods-action-icon icon="cart-o" text="购物车" @click="onClickIcon" />
-  <van-goods-action-button type="warning" text="加入购物车" @click="onClickButton" />
-  <van-goods-action-button type="danger" text="立即购买" @click="onClickButton" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="客服" @click="onClickIcon" />
+  <zv-goods-action-icon icon="cart-o" text="购物车" @click="onClickIcon" />
+  <zv-goods-action-button type="warning" text="加入购物车" @click="onClickButton" />
+  <zv-goods-action-button type="danger" text="立即购买" @click="onClickButton" />
+</zv-goods-action>
 ```
 
 ```js
@@ -44,13 +44,13 @@ export default {
 在 GoodsActionIcon 组件上设置`dot`属性后，会在图标右上角展示一个小红点。设置`badge`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="客服" dot />
-  <van-goods-action-icon icon="cart-o" text="购物车" badge="5" />
-  <van-goods-action-icon icon="shop-o" text="店铺" badge="12" />
-  <van-goods-action-button type="warning" text="加入购物车" />
-  <van-goods-action-button type="danger" text="立即购买" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="客服" dot />
+  <zv-goods-action-icon icon="cart-o" text="购物车" badge="5" />
+  <zv-goods-action-icon icon="shop-o" text="店铺" badge="12" />
+  <zv-goods-action-button type="warning" text="加入购物车" />
+  <zv-goods-action-button type="danger" text="立即购买" />
+</zv-goods-action>
 ```
 
 ### 自定义图标颜色
@@ -58,13 +58,13 @@ export default {
 通过 GoodsActionIcon 的`color`属性可以自定义图标的颜色
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="客服" color="#07c160" />
-  <van-goods-action-icon icon="cart-o" text="购物车" />
-  <van-goods-action-icon icon="star" text="已收藏" color="#ff5000" />
-  <van-goods-action-button type="warning" text="加入购物车" />
-  <van-goods-action-button type="danger" text="立即购买" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="客服" color="#07c160" />
+  <zv-goods-action-icon icon="cart-o" text="购物车" />
+  <zv-goods-action-icon icon="star" text="已收藏" color="#ff5000" />
+  <zv-goods-action-button type="warning" text="加入购物车" />
+  <zv-goods-action-button type="danger" text="立即购买" />
+</zv-goods-action>
 ```
 
 ### 自定义按钮颜色
@@ -72,12 +72,12 @@ export default {
 通过 GoodsActionButton 的`color`属性可以自定义按钮的颜色，支持传入`linear-gradient`渐变色
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="客服" />
-  <van-goods-action-icon icon="shop-o" text="店铺" />
-  <van-goods-action-button color="#be99ff" type="warning" text="加入购物车" />
-  <van-goods-action-button color="#7232dd" type="danger" text="立即购买" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="客服" />
+  <zv-goods-action-icon icon="shop-o" text="店铺" />
+  <zv-goods-action-button color="#be99ff" type="warning" text="加入购物车" />
+  <zv-goods-action-button color="#7232dd" type="danger" text="立即购买" />
+</zv-goods-action>
 ```
 
 ## API

@@ -130,7 +130,7 @@ test('set max-hour & max-minute smaller than current then emit correct value', a
 test('set min-minute dynamically', async () => {
   const wrapper = mount({
     template: `
-      <van-datetime-picker
+      <zv-datetime-picker
         v-model="currentTime"
         type="time"
         :min-minute="currentTime.split(':')[0] > 12 ? 0 : 30"

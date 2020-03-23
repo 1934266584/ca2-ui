@@ -1,6 +1,6 @@
 <template>
   <demo-block :title="t('insertButton')">
-    <van-field
+    <zv-field
       v-model="sms"
       center
       clearable
@@ -8,11 +8,11 @@
       :placeholder="t('smsPlaceholder')"
     >
       <template #button>
-        <van-button size="small" type="primary">
+        <zv-button size="small" type="primary">
           {{ t('sendSMS') }}
-        </van-button>
+        </zv-button>
       </template>
-    </van-field>
+    </zv-field>
   </demo-block>
 </template>
 

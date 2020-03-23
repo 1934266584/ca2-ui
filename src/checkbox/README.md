@@ -15,7 +15,7 @@ Vue.use(CheckboxGroup);
 ### Basic Usage
 
 ```html
-<van-checkbox v-model="checked">Checkbox</van-checkbox>
+<zv-checkbox v-model="checked">Checkbox</zv-checkbox>
 ```
 
 ```js
@@ -31,25 +31,25 @@ export default {
 ### Disabled
 
 ```html
-<van-checkbox v-model="checked" disabled>Checkbox</van-checkbox>
+<zv-checkbox v-model="checked" disabled>Checkbox</zv-checkbox>
 ```
 
 ### Custom Shape
 
 ```html
-<van-checkbox v-model="checked" shape="square">Checkbox</van-checkbox>
+<zv-checkbox v-model="checked" shape="square">Checkbox</zv-checkbox>
 ```
 
 ### Custom Color
 
 ```html
-<van-checkbox v-model="checked" checked-color="#07c160">Checkbox</van-checkbox>
+<zv-checkbox v-model="checked" checked-color="#07c160">Checkbox</zv-checkbox>
 ```
 
 ### Custom Icon Size
 
 ```html
-<van-checkbox v-model="checked" icon-size="24px">Checkbox</van-checkbox>
+<zv-checkbox v-model="checked" icon-size="24px">Checkbox</zv-checkbox>
 ```
 
 ### Custom Icon
@@ -57,7 +57,7 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<van-checkbox v-model="checked">
+<zv-checkbox v-model="checked">
   customize icon
   <template #icon="props">
     <img
@@ -66,7 +66,7 @@ Use icon slot to custom icon
     />
 </template>
 
-</van-checkbox>
+</zv-checkbox>
 
 <style>
 .img-icon {
@@ -90,7 +90,7 @@ export default {
 ### Disable Label Click
 
 ```html
-<van-checkbox v-model="checked" label-disabled>Checkbox</van-checkbox>
+<zv-checkbox v-model="checked" label-disabled>Checkbox</zv-checkbox>
 ```
 
 ### Checkbox Group
@@ -98,10 +98,10 @@ export default {
 When Checkboxes are inside a CheckboxGroup, the checked checkboxes's name is an array and bound with CheckboxGroup by v-model.
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-</van-checkbox-group>
+<zv-checkbox-group v-model="result">
+  <zv-checkbox name="a">Checkbox a</zv-checkbox>
+  <zv-checkbox name="b">Checkbox b</zv-checkbox>
+</zv-checkbox-group>
 ```
 
 ```js
@@ -117,10 +117,10 @@ export default {
 ### Horizontal
 
 ```html
-<van-checkbox-group v-model="result" direction="horizontal">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-</van-checkbox-group>
+<zv-checkbox-group v-model="result" direction="horizontal">
+  <zv-checkbox name="a">Checkbox a</zv-checkbox>
+  <zv-checkbox name="b">Checkbox b</zv-checkbox>
+</zv-checkbox-group>
 ```
 
 ```js
@@ -136,24 +136,24 @@ export default {
 ### Maximum amount of checked options
 
 ```html
-<van-checkbox-group v-model="result" :max="2">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<zv-checkbox-group v-model="result" :max="2">
+  <zv-checkbox name="a">Checkbox a</zv-checkbox>
+  <zv-checkbox name="b">Checkbox b</zv-checkbox>
+  <zv-checkbox name="c">Checkbox c</zv-checkbox>
+</zv-checkbox-group>
 ```
 
 ### Toggle All
 
 ```html
-<van-checkbox-group v-model="result" ref="checkboxGroup">
-  <van-checkbox name="a">Checkbox a</van-checkbox>
-  <van-checkbox name="b">Checkbox b</van-checkbox>
-  <van-checkbox name="c">Checkbox c</van-checkbox>
-</van-checkbox-group>
+<zv-checkbox-group v-model="result" ref="checkboxGroup">
+  <zv-checkbox name="a">Checkbox a</zv-checkbox>
+  <zv-checkbox name="b">Checkbox b</zv-checkbox>
+  <zv-checkbox name="c">Checkbox c</zv-checkbox>
+</zv-checkbox-group>
 
-<van-button type="primary" @click="checkAll">Check All</van-button>
-<van-button type="info" @click="toggleAll">Toggle All</van-button>
+<zv-button type="primary" @click="checkAll">Check All</zv-button>
+<zv-button type="info" @click="toggleAll">Toggle All</zv-button>
 ```
 
 ```js
@@ -177,9 +177,9 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-checkbox-group v-model="result">
-  <van-cell-group>
-    <van-cell
+<zv-checkbox-group v-model="result">
+  <zv-cell-group>
+    <zv-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
@@ -187,11 +187,11 @@ export default {
       @click="toggle(index)"
     >
     <template #right-icon>
-      <van-checkbox :name="item" ref="checkboxes" />
+      <zv-checkbox :name="item" ref="checkboxes" />
     </template>
-    </van-cell>
-  </van-cell-group>
-</van-checkbox-group>
+    </zv-cell>
+  </zv-cell-group>
+</zv-checkbox-group>
 ```
 
 ```js

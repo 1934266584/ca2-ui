@@ -314,7 +314,7 @@ export default createComponent({
           }}
         >
           <Icon class={bem('file-icon')} name="description" />
-          <div class={[bem('file-name'), 'van-ellipsis']}>
+          <div class={[bem('file-name'), 'zv-ellipsis']}>
             {item.file ? item.file.name : item.url}
           </div>
         </div>

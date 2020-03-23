@@ -216,9 +216,9 @@ test('set show-index prop to false', () => {
 test('index slot', () => {
   const wrapper = mount({
     template: `
-      <van-image-preview :value="true">
+      <zv-image-preview :value="true">
         <template #index>Custom Index</template>
-      </van-image-preview>
+      </zv-image-preview>
     `,
   });
 
@@ -228,9 +228,9 @@ test('index slot', () => {
 test('cover slot', () => {
   const wrapper = mount({
     template: `
-      <van-image-preview :value="true">
+      <zv-image-preview :value="true">
         <template #cover>Custom Cover Content</template>
-      </van-image-preview>
+      </zv-image-preview>
     `,
   });
 

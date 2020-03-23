@@ -14,8 +14,8 @@ Vue.use(Popup);
 ### Basic Usage
 
 ```html
-<van-cell is-link @click="showPopup">Show Popup</van-cell>
-<van-popup v-model="show">Content</van-popup>
+<zv-cell is-link @click="showPopup">Show Popup</zv-cell>
+<zv-popup v-model="show">Content</zv-popup>
 ```
 
 ```js
@@ -39,7 +39,7 @@ export default {
 Use `position` prop to set popup display position
 
 ```html
-<van-popup
+<zv-popup
   v-model="show"
   position="top"
   :style="{ height: '30%' }"
@@ -49,14 +49,14 @@ Use `position` prop to set popup display position
 ### Close Icon
 
 ```html
-<van-popup
+<zv-popup
   v-model="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- Custom Icon -->
-<van-popup
+<zv-popup
   v-model="show"
   closeable
   close-icon="close"
@@ -64,7 +64,7 @@ Use `position` prop to set popup display position
   :style="{ height: '30%' }"
 />
 <!-- Icon Position -->
-<van-popup
+<zv-popup
   v-model="show"
   closeable
   close-icon-position="top-left"
@@ -76,7 +76,7 @@ Use `position` prop to set popup display position
 ### Round Corner
 
 ```html
-<van-popup
+<zv-popup
   v-model="show"
   round
   position="bottom"
@@ -90,13 +90,13 @@ Use `get-container` prop to specify mount location
 
 ```html
 <!-- mount to body -->
-<van-popup v-model="show" get-container="body" />
+<zv-popup v-model="show" get-container="body" />
 
 <!-- mount to #app -->
-<van-popup v-model="show" get-container="#app" />
+<zv-popup v-model="show" get-container="#app" />
 
 <!-- Specify the mount location by function -->
-<van-popup v-model="show" :get-container="getContainer" />
+<zv-popup v-model="show" :get-container="getContainer" />
 ```
 
 ```js

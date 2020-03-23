@@ -16,9 +16,9 @@ Vue.use(Field);
 The value of field is bound with v-model.
 
 ```html
-<van-cell-group>
-  <van-field v-model="value" placeholder="Text" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-field v-model="value" placeholder="Text" />
+</zv-cell-group>
 ```
 
 ```js
@@ -36,11 +36,11 @@ export default {
 Use `type` prop to custom different type fields.
 
 ```html
-<van-field v-model="text" label="Text" />
-<van-field v-model="tel" type="tel" label="Phone" />
-<van-field v-model="digit" type="digit" label="Digit" />
-<van-field v-model="number" type="number" label="Number" />
-<van-field v-model="password" type="password" label="Password" />
+<zv-field v-model="text" label="Text" />
+<zv-field v-model="tel" type="tel" label="Phone" />
+<zv-field v-model="digit" type="digit" label="Digit" />
+<zv-field v-model="number" type="number" label="Number" />
+<zv-field v-model="password" type="password" label="Password" />
 ```
 
 ```js
@@ -60,31 +60,31 @@ export default {
 ### Disabled
 
 ```html
-<van-cell-group>
-  <van-field label="Text" value="Input Readonly" readonly />
-  <van-field label="Text" value="Input Disabled" disabled />
-</van-cell-group>
+<zv-cell-group>
+  <zv-field label="Text" value="Input Readonly" readonly />
+  <zv-field label="Text" value="Input Disabled" disabled />
+</zv-cell-group>
 ```
 
 ### Show Icon
 
 ```html
-<van-cell-group>
-  <van-field
+<zv-cell-group>
+  <zv-field
     v-model="value1"
     label="Text"
     left-icon="smile-o"
     right-icon="warning-o"
     placeholder="Show Icon"
   />
-  <van-field
+  <zv-field
     v-model="value2"
     clearable
     label="Text"
     left-icon="music-o"
     placeholder="Show Clear Icon"
   />
-</van-cell-group>
+</zv-cell-group>
 ```
 
 ```js
@@ -103,22 +103,22 @@ export default {
 Use `error` or `error-message` to show error info
 
 ```html
-<van-cell-group>
-  <van-field
+<zv-cell-group>
+  <zv-field
     v-model="username"
     error
     required
     label="Username"
     placeholder="Username"
   />
-  <van-field
+  <zv-field
     v-model="phone"
     required
     label="Phone"
     placeholder="Phone"
     error-message="Invalid phone"
   />
-</van-cell-group>
+</zv-cell-group>
 ```
 
 ### Insert Button
@@ -126,7 +126,7 @@ Use `error` or `error-message` to show error info
 Use button slot to insert button
 
 ```html
-<van-field
+<zv-field
   v-model="sms"
   center
   clearable
@@ -134,9 +134,9 @@ Use button slot to insert button
   placeholder="SMS"
 >
   <template #button>
-    <van-button size="small" type="primary">Send SMS</van-button>
+    <zv-button size="small" type="primary">Send SMS</zv-button>
   </template>
-</van-field>
+</zv-field>
 ```
 
 ### Format Value
@@ -144,7 +144,7 @@ Use button slot to insert button
 Use `formatter` prop to format the input value
 
 ```html
-<van-field
+<zv-field
   v-model="value"
   label="Text"
   :formatter="formatter"
@@ -172,7 +172,7 @@ export default {
 Textarea Field can be auto resize when has `autosize` prop
 
 ```html
-<van-field
+<zv-field
   v-model="message"
   label="Message"
   type="textarea"
@@ -185,7 +185,7 @@ Textarea Field can be auto resize when has `autosize` prop
 ### Show Word Limit
 
 ```html
-<van-field
+<zv-field
   v-model="message"
   rows="2"
   autosize
@@ -202,7 +202,7 @@ Textarea Field can be auto resize when has `autosize` prop
 Use `input-align` prop to align the input value
 
 ```html
-<van-field
+<zv-field
   v-model="value"
   :label="Text"
   :placeholder="Input Align Right"
@@ -244,7 +244,7 @@ Use `input-align` prop to align the input value
 | autosize | Textarea auto resize，can accpet an object,<br>e.g. { maxHeight: 100, minHeight: 50 } | *boolean \| object* | `false` |
 | left-icon | Left side icon name | *string* | - |
 | right-icon | Right side icon name | *string* | - |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
 | rules `v2.5.0` | Form validation rules | *Rule[]* | - |
 
 ### Events

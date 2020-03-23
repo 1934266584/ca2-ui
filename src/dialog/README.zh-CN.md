@@ -108,9 +108,9 @@ export default {
 如果需要在弹窗内嵌入组件或其他自定义内容，可以使用组件调用的方式
 
 ```html
-<van-dialog v-model="show" title="标题" show-cancel-button>
+<zv-dialog v-model="show" title="标题" show-cancel-button>
   <img src="https://img.yzcdn.cn/vant/apple-3.jpg">
-</van-dialog>
+</zv-dialog>
 ```
 
 ```js

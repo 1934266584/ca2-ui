@@ -13,11 +13,11 @@ function mockPageHidden() {
 
 const Component = {
   template: `
-    <van-swipe ref="swipe" v-bind="$props" v-on="$listeners">
-      <van-swipe-item :style="style">1</van-swipe-item>
-      <van-swipe-item :style="style">2</van-swipe-item>
-      <van-swipe-item :style="style">3</van-swipe-item>
-    </van-swipe>
+    <zv-swipe ref="swipe" v-bind="$props" v-on="$listeners">
+      <zv-swipe-item :style="style">1</zv-swipe-item>
+      <zv-swipe-item :style="style">2</zv-swipe-item>
+      <zv-swipe-item :style="style">3</zv-swipe-item>
+    </zv-swipe>
   `,
   props: {
     vertical: Boolean,

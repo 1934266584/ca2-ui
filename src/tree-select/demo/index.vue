@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('radioMode')">
-      <van-tree-select
+      <zv-tree-select
         :items="items"
         :active-id.sync="activeId"
         :main-active-index.sync="activeIndex"
@@ -9,7 +9,7 @@
     </demo-block>
 
     <demo-block :title="t('multipleMode')">
-      <van-tree-select
+      <zv-tree-select
         :items="items"
         :active-id.sync="activeIds"
         :main-active-index.sync="activeIndex2"
@@ -17,26 +17,26 @@
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <van-tree-select
+      <zv-tree-select
         height="55vw"
         :items="simpleItems"
         :main-active-index.sync="activeIndex3"
       >
         <template slot="content">
-          <van-image
+          <zv-image
             v-if="activeIndex3 === 0"
             src="https://img.yzcdn.cn/vant/apple-1.jpg"
           />
-          <van-image
+          <zv-image
             v-if="activeIndex3 === 1"
             src="https://img.yzcdn.cn/vant/apple-2.jpg"
           />
         </template>
-      </van-tree-select>
+      </zv-tree-select>
     </demo-block>
 
     <demo-block :title="t('showBadge')">
-      <van-tree-select
+      <zv-tree-select
         height="55vw"
         :items="badgeItems"
         :active-id.sync="activeId2"

@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-address-edit
+      <zv-address-edit
         :area-list="areaList"
         show-postal
         show-delete

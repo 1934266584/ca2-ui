@@ -20,9 +20,9 @@ Vue.use(Sticky);
 将内容包裹在`Sticky`组件内即可
 
 ```html
-<van-sticky>
-  <van-button type="primary">基础用法</van-button>
-</van-sticky>
+<zv-sticky>
+  <zv-button type="primary">基础用法</zv-button>
+</zv-sticky>
 ```
 
 ### 吸顶距离
@@ -30,9 +30,9 @@ Vue.use(Sticky);
 通过`offset-top`属性可以设置组件在吸顶时与顶部的距离
 
 ```html
-<van-sticky :offset-top="50">
-  <van-button type="info">吸顶距离</van-button>
-</van-sticky>
+<zv-sticky :offset-top="50">
+  <zv-button type="info">吸顶距离</zv-button>
+</zv-sticky>
 ```
 
 ### 指定容器
@@ -41,9 +41,9 @@ Vue.use(Sticky);
 
 ```html
 <div ref="container" style="height: 150px;">
-  <van-sticky :container="container">
-    <van-button type="warning">指定容器</van-button>
-  </van-sticky>
+  <zv-sticky :container="container">
+    <zv-button type="warning">指定容器</zv-button>
+  </zv-sticky>
 </div>
 ```
 

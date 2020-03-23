@@ -16,11 +16,11 @@ Vue.use(Button);
 支持`default`、`primary`、`info`、`warning`、`danger`五种类型，默认为`default`
 
 ```html
-<van-button type="default">默认按钮</van-button>
-<van-button type="primary">主要按钮</van-button>
-<van-button type="info">信息按钮</van-button>
-<van-button type="warning">警告按钮</van-button>
-<van-button type="danger">危险按钮</van-button>
+<zv-button type="default">默认按钮</zv-button>
+<zv-button type="primary">主要按钮</zv-button>
+<zv-button type="info">信息按钮</zv-button>
+<zv-button type="warning">警告按钮</zv-button>
+<zv-button type="danger">危险按钮</zv-button>
 ```
 
 ### 朴素按钮
@@ -28,8 +28,8 @@ Vue.use(Button);
 通过`plain`属性将按钮设置为朴素按钮，朴素按钮的文字为按钮颜色，背景为白色。
 
 ```html
-<van-button plain type="primary">朴素按钮</van-button>
-<van-button plain type="info">朴素按钮</van-button>
+<zv-button plain type="primary">朴素按钮</zv-button>
+<zv-button plain type="info">朴素按钮</zv-button>
 ```
 
 ### 细边框
@@ -37,8 +37,8 @@ Vue.use(Button);
 设置`hairline`属性可以开启 0.5px 边框，基于伪类实现
 
 ```html
-<van-button plain hairline type="primary">细边框按钮</van-button>
-<van-button plain hairline type="info">细边框按钮</van-button>
+<zv-button plain hairline type="primary">细边框按钮</zv-button>
+<zv-button plain hairline type="info">细边框按钮</zv-button>
 ```
 
 ### 禁用状态
@@ -46,8 +46,8 @@ Vue.use(Button);
 通过`disabled`属性来禁用按钮，禁用状态下按钮不可点击
 
 ```html
-<van-button disabled type="primary">禁用状态</van-button>
-<van-button disabled type="info">禁用状态</van-button>
+<zv-button disabled type="primary">禁用状态</zv-button>
+<zv-button disabled type="info">禁用状态</zv-button>
 ```
 
 ### 加载状态
@@ -55,9 +55,9 @@ Vue.use(Button);
 通过`loading`属性设置按钮为加载状态，加载状态下默认会隐藏按钮文字，可以通过`loading-text`设置加载状态下的文字
 
 ```html 
-<van-button loading type="primary" />
-<van-button loading type="primary" loading-type="spinner" />
-<van-button loading type="info" loading-text="加载中..." />
+<zv-button loading type="primary" />
+<zv-button loading type="primary" loading-type="spinner" />
+<zv-button loading type="info" loading-text="加载中..." />
 ```
 
 ### 按钮形状
@@ -65,8 +65,8 @@ Vue.use(Button);
 通过`square`设置方形按钮，通过`round`设置圆形按钮
 
 ```html 
-<van-button square type="primary">方形按钮</van-button>
-<van-button round type="info">圆形按钮</van-button>
+<zv-button square type="primary">方形按钮</zv-button>
+<zv-button round type="info">圆形按钮</zv-button>
 ```
 
 ### 图标按钮
@@ -74,9 +74,9 @@ Vue.use(Button);
 通过`icon`属性设置按钮图标，支持 Icon 组件里的所有图标，也可以传入图标 URL
 
 ```html 
-<van-button icon="star-o" type="primary" />
-<van-button icon="star-o" type="primary">按钮</van-button>
-<van-button icon="https://img.yzcdn.cn/vant/logo.png" type="info">按钮</van-button>
+<zv-button icon="star-o" type="primary" />
+<zv-button icon="star-o" type="primary">按钮</zv-button>
+<zv-button icon="https://img.yzcdn.cn/vant/logo.png" type="info">按钮</zv-button>
 ```
 
 ### 按钮尺寸
@@ -84,10 +84,10 @@ Vue.use(Button);
 支持`large`、`normal`、`small`、`mini`四种尺寸，默认为`normal`
 
 ```html 
-<van-button type="primary" size="large">大号按钮</van-button>
-<van-button type="primary" size="normal">普通按钮</van-button>
-<van-button type="primary" size="small">小型按钮</van-button>
-<van-button type="primary" size="mini">迷你按钮</van-button>
+<zv-button type="primary" size="large">大号按钮</zv-button>
+<zv-button type="primary" size="normal">普通按钮</zv-button>
+<zv-button type="primary" size="small">小型按钮</zv-button>
+<zv-button type="primary" size="mini">迷你按钮</zv-button>
 ```
 
 ### 块级元素
@@ -95,7 +95,7 @@ Vue.use(Button);
 按钮在默认情况下为行内块级元素，通过`block`属性可以将按钮的元素类型设置为块级元素
 
 ```html
-<van-button type="primary" block>块级元素</van-button>
+<zv-button type="primary" block>块级元素</zv-button>
 ```
 
 ### 页面导航
@@ -103,8 +103,8 @@ Vue.use(Button);
 可以通过`url`属性进行 URL 跳转，或通过`to`属性进行路由跳转
 
 ```html
-<van-button type="primary" url="/vant/mobile.html">URL 跳转</van-button>
-<van-button type="primary" to="index">路由跳转</van-button>
+<zv-button type="primary" url="/vant/mobile.html">URL 跳转</zv-button>
+<zv-button type="primary" to="index">路由跳转</zv-button>
 ```
 
 ### 自定义颜色
@@ -112,9 +112,9 @@ Vue.use(Button);
 通过`color`属性可以自定义按钮的颜色
 
 ```html
-<van-button color="#7232dd">单色按钮</van-button>
-<van-button color="#7232dd" plain>单色按钮</van-button>
-<van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">渐变色按钮</van-button>
+<zv-button color="#7232dd">单色按钮</zv-button>
+<zv-button color="#7232dd" plain>单色按钮</zv-button>
+<zv-button color="linear-gradient(to right, #4bb0ff, #6149f6)">渐变色按钮</zv-button>
 ```
 
 ## API
@@ -128,7 +128,7 @@ Vue.use(Button);
 | text | 按钮文字 | *string* | - |
 | color `v2.1.8` | 按钮颜色，支持传入`linear-gradient`渐变色 | *string* | - |
 | icon | 左侧[图标名称](#/zh-CN/icon)或图片链接 | *string* | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `van-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `zv-icon` |
 | tag | 根节点的 HTML 标签 | *string* | `button` |
 | native-type | 原生 button 标签的 type 属性 | *string* | - |
 | block | 是否为块级元素 | *boolean* | `false` |

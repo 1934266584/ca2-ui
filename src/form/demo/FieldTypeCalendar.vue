@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-field
+    <zv-field
       readonly
       clickable
       name="calendar"
@@ -9,7 +9,7 @@
       :placeholder="t('placeholder')"
       @click="showCalendar = true"
     />
-    <van-calendar v-model="showCalendar" @confirm="onConfirm" />
+    <zv-calendar v-model="showCalendar" @confirm="onConfirm" />
   </div>
 </template>
 

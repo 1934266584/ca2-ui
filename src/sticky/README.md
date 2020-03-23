@@ -14,26 +14,26 @@ Vue.use(Sticky);
 ### Basic Usage
 
 ```html
-<van-sticky>
-  <van-button type="primary">Basic Usage</van-button>
-</van-sticky>
+<zv-sticky>
+  <zv-button type="primary">Basic Usage</zv-button>
+</zv-sticky>
 ```
 
 ### Offset Top
 
 ```html
-<van-sticky :offset-top="50">
-  <van-button type="info">Offset Top</van-button>
-</van-sticky>
+<zv-sticky :offset-top="50">
+  <zv-button type="info">Offset Top</zv-button>
+</zv-sticky>
 ```
 
 ### Set Container
 
 ```html
 <div ref="container" style="height: 150px;">
-  <van-sticky :container="container">
-    <van-button type="warning">Set Container</van-button>
-  </van-sticky>
+  <zv-sticky :container="container">
+    <zv-button type="warning">Set Container</zv-button>
+  </zv-sticky>
 </div>
 ```
 

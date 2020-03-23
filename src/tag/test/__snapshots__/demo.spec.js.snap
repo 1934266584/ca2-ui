@@ -2,16 +2,16 @@
 
 exports[`renders demo correctly 1`] = `
 <div>
-  <div><span class="van-tag van-tag--default">标签</span> <span class="van-tag van-tag--primary">标签</span> <span class="van-tag van-tag--success">标签</span> <span class="van-tag van-tag--danger">标签</span> <span class="van-tag van-tag--warning">标签</span></div>
-  <div><span class="van-tag van-tag--round van-tag--default">标签</span> <span class="van-tag van-tag--round van-tag--primary">标签</span> <span class="van-tag van-tag--round van-tag--success">标签</span> <span class="van-tag van-tag--round van-tag--danger">标签</span> <span class="van-tag van-tag--round van-tag--warning">标签</span></div>
-  <div><span class="van-tag van-tag--mark van-tag--default">标签</span> <span class="van-tag van-tag--mark van-tag--primary">标签</span> <span class="van-tag van-tag--mark van-tag--success">标签</span> <span class="van-tag van-tag--mark van-tag--danger">标签</span> <span class="van-tag van-tag--mark van-tag--warning">标签</span></div>
-  <div><span class="van-tag van-tag--plain van-tag--default van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--primary van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--success van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--danger van-hairline--surround">标签</span> <span class="van-tag van-tag--plain van-tag--warning van-hairline--surround">标签</span></div>
-  <div><span class="van-tag van-tag--default" style="background-color: rgb(242, 130, 106);">标签</span> <span class="van-tag van-tag--plain van-tag--default van-hairline--surround" style="color: rgb(242, 130, 106);">标签</span> <span class="van-tag van-tag--default" style="background-color: rgb(114, 50, 221);">标签</span> <span class="van-tag van-tag--plain van-tag--default van-hairline--surround" style="color: rgb(114, 50, 221);">标签</span> <span class="van-tag van-tag--default" style="background-color: rgb(255, 225, 225); color: rgb(173, 0, 0);">标签</span></div>
-  <div><span class="van-tag van-tag--success">标签</span> <span class="van-tag van-tag--medium van-tag--success">标签</span> <span class="van-tag van-tag--large van-tag--success">标签</span></div>
-  <div><span class="van-tag van-tag--medium van-tag--primary" name="van-fade">
+  <div><span class="zv-tag zv-tag--default">标签</span> <span class="zv-tag zv-tag--primary">标签</span> <span class="zv-tag zv-tag--success">标签</span> <span class="zv-tag zv-tag--danger">标签</span> <span class="zv-tag zv-tag--warning">标签</span></div>
+  <div><span class="zv-tag zv-tag--round zv-tag--default">标签</span> <span class="zv-tag zv-tag--round zv-tag--primary">标签</span> <span class="zv-tag zv-tag--round zv-tag--success">标签</span> <span class="zv-tag zv-tag--round zv-tag--danger">标签</span> <span class="zv-tag zv-tag--round zv-tag--warning">标签</span></div>
+  <div><span class="zv-tag zv-tag--mark zv-tag--default">标签</span> <span class="zv-tag zv-tag--mark zv-tag--primary">标签</span> <span class="zv-tag zv-tag--mark zv-tag--success">标签</span> <span class="zv-tag zv-tag--mark zv-tag--danger">标签</span> <span class="zv-tag zv-tag--mark zv-tag--warning">标签</span></div>
+  <div><span class="zv-tag zv-tag--plain zv-tag--default zv-hairline--surround">标签</span> <span class="zv-tag zv-tag--plain zv-tag--primary zv-hairline--surround">标签</span> <span class="zv-tag zv-tag--plain zv-tag--success zv-hairline--surround">标签</span> <span class="zv-tag zv-tag--plain zv-tag--danger zv-hairline--surround">标签</span> <span class="zv-tag zv-tag--plain zv-tag--warning zv-hairline--surround">标签</span></div>
+  <div><span class="zv-tag zv-tag--default" style="background-color: rgb(242, 130, 106);">标签</span> <span class="zv-tag zv-tag--plain zv-tag--default zv-hairline--surround" style="color: rgb(242, 130, 106);">标签</span> <span class="zv-tag zv-tag--default" style="background-color: rgb(114, 50, 221);">标签</span> <span class="zv-tag zv-tag--plain zv-tag--default zv-hairline--surround" style="color: rgb(114, 50, 221);">标签</span> <span class="zv-tag zv-tag--default" style="background-color: rgb(255, 225, 225); color: rgb(173, 0, 0);">标签</span></div>
+  <div><span class="zv-tag zv-tag--success">标签</span> <span class="zv-tag zv-tag--medium zv-tag--success">标签</span> <span class="zv-tag zv-tag--large zv-tag--success">标签</span></div>
+  <div><span class="zv-tag zv-tag--medium zv-tag--primary" name="zv-fade">
       标签
-    <i class="van-icon van-icon-cross van-tag__close"><!----></i></span> <span class="van-tag van-tag--medium van-tag--success" name="van-fade">
+    <i class="zv-icon zv-icon-cross zv-tag__close"><!----></i></span> <span class="zv-tag zv-tag--medium zv-tag--success" name="zv-fade">
       标签
-    <i class="van-icon van-icon-cross van-tag__close"><!----></i></span></div>
+    <i class="zv-icon zv-icon-cross zv-tag__close"><!----></i></span></div>
 </div>
 `;

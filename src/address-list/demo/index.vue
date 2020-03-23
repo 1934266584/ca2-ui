@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-address-list
+      <zv-address-list
         v-model="chosenAddressId"
         :list="t('list')"
         :disabled-list="t('disabledList')"

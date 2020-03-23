@@ -1,8 +1,8 @@
 <template>
-  <div class="van-doc-header">
-    <div class="van-doc-row">
-      <div class="van-doc-header__top">
-        <a class="van-doc-header__logo">
+  <div class="zv-doc-header">
+    <div class="zv-doc-row">
+      <div class="zv-doc-header__top">
+        <a class="zv-doc-header__logo">
           <img :src="config.logo" />
           <span>{{ config.title }}</span>
         </a>
@@ -13,10 +13,10 @@
           :search-config="searchConfig"
         />
 
-        <ul class="van-doc-header__top-nav">
-          <li v-for="item in config.links" class="van-doc-header__top-nav-item">
+        <ul class="zv-doc-header__top-nav">
+          <li v-for="item in config.links" class="zv-doc-header__top-nav-item">
             <a
-              class="van-doc-header__logo-link"
+              class="zv-doc-header__logo-link"
               target="_blank"
               :href="item.url"
             >
@@ -27,18 +27,18 @@
           <li
             ref="version"
             v-if="versions"
-            class="van-doc-header__top-nav-item"
+            class="zv-doc-header__top-nav-item"
           >
             <span
-              class="van-doc-header__cube van-doc-header__version"
+              class="zv-doc-header__cube zv-doc-header__version"
               @click="toggleVersionPop"
             >
               {{ versions[0].label }}
-              <transition name="van-doc-dropdown">
-                <div v-if="showVersionPop" class="van-doc-header__version-pop">
+              <transition name="zv-doc-dropdown">
+                <div v-if="showVersionPop" class="zv-doc-header__version-pop">
                   <div
                     v-for="item in versions"
-                    class="van-doc-header__version-pop-item"
+                    class="zv-doc-header__version-pop-item"
                     @click="onSwitchVersion(item)"
                   >
                     {{ item.label }}
@@ -48,8 +48,8 @@
             </span>
           </li>
 
-          <li v-if="langLabel && langLink" class="van-doc-header__top-nav-item">
-            <a class="van-doc-header__cube" :href="langLink">{{ langLabel }}</a>
+          <li v-if="langLabel && langLink" class="zv-doc-header__top-nav-item">
+            <a class="zv-doc-header__cube" :href="langLink">{{ langLabel }}</a>
           </li>
         </ul>
       </div>
@@ -61,7 +61,7 @@
 import SearchInput from './SearchInput';
 
 export default {
-  name: 'van-doc-header',
+  name: 'zv-doc-header',
 
   components: {
     SearchInput,
@@ -145,9 +145,9 @@ export default {
   &__top {
     display: flex;
     align-items: center;
-    height: @van-doc-header-top-height;
-    padding: 0 @van-doc-padding;
-    line-height: @van-doc-header-top-height;
+    height: @zv-doc-header-top-height;
+    padding: 0 @zv-doc-padding;
+    line-height: @zv-doc-header-top-height;
     background-color: #001938;
 
     &-nav {
@@ -213,7 +213,7 @@ export default {
       line-height: 36px;
       text-align: left;
       background-color: #fff;
-      border-radius: @van-doc-border-radius;
+      border-radius: @zv-doc-border-radius;
       box-shadow: 0 4px 12px #ebedf0;
       transform-origin: top;
       transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -223,7 +223,7 @@ export default {
         transition: 0.2s;
 
         &:hover {
-          color: @van-doc-blue;
+          color: @zv-doc-blue;
         }
       }
     }

@@ -14,7 +14,7 @@ Vue.use(Sku);
 ### Basic Usage
 
 ```html
-<van-sku
+<zv-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -48,7 +48,7 @@ export default {
 ### Custom Stepper Config
 
 ```html
-<van-sku
+<zv-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -65,7 +65,7 @@ export default {
 ### Advanced Usage
 
 ```html
-<van-sku
+<zv-sku
   v-model="show"
   stepper-title="Stepper title"
   :sku="sku"
@@ -82,34 +82,34 @@ export default {
 >
   <!-- custom sku-header-price -->
   <template #sku-header-price="props">
-    <div class="van-sku__goods-price">
-      <span class="van-sku__price-symbol">￥</span><span class="van-sku__price-num">{{ props.price }}</span>
+    <div class="zv-sku__goods-price">
+      <span class="zv-sku__price-symbol">￥</span><span class="zv-sku__price-num">{{ props.price }}</span>
     </div>
   </template>
 
   <!-- custom sku actions -->
   <template #sku-actions="props">
-    <div class="van-sku-actions">
-      <van-button
+    <div class="zv-sku-actions">
+      <zv-button
         square
         size="large"
         type="warning"
         @click="onPointClicked"
       >
         Button
-      </van-button>
+      </zv-button>
       <!-- trigger sku inner event -->
-      <van-button
+      <zv-button
         square
         size="large"
         type="danger"
         @click="props.skuEventBus.$emit('sku:buy')"
       >
         Button
-      </van-button>
+      </zv-button>
     </div>
   </template>
-</van-sku>
+</zv-sku>
 ```
 
 ## API

@@ -105,7 +105,7 @@ function Card(
 
     if (props.title) {
       return (
-        <div class={[bem('title'), 'van-multi-ellipsis--l2']}>
+        <div class={[bem('title'), 'zv-multi-ellipsis--l2']}>
           {props.title}
         </div>
       );
@@ -118,7 +118,7 @@ function Card(
     }
 
     if (props.desc) {
-      return <div class={[bem('desc'), 'van-ellipsis']}>{props.desc}</div>;
+      return <div class={[bem('desc'), 'zv-ellipsis']}>{props.desc}</div>;
     }
   }
 
@@ -181,7 +181,7 @@ function Card(
             {slots.tags?.()}
           </div>
           {showBottom && (
-            <div class="van-card__bottom">
+            <div class="zv-card__bottom">
               {slots['price-top']?.()}
               {Price()}
               {OriginPrice()}

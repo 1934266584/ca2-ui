@@ -1,24 +1,24 @@
 <template>
   <demo-section name="pull-refresh">
-    <van-tabs>
-      <van-tab :title="t('basicUsage')">
-        <van-pull-refresh v-model="isLoading" @refresh="onRefresh(true)">
+    <zv-tabs>
+      <zv-tab :title="t('basicUsage')">
+        <zv-pull-refresh v-model="isLoading" @refresh="onRefresh(true)">
           <p>{{ tips }}</p>
-        </van-pull-refresh>
-      </van-tab>
+        </zv-pull-refresh>
+      </zv-tab>
 
-      <van-tab :title="t('successTip')">
-        <van-pull-refresh
+      <zv-tab :title="t('successTip')">
+        <zv-pull-refresh
           v-model="isLoading"
           :success-text="t('success')"
           @refresh="onRefresh(false)"
         >
           <p>{{ tips }}</p>
-        </van-pull-refresh>
-      </van-tab>
+        </zv-pull-refresh>
+      </zv-tab>
 
-      <van-tab :title="t('customTips')">
-        <van-pull-refresh
+      <zv-tab :title="t('customTips')">
+        <zv-pull-refresh
           v-model="isLoading"
           head-height="80"
           @refresh="onRefresh(true)"
@@ -37,9 +37,9 @@
             <img src="https://b.yzcdn.cn/vant/doge-fire.jpg" class="doge" />
           </template>
           <p>{{ tips }}</p>
-        </van-pull-refresh>
-      </van-tab>
-    </van-tabs>
+        </zv-pull-refresh>
+      </zv-tab>
+    </zv-tabs>
   </demo-section>
 </template>
 

@@ -14,34 +14,34 @@ Vue.use(Divider);
 ### Basic Usage
 
 ```html
-<van-divider />
+<zv-divider />
 ```
 
 ### With Text
 
 ```html
-<van-divider>Text</van-divider>
+<zv-divider>Text</zv-divider>
 ```
 
 ### Content Position
 
 ```html
-<van-divider content-position="left">Text</van-divider>
-<van-divider content-position="right">Text</van-divider>
+<zv-divider content-position="left">Text</zv-divider>
+<zv-divider content-position="right">Text</zv-divider>
 ```
 
 ### Dashed
 
 ```html
-<van-divider dashed>Text</van-divider>
+<zv-divider dashed>Text</zv-divider>
 ```
 
 ### Custom Style
 
 ```html
-<van-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
+<zv-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
   Text
-</van-divider>
+</zv-divider>
 ```
 
 ## API

@@ -1,6 +1,6 @@
 <template>
-  <div class="van-hairline--bottom">
-    <van-field
+  <div class="zv-hairline--bottom">
+    <zv-field
       readonly
       clickable
       name="picker"
@@ -10,14 +10,14 @@
       :placeholder="t('placeholder')"
       @click="showPicker = true"
     />
-    <van-popup v-model="showPicker" position="bottom">
-      <van-picker
+    <zv-popup v-model="showPicker" position="bottom">
+      <zv-picker
         show-toolbar
         :columns="t('textColumns')"
         @confirm="onConfirm"
         @cancel="onCancel"
       />
-    </van-popup>
+    </zv-popup>
   </div>
 </template>
 

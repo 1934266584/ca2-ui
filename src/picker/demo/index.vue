@@ -1,11 +1,11 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-picker :columns="t('textColumns')" @change="onChange1" />
+      <zv-picker :columns="t('textColumns')" @change="onChange1" />
     </demo-block>
 
     <demo-block :title="t('defaultIndex')">
-      <van-picker
+      <zv-picker
         :columns="t('textColumns')"
         :default-index="2"
         @change="onChange1"
@@ -13,7 +13,7 @@
     </demo-block>
 
     <demo-block :title="t('showToolbar')">
-      <van-picker
+      <zv-picker
         show-toolbar
         :title="t('title')"
         :columns="t('textColumns')"
@@ -23,7 +23,7 @@
     </demo-block>
 
     <demo-block :title="t('multipleColumns')">
-      <van-picker
+      <zv-picker
         show-toolbar
         :title="t('title')"
         :columns="t('dateColumns')"
@@ -33,7 +33,7 @@
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('cascade')">
-      <van-picker
+      <zv-picker
         show-toolbar
         :title="t('title')"
         :columns="t('cascadeColumns')"
@@ -43,19 +43,19 @@
     </demo-block>
 
     <demo-block :title="t('disableOption')">
-      <van-picker :columns="t('disabledColumns')" />
+      <zv-picker :columns="t('disabledColumns')" />
     </demo-block>
 
     <demo-block :title="t('setColumnValues')">
-      <van-picker :columns="columns" @change="onChange2" />
+      <zv-picker :columns="columns" @change="onChange2" />
     </demo-block>
 
     <demo-block :title="t('loadingStatus')">
-      <van-picker loading :columns="columns" />
+      <zv-picker loading :columns="columns" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('withPopup')">
-      <van-field
+      <zv-field
         readonly
         clickable
         :label="t('city')"
@@ -63,14 +63,14 @@
         :placeholder="t('chooseCity')"
         @click="onClickField"
       />
-      <van-popup v-model="showPicker" position="bottom">
-        <van-picker
+      <zv-popup v-model="showPicker" position="bottom">
+        <zv-picker
           show-toolbar
           :columns="t('textColumns')"
           @cancel="onCancel2"
           @confirm="onConfirm2"
         />
-      </van-popup>
+      </zv-popup>
     </demo-block>
   </demo-section>
 </template>

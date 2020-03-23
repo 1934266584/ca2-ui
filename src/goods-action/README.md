@@ -16,12 +16,12 @@ Vue.use(GoodsActionIcon);
 ### Basic Usage
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
-  <van-goods-action-button type="warning" text="Button1" @click="onClickButton" />
-  <van-goods-action-button type="danger" text="Button2" @click="onClickButton" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="Icon1" @click="onClickIcon" />
+  <zv-goods-action-icon icon="cart-o" text="Icon2" @click="onClickIcon" />
+  <zv-goods-action-button type="warning" text="Button1" @click="onClickButton" />
+  <zv-goods-action-button type="danger" text="Button2" @click="onClickButton" />
+</zv-goods-action>
 ```
 
 ```js
@@ -44,36 +44,36 @@ export default {
 Use `badge` prop to show badge in icon
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" dot />
-  <van-goods-action-icon icon="cart-o" text="Icon2" badge="5" />
-  <van-goods-action-icon icon="shop-o" text="Icon3" badge="12" />
-  <van-goods-action-button type="warning" text="Button1" />
-  <van-goods-action-button type="danger" text="Button2" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="Icon1" dot />
+  <zv-goods-action-icon icon="cart-o" text="Icon2" badge="5" />
+  <zv-goods-action-icon icon="shop-o" text="Icon3" badge="12" />
+  <zv-goods-action-button type="warning" text="Button1" />
+  <zv-goods-action-button type="danger" text="Button2" />
+</zv-goods-action>
 ```
 
 ### Custom Icon Color
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" color="#07c160" />
-  <van-goods-action-icon icon="cart-o" text="Icon2" />
-  <van-goods-action-icon icon="star" text="Collected" color="#ff5000" />
-  <van-goods-action-button type="warning" text="Button1" />
-  <van-goods-action-button type="danger" text="Button2" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="Icon1" color="#07c160" />
+  <zv-goods-action-icon icon="cart-o" text="Icon2" />
+  <zv-goods-action-icon icon="star" text="Collected" color="#ff5000" />
+  <zv-goods-action-button type="warning" text="Button1" />
+  <zv-goods-action-button type="danger" text="Button2" />
+</zv-goods-action>
 ```
 
 ### Custom Button Color
 
 ```html
-<van-goods-action>
-  <van-goods-action-icon icon="chat-o" text="Icon1" />
-  <van-goods-action-icon icon="shop-o" text="Icon2" />
-  <van-goods-action-button color="#be99ff" type="warning" text="Button1" />
-  <van-goods-action-button color="#7232dd" type="danger" text="Button2" />
-</van-goods-action>
+<zv-goods-action>
+  <zv-goods-action-icon icon="chat-o" text="Icon1" />
+  <zv-goods-action-icon icon="shop-o" text="Icon2" />
+  <zv-goods-action-button color="#be99ff" type="warning" text="Button1" />
+  <zv-goods-action-button color="#7232dd" type="danger" text="Button2" />
+</zv-goods-action>
 ```
 
 ## API

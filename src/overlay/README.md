@@ -14,8 +14,8 @@ Vue.use(Overlay);
 ### Basic Usage
 
 ```html
-<van-button type="primary" text="Show Overlay" @click="show = true" />
-<van-overlay :show="show" @click="show = false" />
+<zv-button type="primary" text="Show Overlay" @click="show = true" />
+<zv-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -31,11 +31,11 @@ export default {
 ### Embedded Content
 
 ```html
-<van-overlay :show="show" @click="show = false">
+<zv-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>
-</van-overlay>
+</zv-overlay>
 
 <style>
 .wrapper {

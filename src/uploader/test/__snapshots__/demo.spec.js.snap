@@ -3,102 +3,102 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-uploader">
-      <div class="van-uploader__wrapper">
-        <div class="van-uploader__upload"><i class="van-icon van-icon-photograph van-uploader__upload-icon">
-            <!----></i><input type="file" accept="image/*" class="van-uploader__input"></div>
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper">
+        <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
+            <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-uploader">
-      <div class="van-uploader__wrapper">
-        <div class="van-uploader__preview">
-          <div class="van-image van-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/leaf.jpg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper">
+        <div class="zv-uploader__preview">
+          <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/leaf.jpg" class="zv-image__img" style="object-fit: cover;">
+            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
                 <!----></i></div>
-          </div><i class="van-icon van-icon-clear van-uploader__preview-delete">
+          </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
             <!----></i>
         </div>
-        <div class="van-uploader__preview">
-          <div class="van-image van-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/tree.jpg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+        <div class="zv-uploader__preview">
+          <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/tree.jpg" class="zv-image__img" style="object-fit: cover;">
+            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
                 <!----></i></div>
-          </div><i class="van-icon van-icon-clear van-uploader__preview-delete">
+          </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
             <!----></i>
         </div>
-        <div class="van-uploader__upload"><i class="van-icon van-icon-photograph van-uploader__upload-icon">
-            <!----></i><input multiple="multiple" type="file" accept="*" class="van-uploader__input"></div>
+        <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
+            <!----></i><input multiple="multiple" type="file" accept="*" class="zv-uploader__input"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-uploader">
-      <div class="van-uploader__wrapper van-uploader__wrapper--disabled">
-        <div class="van-uploader__upload"><i class="van-icon van-icon-photograph van-uploader__upload-icon">
-            <!----></i><input type="file" accept="image/*" disabled="disabled" class="van-uploader__input"></div>
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper zv-uploader__wrapper--disabled">
+        <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
+            <!----></i><input type="file" accept="image/*" disabled="disabled" class="zv-uploader__input"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-uploader">
-      <div class="van-uploader__wrapper">
-        <div class="van-uploader__preview">
-          <div class="van-image van-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/leaf.jpg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper">
+        <div class="zv-uploader__preview">
+          <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/leaf.jpg" class="zv-image__img" style="object-fit: cover;">
+            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
                 <!----></i></div>
           </div>
-          <div class="van-uploader__mask">
-            <div class="van-loading van-loading--circular van-uploader__loading"><span class="van-loading__spinner van-loading__spinner--circular"><svg viewBox="25 25 50 50" class="van-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
-            <div class="van-uploader__mask-message">上传中...</div>
+          <div class="zv-uploader__mask">
+            <div class="zv-loading zv-loading--circular zv-uploader__loading"><span class="zv-loading__spinner zv-loading__spinner--circular"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+            <div class="zv-uploader__mask-message">上传中...</div>
           </div>
         </div>
-        <div class="van-uploader__preview">
-          <div class="van-image van-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/tree.jpg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+        <div class="zv-uploader__preview">
+          <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/tree.jpg" class="zv-image__img" style="object-fit: cover;">
+            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
                 <!----></i></div>
           </div>
-          <div class="van-uploader__mask"><i class="van-icon van-icon-warning-o van-uploader__mask-icon">
+          <div class="zv-uploader__mask"><i class="zv-icon zv-icon-warning-o zv-uploader__mask-icon">
               <!----></i>
-            <div class="van-uploader__mask-message">上传失败</div>
-          </div><i class="van-icon van-icon-clear van-uploader__preview-delete">
+            <div class="zv-uploader__mask-message">上传失败</div>
+          </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
             <!----></i>
         </div>
-        <div class="van-uploader__upload"><i class="van-icon van-icon-photograph van-uploader__upload-icon">
-            <!----></i><input type="file" accept="image/*" class="van-uploader__input"></div>
+        <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
+            <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-uploader">
-      <div class="van-uploader__wrapper">
-        <div class="van-uploader__preview">
-          <div class="van-image van-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/sand.jpg" class="van-image__img" style="object-fit: cover;">
-            <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper">
+        <div class="zv-uploader__preview">
+          <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/sand.jpg" class="zv-image__img" style="object-fit: cover;">
+            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
                 <!----></i></div>
-          </div><i class="van-icon van-icon-clear van-uploader__preview-delete">
+          </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
             <!----></i>
         </div>
-        <div class="van-uploader__upload"><i class="van-icon van-icon-photograph van-uploader__upload-icon">
-            <!----></i><input multiple="multiple" type="file" accept="image/*" class="van-uploader__input"></div>
+        <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
+            <!----></i><input multiple="multiple" type="file" accept="image/*" class="zv-uploader__input"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-uploader">
-      <div class="van-uploader__wrapper">
-        <div class="van-uploader__input-wrapper"><button class="van-button van-button--primary van-button--normal"><i class="van-icon van-icon-photo van-button__icon">
-              <!----></i><span class="van-button__text">
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper">
+        <div class="zv-uploader__input-wrapper"><button class="zv-button zv-button--primary zv-button--normal"><i class="zv-icon zv-icon-photo zv-button__icon">
+              <!----></i><span class="zv-button__text">
         上传文件
-      </span></button><input type="file" accept="image/*" class="van-uploader__input"></div>
+      </span></button><input type="file" accept="image/*" class="zv-uploader__input"></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-uploader">
-      <div class="van-uploader__wrapper">
-        <div class="van-uploader__upload"><i class="van-icon van-icon-photograph van-uploader__upload-icon">
-            <!----></i><input type="file" accept="image/*" class="van-uploader__input"></div>
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper">
+        <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
+            <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
       </div>
     </div>
   </div>

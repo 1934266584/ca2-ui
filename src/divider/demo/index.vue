@@ -1,37 +1,37 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-divider />
+      <zv-divider />
     </demo-block>
 
     <demo-block :title="t('withText')">
-      <van-divider>
+      <zv-divider>
         {{ t('text') }}
-      </van-divider>
+      </zv-divider>
     </demo-block>
 
     <demo-block :title="t('contentPosition')">
-      <van-divider content-position="left">
+      <zv-divider content-position="left">
         {{ t('text') }}
-      </van-divider>
+      </zv-divider>
 
-      <van-divider content-position="right">
+      <zv-divider content-position="right">
         {{ t('text') }}
-      </van-divider>
+      </zv-divider>
     </demo-block>
 
     <demo-block :title="t('dashed')">
-      <van-divider dashed :hairline="false">
+      <zv-divider dashed :hairline="false">
         {{ t('text') }}
-      </van-divider>
+      </zv-divider>
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <van-divider
+      <zv-divider
         :style="{ borderColor: BLUE, color: BLUE, padding: '0 16px' }"
       >
         {{ t('text') }}
-      </van-divider>
+      </zv-divider>
     </demo-block>
   </demo-section>
 </template>

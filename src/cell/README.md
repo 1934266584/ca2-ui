@@ -15,93 +15,93 @@ Vue.use(CellGroup);
 ### Basic Usage
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" />
-  <van-cell title="Cell title" value="Content" label="Description" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell title="Cell title" value="Content" />
+  <zv-cell title="Cell title" value="Content" label="Description" />
+</zv-cell-group>
 ```
 
 ### Size
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" value="Content" size="large" />
-  <van-cell title="Cell title" value="Content" size="large" label="Description" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell title="Cell title" value="Content" size="large" />
+  <zv-cell title="Cell title" value="Content" size="large" label="Description" />
+</zv-cell-group>
 ```
 
 ### Left Icon
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" icon="location-o" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell title="Cell title" icon="location-o" />
+</zv-cell-group>
 ```
 
 ### Value only
 
 ```html
-<van-cell-group>
-  <van-cell value="Content" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell value="Content" />
+</zv-cell-group>
 ```
 
 ### Link
 
 ```html
-<van-cell-group>
-  <van-cell title="Cell title" is-link />
-  <van-cell title="Cell title" is-link value="Content" />
-  <van-cell title="Cell title" is-link arrow-direction="down" value="Content" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell title="Cell title" is-link />
+  <zv-cell title="Cell title" is-link value="Content" />
+  <zv-cell title="Cell title" is-link arrow-direction="down" value="Content" />
+</zv-cell-group>
 ```
 
 ### Router
 
 ```html
-<van-cell-group>
-  <van-cell title="URL" is-link url="/vant/mobile.html" />
-  <van-cell title="Vue Router" is-link to="index" />
-</van-cell-group>
+<zv-cell-group>
+  <zv-cell title="URL" is-link url="/vant/mobile.html" />
+  <zv-cell title="Vue Router" is-link to="index" />
+</zv-cell-group>
 ```
 
 ### Group Title
 
 ```html
-<van-cell-group title="Group 1">
-  <van-cell title="Cell title" value="Content" />
-</van-cell-group>
-<van-cell-group title="Group 2">
-  <van-cell title="Cell title" value="Content" />
-</van-cell-group>
+<zv-cell-group title="Group 1">
+  <zv-cell title="Cell title" value="Content" />
+</zv-cell-group>
+<zv-cell-group title="Group 2">
+  <zv-cell title="Cell title" value="Content" />
+</zv-cell-group>
 ```
 
 ### Use Slots
 
 ```html
-<van-cell value="内容" is-link>
+<zv-cell value="内容" is-link>
   <!-- Use the title slot to customize the title -->
   <template #title>
     <span class="custom-title">单元格</span>
-    <van-tag type="danger">标签</van-tag>
+    <zv-tag type="danger">标签</zv-tag>
   </template>
-</van-cell>
+</zv-cell>
 
-<van-cell title="单元格" icon="shop-o">
+<zv-cell title="单元格" icon="shop-o">
   <!-- Use the right-icon slot to customize the right icon -->
   <template #right-icon>
-    <van-icon
+    <zv-icon
       name="search"
       style="line-height: inherit;"
     />
   </template>
-</van-cell>
+</zv-cell>
 ```
 
 ### Vertical Center
 
 ```html
-<van-cell center title="Cell title" value="Content" label="Description" />
+<zv-cell center title="Cell title" value="Content" label="Description" />
 ```
 
 ## API
@@ -122,7 +122,7 @@ Vue.use(CellGroup);
 | label | Description below the title | *string* | - |
 | size | Size，can be set to `large` | *string* | - |
 | icon | Left Icon | *string* | - |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
 | border | Whether to show inner border | *boolean* | `true` |
 | center | Whether to center content vertically | *boolean* | `true` |
 | url | Link URL | *string* | - |

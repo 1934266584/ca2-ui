@@ -129,7 +129,7 @@ export function PopupMixin(options = {}) {
           on(document, 'touchmove', this.onTouchMove);
 
           if (!context.lockCount) {
-            document.body.classList.add('van-overflow-hidden');
+            document.body.classList.add('zv-overflow-hidden');
           }
           context.lockCount++;
         }
@@ -146,7 +146,7 @@ export function PopupMixin(options = {}) {
           off(document, 'touchmove', this.onTouchMove);
 
           if (!context.lockCount) {
-            document.body.classList.remove('van-overflow-hidden');
+            document.body.classList.remove('zv-overflow-hidden');
           }
         }
 

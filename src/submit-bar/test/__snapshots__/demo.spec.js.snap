@@ -3,43 +3,43 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-submit-bar">
-      <div class="van-submit-bar__bar">
-        <div class="van-submit-bar__text"><span>合计：</span><span class="van-submit-bar__price">¥<span class="van-submit-bar__price van-submit-bar__price--integer">30</span>.50</span></div><button class="van-button van-button--danger van-button--normal van-button--round van-submit-bar__button van-submit-bar__button--danger"><span class="van-button__text">提交订单</span></button>
+    <div class="zv-submit-bar">
+      <div class="zv-submit-bar__bar">
+        <div class="zv-submit-bar__text"><span>合计：</span><span class="zv-submit-bar__price">¥<span class="zv-submit-bar__price zv-submit-bar__price--integer">30</span>.50</span></div><button class="zv-button zv-button--danger zv-button--normal zv-button--round zv-submit-bar__button zv-submit-bar__button--danger"><span class="zv-button__text">提交订单</span></button>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-submit-bar">
-      <div class="van-submit-bar__tip"><i class="van-icon van-icon-info-o van-submit-bar__tip-icon">
-          <!----></i><span class="van-submit-bar__tip-text">你的收货地址不支持同城送, 我们已为你推荐快递</span></div>
-      <div class="van-submit-bar__bar">
-        <div class="van-submit-bar__text"><span>合计：</span><span class="van-submit-bar__price">¥<span class="van-submit-bar__price van-submit-bar__price--integer">30</span>.50</span></div><button disabled="disabled" class="van-button van-button--danger van-button--normal van-button--disabled van-button--round van-submit-bar__button van-submit-bar__button--danger"><span class="van-button__text">提交订单</span></button>
+    <div class="zv-submit-bar">
+      <div class="zv-submit-bar__tip"><i class="zv-icon zv-icon-info-o zv-submit-bar__tip-icon">
+          <!----></i><span class="zv-submit-bar__tip-text">你的收货地址不支持同城送, 我们已为你推荐快递</span></div>
+      <div class="zv-submit-bar__bar">
+        <div class="zv-submit-bar__text"><span>合计：</span><span class="zv-submit-bar__price">¥<span class="zv-submit-bar__price zv-submit-bar__price--integer">30</span>.50</span></div><button disabled="disabled" class="zv-button zv-button--danger zv-button--normal zv-button--disabled zv-button--round zv-submit-bar__button zv-submit-bar__button--danger"><span class="zv-button__text">提交订单</span></button>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-submit-bar">
-      <div class="van-submit-bar__bar">
-        <div class="van-submit-bar__text"><span>合计：</span><span class="van-submit-bar__price">¥<span class="van-submit-bar__price van-submit-bar__price--integer">30</span>.50</span></div><button class="van-button van-button--danger van-button--normal van-button--loading van-button--round van-submit-bar__button van-submit-bar__button--danger">
-          <div class="van-loading van-loading--circular van-button__loading"><span class="van-loading__spinner van-loading__spinner--circular" style="color: currentColor; width: 20px; height: 20px;"><svg viewBox="25 25 50 50" class="van-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+    <div class="zv-submit-bar">
+      <div class="zv-submit-bar__bar">
+        <div class="zv-submit-bar__text"><span>合计：</span><span class="zv-submit-bar__price">¥<span class="zv-submit-bar__price zv-submit-bar__price--integer">30</span>.50</span></div><button class="zv-button zv-button--danger zv-button--normal zv-button--loading zv-button--round zv-submit-bar__button zv-submit-bar__button--danger">
+          <div class="zv-loading zv-loading--circular zv-button__loading"><span class="zv-loading__spinner zv-loading__spinner--circular" style="color: currentColor; width: 20px; height: 20px;"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
         </button>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-submit-bar">
-      <div class="van-submit-bar__tip">
+    <div class="zv-submit-bar">
+      <div class="zv-submit-bar__tip">
         你的收货地址不支持同城送,
         <span class="edit-address">
           修改地址
         </span></div>
-      <div class="van-submit-bar__bar">
-        <div role="checkbox" tabindex="0" aria-checked="true" class="van-checkbox">
-          <div class="van-checkbox__icon van-checkbox__icon--round van-checkbox__icon--checked"><i class="van-icon van-icon-success">
-              <!----></i></div><span class="van-checkbox__label">全选</span>
+      <div class="zv-submit-bar__bar">
+        <div role="checkbox" tabindex="0" aria-checked="true" class="zv-checkbox">
+          <div class="zv-checkbox__icon zv-checkbox__icon--round zv-checkbox__icon--checked"><i class="zv-icon zv-icon-success">
+              <!----></i></div><span class="zv-checkbox__label">全选</span>
         </div>
-        <div class="van-submit-bar__text"><span>合计：</span><span class="van-submit-bar__price">¥<span class="van-submit-bar__price van-submit-bar__price--integer">30</span>.50</span></div><button class="van-button van-button--danger van-button--normal van-button--round van-submit-bar__button van-submit-bar__button--danger"><span class="van-button__text">提交订单</span></button>
+        <div class="zv-submit-bar__text"><span>合计：</span><span class="zv-submit-bar__price">¥<span class="zv-submit-bar__price zv-submit-bar__price--integer">30</span>.50</span></div><button class="zv-button zv-button--danger zv-button--normal zv-button--round zv-submit-bar__button zv-submit-bar__button--danger"><span class="zv-button__text">提交订单</span></button>
       </div>
     </div>
   </div>

@@ -16,7 +16,7 @@ Vue.use(Uploader);
 文件上传完毕后会触发`after-read`回调函数，获取到对应的`file`对象
 
 ```html
-<van-uploader :after-read="afterRead" />
+<zv-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -35,7 +35,7 @@ export default {
 通过`v-model`可以绑定已经上传的文件列表，并展示文件列表的预览图
 
 ```html
-<van-uploader v-model="fileList" multiple />
+<zv-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -58,7 +58,7 @@ export default {
 通过`disabled`属性禁用文件上传
 
 ```html
-<van-uploader disabled />
+<zv-uploader disabled />
 ```
 
 ### 上传状态
@@ -66,7 +66,7 @@ export default {
 通过`status`属性可以标识上传状态，`uploading`表示上传中，`failed`表示上传失败，`done`表示上传完成（从 2.4.7 版本开始支持）
 
 ```html
-<van-uploader v-model="fileList" :after-read="afterRead" />
+<zv-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -106,7 +106,7 @@ export default {
 通过`max-count`属性可以限制上传文件的数量，上传数量达到限制后，会自动隐藏上传区域
 
 ```html
-<van-uploader
+<zv-uploader
   v-model="fileList"
   multiple
   :max-count="2"
@@ -128,9 +128,9 @@ export default {
 通过插槽可以自定义上传区域的样式
 
 ```html
-<van-uploader>
-  <van-button icon="photo" type="primary">上传文件</van-button>
-</van-uploader>
+<zv-uploader>
+  <zv-button icon="photo" type="primary">上传文件</zv-button>
+</zv-uploader>
 ```
 
 ### 上传前自定义处理
@@ -138,7 +138,7 @@ export default {
 通过传入`beforeRead`函数可以在上传前进行校验，返回`true`表示校验通过，返回`false`表示校验失败。支持返回`Promise`对 file 对象进行自定义处理，例如压缩图片。
 
 ```html
-<van-uploader :before-read="beforeRead" />
+<zv-uploader :before-read="beforeRead" />
 ```
 
 ```js

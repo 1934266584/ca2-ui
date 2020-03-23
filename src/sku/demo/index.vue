@@ -3,7 +3,7 @@
     <!-- 基础用法 -->
     <demo-block :title="t('basicUsage')">
       <div class="sku-container">
-        <van-sku
+        <zv-sku
           v-model="showBase"
           :sku="skuData.sku"
           :goods="skuData.goods_info"
@@ -23,16 +23,16 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button block type="primary" @click="showBase = true">
+        <zv-button block type="primary" @click="showBase = true">
           {{ t('basicUsage') }}
-        </van-button>
+        </zv-button>
       </div>
     </demo-block>
 
     <!-- 自定义步进器 -->
     <demo-block :title="t('title2')">
       <div class="sku-container">
-        <van-sku
+        <zv-sku
           v-model="showStepper"
           :sku="skuData.sku"
           :goods="skuData.goods_info"
@@ -49,16 +49,16 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button block type="primary" @click="showStepper = true">
+        <zv-button block type="primary" @click="showStepper = true">
           {{ t('title2') }}
-        </van-button>
+        </zv-button>
       </div>
     </demo-block>
 
     <!-- 隐藏售罄sku -->
     <demo-block :title="t('hideSoldoutSku')">
       <div class="sku-container">
-        <van-sku
+        <zv-sku
           v-model="showSoldout"
           :sku="skuData.sku"
           :goods="skuData.goods_info"
@@ -76,15 +76,15 @@
           @buy-clicked="onBuyClicked"
           @add-cart="onAddCartClicked"
         />
-        <van-button block type="primary" @click="showSoldout = true">
+        <zv-button block type="primary" @click="showSoldout = true">
           {{ t('hideSoldoutSku') }}
-        </van-button>
+        </zv-button>
       </div>
     </demo-block>
 
     <demo-block :title="t('advancedUsage')">
       <div class="sku-container">
-        <van-sku
+        <zv-sku
           v-model="showCustom"
           :stepper-title="t('stepperTitle')"
           :sku="skuData.sku"
@@ -104,40 +104,40 @@
           @add-cart="onAddCartClicked"
         >
           <template #sku-header-price="{ price }">
-            <div class="van-sku__goods-price">
-              <span class="van-sku__price-symbol">￥</span>
-              <span class="van-sku__price-num">{{ price }}</span>
+            <div class="zv-sku__goods-price">
+              <span class="zv-sku__price-symbol">￥</span>
+              <span class="zv-sku__price-num">{{ price }}</span>
             </div>
           </template>
           <template #sku-actions-top>
-            <div class="van-sku-header-item text-center">
+            <div class="zv-sku-header-item text-center">
               {{ t('actionsTop') }}
             </div>
           </template>
           <template #sku-actions="{ skuEventBus }">
-            <div class="van-sku-actions">
-              <van-button
+            <div class="zv-sku-actions">
+              <zv-button
                 square
                 size="large"
                 type="warning"
                 @click="onPointClicked"
               >
                 {{ t('button1') }}
-              </van-button>
-              <van-button
+              </zv-button>
+              <zv-button
                 square
                 size="large"
                 type="danger"
                 @click="skuEventBus.$emit('sku:buy')"
               >
                 {{ t('button2') }}
-              </van-button>
+              </zv-button>
             </div>
           </template>
-        </van-sku>
-        <van-button block type="primary" @click="showCustom = true">
+        </zv-sku>
+        <zv-button block type="primary" @click="showCustom = true">
           {{ t('advancedUsage') }}
-        </van-button>
+        </zv-button>
       </div>
     </demo-block>
   </demo-section>

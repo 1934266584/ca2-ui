@@ -1,21 +1,21 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
+      <zv-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
         <div>{{ t('content') }}</div>
-      </van-panel>
+      </zv-panel>
     </demo-block>
 
     <demo-block :title="t('advancedUsage')">
-      <van-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
+      <zv-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
         <div>{{ t('content') }}</div>
         <template #footer>
-          <van-button size="small">{{ t('button') }}</van-button>
-          <van-button size="small" type="danger">
+          <zv-button size="small">{{ t('button') }}</zv-button>
+          <zv-button size="small" type="danger">
             {{ t('button') }}
-          </van-button>
+          </zv-button>
         </template>
-      </van-panel>
+      </zv-panel>
     </demo-block>
   </demo-section>
 </template>

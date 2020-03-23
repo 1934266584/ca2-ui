@@ -3,28 +3,28 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>基础用法</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable">
+      <div class="zv-cell__title"><span>基础用法</span></div><i class="zv-icon zv-icon-arrow zv-cell__right-icon">
         <!----></i>
     </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>展示取消按钮</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable">
+      <div class="zv-cell__title"><span>展示取消按钮</span></div><i class="zv-icon zv-icon-arrow zv-cell__right-icon">
         <!----></i>
     </div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>展示描述信息</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
-        <!----></i>
-    </div>
-  </div>
-  <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>选项状态</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable">
+      <div class="zv-cell__title"><span>展示描述信息</span></div><i class="zv-icon zv-icon-arrow zv-cell__right-icon">
         <!----></i>
     </div>
   </div>
   <div>
-    <div role="button" tabindex="0" class="van-cell van-cell--clickable">
-      <div class="van-cell__title"><span>自定义面板</span></div><i class="van-icon van-icon-arrow van-cell__right-icon">
+    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable">
+      <div class="zv-cell__title"><span>选项状态</span></div><i class="zv-icon zv-icon-arrow zv-cell__right-icon">
+        <!----></i>
+    </div>
+  </div>
+  <div>
+    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable">
+      <div class="zv-cell__title"><span>自定义面板</span></div><i class="zv-icon zv-icon-arrow zv-cell__right-icon">
         <!----></i>
     </div>
   </div>

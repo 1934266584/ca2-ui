@@ -14,34 +14,34 @@ Vue.use(Loading);
 ### Type
 
 ```html
-<van-loading />
-<van-loading type="spinner" />
+<zv-loading />
+<zv-loading type="spinner" />
 ```
 
 ### Color
 
 ```html
-<van-loading color="#1989fa" />
-<van-loading type="spinner" color="#1989fa" />
+<zv-loading color="#1989fa" />
+<zv-loading type="spinner" color="#1989fa" />
 ```
 
 ### Size
 
 ```html
-<van-loading size="24" />
-<van-loading type="spinner" size="24px" />
+<zv-loading size="24" />
+<zv-loading type="spinner" size="24px" />
 ```
 
 ### Text
 
 ```html
-<van-loading size="24px">Loading...</van-loading>
+<zv-loading size="24px">Loading...</zv-loading>
 ```
 
 ### Vertical
 
 ```html
-<van-loading size="24px" vertical>Loading...</van-loading>
+<zv-loading size="24px" vertical>Loading...</zv-loading>
 ```
 
 ## API

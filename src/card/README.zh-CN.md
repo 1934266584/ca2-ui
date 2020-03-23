@@ -14,7 +14,7 @@ Vue.use(Card);
 ### 基础用法
 
 ```html
-<van-card
+<zv-card
   num="2"
   price="2.00"
   desc="描述信息"
@@ -28,7 +28,7 @@ Vue.use(Card);
 通过`origin-price`设置商品原价，通过`tag`设置商品左上角标签
 
 ```html
-<van-card
+<zv-card
   num="2"
   tag="标签"
   price="2.00"
@@ -44,7 +44,7 @@ Vue.use(Card);
 `Card`组件提供了多个插槽，可以灵活地自定义内容
 
 ```html
-<van-card
+<zv-card
   num="2"
   price="2.00"
   desc="描述信息"
@@ -52,14 +52,14 @@ Vue.use(Card);
   thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <van-tag plain type="danger">标签</van-tag>
-    <van-tag plain type="danger">标签</van-tag>
+    <zv-tag plain type="danger">标签</zv-tag>
+    <zv-tag plain type="danger">标签</zv-tag>
   </template>
   <template #footer>
-    <van-button size="mini">按钮</van-button>
-    <van-button size="mini">按钮</van-button>
+    <zv-button size="mini">按钮</zv-button>
+    <zv-button size="mini">按钮</zv-button>
   </template>
-</van-card>
+</zv-card>
 ```
 
 ## API

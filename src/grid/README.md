@@ -15,85 +15,85 @@ Vue.use(GridItem);
 ### Basic Usage
 
 ```html
-<van-grid>
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-  <van-grid-item icon="photo-o" text="Text" />
-</van-grid>
+<zv-grid>
+  <zv-grid-item icon="photo-o" text="Text" />
+  <zv-grid-item icon="photo-o" text="Text" />
+  <zv-grid-item icon="photo-o" text="Text" />
+  <zv-grid-item icon="photo-o" text="Text" />
+</zv-grid>
 ```
 
 ### Column Num
 
 ```html
-<van-grid :column-num="3">
-  <van-grid-item
+<zv-grid :column-num="3">
+  <zv-grid-item
     v-for="value in 6"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</zv-grid>
 ```
 
 ### Custom Content
 
 ```html
-<van-grid :border="false" :column-num="3">
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-  </van-grid-item>
-  <van-grid-item>
-    <van-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-  </van-grid-item>
-</van-grid>
+<zv-grid :border="false" :column-num="3">
+  <zv-grid-item>
+    <zv-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+  </zv-grid-item>
+  <zv-grid-item>
+    <zv-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+  </zv-grid-item>
+  <zv-grid-item>
+    <zv-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+  </zv-grid-item>
+</zv-grid>
 ```
 
 ### Square
 
 ```html
-<van-grid square>
-  <van-grid-item
+<zv-grid square>
+  <zv-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</zv-grid>
 ```
 
 ### Gutter
 
 ```html
-<van-grid :gutter="10">
-  <van-grid-item
+<zv-grid :gutter="10">
+  <zv-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</van-grid>
+</zv-grid>
 ```
 
 ### Route
 
 ```html
-<van-grid clickable :column-num="2">
-  <van-grid-item icon="home-o" text="Vue Router" to="/" />
-  <van-grid-item icon="search" text="URL" url="/vant/mobile.html" />
-</van-grid>
+<zv-grid clickable :column-num="2">
+  <zv-grid-item icon="home-o" text="Vue Router" to="/" />
+  <zv-grid-item icon="search" text="URL" url="/vant/mobile.html" />
+</zv-grid>
 ```
 
 ### Show Badge
 
 ```html
-<van-grid :column-num="2">
-  <van-grid-item icon="home-o" text="Text" dot />
-  <van-grid-item icon="search" text="Text" badge="99+" />
-</van-grid>
+<zv-grid :column-num="2">
+  <zv-grid-item icon="home-o" text="Text" dot />
+  <zv-grid-item icon="search" text="Text" badge="99+" />
+</zv-grid>
 ```
 
 ## API
@@ -116,7 +116,7 @@ Vue.use(GridItem);
 |------|------|------|------|
 | text | Text | *string* | - |
 | icon | Icon name or URL | *string* | - |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
 | dot `v2.2.1` | Whether to show red dot | *boolean* | `false` |
 | badge `v2.5.6` | Content of the badge | *number \| string* | - |
 | url | Link URL | *string* | - |

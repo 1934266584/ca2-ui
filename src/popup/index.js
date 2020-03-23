@@ -53,7 +53,7 @@ export default createComponent({
 
     const transitionName =
       this.transition ||
-      (isCenter ? 'van-fade' : `van-popup-slide-${position}`);
+      (isCenter ? 'zv-fade' : `zv-popup-slide-${position}`);
 
     const style = {};
     if (isDef(duration)) {

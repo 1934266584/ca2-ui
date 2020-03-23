@@ -17,10 +17,10 @@ Vue.use(RadioGroup);
 Use `v-model` to bind the name of checked radio
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<zv-radio-group v-model="radio">
+  <zv-radio name="1">Radio 1</zv-radio>
+  <zv-radio name="2">Radio 2</zv-radio>
+</zv-radio-group>
 ```
 
 ```js
@@ -36,46 +36,46 @@ export default {
 ### Horizontal
 
 ```html
-<van-radio-group v-model="radio" direction="horizontal">
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<zv-radio-group v-model="radio" direction="horizontal">
+  <zv-radio name="1">Radio 1</zv-radio>
+  <zv-radio name="2">Radio 2</zv-radio>
+</zv-radio-group>
 ```
 
 ### Disabled
 
 ```html
-<van-radio-group v-model="radio" disabled>
-  <van-radio name="1">Radio 1</van-radio>
-  <van-radio name="2">Radio 2</van-radio>
-</van-radio-group>
+<zv-radio-group v-model="radio" disabled>
+  <zv-radio name="1">Radio 1</zv-radio>
+  <zv-radio name="2">Radio 2</zv-radio>
+</zv-radio-group>
 ```
 
 ### Custom Shape
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" shape="square">Radio 1</van-radio>
-  <van-radio name="2" shape="square">Radio 2</van-radio>
-</van-radio-group>
+<zv-radio-group v-model="radio">
+  <zv-radio name="1" shape="square">Radio 1</zv-radio>
+  <zv-radio name="2" shape="square">Radio 2</zv-radio>
+</zv-radio-group>
 ```
 
 ### Custom Color
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" checked-color="#07c160">Radio 1</van-radio>
-  <van-radio name="2" checked-color="#07c160">Radio 2</van-radio>
-</van-radio-group>
+<zv-radio-group v-model="radio">
+  <zv-radio name="1" checked-color="#07c160">Radio 1</zv-radio>
+  <zv-radio name="2" checked-color="#07c160">Radio 2</zv-radio>
+</zv-radio-group>
 ```
 
 ### Custom Icon Size
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" icon-size="24px">Radio 1</van-radio>
-  <van-radio name="2" icon-size="24px">Radio 2</van-radio>
-</van-radio-group>
+<zv-radio-group v-model="radio">
+  <zv-radio name="1" icon-size="24px">Radio 1</zv-radio>
+  <zv-radio name="2" icon-size="24px">Radio 2</zv-radio>
+</zv-radio-group>
 ```
 
 ### Custom Icon
@@ -83,8 +83,8 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1">
+<zv-radio-group v-model="radio">
+  <zv-radio name="1">
     Radio 1
     <template #icon="props">
       <img
@@ -92,8 +92,8 @@ Use icon slot to custom icon
         :src="props.checked ? activeIcon : inactiveIcon"
       >
     </template>
-  </van-radio>
-  <van-radio name="2">
+  </zv-radio>
+  <zv-radio name="2">
     Radio 2
     <template #icon="props">
       <img
@@ -101,8 +101,8 @@ Use icon slot to custom icon
         :src="props.checked ? activeIcon : inactiveIcon"
       />
     </template>
-  </van-radio>
-</van-radio-group>
+  </zv-radio>
+</zv-radio-group>
 
 <style>
   .img-icon {
@@ -126,29 +126,29 @@ export default {
 ### Disable Label Click
 
 ```html
-<van-radio-group v-model="radio">
-  <van-radio name="1" label-disabled>Radio 1</van-radio>
-  <van-radio name="2" label-disabled>Radio 2</van-radio>
-</van-radio-group>
+<zv-radio-group v-model="radio">
+  <zv-radio name="1" label-disabled>Radio 1</zv-radio>
+  <zv-radio name="2" label-disabled>Radio 2</zv-radio>
+</zv-radio-group>
 ```
 
 ### Inside a Cell
 
 ```html
-<van-radio-group v-model="radio">
-  <van-cell-group>
-    <van-cell title="Radio 1" clickable @click="radio = '1'">
+<zv-radio-group v-model="radio">
+  <zv-cell-group>
+    <zv-cell title="Radio 1" clickable @click="radio = '1'">
       <template #right-icon>      
-        <van-radio name="1" />
+        <zv-radio name="1" />
       </template>
-    </van-cell>
-    <van-cell title="Radio 2" clickable @click="radio = '2'">
+    </zv-cell>
+    <zv-cell title="Radio 2" clickable @click="radio = '2'">
       <template #right-icon>
-        <van-radio name="2" />
+        <zv-radio name="2" />
       </template>
-    </van-cell>
-  </van-cell-group>
-</van-radio-group>
+    </zv-cell>
+  </zv-cell-group>
+</zv-radio-group>
 ```
 
 ## API

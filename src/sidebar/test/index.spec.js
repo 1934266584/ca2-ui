@@ -6,9 +6,9 @@ test('click event & change event', () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <van-sidebar @change="onChange">
-        <van-sidebar-item @click="onClick">Text</van-sidebar-item>
-      </van-sidebar>
+      <zv-sidebar @change="onChange">
+        <zv-sidebar-item @click="onClick">Text</zv-sidebar-item>
+      </zv-sidebar>
     `,
     methods: {
       onClick,
@@ -25,10 +25,10 @@ test('click event & change event', () => {
 test('v-model', () => {
   const wrapper = mount({
     template: `
-      <van-sidebar v-model="active">
-        <van-sidebar-item>Text</van-sidebar-item>
-        <van-sidebar-item>Text</van-sidebar-item>
-      </van-sidebar>
+      <zv-sidebar v-model="active">
+        <zv-sidebar-item>Text</zv-sidebar-item>
+        <zv-sidebar-item>Text</zv-sidebar-item>
+      </zv-sidebar>
     `,
     data() {
       return {
@@ -47,10 +47,10 @@ test('v-model', () => {
 test('disabled prop', () => {
   const wrapper = mount({
     template: `
-      <van-sidebar v-model="active">
-        <van-sidebar-item>Text</van-sidebar-item>
-        <van-sidebar-item disabled>Text</van-sidebar-item>
-      </van-sidebar>
+      <zv-sidebar v-model="active">
+        <zv-sidebar-item>Text</zv-sidebar-item>
+        <zv-sidebar-item disabled>Text</zv-sidebar-item>
+      </zv-sidebar>
     `,
     data() {
       return {

@@ -3,68 +3,68 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-tree-select" style="height: 300px;">
-      <div class="van-sidebar van-tree-select__nav"><a class="van-sidebar-item van-sidebar-item--select van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">浙江
+    <div class="zv-tree-select" style="height: 300px;">
+      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">浙江
             <!---->
           </div>
-        </a><a class="van-sidebar-item van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">江苏
+        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">江苏
             <!---->
           </div>
-        </a><a class="van-sidebar-item van-sidebar-item--disabled van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">福建
+        </a><a class="zv-sidebar-item zv-sidebar-item--disabled zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">福建
             <!---->
           </div>
         </a></div>
-      <div class="van-tree-select__content">
-        <div class="van-ellipsis van-tree-select__item van-tree-select__item--active">杭州<i class="van-icon van-icon-checked van-tree-select__selected">
+      <div class="zv-tree-select__content">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
             <!----></i></div>
-        <div class="van-ellipsis van-tree-select__item">温州</div>
-        <div class="van-ellipsis van-tree-select__item van-tree-select__item--disabled">宁波</div>
-        <div class="van-ellipsis van-tree-select__item">义乌</div>
+        <div class="zv-ellipsis zv-tree-select__item">温州</div>
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
+        <div class="zv-ellipsis zv-tree-select__item">义乌</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-tree-select" style="height: 300px;">
-      <div class="van-sidebar van-tree-select__nav"><a class="van-sidebar-item van-sidebar-item--select van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">浙江
+    <div class="zv-tree-select" style="height: 300px;">
+      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">浙江
             <!---->
           </div>
-        </a><a class="van-sidebar-item van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">江苏
+        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">江苏
             <!---->
           </div>
-        </a><a class="van-sidebar-item van-sidebar-item--disabled van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">福建
+        </a><a class="zv-sidebar-item zv-sidebar-item--disabled zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">福建
             <!---->
           </div>
         </a></div>
-      <div class="van-tree-select__content">
-        <div class="van-ellipsis van-tree-select__item van-tree-select__item--active">杭州<i class="van-icon van-icon-checked van-tree-select__selected">
+      <div class="zv-tree-select__content">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
             <!----></i></div>
-        <div class="van-ellipsis van-tree-select__item van-tree-select__item--active">温州<i class="van-icon van-icon-checked van-tree-select__selected">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">温州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
             <!----></i></div>
-        <div class="van-ellipsis van-tree-select__item van-tree-select__item--disabled">宁波</div>
-        <div class="van-ellipsis van-tree-select__item">义乌</div>
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
+        <div class="zv-ellipsis zv-tree-select__item">义乌</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-tree-select" style="height: 55vw;">
-      <div class="van-sidebar van-tree-select__nav"><a class="van-sidebar-item van-sidebar-item--select van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">分组 1
+    <div class="zv-tree-select" style="height: 55vw;">
+      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">分组 1
             <!---->
           </div>
-        </a><a class="van-sidebar-item van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">分组 2
+        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">分组 2
             <!---->
           </div>
         </a></div>
-      <div class="van-tree-select__content">
-        <div class="van-image"><img src="https://img.yzcdn.cn/vant/apple-1.jpg" class="van-image__img">
-          <div class="van-image__loading"><i class="van-icon van-icon-photo-o van-image__loading-icon">
+      <div class="zv-tree-select__content">
+        <div class="zv-image"><img src="https://img.yzcdn.cn/vant/apple-1.jpg" class="zv-image__img">
+          <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
               <!----></i></div>
         </div>
         <!---->
@@ -72,20 +72,20 @@ exports[`renders demo correctly 1`] = `
     </div>
   </div>
   <div>
-    <div class="van-tree-select" style="height: 55vw;">
-      <div class="van-sidebar van-tree-select__nav"><a class="van-sidebar-item van-sidebar-item--select van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">浙江<div class="van-info van-info--dot van-sidebar-item__info"></div>
+    <div class="zv-tree-select" style="height: 55vw;">
+      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">浙江<div class="zv-info zv-info--dot zv-sidebar-item__info"></div>
           </div>
-        </a><a class="van-sidebar-item van-tree-select__nav-item">
-          <div class="van-sidebar-item__text">江苏<div class="van-info van-sidebar-item__info">5</div>
+        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
+          <div class="zv-sidebar-item__text">江苏<div class="zv-info zv-sidebar-item__info">5</div>
           </div>
         </a></div>
-      <div class="van-tree-select__content">
-        <div class="van-ellipsis van-tree-select__item van-tree-select__item--active">杭州<i class="van-icon van-icon-checked van-tree-select__selected">
+      <div class="zv-tree-select__content">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
             <!----></i></div>
-        <div class="van-ellipsis van-tree-select__item">温州</div>
-        <div class="van-ellipsis van-tree-select__item van-tree-select__item--disabled">宁波</div>
-        <div class="van-ellipsis van-tree-select__item">义乌</div>
+        <div class="zv-ellipsis zv-tree-select__item">温州</div>
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
+        <div class="zv-ellipsis zv-tree-select__item">义乌</div>
       </div>
     </div>
   </div>

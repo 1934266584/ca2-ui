@@ -15,7 +15,7 @@
     height: @loading-spinner-size;
     max-height: 100%;
     vertical-align: middle;
-    animation: van-rotate @loading-spinner-animation-duration linear infinite;
+    animation: zv-rotate @loading-spinner-animation-duration linear infinite;
 
     &--spinner {
       animation-timing-function: steps(12);
@@ -50,7 +50,7 @@
     height: 100%;
 
     circle {
-      animation: van-circular 1.5s ease-in-out infinite;
+      animation: zv-circular 1.5s ease-in-out infinite;
       stroke: currentColor;
       stroke-width: 3;
       stroke-linecap: round;
@@ -76,7 +76,7 @@
   }
 }
 
-@keyframes van-circular {
+@keyframes zv-circular {
   0% {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;

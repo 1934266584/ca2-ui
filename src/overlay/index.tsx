@@ -41,7 +41,7 @@ function Overlay(
   }
 
   return (
-    <transition name="van-fade">
+    <transition name="zv-fade">
       <div
         vShow={props.show}
         style={style}

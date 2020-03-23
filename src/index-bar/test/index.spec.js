@@ -11,10 +11,10 @@ function mockOffsetHeight(offsetHeight) {
 test('custom anchor text', () => {
   const wrapper = mount({
     template: `
-      <van-index-bar>
-        <van-index-anchor index="A">Title A</van-index-anchor>
-        <van-index-anchor index="B">Title B</van-index-anchor>
-      </van-index-bar>
+      <zv-index-bar>
+        <zv-index-anchor index="A">Title A</zv-index-anchor>
+        <zv-index-anchor index="B">Title B</zv-index-anchor>
+      </zv-index-bar>
     `,
   });
 
@@ -25,10 +25,10 @@ test('click and scroll to anchor', () => {
   const onSelect = jest.fn();
   const wrapper = mount({
     template: `
-      <van-index-bar @select="onSelect">
-        <van-index-anchor index="A" />
-        <van-index-anchor index="B" />
-      </van-index-bar>
+      <zv-index-bar @select="onSelect">
+        <zv-index-anchor index="A" />
+        <zv-index-anchor index="B" />
+      </zv-index-bar>
     `,
     methods: {
       onSelect,
@@ -47,11 +47,11 @@ test('touch and scroll to anchor', () => {
   const onSelect = jest.fn();
   const wrapper = mount({
     template: `
-      <van-index-bar @select="onSelect">
-        <van-index-anchor index="A" />
-        <van-index-anchor index="B" />
-        <van-index-anchor index="XXX" />
-      </van-index-bar>
+      <zv-index-bar @select="onSelect">
+        <zv-index-anchor index="A" />
+        <zv-index-anchor index="B" />
+        <zv-index-anchor index="XXX" />
+      </zv-index-bar>
     `,
     methods: {
       onSelect,
@@ -104,14 +104,14 @@ test('scroll and update active anchor', () => {
 
   const wrapper = mount({
     template: `
-      <van-index-bar :sticky="sticky">
-        <van-index-anchor
+      <zv-index-bar :sticky="sticky">
+        <zv-index-anchor
           v-for="index in 4"
           :key="index"
           :index="index"
           :data-index="index - 1"
         />
-      </van-index-bar>
+      </zv-index-bar>
     `,
     data() {
       return {

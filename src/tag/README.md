@@ -14,65 +14,65 @@ Vue.use(Tag);
 ### Basic Usage
 
 ```html
-<van-tag>Tag</van-tag>
-<van-tag type="primary">Tag</van-tag>
-<van-tag type="success">Tag</van-tag>
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="warning">Tag</van-tag>
+<zv-tag>Tag</zv-tag>
+<zv-tag type="primary">Tag</zv-tag>
+<zv-tag type="success">Tag</zv-tag>
+<zv-tag type="danger">Tag</zv-tag>
+<zv-tag type="warning">Tag</zv-tag>
 ```
 
 ### Round style
 
 ```html
-<van-tag round>Tag</van-tag>
-<van-tag round type="primary">Tag</van-tag>
-<van-tag round type="success">Tag</van-tag>
-<van-tag round type="danger">Tag</van-tag>
-<van-tag round type="warning">Tag</van-tag>
+<zv-tag round>Tag</zv-tag>
+<zv-tag round type="primary">Tag</zv-tag>
+<zv-tag round type="success">Tag</zv-tag>
+<zv-tag round type="danger">Tag</zv-tag>
+<zv-tag round type="warning">Tag</zv-tag>
 ```
 
 ### Mark style
 
 ```html
-<van-tag mark>Tag</van-tag>
-<van-tag mark type="primary">Tag</van-tag>
-<van-tag mark type="success">Tag</van-tag>
-<van-tag mark type="danger">Tag</van-tag>
-<van-tag mark type="warning">Tag</van-tag>
+<zv-tag mark>Tag</zv-tag>
+<zv-tag mark type="primary">Tag</zv-tag>
+<zv-tag mark type="success">Tag</zv-tag>
+<zv-tag mark type="danger">Tag</zv-tag>
+<zv-tag mark type="warning">Tag</zv-tag>
 ```
 
 ### Plain style
 
 ```html
-<van-tag plain>Tag</van-tag>
-<van-tag plain type="primary">Tag</van-tag>
-<van-tag plain type="success">Tag</van-tag>
-<van-tag plain type="danger">Tag</van-tag>
-<van-tag plain type="warning">Tag</van-tag>
+<zv-tag plain>Tag</zv-tag>
+<zv-tag plain type="primary">Tag</zv-tag>
+<zv-tag plain type="success">Tag</zv-tag>
+<zv-tag plain type="danger">Tag</zv-tag>
+<zv-tag plain type="warning">Tag</zv-tag>
 ```
 
 ### Custom Color
 
 ```html
-<van-tag color="#f2826a">Tag</van-tag>
-<van-tag color="#f2826a" plain>Tag</van-tag>
-<van-tag color="#7232dd">Tag</van-tag>
-<van-tag color="#7232dd" plain>Tag</van-tag>
-<van-tag color="#ffe1e1" text-color="#ad0000">Tag</van-tag>
+<zv-tag color="#f2826a">Tag</zv-tag>
+<zv-tag color="#f2826a" plain>Tag</zv-tag>
+<zv-tag color="#7232dd">Tag</zv-tag>
+<zv-tag color="#7232dd" plain>Tag</zv-tag>
+<zv-tag color="#ffe1e1" text-color="#ad0000">Tag</zv-tag>
 ```
 
 ### Custom Size
 
 ```html
-<van-tag type="danger">Tag</van-tag>
-<van-tag type="danger" size="medium">Tag</van-tag>
-<van-tag type="danger" size="large">Tag</van-tag>
+<zv-tag type="danger">Tag</zv-tag>
+<zv-tag type="danger" size="medium">Tag</zv-tag>
+<zv-tag type="danger" size="large">Tag</zv-tag>
 ```
 
 ### Closeable
 
 ```html
-<van-tag
+<zv-tag
   v-if="show.primary"
   closeable
   size="medium"
@@ -80,8 +80,8 @@ Vue.use(Tag);
   @close="close('primary')"
 >
   Tag
-</van-tag>
-<van-tag
+</zv-tag>
+<zv-tag
   v-if="show.success"
   closeable
   size="medium"
@@ -89,7 +89,7 @@ Vue.use(Tag);
   @close="close('success')"
 >
   Tag
-</van-tag>
+</zv-tag>
 ```
 
 ```js

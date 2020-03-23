@@ -1,19 +1,19 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <van-coupon-cell
+      <zv-coupon-cell
         :coupons="coupons"
         :chosen-coupon="chosenCoupon"
         @click="showList = true"
       />
 
-      <van-popup
+      <zv-popup
         v-model="showList"
         round
         position="bottom"
         style="height: 90%; padding-top: 4px;"
       >
-        <van-coupon-list
+        <zv-coupon-list
           :coupons="coupons"
           :chosen-coupon="chosenCoupon"
           :disabled-coupons="disabledCoupons"
@@ -21,7 +21,7 @@
           @change="onChange"
           @exchange="onExchange"
         />
-      </van-popup>
+      </zv-popup>
     </demo-block>
   </demo-section>
 </template>

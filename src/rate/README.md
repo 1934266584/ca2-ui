@@ -14,7 +14,7 @@ Vue.use(Rate);
 ### Basic Usage
 
 ```html
-<van-rate v-model="value" />
+<zv-rate v-model="value" />
 ```
 
 ```js
@@ -30,7 +30,7 @@ export default {
 ### Custom Icon
 
 ```html
-<van-rate
+<zv-rate
   v-model="value"
   icon="like"
   void-icon="like-o"
@@ -40,7 +40,7 @@ export default {
 ### Custom Style
 
 ```html
-<van-rate
+<zv-rate
   v-model="value"
   :size="25"
   color="#ee0a24"
@@ -52,7 +52,7 @@ export default {
 ### Half Star
 
 ```html
-<van-rate
+<zv-rate
   v-model="value"
   allow-half
   void-icon="star"
@@ -73,25 +73,25 @@ export default {
 ### Custom Count
 
 ```html
-<van-rate v-model="value" :count="6" />
+<zv-rate v-model="value" :count="6" />
 ```
 
 ### Disabled
 
 ```html
- <van-rate v-model="value" disabled />
+ <zv-rate v-model="value" disabled />
 ```
 
 ### Readonly
 
 ```html
-<van-rate v-model="value" readonly />
+<zv-rate v-model="value" readonly />
 ```
 
 ### Change Event
 
 ```html
-<van-rate v-model="value" @change="onChange" />
+<zv-rate v-model="value" @change="onChange" />
 ```
 
 ```javascript
@@ -119,7 +119,7 @@ export default {
 | disabled-color | Disabled color | *string* | `#bdbdbd` |
 | icon | Selected icon | *string* | `star` |
 | void-icon | Void icon | *string* | `star-o` |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `van-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
 | allow-half | Whether to allow half star | *boolean* | `false` |
 | readonly | Whether to be readonly | *boolean* | `false` |
 | disabled | Whether to disable rate | *boolean* | `false` |

@@ -14,7 +14,7 @@ Vue.use(Card);
 ### Basic Usage
 
 ```html
-<van-card
+<zv-card
   num="2"
   price="2.00"
   title="Title"
@@ -26,7 +26,7 @@ Vue.use(Card);
 ### Discount Info
 
 ```html
-<van-card
+<zv-card
   num="2"
   tag="Tag"
   price="2.00"
@@ -42,7 +42,7 @@ Vue.use(Card);
 Use slot to custom content.
 
 ```html
-<van-card
+<zv-card
   num="2"
   title="Title"
   desc="Description"
@@ -50,14 +50,14 @@ Use slot to custom content.
   thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <van-tag plain type="danger">Tag</van-tag>
-    <van-tag plain type="danger">Tag</van-tag>
+    <zv-tag plain type="danger">Tag</zv-tag>
+    <zv-tag plain type="danger">Tag</zv-tag>
   </template>
   <template #footer>
-    <van-button size="mini">Button</van-button>
-    <van-button size="mini">Button</van-button>
+    <zv-button size="mini">Button</zv-button>
+    <zv-button size="mini">Button</zv-button>
   </template>
-</van-card>
+</zv-card>
 ```
 
 ## API

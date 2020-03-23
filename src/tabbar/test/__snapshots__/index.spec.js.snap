@@ -1,38 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`disable border 1`] = `<div class="van-tabbar van-tabbar--fixed"></div>`;
+exports[`disable border 1`] = `<div class="zv-tabbar zv-tabbar--fixed"></div>`;
 
 exports[`route mode 1`] = `
-<div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-  <div class="van-tabbar-item van-tabbar-item--active">
-    <div class="van-tabbar-item__icon">
+<div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed">
+  <div class="zv-tabbar-item zv-tabbar-item--active">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
@@ -40,36 +40,36 @@ exports[`route mode 1`] = `
 `;
 
 exports[`route mode 2`] = `
-<div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+<div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item van-tabbar-item--active">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item zv-tabbar-item--active">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
@@ -77,36 +77,36 @@ exports[`route mode 2`] = `
 `;
 
 exports[`route mode 3`] = `
-<div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+<div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item van-tabbar-item--active">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item zv-tabbar-item--active">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
@@ -114,20 +114,20 @@ exports[`route mode 3`] = `
 `;
 
 exports[`route mode match by name 1`] = `
-<div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-  <div class="van-tabbar-item van-tabbar-item--active">
-    <div class="van-tabbar-item__icon">
+<div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed">
+  <div class="zv-tabbar-item zv-tabbar-item--active">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
@@ -135,20 +135,20 @@ exports[`route mode match by name 1`] = `
 `;
 
 exports[`route mode match by name 2`] = `
-<div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+<div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
-  <div class="van-tabbar-item van-tabbar-item--active">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item zv-tabbar-item--active">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">
+    <div class="zv-tabbar-item__text">
       Tab
     </div>
   </div>
@@ -156,18 +156,18 @@ exports[`route mode match by name 2`] = `
 `;
 
 exports[`watch tabbar value 1`] = `
-<div class="van-hairline--top-bottom van-tabbar van-tabbar--fixed">
-  <div class="van-tabbar-item">
-    <div class="van-tabbar-item__icon">
+<div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed">
+  <div class="zv-tabbar-item">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">Tab</div>
+    <div class="zv-tabbar-item__text">Tab</div>
   </div>
-  <div class="van-tabbar-item van-tabbar-item--active">
-    <div class="van-tabbar-item__icon">
+  <div class="zv-tabbar-item zv-tabbar-item--active">
+    <div class="zv-tabbar-item__icon">
       <!---->
     </div>
-    <div class="van-tabbar-item__text">Tab</div>
+    <div class="zv-tabbar-item__text">Tab</div>
   </div>
 </div>
 `;

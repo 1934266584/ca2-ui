@@ -16,9 +16,9 @@ Vue.use(PullRefresh);
 The `refresh` event will be triggered when pull refresh, you should set `v-model` to `false` to reset loading status after process refresh event.
 
 ```html
-<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<zv-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</zv-pull-refresh>
 ```
 
 ```js
@@ -48,13 +48,13 @@ export default {
 Use `success-text` to set the success prompt after the refresh is successful
 
 ```html
-<van-pull-refresh
+<zv-pull-refresh
   v-model="isLoading"
   success-text="Refresh success"
   @refresh="onRefresh"
 >
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</zv-pull-refresh>
 ```
 
 ### Custom Tips
@@ -62,7 +62,7 @@ Use `success-text` to set the success prompt after the refresh is successful
 Use slots to custom tips
 
 ```html
-<van-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<zv-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <template #pulling="props">
     <img
       class="doge"
@@ -85,7 +85,7 @@ Use slots to custom tips
     />
   </template>
   <p>Refresh Count: {{ count }}</p>
-</van-pull-refresh>
+</zv-pull-refresh>
 
 <style>
 .doge {

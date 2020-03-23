@@ -3,7 +3,7 @@
 exports[`container prop 1`] = `
 <div style="height: 20px;">
   <div style="height: 10px;">
-    <div class="van-sticky van-sticky--fixed" style="transform: translate3d(0, -5px, 0);">
+    <div class="zv-sticky zv-sticky--fixed" style="transform: translate3d(0, -5px, 0);">
       Content
     </div>
   </div>
@@ -13,7 +13,7 @@ exports[`container prop 1`] = `
 exports[`container prop 2`] = `
 <div style="height: 20px;">
   <div style="height: 10px;">
-    <div class="van-sticky" style="">
+    <div class="zv-sticky" style="">
       Content
     </div>
   </div>
@@ -22,7 +22,7 @@ exports[`container prop 2`] = `
 
 exports[`offset-top prop 1`] = `
 <div style="height: 10px;">
-  <div class="van-sticky van-sticky--fixed" style="top: 10px;">
+  <div class="zv-sticky zv-sticky--fixed" style="top: 10px;">
     Content
   </div>
 </div>
@@ -30,7 +30,7 @@ exports[`offset-top prop 1`] = `
 
 exports[`sticky to top 1`] = `
 <div style="height: 10px;">
-  <div class="van-sticky">
+  <div class="zv-sticky">
     Content
   </div>
 </div>
@@ -38,7 +38,7 @@ exports[`sticky to top 1`] = `
 
 exports[`sticky to top 2`] = `
 <div style="height: 10px;">
-  <div class="van-sticky van-sticky--fixed">
+  <div class="zv-sticky zv-sticky--fixed">
     Content
   </div>
 </div>
@@ -46,7 +46,7 @@ exports[`sticky to top 2`] = `
 
 exports[`z-index prop 1`] = `
 <div style="height: 10px;">
-  <div class="van-sticky van-sticky--fixed" style="z-index: 0;">
+  <div class="zv-sticky zv-sticky--fixed" style="z-index: 0;">
     Content
   </div>
 </div>

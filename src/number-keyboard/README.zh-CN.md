@@ -18,10 +18,10 @@ Vue.use(NumberKeyboard);
 ### 默认样式
 
 ```html
-<van-button @touchstart.stop="show = true">
+<zv-button @touchstart.stop="show = true">
   弹出默认键盘
-</van-button>
-<van-number-keyboard
+</zv-button>
+<zv-number-keyboard
   :show="show"
   extra-key="."
   close-button-text="完成"
@@ -54,7 +54,7 @@ export default {
 ### 自定义样式
 
 ```html
-<van-number-keyboard
+<zv-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -70,14 +70,14 @@ export default {
 可以通过`v-model`绑定键盘当前输入值
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
 
-<van-number-keyboard
+<zv-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"
@@ -101,11 +101,11 @@ export default {
 通过`extra-key`属性可以设置左下角按键内容
 
 ```html
-<van-button plain type="primary" @touchstart.stop="show = true">
+<zv-button plain type="primary" @touchstart.stop="show = true">
   弹出身份证号码键盘
-</van-button>
+</zv-button>
 
-<van-number-keyboard
+<zv-number-keyboard
   :show="show"
   close-button-text="完成"
   extra-key="X"
@@ -120,11 +120,11 @@ export default {
 通过`title`属性可以设置键盘标题
 
 ```html
-<van-button plain type="info" @touchstart.stop="show = true">
+<zv-button plain type="info" @touchstart.stop="show = true">
   弹出自定义标题键盘
-</van-button>
+</zv-button>
 
-<van-number-keyboard
+<zv-number-keyboard
   :show="show"
   close-button-text="完成"
   title="键盘标题"

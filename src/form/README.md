@@ -14,15 +14,15 @@ Vue.use(Form);
 ### Basic Usage
 
 ```html
-<van-form @submit="onSubmit">
-  <van-field
+<zv-form @submit="onSubmit">
+  <zv-field
     v-model="username"
     name="Username"
     label="Username"
     placeholder="Username"
     :rules="[{ required: true, message: 'Username is required' }]"
   />
-  <van-field
+  <zv-field
     v-model="password"
     type="password"
     name="Password"
@@ -31,11 +31,11 @@ Vue.use(Form);
     :rules="[{ required: true, message: 'Password is required' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">
+    <zv-button round block type="info" native-type="submit">
       Submit
-    </van-button>
+    </zv-button>
   </div>
-</van-form>
+</zv-form>
 ```
 
 ```js
@@ -57,31 +57,31 @@ export default {
 ### Validate Rules
 
 ```html
-<van-form validate-first @failed="onFailed">
-  <van-field
+<zv-form validate-first @failed="onFailed">
+  <zv-field
     v-model="value1"
     name="pattern"
     placeholder="USe pattern"
     :rules="[{ pattern, message: 'Error message' }]"
   />
-  <van-field
+  <zv-field
     v-model="value2"
     name="validator"
     placeholder="Use validator"
     :rules="[{ validator, message: 'Error message' }]"
   />
-  <van-field
+  <zv-field
     v-model="value3"
     name="asyncValidator"
     placeholder="Use async validator"
     :rules="[{ validator: asyncValidator, message: 'Error message' }]"
   />
   <div style="margin: 16px;">
-    <van-button round block type="info" native-type="submit">
+    <zv-button round block type="info" native-type="submit">
       Submit
-    </van-button>
+    </zv-button>
   </div>
-</van-form>
+</zv-form>
 ```
 
 ```js
@@ -120,11 +120,11 @@ export default {
 ### Field Type - Switch
 
 ```html
-<van-field name="switch" label="Switch">
+<zv-field name="switch" label="Switch">
   <template #input>
-    <van-switch v-model="switchChecked" size="20" />
+    <zv-switch v-model="switchChecked" size="20" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -140,19 +140,19 @@ export default {
 ### Field Type - Checkbox
 
 ```html
-<van-field name="checkbox" label="Checkbox">
+<zv-field name="checkbox" label="Checkbox">
   <template #input>
-    <van-checkbox v-model="checkbox" shape="square" />
+    <zv-checkbox v-model="checkbox" shape="square" />
   </template>
-</van-field>
-<van-field name="checkboxGroup" label="CheckboxGroup">
+</zv-field>
+<zv-field name="checkboxGroup" label="CheckboxGroup">
   <template #input>
-    <van-checkbox-group v-model="checkboxGroup" direction="horizontal">
-      <van-checkbox name="1" shape="square">Checkbox 1</van-checkbox>
-      <van-checkbox name="2" shape="square">Checkbox 2</van-checkbox>
-    </van-checkbox-group>
+    <zv-checkbox-group v-model="checkboxGroup" direction="horizontal">
+      <zv-checkbox name="1" shape="square">Checkbox 1</zv-checkbox>
+      <zv-checkbox name="2" shape="square">Checkbox 2</zv-checkbox>
+    </zv-checkbox-group>
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -169,14 +169,14 @@ export default {
 ### Field Type - Radio
 
 ```html
-<van-field name="radio" label="Radio">
+<zv-field name="radio" label="Radio">
   <template #input>
-    <van-radio-group v-model="radio" direction="horizontal">
-      <van-radio name="1">Radio 1</van-radio>
-      <van-radio name="2">Radio 2</van-radio>
-    </van-radio-group>
+    <zv-radio-group v-model="radio" direction="horizontal">
+      <zv-radio name="1">Radio 1</zv-radio>
+      <zv-radio name="2">Radio 2</zv-radio>
+    </zv-radio-group>
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -192,11 +192,11 @@ export default {
 ### Field Type - Stepper
 
 ```html
-<van-field name="stepper" label="Stepper">
+<zv-field name="stepper" label="Stepper">
   <template #input>
-    <van-stepper v-model="stepper"/>
+    <zv-stepper v-model="stepper"/>
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -212,11 +212,11 @@ export default {
 ### Field Type - Rate
 
 ```html
-<van-field name="rate" label="Rate">
+<zv-field name="rate" label="Rate">
   <template #input>
-    <van-rate v-model="rate" />
+    <zv-rate v-model="rate" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -232,11 +232,11 @@ export default {
 ### Field Type - Slider
 
 ```html
-<van-field name="slider" label="Slider">
+<zv-field name="slider" label="Slider">
   <template #input>
-    <van-slider v-model="slider" />
+    <zv-slider v-model="slider" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -252,11 +252,11 @@ export default {
 ### Field Type - Uploader
 
 ```html
-<van-field name="uploader" label="Uploader">
+<zv-field name="uploader" label="Uploader">
   <template #input>
-    <van-uploader v-model="uploader" />
+    <zv-uploader v-model="uploader" />
   </template>
-</van-field>
+</zv-field>
 ```
 
 ```js
@@ -272,7 +272,7 @@ export default {
 ### Field Type - Picker
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="picker"
@@ -281,14 +281,14 @@ export default {
   placeholder="Select city"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-picker
+<zv-popup v-model="showPicker" position="bottom">
+  <zv-picker
     show-toolbar
     :columns="columns"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -312,7 +312,7 @@ export default {
 ### Field Type - DatetimePicker
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="datetimePicker"
@@ -321,13 +321,13 @@ export default {
   placeholder="Select time"
   @click="showPicker = true"
 />
-<van-popup v-model="showPicker" position="bottom">
-  <van-datetime-picker
+<zv-popup v-model="showPicker" position="bottom">
+  <zv-datetime-picker
     type="time"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -350,7 +350,7 @@ export default {
 ### Field Type - Area
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="area"
@@ -359,13 +359,13 @@ export default {
   placeholder="Select area"
   @click="showArea = true"
 />
-<van-popup v-model="showArea" position="bottom">
-  <van-area
+<zv-popup v-model="showArea" position="bottom">
+  <zv-area
     :area-list="areaList"
     @confirm="onConfirm"
     @cancel="showArea = false"
   />
-</van-popup>
+</zv-popup>
 ```
 
 ```js
@@ -389,7 +389,7 @@ export default {
 ### Field Type - Calendar
 
 ```html
-<van-field
+<zv-field
   readonly
   clickable
   name="calendar"
@@ -398,7 +398,7 @@ export default {
   placeholder="Select date"
   @click="showCalendar = true"
 />
-<van-calendar v-model="showCalendar" @confirm="onConfirm" />
+<zv-calendar v-model="showCalendar" @confirm="onConfirm" />
 ```
 
 ```js

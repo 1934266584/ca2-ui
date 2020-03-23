@@ -31,7 +31,7 @@ test('popup lock scroll', () => {
       value: true,
     },
   });
-  expect(document.body.classList.contains('van-overflow-hidden')).toBeTruthy();
+  expect(document.body.classList.contains('zv-overflow-hidden')).toBeTruthy();
   triggerDrag(document, 0, 100);
   triggerDrag(document, 0, -150);
 
@@ -41,10 +41,10 @@ test('popup lock scroll', () => {
     },
   });
   wrapper1.vm.$destroy();
-  expect(document.body.classList.contains('van-overflow-hidden')).toBeTruthy();
+  expect(document.body.classList.contains('zv-overflow-hidden')).toBeTruthy();
 
   wrapper2.vm.$destroy();
-  expect(document.body.classList.contains('van-overflow-hidden')).toBeFalsy();
+  expect(document.body.classList.contains('zv-overflow-hidden')).toBeFalsy();
 });
 
 test('get container with parent', () => {

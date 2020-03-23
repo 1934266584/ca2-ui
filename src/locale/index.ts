@@ -13,22 +13,22 @@ declare module 'vue' {
 const proto = Vue.prototype;
 const { defineReactive } = Vue.util;
 
-defineReactive(proto, '$vantLang', 'zh-CN');
-defineReactive(proto, '$vantMessages', {
+defineReactive(proto, '$zvLang', 'zh-CN');
+defineReactive(proto, '$zvMessages', {
   'zh-CN': defaultMessages,
 });
 
 export default {
   messages() {
-    return proto.$vantMessages[proto.$vantLang];
+    return proto.$zvMessages[proto.$zvLang];
   },
 
   use(lang: string, messages?: object) {
-    proto.$vantLang = lang;
+    proto.$zvLang = lang;
     this.add({ [lang]: messages });
   },
 
   add(messages = {}) {
-    deepAssign(proto.$vantMessages, messages);
+    deepAssign(proto.$zvMessages, messages);
   },
 };

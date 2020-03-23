@@ -3,80 +3,80 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="van-dropdown-menu van-hairline--top-bottom">
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">默认排序</div></span></div>
+    <div class="zv-dropdown-menu zv-hairline--top-bottom">
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">全部商品</div></span></div>
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">默认排序</div></span></div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="van-dropdown-menu van-hairline--top-bottom">
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">筛选</div></span></div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-menu van-hairline--top-bottom">
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title"><div class="van-ellipsis">默认排序</div></span></div>
+    <div class="zv-dropdown-menu zv-hairline--top-bottom">
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">全部商品</div></span></div>
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">筛选</div></span></div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="van-dropdown-menu van-hairline--top-bottom">
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--down"><div class="van-ellipsis">全部商品</div></span></div>
-      <div role="button" tabindex="0" class="van-dropdown-menu__item"><span class="van-dropdown-menu__title van-dropdown-menu__title--down"><div class="van-ellipsis">默认排序</div></span></div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 0px; display: none;">
-          <!---->
-        </div>
-      </div>
-      <div>
-        <div class="van-dropdown-item van-dropdown-item--up" style="bottom: 0px; display: none;">
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="van-dropdown-menu van-hairline--top-bottom">
-      <div role="button" tabindex="-1" class="van-dropdown-menu__item van-dropdown-menu__item--disabled"><span class="van-dropdown-menu__title"><div class="van-ellipsis">全部商品</div></span></div>
-      <div role="button" tabindex="-1" class="van-dropdown-menu__item van-dropdown-menu__item--disabled"><span class="van-dropdown-menu__title"><div class="van-ellipsis">默认排序</div></span></div>
+    <div class="zv-dropdown-menu zv-hairline--top-bottom">
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">全部商品</div></span></div>
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">默认排序</div></span></div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>
       <div>
-        <div class="van-dropdown-item van-dropdown-item--down" style="top: 0px; display: none;">
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="zv-dropdown-menu zv-hairline--top-bottom">
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title zv-dropdown-menu__title--down"><div class="zv-ellipsis">全部商品</div></span></div>
+      <div role="button" tabindex="0" class="zv-dropdown-menu__item"><span class="zv-dropdown-menu__title zv-dropdown-menu__title--down"><div class="zv-ellipsis">默认排序</div></span></div>
+      <div>
+        <div class="zv-dropdown-item zv-dropdown-item--up" style="bottom: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+      <div>
+        <div class="zv-dropdown-item zv-dropdown-item--up" style="bottom: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="zv-dropdown-menu zv-hairline--top-bottom">
+      <div role="button" tabindex="-1" class="zv-dropdown-menu__item zv-dropdown-menu__item--disabled"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">全部商品</div></span></div>
+      <div role="button" tabindex="-1" class="zv-dropdown-menu__item zv-dropdown-menu__item--disabled"><span class="zv-dropdown-menu__title"><div class="zv-ellipsis">默认排序</div></span></div>
+      <div>
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
+          <!---->
+        </div>
+      </div>
+      <div>
+        <div class="zv-dropdown-item zv-dropdown-item--down" style="top: 0px; display: none;">
           <!---->
         </div>
       </div>

@@ -14,7 +14,7 @@ Vue.use(Switch);
 ### Basic Usage
 
 ```html
-<van-switch v-model="checked" />
+<zv-switch v-model="checked" />
 ```
 
 ```js
@@ -30,31 +30,31 @@ export default {
 ### Disabled
 
 ```html
-<van-switch v-model="checked" disabled />
+<zv-switch v-model="checked" disabled />
 ```
 
 ### Loading
 
 ```html
-<van-switch v-model="checked" loading />
+<zv-switch v-model="checked" loading />
 ```
 
 ### Custom Size
 
 ```html
-<van-switch v-model="checked" size="24px" />
+<zv-switch v-model="checked" size="24px" />
 ```
 
 ### Custom Color
 
 ```html
-<van-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
+<zv-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
 ```
 
 ### Async Control
 
 ```html
-<van-switch :value="checked" @input="onInput" />
+<zv-switch :value="checked" @input="onInput" />
 ```
 
 ```js
@@ -80,11 +80,11 @@ export default {
 ### Inside a Cell
 
 ```html
-<van-cell center title="Title">
+<zv-cell center title="Title">
   <template #right-icon>
-    <van-switch v-model="checked" size="24" />
+    <zv-switch v-model="checked" size="24" />
   </template>
-</van-cell>
+</zv-cell>
 ```
 
 ## API

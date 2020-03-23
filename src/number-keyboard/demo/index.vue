@@ -1,11 +1,11 @@
 <template>
   <demo-section>
     <demo-block :title="t('default')">
-      <van-button type="primary" @touchstart.stop="keyboard = 'default'">
+      <zv-button type="primary" @touchstart.stop="keyboard = 'default'">
         {{ t('button1') }}
-      </van-button>
+      </zv-button>
 
-      <van-number-keyboard
+      <zv-number-keyboard
         :show="keyboard === 'default'"
         :close-button-text="t('close')"
         extra-key="."
@@ -16,11 +16,11 @@
     </demo-block>
 
     <demo-block :title="t('custom')">
-      <van-button type="info" @touchstart.stop="keyboard = 'custom'">
+      <zv-button type="info" @touchstart.stop="keyboard = 'custom'">
         {{ t('button2') }}
-      </van-button>
+      </zv-button>
 
-      <van-number-keyboard
+      <zv-number-keyboard
         :show="keyboard === 'custom'"
         :close-button-text="t('close')"
         theme="custom"
@@ -32,7 +32,7 @@
     </demo-block>
 
     <demo-block :title="t('bindValue')">
-      <van-field
+      <zv-field
         readonly
         clickable
         :value="value"
@@ -40,7 +40,7 @@
         @touchstart.native.stop="keyboard = 'bindValue'"
       />
 
-      <van-number-keyboard
+      <zv-number-keyboard
         v-model="value"
         :show="keyboard === 'bindValue'"
         maxlength="6"
@@ -49,11 +49,11 @@
     </demo-block>
 
     <demo-block :title="t('extraKey')">
-      <van-button plain type="primary" @touchstart.stop="keyboard = 'extraKey'">
+      <zv-button plain type="primary" @touchstart.stop="keyboard = 'extraKey'">
         {{ t('button3') }}
-      </van-button>
+      </zv-button>
 
-      <van-number-keyboard
+      <zv-number-keyboard
         :show="keyboard === 'extraKey'"
         :close-button-text="t('close')"
         extra-key="X"
@@ -64,11 +64,11 @@
     </demo-block>
 
     <demo-block :title="t('title')">
-      <van-button plain type="info" @touchstart.stop="keyboard = 'title'">
+      <zv-button plain type="info" @touchstart.stop="keyboard = 'title'">
         {{ t('button4') }}
-      </van-button>
+      </zv-button>
 
-      <van-number-keyboard
+      <zv-number-keyboard
         :show="keyboard === 'title'"
         :close-button-text="t('close')"
         :title="t('title')"

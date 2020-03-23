@@ -20,8 +20,8 @@ Vue.use(Calendar);
 The `confirm` event will be triggered after the date selection is completed
 
 ```html
-<van-cell title="Select Single Date" :value="date" @click="show = true" />
-<van-calendar v-model="show" @confirm="onConfirm" />
+<zv-cell title="Select Single Date" :value="date" @click="show = true" />
+<zv-calendar v-model="show" @confirm="onConfirm" />
 ```
 
 ```js
@@ -47,8 +47,8 @@ export default {
 ### Select Multiple Date
 
 ```html
-<van-cell title="Select Multiple Date" :value="text" @click="show = true" />
-<van-calendar v-model="show" type="multiple" @confirm="onConfirm" />
+<zv-cell title="Select Multiple Date" :value="text" @click="show = true" />
+<zv-calendar v-model="show" type="multiple" @confirm="onConfirm" />
 ```
 
 ```js
@@ -73,8 +73,8 @@ export default {
 You can select a date range after setting `type` to` range`. In range mode, the date returned by the `confirm` event is an array, the first item in the array is the start time and the second item is the end time.
 
 ```html
-<van-cell title="Select Date Range" :value="date" @click="show = true" />
-<van-calendar v-model="show" type="range" @confirm="onConfirm" />
+<zv-cell title="Select Date Range" :value="date" @click="show = true" />
+<zv-calendar v-model="show" type="range" @confirm="onConfirm" />
 ```
 
 ```js
@@ -103,7 +103,7 @@ export default {
 Set `show-confirm` to` false` to hide the confirm button. In this case, the `confirm` event will be triggered immediately after the selection is completed.
 
 ```html
-<van-calendar v-model="show" :show-confirm="false" />
+<zv-calendar v-model="show" :show-confirm="false" />
 ```
 
 ### Custom Color
@@ -111,7 +111,7 @@ Set `show-confirm` to` false` to hide the confirm button. In this case, the `con
 Use `color` prop to custom calendar color
 
 ```html
-<van-calendar v-model="show" color="#07c160" />
+<zv-calendar v-model="show" color="#07c160" />
 ```
 
 ### Custom Date Range
@@ -119,7 +119,7 @@ Use `color` prop to custom calendar color
 Use `min-date` and `max-date` to custom date range
 
 ```html
-<van-calendar
+<zv-calendar
   v-model="show"
   :min-date="minDate"
   :max-date="maxDate"
@@ -143,7 +143,7 @@ export default {
 Use `confirm-text` and `confirm-disabled-text` to custom confirm text
 
 ```html
-<van-calendar
+<zv-calendar
   v-model="show"
   type="range"
   confirm-text="OK"
@@ -156,7 +156,7 @@ Use `confirm-text` and `confirm-disabled-text` to custom confirm text
 Use `formatter` to custom day text
 
 ```html
-<van-calendar
+<zv-calendar
   v-model="show"
   type="range"
   :formatter="formatter"
@@ -197,7 +197,7 @@ export default {
 Use `position` to custom popup position，can be set to `top`、`left`、`right`
 
 ```html
-<van-calendar
+<zv-calendar
   v-model="show"
   :round="false"
   position="right"
@@ -209,7 +209,7 @@ Use `position` to custom popup position，can be set to `top`、`left`、`right`
 When selecting a date range, you can use the `max-range` prop to specify the maximum number of selectable days
 
 ```html
-<van-calendar
+<zv-calendar
   type="range"
   :max-range="3"
   :style="{ height: '500px' }"
@@ -221,7 +221,7 @@ When selecting a date range, you can use the `max-range` prop to specify the max
 Set `poppable` to `false`, the calendar will be displayed directly on the page instead of appearing as a popup
 
 ```html
-<van-calendar
+<zv-calendar
   title="Calendar"
   :poppable="false"
   :show-confirm="false"

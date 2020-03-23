@@ -1,6 +1,6 @@
 <template>
-  <div class="van-hairline--bottom">
-    <van-field
+  <div class="zv-hairline--bottom">
+    <zv-field
       readonly
       clickable
       name="area"
@@ -10,13 +10,13 @@
       :placeholder="t('placeholder')"
       @click="showArea = true"
     />
-    <van-popup v-model="showArea" position="bottom">
-      <van-area
+    <zv-popup v-model="showArea" position="bottom">
+      <zv-area
         :area-list="t('areaList')"
         @confirm="onConfirm"
         @cancel="onCancel"
       />
-    </van-popup>
+    </zv-popup>
   </div>
 </template>
 

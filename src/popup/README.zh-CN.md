@@ -20,8 +20,8 @@ Vue.use(Popup);
 通过`v-model`控制弹出层是否展示
 
 ```html
-<van-cell is-link @click="showPopup">展示弹出层</van-cell>
-<van-popup v-model="show">内容</van-popup>
+<zv-cell is-link @click="showPopup">展示弹出层</zv-cell>
+<zv-popup v-model="show">内容</zv-popup>
 ```
 
 ```js
@@ -45,7 +45,7 @@ export default {
 通过`position`属性设置弹出位置，默认居中弹出，可以设置为`top`、`bottom`、`left`、`right`
 
 ```html
-<van-popup
+<zv-popup
   v-model="show"
   position="top"
   :style="{ height: '30%' }"
@@ -57,14 +57,14 @@ export default {
 设置`closeable`属性后，会在弹出层的右上角显示关闭图标，并且可以通过`close-icon`属性自定义图标，使用`close-icon-position`属性可以自定义图标位置
 
 ```html
-<van-popup
+<zv-popup
   v-model="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- 自定义图标 -->
-<van-popup
+<zv-popup
   v-model="show"
   closeable
   close-icon="close"
@@ -72,7 +72,7 @@ export default {
   :style="{ height: '30%' }"
 />
 <!-- 图标位置 -->
-<van-popup
+<zv-popup
   v-model="show"
   closeable
   close-icon-position="top-left"
@@ -86,7 +86,7 @@ export default {
 设置`round`属性后，弹窗会根据弹出位置添加不同的圆角样式
 
 ```html
-<van-popup
+<zv-popup
   v-model="show"
   round
   position="bottom"
@@ -100,13 +100,13 @@ export default {
 
 ```html
 <!-- 挂载到 body 节点下 -->
-<van-popup v-model="show" get-container="body" />
+<zv-popup v-model="show" get-container="body" />
 
 <!-- 挂载到 #app 节点下 -->
-<van-popup v-model="show" get-container="#app" />
+<zv-popup v-model="show" get-container="#app" />
 
 <!-- 通过函数指定挂载位置 -->
-<van-popup v-model="show" :get-container="getContainer" />
+<zv-popup v-model="show" :get-container="getContainer" />
 ```
 
 ```js

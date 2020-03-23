@@ -14,47 +14,47 @@ Vue.use(NoticeBar);
 ### Basic Usage
 
 ```html
-<van-notice-bar text="Notice Content" left-icon="volume-o" />
+<zv-notice-bar text="Notice Content" left-icon="volume-o" />
 ```
 
 ### Disable scroll
 
 ```html
-<van-notice-bar :scrollable="false">
+<zv-notice-bar :scrollable="false">
   Notice Content
-</van-notice-bar>
+</zv-notice-bar>
 ```
 
 ### Wrapable
 
 ```html
-<van-notice-bar wrapable :scrollable="false">
+<zv-notice-bar wrapable :scrollable="false">
   Notice Content
-</van-notice-bar>
+</zv-notice-bar>
 ```
 
 ### Mode
 
 ```html
-<van-notice-bar mode="closeable">
+<zv-notice-bar mode="closeable">
   Notice Content
-</van-notice-bar>
+</zv-notice-bar>
 
-<van-notice-bar mode="link">
+<zv-notice-bar mode="link">
   Notice Content
-</van-notice-bar>
+</zv-notice-bar>
 ```
 
 ### Custom Style
 
 ```html
-<van-notice-bar
+<zv-notice-bar
   color="#1989fa"
   background="#ecf9ff"
   left-icon="info-o"
 >
   Notice Content
-</van-notice-bar>
+</zv-notice-bar>
 ```
 
 ## API

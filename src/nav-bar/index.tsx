@@ -69,7 +69,7 @@ function NavBar(
       <div class={bem('left')} onClick={ctx.listeners['click-left'] || noop}>
         {LeftPart()}
       </div>
-      <div class={[bem('title'), 'van-ellipsis']}>
+      <div class={[bem('title'), 'zv-ellipsis']}>
         {slots.title ? slots.title() : props.title}
       </div>
       <div class={bem('right')} onClick={ctx.listeners['click-right'] || noop}>
