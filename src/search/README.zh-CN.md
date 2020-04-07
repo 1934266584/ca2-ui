@@ -88,7 +88,7 @@ export default {
 ```html
 <zv-search
   v-model="value"
-  shape="round"
+  shape="square"
   background="#4fc08d"
   placeholder="请输入搜索关键词"
 />
@@ -119,7 +119,7 @@ export default {
 | 参数 | 说明 | 类型 | 默认值 |
 |------|------|------|------|
 | label | 搜索框左侧文本 | *string* | - |
-| shape | 搜索框形状，可选值为 `round` | *string* | `square` |
+| shape | 搜索框形状，可选值为 `square` | *string* | `round` |
 | background | 搜索框外部背景色 | *string* | `#f2f2f2` |
 | maxlength | 输入的最大字符数 | *number \| string* | - |
 | placeholder | 占位提示文字 | *string* | - |

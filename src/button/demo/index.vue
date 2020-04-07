@@ -95,7 +95,7 @@ export default {
       large: '大号按钮',
       normal: '普通按钮',
       small: '小型按钮',
-      mini: '迷你按钮',
+      mini: '迷你',
       plain: '朴素按钮',
       square: '方形按钮',
       round: '圆形按钮',

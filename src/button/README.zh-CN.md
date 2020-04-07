@@ -134,7 +134,7 @@ Vue.use(Button);
 | block | 是否为块级元素 | *boolean* | `false` |
 | plain | 是否为朴素按钮 | *boolean* | `false` |
 | square | 是否为方形按钮 | *boolean* | `false` |
-| round | 是否为圆形按钮 | *boolean* | `false` |
+| round | 是否为圆形按钮 | *boolean* | `true` |
 | disabled | 是否禁用按钮 | *boolean* | `false` |
 | hairline | 是否使用 0.5px 边框 | *boolean* | `false` |
 | loading | 是否显示为加载状态 | *boolean* | `false` |

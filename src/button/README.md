@@ -111,7 +111,7 @@ Vue.use(Button);
 | native-type | Native Type Attribute | *string* | `''` |
 | plain | Whether to be plain button | *boolean* | `false` |
 | block | Whether to set display block | *boolean* | `false` |
-| round | Whether to be round button | *boolean* | `false` |
+| round | Whether to be round button | *boolean* | `true` |
 | square | Whether to be square button | *boolean* | `false` |
 | disabled | Whether to disable button | *boolean* | `false` |
 | loading | Whether show loading status | *boolean* | `false` |

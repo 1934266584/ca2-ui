@@ -65,8 +65,8 @@ Vue.use(NoticeBar);
 |------|------|------|------|
 | mode | Mode, can be set to `closeable` `link` | *string* | `''` |
 | text | Notice text content | *string* | `''` | - |
-| color | Text color | *string* | `#f60` |
-| background | Background color | *string* | `#fff7cc` |
+| color | Text color | *string* | `#70b913` |
+| background | Background color | *string* | `#f0f8e7` |
 | left-icon | Left Icon | *string* | - |
 | delay | Animation delay (s) | *number \| string* | `1` |
 | speed | Scroll speed (px/s) | *number \| string* | `50` |

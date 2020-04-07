@@ -88,7 +88,7 @@ export default {
 ```html
 <zv-search
   v-model="value" 
-  shape="round"
+  shape="square"
   background="#4fc08d"
   placeholder="Placeholder"
 />
@@ -119,7 +119,7 @@ Use `action` slot to custom right button, `cancel` event will no longer be trigg
 | Attribute | Description | Type | Default |
 |------|------|------|------|
 | label | Left side label | *string* | - |
-| shape | Shape of field, can be set to `round` | *string* | `square` |
+| shape | Shape of field, can be set to `square` | *string* | `round` |
 | background | Background color of field | *string* | `#f2f2f2` |
 | maxlength | Max length of value | *number \| string* | - |
 | placeholder | Placeholder | *string* | - |

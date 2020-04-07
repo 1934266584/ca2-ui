@@ -19,7 +19,8 @@
   }
 
   &__header {
-    padding-top: $dialog-header-padding-top;
+    height: $dialog-header-height;
+    // padding-top: $dialog-header-padding-top;
     font-weight: $dialog-header-font-weight;
     line-height: $dialog-header-line-height;
     text-align: center;

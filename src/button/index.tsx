@@ -161,7 +161,10 @@ Button.props = {
   color: String,
   block: Boolean,
   plain: Boolean,
-  round: Boolean,
+  round: {
+    type: Boolean,
+    default: true,
+  },
   square: Boolean,
   loading: Boolean,
   hairline: Boolean,

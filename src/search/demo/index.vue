@@ -32,7 +32,7 @@
       <zv-search
         v-model="value2"
         :placeholder="t('placeholder')"
-        shape="round"
+        shape="square"
         background="#4fc08d"
       />
     </demo-block>

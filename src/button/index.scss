@@ -99,14 +99,14 @@
   }
 
   &--normal {
-    padding: 0 15px;
+    padding: 0 $padding-md;
     font-size: $button-normal-font-size;
   }
 
   &--small {
     min-width: $button-small-min-width;
     height: $button-small-height;
-    padding: 0 $padding-xs;
+    padding: 0 $padding-md;
     font-size: $button-small-font-size;
     line-height: $button-small-line-height;
   }
