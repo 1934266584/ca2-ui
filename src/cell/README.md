@@ -17,6 +17,7 @@ Vue.use(CellGroup);
 ```html
 <zv-cell-group>
   <zv-cell title="Cell title" value="Content" />
+  <zv-cell :title="Cell title" :value="Content" pur-display />
   <zv-cell title="Cell title" value="Content" label="Description" />
 </zv-cell-group>
 ```
@@ -136,6 +137,7 @@ Vue.use(CellGroup);
 | title-class | Title className | *any* | - |
 | value-class | Value className | *any* | - |
 | label-class | Label className | *any* | - |
+| pur-display | pur dispaly style | *boolean* | `false` |
 
 ### Cell Events
 

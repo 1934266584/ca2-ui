@@ -239,7 +239,7 @@ Use `input-align` prop to align the input value
 | label-class | Label className | *any* | - |
 | label-width | Label width | *number \| string* | `90px` |
 | label-align | Label align, can be set to `center` `right` | *string* | `left` |
-| input-align | Input align, can be set to `center` `right` | *string* | `left` |
+| input-align | Input align, can be set to `center` `left` | *string* | `right` |
 | error-message-align | Error message align, can be set to `center` `right` | *string* | `left` |
 | autosize | Textarea auto resize，can accpet an object,<br>e.g. { maxHeight: 100, minHeight: 50 } | *boolean \| object* | `false` |
 | left-icon | Left side icon name | *string* | - |

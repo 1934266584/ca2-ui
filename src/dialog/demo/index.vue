@@ -111,7 +111,7 @@ export default {
 .demo-dialog {
   background-color: $white;
 
-  .zv-doc-demo-block > .zv-button {
+  .van-doc-demo-block > .zv-button {
     margin-left: $padding-md;
   }
 

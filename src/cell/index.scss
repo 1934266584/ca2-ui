@@ -88,6 +88,16 @@
     align-items: center;
   }
 
+  &--purdisplay {
+    .zv-cell__title {
+      color: $cell-value-color;
+    }
+
+    .zv-cell__value {
+      color: $text-color;
+    }
+  }
+
   &--large {
     padding-top: $cell-large-vertical-padding;
     padding-bottom: $cell-large-vertical-padding;

@@ -15,42 +15,47 @@
   }
 
   &--default {
+    color: $tag-default-text-color;
     background-color: $tag-default-color;
 
     &.zv-tag--plain {
-      color: $tag-default-color;
+      color: $tag-default-text-color;
     }
   }
 
   &--danger {
+    color: $tag-danger-text-color;
     background-color: $tag-danger-color;
 
     &.zv-tag--plain {
-      color: $tag-danger-color;
+      color: $tag-danger-text-color;
     }
   }
 
   &--primary {
+    color: $tag-primary-text-color;
     background-color: $tag-primary-color;
 
     &.zv-tag--plain {
-      color: $tag-primary-color;
+      color: $tag-primary-text-color;
     }
   }
 
   &--success {
+    color: $tag-success-text-color;
     background-color: $tag-success-color;
 
     &.zv-tag--plain {
-      color: $tag-success-color;
+      color: $tag-success-text-color;
     }
   }
 
   &--warning {
+    color: $tag-warning-text-color;
     background-color: $tag-warning-color;
 
     &.zv-tag--plain {
-      color: $tag-warning-color;
+      color: $tag-warning-text-color;
     }
   }
 

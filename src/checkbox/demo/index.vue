@@ -203,7 +203,7 @@ export default {
     }
   }
 
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     margin-top: -8px;
   }
 }

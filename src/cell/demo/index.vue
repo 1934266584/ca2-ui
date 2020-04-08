@@ -3,6 +3,7 @@
     <demo-block :title="t('basicUsage')">
       <zv-cell-group>
         <zv-cell :title="t('cell')" :value="t('content')" />
+        <zv-cell :title="t('cell')" :value="t('content')" pur-display />
         <zv-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
       </zv-cell-group>
     </demo-block>

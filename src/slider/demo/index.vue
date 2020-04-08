@@ -93,11 +93,11 @@ export default {
   background: $white;
   user-select: none;
 
-  .zv-doc-demo-block {
+  .van-doc-demo-block {
     padding: 0 $padding-md 20px;
   }
 
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-left: 0;
   }
 

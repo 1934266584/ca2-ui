@@ -70,11 +70,11 @@ export default {
     margin: 5px 0;
   }
 
-  .zv-doc-demo-block {
+  .van-doc-demo-block {
     padding: 0 $padding-md;
   }
 
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-left: 0;
   }
 }

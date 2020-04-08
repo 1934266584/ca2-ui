@@ -119,6 +119,7 @@ function Cell(
     center: props.center,
     required: props.required,
     borderless: !props.border,
+    purdisplay: props.purDisplay,
   };
 
   if (size) {

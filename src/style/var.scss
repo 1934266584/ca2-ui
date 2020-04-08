@@ -86,7 +86,7 @@ $action-sheet-close-icon-size: 22px !default;
 $action-sheet-close-icon-color: $gray-5;
 $action-sheet-close-icon-active-color: $gray-6;
 $action-sheet-close-icon-padding: 0 $padding-md;
-$action-sheet-cancel-padding-top: $padding-xs;
+$action-sheet-cancel-padding-top: $padding-sm;
 $action-sheet-cancel-padding-color: $background-color;
 
 // AddressEdit
@@ -157,7 +157,7 @@ $calendar-header-subtitle-font-size: $font-size-md;
 $calendar-weekdays-height: 30px !default;
 $calendar-weekdays-font-size: $font-size-sm;
 $calendar-month-title-font-size: $font-size-md;
-$calendar-month-mark-color: fade($gray-2, 80%);
+$calendar-month-mark-color: transparentize($gray-2, 0.12);
 $calendar-month-mark-font-size: 160px !default;
 $calendar-day-height: 64px !default;
 $calendar-day-font-size: $font-size-lg;
@@ -345,7 +345,7 @@ $dropdown-item-z-index: 10 !default;
 
 // Field
 $field-label-width: 90px !default;
-$field-input-text-color: $text-color;
+$field-input-text-color: $gray-6;
 $field-input-error-text-color: $red;
 $field-input-disabled-text-color: $gray-6;
 $field-placeholder-text-color: $gray-6;
@@ -525,7 +525,7 @@ $password-input-info-color: $gray-6;
 $password-input-info-font-size: $font-size-md;
 $password-input-error-info-color: $red;
 $password-input-dot-size: 10px !default;
-$password-input-dot-color: $black;
+$password-input-dot-color: $gray-8;
 
 // Picker
 $picker-background-color: $white;
@@ -533,12 +533,12 @@ $picker-toolbar-height: 44px !default;
 $picker-title-font-size: $font-size-lg;
 $picker-action-padding: 0 $padding-md;
 $picker-action-font-size: $font-size-md;
-$picker-action-text-color: $blue;
+$picker-action-text-color: $gray-8;
 $picker-action-active-color: $active-color;
 $picker-option-font-size: $font-size-lg;
-$picker-option-text-color: $black;
+$picker-option-text-color: $gray-8;
 $picker-option-disabled-opacity: 0.3 !default;
-$picker-loading-icon-color: $blue;
+$picker-loading-icon-color: $green;
 $picker-loading-mask-color: rgba(255, 255, 255, 0.9) !default;
 
 // Popup
@@ -572,7 +572,7 @@ $radio-border-color: $gray-5;
 $radio-transition-duration: $animation-duration-fast;
 $radio-label-margin: $padding-xs;
 $radio-label-color: $text-color;
-$radio-checked-icon-color: $blue;
+$radio-checked-icon-color: $green;
 $radio-disabled-icon-color: $gray-5;
 $radio-disabled-label-color: $gray-5;
 $radio-disabled-background-color: $border-color;
@@ -742,18 +742,24 @@ $tabs-bottom-bar-height: 3px !default;
 $tabs-bottom-bar-color: $tabs-default-color;
 
 // Tag
-$tag-padding: 0.2em 0.5em !default;
+$tag-padding: 3px 5px !default;
 $tag-font-size: $font-size-xs;
 $tag-medium-font-size: $font-size-sm;
 $tag-large-font-size: $font-size-md;
 $tag-text-color: $white;
+$tag-danger-text-color: $red;
+$tag-primary-text-color: $blue;
+$tag-success-text-color: $green;
+$tag-warning-text-color: $yellow;
+$tag-default-text-color: $gray-6;
+
 $tag-border-radius: 2px !default;
 $tag-round-border-radius: $border-radius-max;
-$tag-danger-color: $red;
-$tag-primary-color: $blue;
-$tag-success-color: $green;
-$tag-warning-color: $yellow;
-$tag-default-color: $gray-6;
+$tag-danger-color: transparentize($red, 0.9);
+$tag-primary-color: transparentize($blue, 0.9);
+$tag-success-color: transparentize($green, 0.9);
+$tag-warning-color: transparentize($yellow, 0.9);
+$tag-default-color: transparentize($gray-6, 0.9);
 $tag-plain-background-color: $white;
 
 // Toast
@@ -763,7 +769,7 @@ $toast-text-color: $white;
 $toast-loading-icon-color: $white;
 $toast-line-height: 20px !default;
 $toast-border-radius: $border-radius-md;
-$toast-background-color: fade($text-color, 88%) !default;
+$toast-background-color: transparentize($text-color, 0.12) !default;
 $toast-icon-size: 40px !default;
 $toast-text-min-width: 96px !default;
 $toast-text-padding: $padding-xs $padding-sm;
@@ -802,7 +808,7 @@ $uploader-file-name-padding: 0 $padding-base;
 $uploader-file-name-margin-top: $padding-xs;
 $uploader-file-name-font-size: $font-size-sm;
 $uploader-file-name-text-color: $gray-7;
-$uploader-mask-background-color: fade($gray-8, 88%);
+$uploader-mask-background-color: transparentize($gray-8, 0.12);
 $uploader-mask-icon-size: 22px !default;
 $uploader-mask-message-font-size: $font-size-sm;
 $uploader-mask-message-line-height: 14px !default;

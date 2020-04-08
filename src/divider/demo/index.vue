@@ -71,7 +71,7 @@ export default {
 .demo-divider {
   background-color: $white;
 
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-top: $padding-md;
   }
 }

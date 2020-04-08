@@ -71,8 +71,8 @@ export default {
     box-shadow: 0 8px 12px #ebedf0;
   }
 
-  .zv-doc-demo-block__title,
-  .zv-doc-demo-section__title {
+  .van-doc-demo-block__title,
+  .van-doc-demo-section__title {
     padding-left: 0;
   }
 }

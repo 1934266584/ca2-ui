@@ -160,11 +160,11 @@ export default {
     }
   }
 
-  .zv-doc-demo-block {
+  .van-doc-demo-block {
     padding: 0 $padding-md;
   }
 
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-left: 0;
   }
 

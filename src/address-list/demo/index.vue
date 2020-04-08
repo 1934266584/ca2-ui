@@ -97,7 +97,7 @@ export default {
 
 <style lang="scss">
 .demo-address-list {
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-bottom: 0;
   }
 }

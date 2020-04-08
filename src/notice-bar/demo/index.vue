@@ -61,7 +61,7 @@ export default {
     margin-top: 4px;
   }
 
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     padding-top: 24px;
   }
 }

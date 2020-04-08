@@ -160,7 +160,7 @@ export default {
     height: 20px;
   }
 
-  .zv-doc-demo-block__title {
+  .van-doc-demo-block__title {
     margin-top: -8px;
   }
 }

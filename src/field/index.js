@@ -49,7 +49,10 @@ export default createComponent({
     labelWidth: [Number, String],
     labelClass: null,
     labelAlign: String,
-    inputAlign: String,
+    inputAlign: {
+      type: String,
+      default: 'right',
+    },
     placeholder: String,
     errorMessage: String,
     errorMessageAlign: String,
