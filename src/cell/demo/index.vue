@@ -5,6 +5,7 @@
         <zv-cell :title="t('cell')" :value="t('content')" />
         <zv-cell :title="t('cell')" :value="t('content')" pur-display />
         <zv-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
+        <zv-cell :title="t('cell')" :value="t('content')" :label="t('desc')" is-row />
       </zv-cell-group>
     </demo-block>
 
@@ -64,6 +65,12 @@
           <zv-icon name="search" style="line-height: inherit;" />
         </template>
       </zv-cell>
+
+      <zv-cell icon="shop-o" :title="t('cell')">
+        <template #right-icon>
+          <zv-checkbox v-model="checked" />
+        </template>
+      </zv-cell>
     </demo-block>
 
     <demo-block :title="t('verticalCenter')">
@@ -108,6 +115,12 @@ export default {
       useSlots: 'Use Slots',
       verticalCenter: 'Vertical center',
     },
+  },
+
+  data() {
+    return {
+      checked: true,
+    };
   },
 };
 </script>

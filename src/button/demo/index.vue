@@ -68,8 +68,11 @@
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <zv-button color="#7232dd" :text="t('pure')" />
-      <zv-button plain color="#7232dd" :text="t('pure')" />
+      <div class="demo-button-row">
+        <zv-button color="#7232dd" :text="t('pure')" />
+        <zv-button plain color="#7232dd" :text="t('pure')" />
+      </div>
+
       <zv-button
         color="linear-gradient(to right, #4bb0ff, #6149f6)"
         :text="t('gradient')"

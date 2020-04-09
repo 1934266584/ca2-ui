@@ -63,7 +63,7 @@
       }
     }
 
-    &--disabled, &--checked {
+    &--disabled#{&}--checked {
       .zv-icon {
         color: $checkbox-disabled-icon-color;
       }

@@ -26,11 +26,28 @@ Vue.use(Panel);
 使用`slot`自定义内容
 
 ```html
-<zv-panel title="标题" desc="描述信息" status="状态">
+<zv-panel title="标题" desc="描述信息" status="状态" is-row>
   <div>内容</div>
   <template #footer>
     <zv-button size="small">按钮</zv-button>
     <zv-button size="small" type="danger">按钮</zv-button>
+  </template>
+</zv-panel>
+
+<zv-panel>
+  <template #header>
+    <zv-cell title="标题" label="描述信息">
+      <template #right-icon>
+        <zv-checkbox v-model="checked" />
+      </template>
+    </zv-cell>
+  </template>
+  <div>内容</div>
+  <template #footer>
+    <zv-button size="small" plain type="primary">按钮</zv-button>
+    <zv-button size="small" type="primary">
+      按钮
+    </zv-button>
   </template>
 </zv-panel>
 ```
@@ -45,6 +62,7 @@ Vue.use(Panel);
 | desc | 描述 | *string* | - |
 | status | 状态 | *string* | - |
 | icon | 标题左侧[图标名称](#/zh-CN/icon)或图片链接 | *string* | - |
+| is-row `v2.5.8` | title和label是否一行显示 | *boolean* | `false` |
 
 ### Slots
 

@@ -21,6 +21,7 @@ Vue.use(CellGroup);
   <zv-cell title="单元格" value="内容" />
   <zv-cell title="单元格" value="内容" pur-display />
   <zv-cell title="单元格" value="内容" label="描述信息" />
+  <zv-cell title="单元格" value="内容" label="描述信息" is-row />
 </zv-cell-group>
 ```
 
@@ -146,7 +147,8 @@ Vue.use(CellGroup);
 | title-class | 左侧标题额外类名 | *any* | - |
 | value-class | 右侧内容额外类名 | *any* | - |
 | label-class | 描述信息额外类名 | *any* | - |
-| pur-display | 纯展示状态下的样式 | *boolean* | `false` |
+| pur-display `v2.5.8` | 纯展示状态下样式 | *boolean* | `false` |
+| is-row `v2.5.8` | title和label是否一行显示 | *boolean* | `false` |
 
 ### Cell Events
 

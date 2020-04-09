@@ -14,7 +14,7 @@
   background-color: $cell-background-color;
 
   &:not(:last-child)::after {
-    @include hairline-bottom($cell-border-color, $padding-md);
+    @include hairline-bottom($cell-border-color, $padding-md, $padding-md);
   }
 
   &--borderless::after {
@@ -22,7 +22,6 @@
   }
 
   &__label {
-    margin-top: $cell-label-margin-top;
     color: $cell-label-color;
     font-size: $cell-label-font-size;
     line-height: $cell-label-line-height;
@@ -95,6 +94,18 @@
 
     .zv-cell__value {
       color: $text-color;
+    }
+  }
+
+  &--row {
+    .zv-cell__title {
+      display: flex;
+      flex: 3;
+    }
+
+    .zv-cell__label {
+      margin-top: $cell-label-margin-top;
+      margin-left: 4px;
     }
   }
 

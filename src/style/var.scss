@@ -196,7 +196,7 @@ $card-price-font-family: $price-integer-font-family;
 // Cell
 $cell-font-size: $font-size-md;
 $cell-line-height: 24px !default;
-$cell-vertical-padding: 10px !default;
+$cell-vertical-padding: 14px !default;
 $cell-horizontal-padding: $padding-md;
 $cell-text-color: $text-color;
 $cell-background-color: $white;
@@ -206,7 +206,7 @@ $cell-required-color: $red;
 $cell-label-color: $gray-6;
 $cell-label-font-size: $font-size-sm;
 $cell-label-line-height: 18px !default;
-$cell-label-margin-top: 3px !default;
+$cell-label-margin-top: 4px !default;
 $cell-value-color: $gray-6;
 $cell-icon-size: 16px !default;
 $cell-right-icon-color: $gray-6;
@@ -222,12 +222,12 @@ $cell-group-title-font-size: $font-size-md;
 $cell-group-title-line-height: 16px !default;
 
 // Checkbox
-$checkbox-size: 20px !default;
+$checkbox-size: 16px !default;
 $checkbox-border-color: $gray-5;
 $checkbox-transition-duration: $animation-duration-fast;
 $checkbox-label-margin: $padding-xs;
 $checkbox-label-color: $text-color;
-$checkbox-checked-icon-color: $blue;
+$checkbox-checked-icon-color: $green;
 $checkbox-disabled-icon-color: $gray-5;
 $checkbox-disabled-label-color: $gray-5;
 $checkbox-disabled-background-color: $border-color;
@@ -513,7 +513,7 @@ $pagination-disabled-opacity: $disabled-opacity;
 // Panel
 $panel-background-color: $white;
 $panel-header-value-color: $red;
-$panel-footer-padding: $padding-xs $padding-md;
+$panel-footer-padding: $padding-sm $padding-md;
 
 // PasswordInput
 $password-input-height: 50px !default;
@@ -567,7 +567,7 @@ $pull-refresh-head-font-size: $font-size-md;
 $pull-refresh-head-text-color: $gray-6;
 
 // Radio
-$radio-size: 20px !default;
+$radio-size: 16px !default;
 $radio-border-color: $gray-5;
 $radio-transition-duration: $animation-duration-fast;
 $radio-label-margin: $padding-xs;

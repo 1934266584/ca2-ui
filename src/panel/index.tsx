@@ -16,6 +16,7 @@ export type PanelProps = {
   desc?: string;
   title?: string;
   status?: string;
+  isRow?: boolean;
 };
 
 export type PanelSlots = DefaultSlots & {
@@ -40,6 +41,9 @@ function Panel(
         label={props.desc}
         title={props.title}
         value={props.status}
+        is-row={props.isRow}
+        center={true}
+        titleClass={bem('header-title')}
         class={bem('header')}
         valueClass={bem('header-value')}
       />
@@ -64,6 +68,7 @@ Panel.props = {
   desc: String,
   title: String,
   status: String,
+  isRow: Boolean,
 };
 
 export default createComponent<PanelProps>(Panel);

@@ -16,6 +16,7 @@ export type SharedCellProps = {
   label?: string | number;
   arrowDirection?: 'up' | 'down' | 'left' | 'right';
   purDisplay?: boolean;
+  isRow?: boolean;
 };
 
 export const cellProps = {
@@ -39,4 +40,5 @@ export const cellProps = {
     default: true,
   },
   purDisplay: Boolean,
+  isRow: Boolean,
 };

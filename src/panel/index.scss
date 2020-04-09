@@ -7,6 +7,10 @@
     color: $panel-header-value-color;
   }
 
+  &__header-title {
+    flex: 4;
+  }
+
   &__footer {
     padding: $panel-footer-padding;
   }

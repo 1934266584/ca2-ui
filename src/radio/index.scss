@@ -63,7 +63,7 @@
       }
     }
 
-    &--disable, &--checked {
+    &--disabled#{&}--checked {
       .zv-icon {
         color: $radio-disabled-icon-color;
       }

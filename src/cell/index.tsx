@@ -120,6 +120,7 @@ function Cell(
     required: props.required,
     borderless: !props.border,
     purdisplay: props.purDisplay,
+    row: props.isRow,
   };
 
   if (size) {
