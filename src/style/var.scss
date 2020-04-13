@@ -216,9 +216,10 @@ $cell-large-label-font-size: $font-size-md;
 
 // CellGroup
 $cell-group-background-color: $white;
-$cell-group-title-color: $gray-6;
-$cell-group-title-padding: $padding-md $padding-md $padding-xs;
-$cell-group-title-font-size: $font-size-md;
+$cell-group-title-background-color: $gray-9;
+$cell-group-title-color: $text-color;
+$cell-group-title-padding: $padding-sm $padding-md;
+$cell-group-title-font-size: $font-size-sm;
 $cell-group-title-line-height: 16px !default;
 
 // Checkbox
@@ -445,10 +446,10 @@ $loading-spinner-animation-duration: 0.8s;
 
 // NavBar
 $nav-bar-height: 44px !default;
-$nav-bar-background-color: $green;
+$nav-bar-background-color: $green !default;
 $nav-bar-arrow-size: 16px !default;
-$nav-bar-icon-color: $white;
-$nav-bar-text-color: $white;
+$nav-bar-icon-color: $white !default;
+$nav-bar-text-color: $white !default;
 $nav-bar-title-font-size: $font-size-lg;
 $nav-bar-title-text-color: $white;
 $nav-bar-z-index: 1 !default;

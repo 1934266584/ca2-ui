@@ -3,7 +3,7 @@ module.exports = {
   build: {
     skipInstall: ['lazyload'],
     site: {
-      publicPath: 'https://b.yzcdn.cn/vant/',
+      publicPath: 'https://122687220.github.io/zv-ui',
     },
     vetur: {
       tagPrefix: 'zv-',
@@ -11,29 +11,25 @@ module.exports = {
   },
   build: {
     css: {
-      preprocessor: 'sass'
-    }
+      preprocessor: 'sass',
+    },
   },
   site: {
     defaultLang: 'en-US',
-    versions: [{ label: '1.x', link: 'https://youzan.github.io/vant/1.x/' }],
+    versions: [{ label: '1.x', link: 'https://122687220.github.io/zv-ui/1.x/' }],
     baiduAnalytics: {
       seed: 'ad6b5732c36321f2dafed737ac2da92f',
     },
     locales: {
       'zh-CN': {
-        title: 'Vant',
+        title: 'ZvUI',
         description: '轻量、可靠的移动端 Vue 组件库',
         logo: 'https://img.yzcdn.cn/vant/logo.png',
         langLabel: '中文',
         links: [
           {
-            logo: 'https://b.yzcdn.cn/vant/logo/weapp.svg',
-            url: '/vant-weapp',
-          },
-          {
             logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/youzan/vant',
+            url: 'https://github.com/122687220/zv-ui/',
           },
         ],
         searchConfig: {
@@ -359,6 +355,10 @@ module.exports = {
                 path: 'sku',
                 title: 'Sku 商品规格',
               },
+              {
+                path: 'screen',
+                title: 'Screen 筛选',
+              },
             ],
           },
           {
@@ -373,18 +373,14 @@ module.exports = {
         ],
       },
       'en-US': {
-        title: 'Vant',
+        title: 'ZvUI',
         description: 'Mobile UI Components built on Vue',
         logo: 'https://img.yzcdn.cn/vant/logo.png',
         langLabel: 'En',
         links: [
           {
-            logo: 'https://b.yzcdn.cn/vant/logo/weapp.svg',
-            url: '/vant-weapp',
-          },
-          {
             logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/youzan/vant',
+            url: 'https://github.com/122687220/zv-ui/',
           },
         ],
         searchConfig: {
@@ -701,6 +697,10 @@ module.exports = {
               {
                 path: 'sku',
                 title: 'Sku',
+              },
+              {
+                path: 'screen',
+                title: 'Screen',
               },
             ],
           },
