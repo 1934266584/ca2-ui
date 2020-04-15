@@ -93,9 +93,7 @@ export default {
 />
 ```
 
-::: tip
-触发反馈后，会将当前选中的tag值通过originalTags / originalTag 返回
-:::
+`触发反馈后，会将当前选中的tag值通过originalTags / originalTag 返回`
 
 ## API
 
