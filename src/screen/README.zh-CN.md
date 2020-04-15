@@ -93,6 +93,10 @@ export default {
 />
 ```
 
+::: tip
+触发反馈后，会将当前选中的tag值通过originalTags / originalTag 返回
+:::
+
 ## API
 
 ### Props
@@ -104,6 +108,7 @@ export default {
 | section-count | 收起状态下，展示多少个tag标签 | *number* | - |
 | column-count | 一列展示多少个tag标签 | *number* | `3` |
 | is-full | 是否全屏展示 | *boolean* | `false` |
+| clickable | 是否开启点击效果 | *boolean* | `true` |
 
 #### data-array-item
 
@@ -111,6 +116,7 @@ export default {
 |------|------|------|
 | title | 分组title | *string* |
 | isMutliple | 当前分组是否支持多选 | *boolean* |
+| columnCount | 当前分组，一列展示多少个tag标签 | *boolean* |
 | tags | 当前分组下，tag标签数据源 | *array* |
 
 #### data-array-item-tag

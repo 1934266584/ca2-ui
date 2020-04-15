@@ -15,6 +15,10 @@ export default createComponent({
     value: Boolean,
     sectionCount: Number,
     columnCount: Number,
+    clickable: {
+      type: Boolean,
+      default: true,
+    },
     isFull: {
       type: Boolean,
       default: false,
@@ -29,6 +33,7 @@ export default createComponent({
     return {
       valueList: [],
       titleList: [],
+      sectionList: [],
       show: this.value,
     };
   },
@@ -36,13 +41,15 @@ export default createComponent({
   watch: {
     dataArray: {
       handler(val) {
-        const dataArray = deepClone(val);
-        this.titleList = [];
         this.valueList = [];
         this.mutliple = [];
-        dataArray.forEach(item => {
-          this.titleList.push(item.title);
-          this.valueList.push(item.tags);
+        this.sectionList = [];
+        val.forEach(item => {
+          this.sectionList.push({
+            title: item.title,
+            columnCount: item.columnCount,
+          });
+          this.valueList.push(deepClone(item.tags));
           this.mutliple.push(!!item.isMutliple);
         });
       },
@@ -70,7 +77,9 @@ export default createComponent({
         value.tagSelected = false;
       } else {
         if (this.mutliple.length && !this.mutliple[indexPath.section]) {
-          this.valueList[indexPath.section] = this.valueList[indexPath.section].map(item => {
+          this.valueList[indexPath.section] = this.valueList[
+            indexPath.section
+          ].map(item => {
             item.tagSelected = false;
             return item;
           });
@@ -79,21 +88,20 @@ export default createComponent({
         value.tagSelected = true;
       }
 
+      const section = this.sectionList[indexPath.section];
       this.$emit('on-change', {
-        sectionTitle: this.titleList[indexPath.section],
+        sectionTitle: section.title,
         tagName: value.tagName,
-        tagSelected: value.tagSelected,
+        originalTag: value,
       });
     },
 
     getSection() {
-      return this.titleList.map((item, index) => (
-          <div class={ bem('section') }>
-            <div class={bem('title')}>{ item }</div>
-            <Row gutter="8">
-              { this.getRow(index) }
-            </Row>
-          </div>
+      return this.sectionList.map((item, index) => (
+        <div class={bem('section')}>
+          <div class={bem('title')}>{item.title}</div>
+          <Row gutter="8">{this.getRow(index)}</Row>
+        </div>
       ));
     },
 
@@ -106,20 +114,18 @@ export default createComponent({
           return;
         }
 
-        // 计算每一列tag的宽度
-        const simpleWidth = this.columnCount ? 24 / this.columnCount : 8;
-        const tagWidth = item.tagWidth || simpleWidth;
+        const tagWidth = this.currentSectionCount(sectionIndex, item);
         rows.push(
-          <Col span={ tagWidth }>
+          <Col span={tagWidth}>
             <ScreenItem
               class="zv-ellipsis"
-              tag-name={ item.tagName }
-              tag-selected={ item.tagSelected }
+              tag-name={item.tagName}
+              tag-selected={this.clickable && item.tagSelected}
               section-index={sectionIndex}
               index={valueIndex}
-              onClick={ this.onItemClick }
+              onClick={this.onItemClick}
               key={`${sectionIndex}-${valueIndex}`}
-              />
+            />
           </Col>
         );
       });
@@ -127,9 +133,14 @@ export default createComponent({
     },
 
     onReset() {
-      this.valueList = deepClone(this.dataArray);
-      const result = this.filterSelectedTag(this.valueList);
+      const valueList = [];
+      this.dataArray.forEach(item => {
+        valueList.push(deepClone(item.tags));
+      });
+
+      const result = this.filterSelectedTag(valueList);
       this.$emit('on-reset', result);
+      this.valueList = valueList;
     },
 
     onSure() {
@@ -139,18 +150,34 @@ export default createComponent({
     filterSelectedTag(list) {
       const result = [];
       list.forEach((values, index) => {
-        const valuesTmp = values.filter(item => item.tagSelected).map(item => item.tagName);
+        const valuesTmp = values.filter(item => item.tagSelected);
+        const tagsTmp = valuesTmp.map(item => item.tagName);
 
+        const section = this.sectionList[index];
         if (valuesTmp.length) {
           const dic = {
-            sectionTitle: this.titleList[index],
-            tags: valuesTmp,
+            sectionTitle: section.title,
+            tags: tagsTmp,
+            originalTags: valuesTmp,
           };
           result.push(dic);
         }
       });
 
       return result;
+    },
+
+    currentSectionCount(sectionIndex, item) {
+      if (item.tagWidth) {
+        return item.tagWidth;
+      }
+
+      const section = this.sectionList[sectionIndex];
+      if (section.columnCount) {
+        return 24 / section.columnCount;
+      }
+
+      return this.columnCount ? 24 / this.columnCount : 8;
     },
   },
 
@@ -167,28 +194,31 @@ export default createComponent({
         const footerSty = bem('footer') + ' zv-hairline--top';
 
         return (
-         <div class={ footerSty }>
-            <Button size="small" plain type="primary" onClick={ this.onReset }>重 置</Button>
-            <Button size="small" type="primary" onClick={ this.onSure }>确 定</Button>
-         </div>
+          <div class={footerSty}>
+            <Button plain type="primary" onClick={this.onReset}>
+              重 置
+            </Button>
+            <Button type="primary" onClick={this.onSure}>
+              确 定
+            </Button>
+          </div>
         );
       }
     };
 
     if (this.isFull) {
-      return (
-        <div class={ bem('body') }>
-          { this.getSection() }
-        </div>
-      );
+      return <div class={bem('body')}>{this.getSection()}</div>;
     }
 
     return (
-      <Popup class='zv-screen' vModel={this.show} style="width: 85%" position='right'>
-        <div class={ bem('body') }>
-          { this.getSection() }
-        </div>
-        { footer() }
+      <Popup
+        class="zv-screen"
+        vModel={this.show}
+        style="width: 85%"
+        position="right"
+      >
+        <div class={bem('body')}>{this.getSection()}</div>
+        {footer()}
       </Popup>
     );
   },

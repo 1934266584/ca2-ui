@@ -1,22 +1,22 @@
 module.exports = {
-  name: 'vant',
+  name: 'zv-ui',
   build: {
     skipInstall: ['lazyload'],
     site: {
-      publicPath: 'https://122687220.github.io/zv-ui',
+      publicPath: '/zv-ui/',
     },
     vetur: {
       tagPrefix: 'zv-',
     },
-  },
-  build: {
     css: {
       preprocessor: 'sass',
     },
   },
   site: {
     defaultLang: 'en-US',
-    versions: [{ label: '1.x', link: 'https://122687220.github.io/zv-ui/1.x/' }],
+    versions: [
+      { label: '1.x', link: 'https://122687220.github.io/zv-ui/1.x/' },
+    ],
     baiduAnalytics: {
       seed: 'ad6b5732c36321f2dafed737ac2da92f',
     },
