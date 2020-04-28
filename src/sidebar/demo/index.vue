@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../style/var.scss';
+@import '../../style/var';
 
 .demo-sidebar {
   background-color: $white;

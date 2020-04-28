@@ -108,16 +108,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../style/var.scss';
+@import '../../style/var';
 
 .demo-pull-refresh {
   background-color: $white;
 
   .zv-pull-refresh {
-    &,
-    &__track {
-      height: calc(100vh - 50px);
-    }
+    height: calc(100vh - 50px);
   }
 
   .doge {

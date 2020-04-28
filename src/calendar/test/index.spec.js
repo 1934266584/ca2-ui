@@ -1,26 +1,14 @@
 import Calendar from '..';
 import { mount, later } from '../../../test';
 import { getNextDay } from '../utils';
-
-const now = new Date();
-const minDate = new Date(2010, 0, 10);
-const maxDate = new Date(2010, 0, 20);
-
-function formatDate(date) {
-  if (date) {
-    return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
-  }
-
-  return '';
-}
-
-function formatRange([start, end]) {
-  return `${formatDate(start)}-${formatDate(end)}`;
-}
-
-function formatMultiple(dates) {
-  return dates.map(formatDate).join(',');
-}
+import {
+  now,
+  minDate,
+  maxDate,
+  formatDate,
+  formatRange,
+  formatMultiple,
+} from './utils';
 
 test('select event when type is single', async () => {
   const wrapper = mount(Calendar, {
@@ -33,10 +21,7 @@ test('select event when type is single', async () => {
 
   await later();
 
-  wrapper
-    .findAll('.zv-calendar__day')
-    .at(15)
-    .trigger('click');
+  wrapper.findAll('.van-calendar__day').at(15).trigger('click');
 
   expect(formatDate(wrapper.emitted('select')[0][0])).toEqual('2010/1/16');
 });
@@ -53,7 +38,7 @@ test('select event when type is range', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.zv-calendar__day');
+  const days = wrapper.findAll('.van-calendar__day');
   days.at(15).trigger('click');
   days.at(15).trigger('click');
   days.at(16).trigger('click');
@@ -74,12 +59,13 @@ test('select event when type is multiple', async () => {
       minDate,
       maxDate,
       poppable: false,
+      defaultDate: [minDate],
     },
   });
 
   await later();
 
-  const days = wrapper.findAll('.zv-calendar__day');
+  const days = wrapper.findAll('.van-calendar__day');
   days.at(15).trigger('click');
   days.at(16).trigger('click');
   days.at(17).trigger('click');
@@ -112,10 +98,7 @@ test('should not trigger select event when click disabled day', async () => {
 
   await later();
 
-  wrapper
-    .findAll('.zv-calendar__day')
-    .at(1)
-    .trigger('click');
+  wrapper.findAll('.van-calendar__day').at(1).trigger('click');
 
   expect(formatDate(wrapper.emitted('select'))).toBeFalsy();
 });
@@ -131,14 +114,11 @@ test('confirm event when type is single', async () => {
 
   await later();
 
-  wrapper
-    .findAll('.zv-calendar__day')
-    .at(15)
-    .trigger('click');
+  wrapper.findAll('.van-calendar__day').at(15).trigger('click');
 
   expect(wrapper.emitted('confirm')).toBeFalsy();
 
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('2010/1/16');
 });
 
@@ -154,13 +134,13 @@ test('confirm event when type is range', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.zv-calendar__day');
+  const days = wrapper.findAll('.van-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
 
   expect(wrapper.emitted('confirm')).toBeFalsy();
 
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     '2010/1/16-2010/1/19'
   );
@@ -175,7 +155,7 @@ test('default single date', async () => {
 
   await later();
 
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual(formatDate(now));
 });
 
@@ -189,7 +169,7 @@ test('default range date', async () => {
 
   await later();
 
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     formatRange([now, getNextDay(now)])
   );
@@ -202,18 +182,19 @@ test('reset method', async () => {
       maxDate,
       type: 'range',
       poppable: false,
+      defaultDate: [minDate, getNextDay(minDate)],
     },
   });
 
   await later();
 
-  const days = wrapper.findAll('.zv-calendar__day');
+  const days = wrapper.findAll('.van-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
 
   wrapper.vm.reset();
 
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     '2010/1/10-2010/1/11'
   );
@@ -232,7 +213,7 @@ test('set show-confirm to false', async () => {
 
   await later();
 
-  const days = wrapper.findAll('.zv-calendar__day');
+  const days = wrapper.findAll('.van-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
 
@@ -248,6 +229,7 @@ test('row-height prop', async () => {
       maxDate,
       poppable: false,
       rowHeight: 50,
+      defaultDate: minDate,
     },
   });
 
@@ -262,6 +244,7 @@ test('formatter prop', async () => {
       minDate,
       maxDate,
       poppable: false,
+      defaultDate: minDate,
       formatter(day) {
         const date = day.date.getDate();
 
@@ -296,6 +279,7 @@ test('title & footer slot', async () => {
       minDate,
       maxDate,
       poppable: false,
+      defaultDate: minDate,
     },
     scopedSlots: {
       title: () => 'Custom Title',
@@ -314,16 +298,20 @@ test('should reset when type changed', async () => {
       minDate,
       maxDate,
       poppable: false,
+      defaultDate: minDate,
     },
   });
 
   await later();
 
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('2010/1/10');
 
-  wrapper.setProps({ type: 'range' });
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.setProps({
+    type: 'range',
+    defaultDate: [minDate, getNextDay(minDate)],
+  });
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[1][0])).toEqual(
     '2010/1/10-2010/1/11'
   );
@@ -341,11 +329,11 @@ test('default-date prop in single type', async () => {
 
   await later();
 
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[0][0])).toEqual('2010/1/11');
 
   wrapper.setProps({ defaultDate: maxDate });
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatDate(wrapper.emitted('confirm')[1][0])).toEqual('2010/1/20');
 });
 
@@ -362,13 +350,13 @@ test('default-date prop in range type', async () => {
   await later();
 
   wrapper.setProps({ defaultDate: [] });
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(wrapper.emitted('confirm')).toBeFalsy();
 
-  const days = wrapper.findAll('.zv-calendar__day');
+  const days = wrapper.findAll('.van-calendar__day');
   days.at(15).trigger('click');
   days.at(18).trigger('click');
-  wrapper.find('.zv-calendar__confirm').trigger('click');
+  wrapper.find('.van-calendar__confirm').trigger('click');
   expect(formatRange(wrapper.emitted('confirm')[0][0])).toEqual(
     '2010/1/16-2010/1/19'
   );
@@ -379,6 +367,7 @@ test('popup wrapper', async () => {
     propsData: {
       minDate,
       maxDate,
+      defaultDate: minDate,
     },
     listeners: {
       input(value) {
@@ -395,7 +384,7 @@ test('popup wrapper', async () => {
 
   expect(wrapper).toMatchSnapshot();
 
-  wrapper.find('.zv-popup__close-icon').trigger('click');
+  wrapper.find('.van-popup__close-icon').trigger('click');
   expect(wrapper.element.style.display).toEqual('none');
 });
 
@@ -411,7 +400,7 @@ test('set show-mark prop to false', async () => {
 
   await later();
 
-  expect(wrapper.find('.zv-calendar__month-mark').element).toBeFalsy();
+  expect(wrapper.find('.van-calendar__month-mark').element).toBeFalsy();
 });
 
 test('color prop when type is single', async () => {
@@ -421,6 +410,7 @@ test('color prop when type is single', async () => {
       maxDate,
       color: 'blue',
       poppable: false,
+      defaultDate: minDate,
     },
   });
 
@@ -446,7 +436,7 @@ test('color prop when type is range', async () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test('should scroll to current month when show', async done => {
+test('should scroll to current month when show', async (done) => {
   const wrapper = mount(Calendar, {
     propsData: {
       type: 'range',
@@ -456,9 +446,9 @@ test('should scroll to current month when show', async done => {
     },
   });
 
-  Element.prototype.scrollIntoView = function() {
+  Element.prototype.scrollIntoView = function () {
     expect(this.parentNode).toEqual(
-      wrapper.findAll('.zv-calendar__month').at(3).element
+      wrapper.findAll('.van-calendar__month').at(3).element
     );
     done();
   };

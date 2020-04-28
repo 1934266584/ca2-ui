@@ -90,7 +90,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../style/var.scss';
+@import '../../style/var';
 
 .demo-steps {
   .steps-success,
@@ -102,15 +102,15 @@ export default {
     margin: $padding-md 0 0 $padding-md;
   }
 
-  .zv-steps__message + p {
-    margin-bottom: 10px;
-  }
-
   p,
   h3 {
     margin: 0;
     font-weight: normal;
     font-size: inherit;
+  }
+
+  .zv-steps__message + p {
+    margin-bottom: 10px;
   }
 }
 </style>

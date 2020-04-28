@@ -15,7 +15,7 @@ exports[`renders demo correctly 1`] = `
       <div class="zv-nav-bar__left"><i class="zv-icon zv-icon-arrow-left zv-nav-bar__arrow">
           <!----></i><span class="zv-nav-bar__text">返回</span></div>
       <div class="zv-nav-bar__title zv-ellipsis">标题</div>
-      <div class="zv-nav-bar__right"><i class="zv-icon zv-icon-search">
+      <div class="zv-nav-bar__right"><i class="zv-icon zv-icon-search" style="font-size: 18px;">
           <!----></i></div>
     </div>
   </div>

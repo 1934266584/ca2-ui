@@ -8,6 +8,12 @@ exports[`decimal-length prop 1`] = `
 </div>
 `;
 
+exports[`disable safe-area-inset-bottom prop 1`] = `
+<div class="zv-submit-bar zv-submit-bar--unfit">
+  <div class="zv-submit-bar__bar"><button class="zv-button zv-button--danger zv-button--normal zv-button--round zv-submit-bar__button zv-submit-bar__button--danger"></button></div>
+</div>
+`;
+
 exports[`disable submit 1`] = `
 <div class="zv-submit-bar">
   <div class="zv-submit-bar__bar">

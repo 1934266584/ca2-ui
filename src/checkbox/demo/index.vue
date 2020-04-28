@@ -176,7 +176,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../style/var.scss';
+@import '../../style/var';
 
 .demo-checkbox {
   background: $white;
@@ -203,7 +203,7 @@ export default {
     }
   }
 
-  .van-doc-demo-block__title {
+  .zv-doc-demo-block__title {
     margin-top: -8px;
   }
 }

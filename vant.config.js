@@ -205,6 +205,10 @@ module.exports = {
                 title: 'PullRefresh 下拉刷新',
               },
               {
+                path: 'share-sheet',
+                title: 'ShareSheet 分享面板',
+              },
+              {
                 path: 'swipe-cell',
                 title: 'SwipeCell 滑动单元格',
               },
@@ -232,6 +236,10 @@ module.exports = {
               {
                 path: 'divider',
                 title: 'Divider 分割线',
+              },
+              {
+                path: 'empty',
+                title: 'Empty 空状态',
               },
               {
                 path: 'image-preview',
@@ -548,6 +556,10 @@ module.exports = {
                 title: 'PullRefresh',
               },
               {
+                path: 'share-sheet',
+                title: 'ShareSheet',
+              },
+              {
                 path: 'swipe-cell',
                 title: 'SwipeCell',
               },
@@ -575,6 +587,10 @@ module.exports = {
               {
                 path: 'divider',
                 title: 'Divider',
+              },
+              {
+                path: 'empty',
+                title: 'Empty',
               },
               {
                 path: 'image-preview',

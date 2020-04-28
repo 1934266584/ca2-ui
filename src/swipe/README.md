@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'zvt';
 
 Vue.use(Swipe);
 Vue.use(SwipeItem);
@@ -25,13 +25,13 @@ Use `autoplay` prop to set autoplay interval
 </zv-swipe>
 
 <style>
-.my-swipe .zv-swipe-item {
-  color: #fff;
-  font-size: 20px;
-  line-height: 150px;
-  text-align: center;
-  background-color: #39a9ed;
-}
+  .my-swipe .zv-swipe-item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+    background-color: #39a9ed;
+  }
 </style>
 ```
 
@@ -49,7 +49,7 @@ Use [Lazyload](#/en-US/lazyload) component to lazyload image
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'zvt';
 
 Vue.use(Lazyload);
 
@@ -57,12 +57,12 @@ export default {
   data() {
     return {
       images: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg'
-      ]
-    }
-  }
-}
+        'https://img.yzcdn.cn/zvt/apple-1.jpg',
+        'https://img.yzcdn.cn/zvt/apple-2.jpg',
+      ],
+    };
+  },
+};
 ```
 
 ### Change Event
@@ -77,15 +77,15 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'zvt';
 
 export default {
   methods: {
     onChange(index) {
       Toast('Current Swipe index:' + index);
-    }
-  }
-}
+    },
+  },
+};
 ```
 
 ### Vertical Scrolling
@@ -128,13 +128,6 @@ export default {
 </zv-swipe>
 
 <style>
-  .zv-swipe-item {
-    font-size: 20px;
-    line-height: 150px;
-    text-align: center;
-    background-color: #39a9ed;
-  }
-
   .custom-indicator {
     position: absolute;
     right: 5px;
@@ -150,15 +143,15 @@ export default {
 export default {
   data() {
     return {
-      current: 0
-    }
+      current: 0,
+    };
   },
   methods: {
     onChange(index) {
       this.current = index;
-    }
-  }
-}
+    },
+  },
+};
 ```
 
 ## API
@@ -166,37 +159,38 @@ export default {
 ### Swipe Props
 
 | Attribute | Description | Type | Default |
-|------|------|------|------|
-| autoplay | Autoplay interval (ms) | *number \| string* | - |
-| duration | Animation duration (ms) | *number \| string* | `500` |
-| initial-swipe | Index of initial swipe, start from 0 | *number \| string* | `0` |
-| width | Set Swiper Item Width | *number \| string* | `0` |
-| height | Set Swiper Item Height | *number \| string* | `0` |
-| loop | Whether to enable loop | *boolean* | `true` |
-| show-indicators | Whether to show indicators | *boolean* | `true` |
-| vertical | Whether to be vertical Scrolling | *boolean* | `false` |
-| touchable | Whether to allow swipe by touch gesture | *boolean* | `true` |
-| stop-propagation `v2.1.0` | Whether to stop touchmove event propagation | *boolean* | `false` |
-| indicator-color | Indicator color | *string* | `#1989fa` |
+| --- | --- | --- | --- |
+| autoplay | Autoplay interval (ms) | _number \| string_ | - |
+| duration | Animation duration (ms) | _number \| string_ | `500` |
+| initial-swipe | Index of initial swipe, start from 0 | _number \| string_ | `0` |
+| width | Set Swiper Item Width | _number \| string_ | `0` |
+| height | Set Swiper Item Height | _number \| string_ | `0` |
+| loop | Whether to enable loop | _boolean_ | `true` |
+| show-indicators | Whether to show indicators | _boolean_ | `true` |
+| vertical | Whether to be vertical Scrolling | _boolean_ | `false` |
+| touchable | Whether to allow swipe by touch gesture | _boolean_ | `true` |
+| stop-propagation `v2.1.0` | Whether to stop touchmove event propagation | _boolean_ | `false` |
+| lazy-render `v2.5.8` | Whether to enable lazy render | _boolean_ | `false` |
+| indicator-color | Indicator color | _string_ | `#1989fa` |
 
 ### Swipe Events
 
-| Event | Description | Arguments |
-|------|------|------|
+| Event  | Description                         | Arguments                     |
+| ------ | ----------------------------------- | ----------------------------- |
 | change | Triggered when current swipe change | index: index of current swipe |
 
 ### SwipeItem Events
 
-| Event | Description | Arguments |
-|------|------|------|
-| click | Triggered when clicked | *event: Event* |
+| Event | Description            | Arguments      |
+| ----- | ---------------------- | -------------- |
+| click | Triggered when clicked | _event: Event_ |
 
 ### Swipe Methods
 
 Use [ref](https://vuejs.org/v2/api/#ref) to get Swipe instance and call instance methods
 
 | Name | Description | Attribute | Return value |
-|------|------|------|------|
+| --- | --- | --- | --- |
 | prev `v2.4.2` | Swipe to prev item | - | - |
 | next `v2.4.2` | Swipe to next item | - | - |
 | swipeTo | Swipe to target index | index: target index, options: Options | void |
@@ -204,13 +198,13 @@ Use [ref](https://vuejs.org/v2/api/#ref) to get Swipe instance and call instance
 
 ### swipeTo Options
 
-| Name | Description | Type |
-|------|------|------|------|
-| immediate | Whether to skip animation | *boolean* |
+| Name      | Description               | Type      |
+| --------- | ------------------------- | --------- |
+| immediate | Whether to skip animation | _boolean_ |
 
 ### Swipe Slots
 
-| Name | Description |
-|------|------|
-| default | Content |
+| Name      | Description      |
+| --------- | ---------------- |
+| default   | Content          |
 | indicator | Custom indicator |

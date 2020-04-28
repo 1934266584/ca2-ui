@@ -2,6 +2,12 @@
 
 exports[`disable border 1`] = `<div class="zv-tabbar zv-tabbar--fixed"></div>`;
 
+exports[`placeholder prop 1`] = `
+<div class="zv-tabbar__placeholder" style="height: 50px;">
+  <div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed"></div>
+</div>
+`;
+
 exports[`route mode 1`] = `
 <div class="zv-hairline--top-bottom zv-tabbar zv-tabbar--fixed">
   <div class="zv-tabbar-item zv-tabbar-item--active">

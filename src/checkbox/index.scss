@@ -1,4 +1,4 @@
-@import '../style/var.scss';
+@import '../style/var';
 
 .zv-checkbox {
   display: flex;
@@ -62,7 +62,6 @@
         border-color: $checkbox-disabled-icon-color;
       }
     }
-
     &--disabled#{&}--checked {
       .zv-icon {
         color: $checkbox-disabled-icon-color;

@@ -13,11 +13,11 @@ function mockPageHidden() {
 
 const Component = {
   template: `
-    <zv-swipe ref="swipe" v-bind="$props" v-on="$listeners">
-      <zv-swipe-item :style="style">1</zv-swipe-item>
-      <zv-swipe-item :style="style">2</zv-swipe-item>
-      <zv-swipe-item :style="style">3</zv-swipe-item>
-    </zv-swipe>
+    <van-swipe ref="swipe" v-bind="$props" v-on="$listeners">
+      <van-swipe-item :style="style">1</van-swipe-item>
+      <van-swipe-item :style="style">2</van-swipe-item>
+      <van-swipe-item :style="style">3</van-swipe-item>
+    </van-swipe>
   `,
   props: {
     vertical: Boolean,
@@ -97,7 +97,7 @@ test('vertical swipe', () => {
     },
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.zv-swipe__track');
+  const track = wrapper.find('.van-swipe__track');
 
   triggerDrag(track, 0, -100);
   expect(swipe.active).toEqual(1);
@@ -110,7 +110,7 @@ test('untouchable', () => {
     },
   });
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.zv-swipe__track');
+  const track = wrapper.find('.van-swipe__track');
 
   triggerDrag(track, 100, 0);
   expect(swipe.active).toEqual(0);
@@ -119,7 +119,7 @@ test('untouchable', () => {
 test('loop', () => {
   const wrapper = mount(Component);
   const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.zv-swipe__track');
+  const track = wrapper.find('.van-swipe__track');
 
   triggerDrag(track, -100, 0);
   expect(swipe.active).toEqual(1);
@@ -135,23 +135,6 @@ test('loop', () => {
   expect(swipe.active).toEqual(-1);
   triggerDrag(track, 100, 0);
   expect(swipe.active).toEqual(1);
-});
-
-test('not loop', () => {
-  const wrapper = mount(Component, {
-    propsData: {
-      loop: false,
-    },
-  });
-  const { swipe } = wrapper.vm.$refs;
-  const track = wrapper.find('.zv-swipe__track');
-
-  triggerDrag(track, -100, 0);
-  expect(swipe.active).toEqual(1);
-  triggerDrag(track, -100, 0);
-  expect(swipe.active).toEqual(2);
-  triggerDrag(track, -100, 0);
-  expect(swipe.active).toEqual(2);
 });
 
 test('should pause auto play when page hidden', async () => {
@@ -170,4 +153,48 @@ test('should pause auto play when page hidden', async () => {
   await later(50);
 
   expect(change).toHaveBeenCalledTimes(0);
+});
+
+test('lazy-render prop', async () => {
+  const wrapper = mount({
+    template: `
+      <van-swipe :initial-swipe="active" lazy-render>
+        <van-swipe-item><span>1</span></van-swipe-item>
+        <van-swipe-item><span>2</span></van-swipe-item>
+        <van-swipe-item><span>3</span></van-swipe-item>
+        <van-swipe-item><span>4</span></van-swipe-item>
+      </van-swipe>
+    `,
+    data() {
+      return {
+        active: 0,
+      };
+    },
+  });
+
+  await later();
+  const items = wrapper.findAll('.van-swipe-item');
+
+  expect(items.at(0).contains('span')).toBeTruthy();
+  expect(items.at(1).contains('span')).toBeTruthy();
+  expect(items.at(2).contains('span')).toBeFalsy();
+  expect(items.at(3).contains('span')).toBeTruthy();
+
+  wrapper.setData({ active: 1 });
+  expect(items.at(0).contains('span')).toBeTruthy();
+  expect(items.at(1).contains('span')).toBeTruthy();
+  expect(items.at(2).contains('span')).toBeTruthy();
+  expect(items.at(3).contains('span')).toBeFalsy();
+
+  wrapper.setData({ active: 2 });
+  expect(items.at(0).contains('span')).toBeFalsy();
+  expect(items.at(1).contains('span')).toBeTruthy();
+  expect(items.at(2).contains('span')).toBeTruthy();
+  expect(items.at(3).contains('span')).toBeTruthy();
+
+  wrapper.setData({ active: 3 });
+  expect(items.at(0).contains('span')).toBeTruthy();
+  expect(items.at(1).contains('span')).toBeFalsy();
+  expect(items.at(2).contains('span')).toBeTruthy();
+  expect(items.at(3).contains('span')).toBeTruthy();
 });

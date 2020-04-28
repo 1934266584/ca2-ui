@@ -87,6 +87,14 @@ exports[`renders demo correctly 1`] = `
   <div>
     <div class="zv-uploader">
       <div class="zv-uploader__wrapper">
+        <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
+            <!----></i><input multiple="multiple" type="file" accept="image/*" class="zv-uploader__input"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="zv-uploader">
+      <div class="zv-uploader__wrapper">
         <div class="zv-uploader__input-wrapper"><button class="zv-button zv-button--primary zv-button--normal"><i class="zv-icon zv-icon-photo zv-button__icon">
               <!----></i><span class="zv-button__text">
         上传文件

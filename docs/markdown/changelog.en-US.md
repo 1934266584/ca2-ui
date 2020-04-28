@@ -1,5 +1,129 @@
 # Changelog
 
+### Intro
+
+Vant follows [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/).
+
+**Release Schedule**
+
+- Patch version：released weekly, including features and bug fixes.
+- Minor version：released every one to two months, including backwards compatible features.
+- Major version：including breaking changes and new features.
+
+### [v2.6.3](https://github.com/youzan/vant/compare/v2.6.2...v2.6.3)
+
+`2020-04-20`
+
+**Bug Fixes**
+
+- Tab: fail to init in some cases [#6101](https://github.com/youzan/vant/issues/6101)
+- sort vnode not work [#6100](https://github.com/youzan/vant/issues/6100)
+
+### [v2.6.2](https://github.com/youzan/vant/compare/v2.6.1...v2.6.2)
+
+`2020-04-18`
+
+**Feature**
+
+- Empty: support offline scenario [#6055](https://github.com/youzan/vant/issues/6055)
+- NoticeBar: add replay event [#6079](https://github.com/youzan/vant/issues/6079)
+- Overlay: add lock-scroll prop [#6082](https://github.com/youzan/vant/issues/6082)
+- Uploader: add lazy-load prop [#6083](https://github.com/youzan/vant/issues/6083)
+
+**Bug Fixes**
+
+- Checkbox: get changed value in click event [#6066](https://github.com/youzan/vant/issues/6066)
+- Picker: setColumnValues failed in cascade mode [#6080](https://github.com/youzan/vant/issues/6080)
+- Slider: incorrect bar-height when vertical [#6065](https://github.com/youzan/vant/issues/6065)
+- Swipe: incorrect width after resize if hidden [#6084](https://github.com/youzan/vant/issues/6084)
+
+### [v2.6.1](https://github.com/youzan/vant/compare/v2.6.0...v2.6.1)
+
+`2020-04-14`
+
+**Feature**
+
+- AddressEdit: add area-placeholder prop [#6023](https://github.com/youzan/vant/issues/6023)
+- ImagePreview: support local registration [#6031](https://github.com/youzan/vant/issues/6031)
+
+**Bug Fixes**
+
+- sortChildren broke SSR [#6046](https://github.com/youzan/vant/issues/6046)
+- Calendar: default-date should be today, close #6025 [#6025](https://github.com/youzan/vant/issues/6025) [#6028](https://github.com/youzan/vant/issues/6028)
+
+### [v2.6.0](https://github.com/youzan/vant/compare/v2.5.9...v2.6.0)
+
+`2020-04-09`
+
+**Feature**
+
+- add ShareSheet component [#6019](https://github.com/youzan/vant/issues/6019)
+- add Empty component [#6010](https://github.com/youzan/vant/issues/6010)
+
+**Feature**
+
+- Form: add show-error prop [#5941](https://github.com/youzan/vant/issues/5941)
+- Tabbar: add placeholder prop [#5979](https://github.com/youzan/vant/issues/5979)
+- Sku: enable safe-area-inset-bottom by default [#5960](https://github.com/youzan/vant/issues/5960)
+- Tabbar: enable safe-area-inset-bottom by default when fixed [#5968](https://github.com/youzan/vant/issues/5968)
+- SubmitBar: enable safe-area-inset-bottom by default [#5956](https://github.com/youzan/vant/issues/5956)
+- GoodsAction: enable safe-area-inset-bottom by default [#5955](https://github.com/youzan/vant/issues/5955)
+- Swipe: allow swipe multiple item at once [#5953](https://github.com/youzan/vant/issues/5953)
+- Calendar: auto selected to max range [#5992](https://github.com/youzan/vant/issues/5992)
+
+**Improvement**
+
+- NavBar: improve active feedback [#5949](https://github.com/youzan/vant/issues/5949)
+- Popup: improve leave animation timing function [#5954](https://github.com/youzan/vant/issues/5954)
+- Picker: improve scroll speed [#5951](https://github.com/youzan/vant/issues/5951)
+- Swipe: improve swipe threshold [#6003](https://github.com/youzan/vant/issues/6003)
+- TreeSelect: update nav background color [#5991](https://github.com/youzan/vant/issues/5991)
+
+**Bug Fixes**
+
+- Button: icon-prefix prop not work [#5947](https://github.com/youzan/vant/issues/5947)
+- Calendar: rendering error when activated [#5978](https://github.com/youzan/vant/issues/5978)
+- Form: incorrect validation order when add field dynamically [b8dea3](https://github.com/youzan/vant/commit/b8dea3c13b7dbf6533169653c493a3156c07f1d4)
+- NavBar: icon align center [#5948](https://github.com/youzan/vant/issues/5948)
+- Stepper: readonly not work in lagacy mobile safari [#5976](https://github.com/youzan/vant/issues/5976)
+
+### [v2.5.9](https://github.com/youzan/vant/compare/v2.5.8...v2.5.9)
+
+`2020-03-31`
+
+**Feature**
+
+- AddressEdit: add click-area event [#5939](https://github.com/youzan/vant/issues/5939)
+- NavBar: add placeholder prop [#5938](https://github.com/youzan/vant/issues/5938)
+- Steps: add click-step event [#5937](https://github.com/youzan/vant/issues/5937)
+
+**Bug Fixes**
+
+- NumberKeyboard: show-delete-key prop not work [#5935](https://github.com/youzan/vant/issues/5935)
+- Toast: incorrect height in legacy devices [#5931](https://github.com/youzan/vant/issues/5931)
+- Sticky: Fixed error when accessing the window during SSR [#5958](https://github.com/youzan/vant/issues/5958)
+
+### [v2.5.8](https://github.com/youzan/vant/compare/v2.5.7...v2.5.8)
+
+`2020-03-27`
+
+**Feature**
+
+- support generate webstorm types [#5900](https://github.com/youzan/vant/issues/5900)
+- Circle: improve text padding [10f32d](https://github.com/youzan/vant/commit/10f32d6619199e99ff743cb5425db1e54e495fd0)
+- Form: add show-error-message prop [#5927](https://github.com/youzan/vant/issues/5927)
+- ImagePreview: enable swipe lazy-render [#5879](https://github.com/youzan/vant/issues/5879)
+- Sidebar: set overflow-y auto [#5921](https://github.com/youzan/vant/issues/5921)
+- Swipe: add lazy-render prop [365f2b](https://github.com/youzan/vant/commit/365f2b16f7d9592f92413e206439585468a8a1c7)
+- Swipe: use flex layout [f701de](https://github.com/youzan/vant/commit/f701de9e58db5f88a582e3277c97a0c9ca99eec4)
+
+**Bug Fixes**
+
+- Calendar: fix the default date of multiple selection type [#5907](https://github.com/youzan/vant/issues/5907)
+- PullRefresh: track should be full of container [#5878](https://github.com/youzan/vant/issues/5878)
+- Sticky: shoud rerender after visibility changed [#5888](https://github.com/youzan/vant/issues/5888)
+- Swipe: incorrect offset after resize [#5922](https://github.com/youzan/vant/issues/5922)
+
 ### [v2.5.7](https://github.com/youzan/vant/compare/v2.5.6...v2.5.7)
 
 `2020-03-20`
@@ -7,7 +131,6 @@
 **Bug Fixes**
 
 - Locale: fix incorrect japanese filename [e8c88a](https://github.com/youzan/vant/commit/e8c88a380217eb48cef8aa7dc29d378a1031120a)
-
 
 ### [v2.5.6](https://github.com/youzan/vant/compare/v2.5.5...v2.5.6)
 

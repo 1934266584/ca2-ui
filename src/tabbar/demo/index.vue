@@ -127,6 +127,7 @@ export default {
 .demo-tabbar {
   .zv-tabbar {
     position: relative;
+    padding-bottom: 0;
   }
 }
 </style>

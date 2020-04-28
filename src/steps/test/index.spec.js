@@ -1,29 +1,49 @@
 import { mount } from '../../../test';
-import Steps from '..';
-import Step from '../../step';
 
 test('icon slot', () => {
   const wrapper = mount({
     template: `
-    <steps :active="1">
-      <step>
+    <zv-steps :active="1">
+      <zv-step>
         <template v-slot:inactive-icon>Custim Inactive Icon</template>
         A
-      </step>
-      <step>
+      </zv-step>
+      <zv-step>
         <template v-slot:active-icon>Custim Active Icon</template>
         B
-      </step>
-      <step>
+      </zv-step>
+      <zv-step>
         <template v-slot:inactive-icon>Custim Inactive Icon</template>
         C
-      </step>
-    </steps>
+      </zv-step>
+    </zv-steps>
     `,
-    components: {
-      Steps,
-      Step,
-    },
   });
   expect(wrapper).toMatchSnapshot();
+});
+
+test('click-step event', () => {
+  const onClickStep = jest.fn();
+  const wrapper = mount({
+    template: `
+      <zv-steps :active="1" @click-step="onClickStep">
+        <zv-step>A</zv-step>
+        <zv-step>B</zv-step>
+        <zv-step>C</zv-step>
+      </zv-steps>
+    `,
+    methods: {
+      onClickStep,
+    },
+  });
+
+  wrapper.find('.zv-step').trigger('click');
+  expect(onClickStep).toHaveBeenCalledTimes(0);
+
+  wrapper.find('.zv-step__title').trigger('click');
+  expect(onClickStep).toHaveBeenCalledWith(0);
+
+  wrapper.findAll('.zv-step__circle-container').at(2).trigger('click');
+  expect(onClickStep).toHaveBeenCalledTimes(2);
+  expect(onClickStep).toHaveBeenLastCalledWith(2);
 });

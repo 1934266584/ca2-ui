@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`placeholder prop 1`] = `
+<div class="zv-nav-bar__placeholder" style="height: 50px;">
+  <div class="zv-nav-bar zv-nav-bar--fixed zv-hairline--bottom">
+    <div class="zv-nav-bar__left"></div>
+    <div class="zv-nav-bar__title zv-ellipsis"></div>
+    <div class="zv-nav-bar__right"></div>
+  </div>
+</div>
+`;
+
 exports[`render left & right slot 1`] = `
 <div class="zv-nav-bar zv-hairline--bottom">
   <div class="zv-nav-bar__left">Custom Left</div>

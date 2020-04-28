@@ -1,4 +1,4 @@
-@import '../style/var.scss';
+@import '../style/var';
 
 .zv-calendar {
   display: flex;
@@ -7,17 +7,17 @@
   background-color: $calendar-background-color;
 
   &__popup {
-    &.zv-popup--top,
-    &.zv-popup--bottom {
+    &.van-popup--top,
+    &.van-popup--bottom {
       height: $calendar-popup-height;
     }
 
-    &.zv-popup--left,
-    &.zv-popup--right {
+    &.van-popup--left,
+    &.van-popup--right {
       height: 100%;
     }
 
-    .zv-popup__close-icon {
+    .van-popup__close-icon {
       top: 11px;
     }
   }
@@ -173,10 +173,11 @@
   &__footer {
     flex-shrink: 0;
     padding: 0 $padding-md;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
 
-    &--safe-area-inset-bottom {
-      padding-bottom: constant(safe-area-inset-bottom);
-      padding-bottom: env(safe-area-inset-bottom);
+    &--unfit {
+      padding-bottom: 0;
     }
   }
 

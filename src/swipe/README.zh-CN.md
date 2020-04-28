@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'vant';
+import { Swipe, SwipeItem } from 'zvt';
 
 Vue.use(Swipe);
 Vue.use(SwipeItem);
@@ -25,13 +25,13 @@ Vue.use(SwipeItem);
 </zv-swipe>
 
 <style>
-.my-swipe .zv-swipe-item {
-  color: #fff;
-  font-size: 20px;
-  line-height: 150px;
-  text-align: center;
-  background-color: #39a9ed;
-}
+  .my-swipe .zv-swipe-item {
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+    background-color: #39a9ed;
+  }
 </style>
 ```
 
@@ -49,7 +49,7 @@ Vue.use(SwipeItem);
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'vant';
+import { Lazyload } from 'zvt';
 
 Vue.use(Lazyload);
 
@@ -57,12 +57,12 @@ export default {
   data() {
     return {
       images: [
-        'https://img.yzcdn.cn/vant/apple-1.jpg',
-        'https://img.yzcdn.cn/vant/apple-2.jpg'
-      ]
-    }
-  }
-}
+        'https://img.yzcdn.cn/zvt/apple-1.jpg',
+        'https://img.yzcdn.cn/zvt/apple-2.jpg',
+      ],
+    };
+  },
+};
 ```
 
 ### 监听 change 事件
@@ -77,15 +77,15 @@ export default {
 ```
 
 ```js
-import { Toast } from 'vant';
+import { Toast } from 'zvt';
 
 export default {
   methods: {
     onChange(index) {
       Toast('当前 Swipe 索引：' + index);
-    }
-  }
-}
+    },
+  },
+};
 ```
 
 ### 纵向滚动
@@ -134,13 +134,6 @@ export default {
 </zv-swipe>
 
 <style>
-  .zv-swipe-item {
-    font-size: 20px;
-    line-height: 150px;
-    text-align: center;
-    background-color: #39a9ed;
-  }
-
   .custom-indicator {
     position: absolute;
     right: 5px;
@@ -156,15 +149,15 @@ export default {
 export default {
   data() {
     return {
-      current: 0
-    }
+      current: 0,
+    };
   },
   methods: {
     onChange(index) {
       this.current = index;
-    }
-  }
-}
+    },
+  },
+};
 ```
 
 ## API
@@ -172,37 +165,38 @@ export default {
 ### Swipe Props
 
 | 参数 | 说明 | 类型 | 默认值 |
-|------|------|------|------|
-| autoplay | 自动轮播间隔，单位为 ms | *number \| string* | - |
-| duration | 动画时长，单位为 ms | *number \| string* | `500` |
-| initial-swipe | 初始位置索引值 | *number \| string* | `0` |
-| width | 滑块宽度，单位为`px` | *number \| string* | `auto` |
-| height | 滑块高度，单位为`px` | *number \| string* | `auto` |
-| loop | 是否开启循环播放 | *boolean* | `true` |
-| show-indicators | 是否显示指示器 | *boolean* | `true` |
-| vertical | 是否为纵向滚动 | *boolean* | `false` |
-| touchable | 是否可以通过手势滑动 | *boolean* | `true` |
-| stop-propagation `v2.2.13` | 是否阻止滑动事件冒泡 | *boolean* | `true` |
-| indicator-color | 指示器颜色 | *string* | `#1989fa` |
+| --- | --- | --- | --- |
+| autoplay | 自动轮播间隔，单位为 ms | _number \| string_ | - |
+| duration | 动画时长，单位为 ms | _number \| string_ | `500` |
+| initial-swipe | 初始位置索引值 | _number \| string_ | `0` |
+| width | 滑块宽度，单位为`px` | _number \| string_ | `auto` |
+| height | 滑块高度，单位为`px` | _number \| string_ | `auto` |
+| loop | 是否开启循环播放 | _boolean_ | `true` |
+| show-indicators | 是否显示指示器 | _boolean_ | `true` |
+| vertical | 是否为纵向滚动 | _boolean_ | `false` |
+| touchable | 是否可以通过手势滑动 | _boolean_ | `true` |
+| stop-propagation `v2.2.13` | 是否阻止滑动事件冒泡 | _boolean_ | `true` |
+| lazy-render `v2.5.8` | 是否延迟渲染未展示的轮播 | _boolean_ | `false` |
+| indicator-color | 指示器颜色 | _string_ | `#1989fa` |
 
 ### Swipe Events
 
-| 事件名 | 说明 | 回调参数 |
-|------|------|------|
+| 事件名 | 说明                 | 回调参数            |
+| ------ | -------------------- | ------------------- |
 | change | 每一页轮播结束后触发 | index, 当前页的索引 |
 
 ### SwipeItem Events
 
-| 事件名 | 说明 | 回调参数 |
-|------|------|------|
-| click | 点击时触发 | *event: Event* |
+| 事件名 | 说明       | 回调参数       |
+| ------ | ---------- | -------------- |
+| click  | 点击时触发 | _event: Event_ |
 
 ### Swipe 方法
 
 通过 ref 可以获取到 Swipe 实例并调用实例方法，详见[组件实例方法](#/zh-CN/quickstart#zu-jian-shi-li-fang-fa)
 
 | 方法名 | 说明 | 参数 | 返回值 |
-|------|------|------|------|
+| --- | --- | --- | --- |
 | prev `v2.4.2` | 切换到上一轮播 | - | - |
 | next `v2.4.2` | 切换到下一轮播 | - | - |
 | swipeTo | 切换到指定位置 | index: number, options: Options | void |
@@ -210,15 +204,15 @@ export default {
 
 ### swipeTo Options 格式
 
-| 名称 | 说明 | 类型 |
-|------|------|------|
-| immediate | 是否跳过动画 | *boolean* |
+| 名称      | 说明         | 类型      |
+| --------- | ------------ | --------- |
+| immediate | 是否跳过动画 | _boolean_ |
 
 ### Swipe Slots
 
-| 名称 | 说明 |
-|------|------|
-| default | 轮播内容 |
+| 名称      | 说明         |
+| --------- | ------------ |
+| default   | 轮播内容     |
 | indicator | 自定义指示器 |
 
 ## 常见问题

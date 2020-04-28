@@ -10,6 +10,125 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 - 次版本号：每隔一至二个月发布，包含新特性和较大的功能更新，向下兼容。
 - 主版本号：发布时间不定，包含不兼容更新，预计下一个主版本会与 Vue 3.0 同期发布。
 
+### [v2.6.3](https://github.com/youzan/vant/compare/v2.6.2...v2.6.3)
+
+`2020-04-20`
+
+**Bug Fixes**
+
+- Tab: 修复在部分浏览器上可能出现顺序错乱的问题 [#6100](https://github.com/youzan/vant/issues/6100)
+- Tab: 修复动态插入标签时可能出现渲染错误的问题 [#6101](https://github.com/youzan/vant/issues/6101)
+
+### [v2.6.2](https://github.com/youzan/vant/compare/v2.6.1...v2.6.2)
+
+`2020-04-18`
+
+**Feature**
+
+- Empty: 支持在离线环境下使用 network 图片 [#6055](https://github.com/youzan/vant/issues/6055)
+- NoticeBar: 新增 replay 事件，在每次滚动结束时触发 [#6079](https://github.com/youzan/vant/issues/6079)
+- Overlay: 新增 lock-scroll 属性，用于控制是否锁定背景滚动 [#6082](https://github.com/youzan/vant/issues/6082)
+- Uploader: 新增 lazy-load 属性，用于开启图片懒加载 [#6083](https://github.com/youzan/vant/issues/6083)
+
+**Bug Fixes**
+
+- Checkbox: 修复在 click 事件的回调中获取到的 value 未改变的问题 [#6066](https://github.com/youzan/vant/issues/6066)
+- Picker: 修复级联模式下使用 setColumnValues 方法导致报错的问题 [#6080](https://github.com/youzan/vant/issues/6080)
+- Slider: 修复在垂直模式下使用 bar-height 后样式错误的问题 [#6065](https://github.com/youzan/vant/issues/6065)
+- Swipe: 修复元素隐藏且触发 resize 事件后渲染错误的问题 [#6084](https://github.com/youzan/vant/issues/6084)
+
+### [v2.6.1](https://github.com/youzan/vant/compare/v2.6.0...v2.6.1)
+
+`2020-04-14`
+
+**Feature**
+
+- AddressEdit: 新增 area-placeholder 属性 [#6023](https://github.com/youzan/vant/issues/6023)
+- ImagePreview: 支持通过局部注册的方式使用 [#6031](https://github.com/youzan/vant/issues/6031)
+
+**Bug Fixes**
+
+- Calendar: 修复 default-date 默认值为 min-date 而不是今天的问题 [#6025](https://github.com/youzan/vant/issues/6025) [#6028](https://github.com/youzan/vant/issues/6028)
+- 修复部分组件在 SSR 时报错 `Cannot read property 'children' of null` 的问题 [#6046](https://github.com/youzan/vant/issues/6046)
+
+### [v2.6.0](https://github.com/youzan/vant/compare/v2.5.9...v2.6.0)
+
+`2020-04-09`
+
+**Feature**
+
+- 新增 ShareSheet 分享面板组件，用于进行分享操作 [#6019](https://github.com/youzan/vant/issues/6019)
+- 新增 Empty 空状态组件，作为空状态时的占位提示 [#6010](https://github.com/youzan/vant/issues/6010)
+
+<img src="https://img.yzcdn.cn/vant/component-preview-2.6.png" style="width: 540px;">
+
+**Feature**
+
+- Form: 新增 show-error 属性，用于控制展示错误提示 [#5941](https://github.com/youzan/vant/issues/5941)
+- Tabbar: 新增 placeholder 属性，用于在吸底时生成占位元素 [#5979](https://github.com/youzan/vant/issues/5979)
+- Sku: 默认开启底部安全区适配 [#5960](https://github.com/youzan/vant/issues/5960)
+- SubmitBar: 默认开启底部安全区适配 [#5956](https://github.com/youzan/vant/issues/5956)
+- GoodsAction: 默认开启底部安全区适配 [#5955](https://github.com/youzan/vant/issues/5955)
+- Tabbar: 固定在底部时默认开启底部安全区适配 [#5968](https://github.com/youzan/vant/issues/5968)
+- Swipe: 允许一次滚动多页轮播 [#5953](https://github.com/youzan/vant/issues/5953)
+- Calendar: 设置 max-range 后，选择超出范围时会自动选择到最大范围 [#5992](https://github.com/youzan/vant/issues/5992)
+
+**Improvement**
+
+- NavBar: 优化点击反馈效果 [#5949](https://github.com/youzan/vant/issues/5949)
+- Popup: 优化退场动画效果 [#5954](https://github.com/youzan/vant/issues/5954)
+- Picker: 优化惯性滑动速率 [#5951](https://github.com/youzan/vant/issues/5951)
+- Swipe: 优化滚动手势体验，滑动较慢时会回弹到原位置 [#6003](https://github.com/youzan/vant/issues/6003)
+- TreeSelect: 更新左侧栏背景色，增强区分度 [#5991](https://github.com/youzan/vant/issues/5991)
+
+**Bug Fixes**
+
+- Button: 修复 icon-prefix 属性不生效的问题 [#5947](https://github.com/youzan/vant/issues/5947)
+- Calendar: 修复 keep-alive 时可能出现渲染空白的问题 [#5978](https://github.com/youzan/vant/issues/5978)
+- Form: 修复动态插入 Field 时校验顺序错误的问题 [b8dea3](https://github.com/youzan/vant/commit/b8dea3c13b7dbf6533169653c493a3156c07f1d4)
+- NavBar: 修复图标在部分机型上不居中的问题 [#5948](https://github.com/youzan/vant/issues/5948)
+- Stepper: 修复 disable-input 属性在低版本 safari 上不生效的问题 [#5976](https://github.com/youzan/vant/issues/5976)
+
+### [v2.5.9](https://github.com/youzan/vant/compare/v2.5.8...v2.5.9)
+
+`2020-03-31`
+
+**Feature**
+
+- AddressEdit: 新增 click-area 事件 [#5939](https://github.com/youzan/vant/issues/5939)
+- NavBar: 新增 placeholder 属性 [#5938](https://github.com/youzan/vant/issues/5938)
+- Steps: 新增 click-step 事件 [#5937](https://github.com/youzan/vant/issues/5937)
+
+**Bug Fixes**
+
+- NumberKeyboard: 修复 show-delete-key 属性不生效的问题 [#5935](https://github.com/youzan/vant/issues/5935)
+- Toast: 修复在部分机型上高度错误的问题 [#5931](https://github.com/youzan/vant/issues/5931)
+- Sticky: 修复 SSR 时访问 window 对象导致报错的问题 [#5958](https://github.com/youzan/vant/issues/5958)
+
+### [v2.5.8](https://github.com/youzan/vant/compare/v2.5.7...v2.5.8)
+
+`2020-03-27`
+
+**Feature**
+
+- 新增 Webstorm 的 web-types.json 定义文件，提供智能提示 [#5900](https://github.com/youzan/vant/issues/5900)
+- Form: 新增 show-error-message 属性 [#5927](https://github.com/youzan/vant/issues/5927)
+- ImagePreview: 开启延迟渲染，提高渲染性能 [#5879](https://github.com/youzan/vant/issues/5879)
+- Swipe: 新增 lazy-render 属性 [365f2b](https://github.com/youzan/vant/commit/365f2b16f7d9592f92413e206439585468a8a1c7)
+
+**Improvement**
+
+- Circle: 优化文字边距 [10f32d](https://github.com/youzan/vant/commit/10f32d6619199e99ff743cb5425db1e54e495fd0)
+- Sidebar: 新增 overflow-y: auto 样式 [#5921](https://github.com/youzan/vant/issues/5921)
+- Swipe: 调整为 flex 布局 [f701de](https://github.com/youzan/vant/commit/f701de9e58db5f88a582e3277c97a0c9ca99eec4)
+
+**Bug Fixes**
+
+- Calendar: 修复 multiple 模式下 default-date 格式错误的问题 [#5907](https://github.com/youzan/vant/issues/5907)
+- PullRefresh: 修复内部元素高度未填满容器的问题 [#5878](https://github.com/youzan/vant/issues/5878)
+- Sticky: 修复切换显示状态时可能出现定位错误的问题 [#5888](https://github.com/youzan/vant/issues/5888)
+- Swipe: 修复屏幕 resize 后可能导致轮播位置错误的问题 [#5922](https://github.com/youzan/vant/issues/5922)
+
 ### [v2.5.7](https://github.com/youzan/vant/compare/v2.5.6...v2.5.7)
 
 `2020-03-20`
@@ -574,7 +693,7 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 - 修复 Sku 内容最小高度错误的问题 [\#4942](https://github.com/youzan/vant/pull/4942)
 - 修复 List 在初始化时可能同时触发两次 load 事件的问题 [\#4953](https://github.com/youzan/vant/pull/4953)
-- 修复 $border-color 变量无法定制某些组件边框颜色的问题 [\#4939](https://github.com/youzan/vant/pull/4939)
+- 修复 @border-color 变量无法定制某些组件边框颜色的问题 [\#4939](https://github.com/youzan/vant/pull/4939)
 
 ### [v2.2.11](https://github.com/youzan/vant/tree/v2.2.11)
 

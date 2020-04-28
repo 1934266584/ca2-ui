@@ -1,4 +1,4 @@
-@import './var.scss';
+@import './var';
 
 @keyframes zv-slide-up-enter {
   from {
@@ -80,50 +80,60 @@
 
 .zv-fade {
   &-enter-active {
-    animation: $animation-duration-base zv-fade-in;
+    animation: $animation-duration-base zv-fade-in both
+      $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: $animation-duration-base zv-fade-out;
+    animation: $animation-duration-base zv-fade-out both
+      $animation-timing-function-leave;
   }
 }
 
 .zv-slide-up {
   &-enter-active {
-    animation: zv-slide-up-enter $animation-duration-base both ease;
+    animation: zv-slide-up-enter $animation-duration-base both
+      $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-up-leave $animation-duration-base both ease;
+    animation: zv-slide-up-leave $animation-duration-base both
+      $animation-timing-function-leave;
   }
 }
 
 .zv-slide-down {
   &-enter-active {
-    animation: zv-slide-down-enter $animation-duration-base both ease;
+    animation: zv-slide-down-enter $animation-duration-base both
+      $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-down-leave $animation-duration-base both ease;
+    animation: zv-slide-down-leave $animation-duration-base both
+      $animation-timing-function-leave;
   }
 }
 
 .zv-slide-left {
   &-enter-active {
-    animation: zv-slide-left-enter $animation-duration-base both ease;
+    animation: zv-slide-left-enter $animation-duration-base both
+      $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-left-leave $animation-duration-base both ease;
+    animation: zv-slide-left-leave $animation-duration-base both
+      $animation-timing-function-leave;
   }
 }
 
 .zv-slide-right {
   &-enter-active {
-    animation: zv-slide-right-enter $animation-duration-base both ease;
+    animation: zv-slide-right-enter $animation-duration-base both
+      $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-right-leave $animation-duration-base both ease;
+    animation: zv-slide-right-leave $animation-duration-base both
+      $animation-timing-function-leave;
   }
 }

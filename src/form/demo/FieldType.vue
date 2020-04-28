@@ -1,61 +1,61 @@
 <template>
   <demo-block :title="t('fieldType')">
-    </zv-form @submit="onSubmit">
-      </zv-field name="switch" :label="t('switch')">
+    <zv-form @submit="onSubmit">
+      <zv-field name="switch" :label="t('switch')">
         <template #input>
-          </zv-switch v-model="switchChecked" size="20" />
+          <zv-switch v-model="switchChecked" size="20" />
         </template>
       </zv-field>
 
-      </zv-field name="checkbox" :label="t('checkbox')">
+      <zv-field name="checkbox" :label="t('checkbox')">
         <template #input>
-          </zv-checkbox v-model="checkbox" shape="square" />
+          <zv-checkbox v-model="checkbox" shape="square" />
         </template>
       </zv-field>
 
-      </zv-field name="checkboxGroup" :label="t('checkboxGroup')">
+      <zv-field name="checkboxGroup" :label="t('checkboxGroup')">
         <template #input>
-          </zv-checkbox-group v-model="checkboxGroup" direction="horizontal">
-            </zv-checkbox name="1" shape="square">
+          <zv-checkbox-group v-model="checkboxGroup" direction="horizontal">
+            <zv-checkbox name="1" shape="square">
               {{ t('checkbox') }} 1
             </zv-checkbox>
-            </zv-checkbox name="2" shape="square">
+            <zv-checkbox name="2" shape="square">
               {{ t('checkbox') }} 2
             </zv-checkbox>
           </zv-checkbox-group>
         </template>
       </zv-field>
 
-      </zv-field name="radio" :label="t('radio')">
+      <zv-field name="radio" :label="t('radio')">
         <template #input>
-          </zv-radio-group v-model="radio" direction="horizontal">
-            </zv-radio name="1">{{ t('radio') }} 1</zv-radio>
-            </zv-radio name="2">{{ t('radio') }} 2</zv-radio>
+          <zv-radio-group v-model="radio" direction="horizontal">
+            <zv-radio name="1">{{ t('radio') }} 1</zv-radio>
+            <zv-radio name="2">{{ t('radio') }} 2</zv-radio>
           </zv-radio-group>
         </template>
       </zv-field>
 
-      </zv-field name="stepper" :label="t('stepper')">
+      <zv-field name="stepper" :label="t('stepper')">
         <template #input>
-          </zv-stepper v-model="stepper" />
+          <zv-stepper v-model="stepper" />
         </template>
       </zv-field>
 
-      </zv-field name="rate" :label="t('rate')">
+      <zv-field name="rate" :label="t('rate')">
         <template #input>
-          </zv-rate v-model="rate" />
+          <zv-rate v-model="rate" />
         </template>
       </zv-field>
 
-      </zv-field name="slider" :label="t('slider')">
+      <zv-field name="slider" :label="t('slider')">
         <template #input>
-          </zv-slider v-model="slider" />
+          <zv-slider v-model="slider" />
         </template>
       </zv-field>
 
-      </zv-field name="uploader" :label="t('uploader')">
+      <zv-field name="uploader" :label="t('uploader')">
         <template #input>
-          </zv-uploader v-model="uploader" max-count="2" />
+          <zv-uploader v-model="uploader" max-count="2" />
         </template>
       </zv-field>
 
@@ -65,7 +65,7 @@
       <field-type-calendar />
 
       <div style="margin: 16px 16px 0;">
-        </zv-button round block type="info" native-type="submit">
+        <zv-button round block type="info" native-type="submit">
           {{ t('submit') }}
         </zv-button>
       </div>

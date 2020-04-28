@@ -1,16 +1,13 @@
 import { createNamespace } from '../utils';
 import { stopPropagation } from '../utils/dom/event';
-import { BORDER_TOP } from '../utils/constant';
 import { BindEventMixin } from '../mixins/bind-event';
 import Key from './Key';
 
 const [createComponent, bem, t] = createNamespace('number-keyboard');
-const CLOSE_KEY_THEME = ['blue', 'big'];
-const DELETE_KEY_THEME = ['delete', 'big', 'gray'];
 
 export default createComponent({
   mixins: [
-    BindEventMixin(function(bind) {
+    BindEventMixin(function (bind) {
       if (this.hideOnClickOutside) {
         bind(document.body, 'touchstart', this.onBlur);
       }
@@ -79,24 +76,23 @@ export default createComponent({
       switch (this.theme) {
         case 'default':
           keys.push(
-            { text: this.extraKey, theme: ['gray'], type: 'extra' },
+            { text: this.extraKey, type: 'extra' },
             { text: 0 },
-            { text: this.deleteText, theme: ['gray'], type: 'delete' }
+            {
+              text: this.showDeleteKey ? this.deleteButtonText : '',
+              type: this.showDeleteKey ? 'delete' : '',
+            }
           );
           break;
         case 'custom':
           keys.push(
-            { text: 0, theme: ['middle'] },
+            { text: 0, wider: true },
             { text: this.extraKey, type: 'extra' }
           );
           break;
       }
 
       return keys;
-    },
-
-    deleteText() {
-      return this.deleteButtonText || t('delete');
     },
   },
 
@@ -116,6 +112,9 @@ export default createComponent({
 
     onPress(text, type) {
       if (text === '') {
+        if (type === 'extra') {
+          this.onBlur();
+        }
         return;
       }
 
@@ -143,30 +142,26 @@ export default createComponent({
       }
 
       return (
-        <div class={[bem('title'), BORDER_TOP]}>
+        <div class={bem('header')}>
           {titleLeft && <span class={bem('title-left')}>{titleLeft}</span>}
-          {title && <span>{title}</span>}
+          {title && <h2 class={bem('title')}>{title}</h2>}
           {showClose && (
-            <span
-              role="button"
-              tabindex="0"
-              class={bem('close')}
-              onClick={this.onClose}
-            >
+            <button type="button" class={bem('close')} onClick={this.onClose}>
               {closeButtonText}
-            </span>
+            </button>
           )}
         </div>
       );
     },
 
     genKeys() {
-      return this.keys.map(key => (
+      return this.keys.map((key) => (
         <Key
           key={key.text}
           text={key.text}
           type={key.type}
-          theme={key.theme}
+          wider={key.wider}
+          color={key.color}
           onPress={this.onPress}
         >
           {key.type === 'delete' && this.slots('delete')}
@@ -179,18 +174,21 @@ export default createComponent({
       if (this.theme === 'custom') {
         return (
           <div class={bem('sidebar')}>
+            {this.showDeleteKey && (
+              <Key
+                large
+                text={this.deleteButtonText}
+                type="delete"
+                onPress={this.onPress}
+              >
+                {this.slots('delete')}
+              </Key>
+            )}
             <Key
-              text={this.deleteText}
-              type="delete"
-              theme={DELETE_KEY_THEME}
-              onPress={this.onPress}
-            >
-              {this.slots('delete')}
-            </Key>
-            <Key
+              large
               text={this.closeButtonText}
               type="close"
-              theme={CLOSE_KEY_THEME}
+              color="blue"
               onPress={this.onPress}
             />
           </div>
@@ -200,22 +198,21 @@ export default createComponent({
   },
 
   render() {
+    const Title = this.genTitle();
+
     return (
       <transition name={this.transition ? 'zv-slide-up' : ''}>
         <div
           vShow={this.show}
           style={{ zIndex: this.zIndex }}
-          class={bem([
-            this.theme,
-            { 'safe-area-inset-bottom': this.safeAreaInsetBottom },
-          ])}
+          class={bem({ unfit: !this.safeAreaInsetBottom, 'with-title': Title })}
           onTouchstart={stopPropagation}
           onAnimationend={this.onAnimationEnd}
           onWebkitAnimationEnd={this.onAnimationEnd}
         >
-          {this.genTitle()}
+          {Title}
           <div class={bem('body')}>
-            {this.genKeys()}
+            <div class={bem('keys')}>{this.genKeys()}</div>
             {this.genSidebar()}
           </div>
         </div>

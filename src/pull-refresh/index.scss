@@ -1,4 +1,4 @@
-@import '../style/var.scss';
+@import '../style/var';
 
 .zv-pull-refresh {
   overflow: hidden;
@@ -6,6 +6,7 @@
 
   &__track {
     position: relative;
+    height: 100%;
     transition-property: transform;
   }
 

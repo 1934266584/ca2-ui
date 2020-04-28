@@ -1,4 +1,4 @@
-@import '../style/var.scss';
+@import '../style/var';
 
 .zv-swipe {
   position: relative;
@@ -7,7 +7,12 @@
   user-select: none;
 
   &__track {
+    display: flex;
     height: 100%;
+
+    &--vertical {
+      flex-direction: column;
+    }
   }
 
   &__indicators {

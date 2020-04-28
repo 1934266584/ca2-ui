@@ -14,8 +14,8 @@ test('rules prop - execute order', async () => {
       return {
         rules: [
           { required: true, message: 'A' },
-          { validator: val => val.length > 6, message: 'B' },
-          { validator: val => val !== 'foo', message: 'C' },
+          { validator: (val) => val.length > 6, message: 'B' },
+          { validator: (val) => val !== 'foo', message: 'C' },
         ],
       };
     },
@@ -70,7 +70,7 @@ test('rules prop - message function', async () => {
     `,
     data() {
       return {
-        rules: [{ pattern: /\d{6}/, message: val => val }],
+        rules: [{ pattern: /\d{6}/, message: (val) => val }],
       };
     },
     methods: {
@@ -138,12 +138,12 @@ test('rules prop - async validator', async () => {
             validator: (value, rule) => {
               expect(value).toEqual('123');
               expect(typeof rule).toEqual('object');
-              return new Promise(resolve => resolve(true));
+              return new Promise((resolve) => resolve(true));
             },
             message: 'should pass',
           },
           {
-            validator: () => new Promise(resolve => resolve(false)),
+            validator: () => new Promise((resolve) => resolve(false)),
             message: 'should fail',
           },
         ],
@@ -380,4 +380,54 @@ test('scroll-to-error prop', async () => {
   await submitForm(wrapper);
 
   expect(fn).toHaveBeenCalledTimes(1);
+});
+
+test('show-error-message prop', async () => {
+  const wrapper = mountForm({
+    template: `
+      <zv-form :show-error-message="showErrorMessage">
+        <zv-field name="A" :rules="rulesA" value="" />
+        <zv-button native-type="submit" />
+      </zv-form>
+    `,
+    data() {
+      return {
+        ...getSimpleRules(),
+        showErrorMessage: false,
+      };
+    },
+  });
+
+  await submitForm(wrapper);
+  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
+
+  wrapper.setData({ showErrorMessage: true });
+
+  await submitForm(wrapper);
+  expect(wrapper.contains('.zv-field__error-message')).toBeTruthy();
+});
+
+test('show-error prop', async () => {
+  const wrapper = mountForm({
+    template: `
+      <zv-form :show-error="showError">
+        <zv-field name="A" :rules="rulesA" value="" />
+        <zv-button native-type="submit" />
+      </zv-form>
+    `,
+    data() {
+      return {
+        ...getSimpleRules(),
+        showError: false,
+      };
+    },
+  });
+
+  await submitForm(wrapper);
+  expect(wrapper.contains('.zv-field--error')).toBeFalsy();
+
+  wrapper.setData({ showError: true });
+
+  await submitForm(wrapper);
+  expect(wrapper.contains('.zv-field--error')).toBeTruthy();
 });

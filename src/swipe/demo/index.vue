@@ -111,7 +111,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../style/var.scss';
+@import '../../style/var';
 
 .demo-swipe {
   padding-bottom: 30px;

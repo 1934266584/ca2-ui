@@ -18,7 +18,7 @@ exports[`renders demo correctly 1`] = `
           </div>
         </a></div>
       <div class="zv-tree-select__content">
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-success zv-tree-select__selected">
             <!----></i></div>
         <div class="zv-ellipsis zv-tree-select__item">温州</div>
         <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
@@ -42,9 +42,9 @@ exports[`renders demo correctly 1`] = `
           </div>
         </a></div>
       <div class="zv-tree-select__content">
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-success zv-tree-select__selected">
             <!----></i></div>
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">温州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">温州<i class="zv-icon zv-icon-success zv-tree-select__selected">
             <!----></i></div>
         <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
         <div class="zv-ellipsis zv-tree-select__item">义乌</div>
@@ -63,10 +63,7 @@ exports[`renders demo correctly 1`] = `
           </div>
         </a></div>
       <div class="zv-tree-select__content">
-        <div class="zv-image"><img src="https://img.yzcdn.cn/vant/apple-1.jpg" class="zv-image__img">
-          <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
-              <!----></i></div>
-        </div>
+        <div class="zv-image"><img src="https://img.yzcdn.cn/vant/apple-1.jpg" class="zv-image__img"></div>
         <!---->
       </div>
     </div>
@@ -81,7 +78,7 @@ exports[`renders demo correctly 1`] = `
           </div>
         </a></div>
       <div class="zv-tree-select__content">
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-checked zv-tree-select__selected">
+        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-success zv-tree-select__selected">
             <!----></i></div>
         <div class="zv-ellipsis zv-tree-select__item">温州</div>
         <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
