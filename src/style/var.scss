@@ -683,16 +683,17 @@ $sticky-z-index: 99 !default;
 
 // Stepper
 $stepper-active-color: #e8e8e8 !default;
-$stepper-background-color: $active-color;
-$stepper-button-icon-color: $text-color;
+$stepper-background-color: $gray-9;
+$stepper-button-icon-color: $gray-6;
 $stepper-button-disabled-color: $background-color;
 $stepper-button-disabled-icon-color: $gray-5;
 $stepper-input-width: 32px !default;
 $stepper-input-height: 28px !default;
 $stepper-input-font-size: $font-size-md;
 $stepper-input-text-color: $text-color;
+$stepper-input-background-color: $white;
 $stepper-input-disabled-text-color: $gray-5;
-$stepper-input-disabled-background-color: $active-color;
+$stepper-input-disabled-background-color: $gray-9;
 $stepper-border-radius: $border-radius-md;
 
 // SubmitBar

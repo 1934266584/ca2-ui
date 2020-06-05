@@ -3,7 +3,10 @@
 .zv-stepper {
   font-size: 0;
   user-select: none;
-
+  border: 1px solid $gray-3;
+  border-radius: $padding-base;
+  display: inline-block;
+  
   &__minus,
   &__plus {
     position: relative;
@@ -11,7 +14,7 @@
     width: $stepper-input-height;
     height: $stepper-input-height;
     margin: 0;
-    padding: $padding-base;
+    padding: 0;
     color: $stepper-button-icon-color;
     vertical-align: middle;
     background-color: $stepper-background-color;
@@ -71,15 +74,16 @@
     box-sizing: border-box;
     width: $stepper-input-width;
     height: $stepper-input-height;
-    margin: 0 2px;
+    margin: 0;
     padding: 0;
     color: $stepper-input-text-color;
     font-size: $stepper-input-font-size;
     text-align: center;
     vertical-align: middle;
-    background-color: $stepper-background-color;
+    background-color: $stepper-input-background-color;
     border: 0;
-    border-width: 1px 0;
+    border-left: 1px solid $gray-3;
+    border-right: 1px solid $gray-3;
     border-radius: 0;
     -webkit-appearance: none;
 

@@ -70,6 +70,20 @@
       </zv-tabs>
     </demo-block>
 
+    <demo-block v-if="!isWeapp" :title="t('title7')">
+      <zv-tabs :active="active">
+        <zv-tab v-for="index in 2" :key="index">
+          <template #title>
+            {{ t('tab') }}
+            <div class="my-tag">
+              {{ parseInt(index + Math.random() * 100) }}
+            </div>
+          </template>
+          {{ t('content') }} {{ index }}
+        </zv-tab>
+      </zv-tabs>
+    </demo-block>
+
     <demo-block :title="t('title8')">
       <zv-tabs animated>
         <zv-tab :title="t('tab') + index" v-for="index in tabs" :key="index">
@@ -169,5 +183,15 @@ export default {
   .zv-tabs--card .zv-tab__pane {
     background-color: transparent;
   }
+}
+.my-tag {
+  display: inline-block;
+  height: 10px;
+  padding: 2px 2px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 10px;
+  background: red;
+  border-radius: 4px;
 }
 </style>

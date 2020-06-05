@@ -153,6 +153,34 @@ export default {
 </zv-tabs>
 ```
 
+### 自定义标签
+
+通过 title 插槽可以自定义标签内容
+
+```html
+<zv-tabs v-model="active">
+  <zv-tab v-for="index in 2" :key="index">
+    <template #title>
+      选项
+      <div class="my-tag">{{parseInt((index + Math.random() * 100))}}</div>
+    </template>
+    内容 {{ index }}
+  </zv-tab>
+</zv-tabs>
+```
+```css
+.my-tag {
+  display: inline-block;
+  height: 10px;
+  padding: 2px 2px;
+  line-height: 10px;
+  font-size: 10px;
+  background: red;
+  color: #ffffff;
+  border-radius: 4px;
+}
+```
+
 ### 切换动画
 
 通过`animated`属性可以开启切换标签内容时的转场动画
