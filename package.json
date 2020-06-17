@@ -1,6 +1,6 @@
 {
   "name": "@zvalley/zv-ui",
-  "version": "2.6.3-4",
+  "version": "2.6.4-1",
   "description": "Mobile UI Components built on Vue",
   "main": "lib/index.js",
   "module": "es/index.js",
