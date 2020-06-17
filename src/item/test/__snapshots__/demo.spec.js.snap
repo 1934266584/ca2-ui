@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders demo correctly 1`] = `
+<div>
+  <div>
+    <div class="zv-address-edit">
+      <div class="zv-address-edit__fields">
+        <div class="zv-cell zv-field">
+          <div class="zv-cell__title zv-field__label"><span>姓名</span></div>
+          <div class="zv-cell__value zv-field__value">
+            <div class="zv-field__body"><input type="text" placeholder="收货人姓名" class="zv-field__control"></div>
+          </div>
+        </div>
+        <div class="zv-cell zv-field">
+          <div class="zv-cell__title zv-field__label"><span>电话</span></div>
+          <div class="zv-cell__value zv-field__value">
+            <div class="zv-field__body"><input type="tel" placeholder="收货人手机号" class="zv-field__control"></div>
+          </div>
+        </div>
+        <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-field">
+          <div class="zv-cell__title zv-field__label"><span>地区</span></div>
+          <div class="zv-cell__value zv-field__value">
+            <div class="zv-field__body"><input type="text" readonly="readonly" placeholder="选择省 / 市 / 区" class="zv-field__control">
+              <div class="zv-field__right-icon"><i class="zv-icon zv-icon-arrow">
+                  <!----></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="zv-cell zv-address-edit-detail">
+          <div class="zv-cell__value zv-cell__value--alone">
+            <div class="zv-cell zv-field">
+              <div class="zv-cell__title zv-field__label"><span>详细地址</span></div>
+              <div class="zv-cell__value zv-field__value">
+                <div class="zv-field__body"><textarea rows="1" placeholder="街道门牌、楼层房间号等信息" class="zv-field__control" style="height: auto;"></textarea></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="zv-cell zv-field">
+          <div class="zv-cell__title zv-field__label"><span>邮政编码</span></div>
+          <div class="zv-cell__value zv-field__value">
+            <div class="zv-field__body"><input type="tel" placeholder="邮政编码" class="zv-field__control"></div>
+          </div>
+        </div>
+      </div>
+      <div class="zv-cell zv-cell--center zv-switch-cell zv-address-edit__default">
+        <div class="zv-cell__title"><span>设为默认收货地址</span></div>
+        <div class="zv-cell__value">
+          <div role="switch" aria-checked="false" class="zv-switch" style="font-size: 24px;">
+            <div class="zv-switch__node"></div>
+          </div>
+        </div>
+      </div>
+      <div class="zv-address-edit__buttons"><button class="zv-button zv-button--danger zv-button--normal zv-button--block zv-button--round"><span class="zv-button__text">保存</span></button><button class="zv-button zv-button--default zv-button--normal zv-button--block zv-button--round"><span class="zv-button__text">删除</span></button></div>
+    </div>
+  </div>
+</div>
+`;

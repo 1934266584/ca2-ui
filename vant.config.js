@@ -285,6 +285,14 @@ module.exports = {
                 path: 'tag',
                 title: 'Tag 标记',
               },
+              {
+                path: 'item',
+                title: 'Item 单元格',
+              },
+              {
+                path: 'item-panel',
+                title: 'ItemPanel 单元格组',
+              },
             ],
           },
           {
@@ -635,6 +643,14 @@ module.exports = {
               {
                 path: 'tag',
                 title: 'Tag',
+              },
+              {
+                path: 'item',
+                title: 'Item',
+              },
+              {
+                path: 'item-panel',
+                title: 'ItemPanel',
               },
             ],
           },
