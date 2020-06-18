@@ -35,10 +35,10 @@
 
 ```bash
 # Using npm
-npm i vant -S
+npm i @zvalley/zv-ui -S
 
 # Using yarn
-yarn add vant
+yarn add @zvalley/zv-ui
 ```
 
 ## Quickstart
@@ -51,7 +51,7 @@ import 'vant/lib/index.css';
 Vue.use(Button);
 ```
 
-See more in [Quickstart](https://youzan.github.io/vant#/en-US/quickstart).
+See more in [Quickstart](https://122687220.github.io/zv-ui/#/en-US/quickstart).
 
 ## Contribution
 
