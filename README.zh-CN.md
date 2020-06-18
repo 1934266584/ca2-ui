@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  🔥 <a href="https://youzan.github.io/vant">文档网站</a>
+  🔥 <a href="https://122687220.github.io/zv-ui/">文档网站</a>
 </p>
 
 ---
