@@ -16,8 +16,6 @@
   🔥 <a href="https://youzan.github.io/vant">文档网站</a>
   &nbsp;
   🇨🇳 <a href="./README.zh-CN.md">中文版介绍</a>
-  &nbsp;
-  🚀 <a href="https://github.com/youzan/vant-weapp" target="_blank">小程序版</a>
 </p>
 
 ---
@@ -62,33 +60,6 @@ Please make sure to read the [Contributing Guide](./.github/CONTRIBUTING.md) bef
 ## Browser Support
 
 Modern browsers and Android 4.0+, iOS 8.0+.
-
-## Ecosystem
-
-| Project | Description |
-|-----|------|
-| [vant-demo](https://github.com/youzan/vant-demo) | Official vant demo collection |
-| [vant-weapp](https://github.com/youzan/vant-weapp) | WeChat MiniProgram UI  |
-| [vant-cli](https://github.com/youzan/vant/tree/dev/packages/vant-cli) | Scaffold for UI library |
-| [vant-icons](https://github.com/youzan/vant/tree/dev/packages/vant-icons) | Vant icons |
-| [vant-touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator) | Using vant in desktop browsers |
-
-## Links
-
-* [Documentation](https://youzan.github.io/vant)
-* [Changelog](https://youzan.github.io/vant#/en-US/changelog)
-
-## Preview
-
-You can scan the following QR code to access the demo：
-
-<img src="https://img.yzcdn.cn/vant/preview_qrcode_20180528.png" width="220" height="220" >
-
-## Wechat Group
-
-Scan the qrcode to join our wechat discussion group, please note that you want to join Vant discussion group.
-
-<img src="https://img.yzcdn.cn/vant/wechat_20180606.png" width="220" height="292" >
 
 ## LICENSE
 
