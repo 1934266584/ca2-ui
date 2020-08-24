@@ -373,7 +373,7 @@ export default createComponent({
     }
 
     return (
-      <transition name="zv-fade" onAfterLeave={this.onClosed}>
+      <transition name="ca2-fade" onAfterLeave={this.onClosed}>
         <div vShow={this.value} class={[bem(), this.className]}>
           {this.genClose()}
           {this.genImages()}

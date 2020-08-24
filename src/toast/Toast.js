@@ -32,7 +32,7 @@ export default createComponent({
     },
     transition: {
       type: String,
-      default: 'zv-fade',
+      default: 'ca2-fade',
     },
     lockScroll: {
       type: Boolean,

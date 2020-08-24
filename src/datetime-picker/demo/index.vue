@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('title1')">
-      <zv-datetime-picker
+      <ca2-datetime-picker
         v-model="currentDate1"
         type="datetime"
         :min-date="minDate"
@@ -10,7 +10,7 @@
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <zv-datetime-picker
+      <ca2-datetime-picker
         v-model="currentDate2"
         type="date"
         :min-date="minDate"
@@ -19,7 +19,7 @@
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-datetime-picker
+      <ca2-datetime-picker
         v-model="currentDate3"
         type="year-month"
         :min-date="minDate"
@@ -29,7 +29,7 @@
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <zv-datetime-picker
+      <ca2-datetime-picker
         v-model="currentTime1"
         type="time"
         :min-hour="10"
@@ -38,7 +38,7 @@
     </demo-block>
 
     <demo-block :title="t('optionFilter')">
-      <zv-datetime-picker
+      <ca2-datetime-picker
         v-model="currentTime2"
         type="time"
         :filter="filter"

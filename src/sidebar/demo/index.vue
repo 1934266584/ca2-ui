@@ -1,42 +1,42 @@
 <template>
   <demo-section>
-    <zv-grid :column-num="2" :border="false">
-      <zv-grid-item>
+    <ca2-grid :column-num="2" :border="false">
+      <ca2-grid-item>
         <h3 class="demo-sidebar-title">{{ t('basicUsage') }}</h3>
-        <zv-sidebar v-model="activeKey1">
-          <zv-sidebar-item :title="t('title')" />
-          <zv-sidebar-item :title="t('title')" />
-          <zv-sidebar-item :title="t('title')" />
-        </zv-sidebar>
-      </zv-grid-item>
+        <ca2-sidebar v-model="activeKey1">
+          <ca2-sidebar-item :title="t('title')" />
+          <ca2-sidebar-item :title="t('title')" />
+          <ca2-sidebar-item :title="t('title')" />
+        </ca2-sidebar>
+      </ca2-grid-item>
 
-      <zv-grid-item>
+      <ca2-grid-item>
         <h3 class="demo-sidebar-title">{{ t('showBadge') }}</h3>
-        <zv-sidebar v-model="activeKey2">
-          <zv-sidebar-item :title="t('title')" dot />
-          <zv-sidebar-item :title="t('title')" badge="5" />
-          <zv-sidebar-item :title="t('title')" badge="99+" />
-        </zv-sidebar>
-      </zv-grid-item>
+        <ca2-sidebar v-model="activeKey2">
+          <ca2-sidebar-item :title="t('title')" dot />
+          <ca2-sidebar-item :title="t('title')" badge="5" />
+          <ca2-sidebar-item :title="t('title')" badge="99+" />
+        </ca2-sidebar>
+      </ca2-grid-item>
 
-      <zv-grid-item>
+      <ca2-grid-item>
         <h3 class="demo-sidebar-title">{{ t('disabled') }}</h3>
-        <zv-sidebar v-model="activeKey3">
-          <zv-sidebar-item :title="t('title')" />
-          <zv-sidebar-item :title="t('title')" disabled />
-          <zv-sidebar-item :title="t('title')" />
-        </zv-sidebar>
-      </zv-grid-item>
+        <ca2-sidebar v-model="activeKey3">
+          <ca2-sidebar-item :title="t('title')" />
+          <ca2-sidebar-item :title="t('title')" disabled />
+          <ca2-sidebar-item :title="t('title')" />
+        </ca2-sidebar>
+      </ca2-grid-item>
 
-      <zv-grid-item>
+      <ca2-grid-item>
         <h3 class="demo-sidebar-title">{{ t('changeEvent') }}</h3>
-        <zv-sidebar v-model="activeKey4" @change="onChange">
-          <zv-sidebar-item :title="t('title') + 1" />
-          <zv-sidebar-item :title="t('title') + 2" />
-          <zv-sidebar-item :title="t('title') + 3" />
-        </zv-sidebar>
-      </zv-grid-item>
-    </zv-grid>
+        <ca2-sidebar v-model="activeKey4" @change="onChange">
+          <ca2-sidebar-item :title="t('title') + 1" />
+          <ca2-sidebar-item :title="t('title') + 2" />
+          <ca2-sidebar-item :title="t('title') + 3" />
+        </ca2-sidebar>
+      </ca2-grid-item>
+    </ca2-grid>
   </demo-section>
 </template>
 
@@ -84,7 +84,7 @@ export default {
 .demo-sidebar {
   background-color: $white;
 
-  .zv-sidebar {
+  .ca2-sidebar {
     margin-left: $padding-md;
   }
 

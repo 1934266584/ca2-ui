@@ -4,10 +4,10 @@ test('submit event', async () => {
   const onSubmit = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form @submit="onSubmit">
-        <zv-field name="A" value="bar" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form @submit="onSubmit">
+        <ca2-field name="A" value="bar" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     methods: {
       onSubmit,

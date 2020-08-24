@@ -62,7 +62,7 @@ export default createComponent({
   },
 
   beforeCreate() {
-    this.uid = `zv-circle-gradient-${uid++}`;
+    this.uid = `ca2-circle-gradient-${uid++}`;
   },
 
   computed: {

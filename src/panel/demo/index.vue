@@ -1,39 +1,39 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
+      <ca2-panel :title="t('title')" :desc="t('desc')" :status="t('status')">
         <div>{{ t('content') }}</div>
-      </zv-panel>
+      </ca2-panel>
     </demo-block>
 
     <demo-block :title="t('advancedUsage')">
-      <zv-panel :title="t('title')" :desc="t('desc')" :status="t('status')" is-row>
+      <ca2-panel :title="t('title')" :desc="t('desc')" :status="t('status')" is-row>
         <div>{{ t('content') }}</div>
         <template #footer>
-          <zv-button size="small" plain type="primary">{{ t('button') }}</zv-button>
-          <zv-button size="small" type="primary">
+          <ca2-button size="small" plain type="primary">{{ t('button') }}</ca2-button>
+          <ca2-button size="small" type="primary">
             {{ t('button') }}
-          </zv-button>
+          </ca2-button>
         </template>
-      </zv-panel>
+      </ca2-panel>
 
       <div class="demo-panel-row">
-        <zv-panel>
+        <ca2-panel>
           <template #header>
-            <zv-cell :title="t('title')" :label="t('desc')">
+            <ca2-cell :title="t('title')" :label="t('desc')">
               <template #right-icon>
-                <zv-checkbox v-model="checked" />
+                <ca2-checkbox v-model="checked" />
               </template>
-            </zv-cell>
+            </ca2-cell>
           </template>
           <div>{{ t('content') }}</div>
           <template #footer>
-            <zv-button size="small" plain type="primary">{{ t('button') }}</zv-button>
-            <zv-button size="small" type="primary">
+            <ca2-button size="small" plain type="primary">{{ t('button') }}</ca2-button>
+            <ca2-button size="small" type="primary">
               {{ t('button') }}
-            </zv-button>
+            </ca2-button>
           </template>
-        </zv-panel>
+        </ca2-panel>
       </div>
     </demo-block>
   </demo-section>
@@ -51,15 +51,15 @@ export default {
 
 <style lang="scss">
 .demo-panel {
-  .zv-panel__footer {
+  .ca2-panel__footer {
     text-align: right;
 
-    .zv-button {
+    .ca2-button {
       margin-left: 8px;
     }
   }
 
-  .zv-panel__content {
+  .ca2-panel__content {
     padding: 20px;
   }
 

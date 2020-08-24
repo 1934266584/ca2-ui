@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`failed event 1`] = `
-<form class="zv-form">
-  <div class="zv-cell zv-field zv-field--error">
-    <div class="zv-cell__value zv-cell__value--alone zv-field__value">
-      <div class="zv-field__body"><input type="text" name="A" class="zv-field__control"></div>
-      <div class="zv-field__error-message">A failed</div>
+<form class="ca2-form">
+  <div class="ca2-cell ca2-field ca2-field--error">
+    <div class="ca2-cell__value ca2-cell__value--alone ca2-field__value">
+      <div class="ca2-field__body"><input type="text" name="A" class="ca2-field__control"></div>
+      <div class="ca2-field__error-message">A failed</div>
     </div>
   </div>
-  <div class="zv-cell zv-field zv-field--error">
-    <div class="zv-cell__value zv-cell__value--alone zv-field__value">
-      <div class="zv-field__body"><input type="text" name="B" class="zv-field__control"></div>
-      <div class="zv-field__error-message">B failed</div>
+  <div class="ca2-cell ca2-field ca2-field--error">
+    <div class="ca2-cell__value ca2-cell__value--alone ca2-field__value">
+      <div class="ca2-field__body"><input type="text" name="B" class="ca2-field__control"></div>
+      <div class="ca2-field__error-message">B failed</div>
     </div>
-  </div> <button type="submit" class="zv-button zv-button--default zv-button--normal"></button>
+  </div> <button type="submit" class="ca2-button ca2-button--default ca2-button--normal"></button>
 </form>
 `;

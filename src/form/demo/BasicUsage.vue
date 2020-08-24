@@ -1,14 +1,14 @@
 <template>
   <demo-block :title="t('basicUsage')">
-    <zv-form @submit="onSubmit" @failed="onFailed">
-      <zv-field
+    <ca2-form @submit="onSubmit" @failed="onFailed">
+      <ca2-field
         v-model="username"
         name="username"
         :label="t('username')"
         :rules="[{ required: true, message: t('requireUsername') }]"
         :placeholder="t('username')"
       />
-      <zv-field
+      <ca2-field
         v-model="password"
         type="password"
         name="password"
@@ -17,11 +17,11 @@
         :placeholder="t('password')"
       />
       <div style="margin: 16px 16px 0;">
-        <zv-button round block type="info" native-type="submit">
+        <ca2-button round block type="info" native-type="submit">
           {{ t('submit') }}
-        </zv-button>
+        </ca2-button>
       </div>
-    </zv-form>
+    </ca2-form>
   </demo-block>
 </template>
 

@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-field {
+.ca2-field {
   &__label {
     flex: none;
     box-sizing: border-box;
@@ -104,8 +104,8 @@
     cursor: pointer;
   }
 
-  &__left-icon .zv-icon,
-  &__right-icon .zv-icon {
+  &__left-icon .ca2-icon,
+  &__right-icon .ca2-icon {
     display: block;
     min-width: 1em;
     font-size: $field-icon-size;
@@ -153,7 +153,7 @@
   }
 
   &--error {
-    .zv-field__control {
+    .ca2-field__control {
       &,
       &::placeholder {
         color: $field-input-error-text-color;
@@ -163,7 +163,7 @@
   }
 
   &--min-height {
-    .zv-field__control {
+    .ca2-field__control {
       min-height: $field-text-area-min-height;
     }
   }

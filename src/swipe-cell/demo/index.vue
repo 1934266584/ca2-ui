@@ -2,21 +2,21 @@
   <div>
     <demo-section>
       <demo-block :title="t('basicUsage')">
-        <zv-swipe-cell>
+        <ca2-swipe-cell>
           <template #left>
-            <zv-button square type="primary" :text="t('select')" />
+            <ca2-button square type="primary" :text="t('select')" />
           </template>
-          <zv-cell :border="false" :title="t('title')" :value="t('content')" />
+          <ca2-cell :border="false" :title="t('title')" :value="t('content')" />
           <template #right>
-            <zv-button square type="danger" :text="t('delete')" />
-            <zv-button square type="primary" :text="t('collect')" />
+            <ca2-button square type="danger" :text="t('delete')" />
+            <ca2-button square type="primary" :text="t('collect')" />
           </template>
-        </zv-swipe-cell>
+        </ca2-swipe-cell>
       </demo-block>
 
       <demo-block :title="t('customContent')">
-        <zv-swipe-cell>
-          <zv-card
+        <ca2-swipe-cell>
+          <ca2-card
             num="2"
             price="2.00"
             :desc="t('desc')"
@@ -24,26 +24,26 @@
             :thumb="imageURL"
           />
           <template #right>
-            <zv-button
+            <ca2-button
               square
               type="danger"
               class="delete-button"
               :text="t('delete')"
             />
           </template>
-        </zv-swipe-cell>
+        </ca2-swipe-cell>
       </demo-block>
 
       <demo-block :title="t('beforeClose')">
-        <zv-swipe-cell :before-close="beforeClose">
+        <ca2-swipe-cell :before-close="beforeClose">
           <template #left>
-            <zv-button square type="primary" :text="t('select')" />
+            <ca2-button square type="primary" :text="t('select')" />
           </template>
-          <zv-cell :border="false" :title="t('title')" :value="t('content')" />
+          <ca2-cell :border="false" :title="t('title')" :value="t('content')" />
           <template #right>
-            <zv-button square type="danger" :text="t('delete')" />
+            <ca2-button square type="danger" :text="t('delete')" />
           </template>
-        </zv-swipe-cell>
+        </ca2-swipe-cell>
       </demo-block>
     </demo-section>
   </div>
@@ -109,7 +109,7 @@ export default {
 .demo-swipe-cell {
   user-select: none;
 
-  .zv-card {
+  .ca2-card {
     margin: 0;
     background-color: $white;
   }

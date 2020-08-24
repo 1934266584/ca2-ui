@@ -1,61 +1,61 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-row>
-        <zv-image width="100" height="100" :src="image" />
-      </zv-row>
+      <ca2-row>
+        <ca2-image width="100" height="100" :src="image" />
+      </ca2-row>
     </demo-block>
 
     <demo-block :title="t('fitMode')">
-      <zv-row gutter="20">
-        <zv-col v-for="fit in fits" span="8" :key="fit">
-          <zv-image :fit="fit" width="100%" height="27vw" :src="image" />
+      <ca2-row gutter="20">
+        <ca2-col v-for="fit in fits" span="8" :key="fit">
+          <ca2-image :fit="fit" width="100%" height="27vw" :src="image" />
           <div class="text">{{ fit }}</div>
-        </zv-col>
-      </zv-row>
+        </ca2-col>
+      </ca2-row>
     </demo-block>
 
     <demo-block :title="t('round')">
-      <zv-row gutter="20">
-        <zv-col v-for="fit in fits" span="8" :key="fit">
-          <zv-image round :fit="fit" width="100%" height="27vw" :src="image" />
+      <ca2-row gutter="20">
+        <ca2-col v-for="fit in fits" span="8" :key="fit">
+          <ca2-image round :fit="fit" width="100%" height="27vw" :src="image" />
           <div class="text">{{ fit }}</div>
-        </zv-col>
-      </zv-row>
+        </ca2-col>
+      </ca2-row>
     </demo-block>
 
     <demo-block :title="t('loading')">
-      <zv-row gutter="20">
-        <zv-col span="8">
-          <zv-image width="100%" height="27vw" />
+      <ca2-row gutter="20">
+        <ca2-col span="8">
+          <ca2-image width="100%" height="27vw" />
           <div class="text">{{ t('defaultTip') }}</div>
-        </zv-col>
+        </ca2-col>
 
-        <zv-col span="8">
-          <zv-image width="100%" height="27vw">
+        <ca2-col span="8">
+          <ca2-image width="100%" height="27vw">
             <template #loading>
-              <zv-loading type="spinner" size="20" />
+              <ca2-loading type="spinner" size="20" />
             </template>
-          </zv-image>
+          </ca2-image>
           <div class="text">{{ t('customTip') }}</div>
-        </zv-col>
-      </zv-row>
+        </ca2-col>
+      </ca2-row>
     </demo-block>
 
     <demo-block :title="t('error')">
-      <zv-row gutter="20">
-        <zv-col span="8">
-          <zv-image width="100%" height="27vw" src="x" />
+      <ca2-row gutter="20">
+        <ca2-col span="8">
+          <ca2-image width="100%" height="27vw" src="x" />
           <div class="text">{{ t('defaultTip') }}</div>
-        </zv-col>
+        </ca2-col>
 
-        <zv-col span="8">
-          <zv-image width="100%" height="27vw" src="x">
+        <ca2-col span="8">
+          <ca2-image width="100%" height="27vw" src="x">
             <template #error>{{ t('loadFail') }}</template>
-          </zv-image>
+          </ca2-image>
           <div class="text">{{ t('customTip') }}</div>
-        </zv-col>
-      </zv-row>
+        </ca2-col>
+      </ca2-row>
     </demo-block>
   </demo-section>
 </template>
@@ -99,11 +99,11 @@ export default {
   overflow-x: hidden;
   background-color: $white;
 
-  .zv-row {
+  .ca2-row {
     padding: 0 $padding-md;
   }
 
-  .zv-col {
+  .ca2-col {
     margin-bottom: 20px;
   }
 

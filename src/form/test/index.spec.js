@@ -4,15 +4,15 @@ test('dynamic add/remove fileds', async () => {
   const onSubmit = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form @submit="onSubmit">
-        <zv-field
+      <ca2-form @submit="onSubmit">
+        <ca2-field
           v-for="item in list"
           :key="item"
           :name="item"
           value=""
         />
-        <zv-button native-type="submit" />
-      </zv-form>
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return { list: ['A'] };
@@ -40,20 +40,20 @@ test('dynamic add fileds when validate-first', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form validate-first @failed="onFailed">
-        <zv-field
+      <ca2-form validate-first @failed="onFailed">
+        <ca2-field
           v-if="show"
           name="A"
           value=""
           :rules="[{ required: true, message: 'A' }]"
         />
-        <zv-field
+        <ca2-field
           name="B"
           value=""
           :rules="[{ required: true, message: 'B' }]"
         />
-        <zv-button native-type="submit" />
-      </zv-form>
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {

@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('ellipsis')">
-      <div class="zv-ellipsis">{{ t('text1') }}</div>
-      <div class="zv-multi-ellipsis--l2">{{ t('text2') }}</div>
+      <div class="ca2-ellipsis">{{ t('text1') }}</div>
+      <div class="ca2-multi-ellipsis--l2">{{ t('text2') }}</div>
     </demo-block>
 
     <demo-block :title="t('hairline')">
-      <div class="zv-hairline--top" />
+      <div class="ca2-hairline--top" />
     </demo-block>
 
     <demo-block :title="t('animation')">
-      <zv-cell is-link title="Fade" @click="animate('zv-fade')" />
-      <zv-cell is-link title="Slide Up" @click="animate('zv-slide-up')" />
-      <zv-cell is-link title="Slide Down" @click="animate('zv-slide-down')" />
-      <zv-cell is-link title="Slide Left" @click="animate('zv-slide-left')" />
-      <zv-cell
+      <ca2-cell is-link title="Fade" @click="animate('ca2-fade')" />
+      <ca2-cell is-link title="Slide Up" @click="animate('ca2-slide-up')" />
+      <ca2-cell is-link title="Slide Down" @click="animate('ca2-slide-down')" />
+      <ca2-cell is-link title="Slide Left" @click="animate('ca2-slide-left')" />
+      <ca2-cell
         is-link
         title="Slide Right"
-        @click="animate('zv-slide-right')"
+        @click="animate('ca2-slide-right')"
       />
     </demo-block>
 
@@ -75,19 +75,19 @@ export default {
 @import '../../style/var.scss';
 
 .demo-style {
-  .zv-ellipsis,
-  .zv-multi-ellipsis--l2 {
+  .ca2-ellipsis,
+  .ca2-multi-ellipsis--l2 {
     max-width: 300px;
     margin-left: $padding-md;
     font-size: 14px;
     line-height: 18px;
   }
 
-  .zv-ellipsis {
+  .ca2-ellipsis {
     margin-bottom: $padding-md;
   }
 
-  .zv-hairline--top {
+  .ca2-hairline--top {
     height: 30px;
     background-color: $white;
 

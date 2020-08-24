@@ -17,10 +17,10 @@ Vue.use(RadioGroup);
 通过`v-model`绑定值当前选中项的 name
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1">单选框 1</zv-radio>
-  <zv-radio name="2">单选框 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1">单选框 1</ca2-radio>
+  <ca2-radio name="2">单选框 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ```js
@@ -38,10 +38,10 @@ export default {
 将`direction`属性设置为`horizontal`后，单选框组会变成水平排列
 
 ```html
-<zv-radio-group v-model="radio" direction="horizontal">
-  <zv-radio name="1">单选框 1</zv-radio>
-  <zv-radio name="2">单选框 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio" direction="horizontal">
+  <ca2-radio name="1">单选框 1</ca2-radio>
+  <ca2-radio name="2">单选框 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### 禁用状态
@@ -49,10 +49,10 @@ export default {
 通过`disabled`属性禁止选项切换，在`Radio`上设置`disabled`可以禁用单个选项
 
 ```html
-<zv-radio-group v-model="radio" disabled>
-  <zv-radio name="1">单选框 1</zv-radio>
-  <zv-radio name="2">单选框 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio" disabled>
+  <ca2-radio name="1">单选框 1</ca2-radio>
+  <ca2-radio name="2">单选框 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### 自定义形状
@@ -60,10 +60,10 @@ export default {
 将`shape`属性设置为`square`，单选框的形状会变成方形
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" shape="square">单选框 1</zv-radio>
-  <zv-radio name="2" shape="square">单选框 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" shape="square">单选框 1</ca2-radio>
+  <ca2-radio name="2" shape="square">单选框 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### 自定义颜色
@@ -71,10 +71,10 @@ export default {
 通过`checked-color`属性设置选中状态的图标颜色
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" checked-color="#07c160">单选框 1</zv-radio>
-  <zv-radio name="2" checked-color="#07c160">单选框 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" checked-color="#07c160">单选框 1</ca2-radio>
+  <ca2-radio name="2" checked-color="#07c160">单选框 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### 自定义大小
@@ -82,10 +82,10 @@ export default {
 通过`icon-size`属性可以自定义图标的大小
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" icon-size="24px">单选框 1</zv-radio>
-  <zv-radio name="2" icon-size="24px">单选框 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" icon-size="24px">单选框 1</ca2-radio>
+  <ca2-radio name="2" icon-size="24px">单选框 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### 自定义图标
@@ -93,8 +93,8 @@ export default {
 通过`icon`插槽自定义图标，并通过`slotProps`判断是否为选中状态
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1">
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1">
     单选框 1
     <template #icon="props">
       <img
@@ -102,8 +102,8 @@ export default {
         :src="props.checked ? activeIcon : inactiveIcon"
       >
     </template>
-  </zv-radio>
-  <zv-radio name="2">
+  </ca2-radio>
+  <ca2-radio name="2">
     单选框 2
     <template #icon="props">
       <img
@@ -111,8 +111,8 @@ export default {
         :src="props.checked ? activeIcon : inactiveIcon"
       />
     </template>
-  </zv-radio>
-</zv-radio-group>
+  </ca2-radio>
+</ca2-radio-group>
 
 <style>
   .img-icon {
@@ -138,10 +138,10 @@ export default {
 设置`label-disabled`属性后，点击图标以外的内容不会触发单选框切换
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" label-disabled>单选框 1</zv-radio>
-  <zv-radio name="2" label-disabled>单选框 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" label-disabled>单选框 1</ca2-radio>
+  <ca2-radio name="2" label-disabled>单选框 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### 与 Cell 组件一起使用
@@ -149,20 +149,20 @@ export default {
 此时你需要再引入`Cell`和`CellGroup`组件
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-cell-group>
-    <zv-cell title="单选框 1" clickable @click="radio = '1'">
+<ca2-radio-group v-model="radio">
+  <ca2-cell-group>
+    <ca2-cell title="单选框 1" clickable @click="radio = '1'">
       <template #right-icon>      
-        <zv-radio name="1" />
+        <ca2-radio name="1" />
       </template>
-    </zv-cell>
-    <zv-cell title="单选框 2" clickable @click="radio = '2'">
+    </ca2-cell>
+    <ca2-cell title="单选框 2" clickable @click="radio = '2'">
       <template #right-icon>
-        <zv-radio name="2" />
+        <ca2-radio name="2" />
       </template>
-    </zv-cell>
-  </zv-cell-group>
-</zv-radio-group>
+    </ca2-cell>
+  </ca2-cell-group>
+</ca2-radio-group>
 ```
 
 ## API

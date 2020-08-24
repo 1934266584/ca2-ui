@@ -16,7 +16,7 @@ Vue.use(CountDown);
 `time`属性表示倒计时总时长，单位为毫秒
 
 ```html
-<zv-count-down :time="time" />
+<ca2-count-down :time="time" />
 ```
 
 ```js
@@ -34,7 +34,7 @@ export default {
 通过`format`属性设置倒计时文本的内容
 
 ```html
-<zv-count-down :time="time" format="DD 天 HH 时 mm 分 ss 秒" />
+<ca2-count-down :time="time" format="DD 天 HH 时 mm 分 ss 秒" />
 ```
 
 ### 毫秒级渲染
@@ -42,7 +42,7 @@ export default {
 倒计时默认每秒渲染一次，设置`millisecond`属性可以开启毫秒级渲染
 
 ```html
-<zv-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+<ca2-count-down millisecond :time="time" format="HH:mm:ss:SS" />
 ```
 
 ### 自定义样式
@@ -50,13 +50,13 @@ export default {
 通过插槽自定义倒计时的样式，`timeData`对象格式见下方表格
 
 ```html
-<zv-count-down :time="time">
+<ca2-count-down :time="time">
   <template v-slot="timeData">
     <span class="item">{{ timeData.hours }}</span>
     <span class="item">{{ timeData.minutes }}</span>
     <span class="item">{{ timeData.seconds }}</span>
   </template>
-</zv-count-down>
+</ca2-count-down>
 
 <style>
 .item {
@@ -76,7 +76,7 @@ export default {
 通过 ref 获取到组件实例后，可以调用`start`、`pause`、`reset`方法
 
 ```html
-<zv-count-down
+<ca2-count-down
   ref="countDown"
   millisecond
   :time="3000"
@@ -84,11 +84,11 @@ export default {
   format="ss:SSS"
   @finish="finish"
 />
-<zv-grid clickable>
-  <zv-grid-item text="开始" icon="play-circle-o" @click="start" />
-  <zv-grid-item text="暂停" icon="pause-circle-o" @click="pause" />
-  <zv-grid-item text="重置" icon="replay" @click="reset" />
-</zv-grid>
+<ca2-grid clickable>
+  <ca2-grid-item text="开始" icon="play-circle-o" @click="start" />
+  <ca2-grid-item text="暂停" icon="pause-circle-o" @click="pause" />
+  <ca2-grid-item text="重置" icon="replay" @click="reset" />
+</ca2-grid>
 ```
 
 ```js

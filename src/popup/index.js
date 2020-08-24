@@ -54,7 +54,7 @@ export default createComponent({
 
     const transitionName =
       this.transition ||
-      (isCenter ? 'zv-fade' : `zv-popup-slide-${position}`);
+      (isCenter ? 'ca2-fade' : `ca2-popup-slide-${position}`);
 
     const style = {};
     if (isDef(duration)) {

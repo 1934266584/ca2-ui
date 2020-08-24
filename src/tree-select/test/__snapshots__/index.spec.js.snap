@@ -1,36 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`content slot 1`] = `
-<div class="zv-tree-select" style="height: 300px;">
-  <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
-      <div class="zv-sidebar-item__text">group1
+<div class="ca2-tree-select" style="height: 300px;">
+  <div class="ca2-sidebar ca2-tree-select__nav"><a class="ca2-sidebar-item ca2-sidebar-item--select ca2-tree-select__nav-item">
+      <div class="ca2-sidebar-item__text">group1
         <!---->
       </div>
     </a></div>
-  <div class="zv-tree-select__content">Custom Content</div>
+  <div class="ca2-tree-select__content">Custom Content</div>
 </div>
 `;
 
 exports[`empty list 1`] = `
-<div class="zv-tree-select" style="height: 300px;">
-  <div class="zv-sidebar zv-tree-select__nav"></div>
-  <div class="zv-tree-select__content"></div>
+<div class="ca2-tree-select" style="height: 300px;">
+  <div class="ca2-sidebar ca2-tree-select__nav"></div>
+  <div class="ca2-tree-select__content"></div>
 </div>
 `;
 
 exports[`height prop 1`] = `
-<div class="zv-tree-select" style="height: 100vh;">
-  <div class="zv-sidebar zv-tree-select__nav"></div>
-  <div class="zv-tree-select__content"></div>
+<div class="ca2-tree-select" style="height: 100vh;">
+  <div class="ca2-sidebar ca2-tree-select__nav"></div>
+  <div class="ca2-tree-select__content"></div>
 </div>
 `;
 
 exports[`nav info 1`] = `
-<div class="zv-tree-select" style="height: 300px;">
-  <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
-      <div class="zv-sidebar-item__text">group1<div class="zv-info zv-sidebar-item__info">3</div>
+<div class="ca2-tree-select" style="height: 300px;">
+  <div class="ca2-sidebar ca2-tree-select__nav"><a class="ca2-sidebar-item ca2-sidebar-item--select ca2-tree-select__nav-item">
+      <div class="ca2-sidebar-item__text">group1<div class="ca2-info ca2-sidebar-item__info">3</div>
       </div>
     </a></div>
-  <div class="zv-tree-select__content"></div>
+  <div class="ca2-tree-select__content"></div>
 </div>
 `;

@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.zv-number-keyboard {
+.ca2-number-keyboard {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -73,7 +73,7 @@
   }
 }
 
-.zv-key {
+.ca2-key {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +104,7 @@
     color: $number-keyboard-button-text-color;
     background-color: $number-keyboard-button-background-color;
 
-    &.zv-key--active {
+    &.ca2-key--active {
       background-color: darken($number-keyboard-button-background-color, 10%);
     }
   }

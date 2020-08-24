@@ -14,7 +14,7 @@ Vue.use(SubmitBar);
 ### 基础用法
 
 ```html
-<zv-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" />
+<ca2-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit" />
 ```
 
 ### 禁用状态
@@ -22,7 +22,7 @@ Vue.use(SubmitBar);
 禁用状态下不会触发`submit`事件
 
 ```html
-<zv-submit-bar
+<ca2-submit-bar
   disabled
   :price="3050"
   button-text="提交订单"
@@ -37,7 +37,7 @@ Vue.use(SubmitBar);
 加载状态下不会触发`submit`事件
 
 ```html
-<zv-submit-bar
+<ca2-submit-bar
   loading
   :price="3050"
   button-text="提交订单"
@@ -50,12 +50,12 @@ Vue.use(SubmitBar);
 通过插槽插入自定义内容
 
 ```html
-<zv-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
-  <zv-checkbox v-model="checked">全选</zv-checkbox>
+<ca2-submit-bar :price="3050" button-text="提交订单" @submit="onSubmit">
+  <ca2-checkbox v-model="checked">全选</ca2-checkbox>
   <template #tip>
     你的收货地址不支持同城送, <span @click="onClickEditAddress">修改地址</span>
   </template>
-</zv-submit-bar>
+</ca2-submit-bar>
 ```
 
 ## API

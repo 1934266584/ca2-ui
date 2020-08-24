@@ -1,6 +1,6 @@
 <template>
-  <div class="zv-hairline--bottom">
-    <zv-field
+  <div class="ca2-hairline--bottom">
+    <ca2-field
       readonly
       clickable
       name="datetimePicker"
@@ -10,13 +10,13 @@
       :placeholder="t('placeholder')"
       @click="showPicker = true"
     />
-    <zv-popup v-model="showPicker" position="bottom">
-      <zv-datetime-picker
+    <ca2-popup v-model="showPicker" position="bottom">
+      <ca2-datetime-picker
         type="time"
         @confirm="onConfirm"
         @cancel="onCancel"
       />
-    </zv-popup>
+    </ca2-popup>
   </div>
 </template>
 

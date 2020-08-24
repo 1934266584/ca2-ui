@@ -3,91 +3,91 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <form class="zv-form">
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>用户名</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body"><input type="text" name="username" placeholder="用户名" class="zv-field__control"></div>
+    <form class="ca2-form">
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>用户名</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body"><input type="text" name="username" placeholder="用户名" class="ca2-field__control"></div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>密码</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body"><input type="password" name="password" placeholder="密码" class="zv-field__control"></div>
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>密码</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body"><input type="password" name="password" placeholder="密码" class="ca2-field__control"></div>
         </div>
       </div>
-      <div style="margin: 16px 16px 0px;"><button type="submit" class="zv-button zv-button--info zv-button--normal zv-button--block zv-button--round"><span class="zv-button__text">
+      <div style="margin: 16px 16px 0px;"><button type="submit" class="ca2-button ca2-button--info ca2-button--normal ca2-button--block ca2-button--round"><span class="ca2-button__text">
         提交
       </span></button></div>
     </form>
   </div>
   <div>
-    <form class="zv-form">
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>文本</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body"><input type="text" name="pattern" placeholder="正则校验" class="zv-field__control"></div>
+    <form class="ca2-form">
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>文本</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body"><input type="text" name="pattern" placeholder="正则校验" class="ca2-field__control"></div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>文本</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body"><input type="text" name="validator" placeholder="函数校验" class="zv-field__control"></div>
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>文本</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body"><input type="text" name="validator" placeholder="函数校验" class="ca2-field__control"></div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>文本</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body"><input type="text" name="asyncValidator" placeholder="异步函数校验" class="zv-field__control"></div>
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>文本</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body"><input type="text" name="asyncValidator" placeholder="异步函数校验" class="ca2-field__control"></div>
         </div>
       </div>
-      <div style="margin: 16px 16px 0px;"><button type="submit" class="zv-button zv-button--info zv-button--normal zv-button--block zv-button--round"><span class="zv-button__text">
+      <div style="margin: 16px 16px 0px;"><button type="submit" class="ca2-button ca2-button--info ca2-button--normal ca2-button--block ca2-button--round"><span class="ca2-button__text">
         提交
       </span></button></div>
     </form>
   </div>
   <div>
-    <form class="zv-form">
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>开关</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div role="switch" aria-checked="false" class="zv-switch" style="font-size: 20px;">
-                <div class="zv-switch__node"></div>
+    <form class="ca2-form">
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>开关</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div role="switch" aria-checked="false" class="ca2-switch" style="font-size: 20px;">
+                <div class="ca2-switch__node"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>复选框</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div role="checkbox" tabindex="0" aria-checked="false" class="zv-checkbox">
-                <div class="zv-checkbox__icon zv-checkbox__icon--square"><i class="zv-icon zv-icon-success">
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>复选框</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div role="checkbox" tabindex="0" aria-checked="false" class="ca2-checkbox">
+                <div class="ca2-checkbox__icon ca2-checkbox__icon--square"><i class="ca2-icon ca2-icon-success">
                     <!----></i></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>复选框组</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div class="zv-checkbox-group zv-checkbox-group--horizontal">
-                <div role="checkbox" tabindex="0" aria-checked="false" class="zv-checkbox zv-checkbox--horizontal">
-                  <div class="zv-checkbox__icon zv-checkbox__icon--square"><i class="zv-icon zv-icon-success">
-                      <!----></i></div><span class="zv-checkbox__label">
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>复选框组</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div class="ca2-checkbox-group ca2-checkbox-group--horizontal">
+                <div role="checkbox" tabindex="0" aria-checked="false" class="ca2-checkbox ca2-checkbox--horizontal">
+                  <div class="ca2-checkbox__icon ca2-checkbox__icon--square"><i class="ca2-icon ca2-icon-success">
+                      <!----></i></div><span class="ca2-checkbox__label">
             复选框 1
           </span>
                 </div>
-                <div role="checkbox" tabindex="0" aria-checked="false" class="zv-checkbox zv-checkbox--horizontal">
-                  <div class="zv-checkbox__icon zv-checkbox__icon--square"><i class="zv-icon zv-icon-success">
-                      <!----></i></div><span class="zv-checkbox__label">
+                <div role="checkbox" tabindex="0" aria-checked="false" class="ca2-checkbox ca2-checkbox--horizontal">
+                  <div class="ca2-checkbox__icon ca2-checkbox__icon--square"><i class="ca2-icon ca2-icon-success">
+                      <!----></i></div><span class="ca2-checkbox__label">
             复选框 2
           </span>
                 </div>
@@ -96,65 +96,65 @@ exports[`renders demo correctly 1`] = `
           </div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>单选框</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div role="radiogroup" class="zv-radio-group zv-radio-group--horizontal">
-                <div role="radio" tabindex="0" aria-checked="true" class="zv-radio zv-radio--horizontal">
-                  <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success">
-                      <!----></i></div><span class="zv-radio__label">单选框 1</span>
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>单选框</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div role="radiogroup" class="ca2-radio-group ca2-radio-group--horizontal">
+                <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio ca2-radio--horizontal">
+                  <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success">
+                      <!----></i></div><span class="ca2-radio__label">单选框 1</span>
                 </div>
-                <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio zv-radio--horizontal">
-                  <div class="zv-radio__icon zv-radio__icon--round"><i class="zv-icon zv-icon-success">
-                      <!----></i></div><span class="zv-radio__label">单选框 2</span>
+                <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio ca2-radio--horizontal">
+                  <div class="ca2-radio__icon ca2-radio__icon--round"><i class="ca2-icon ca2-icon-success">
+                      <!----></i></div><span class="ca2-radio__label">单选框 2</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>步进器</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div class="zv-stepper"><button type="button" class="zv-stepper__minus zv-stepper__minus--disabled"></button><input type="text" role="spinbutton" inputmode="decimal" aria-valuemax="Infinity" aria-valuemin="1" aria-valuenow="1" class="zv-stepper__input"><button type="button" class="zv-stepper__plus"></button></div>
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>步进器</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div class="ca2-stepper"><button type="button" class="ca2-stepper__minus ca2-stepper__minus--disabled"></button><input type="text" role="spinbutton" inputmode="decimal" aria-valuemax="Infinity" aria-valuemin="1" aria-valuenow="1" class="ca2-stepper__input"><button type="button" class="ca2-stepper__plus"></button></div>
             </div>
           </div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>评分</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div tabindex="0" role="radiogroup" class="zv-rate">
-                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>评分</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div tabindex="0" role="radiogroup" class="ca2-rate">
+                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
                     <!----></i></div>
-                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
                     <!----></i></div>
-                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
                     <!----></i></div>
-                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star-o zv-rate__icon">
+                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
                     <!----></i></div>
-                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star-o zv-rate__icon">
+                <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
                     <!----></i></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>滑块</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div class="zv-slider">
-                <div class="zv-slider__bar" style="width: 50%;">
-                  <div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="100" aria-orientation="horizontal" class="zv-slider__button-wrapper">
-                    <div class="zv-slider__button"></div>
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>滑块</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div class="ca2-slider">
+                <div class="ca2-slider__bar" style="width: 50%;">
+                  <div role="slider" tabindex="0" aria-valuemin="0" aria-valuenow="50" aria-valuemax="100" aria-orientation="horizontal" class="ca2-slider__button-wrapper">
+                    <div class="ca2-slider__button"></div>
                   </div>
                 </div>
               </div>
@@ -162,65 +162,65 @@ exports[`renders demo correctly 1`] = `
           </div>
         </div>
       </div>
-      <div class="zv-cell zv-field">
-        <div class="zv-cell__title zv-field__label"><span>文件上传</span></div>
-        <div class="zv-cell__value zv-field__value">
-          <div class="zv-field__body">
-            <div class="zv-field__control zv-field__control--custom">
-              <div class="zv-uploader">
-                <div class="zv-uploader__wrapper">
-                  <div class="zv-uploader__preview">
-                    <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/leaf.jpg" class="zv-image__img" style="object-fit: cover;">
-                      <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+      <div class="ca2-cell ca2-field">
+        <div class="ca2-cell__title ca2-field__label"><span>文件上传</span></div>
+        <div class="ca2-cell__value ca2-field__value">
+          <div class="ca2-field__body">
+            <div class="ca2-field__control ca2-field__control--custom">
+              <div class="ca2-uploader">
+                <div class="ca2-uploader__wrapper">
+                  <div class="ca2-uploader__preview">
+                    <div class="ca2-image ca2-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/leaf.jpg" class="ca2-image__img" style="object-fit: cover;">
+                      <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
                           <!----></i></div>
-                    </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+                    </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
                       <!----></i>
                   </div>
-                  <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-                      <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+                  <div class="ca2-uploader__upload"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+                      <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="zv-hairline--bottom">
-        <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-cell--borderless zv-field">
-          <div class="zv-cell__title zv-field__label"><span>选择器</span></div>
-          <div class="zv-cell__value zv-field__value">
-            <div class="zv-field__body"><input type="text" name="picker" readonly="readonly" placeholder="点击选择城市" class="zv-field__control"></div>
+      <div class="ca2-hairline--bottom">
+        <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-cell--borderless ca2-field">
+          <div class="ca2-cell__title ca2-field__label"><span>选择器</span></div>
+          <div class="ca2-cell__value ca2-field__value">
+            <div class="ca2-field__body"><input type="text" name="picker" readonly="readonly" placeholder="点击选择城市" class="ca2-field__control"></div>
           </div>
         </div>
         <!---->
       </div>
-      <div class="zv-hairline--bottom">
-        <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-cell--borderless zv-field">
-          <div class="zv-cell__title zv-field__label"><span>时间选择</span></div>
-          <div class="zv-cell__value zv-field__value">
-            <div class="zv-field__body"><input type="text" name="datetimePicker" readonly="readonly" placeholder="点击选择时间" class="zv-field__control"></div>
+      <div class="ca2-hairline--bottom">
+        <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-cell--borderless ca2-field">
+          <div class="ca2-cell__title ca2-field__label"><span>时间选择</span></div>
+          <div class="ca2-cell__value ca2-field__value">
+            <div class="ca2-field__body"><input type="text" name="datetimePicker" readonly="readonly" placeholder="点击选择时间" class="ca2-field__control"></div>
           </div>
         </div>
         <!---->
       </div>
-      <div class="zv-hairline--bottom">
-        <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-cell--borderless zv-field">
-          <div class="zv-cell__title zv-field__label"><span>地区选择</span></div>
-          <div class="zv-cell__value zv-field__value">
-            <div class="zv-field__body"><input type="text" name="area" readonly="readonly" placeholder="点击选择省市区" class="zv-field__control"></div>
+      <div class="ca2-hairline--bottom">
+        <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-cell--borderless ca2-field">
+          <div class="ca2-cell__title ca2-field__label"><span>地区选择</span></div>
+          <div class="ca2-cell__value ca2-field__value">
+            <div class="ca2-field__body"><input type="text" name="area" readonly="readonly" placeholder="点击选择省市区" class="ca2-field__control"></div>
           </div>
         </div>
         <!---->
       </div>
       <div>
-        <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-field">
-          <div class="zv-cell__title zv-field__label"><span>日历</span></div>
-          <div class="zv-cell__value zv-field__value">
-            <div class="zv-field__body"><input type="text" name="calendar" readonly="readonly" placeholder="点击选择日期" class="zv-field__control"></div>
+        <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-field">
+          <div class="ca2-cell__title ca2-field__label"><span>日历</span></div>
+          <div class="ca2-cell__value ca2-field__value">
+            <div class="ca2-field__body"><input type="text" name="calendar" readonly="readonly" placeholder="点击选择日期" class="ca2-field__control"></div>
           </div>
         </div>
         <!---->
       </div>
-      <div style="margin: 16px 16px 0px;"><button type="submit" class="zv-button zv-button--info zv-button--normal zv-button--block zv-button--round"><span class="zv-button__text">
+      <div style="margin: 16px 16px 0px;"><button type="submit" class="ca2-button ca2-button--info ca2-button--normal ca2-button--block ca2-button--round"><span class="ca2-button__text">
         提交
       </span></button></div>
     </form>

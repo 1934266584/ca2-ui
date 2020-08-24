@@ -3,121 +3,121 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate">
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+    <div tabindex="0" role="radiogroup" class="ca2-rate">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star-o zv-rate__icon">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star-o zv-rate__icon">
-          <!----></i></div>
-    </div>
-  </div>
-  <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate">
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-like zv-rate__icon zv-rate__icon--full">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-like zv-rate__icon zv-rate__icon--full">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-like zv-rate__icon zv-rate__icon--full">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-like-o zv-rate__icon">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-like-o zv-rate__icon">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
           <!----></i></div>
     </div>
   </div>
   <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate">
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full" style="color: rgb(238, 10, 36); font-size: 25px;">
+    <div tabindex="0" role="radiogroup" class="ca2-rate">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-like ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full" style="color: rgb(238, 10, 36); font-size: 25px;">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-like ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full" style="color: rgb(238, 10, 36); font-size: 25px;">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-like ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star zv-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-like-o ca2-rate__icon">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star zv-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
-          <!----></i></div>
-    </div>
-  </div>
-  <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate">
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full" style="font-size: 25px;">
-          <!----></i><i data-score="0.5" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--half zv-rate__icon--full" style="font-size: 25px;">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full" style="font-size: 25px;">
-          <!----></i><i data-score="1.5" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--half zv-rate__icon--full" style="font-size: 25px;">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star zv-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
-          <!----></i><i data-score="2.5" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--half zv-rate__icon--full" style="font-size: 25px;">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star zv-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
-          <!----></i><i data-score="3.5" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--half" style="color: rgb(238, 238, 238); font-size: 25px;">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star zv-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
-          <!----></i><i data-score="4.5" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--half" style="color: rgb(238, 238, 238); font-size: 25px;">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-like-o ca2-rate__icon">
           <!----></i></div>
     </div>
   </div>
   <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate">
-      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+    <div tabindex="0" role="radiogroup" class="ca2-rate">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full" style="color: rgb(238, 10, 36); font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full" style="color: rgb(238, 10, 36); font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full" style="color: rgb(238, 10, 36); font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="4" aria-checked="true" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star ca2-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star-o zv-rate__icon">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="6" aria-checked="false" class="zv-rate__item"><i data-score="6" class="zv-icon zv-icon-star-o zv-rate__icon">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star ca2-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
           <!----></i></div>
     </div>
   </div>
   <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate zv-rate--disabled">
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--disabled zv-rate__icon--full">
+    <div tabindex="0" role="radiogroup" class="ca2-rate">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full" style="font-size: 25px;">
+          <!----></i><i data-score="0.5" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--half ca2-rate__icon--full" style="font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--disabled zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full" style="font-size: 25px;">
+          <!----></i><i data-score="1.5" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--half ca2-rate__icon--full" style="font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--disabled zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star ca2-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
+          <!----></i><i data-score="2.5" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--half ca2-rate__icon--full" style="font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star-o zv-rate__icon zv-rate__icon--disabled">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star ca2-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
+          <!----></i><i data-score="3.5" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--half" style="color: rgb(238, 238, 238); font-size: 25px;">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star-o zv-rate__icon zv-rate__icon--disabled">
-          <!----></i></div>
-    </div>
-  </div>
-  <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate zv-rate--readonly">
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star-o zv-rate__icon">
-          <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star-o zv-rate__icon">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star ca2-rate__icon" style="color: rgb(238, 238, 238); font-size: 25px;">
+          <!----></i><i data-score="4.5" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--half" style="color: rgb(238, 238, 238); font-size: 25px;">
           <!----></i></div>
     </div>
   </div>
   <div>
-    <div tabindex="0" role="radiogroup" class="zv-rate">
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="zv-rate__item"><i data-score="1" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+    <div tabindex="0" role="radiogroup" class="ca2-rate">
+      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="zv-rate__item"><i data-score="2" class="zv-icon zv-icon-star zv-rate__icon zv-rate__icon--full">
+      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="false" class="zv-rate__item"><i data-score="3" class="zv-icon zv-icon-star-o zv-rate__icon">
+      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="zv-rate__item"><i data-score="4" class="zv-icon zv-icon-star-o zv-rate__icon">
+      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="4" aria-checked="true" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
           <!----></i></div>
-      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="zv-rate__item"><i data-score="5" class="zv-icon zv-icon-star-o zv-rate__icon">
+      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="6" aria-posinset="6" aria-checked="false" class="ca2-rate__item"><i data-score="6" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
+          <!----></i></div>
+    </div>
+  </div>
+  <div>
+    <div tabindex="0" role="radiogroup" class="ca2-rate ca2-rate--disabled">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--disabled ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--disabled ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--disabled ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star-o ca2-rate__icon ca2-rate__icon--disabled">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star-o ca2-rate__icon ca2-rate__icon--disabled">
+          <!----></i></div>
+    </div>
+  </div>
+  <div>
+    <div tabindex="0" role="radiogroup" class="ca2-rate ca2-rate--readonly">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="true" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
+          <!----></i></div>
+    </div>
+  </div>
+  <div>
+    <div tabindex="0" role="radiogroup" class="ca2-rate">
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="1" aria-checked="true" class="ca2-rate__item"><i data-score="1" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="2" aria-checked="true" class="ca2-rate__item"><i data-score="2" class="ca2-icon ca2-icon-star ca2-rate__icon ca2-rate__icon--full">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="3" aria-checked="false" class="ca2-rate__item"><i data-score="3" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="4" aria-checked="false" class="ca2-rate__item"><i data-score="4" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
+          <!----></i></div>
+      <div role="radio" tabindex="0" aria-setsize="5" aria-posinset="5" aria-checked="false" class="ca2-rate__item"><i data-score="5" class="ca2-icon ca2-icon-star-o ca2-rate__icon">
           <!----></i></div>
     </div>
   </div>

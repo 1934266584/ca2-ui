@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-contact-card {
+.ca2-contact-card {
   padding: $contact-card-padding;
 
   &__value {
@@ -9,11 +9,11 @@
   }
 
   &--add {
-    .zv-contact-card__value {
+    .ca2-contact-card__value {
       line-height: $contact-card-add-icon-size;
     }
 
-    .zv-cell__left-icon {
+    .ca2-cell__left-icon {
       color: $contact-card-add-icon-color;
       font-size: $contact-card-add-icon-size;
     }

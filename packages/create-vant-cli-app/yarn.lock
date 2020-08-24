@@ -12,7 +12,7 @@
 "@babel/highlight@^7.8.3":
   version "7.8.3"
   resolved "https://registry.npm.taobao.org/@babel/highlight/download/@babel/highlight-7.8.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fhighlight%2Fdownload%2F%40babel%2Fhighlight-7.8.3.tgz#28f173d04223eaaa59bc1d439a3836e6d1265797"
-  integrity sha1-KPFz0EIj6qpZvB1Dmjg25tEmV5c=
+  integrity sha1-KPFz0EIj6qpCa2B1Dmjg25tEmV5c=
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
@@ -306,7 +306,7 @@
 "@types/yeoman-environment@^2.3.3":
   version "2.3.3"
   resolved "https://registry.npm.taobao.org/@types/yeoman-environment/download/@types/yeoman-environment-2.3.3.tgz#6535ae2a5de2f19199bf4f6fbe1eafacae491acf"
-  integrity sha1-ZTWuKl3i8ZGZv09vvh6vrK5JGs8=
+  integrity sha1-ZTWuKl3i8ZGCa209vvh6vrK5JGs8=
   dependencies:
     "@types/inquirer" "*"
     "@types/mem-fs" "*"
@@ -1288,7 +1288,7 @@ get-stream@^3.0.0:
 get-stream@^4.0.0, get-stream@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/get-stream/download/get-stream-4.1.0.tgz#c1b255575f3dc21d59bfc79cd3d2b46b1c3a54b5"
-  integrity sha1-wbJVV189wh1Zv8ec09K0axw6VLU=
+  integrity sha1-wbJVV189wh1Ca28ec09K0axw6VLU=
   dependencies:
     pump "^3.0.0"
 

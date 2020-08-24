@@ -1,89 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`column watch default index 1`] = `
-<div class="zv-picker-column">
-  <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 100px, 0); transition-duration: 0ms; transition-property: none; line-height: 50px;">
-    <li role="button" tabindex="-1" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--disabled zv-picker-column__item--selected" style="height: 50px;">1</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1990</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1991</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1992</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1993</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1994</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1995</li>
+<div class="ca2-picker-column">
+  <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 100px, 0); transition-duration: 0ms; transition-property: none; line-height: 50px;">
+    <li role="button" tabindex="-1" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--disabled ca2-picker-column__item--selected" style="height: 50px;">1</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1990</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1991</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1992</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1993</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1994</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1995</li>
   </ul>
 </div>
 `;
 
 exports[`column watch default index 2`] = `
-<div class="zv-picker-column">
-  <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 50px;">
-    <li role="button" tabindex="-1" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--disabled" style="height: 50px;">1</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1990</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 50px;">1991</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1992</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1993</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1994</li>
-    <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 50px;">1995</li>
+<div class="ca2-picker-column">
+  <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 50px;">
+    <li role="button" tabindex="-1" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--disabled" style="height: 50px;">1</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1990</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 50px;">1991</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1992</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1993</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1994</li>
+    <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 50px;">1995</li>
   </ul>
 </div>
 `;
 
 exports[`columns-top、columns-bottom prop 1`] = `
-<div class="zv-picker">
-  <div class="zv-hairline--top-bottom zv-picker__toolbar"><button type="button" class="zv-picker__cancel">取消</button><button type="button" class="zv-picker__confirm">确认</button></div>
-  <!---->Custom Columns Top<div class="zv-picker__columns" style="height: 220px;">
-    <div class="zv-picker-column">
-      <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;"></ul>
+<div class="ca2-picker">
+  <div class="ca2-hairline--top-bottom ca2-picker__toolbar"><button type="button" class="ca2-picker__cancel">取消</button><button type="button" class="ca2-picker__confirm">确认</button></div>
+  <!---->Custom Columns Top<div class="ca2-picker__columns" style="height: 220px;">
+    <div class="ca2-picker-column">
+      <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;"></ul>
     </div>
-    <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-    <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+    <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+    <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
   </div>Custom Columns Bottom
   <!---->
 </div>
 `;
 
 exports[`not allow html 1`] = `
-<div class="zv-picker">
+<div class="ca2-picker">
   <!---->
-  <div class="zv-picker__columns" style="height: 220px;">
-    <div class="zv-picker-column">
-      <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-        <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">&lt;div&gt;option&lt;/div&gt;</li>
+  <div class="ca2-picker__columns" style="height: 220px;">
+    <div class="ca2-picker-column">
+      <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+        <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">&lt;div&gt;option&lt;/div&gt;</li>
       </ul>
     </div>
-    <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-    <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+    <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+    <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
   </div>
   <!---->
 </div>
 `;
 
 exports[`render title slot 1`] = `
-<div class="zv-picker">
-  <div class="zv-hairline--top-bottom zv-picker__toolbar"><button type="button" class="zv-picker__cancel">取消</button>Custom title<button type="button" class="zv-picker__confirm">确认</button></div>
+<div class="ca2-picker">
+  <div class="ca2-hairline--top-bottom ca2-picker__toolbar"><button type="button" class="ca2-picker__cancel">取消</button>Custom title<button type="button" class="ca2-picker__confirm">确认</button></div>
   <!---->
-  <div class="zv-picker__columns" style="height: 220px;">
-    <div class="zv-picker-column">
-      <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;"></ul>
+  <div class="ca2-picker__columns" style="height: 220px;">
+    <div class="ca2-picker-column">
+      <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;"></ul>
     </div>
-    <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-    <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+    <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+    <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
   </div>
   <!---->
 </div>
 `;
 
 exports[`toolbar-position prop 1`] = `
-<div class="zv-picker">
+<div class="ca2-picker">
   <!---->
   <!---->
-  <div class="zv-picker__columns" style="height: 220px;">
-    <div class="zv-picker-column">
-      <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;"></ul>
+  <div class="ca2-picker__columns" style="height: 220px;">
+    <div class="ca2-picker-column">
+      <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;"></ul>
     </div>
-    <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-    <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+    <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+    <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
   </div>
-  <div class="zv-hairline--top-bottom zv-picker__toolbar"><button type="button" class="zv-picker__cancel">取消</button><button type="button" class="zv-picker__confirm">确认</button></div>
+  <div class="ca2-hairline--top-bottom ca2-picker__toolbar"><button type="button" class="ca2-picker__cancel">取消</button><button type="button" class="ca2-picker__confirm">确认</button></div>
 </div>
 `;

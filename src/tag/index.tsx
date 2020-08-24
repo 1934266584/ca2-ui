@@ -59,7 +59,7 @@ function Tag(
   );
 
   return (
-    <transition name={props.closeable ? 'zv-fade' : null}>
+    <transition name={props.closeable ? 'ca2-fade' : null}>
       <span
         key="content"
         style={style}

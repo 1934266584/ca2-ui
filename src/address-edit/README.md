@@ -14,7 +14,7 @@ Vue.use(AddressEdit);
 ### Basic Usage
 
 ```html
-<zv-address-edit
+<ca2-address-edit
   :area-list="areaList"
   show-postal
   show-delete

@@ -1,7 +1,7 @@
 @import '../style/var.scss';
 @import '../style/mixins/ellipsis.scss';
 
-.zv-coupon {
+.ca2-coupon {
   margin: $coupon-margin;
   overflow: hidden;
   background-color: $coupon-background-color;
@@ -93,11 +93,11 @@
       background-color: $coupon-background-color;
     }
 
-    .zv-coupon-item__content {
+    .ca2-coupon-item__content {
       height: $coupon-content-height - 10px;
     }
 
-    .zv-coupon__head {
+    .ca2-coupon__head {
       color: inherit;
     }
   }

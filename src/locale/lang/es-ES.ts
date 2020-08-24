@@ -12,7 +12,7 @@ export default {
   nameInvalid: 'nombre inválido',
   confirmDelete: 'Estás seguro de eliminarlo?',
   telInvalid: 'Teléfono inválido',
-  zvCalendar: {
+  ca2Calendar: {
     end: 'Fin',
     start: 'Inicio',
     title: 'Calendario',
@@ -21,34 +21,34 @@ export default {
     monthTitle: (year: number, month: number) => `${year}/${month}`,
     rangePrompt: (maxRange: number) => `Elija no más de ${maxRange} días`,
   },
-  zvContactCard: {
+  ca2ContactCard: {
     addText: 'Añadir información de contacto',
   },
-  zvContactList: {
+  ca2ContactList: {
     addText: 'Añadir nuevo contacto',
   },
-  zvPagination: {
+  ca2Pagination: {
     prev: 'Anterior',
     next: 'Siguiente',
   },
-  zvPullRefresh: {
+  ca2PullRefresh: {
     pulling: 'Tira para recargar...',
     loosing: 'Suelta para recargar...',
   },
-  zvSubmitBar: {
+  ca2SubmitBar: {
     label: 'Total：',
   },
-  zvCoupon: {
+  ca2Coupon: {
     unlimited: 'Ilimitado',
     discount: (discount: number) => `${discount * 10}% de descuento`,
     condition: (condition: number) => `Al menos ${condition}`,
   },
-  zvCouponCell: {
+  ca2CouponCell: {
     title: 'Cupón',
     tips: 'Sin cupones',
     count: (count: number) => `You have ${count} coupons`,
   },
-  zvCouponList: {
+  ca2CouponList: {
     empty: 'Sin cupones',
     exchange: 'Intercambio',
     close: 'Cerrar',
@@ -56,7 +56,7 @@ export default {
     disabled: 'No disponible',
     placeholder: 'Código del cupón',
   },
-  zvAddressEdit: {
+  ca2AddressEdit: {
     area: 'Área',
     postal: 'Código Postal',
     areaEmpty: 'Por favor selecciona una área de recogida',
@@ -67,11 +67,11 @@ export default {
     namePlaceholder: 'Nombre',
     areaPlaceholder: 'Área',
   },
-  zvAddressEditDetail: {
+  ca2AddressEditDetail: {
     label: 'Dirección',
     placeholder: 'Dirección',
   },
-  zvAddressList: {
+  ca2AddressList: {
     add: 'Anadir dirección',
   },
 };

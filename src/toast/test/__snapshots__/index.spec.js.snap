@@ -1,35 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`create a forbidClick toast 1`] = `
-<div class="zv-toast zv-toast--middle zv-toast--success" style="z-index: 2001;" name="zv-fade"><i class="zv-icon zv-icon-success zv-toast__icon">
+<div class="ca2-toast ca2-toast--middle ca2-toast--success" style="z-index: 2001;" name="ca2-fade"><i class="ca2-icon ca2-icon-success ca2-toast__icon">
     <!----></i></div>
 `;
 
 exports[`icon prop 1`] = `
-<div class="zv-toast zv-toast--middle" style="z-index: 2005;" name="zv-fade"><i class="zv-icon zv-icon-star-o zv-toast__icon">
+<div class="ca2-toast ca2-toast--middle" style="z-index: 2005;" name="ca2-fade"><i class="ca2-icon ca2-icon-star-o ca2-toast__icon">
     <!----></i>
-  <div class="zv-toast__text">Message</div>
+  <div class="ca2-toast__text">Message</div>
 </div>
 `;
 
 exports[`icon-prefix prop 1`] = `
-<div class="zv-toast zv-toast--middle" style="z-index: 2006;" name="zv-fade"><i class="my-icon my-icon-star-o zv-toast__icon">
+<div class="ca2-toast ca2-toast--middle" style="z-index: 2006;" name="ca2-fade"><i class="my-icon my-icon-star-o ca2-toast__icon">
     <!----></i>
-  <div class="zv-toast__text">Message</div>
+  <div class="ca2-toast__text">Message</div>
 </div>
 `;
 
 exports[`show html toast 1`] = `
-<div class="zv-toast zv-toast--middle zv-toast--html" style="z-index: 2004;" name="zv-fade">
-  <div class="zv-toast__text">
+<div class="ca2-toast ca2-toast--middle ca2-toast--html" style="z-index: 2004;" name="ca2-fade">
+  <div class="ca2-toast__text">
     <div>Message</div>
   </div>
 </div>
 `;
 
 exports[`show loading toast 1`] = `
-<div class="zv-toast zv-toast--middle zv-toast--loading" style="z-index: 2003;" name="zv-fade">
-  <div class="zv-loading zv-loading--circular zv-toast__loading"><span class="zv-loading__spinner zv-loading__spinner--circular"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
-  <div class="zv-toast__text">Message</div>
+<div class="ca2-toast ca2-toast--middle ca2-toast--loading" style="z-index: 2003;" name="ca2-fade">
+  <div class="ca2-loading ca2-loading--circular ca2-toast__loading"><span class="ca2-loading__spinner ca2-loading__spinner--circular"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+  <div class="ca2-toast__text">Message</div>
 </div>
 `;

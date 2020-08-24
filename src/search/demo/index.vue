@@ -1,12 +1,12 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-search v-model="value1" :placeholder="t('placeholder')" />
+      <ca2-search v-model="value1" :placeholder="t('placeholder')" />
     </demo-block>
 
     <demo-block :title="t('listenToEvents')">
       <form action="/">
-        <zv-search
+        <ca2-search
           v-model="value5"
           :placeholder="t('placeholder')"
           show-action
@@ -17,7 +17,7 @@
     </demo-block>
 
     <demo-block :title="t('inputAlign')">
-      <zv-search
+      <ca2-search
         v-model="value4"
         :placeholder="t('placeholder')"
         input-align="center"
@@ -25,11 +25,11 @@
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <zv-search v-model="value3" :placeholder="t('placeholder')" disabled />
+      <ca2-search v-model="value3" :placeholder="t('placeholder')" disabled />
     </demo-block>
 
     <demo-block :title="t('background')">
-      <zv-search
+      <ca2-search
         v-model="value2"
         :placeholder="t('placeholder')"
         shape="square"
@@ -38,7 +38,7 @@
     </demo-block>
 
     <demo-block :title="t('customButton')">
-      <zv-search
+      <ca2-search
         v-model="value6"
         show-action
         :label="t('label')"
@@ -48,7 +48,7 @@
         <template #action>
           <div @click="onSearch">{{ t('search') }}</div>
         </template>
-      </zv-search>
+      </ca2-search>
     </demo-block>
   </demo-section>
 </template>

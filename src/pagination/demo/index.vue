@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-pagination
+      <ca2-pagination
         v-model="currentPage1"
         :total-items="24"
         :items-per-page="5"
@@ -11,7 +11,7 @@
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <zv-pagination
+      <ca2-pagination
         v-model="currentPage2"
         :page-count="12"
         :prev-text="t('prevText')"
@@ -22,7 +22,7 @@
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-pagination
+      <ca2-pagination
         force-ellipses
         v-model="currentPage3"
         :total-items="125"
@@ -65,7 +65,7 @@ export default {
 @import '../../style/var.scss';
 
 .demo-pagination {
-  .zv-pagination {
+  .ca2-pagination {
     width: 100%;
     margin: 5px 0;
   }

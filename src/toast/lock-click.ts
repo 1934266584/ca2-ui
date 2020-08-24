@@ -3,7 +3,7 @@ let lockCount = 0;
 export function lockClick(lock: boolean) {
   if (lock) {
     if (!lockCount) {
-      document.body.classList.add('zv-toast--unclickable');
+      document.body.classList.add('ca2-toast--unclickable');
     }
 
     lockCount++;
@@ -11,7 +11,7 @@ export function lockClick(lock: boolean) {
     lockCount--;
 
     if (!lockCount) {
-      document.body.classList.remove('zv-toast--unclickable');
+      document.body.classList.remove('ca2-toast--unclickable');
     }
   }
 }

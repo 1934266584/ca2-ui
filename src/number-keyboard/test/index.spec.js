@@ -14,7 +14,7 @@ test('click number key', () => {
     },
   });
 
-  clickKey(wrapper.findAll('.zv-key').at(0));
+  clickKey(wrapper.findAll('.ca2-key').at(0));
   expect(wrapper.emitted('input')[0][0]).toEqual(1);
 
   wrapper.destroy();
@@ -23,18 +23,18 @@ test('click number key', () => {
 test('click delete key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  clickKey(wrapper.findAll('.zv-key').at(11));
+  clickKey(wrapper.findAll('.ca2-key').at(11));
   expect(wrapper.emitted('delete')).toBeTruthy();
 });
 
 test('click collapse key', () => {
   const wrapper = mount(NumberKeyboard);
-  clickKey(wrapper.findAll('.zv-key').at(9));
+  clickKey(wrapper.findAll('.ca2-key').at(9));
   expect(wrapper.emitted('input')).toBeFalsy();
   expect(wrapper.emitted('blur')).toBeFalsy();
 
   wrapper.setProps({ show: true });
-  clickKey(wrapper.findAll('.zv-key').at(9));
+  clickKey(wrapper.findAll('.ca2-key').at(9));
   expect(wrapper.emitted('blur')).toBeTruthy();
 });
 
@@ -46,7 +46,7 @@ test('click close button', () => {
     },
   });
 
-  clickKey(wrapper.findAll('.zv-key').at(12));
+  clickKey(wrapper.findAll('.ca2-key').at(12));
   expect(wrapper.emitted('close')).toBeTruthy();
 });
 
@@ -129,7 +129,7 @@ test('disable hideOnClickOutside', () => {
 test('focus on key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  const key = wrapper.find('.zv-key');
+  const key = wrapper.find('.ca2-key');
   trigger(key, 'touchstart');
   expect(wrapper).toMatchSnapshot();
   trigger(key, 'touchend');
@@ -139,7 +139,7 @@ test('focus on key', () => {
 test('move and blur key', () => {
   const wrapper = mount(NumberKeyboard);
 
-  const key = wrapper.find('.zv-key');
+  const key = wrapper.find('.ca2-key');
   trigger(key, 'touchstart');
   expect(wrapper).toMatchSnapshot();
   trigger(key, 'touchmove', 0, 0);
@@ -162,7 +162,7 @@ test('bind value', () => {
     },
   });
 
-  const keys = wrapper.findAll('.zv-key');
+  const keys = wrapper.findAll('.ca2-key');
   clickKey(keys.at(0));
   clickKey(keys.at(1));
 
@@ -187,7 +187,7 @@ test('maxlength', () => {
     },
   });
 
-  const keys = wrapper.findAll('.zv-key');
+  const keys = wrapper.findAll('.ca2-key');
   clickKey(keys.at(0));
   clickKey(keys.at(1));
 
@@ -202,17 +202,17 @@ test('show-delete-key prop', () => {
     },
   });
 
-  expect(wrapper.contains('.zv-key--delete')).toBeTruthy();
+  expect(wrapper.contains('.ca2-key--delete')).toBeTruthy();
 
   wrapper.setData({ showDeleteKey: false });
-  expect(wrapper.contains('.zv-key--delete')).toBeFalsy();
+  expect(wrapper.contains('.ca2-key--delete')).toBeFalsy();
 
   wrapper.setData({
     theme: 'custom',
     showDeleteKey: true,
   });
-  expect(wrapper.contains('.zv-key--delete')).toBeTruthy();
+  expect(wrapper.contains('.ca2-key--delete')).toBeTruthy();
 
   wrapper.setData({ showDeleteKey: false });
-  expect(wrapper.contains('.zv-key--delete')).toBeFalsy();
+  expect(wrapper.contains('.ca2-key--delete')).toBeFalsy();
 });

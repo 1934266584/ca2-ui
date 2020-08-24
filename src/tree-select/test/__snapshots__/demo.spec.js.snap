@@ -3,86 +3,86 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="zv-tree-select" style="height: 300px;">
-      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">浙江
+    <div class="ca2-tree-select" style="height: 300px;">
+      <div class="ca2-sidebar ca2-tree-select__nav"><a class="ca2-sidebar-item ca2-sidebar-item--select ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">浙江
             <!---->
           </div>
-        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">江苏
+        </a><a class="ca2-sidebar-item ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">江苏
             <!---->
           </div>
-        </a><a class="zv-sidebar-item zv-sidebar-item--disabled zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">福建
+        </a><a class="ca2-sidebar-item ca2-sidebar-item--disabled ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">福建
             <!---->
           </div>
         </a></div>
-      <div class="zv-tree-select__content">
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-success zv-tree-select__selected">
+      <div class="ca2-tree-select__content">
+        <div class="ca2-ellipsis ca2-tree-select__item ca2-tree-select__item--active">杭州<i class="ca2-icon ca2-icon-success ca2-tree-select__selected">
             <!----></i></div>
-        <div class="zv-ellipsis zv-tree-select__item">温州</div>
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
-        <div class="zv-ellipsis zv-tree-select__item">义乌</div>
+        <div class="ca2-ellipsis ca2-tree-select__item">温州</div>
+        <div class="ca2-ellipsis ca2-tree-select__item ca2-tree-select__item--disabled">宁波</div>
+        <div class="ca2-ellipsis ca2-tree-select__item">义乌</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-tree-select" style="height: 300px;">
-      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">浙江
+    <div class="ca2-tree-select" style="height: 300px;">
+      <div class="ca2-sidebar ca2-tree-select__nav"><a class="ca2-sidebar-item ca2-sidebar-item--select ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">浙江
             <!---->
           </div>
-        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">江苏
+        </a><a class="ca2-sidebar-item ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">江苏
             <!---->
           </div>
-        </a><a class="zv-sidebar-item zv-sidebar-item--disabled zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">福建
+        </a><a class="ca2-sidebar-item ca2-sidebar-item--disabled ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">福建
             <!---->
           </div>
         </a></div>
-      <div class="zv-tree-select__content">
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-success zv-tree-select__selected">
+      <div class="ca2-tree-select__content">
+        <div class="ca2-ellipsis ca2-tree-select__item ca2-tree-select__item--active">杭州<i class="ca2-icon ca2-icon-success ca2-tree-select__selected">
             <!----></i></div>
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">温州<i class="zv-icon zv-icon-success zv-tree-select__selected">
+        <div class="ca2-ellipsis ca2-tree-select__item ca2-tree-select__item--active">温州<i class="ca2-icon ca2-icon-success ca2-tree-select__selected">
             <!----></i></div>
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
-        <div class="zv-ellipsis zv-tree-select__item">义乌</div>
+        <div class="ca2-ellipsis ca2-tree-select__item ca2-tree-select__item--disabled">宁波</div>
+        <div class="ca2-ellipsis ca2-tree-select__item">义乌</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-tree-select" style="height: 55vw;">
-      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">分组 1
+    <div class="ca2-tree-select" style="height: 55vw;">
+      <div class="ca2-sidebar ca2-tree-select__nav"><a class="ca2-sidebar-item ca2-sidebar-item--select ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">分组 1
             <!---->
           </div>
-        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">分组 2
+        </a><a class="ca2-sidebar-item ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">分组 2
             <!---->
           </div>
         </a></div>
-      <div class="zv-tree-select__content">
-        <div class="zv-image"><img src="https://img.yzcdn.cn/vant/apple-1.jpg" class="zv-image__img"></div>
+      <div class="ca2-tree-select__content">
+        <div class="ca2-image"><img src="https://img.yzcdn.cn/vant/apple-1.jpg" class="ca2-image__img"></div>
         <!---->
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-tree-select" style="height: 55vw;">
-      <div class="zv-sidebar zv-tree-select__nav"><a class="zv-sidebar-item zv-sidebar-item--select zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">浙江<div class="zv-info zv-info--dot zv-sidebar-item__info"></div>
+    <div class="ca2-tree-select" style="height: 55vw;">
+      <div class="ca2-sidebar ca2-tree-select__nav"><a class="ca2-sidebar-item ca2-sidebar-item--select ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">浙江<div class="ca2-info ca2-info--dot ca2-sidebar-item__info"></div>
           </div>
-        </a><a class="zv-sidebar-item zv-tree-select__nav-item">
-          <div class="zv-sidebar-item__text">江苏<div class="zv-info zv-sidebar-item__info">5</div>
+        </a><a class="ca2-sidebar-item ca2-tree-select__nav-item">
+          <div class="ca2-sidebar-item__text">江苏<div class="ca2-info ca2-sidebar-item__info">5</div>
           </div>
         </a></div>
-      <div class="zv-tree-select__content">
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--active">杭州<i class="zv-icon zv-icon-success zv-tree-select__selected">
+      <div class="ca2-tree-select__content">
+        <div class="ca2-ellipsis ca2-tree-select__item ca2-tree-select__item--active">杭州<i class="ca2-icon ca2-icon-success ca2-tree-select__selected">
             <!----></i></div>
-        <div class="zv-ellipsis zv-tree-select__item">温州</div>
-        <div class="zv-ellipsis zv-tree-select__item zv-tree-select__item--disabled">宁波</div>
-        <div class="zv-ellipsis zv-tree-select__item">义乌</div>
+        <div class="ca2-ellipsis ca2-tree-select__item">温州</div>
+        <div class="ca2-ellipsis ca2-tree-select__item ca2-tree-select__item--disabled">宁波</div>
+        <div class="ca2-ellipsis ca2-tree-select__item">义乌</div>
       </div>
     </div>
   </div>

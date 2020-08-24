@@ -1,21 +1,21 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('selectSingle')"
         :value="formatFullDate(date.selectSingle)"
         @click="show('single', 'selectSingle')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('selectMultiple')"
         :value="formatMultiple(date.selectMultiple)"
         @click="show('multiple', 'selectMultiple')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('selectRange')"
         :value="formatRange(date.selectRange)"
@@ -24,14 +24,14 @@
     </demo-block>
 
     <demo-block :title="t('quickSelect')">
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('selectSingle')"
         :value="formatFullDate(date.quickSelect1)"
         @click="show('single', 'quickSelect1')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('selectRange')"
         :value="formatRange(date.quickSelect2)"
@@ -40,42 +40,42 @@
     </demo-block>
 
     <demo-block :title="t('customCalendar')">
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('customColor')"
         :value="formatRange(date.customColor)"
         @click="show('range', 'customColor')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('customRange')"
         :value="formatFullDate(date.customRange)"
         @click="show('single', 'customRange')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('customConfirm')"
         :value="formatRange(date.customConfirm)"
         @click="show('range', 'customConfirm')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('customDayText')"
         :value="formatRange(date.customDayText)"
         @click="show('range', 'customDayText')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('customPosition')"
         :value="formatFullDate(date.customPosition)"
         @click="show('single', 'customPosition')"
       />
 
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('maxRange')"
         :value="formatRange(date.maxRange)"
@@ -84,7 +84,7 @@
     </demo-block>
 
     <demo-block :title="t('tiledDisplay')">
-      <zv-calendar
+      <ca2-calendar
         :title="t('calendar')"
         :poppable="false"
         :show-confirm="false"
@@ -95,7 +95,7 @@
       />
     </demo-block>
 
-    <zv-calendar
+    <ca2-calendar
       v-model="showCalendar"
       :type="type"
       :color="color"

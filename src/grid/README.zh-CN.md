@@ -21,12 +21,12 @@ Vue.use(GridItem);
 通过`icon`属性设置格子内的图标，`text`属性设置文字内容
 
 ```html
-<zv-grid>
-  <zv-grid-item icon="photo-o" text="文字" />
-  <zv-grid-item icon="photo-o" text="文字" />
-  <zv-grid-item icon="photo-o" text="文字" />
-  <zv-grid-item icon="photo-o" text="文字" />
-</zv-grid>
+<ca2-grid>
+  <ca2-grid-item icon="photo-o" text="文字" />
+  <ca2-grid-item icon="photo-o" text="文字" />
+  <ca2-grid-item icon="photo-o" text="文字" />
+  <ca2-grid-item icon="photo-o" text="文字" />
+</ca2-grid>
 ```
 
 ### 自定义列数
@@ -34,14 +34,14 @@ Vue.use(GridItem);
 默认一行展示四个格子，可以通过`column-num`自定义列数
 
 ```html
-<zv-grid :column-num="3">
-  <zv-grid-item
+<ca2-grid :column-num="3">
+  <ca2-grid-item
     v-for="value in 6"
     :key="value"
     icon="photo-o"
     text="文字"
   />
-</zv-grid>
+</ca2-grid>
 ```
 
 ### 自定义内容
@@ -49,17 +49,17 @@ Vue.use(GridItem);
 通过插槽可以自定义格子展示的内容
 
 ```html
-<zv-grid :border="false" :column-num="3">
-  <zv-grid-item>
-    <zv-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-  </zv-grid-item>
-  <zv-grid-item>
-    <zv-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-  </zv-grid-item>
-  <zv-grid-item>
-    <zv-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-  </zv-grid-item>
-</zv-grid>
+<ca2-grid :border="false" :column-num="3">
+  <ca2-grid-item>
+    <ca2-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+  </ca2-grid-item>
+  <ca2-grid-item>
+    <ca2-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+  </ca2-grid-item>
+  <ca2-grid-item>
+    <ca2-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+  </ca2-grid-item>
+</ca2-grid>
 ```
 
 ### 正方形格子
@@ -67,14 +67,14 @@ Vue.use(GridItem);
 设置`square`属性后，格子的高度会和宽度保持一致
 
 ```html
-<zv-grid square>
-  <zv-grid-item
+<ca2-grid square>
+  <ca2-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="文字"
   />
-</zv-grid>
+</ca2-grid>
 ```
 
 ### 格子间距
@@ -82,14 +82,14 @@ Vue.use(GridItem);
 通过`gutter`属性设置格子之间的距离
 
 ```html
-<zv-grid :gutter="10">
-  <zv-grid-item
+<ca2-grid :gutter="10">
+  <ca2-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="文字"
   />
-</zv-grid>
+</ca2-grid>
 ```
 
 ### 页面导航
@@ -97,10 +97,10 @@ Vue.use(GridItem);
 通过`to`属性设置`vue-router`跳转链接，通过`url`属性设置 URL 跳转链接
 
 ```html
-<zv-grid clickable :column-num="2">
-  <zv-grid-item icon="home-o" text="路由跳转" to="/" />
-  <zv-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
-</zv-grid>
+<ca2-grid clickable :column-num="2">
+  <ca2-grid-item icon="home-o" text="路由跳转" to="/" />
+  <ca2-grid-item icon="search" text="URL 跳转" url="/vant/mobile.html" />
+</ca2-grid>
 ```
 
 ### 徽标提示
@@ -108,10 +108,10 @@ Vue.use(GridItem);
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`badge`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<zv-grid :column-num="2">
-  <zv-grid-item icon="home-o" text="文字" dot />
-  <zv-grid-item icon="search" text="文字" badge="99+" />
-</zv-grid>
+<ca2-grid :column-num="2">
+  <ca2-grid-item icon="home-o" text="文字" dot />
+  <ca2-grid-item icon="search" text="文字" badge="99+" />
+</ca2-grid>
 ```
 
 ## API
@@ -134,7 +134,7 @@ Vue.use(GridItem);
 |------|------|------|------|
 | text | 文字 | *string* | - |
 | icon | [图标名称](#/zh-CN/icon)或图片链接 | *string* | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `zv-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | *string* | `ca2-icon` |
 | dot `v2.2.1` | 是否显示图标右上角小红点 | *boolean* | `false` |
 | badge `v2.5.6` | 图标右上角徽标的内容 | *number \| string* | - |
 | info `2.2.1` | 图标右上角徽标的内容（已废弃，请使用 badge 属性） | *number \| string* | - |

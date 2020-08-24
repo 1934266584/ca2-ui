@@ -16,7 +16,7 @@ Vue.use(Divider);
 默认渲染一条水平分割线
 
 ```html
-<zv-divider />
+<ca2-divider />
 ```
 
 ### 展示文字
@@ -24,7 +24,7 @@ Vue.use(Divider);
 通过插槽在可以分割线中间插入内容
 
 ```html
-<zv-divider>文字</zv-divider>
+<ca2-divider>文字</ca2-divider>
 ```
 
 ### 内容位置
@@ -32,8 +32,8 @@ Vue.use(Divider);
 通过`content-position`指定内容所在位置
 
 ```html
-<zv-divider content-position="left">文字</zv-divider>
-<zv-divider content-position="right">文字</zv-divider>
+<ca2-divider content-position="left">文字</ca2-divider>
+<ca2-divider content-position="right">文字</ca2-divider>
 ```
 
 ### 虚线
@@ -41,7 +41,7 @@ Vue.use(Divider);
 添加`dashed`属性使分割线渲染为虚线
 
 ```html
-<zv-divider dashed>文字</zv-divider>
+<ca2-divider dashed>文字</ca2-divider>
 ```
 
 ### 自定义样式
@@ -49,9 +49,9 @@ Vue.use(Divider);
 可以直接通过`style`属性设置分割线的样式
 
 ```html
-<zv-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
+<ca2-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
   文字
-</zv-divider>
+</ca2-divider>
 ```
 
 ## API

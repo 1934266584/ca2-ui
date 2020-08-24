@@ -29,8 +29,8 @@ test('confirm & cancel event', async () => {
 
   await later();
 
-  wrapper.find('.zv-picker__confirm').trigger('click');
-  wrapper.find('.zv-picker__cancel').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__cancel').trigger('click');
 
   expect(onConfirm).toHaveBeenCalledWith(firstOption, [0, 0, 0]);
   expect(onCancel).toHaveBeenCalledWith(firstOption, [0, 0, 0]);
@@ -66,7 +66,7 @@ test('change option', () => {
     },
   });
 
-  const columns = wrapper.findAll('.zv-picker-column');
+  const columns = wrapper.findAll('.ca2-picker-column');
   expect(wrapper).toMatchSnapshot();
 
   triggerDrag(columns.at(0), 0, -100);

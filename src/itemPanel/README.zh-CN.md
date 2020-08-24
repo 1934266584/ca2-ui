@@ -11,7 +11,7 @@
 
 ```js
 import Vue from 'vue';
-import { ItemPanel } from '@zvalley/zv-ui';
+import { ItemPanel } from 'ca2-ui';
 
 Vue.use(ItemPanel);
 ```
@@ -21,7 +21,7 @@ Vue.use(ItemPanel);
 ### 基础用法
 
 ```html
-<zv-item-panel
+<ca2-item-panel
   :item-object-list="itemObjectList"
   @slot-event="slotEvent"
 />
@@ -61,7 +61,7 @@ export default {
 ### 核心用法
 
 ```html
-<zv-item-panel
+<ca2-item-panel
   :item-object-list="itemObjectList"
   :line="1"
   :is-two-col="true"
@@ -85,7 +85,7 @@ export default {
           title: '标题',
           value: '插槽内容是组件',
           slot() {
-            return <zv-tag round type="primary">标签</zv-tag>
+            return <ca2-tag round type="primary">标签</ca2-tag>
           }
         },
         {

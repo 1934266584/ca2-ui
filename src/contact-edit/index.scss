@@ -1,13 +1,13 @@
 @import '../style/var.scss';
 
-.zv-contact-edit {
+.ca2-contact-edit {
   padding: $contact-edit-padding;
 
   &__fields {
     overflow: hidden;
     border-radius: $contact-edit-fields-radius;
 
-    .zv-cell__title {
+    .ca2-cell__title {
       max-width: $contact-edit-field-label-width;
     }
   }
@@ -19,11 +19,11 @@
     overflow: hidden;
     border-radius: $contact-edit-fields-radius;
 
-    .zv-cell__value {
+    .ca2-cell__value {
       flex: none;
     }
 
-    .zv-switch {
+    .ca2-switch {
       vertical-align: top;
     }
   }
@@ -32,7 +32,7 @@
     padding: $contact-edit-buttons-padding;
   }
 
-  .zv-button {
+  .ca2-button {
     margin-bottom: $contact-edit-button-margin-bottom;
     font-size: $contact-edit-button-font-size;
   }

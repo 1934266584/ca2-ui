@@ -1,13 +1,13 @@
 @import './var.scss';
 @import './mixins/hairline.scss';
 
-[class*='zv-hairline'] {
+[class*='ca2-hairline'] {
   &::after {
     @include hairline();
   }
 }
 
-.zv-hairline {
+.ca2-hairline {
   &,
   &--top,
   &--left,

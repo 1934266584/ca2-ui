@@ -16,19 +16,19 @@ Vue.use(Progress);
 Use 'percentage' prop to set current progress
 
 ```html
-<zv-progress :percentage="50" />
+<ca2-progress :percentage="50" />
 ```
 
 ### Stroke Width
 
 ```html
-<zv-progress :percentage="50" stroke-width="8" />
+<ca2-progress :percentage="50" stroke-width="8" />
 ```
 
 ### Inactive
 
 ```html
-<zv-progress inactive :percentage="50" />
+<ca2-progress inactive :percentage="50" />
 ```
 
 
@@ -37,17 +37,17 @@ Use 'percentage' prop to set current progress
 Use `pivot-text` to custom text，use `color` to custom bar color
 
 ```html
-<zv-progress
+<ca2-progress
   pivot-text="Orange"
   color="#f2826a"
   :percentage="25"
 />
-<zv-progress
+<ca2-progress
   pivot-text="Red"
   color="#ee0a24"
   :percentage="50"
 />
-<zv-progress
+<ca2-progress
   :percentage="75"
   pivot-text="Purple"
   pivot-color="#7232dd"

@@ -10,26 +10,26 @@ test('route mode', async () => {
   const wrapper = mount({
     router,
     template: `
-      <zv-tabbar route>
-        <zv-tabbar-item replace to="/">
+      <ca2-tabbar route>
+        <ca2-tabbar-item replace to="/">
           Tab
-        </zv-tabbar-item>
-        <zv-tabbar-item replace to="/search">
+        </ca2-tabbar-item>
+        <ca2-tabbar-item replace to="/search">
           Tab
-        </zv-tabbar-item>
-        <zv-tabbar-item replace :to="{ path: '/star' }">
+        </ca2-tabbar-item>
+        <ca2-tabbar-item replace :to="{ path: '/star' }">
           Tab
-        </zv-tabbar-item>
-        <zv-tabbar-item>
+        </ca2-tabbar-item>
+        <ca2-tabbar-item>
           Tab
-        </zv-tabbar-item>
-      </zv-tabbar>
+        </ca2-tabbar-item>
+      </ca2-tabbar>
     `,
   });
 
   expect(wrapper).toMatchSnapshot();
 
-  const items = wrapper.findAll('.zv-tabbar-item');
+  const items = wrapper.findAll('.ca2-tabbar-item');
 
   items.at(1).trigger('click');
   await later();
@@ -54,18 +54,18 @@ test('route mode match by name', async () => {
   const wrapper = mount({
     router,
     template: `
-      <zv-tabbar route>
-        <zv-tabbar-item :to="{ name: 'foo' }">
+      <ca2-tabbar route>
+        <ca2-tabbar-item :to="{ name: 'foo' }">
           Tab
-        </zv-tabbar-item>
-        <zv-tabbar-item :to="{ name: 'bar' }">
+        </ca2-tabbar-item>
+        <ca2-tabbar-item :to="{ name: 'bar' }">
           Tab
-        </zv-tabbar-item>
-      </zv-tabbar>
+        </ca2-tabbar-item>
+      </ca2-tabbar>
     `,
   });
 
-  const items = wrapper.findAll('.zv-tabbar-item');
+  const items = wrapper.findAll('.ca2-tabbar-item');
   items.at(0).trigger('click');
   await later();
   expect(wrapper).toMatchSnapshot();
@@ -81,15 +81,15 @@ test('router NavigationDuplicated', async (done) => {
     const wrapper = mount({
       router,
       template: `
-      <zv-tabbar route>
-        <zv-tabbar-item replace to="/home">
+      <ca2-tabbar route>
+        <ca2-tabbar-item replace to="/home">
           Tab
-        </zv-tabbar-item>
-      </zv-tabbar>
+        </ca2-tabbar-item>
+      </ca2-tabbar>
     `,
     });
 
-    const item = wrapper.find('.zv-tabbar-item');
+    const item = wrapper.find('.ca2-tabbar-item');
     item.trigger('click');
     item.trigger('click');
 
@@ -101,10 +101,10 @@ test('router NavigationDuplicated', async (done) => {
 test('watch tabbar value', () => {
   const wrapper = mount({
     template: `
-      <zv-tabbar :value="value">
-        <zv-tabbar-item>Tab</zv-tabbar-item>
-        <zv-tabbar-item>Tab</zv-tabbar-item>
-      </zv-tabbar>
+      <ca2-tabbar :value="value">
+        <ca2-tabbar-item>Tab</ca2-tabbar-item>
+        <ca2-tabbar-item>Tab</ca2-tabbar-item>
+      </ca2-tabbar>
     `,
     data() {
       return {
@@ -123,9 +123,9 @@ test('click event', () => {
 
   const wrapper = mount({
     template: `
-      <zv-tabbar @change="onChange">
-        <zv-tabbar-item @click="onClick">Tab</zv-tabbar-item>
-      </zv-tabbar>
+      <ca2-tabbar @change="onChange">
+        <ca2-tabbar-item @click="onClick">Tab</ca2-tabbar-item>
+      </ca2-tabbar>
     `,
     methods: {
       onClick,
@@ -133,7 +133,7 @@ test('click event', () => {
     },
   });
 
-  wrapper.find('.zv-tabbar-item').trigger('click');
+  wrapper.find('.ca2-tabbar-item').trigger('click');
   expect(onClick).toHaveBeenCalledTimes(1);
   expect(onChange).toHaveBeenCalledTimes(0);
 });
@@ -142,10 +142,10 @@ test('name prop', () => {
   const onChange = jest.fn();
   const wrapper = mount({
     template: `
-      <zv-tabbar :value="value" @change="onChange">
-        <zv-tabbar-item name="a">Tab</zv-tabbar-item>
-        <zv-tabbar-item name="b">Tab</zv-tabbar-item>
-      </zv-tabbar>
+      <ca2-tabbar :value="value" @change="onChange">
+        <ca2-tabbar-item name="a">Tab</ca2-tabbar-item>
+        <ca2-tabbar-item name="b">Tab</ca2-tabbar-item>
+      </ca2-tabbar>
     `,
     data() {
       return {
@@ -157,7 +157,7 @@ test('name prop', () => {
     },
   });
 
-  wrapper.findAll('.zv-tabbar-item').at(1).trigger('click');
+  wrapper.findAll('.ca2-tabbar-item').at(1).trigger('click');
 
   expect(onChange).toHaveBeenCalledWith('b');
 });

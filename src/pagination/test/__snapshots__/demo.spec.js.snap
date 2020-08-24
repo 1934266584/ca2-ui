@@ -3,31 +3,31 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <ul class="zv-pagination">
-      <li class="zv-pagination__item zv-pagination__item--disabled zv-pagination__prev zv-hairline">上一页</li>
-      <li class="zv-pagination__item zv-pagination__item--active zv-pagination__page zv-hairline">1</li>
-      <li class="zv-pagination__item zv-pagination__page zv-hairline">2</li>
-      <li class="zv-pagination__item zv-pagination__page zv-hairline">3</li>
-      <li class="zv-pagination__item zv-pagination__page zv-hairline">4</li>
-      <li class="zv-pagination__item zv-pagination__page zv-hairline">5</li>
-      <li class="zv-pagination__item zv-pagination__next zv-hairline">下一页</li>
+    <ul class="ca2-pagination">
+      <li class="ca2-pagination__item ca2-pagination__item--disabled ca2-pagination__prev ca2-hairline">上一页</li>
+      <li class="ca2-pagination__item ca2-pagination__item--active ca2-pagination__page ca2-hairline">1</li>
+      <li class="ca2-pagination__item ca2-pagination__page ca2-hairline">2</li>
+      <li class="ca2-pagination__item ca2-pagination__page ca2-hairline">3</li>
+      <li class="ca2-pagination__item ca2-pagination__page ca2-hairline">4</li>
+      <li class="ca2-pagination__item ca2-pagination__page ca2-hairline">5</li>
+      <li class="ca2-pagination__item ca2-pagination__next ca2-hairline">下一页</li>
     </ul>
   </div>
   <div>
-    <ul class="zv-pagination zv-pagination--simple" size="small">
-      <li class="zv-pagination__item zv-pagination__item--disabled zv-pagination__prev zv-hairline">上一页</li>
-      <li class="zv-pagination__page-desc">1/12</li>
-      <li class="zv-pagination__item zv-pagination__next zv-hairline">下一页</li>
+    <ul class="ca2-pagination ca2-pagination--simple" size="small">
+      <li class="ca2-pagination__item ca2-pagination__item--disabled ca2-pagination__prev ca2-hairline">上一页</li>
+      <li class="ca2-pagination__page-desc">1/12</li>
+      <li class="ca2-pagination__item ca2-pagination__next ca2-hairline">下一页</li>
     </ul>
   </div>
   <div>
-    <ul class="zv-pagination">
-      <li class="zv-pagination__item zv-pagination__item--disabled zv-pagination__prev zv-hairline">上一页</li>
-      <li class="zv-pagination__item zv-pagination__item--active zv-pagination__page zv-hairline">1</li>
-      <li class="zv-pagination__item zv-pagination__page zv-hairline">2</li>
-      <li class="zv-pagination__item zv-pagination__page zv-hairline">3</li>
-      <li class="zv-pagination__item zv-pagination__page zv-hairline">...</li>
-      <li class="zv-pagination__item zv-pagination__next zv-hairline">下一页</li>
+    <ul class="ca2-pagination">
+      <li class="ca2-pagination__item ca2-pagination__item--disabled ca2-pagination__prev ca2-hairline">上一页</li>
+      <li class="ca2-pagination__item ca2-pagination__item--active ca2-pagination__page ca2-hairline">1</li>
+      <li class="ca2-pagination__item ca2-pagination__page ca2-hairline">2</li>
+      <li class="ca2-pagination__item ca2-pagination__page ca2-hairline">3</li>
+      <li class="ca2-pagination__item ca2-pagination__page ca2-hairline">...</li>
+      <li class="ca2-pagination__item ca2-pagination__next ca2-hairline">下一页</li>
     </ul>
   </div>
 </div>

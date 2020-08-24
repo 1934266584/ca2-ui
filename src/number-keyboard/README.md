@@ -14,10 +14,10 @@ Vue.use(NumberKeyboard);
 ### Default Keyboard
 
 ```html
-<zv-cell @touchstart.native.stop="show = true">
+<ca2-cell @touchstart.native.stop="show = true">
   Show Keyboard
-</zv-cell>
-<zv-number-keyboard
+</ca2-cell>
+<ca2-number-keyboard
   :show="show"
   @blur="show = false"
   @input="onInput"
@@ -48,7 +48,7 @@ export default {
 ### Keyboard With Sidebar
 
 ```html
-<zv-number-keyboard
+<ca2-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -64,11 +64,11 @@ export default {
 Use `extra-key` prop to set the content of bottom left button
 
 ```html
-<zv-cell plain type="primary" @touchstart.native.stop="show = true">
+<ca2-cell plain type="primary" @touchstart.native.stop="show = true">
   Show IdNumber Keyboard
-</zv-cell>
+</ca2-cell>
 
-<zv-number-keyboard
+<ca2-number-keyboard
   :show="show"
   extra-key="X"
   close-button-text="Close"
@@ -83,10 +83,10 @@ Use `extra-key` prop to set the content of bottom left button
 Use `title` prop to set keyboard title
 
 ```html
-<zv-cell plain type="info" @touchstart.native.stop="show = true">
+<ca2-cell plain type="info" @touchstart.native.stop="show = true">
   Show Keyboard With Title
-</zv-cell>
-<zv-number-keyboard
+</ca2-cell>
+<ca2-number-keyboard
   :show="show"
   title="Keyboard Title"
   extra-key="."
@@ -100,13 +100,13 @@ Use `title` prop to set keyboard title
 ### Bind Value
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
-<zv-number-keyboard
+<ca2-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"

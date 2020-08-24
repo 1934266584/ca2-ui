@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-button {
+.ca2-button {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -75,19 +75,19 @@
   &--plain {
     background-color: $button-plain-background-color;
 
-    &.zv-button--primary {
+    &.ca2-button--primary {
       color: $button-primary-background-color;
     }
 
-    &.zv-button--info {
+    &.ca2-button--info {
       color: $button-info-background-color;
     }
 
-    &.zv-button--danger {
+    &.ca2-button--danger {
       color: $button-danger-background-color;
     }
 
-    &.zv-button--warning {
+    &.ca2-button--warning {
       color: $button-warning-background-color;
     }
   }
@@ -124,7 +124,7 @@
     font-size: $button-mini-font-size;
     line-height: $button-mini-line-height;
 
-    & + .zv-button--mini {
+    & + .ca2-button--mini {
       margin-left: $padding-base;
     }
   }
@@ -173,11 +173,11 @@
       border-radius: $button-border-radius * 2;
     }
 
-    &.zv-button--round::after {
+    &.ca2-button--round::after {
       border-radius: $button-round-border-radius;
     }
 
-    &.zv-button--square::after {
+    &.ca2-button--square::after {
       border-radius: 0;
     }
   }

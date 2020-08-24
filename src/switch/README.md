@@ -14,7 +14,7 @@ Vue.use(Switch);
 ### Basic Usage
 
 ```html
-<zv-switch v-model="checked" />
+<ca2-switch v-model="checked" />
 ```
 
 ```js
@@ -30,31 +30,31 @@ export default {
 ### Disabled
 
 ```html
-<zv-switch v-model="checked" disabled />
+<ca2-switch v-model="checked" disabled />
 ```
 
 ### Loading
 
 ```html
-<zv-switch v-model="checked" loading />
+<ca2-switch v-model="checked" loading />
 ```
 
 ### Custom Size
 
 ```html
-<zv-switch v-model="checked" size="24px" />
+<ca2-switch v-model="checked" size="24px" />
 ```
 
 ### Custom Color
 
 ```html
-<zv-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
+<ca2-switch v-model="checked" active-color="#07c160" inactive-color="#ee0a24" />
 ```
 
 ### Async Control
 
 ```html
-<zv-switch :value="checked" @input="onInput" />
+<ca2-switch :value="checked" @input="onInput" />
 ```
 
 ```js
@@ -80,11 +80,11 @@ export default {
 ### Inside a Cell
 
 ```html
-<zv-cell center title="Title">
+<ca2-cell center title="Title">
   <template #right-icon>
-    <zv-switch v-model="checked" size="24" />
+    <ca2-switch v-model="checked" size="24" />
   </template>
-</zv-cell>
+</ca2-cell>
 ```
 
 ## API

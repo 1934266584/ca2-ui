@@ -1,94 +1,94 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-checkbox v-model="checkbox1">{{ t('checkbox') }}</zv-checkbox>
+      <ca2-checkbox v-model="checkbox1">{{ t('checkbox') }}</ca2-checkbox>
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <zv-checkbox :value="false" disabled>
+      <ca2-checkbox :value="false" disabled>
         {{ t('checkbox') }}
-      </zv-checkbox>
-      <zv-checkbox :value="true" disabled>
+      </ca2-checkbox>
+      <ca2-checkbox :value="true" disabled>
         {{ t('checkbox') }}
-      </zv-checkbox>
+      </ca2-checkbox>
     </demo-block>
 
     <demo-block :title="t('customShape')">
-      <zv-checkbox v-model="checkboxShape" shape="square">
+      <ca2-checkbox v-model="checkboxShape" shape="square">
         {{ t('customColor') }}
-      </zv-checkbox>
+      </ca2-checkbox>
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <zv-checkbox v-model="checkbox2" checked-color="#07c160">
+      <ca2-checkbox v-model="checkbox2" checked-color="#07c160">
         {{ t('customColor') }}
-      </zv-checkbox>
+      </ca2-checkbox>
     </demo-block>
 
     <demo-block :title="t('customIconSize')">
-      <zv-checkbox v-model="checboxIcon" icon-size="24px">
+      <ca2-checkbox v-model="checboxIcon" icon-size="24px">
         {{ t('customIconSize') }}
-      </zv-checkbox>
+      </ca2-checkbox>
     </demo-block>
 
     <demo-block :title="t('customIcon')">
-      <zv-checkbox v-model="checkbox3">
+      <ca2-checkbox v-model="checkbox3">
         {{ t('customIcon') }}
         <template #icon="{ checked }">
           <img :src="checked ? activeIcon : inactiveIcon" />
         </template>
-      </zv-checkbox>
+      </ca2-checkbox>
     </demo-block>
 
     <demo-block :title="t('disableLabel')">
-      <zv-checkbox v-model="checkboxLabel" label-disabled>
+      <ca2-checkbox v-model="checkboxLabel" label-disabled>
         {{ t('checkbox') }}
-      </zv-checkbox>
+      </ca2-checkbox>
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-checkbox-group v-model="result">
-        <zv-checkbox name="a">{{ t('checkbox') }} a</zv-checkbox>
-        <zv-checkbox name="b">{{ t('checkbox') }} b</zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="result">
+        <ca2-checkbox name="a">{{ t('checkbox') }} a</ca2-checkbox>
+        <ca2-checkbox name="b">{{ t('checkbox') }} b</ca2-checkbox>
+      </ca2-checkbox-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('horizontal')">
-      <zv-checkbox-group v-model="horizontalResult" direction="horizontal">
-        <zv-checkbox name="a">{{ t('checkbox') }} a</zv-checkbox>
-        <zv-checkbox name="b">{{ t('checkbox') }} b</zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="horizontalResult" direction="horizontal">
+        <ca2-checkbox name="a">{{ t('checkbox') }} a</ca2-checkbox>
+        <ca2-checkbox name="b">{{ t('checkbox') }} b</ca2-checkbox>
+      </ca2-checkbox-group>
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <zv-checkbox-group v-model="result2" :max="2">
-        <zv-checkbox name="a">{{ t('checkbox') }} a</zv-checkbox>
-        <zv-checkbox name="b">{{ t('checkbox') }} b</zv-checkbox>
-        <zv-checkbox name="c">{{ t('checkbox') }} c</zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="result2" :max="2">
+        <ca2-checkbox name="a">{{ t('checkbox') }} a</ca2-checkbox>
+        <ca2-checkbox name="b">{{ t('checkbox') }} b</ca2-checkbox>
+        <ca2-checkbox name="c">{{ t('checkbox') }} c</ca2-checkbox>
+      </ca2-checkbox-group>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('toggleAll')">
-      <zv-checkbox-group v-model="checkAllResult" ref="group">
-        <zv-checkbox name="a">{{ t('checkbox') }} a</zv-checkbox>
-        <zv-checkbox name="b">{{ t('checkbox') }} b</zv-checkbox>
-        <zv-checkbox name="c">{{ t('checkbox') }} c</zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="checkAllResult" ref="group">
+        <ca2-checkbox name="a">{{ t('checkbox') }} a</ca2-checkbox>
+        <ca2-checkbox name="b">{{ t('checkbox') }} b</ca2-checkbox>
+        <ca2-checkbox name="c">{{ t('checkbox') }} c</ca2-checkbox>
+      </ca2-checkbox-group>
 
       <div class="demo-checkbox-buttons">
-        <zv-button type="primary" @click="checkAll">
+        <ca2-button type="primary" @click="checkAll">
           {{ t('checkAll') }}
-        </zv-button>
-        <zv-button type="info" @click="toggleAll">
+        </ca2-button>
+        <ca2-button type="info" @click="toggleAll">
           {{ t('inverse') }}
-        </zv-button>
+        </ca2-button>
       </div>
     </demo-block>
 
     <demo-block :title="t('title5')">
-      <zv-checkbox-group v-model="result3">
-        <zv-cell-group>
-          <zv-cell
+      <ca2-checkbox-group v-model="result3">
+        <ca2-cell-group>
+          <ca2-cell
             v-for="(item, index) in list"
             clickable
             :key="index"
@@ -96,11 +96,11 @@
             @click="toggle(index)"
           >
             <template #right-icon>
-              <zv-checkbox ref="checkboxes" :name="item" />
+              <ca2-checkbox ref="checkboxes" :name="item" />
             </template>
-          </zv-cell>
-        </zv-cell-group>
-      </zv-checkbox-group>
+          </ca2-cell>
+        </ca2-cell-group>
+      </ca2-checkbox-group>
     </demo-block>
   </demo-section>
 </template>
@@ -181,12 +181,12 @@ export default {
 .demo-checkbox {
   background: $white;
 
-  .zv-checkbox {
+  .ca2-checkbox {
     margin: 0 0 8px 20px;
   }
 
-  .zv-cell {
-    .zv-checkbox {
+  .ca2-cell {
+    .ca2-checkbox {
       margin: 0;
     }
   }
@@ -198,12 +198,12 @@ export default {
   &-buttons {
     margin-top: $padding-md;
 
-    .zv-button {
+    .ca2-button {
       margin-left: $padding-md;
     }
   }
 
-  .zv-doc-demo-block__title {
+  .ca2-doc-demo-block__title {
     margin-top: -8px;
   }
 }

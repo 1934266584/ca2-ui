@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Sticky } from 'zvt';
+import { Sticky } from 'ca2t';
 
 Vue.use(Sticky);
 ```
@@ -14,26 +14,26 @@ Vue.use(Sticky);
 ### Basic Usage
 
 ```html
-<zv-sticky>
-  <zv-button type="primary">Basic Usage</zv-button>
-</zv-sticky>
+<ca2-sticky>
+  <ca2-button type="primary">Basic Usage</ca2-button>
+</ca2-sticky>
 ```
 
 ### Offset Top
 
 ```html
-<zv-sticky :offset-top="50">
-  <zv-button type="info">Offset Top</zv-button>
-</zv-sticky>
+<ca2-sticky :offset-top="50">
+  <ca2-button type="info">Offset Top</ca2-button>
+</ca2-sticky>
 ```
 
 ### Set Container
 
 ```html
 <div ref="container" style="height: 150px;">
-  <zv-sticky :container="container">
-    <zv-button type="warning">Set Container</zv-button>
-  </zv-sticky>
+  <ca2-sticky :container="container">
+    <ca2-button type="warning">Set Container</ca2-button>
+  </ca2-sticky>
 </div>
 ```
 

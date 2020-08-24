@@ -1,44 +1,44 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-dropdown-menu>
-        <zv-dropdown-item v-model="value1" :options="option1" />
-        <zv-dropdown-item v-model="value2" :options="option2" />
-      </zv-dropdown-menu>
+      <ca2-dropdown-menu>
+        <ca2-dropdown-item v-model="value1" :options="option1" />
+        <ca2-dropdown-item v-model="value2" :options="option2" />
+      </ca2-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <zv-dropdown-menu>
-        <zv-dropdown-item v-model="value1" :options="option1" />
-        <zv-dropdown-item :title="t('itemTitle')" ref="item">
-          <zv-switch-cell v-model="switch1" :title="t('switchTitle1')" />
-          <zv-switch-cell v-model="switch2" :title="t('switchTitle2')" />
-          <zv-button type="info" block @click="onConfirm">
+      <ca2-dropdown-menu>
+        <ca2-dropdown-item v-model="value1" :options="option1" />
+        <ca2-dropdown-item :title="t('itemTitle')" ref="item">
+          <ca2-switch-cell v-model="switch1" :title="t('switchTitle1')" />
+          <ca2-switch-cell v-model="switch2" :title="t('switchTitle2')" />
+          <ca2-button type="info" block @click="onConfirm">
             {{ t('confirm') }}
-          </zv-button>
-        </zv-dropdown-item>
-      </zv-dropdown-menu>
+          </ca2-button>
+        </ca2-dropdown-item>
+      </ca2-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('customActiveColor')">
-      <zv-dropdown-menu active-color="#ee0a24">
-        <zv-dropdown-item v-model="value1" :options="option1" />
-        <zv-dropdown-item v-model="value2" :options="option2" />
-      </zv-dropdown-menu>
+      <ca2-dropdown-menu active-color="#ee0a24">
+        <ca2-dropdown-item v-model="value1" :options="option1" />
+        <ca2-dropdown-item v-model="value2" :options="option2" />
+      </ca2-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('expandDirection')">
-      <zv-dropdown-menu direction="up">
-        <zv-dropdown-item v-model="value1" :options="option1" />
-        <zv-dropdown-item v-model="value2" :options="option2" />
-      </zv-dropdown-menu>
+      <ca2-dropdown-menu direction="up">
+        <ca2-dropdown-item v-model="value1" :options="option1" />
+        <ca2-dropdown-item v-model="value2" :options="option2" />
+      </ca2-dropdown-menu>
     </demo-block>
 
     <demo-block :title="t('disableMenu')">
-      <zv-dropdown-menu>
-        <zv-dropdown-item v-model="value1" disabled :options="option1" />
-        <zv-dropdown-item v-model="value2" disabled :options="option2" />
-      </zv-dropdown-menu>
+      <ca2-dropdown-menu>
+        <ca2-dropdown-item v-model="value1" disabled :options="option1" />
+        <ca2-dropdown-item v-model="value2" disabled :options="option2" />
+      </ca2-dropdown-menu>
     </demo-block>
   </demo-section>
 </template>

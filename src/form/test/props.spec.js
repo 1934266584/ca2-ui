@@ -5,10 +5,10 @@ test('rules prop - execute order', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form @failed="onFailed">
-        <zv-field name="A" :rules="rules" value="123" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form @failed="onFailed">
+        <ca2-field name="A" :rules="rules" value="123" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -36,10 +36,10 @@ test('rules prop - pattern', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form @failed="onFailed">
-        <zv-field name="A" :rules="rules" value="123" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form @failed="onFailed">
+        <ca2-field name="A" :rules="rules" value="123" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -63,10 +63,10 @@ test('rules prop - message function', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form @failed="onFailed">
-        <zv-field name="A" :rules="rules" value="123" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form @failed="onFailed">
+        <ca2-field name="A" :rules="rules" value="123" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -90,10 +90,10 @@ test('rules prop - formatter', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form @failed="onFailed">
-        <zv-field name="A" :rules="rules" value=" " />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form @failed="onFailed">
+        <ca2-field name="A" :rules="rules" value=" " />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -126,10 +126,10 @@ test('rules prop - async validator', async () => {
   const onFailed = jest.fn();
   const wrapper = mountForm({
     template: `
-      <zv-form @failed="onFailed">
-        <zv-field name="A" :rules="rules" value="123" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form @failed="onFailed">
+        <ca2-field name="A" :rules="rules" value="123" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -168,11 +168,11 @@ test('validate-first prop', async () => {
 
   const wrapper = mountForm({
     template: `
-      <zv-form validate-first @submit="onSubmit" @failed="onFailed">
-        <zv-field name="A" :rules="rulesA" :value="value" />
-        <zv-field name="B" :rules="rulesB" :value="value" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form validate-first @submit="onSubmit" @failed="onFailed">
+        <ca2-field name="A" :rules="rulesA" :value="value" />
+        <ca2-field name="B" :rules="rulesB" :value="value" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -203,12 +203,12 @@ test('validate-first prop', async () => {
 test('colon prop', () => {
   const wrapper = mountForm({
     template: `
-      <zv-form colon>
-        <zv-field label="Label" />
-        <zv-field>
+      <ca2-form colon>
+        <ca2-field label="Label" />
+        <ca2-field>
           <template #label>Custom Label</template>
-        </zv-field>
-      </zv-form>
+        </ca2-field>
+      </ca2-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -217,10 +217,10 @@ test('colon prop', () => {
 test('label-align prop', () => {
   const wrapper = mountForm({
     template: `
-      <zv-form label-align="right">
-        <zv-field label="Label" />
-        <zv-field label="Label" label-align="center" />
-      </zv-form>
+      <ca2-form label-align="right">
+        <ca2-field label="Label" />
+        <ca2-field label="Label" label-align="center" />
+      </ca2-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -229,10 +229,10 @@ test('label-align prop', () => {
 test('label-width prop', () => {
   const wrapper = mountForm({
     template: `
-      <zv-form label-width="5rem">
-        <zv-field label="Label" />
-        <zv-field label="Label" label-width="10vw" />
-      </zv-form>
+      <ca2-form label-width="5rem">
+        <ca2-field label="Label" />
+        <ca2-field label="Label" label-width="10vw" />
+      </ca2-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -241,14 +241,14 @@ test('label-width prop', () => {
 test('input-align prop', () => {
   const wrapper = mountForm({
     template: `
-      <zv-form input-align="right">
-        <zv-field />
-        <zv-field>
+      <ca2-form input-align="right">
+        <ca2-field />
+        <ca2-field>
           <template #input>
             <div />
           </template>
-        </zv-field>
-      </zv-form>
+        </ca2-field>
+      </ca2-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -257,9 +257,9 @@ test('input-align prop', () => {
 test('error-message-align prop', () => {
   const wrapper = mountForm({
     template: `
-      <zv-form error-message-align="right">
-        <zv-field error-message="Error" />
-      </zv-form>
+      <ca2-form error-message-align="right">
+        <ca2-field error-message="Error" />
+      </ca2-form>
     `,
   });
   expect(wrapper).toMatchSnapshot();
@@ -268,9 +268,9 @@ test('error-message-align prop', () => {
 test('validate-trigger - onBlur', async () => {
   const wrapper = mountForm({
     template: `
-      <zv-form ref="form">
-        <zv-field name="A" :rules="rulesA" value="" />
-      </zv-form>
+      <ca2-form ref="form">
+        <ca2-field name="A" :rules="rulesA" value="" />
+      </ca2-form>
     `,
     data: getSimpleRules,
   });
@@ -279,19 +279,19 @@ test('validate-trigger - onBlur', async () => {
 
   input.trigger('input');
   await later();
-  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeFalsy();
 
   input.trigger('blur');
   await later();
-  expect(wrapper.contains('.zv-field__error-message')).toBeTruthy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeTruthy();
 });
 
 test('validate-trigger - onChange', async () => {
   const wrapper = mountForm({
     template: `
-      <zv-form validate-trigger="onChange" ref="form">
-        <zv-field v-model="value" name="A" :rules="rulesA" />
-      </zv-form>
+      <ca2-form validate-trigger="onChange" ref="form">
+        <ca2-field v-model="value" name="A" :rules="rulesA" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -305,24 +305,24 @@ test('validate-trigger - onChange', async () => {
 
   input.trigger('blur');
   await later();
-  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeFalsy();
 
   wrapper.setData({ value: '1' });
   await later();
-  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeFalsy();
 
   wrapper.setData({ value: '' });
   await later();
-  expect(wrapper.contains('.zv-field__error-message')).toBeTruthy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeTruthy();
 });
 
 test('validate-trigger - custom trigger in rules', async () => {
   const wrapper = mountForm({
     template: `
-      <zv-form validate-trigger="none" ref="form">
-        <zv-field name="A" :rules="rulesA" :value="valueA" />
-        <zv-field name="B" :rules="rulesB" :value="valueB" />
-      </zv-form>
+      <ca2-form validate-trigger="none" ref="form">
+        <ca2-field name="A" :rules="rulesA" :value="valueA" />
+        <ca2-field name="B" :rules="rulesB" :value="valueB" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -353,7 +353,7 @@ test('validate-trigger - custom trigger in rules', async () => {
   await later();
   wrapper.setData({ valueB: '' });
   await later();
-  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeFalsy();
 
   inputs.at(1).trigger('blur');
   wrapper.setData({ valueA: '1' });
@@ -361,7 +361,7 @@ test('validate-trigger - custom trigger in rules', async () => {
   wrapper.setData({ valueA: '' });
   await later();
   expect(
-    wrapper.element.querySelectorAll('.zv-field__error-message').length
+    wrapper.element.querySelectorAll('.ca2-field__error-message').length
   ).toEqual(2);
 });
 
@@ -369,10 +369,10 @@ test('scroll-to-error prop', async () => {
   const fn = mockScrollIntoView();
   const wrapper = mountForm({
     template: `
-      <zv-form scroll-to-error>
-        <zv-field name="A" :rules="rulesA" value="" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form scroll-to-error>
+        <ca2-field name="A" :rules="rulesA" value="" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data: getSimpleRules,
   });
@@ -385,10 +385,10 @@ test('scroll-to-error prop', async () => {
 test('show-error-message prop', async () => {
   const wrapper = mountForm({
     template: `
-      <zv-form :show-error-message="showErrorMessage">
-        <zv-field name="A" :rules="rulesA" value="" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form :show-error-message="showErrorMessage">
+        <ca2-field name="A" :rules="rulesA" value="" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -399,21 +399,21 @@ test('show-error-message prop', async () => {
   });
 
   await submitForm(wrapper);
-  expect(wrapper.contains('.zv-field__error-message')).toBeFalsy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeFalsy();
 
   wrapper.setData({ showErrorMessage: true });
 
   await submitForm(wrapper);
-  expect(wrapper.contains('.zv-field__error-message')).toBeTruthy();
+  expect(wrapper.contains('.ca2-field__error-message')).toBeTruthy();
 });
 
 test('show-error prop', async () => {
   const wrapper = mountForm({
     template: `
-      <zv-form :show-error="showError">
-        <zv-field name="A" :rules="rulesA" value="" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form :show-error="showError">
+        <ca2-field name="A" :rules="rulesA" value="" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data() {
       return {
@@ -424,10 +424,10 @@ test('show-error prop', async () => {
   });
 
   await submitForm(wrapper);
-  expect(wrapper.contains('.zv-field--error')).toBeFalsy();
+  expect(wrapper.contains('.ca2-field--error')).toBeFalsy();
 
   wrapper.setData({ showError: true });
 
   await submitForm(wrapper);
-  expect(wrapper.contains('.zv-field--error')).toBeTruthy();
+  expect(wrapper.contains('.ca2-field--error')).toBeTruthy();
 });

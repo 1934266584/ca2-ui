@@ -17,10 +17,10 @@ Vue.use(RadioGroup);
 Use `v-model` to bind the name of checked radio
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1">Radio 1</zv-radio>
-  <zv-radio name="2">Radio 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1">Radio 1</ca2-radio>
+  <ca2-radio name="2">Radio 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ```js
@@ -36,46 +36,46 @@ export default {
 ### Horizontal
 
 ```html
-<zv-radio-group v-model="radio" direction="horizontal">
-  <zv-radio name="1">Radio 1</zv-radio>
-  <zv-radio name="2">Radio 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio" direction="horizontal">
+  <ca2-radio name="1">Radio 1</ca2-radio>
+  <ca2-radio name="2">Radio 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### Disabled
 
 ```html
-<zv-radio-group v-model="radio" disabled>
-  <zv-radio name="1">Radio 1</zv-radio>
-  <zv-radio name="2">Radio 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio" disabled>
+  <ca2-radio name="1">Radio 1</ca2-radio>
+  <ca2-radio name="2">Radio 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### Custom Shape
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" shape="square">Radio 1</zv-radio>
-  <zv-radio name="2" shape="square">Radio 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" shape="square">Radio 1</ca2-radio>
+  <ca2-radio name="2" shape="square">Radio 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### Custom Color
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" checked-color="#07c160">Radio 1</zv-radio>
-  <zv-radio name="2" checked-color="#07c160">Radio 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" checked-color="#07c160">Radio 1</ca2-radio>
+  <ca2-radio name="2" checked-color="#07c160">Radio 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### Custom Icon Size
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" icon-size="24px">Radio 1</zv-radio>
-  <zv-radio name="2" icon-size="24px">Radio 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" icon-size="24px">Radio 1</ca2-radio>
+  <ca2-radio name="2" icon-size="24px">Radio 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### Custom Icon
@@ -83,8 +83,8 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1">
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1">
     Radio 1
     <template #icon="props">
       <img
@@ -92,8 +92,8 @@ Use icon slot to custom icon
         :src="props.checked ? activeIcon : inactiveIcon"
       >
     </template>
-  </zv-radio>
-  <zv-radio name="2">
+  </ca2-radio>
+  <ca2-radio name="2">
     Radio 2
     <template #icon="props">
       <img
@@ -101,8 +101,8 @@ Use icon slot to custom icon
         :src="props.checked ? activeIcon : inactiveIcon"
       />
     </template>
-  </zv-radio>
-</zv-radio-group>
+  </ca2-radio>
+</ca2-radio-group>
 
 <style>
   .img-icon {
@@ -126,29 +126,29 @@ export default {
 ### Disable Label Click
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-radio name="1" label-disabled>Radio 1</zv-radio>
-  <zv-radio name="2" label-disabled>Radio 2</zv-radio>
-</zv-radio-group>
+<ca2-radio-group v-model="radio">
+  <ca2-radio name="1" label-disabled>Radio 1</ca2-radio>
+  <ca2-radio name="2" label-disabled>Radio 2</ca2-radio>
+</ca2-radio-group>
 ```
 
 ### Inside a Cell
 
 ```html
-<zv-radio-group v-model="radio">
-  <zv-cell-group>
-    <zv-cell title="Radio 1" clickable @click="radio = '1'">
+<ca2-radio-group v-model="radio">
+  <ca2-cell-group>
+    <ca2-cell title="Radio 1" clickable @click="radio = '1'">
       <template #right-icon>      
-        <zv-radio name="1" />
+        <ca2-radio name="1" />
       </template>
-    </zv-cell>
-    <zv-cell title="Radio 2" clickable @click="radio = '2'">
+    </ca2-cell>
+    <ca2-cell title="Radio 2" clickable @click="radio = '2'">
       <template #right-icon>
-        <zv-radio name="2" />
+        <ca2-radio name="2" />
       </template>
-    </zv-cell>
-  </zv-cell-group>
-</zv-radio-group>
+    </ca2-cell>
+  </ca2-cell-group>
+</ca2-radio-group>
 ```
 
 ## API

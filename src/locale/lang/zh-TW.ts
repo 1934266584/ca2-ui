@@ -12,7 +12,7 @@ export default {
   nameInvalid: '請輸入正確的姓名',
   confirmDelete: '確定要刪除嗎',
   telInvalid: '請填寫正確的電話',
-  zvCalendar: {
+  ca2Calendar: {
     end: '結束',
     start: '開始',
     title: '日期選擇',
@@ -22,34 +22,34 @@ export default {
     monthTitle: (year: number, month: number) => `${year}年${month}月`,
     rangePrompt: (maxRange: number) => `選擇天數不能超過 ${maxRange} 天`,
   },
-  zvContactCard: {
+  ca2ContactCard: {
     addText: '新增聯絡人',
   },
-  zvContactList: {
+  ca2ContactList: {
     addText: '建立聯絡人',
   },
-  zvPagination: {
+  ca2Pagination: {
     prev: '上一頁',
     next: '下一頁',
   },
-  zvPullRefresh: {
+  ca2PullRefresh: {
     pulling: '下拉即可刷新...',
     loosing: '釋放即可刷新...',
   },
-  zvSubmitBar: {
+  ca2SubmitBar: {
     label: '合計：',
   },
-  zvCoupon: {
+  ca2Coupon: {
     unlimited: '無使用門檻',
     discount: (discount: number) => `${discount}折`,
     condition: (condition: number) => `滿${condition}元可用`,
   },
-  zvCouponCell: {
+  ca2CouponCell: {
     title: '優惠券',
     tips: '暫無可用',
     count: (count: number) => `${count}張可用`,
   },
-  zvCouponList: {
+  ca2CouponList: {
     empty: '暫無優惠券',
     exchange: '兌換',
     close: '不使用優惠',
@@ -57,7 +57,7 @@ export default {
     disabled: '不可使用優惠券',
     placeholder: '請輸入優惠代碼',
   },
-  zvAddressEdit: {
+  ca2AddressEdit: {
     area: '地區',
     postal: '郵遞區號',
     areaEmpty: '請選擇地區',
@@ -68,11 +68,11 @@ export default {
     namePlaceholder: '收貨人姓名',
     areaPlaceholder: '選擇縣 / 市',
   },
-  zvAddressEditDetail: {
+  ca2AddressEditDetail: {
     label: '詳細地址',
     placeholder: '街道門牌、樓層房號等資訊',
   },
-  zvAddressList: {
+  ca2AddressList: {
     add: '新增地址',
   },
 };

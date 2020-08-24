@@ -1,7 +1,7 @@
 @import '../style/var.scss';
 @import '../style/mixins/clearfix.scss';
 
-.zv-sku {
+.ca2-sku {
   &-container {
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@
     padding: $padding-sm 0 2px;
 
     &--hide-soldout {
-      .zv-sku-row__item--disabled {
+      .ca2-sku-row__item--disabled {
         display: none;
       }
     }
@@ -187,7 +187,7 @@
         background: $active-color;
         cursor: not-allowed;
 
-        .zv-sku-row__item-img {
+        .ca2-sku-row__item-img {
           opacity: 0.3;
         }
       }
@@ -241,11 +241,11 @@
     padding-bottom: $padding-xl;
 
     &__image-cell {
-      .zv-cell__title {
+      .ca2-cell__title {
         max-width: 90px;
       }
 
-      .zv-cell__value {
+      .ca2-cell__value {
         overflow: visible;
         text-align: left;
       }
@@ -325,7 +325,7 @@
     flex-shrink: 0;
     padding: $padding-xs $padding-md;
 
-    .zv-button {
+    .ca2-button {
       height: 40px;
       font-weight: $font-weight-bold;
       font-size: $font-size-md;

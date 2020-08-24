@@ -1,8 +1,8 @@
 @import '../style/var.scss';
 
-.zv-collapse-item {
+.ca2-collapse-item {
   &__title {
-    .zv-cell__right-icon::before {
+    .ca2-cell__right-icon::before {
       transform: rotate(90deg);
       transition: transform $collapse-item-transition-duration;
     }
@@ -12,7 +12,7 @@
     }
 
     &--expanded {
-      .zv-cell__right-icon::before {
+      .ca2-cell__right-icon::before {
         transform: rotate(-90deg);
       }
 
@@ -25,7 +25,7 @@
       cursor: not-allowed;
 
       &,
-      & .zv-cell__right-icon {
+      & .ca2-cell__right-icon {
         color: $collapse-item-title-disabled-color;
       }
 

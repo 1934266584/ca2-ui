@@ -1,53 +1,53 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-tag>{{ t('tag') }}</zv-tag>
-      <zv-tag type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag type="warning">{{ t('tag') }}</zv-tag>
+      <ca2-tag>{{ t('tag') }}</ca2-tag>
+      <ca2-tag type="primary">{{ t('tag') }}</ca2-tag>
+      <ca2-tag type="success">{{ t('tag') }}</ca2-tag>
+      <ca2-tag type="danger">{{ t('tag') }}</ca2-tag>
+      <ca2-tag type="warning">{{ t('tag') }}</ca2-tag>
     </demo-block>
 
     <demo-block :title="t('round')">
-      <zv-tag round>{{ t('tag') }}</zv-tag>
-      <zv-tag round type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag round type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag round type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag round type="warning">{{ t('tag') }}</zv-tag>
+      <ca2-tag round>{{ t('tag') }}</ca2-tag>
+      <ca2-tag round type="primary">{{ t('tag') }}</ca2-tag>
+      <ca2-tag round type="success">{{ t('tag') }}</ca2-tag>
+      <ca2-tag round type="danger">{{ t('tag') }}</ca2-tag>
+      <ca2-tag round type="warning">{{ t('tag') }}</ca2-tag>
     </demo-block>
 
     <demo-block :title="t('mark')">
-      <zv-tag mark>{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag mark type="warning">{{ t('tag') }}</zv-tag>
+      <ca2-tag mark>{{ t('tag') }}</ca2-tag>
+      <ca2-tag mark type="primary">{{ t('tag') }}</ca2-tag>
+      <ca2-tag mark type="success">{{ t('tag') }}</ca2-tag>
+      <ca2-tag mark type="danger">{{ t('tag') }}</ca2-tag>
+      <ca2-tag mark type="warning">{{ t('tag') }}</ca2-tag>
     </demo-block>
 
     <demo-block :title="t('plain')">
-      <zv-tag plain>{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="primary">{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="danger">{{ t('tag') }}</zv-tag>
-      <zv-tag plain type="warning">{{ t('tag') }}</zv-tag>
+      <ca2-tag plain>{{ t('tag') }}</ca2-tag>
+      <ca2-tag plain type="primary">{{ t('tag') }}</ca2-tag>
+      <ca2-tag plain type="success">{{ t('tag') }}</ca2-tag>
+      <ca2-tag plain type="danger">{{ t('tag') }}</ca2-tag>
+      <ca2-tag plain type="warning">{{ t('tag') }}</ca2-tag>
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <zv-tag color="#f2826a">{{ t('tag') }}</zv-tag>
-      <zv-tag color="#f2826a" plain>{{ t('tag') }}</zv-tag>
-      <zv-tag color="#7232dd">{{ t('tag') }}</zv-tag>
-      <zv-tag color="#7232dd" plain>{{ t('tag') }}</zv-tag>
-      <zv-tag color="#ffe1e1" text-color="#ad0000">{{ t('tag') }}</zv-tag>
+      <ca2-tag color="#f2826a">{{ t('tag') }}</ca2-tag>
+      <ca2-tag color="#f2826a" plain>{{ t('tag') }}</ca2-tag>
+      <ca2-tag color="#7232dd">{{ t('tag') }}</ca2-tag>
+      <ca2-tag color="#7232dd" plain>{{ t('tag') }}</ca2-tag>
+      <ca2-tag color="#ffe1e1" text-color="#ad0000">{{ t('tag') }}</ca2-tag>
     </demo-block>
 
     <demo-block :title="t('customSize')">
-      <zv-tag type="success">{{ t('tag') }}</zv-tag>
-      <zv-tag type="success" size="medium">{{ t('tag') }}</zv-tag>
-      <zv-tag type="success" size="large">{{ t('tag') }}</zv-tag>
+      <ca2-tag type="success">{{ t('tag') }}</ca2-tag>
+      <ca2-tag type="success" size="medium">{{ t('tag') }}</ca2-tag>
+      <ca2-tag type="success" size="large">{{ t('tag') }}</ca2-tag>
     </demo-block>
 
     <demo-block :title="t('closeable')">
-      <zv-tag
+      <ca2-tag
         v-if="show.primary"
         size="medium"
         closeable
@@ -55,8 +55,8 @@
         @close="close('primary')"
       >
         {{ t('tag') }}
-      </zv-tag>
-      <zv-tag
+      </ca2-tag>
+      <ca2-tag
         v-if="show.success"
         size="medium"
         closeable
@@ -64,7 +64,7 @@
         @close="close('success')"
       >
         {{ t('tag') }}
-      </zv-tag>
+      </ca2-tag>
     </demo-block>
   </demo-section>
 </template>
@@ -113,11 +113,11 @@ export default {
 .demo-tag {
   background-color: $white;
 
-  .zv-tag + .zv-tag {
+  .ca2-tag + .ca2-tag {
     margin-left: $padding-xs;
   }
 
-  .zv-tag {
+  .ca2-tag {
     &:first-of-type {
       margin-left: $padding-md;
     }

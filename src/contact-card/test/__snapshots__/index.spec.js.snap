@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactList render 1`] = `
-<div class="zv-contact-list">
-  <div role="radiogroup" class="zv-radio-group zv-contact-list__group">
-    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-cell--center zv-contact-list__item"><i class="zv-icon zv-icon-edit zv-contact-list__edit">
+<div class="ca2-contact-list">
+  <div role="radiogroup" class="ca2-radio-group ca2-contact-list__group">
+    <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-cell--center ca2-contact-list__item"><i class="ca2-icon ca2-icon-edit ca2-contact-list__edit">
         <!----></i>
-      <div class="zv-cell__value zv-cell__value--alone zv-contact-list__item-value">test，123123213</div>
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked" style="font-size: 16px;"><i class="zv-icon zv-icon-success" style="border-color: #ee0a24; background-color: rgb(238, 10, 36);">
+      <div class="ca2-cell__value ca2-cell__value--alone ca2-contact-list__item-value">test，123123213</div>
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked" style="font-size: 16px;"><i class="ca2-icon ca2-icon-success" style="border-color: #ee0a24; background-color: rgb(238, 10, 36);">
             <!----></i></div>
       </div>
     </div>
   </div>
-  <div class="zv-contact-list__bottom"><button class="zv-button zv-button--danger zv-button--normal zv-button--block zv-button--round zv-contact-list__add"><span class="zv-button__text">新建联系人</span></button></div>
+  <div class="ca2-contact-list__bottom"><button class="ca2-button ca2-button--danger ca2-button--normal ca2-button--block ca2-button--round ca2-contact-list__add"><span class="ca2-button__text">新建联系人</span></button></div>
 </div>
 `;

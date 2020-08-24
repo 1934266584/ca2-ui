@@ -70,7 +70,7 @@ export default createComponent({
           <div class={bem('left')} onClick={this.onClickLeft}>
             {this.genLeft()}
           </div>
-          <div class={[bem('title'), 'zv-ellipsis']}>
+          <div class={[bem('title'), 'ca2-ellipsis']}>
             {this.slots('title') || this.title}
           </div>
           <div class={bem('right')} onClick={this.onClickRight}>

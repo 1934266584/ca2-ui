@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <zv-doc
+    <ca2-doc
       :lang="lang"
       :config="config"
       :versions="versions"
@@ -8,18 +8,18 @@
       :lang-configs="langConfigs"
     >
       <router-view />
-    </zv-doc>
+    </ca2-doc>
   </div>
 </template>
 
 <script>
-import ZvDoc from './components';
+import Ca2Doc from './components';
 import { config, packageVersion } from 'site-desktop-shared';
 import { setLang } from '../common/locales';
 
 export default {
   components: {
-    ZvDoc,
+    Ca2Doc,
   },
 
   data() {
@@ -93,7 +93,7 @@ export default {
 @import '../common/style/base';
 @import '../common/style/highlight';
 
-.zv-doc-intro {
+.ca2-doc-intro {
   padding-top: 20px;
   font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   text-align: center;

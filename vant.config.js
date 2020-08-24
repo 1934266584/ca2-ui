@@ -1,12 +1,12 @@
 module.exports = {
-  name: 'zv-ui',
+  name: 'ca2-ui',
   build: {
     skipInstall: ['lazyload'],
     site: {
-      publicPath: '/zv-ui/',
+      publicPath: '/ca2-ui/',
     },
     vetur: {
-      tagPrefix: 'zv-',
+      tagPrefix: 'ca2-',
     },
     css: {
       preprocessor: 'sass',
@@ -15,21 +15,21 @@ module.exports = {
   site: {
     defaultLang: 'en-US',
     versions: [
-      { label: '1.x', link: 'https://122687220.github.io/zv-ui/1.x/' },
+      { label: '1.x', link: 'https://1934266584.github.io/ca2-ui/1.x/' },
     ],
     baiduAnalytics: {
       seed: 'ad6b5732c36321f2dafed737ac2da92f',
     },
     locales: {
       'zh-CN': {
-        title: 'ZvUI',
+        title: 'Ca2UI',
         description: '轻量、可靠的移动端 Vue 组件库',
         logo: 'https://img.yzcdn.cn/vant/logo.png',
         langLabel: '中文',
         links: [
           {
             logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/122687220/zv-ui/',
+            url: 'hhttps://github.com/1934266584/ca2-ui/',
           },
         ],
         searchConfig: {
@@ -389,14 +389,14 @@ module.exports = {
         ],
       },
       'en-US': {
-        title: 'ZvUI',
+        title: 'Ca2UI',
         description: 'Mobile UI Components built on Vue',
         logo: 'https://img.yzcdn.cn/vant/logo.png',
         langLabel: 'En',
         links: [
           {
             logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/122687220/zv-ui/',
+            url: 'hhttps://github.com/1934266584/ca2-ui/',
           },
         ],
         searchConfig: {

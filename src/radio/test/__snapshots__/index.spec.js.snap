@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`checked-color prop 1`] = `
-<div role="radiogroup" class="zv-radio-group">
-  <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-    <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success" style="border-color: black; background-color: black;">
-        <!----></i></div><span class="zv-radio__label">label</span>
+<div role="radiogroup" class="ca2-radio-group">
+  <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+    <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success" style="border-color: black; background-color: black;">
+        <!----></i></div><span class="ca2-radio__label">label</span>
   </div>
-  <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-    <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success" style="border-color: white; background-color: white;">
-        <!----></i></div><span class="zv-radio__label">label</span>
+  <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+    <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success" style="border-color: white; background-color: white;">
+        <!----></i></div><span class="ca2-radio__label">label</span>
   </div>
 </div>
 `;
 
 exports[`icon-size prop 1`] = `
-<div role="radiogroup" class="zv-radio-group">
-  <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-    <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked" style="font-size: 10rem;"><i class="zv-icon zv-icon-success">
-        <!----></i></div><span class="zv-radio__label">label</span>
+<div role="radiogroup" class="ca2-radio-group">
+  <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+    <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked" style="font-size: 10rem;"><i class="ca2-icon ca2-icon-success">
+        <!----></i></div><span class="ca2-radio__label">label</span>
   </div>
-  <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-    <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked" style="font-size: 5rem;"><i class="zv-icon zv-icon-success">
-        <!----></i></div><span class="zv-radio__label">label</span>
+  <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+    <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked" style="font-size: 5rem;"><i class="ca2-icon ca2-icon-success">
+        <!----></i></div><span class="ca2-radio__label">label</span>
   </div>
 </div>
 `;

@@ -1,15 +1,15 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-contact-card
+      <ca2-contact-card
         :type="cardType"
         :name="currentContact.name"
         :tel="currentContact.tel"
         @click="showList = true"
       />
 
-      <zv-popup v-model="showList" position="bottom" :lazy-render="false">
-        <zv-contact-list
+      <ca2-popup v-model="showList" position="bottom" :lazy-render="false">
+        <ca2-contact-list
           v-model="chosenContactId"
           :list="list"
           :default-tag-text="t('defaultTagText')"
@@ -17,10 +17,10 @@
           @edit="onEdit"
           @select="onSelect"
         />
-      </zv-popup>
+      </ca2-popup>
 
-      <zv-popup v-model="showEdit" position="bottom" :lazy-render="false">
-        <zv-contact-edit
+      <ca2-popup v-model="showEdit" position="bottom" :lazy-render="false">
+        <ca2-contact-edit
           show-set-default
           :set-default-label="t('defaultLabel')"
           :contact-info="editingContact"
@@ -28,11 +28,11 @@
           @save="onSave"
           @delete="onDelete"
         />
-      </zv-popup>
+      </ca2-popup>
     </demo-block>
 
     <demo-block :title="t('uneditable')">
-      <zv-contact-card
+      <ca2-contact-card
         type="edit"
         :name="mockContact.name"
         :tel="mockContact.tel"
@@ -134,7 +134,7 @@ export default {
 
 <style lang="scss">
 .demo-contact-card {
-  .zv-popup {
+  .ca2-popup {
     height: 100%;
     background-color: #f2f2f2;
   }

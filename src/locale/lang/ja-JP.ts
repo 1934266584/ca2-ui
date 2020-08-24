@@ -12,7 +12,7 @@ export default {
   nameInvalid: '正しい名前を入力してください',
   confirmDelete: '本当に削除しますか',
   telInvalid: '正しい電話番号を入力してください',
-  zvCalendar: {
+  ca2Calendar: {
     end: '終了',
     start: '開始',
     title: '日付選択',
@@ -22,34 +22,34 @@ export default {
     monthTitle: (year: number, month: number) => `${year}年${month}月`,
     rangePrompt: (maxRange: number) => `${maxRange}日以内を選択してください`,
   },
-  zvContactCard: {
+  ca2ContactCard: {
     addText: '連絡先を追加',
   },
-  zvContactList: {
+  ca2ContactList: {
     addText: '新しい連絡先を追加',
   },
-  zvPagination: {
+  ca2Pagination: {
     prev: '前のページ',
     next: '次のページ',
   },
-  zvPullRefresh: {
+  ca2PullRefresh: {
     pulling: 'プルダウンして更新...',
     loosing: 'リリース時に更新...',
   },
-  zvSubmitBar: {
+  ca2SubmitBar: {
     label: '合計：',
   },
-  zvCoupon: {
+  ca2Coupon: {
     unlimited: '入場ありません',
     discount: (discount: number) => `${10 - discount}割引`,
     condition: (condition: number) => `${condition}円以上で利用可能`,
   },
-  zvCouponCell: {
+  ca2CouponCell: {
     title: 'クーポン',
     tips: '利用可能なクーポンがありません',
     count: (count: number) => `${count}枚が利用可能`,
   },
-  zvCouponList: {
+  ca2CouponList: {
     empty: 'クーポンはありません',
     exchange: '両替',
     close: 'クーポンを使用しません',
@@ -57,7 +57,7 @@ export default {
     disabled: '利用できません',
     placeholder: '割引コードを入力してください',
   },
-  zvAddressEdit: {
+  ca2AddressEdit: {
     area: '地域',
     postal: '郵便番号',
     areaEmpty: '地域を選択してください',
@@ -68,11 +68,11 @@ export default {
     namePlaceholder: '荷受人の名前',
     areaPlaceholder: '县 / 市 / 町を選択',
   },
-  zvAddressEditDetail: {
+  ca2AddressEditDetail: {
     label: '詳しい住所',
     placeholder: '番地、階の部屋番号など',
   },
-  zvAddressList: {
+  ca2AddressList: {
     add: '住所を追加',
   },
 };

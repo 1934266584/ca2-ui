@@ -20,7 +20,7 @@ Vue.use(Picker);
 Picker 组件通过`columns`属性配置选项数据，`columns`是一个包含字符串或对象的数组
 
 ```html
-<zv-picker :columns="columns" @change="onChange" />
+<ca2-picker :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -45,7 +45,7 @@ export default {
 单列选择时，可以通过`default-index`属性设置初始选中项的索引
 
 ```html
-<zv-picker :columns="columns" :default-index="2" />
+<ca2-picker :columns="columns" :default-index="2" />
 ```
 
 ### 展示顶部栏
@@ -53,7 +53,7 @@ export default {
 设置`show-toolbar`属性后会展示顶部操作栏，点击确认按钮触发`confirm`事件，点击取消按钮触发`cancel`事件
 
 ```html
-<zv-picker
+<ca2-picker
   show-toolbar
   title="标题"
   :columns="columns"
@@ -87,7 +87,7 @@ export default {
 通过`columns`属性可以配置多列选择
 
 ```html
-<zv-picker show-toolbar title="标题" :columns="columns" />
+<ca2-picker show-toolbar title="标题" :columns="columns" />
 ```
 
 ```js
@@ -116,7 +116,7 @@ export default {
 使用`columns`的`children`字段可以实现选项级联的效果（从 2.4.5 版本开始支持）
 
 ```html
-<zv-picker show-toolbar title="标题" :columns="columns" />
+<ca2-picker show-toolbar title="标题" :columns="columns" />
 ```
 
 ```js
@@ -163,7 +163,7 @@ export default {
 选项可以为对象结构，通过设置 disabled 来禁用该选项
 
 ```html
-<zv-picker :columns="columns" />
+<ca2-picker :columns="columns" />
 ```
 
 ```js
@@ -185,7 +185,7 @@ export default {
 通过 Picker 上的实例方法可以更灵活地控制选择器，比如使用`setColumnValues`方法实现多列联动
 
 ```html
-<zv-picker :columns="columns" @change="onChange" />
+<ca2-picker :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -213,7 +213,7 @@ export default {
 若选择器数据是异步获取的，可以通过 `loading` 属性显示加载提示
 
 ```html
-<zv-picker :columns="columns" :loading="loading" />
+<ca2-picker :columns="columns" :loading="loading" />
 ```
 
 ```js
@@ -238,7 +238,7 @@ export default {
 在实际场景中，Picker 通常作为用于辅助表单填写，可以搭配 Popup 和 Field 实现该效果
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   label="城市"
@@ -246,14 +246,14 @@ export default {
   placeholder="选择城市"
   @click="showPicker = true"
 />
-<zv-popup v-model="showPicker" position="bottom">
-  <zv-picker
+<ca2-popup v-model="showPicker" position="bottom">
+  <ca2-picker
     show-toolbar
     :columns="columns"
     @cancel="showPicker = false"
     @confirm="onConfirm"
   />
-</zv-popup>
+</ca2-popup>
 ```
 
 ```js

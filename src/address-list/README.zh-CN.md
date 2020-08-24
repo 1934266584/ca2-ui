@@ -14,7 +14,7 @@ Vue.use(AddressList);
 ### 基础用法
 
 ```html
-<zv-address-list
+<ca2-address-list
   v-model="chosenAddressId"
   :list="list"
   :disabled-list="disabledList"

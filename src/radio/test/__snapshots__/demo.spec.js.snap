@@ -3,125 +3,125 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group">
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 1</span>
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group">
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 1</span>
       </div>
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 2</span>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group zv-radio-group--horizontal">
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio zv-radio--horizontal">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 1</span>
-      </div>
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio zv-radio--horizontal">
-        <div class="zv-radio__icon zv-radio__icon--round"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 2</span>
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 2</span>
       </div>
     </div>
   </div>
   <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group">
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio zv-radio--disabled">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--disabled"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label zv-radio__label--disabled">单选框 1</span>
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group ca2-radio-group--horizontal">
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio ca2-radio--horizontal">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 1</span>
       </div>
-      <div role="radio" tabindex="-1" aria-checked="true" class="zv-radio zv-radio--disabled">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--disabled zv-radio__icon--checked"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label zv-radio__label--disabled">单选框 2</span>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group">
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--square zv-radio__icon--checked"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 1</span>
-      </div>
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--square"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 2</span>
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio ca2-radio--horizontal">
+        <div class="ca2-radio__icon ca2-radio__icon--round"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 2</span>
       </div>
     </div>
   </div>
   <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group">
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success" style="border-color: #07c160; background-color: rgb(7, 193, 96);">
-            <!----></i></div><span class="zv-radio__label">
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group">
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio ca2-radio--disabled">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--disabled"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label ca2-radio__label--disabled">单选框 1</span>
+      </div>
+      <div role="radio" tabindex="-1" aria-checked="true" class="ca2-radio ca2-radio--disabled">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--disabled ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label ca2-radio__label--disabled">单选框 2</span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group">
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--square ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 1</span>
+      </div>
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--square"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 2</span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group">
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success" style="border-color: #07c160; background-color: rgb(7, 193, 96);">
+            <!----></i></div><span class="ca2-radio__label">
         单选框 1
       </span>
       </div>
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">
         单选框 2
       </span>
       </div>
     </div>
   </div>
   <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group">
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked" style="font-size: 24px;"><i class="zv-icon zv-icon-success" style="border-color: #07c160; background-color: rgb(7, 193, 96);">
-            <!----></i></div><span class="zv-radio__label">
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group">
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked" style="font-size: 24px;"><i class="ca2-icon ca2-icon-success" style="border-color: #07c160; background-color: rgb(7, 193, 96);">
+            <!----></i></div><span class="ca2-radio__label">
         单选框 1
       </span>
       </div>
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round" style="font-size: 24px;"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round" style="font-size: 24px;"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">
         单选框 2
       </span>
       </div>
     </div>
   </div>
   <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group">
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><img src="https://img.yzcdn.cn/vant/user-active.png"></div><span class="zv-radio__label">
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group">
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><img src="https://img.yzcdn.cn/vant/user-active.png"></div><span class="ca2-radio__label">
         单选框 1
         </span>
       </div>
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
-        <div class="zv-radio__icon zv-radio__icon--round"><img src="https://img.yzcdn.cn/vant/user-inactive.png"></div><span class="zv-radio__label">
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio">
+        <div class="ca2-radio__icon ca2-radio__icon--round"><img src="https://img.yzcdn.cn/vant/user-inactive.png"></div><span class="ca2-radio__label">
         单选框 2
         </span>
       </div>
     </div>
   </div>
   <div>
-    <div role="radiogroup" class="demo-radio-group zv-radio-group">
-      <div role="radio" tabindex="0" aria-checked="true" class="zv-radio zv-radio--label-disabled">
-        <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 1</span>
+    <div role="radiogroup" class="demo-radio-group ca2-radio-group">
+      <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio ca2-radio--label-disabled">
+        <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 1</span>
       </div>
-      <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio zv-radio--label-disabled">
-        <div class="zv-radio__icon zv-radio__icon--round"><i class="zv-icon zv-icon-success">
-            <!----></i></div><span class="zv-radio__label">单选框 2</span>
+      <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio ca2-radio--label-disabled">
+        <div class="ca2-radio__icon ca2-radio__icon--round"><i class="ca2-icon ca2-icon-success">
+            <!----></i></div><span class="ca2-radio__label">单选框 2</span>
       </div>
     </div>
   </div>
   <div>
-    <div role="radiogroup" class="zv-radio-group">
-      <div class="zv-cell-group zv-hairline--top-bottom">
-        <div role="button" tabindex="0" class="zv-cell zv-cell--clickable">
-          <div class="zv-cell__title"><span>单选框1</span></div>
-          <div role="radio" tabindex="0" aria-checked="true" class="zv-radio">
-            <div class="zv-radio__icon zv-radio__icon--round zv-radio__icon--checked"><i class="zv-icon zv-icon-success">
+    <div role="radiogroup" class="ca2-radio-group">
+      <div class="ca2-cell-group ca2-hairline--top-bottom">
+        <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable">
+          <div class="ca2-cell__title"><span>单选框1</span></div>
+          <div role="radio" tabindex="0" aria-checked="true" class="ca2-radio">
+            <div class="ca2-radio__icon ca2-radio__icon--round ca2-radio__icon--checked"><i class="ca2-icon ca2-icon-success">
                 <!----></i></div>
           </div>
         </div>
-        <div role="button" tabindex="0" class="zv-cell zv-cell--clickable">
-          <div class="zv-cell__title"><span>单选框2</span></div>
-          <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
-            <div class="zv-radio__icon zv-radio__icon--round"><i class="zv-icon zv-icon-success">
+        <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable">
+          <div class="ca2-cell__title"><span>单选框2</span></div>
+          <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio">
+            <div class="ca2-radio__icon ca2-radio__icon--round"><i class="ca2-icon ca2-icon-success">
                 <!----></i></div>
           </div>
         </div>

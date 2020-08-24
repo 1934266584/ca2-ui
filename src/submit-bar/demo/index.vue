@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-submit-bar
+      <ca2-submit-bar
         :price="3050"
         :button-text="t('submit')"
         @submit="onClickButton"
@@ -9,7 +9,7 @@
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <zv-submit-bar
+      <ca2-submit-bar
         disabled
         :price="3050"
         :button-text="t('submit')"
@@ -20,7 +20,7 @@
     </demo-block>
 
     <demo-block :title="t('loadingStatus')">
-      <zv-submit-bar
+      <ca2-submit-bar
         loading
         :price="3050"
         :button-text="t('submit')"
@@ -29,19 +29,19 @@
     </demo-block>
 
     <demo-block :title="t('advancedUsage')">
-      <zv-submit-bar
+      <ca2-submit-bar
         :price="3050"
         :button-text="t('submit')"
         @submit="onClickButton"
       >
-        <zv-checkbox v-model="checked">{{ t('check') }}</zv-checkbox>
+        <ca2-checkbox v-model="checked">{{ t('check') }}</ca2-checkbox>
         <template #tip>
           {{ t('tip2') }}
           <span class="edit-address" @click="onClickLink">
             {{ t('tip3') }}
           </span>
         </template>
-      </zv-submit-bar>
+      </ca2-submit-bar>
     </demo-block>
   </demo-section>
 </template>
@@ -90,7 +90,7 @@ export default {
 @import '../../style/var';
 
 .demo-submit-bar {
-  .zv-submit-bar {
+  .ca2-submit-bar {
     position: relative;
     padding-bottom: 0;
   }
@@ -99,7 +99,7 @@ export default {
     color: $blue;
   }
 
-  .zv-checkbox {
+  .ca2-checkbox {
     margin-right: $padding-sm;
   }
 }

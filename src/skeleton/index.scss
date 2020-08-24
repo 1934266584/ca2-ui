@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-skeleton {
+.ca2-skeleton {
   display: flex;
   padding: 0 $padding-md;
 
@@ -43,12 +43,12 @@
   }
 
   &--animate {
-    animation: zv-skeleton-blink $skeleton-animation-duration ease-in-out
+    animation: ca2-skeleton-blink $skeleton-animation-duration ease-in-out
       infinite;
   }
 }
 
-@keyframes zv-skeleton-blink {
+@keyframes ca2-skeleton-blink {
   50% {
     opacity: 0.6;
   }

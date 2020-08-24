@@ -14,7 +14,7 @@ Vue.use(Circle);
 ### Basic Usage
 
 ```html
-<zv-circle
+<ca2-circle
   v-model="currentRate"
   :rate="30"
   :speed="100"
@@ -40,7 +40,7 @@ export default {
 ### Custom Width
 
 ```html
-<zv-circle
+<ca2-circle
   v-model="currentRate"
   :rate="rate"
   :stroke-width="60"
@@ -51,7 +51,7 @@ export default {
 ### Custom Color
 
 ```html
-<zv-circle
+<ca2-circle
   v-model="currentRate"
   :rate="rate"
   layer-color="#ebedf0"
@@ -62,7 +62,7 @@ export default {
 ### Gradient
 
 ```html
-<zv-circle
+<ca2-circle
   v-model="currentRate"
   :rate="rate"
   :color="gradientColor"
@@ -87,7 +87,7 @@ export default {
 ### Counter Clockwise
 
 ```html
-<zv-circle
+<ca2-circle
   v-model="currentRate"
   :rate="rate"
   :clockwise="false"
@@ -98,7 +98,7 @@ export default {
 ### Custom Size
 
 ```html
-<zv-circle
+<ca2-circle
   v-model="currentRate"
   :rate="rate"
   size="120px"

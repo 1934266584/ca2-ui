@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-address-list {
+.ca2-address-list {
   box-sizing: border-box;
   height: 100%;
   padding: $address-list-padding;
@@ -29,7 +29,7 @@
   }
 }
 
-.zv-address-item {
+.ca2-address-item {
   padding: $address-list-item-padding;
   background-color: $white;
   border-radius: $border-radius-lg;
@@ -65,8 +65,8 @@
   }
 
   &--disabled {
-    .zv-address-item__name,
-    .zv-address-item__address {
+    .ca2-address-item__name,
+    .ca2-address-item__address {
       color: $address-list-item-disabled-text-color;
     }
   }
@@ -80,15 +80,15 @@
     transform: translate(0, -50%);
   }
 
-  .zv-cell {
+  .ca2-cell {
     padding: 0;
   }
 
-  .zv-radio__label {
+  .ca2-radio__label {
     margin-left: $padding-sm;
   }
 
-  .zv-radio__icon--checked .zv-icon {
+  .ca2-radio__icon--checked .ca2-icon {
     background-color: $address-list-item-radio-icon-color;
     border-color: $address-list-item-radio-icon-color;
   }

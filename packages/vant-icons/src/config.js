@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'zv-icon',
+  name: 'ca2-icon',
   basic: [
     'success',
     'plus',

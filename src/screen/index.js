@@ -118,7 +118,7 @@ export default createComponent({
         rows.push(
           <Col span={tagWidth}>
             <ScreenItem
-              class="zv-ellipsis"
+              class="ca2-ellipsis"
               tag-name={item.tagName}
               tag-selected={this.clickable && item.tagSelected}
               section-index={sectionIndex}
@@ -191,7 +191,7 @@ export default createComponent({
       }
 
       if (!this.isFull) {
-        const footerSty = bem('footer') + ' zv-hairline--top';
+        const footerSty = bem('footer') + ' ca2-hairline--top';
 
         return (
           <div class={footerSty}>
@@ -212,7 +212,7 @@ export default createComponent({
 
     return (
       <Popup
-        class="zv-screen"
+        class="ca2-screen"
         vModel={this.show}
         style="width: 85%"
         position="right"

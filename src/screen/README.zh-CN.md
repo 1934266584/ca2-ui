@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Screen } from '@zvalley/zv-ui';
+import { Screen } from 'ca2-ui';
 
 Vue.use(Screen);
 ```
@@ -14,7 +14,7 @@ Vue.use(Screen);
 ### 基础用法
 
 ```html
-<zv-screen
+<ca2-screen
   v-model="showBase"
   :data-array="dataArray"
   @on-sure="onSure"
@@ -86,7 +86,7 @@ export default {
 ### 全屏展示
 
 ```html
-<zv-screen
+<ca2-screen
   :data-array="dataArray"
   @on-change="onChange"
   is-full

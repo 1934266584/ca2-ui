@@ -16,9 +16,9 @@ Vue.use(Panel);
 面板只是一个容器，里面可以放入自定义的内容
 
 ```html
-<zv-panel title="标题" desc="描述信息" status="状态">
+<ca2-panel title="标题" desc="描述信息" status="状态">
   <div>内容</div>
-</zv-panel>
+</ca2-panel>
 ```
 
 ### 高级用法
@@ -26,30 +26,30 @@ Vue.use(Panel);
 使用`slot`自定义内容
 
 ```html
-<zv-panel title="标题" desc="描述信息" status="状态" is-row>
+<ca2-panel title="标题" desc="描述信息" status="状态" is-row>
   <div>内容</div>
   <template #footer>
-    <zv-button size="small">按钮</zv-button>
-    <zv-button size="small" type="danger">按钮</zv-button>
+    <ca2-button size="small">按钮</ca2-button>
+    <ca2-button size="small" type="danger">按钮</ca2-button>
   </template>
-</zv-panel>
+</ca2-panel>
 
-<zv-panel>
+<ca2-panel>
   <template #header>
-    <zv-cell title="标题" label="描述信息">
+    <ca2-cell title="标题" label="描述信息">
       <template #right-icon>
-        <zv-checkbox v-model="checked" />
+        <ca2-checkbox v-model="checked" />
       </template>
-    </zv-cell>
+    </ca2-cell>
   </template>
   <div>内容</div>
   <template #footer>
-    <zv-button size="small" plain type="primary">按钮</zv-button>
-    <zv-button size="small" type="primary">
+    <ca2-button size="small" plain type="primary">按钮</ca2-button>
+    <ca2-button size="small" type="primary">
       按钮
-    </zv-button>
+    </ca2-button>
   </template>
-</zv-panel>
+</ca2-panel>
 ```
 
 ## API

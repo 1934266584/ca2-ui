@@ -2,10 +2,10 @@
 
 exports[`renders demo correctly 1`] = `
 <div>
-  <div><button class="zv-button zv-button--primary zv-button--normal"><span class="zv-button__text">文字提示</span></button> <button class="zv-button zv-button--primary zv-button--normal"><span class="zv-button__text">长文字提示</span></button></div>
-  <div><button class="zv-button zv-button--primary zv-button--normal"><span class="zv-button__text">加载提示</span></button> <button class="zv-button zv-button--primary zv-button--normal"><span class="zv-button__text">自定义加载图标</span></button></div>
-  <div><button class="zv-button zv-button--info zv-button--normal"><span class="zv-button__text">成功提示</span></button> <button class="zv-button zv-button--danger zv-button--normal"><span class="zv-button__text">失败提示</span></button></div>
-  <div><button class="zv-button zv-button--primary zv-button--normal"><span class="zv-button__text">自定义图标</span></button> <button class="zv-button zv-button--primary zv-button--normal"><span class="zv-button__text">展示图片</span></button></div>
-  <div><button class="zv-button zv-button--primary zv-button--normal"><span class="zv-button__text">动态更新提示</span></button></div>
+  <div><button class="ca2-button ca2-button--primary ca2-button--normal"><span class="ca2-button__text">文字提示</span></button> <button class="ca2-button ca2-button--primary ca2-button--normal"><span class="ca2-button__text">长文字提示</span></button></div>
+  <div><button class="ca2-button ca2-button--primary ca2-button--normal"><span class="ca2-button__text">加载提示</span></button> <button class="ca2-button ca2-button--primary ca2-button--normal"><span class="ca2-button__text">自定义加载图标</span></button></div>
+  <div><button class="ca2-button ca2-button--info ca2-button--normal"><span class="ca2-button__text">成功提示</span></button> <button class="ca2-button ca2-button--danger ca2-button--normal"><span class="ca2-button__text">失败提示</span></button></div>
+  <div><button class="ca2-button ca2-button--primary ca2-button--normal"><span class="ca2-button__text">自定义图标</span></button> <button class="ca2-button ca2-button--primary ca2-button--normal"><span class="ca2-button__text">展示图片</span></button></div>
+  <div><button class="ca2-button ca2-button--primary ca2-button--normal"><span class="ca2-button__text">动态更新提示</span></button></div>
 </div>
 `;

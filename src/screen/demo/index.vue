@@ -1,11 +1,11 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-button block type="primary" @click="showBase = true">
+      <ca2-button block type="primary" @click="showBase = true">
         滑动展示筛选面板
-      </zv-button>
+      </ca2-button>
 
-      <zv-screen
+      <ca2-screen
         v-model="showBase"
         :data-array="dataArray"
         @on-sure="onSure"
@@ -14,7 +14,7 @@
     </demo-block>
 
     <demo-block title="无点击效果">
-      <zv-screen
+      <ca2-screen
         :data-array="fullDataArray"
         @on-change="onChange"
         :clickable="false"
@@ -23,7 +23,7 @@
     </demo-block>
 
     <demo-block title="全屏展示">
-      <zv-screen :data-array="fullDataArray" @on-change="onChange" is-full />
+      <ca2-screen :data-array="fullDataArray" @on-change="onChange" is-full />
     </demo-block>
   </demo-section>
 </template>

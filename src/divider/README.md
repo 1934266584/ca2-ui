@@ -14,34 +14,34 @@ Vue.use(Divider);
 ### Basic Usage
 
 ```html
-<zv-divider />
+<ca2-divider />
 ```
 
 ### With Text
 
 ```html
-<zv-divider>Text</zv-divider>
+<ca2-divider>Text</ca2-divider>
 ```
 
 ### Content Position
 
 ```html
-<zv-divider content-position="left">Text</zv-divider>
-<zv-divider content-position="right">Text</zv-divider>
+<ca2-divider content-position="left">Text</ca2-divider>
+<ca2-divider content-position="right">Text</ca2-divider>
 ```
 
 ### Dashed
 
 ```html
-<zv-divider dashed>Text</zv-divider>
+<ca2-divider dashed>Text</ca2-divider>
 ```
 
 ### Custom Style
 
 ```html
-<zv-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
+<ca2-divider :style="{ color: '#1989fa', borderColor: '#1989fa', padding: '0 16px' }">
   Text
-</zv-divider>
+</ca2-divider>
 ```
 
 ## API

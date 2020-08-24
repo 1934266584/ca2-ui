@@ -1,88 +1,88 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-grid>
-        <zv-grid-item
+      <ca2-grid>
+        <ca2-grid-item
           v-for="i in 4"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </zv-grid>
+      </ca2-grid>
     </demo-block>
 
     <demo-block :title="t('columnNum')">
-      <zv-grid :column-num="3">
-        <zv-grid-item
+      <ca2-grid :column-num="3">
+        <ca2-grid-item
           v-for="i in 6"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </zv-grid>
+      </ca2-grid>
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <zv-grid :border="false" :column-num="3">
-        <zv-grid-item>
-          <zv-image
+      <ca2-grid :border="false" :column-num="3">
+        <ca2-grid-item>
+          <ca2-image
             fit="contain"
             src="https://img.yzcdn.cn/vant/apple-1.jpg"
           />
-        </zv-grid-item>
-        <zv-grid-item>
-          <zv-image
+        </ca2-grid-item>
+        <ca2-grid-item>
+          <ca2-image
             fit="contain"
             src="https://img.yzcdn.cn/vant/apple-2.jpg"
           />
-        </zv-grid-item>
-        <zv-grid-item>
-          <zv-image
+        </ca2-grid-item>
+        <ca2-grid-item>
+          <ca2-image
             fit="contain"
             src="https://img.yzcdn.cn/vant/apple-3.jpg"
           />
-        </zv-grid-item>
-      </zv-grid>
+        </ca2-grid-item>
+      </ca2-grid>
     </demo-block>
 
     <demo-block :title="t('square')">
-      <zv-grid square>
-        <zv-grid-item
+      <ca2-grid square>
+        <ca2-grid-item
           v-for="i in 8"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </zv-grid>
+      </ca2-grid>
     </demo-block>
 
     <demo-block :title="t('gutter')">
-      <zv-grid :gutter="10">
-        <zv-grid-item
+      <ca2-grid :gutter="10">
+        <ca2-grid-item
           v-for="i in 8"
           :key="i"
           icon="photo-o"
           :text="t('text')"
         />
-      </zv-grid>
+      </ca2-grid>
     </demo-block>
 
     <demo-block :title="t('route')">
-      <zv-grid clickable :column-num="2">
-        <zv-grid-item icon="home-o" :text="t('vueRoute')" to="/" />
-        <zv-grid-item
+      <ca2-grid clickable :column-num="2">
+        <ca2-grid-item icon="home-o" :text="t('vueRoute')" to="/" />
+        <ca2-grid-item
           icon="search"
           :text="t('urlRoute')"
           url="/vant/mobile.html"
         />
-      </zv-grid>
+      </ca2-grid>
     </demo-block>
 
     <demo-block :title="t('showBadge')">
-      <zv-grid :column-num="2">
-        <zv-grid-item icon="home-o" :text="t('text')" dot />
-        <zv-grid-item icon="search" :text="t('text')" badge="99+" />
-      </zv-grid>
+      <ca2-grid :column-num="2">
+        <ca2-grid-item icon="home-o" :text="t('text')" dot />
+        <ca2-grid-item icon="search" :text="t('text')" badge="99+" />
+      </ca2-grid>
     </demo-block>
   </demo-section>
 </template>

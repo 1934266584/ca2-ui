@@ -78,9 +78,9 @@ setTimeout(() => {
 如果需要在图片预览内嵌入组件或其他自定义内容，可以使用组件调用的方式，调用前需要通过 `Vue.use` 注册组件
 
 ```html
-<zv-image-preview v-model="show" :images="images" @change="onChange">
+<ca2-image-preview v-model="show" :images="images" @change="onChange">
   <template v-slot:index>第{{ index }}页</template>
-</zv-image-preview>
+</ca2-image-preview>
 ```
 
 ```js

@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Item } from '@zvalley/zv-ui';
+import { Item } from 'ca2-ui';
 
 Vue.use(Item);
 ```
@@ -14,7 +14,7 @@ Vue.use(Item);
 ### Basic Usage And Auto Wrap
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
 />
 ```
@@ -36,14 +36,14 @@ export default {
 ### Set Slot
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObjectSlot"
   @slot-event="slotEvent"
 >
   <div>
     slot
   </div>
-</zv-item>
+</ca2-item>
 ```
 
 ```js
@@ -68,7 +68,7 @@ export default {
 ### Set Show Line
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
   :line="2"
 />
@@ -91,7 +91,7 @@ export default {
 ### Set Row
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
   :is-two-col="true"
 />
@@ -114,7 +114,7 @@ export default {
 ### Set Row And Line
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
   :line="2"
   :is-two-col="true"

@@ -17,11 +17,11 @@ Vue.use(SidebarItem);
 通过`v-model`绑定当前选中项的索引
 
 ```html
-<zv-sidebar v-model="activeKey">
-  <zv-sidebar-item title="标签名称" />
-  <zv-sidebar-item title="标签名称" />
-  <zv-sidebar-item title="标签名称" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey">
+  <ca2-sidebar-item title="标签名称" />
+  <ca2-sidebar-item title="标签名称" />
+  <ca2-sidebar-item title="标签名称" />
+</ca2-sidebar>
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 设置`dot`属性后，会在右上角展示一个小红点。设置`badge`属性后，会在右上角展示相应的徽标
 
 ```html
-<zv-sidebar v-model="activeKey">
-  <zv-sidebar-item title="标签名称" dot />
-  <zv-sidebar-item title="标签名称" badge="5" />
-  <zv-sidebar-item title="标签名称" badge="99+" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey">
+  <ca2-sidebar-item title="标签名称" dot />
+  <ca2-sidebar-item title="标签名称" badge="5" />
+  <ca2-sidebar-item title="标签名称" badge="99+" />
+</ca2-sidebar>
 ```
 
 ### 禁用选项
@@ -51,11 +51,11 @@ export default {
 通过`disabled`属性禁用选项
 
 ```html
-<zv-sidebar v-model="activeKey">
-  <zv-sidebar-item title="标签名称" />
-  <zv-sidebar-item title="标签名称" disabled />
-  <zv-sidebar-item title="标签名称" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey">
+  <ca2-sidebar-item title="标签名称" />
+  <ca2-sidebar-item title="标签名称" disabled />
+  <ca2-sidebar-item title="标签名称" />
+</ca2-sidebar>
 ```
 
 ### 监听切换事件
@@ -63,11 +63,11 @@ export default {
 设置`change`方法来监听切换导航项时的事件
 
 ```html
-<zv-sidebar v-model="activeKey" @change="onChange">
-  <zv-sidebar-item title="标签名1" />
-  <zv-sidebar-item title="标签名2" />
-  <zv-sidebar-item title="标签名3" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey" @change="onChange">
+  <ca2-sidebar-item title="标签名1" />
+  <ca2-sidebar-item title="标签名2" />
+  <ca2-sidebar-item title="标签名3" />
+</ca2-sidebar>
 ```
 
 ```js

@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.zv-swipe {
+.ca2-swipe {
   position: relative;
   overflow: hidden;
   cursor: grab;
@@ -29,7 +29,7 @@
       flex-direction: column;
       transform: translateY(-50%);
 
-      .zv-swipe__indicator:not(:last-child) {
+      .ca2-swipe__indicator:not(:last-child) {
         margin-bottom: $swipe-indicator-size;
       }
     }

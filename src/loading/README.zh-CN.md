@@ -16,8 +16,8 @@ Vue.use(Loading);
 通过`type`属性可以设置加载图标的类型，默认为`circular`，可选值为`spinner`
 
 ```html
-<zv-loading />
-<zv-loading type="spinner" />
+<ca2-loading />
+<ca2-loading type="spinner" />
 ```
 
 ### 自定义颜色
@@ -25,8 +25,8 @@ Vue.use(Loading);
 通过`color`属性设置加载图标的颜色
 
 ```html
-<zv-loading color="#1989fa" />
-<zv-loading type="spinner" color="#1989fa" />
+<ca2-loading color="#1989fa" />
+<ca2-loading type="spinner" color="#1989fa" />
 ```
 
 ### 自定义大小
@@ -34,8 +34,8 @@ Vue.use(Loading);
 通过`size`属性设置加载图标的大小，默认单位为`px`
 
 ```html
-<zv-loading size="24" />
-<zv-loading type="spinner" size="24px" />
+<ca2-loading size="24" />
+<ca2-loading type="spinner" size="24px" />
 ```
 
 ### 加载文案
@@ -43,7 +43,7 @@ Vue.use(Loading);
 可以使用默认插槽在图标的右侧插入加载文案
 
 ```html
-<zv-loading size="24px">加载中...</zv-loading>
+<ca2-loading size="24px">加载中...</ca2-loading>
 ```
 
 ### 垂直排列
@@ -51,7 +51,7 @@ Vue.use(Loading);
 设置`vertical`属性后，图标和文案会垂直排列
 
 ```html
-<zv-loading size="24px" vertical>加载中...</zv-loading>
+<ca2-loading size="24px" vertical>加载中...</ca2-loading>
 ```
 
 ## API

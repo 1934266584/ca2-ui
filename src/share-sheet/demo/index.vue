@@ -1,8 +1,8 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-cell is-link :title="t('showSheet')" @click="show.basic = true" />
-      <zv-share-sheet
+      <ca2-cell is-link :title="t('showSheet')" @click="show.basic = true" />
+      <ca2-share-sheet
         v-model="show.basic"
         :title="t('title')"
         :options="options"
@@ -11,12 +11,12 @@
     </demo-block>
 
     <demo-block :title="t('multiLine')">
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('showSheet')"
         @click="show.multiLine = true"
       />
-      <zv-share-sheet
+      <ca2-share-sheet
         v-model="show.multiLine"
         :title="t('title')"
         :options="multiLineOptions"
@@ -25,12 +25,12 @@
     </demo-block>
 
     <demo-block :title="t('customIcon')">
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('showSheet')"
         @click="show.customIcon = true"
       />
-      <zv-share-sheet
+      <ca2-share-sheet
         v-model="show.customIcon"
         :options="customIconOptions"
         @select="onSelect"
@@ -38,8 +38,8 @@
     </demo-block>
 
     <demo-block :title="t('withDesc')">
-      <zv-cell is-link :title="t('showSheet')" @click="show.withDesc = true" />
-      <zv-share-sheet
+      <ca2-cell is-link :title="t('showSheet')" @click="show.withDesc = true" />
+      <ca2-share-sheet
         v-model="show.withDesc"
         :title="t('title')"
         :options="options"

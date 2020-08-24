@@ -1,6 +1,6 @@
 <template>
-  <div class="zv-hairline--bottom">
-    <zv-field
+  <div class="ca2-hairline--bottom">
+    <ca2-field
       readonly
       clickable
       name="picker"
@@ -10,14 +10,14 @@
       :placeholder="t('placeholder')"
       @click="showPicker = true"
     />
-    <zv-popup v-model="showPicker" position="bottom">
-      <zv-picker
+    <ca2-popup v-model="showPicker" position="bottom">
+      <ca2-picker
         show-toolbar
         :columns="t('textColumns')"
         @confirm="onConfirm"
         @cancel="onCancel"
       />
-    </zv-popup>
+    </ca2-popup>
   </div>
 </template>
 

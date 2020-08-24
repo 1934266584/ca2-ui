@@ -28,7 +28,7 @@ test('close event', () => {
     },
   });
 
-  wrapper.find('.zv-tag__close').trigger('click');
+  wrapper.find('.ca2-tag__close').trigger('click');
   expect(close).toHaveBeenCalledTimes(1);
 });
 
@@ -48,7 +48,7 @@ test('should not trigger click event when close', () => {
     },
   });
 
-  wrapper.find('.zv-tag__close').trigger('click');
+  wrapper.find('.ca2-tag__close').trigger('click');
   expect(close).toHaveBeenCalledTimes(1);
   expect(click).toHaveBeenCalledTimes(0);
 });

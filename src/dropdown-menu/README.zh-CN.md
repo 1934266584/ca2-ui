@@ -15,10 +15,10 @@ Vue.use(DropdownItem);
 ### 基础用法
 
 ```html
-<zv-dropdown-menu>
-  <zv-dropdown-item v-model="value1" :options="option1" />
-  <zv-dropdown-item v-model="value2" :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu>
+  <ca2-dropdown-item v-model="value1" :options="option1" />
+  <ca2-dropdown-item v-model="value2" :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ```js
@@ -47,14 +47,14 @@ export default {
 通过插槽可以自定义`DropdownItem`的内容，此时需要使用实例上的`toggle`方法手动控制菜单的显示
 
 ```html
-<zv-dropdown-menu>
-  <zv-dropdown-item v-model="value" :options="option" />
-  <zv-dropdown-item title="筛选" ref="item">
-    <zv-switch-cell v-model="switch1" title="包邮" />
-    <zv-switch-cell v-model="switch2" title="团购" />
-    <zv-button block type="info" @click="onConfirm">确认</zv-button>
-  </zv-dropdown-item>
-</zv-dropdown-menu>
+<ca2-dropdown-menu>
+  <ca2-dropdown-item v-model="value" :options="option" />
+  <ca2-dropdown-item title="筛选" ref="item">
+    <ca2-switch-cell v-model="switch1" title="包邮" />
+    <ca2-switch-cell v-model="switch2" title="团购" />
+    <ca2-button block type="info" @click="onConfirm">确认</ca2-button>
+  </ca2-dropdown-item>
+</ca2-dropdown-menu>
 ```
 
 ```js
@@ -84,10 +84,10 @@ export default {
 通过`active-color`属性可以自定义菜单标题和选项的选中态颜色
 
 ```html
-<zv-dropdown-menu active-color="#ee0a24">
-  <zv-dropdown-item v-model="value1" :options="option1" />
-  <zv-dropdown-item v-model="value2" :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu active-color="#ee0a24">
+  <ca2-dropdown-item v-model="value1" :options="option1" />
+  <ca2-dropdown-item v-model="value2" :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ### 向上展开
@@ -95,19 +95,19 @@ export default {
 将`direction`属性值设置为`up`，菜单即可向上展开
 
 ```html
-<zv-dropdown-menu direction="up">
-  <zv-dropdown-item v-model="value1" :options="option1" />
-  <zv-dropdown-item v-model="value2" :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu direction="up">
+  <ca2-dropdown-item v-model="value1" :options="option1" />
+  <ca2-dropdown-item v-model="value2" :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ### 禁用菜单
 
 ```html
-<zv-dropdown-menu>
-  <zv-dropdown-item v-model="value1" disabled :options="option1" />
-  <zv-dropdown-item v-model="value2" disabled :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu>
+  <ca2-dropdown-item v-model="value1" disabled :options="option1" />
+  <ca2-dropdown-item v-model="value2" disabled :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ## API

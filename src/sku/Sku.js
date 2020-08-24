@@ -141,9 +141,9 @@ export default createComponent({
   computed: {
     skuGroupClass() {
       return [
-        'zv-sku-group-container',
+        'ca2-sku-group-container',
         {
-          'zv-sku-group-container--hide-soldout': !this.showSoldoutSku,
+          'ca2-sku-group-container--hide-soldout': !this.showSoldoutSku,
         },
       ];
     },
@@ -625,11 +625,11 @@ export default createComponent({
           {slots('sku-header-image-extra')}
         </template>
         {slots('sku-header-price') || (
-          <div class="zv-sku__goods-price">
-            <span class="zv-sku__price-symbol">￥</span>
-            <span class="zv-sku__price-num">{price}</span>
+          <div class="ca2-sku__goods-price">
+            <span class="ca2-sku__price-symbol">￥</span>
+            <span class="ca2-sku__price-num">{price}</span>
             {this.priceTag && (
-              <span class="zv-sku__price-tag">{this.priceTag}</span>
+              <span class="ca2-sku__price-tag">{this.priceTag}</span>
             )}
           </div>
         )}
@@ -641,7 +641,7 @@ export default createComponent({
           ))}
         {!this.hideStock && (
           <SkuHeaderItem>
-            <span class="zv-sku__stock">{this.stockText}</span>
+            <span class="ca2-sku__stock">{this.stockText}</span>
           </SkuHeaderItem>
         )}
         {this.hasSkuOrAttr && !this.hideSelectedText && (
@@ -729,13 +729,13 @@ export default createComponent({
         round
         closeable
         position="bottom"
-        class="zv-sku-container"
+        class="ca2-sku-container"
         getContainer={this.getContainer}
         closeOnClickOverlay={this.closeOnClickOverlay}
         safeAreaInsetBottom={this.safeAreaInsetBottom}
       >
         {Header}
-        <div class="zv-sku-body" style={this.bodyStyle}>
+        <div class="ca2-sku-body" style={this.bodyStyle}>
           {slots('sku-body-top')}
           {Group}
           {slots('extra-sku-group')}

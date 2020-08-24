@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 vant-cli build-site
 
-# superman-cdn /zv-ui ./site/*.js
+# superman-cdn /ca2-ui ./site/*.js
 
 # rm -rf site/*.js
 

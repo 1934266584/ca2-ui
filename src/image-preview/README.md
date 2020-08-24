@@ -68,9 +68,9 @@ setTimeout(() => {
 ### Component Call
 
 ```html
-<zv-image-preview v-model="show" :images="images" @change="onChange">
+<ca2-image-preview v-model="show" :images="images" @change="onChange">
   <template v-slot:index>Page: {{ index }}</template>
-</zv-image-preview>
+</ca2-image-preview>
 ```
 
 ```js

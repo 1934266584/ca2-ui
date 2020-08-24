@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-button
+      <ca2-button
         type="primary"
         :text="t('showOverlay')"
         style="margin-left: 16px;"
         @click="show = true"
       />
 
-      <zv-overlay :show="show" @click="show = false" />
+      <ca2-overlay :show="show" @click="show = false" />
     </demo-block>
 
     <demo-block :title="t('embeddedContent')">
-      <zv-button
+      <ca2-button
         type="primary"
         :text="t('embeddedContent')"
         style="margin-left: 16px;"
         @click="showEmbedded = true"
       />
 
-      <zv-overlay :show="showEmbedded" @click="showEmbedded = false">
+      <ca2-overlay :show="showEmbedded" @click="showEmbedded = false">
         <div class="wrapper">
           <div class="block" />
         </div>
-      </zv-overlay>
+      </ca2-overlay>
     </demo-block>
   </demo-section>
 </template>

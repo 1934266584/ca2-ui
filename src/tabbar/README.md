@@ -15,12 +15,12 @@ Vue.use(TabbarItem);
 ### Basic Usage
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item icon="home-o">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="search">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="friends-o">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">Tab</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item icon="home-o">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="friends-o">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">Tab</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -36,12 +36,12 @@ export default {
 ### Match by name
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item name="home" icon="home-o">Tab</zv-tabbar-item>
-  <zv-tabbar-item name="search" icon="search">Tab</zv-tabbar-item>
-  <zv-tabbar-item name="friends" icon="friends-o">Tab</zv-tabbar-item>
-  <zv-tabbar-item name="setting" icon="setting-o">Tab</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item name="home" icon="home-o">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item name="search" icon="search">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item name="friends" icon="friends-o">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item name="setting" icon="setting-o">Tab</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -57,12 +57,12 @@ export default {
 ### Show Badge
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item icon="home-o">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="search" dot>Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="friends-o" badge="5">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o" badge="20">Tab</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item icon="home-o">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search" dot>Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="friends-o" badge="5">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o" badge="20">Tab</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ### Custom Icon
@@ -70,16 +70,16 @@ export default {
 Use `icon` slot to custom icon
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item badge="3">
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item badge="3">
     <span>Custom</span>
     <template #icon="props">
       <img :src="props.active ? icon.active : icon.inactive" />
     </template>
-  </zv-tabbar-item>
-  <zv-tabbar-item icon="search">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">Tab</zv-tabbar-item>
-</zv-tabbar>
+  </ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">Tab</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -99,23 +99,23 @@ export default {
 ### Custom Color
 
 ```html
-<zv-tabbar v-model="active" active-color="#07c160" inactive-color="#000">
-  <zv-tabbar-item icon="home-o">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="search">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="freinds-o">Tab</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">Tab</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active" active-color="#07c160" inactive-color="#000">
+  <ca2-tabbar-item icon="home-o">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="freinds-o">Tab</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">Tab</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ### Change Event
 
 ```html
-<zv-tabbar v-model="active" @change="onChange">
-  <zv-tabbar-item icon="home-o">Tab1</zv-tabbar-item>
-  <zv-tabbar-item icon="search">Tab2</zv-tabbar-item>
-  <zv-tabbar-item icon="freinds-o">Tab3</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">Tab4</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active" @change="onChange">
+  <ca2-tabbar-item icon="home-o">Tab1</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">Tab2</ca2-tabbar-item>
+  <ca2-tabbar-item icon="freinds-o">Tab3</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">Tab4</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -135,14 +135,14 @@ export default {
 ```html
 <router-view />
 
-<zv-tabbar route>
-  <zv-tabbar-item replace to="/home" icon="home-o">
+<ca2-tabbar route>
+  <ca2-tabbar-item replace to="/home" icon="home-o">
     Tab
-  </zv-tabbar-item>
-  <zv-tabbar-item replace to="/search" icon="search">
+  </ca2-tabbar-item>
+  <ca2-tabbar-item replace to="/search" icon="search">
     Tab
-  </zv-tabbar-item>
-</zv-tabbar>
+  </ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ## API
@@ -173,7 +173,7 @@ export default {
 | --- | --- | --- | --- |
 | name | Identifier | _number \| string_ | Item index |
 | icon | Icon name | _string_ | - |
-| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `zv-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | _string_ | `ca2-icon` |
 | dot | Whether to show red dot | _boolean_ | - |
 | badge `v2.5.6` | Content of the badge | _number \| string_ | `''` |
 | url | Link | _string_ | - |

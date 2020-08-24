@@ -1,6 +1,6 @@
 <template>
-  <div class="zv-hairline--bottom">
-    <zv-field
+  <div class="ca2-hairline--bottom">
+    <ca2-field
       readonly
       clickable
       name="area"
@@ -10,13 +10,13 @@
       :placeholder="t('placeholder')"
       @click="showArea = true"
     />
-    <zv-popup v-model="showArea" position="bottom">
-      <zv-area
+    <ca2-popup v-model="showArea" position="bottom">
+      <ca2-area
         :area-list="t('areaList')"
         @confirm="onConfirm"
         @cancel="onCancel"
       />
-    </zv-popup>
+    </ca2-popup>
   </div>
 </template>
 

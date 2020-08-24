@@ -15,95 +15,95 @@ Vue.use(CellGroup);
 ### Basic Usage
 
 ```html
-<zv-cell-group>
-  <zv-cell title="Cell title" value="Content" />
-  <zv-cell :title="Cell title" :value="Content" pur-display />
-  <zv-cell title="Cell title" value="Content" label="Description" />
-  <zv-cell title="Cell title" value="Content" label="Description" is-row />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell title="Cell title" value="Content" />
+  <ca2-cell :title="Cell title" :value="Content" pur-display />
+  <ca2-cell title="Cell title" value="Content" label="Description" />
+  <ca2-cell title="Cell title" value="Content" label="Description" is-row />
+</ca2-cell-group>
 ```
 
 ### Size
 
 ```html
-<zv-cell-group>
-  <zv-cell title="Cell title" value="Content" size="large" />
-  <zv-cell title="Cell title" value="Content" size="large" label="Description" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell title="Cell title" value="Content" size="large" />
+  <ca2-cell title="Cell title" value="Content" size="large" label="Description" />
+</ca2-cell-group>
 ```
 
 ### Left Icon
 
 ```html
-<zv-cell-group>
-  <zv-cell title="Cell title" icon="location-o" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell title="Cell title" icon="location-o" />
+</ca2-cell-group>
 ```
 
 ### Value only
 
 ```html
-<zv-cell-group>
-  <zv-cell value="Content" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell value="Content" />
+</ca2-cell-group>
 ```
 
 ### Link
 
 ```html
-<zv-cell-group>
-  <zv-cell title="Cell title" is-link />
-  <zv-cell title="Cell title" is-link value="Content" />
-  <zv-cell title="Cell title" is-link arrow-direction="down" value="Content" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell title="Cell title" is-link />
+  <ca2-cell title="Cell title" is-link value="Content" />
+  <ca2-cell title="Cell title" is-link arrow-direction="down" value="Content" />
+</ca2-cell-group>
 ```
 
 ### Router
 
 ```html
-<zv-cell-group>
-  <zv-cell title="URL" is-link url="/vant/mobile.html" />
-  <zv-cell title="Vue Router" is-link to="index" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell title="URL" is-link url="/vant/mobile.html" />
+  <ca2-cell title="Vue Router" is-link to="index" />
+</ca2-cell-group>
 ```
 
 ### Group Title
 
 ```html
-<zv-cell-group title="Group 1">
-  <zv-cell title="Cell title" value="Content" />
-</zv-cell-group>
-<zv-cell-group title="Group 2">
-  <zv-cell title="Cell title" value="Content" />
-</zv-cell-group>
+<ca2-cell-group title="Group 1">
+  <ca2-cell title="Cell title" value="Content" />
+</ca2-cell-group>
+<ca2-cell-group title="Group 2">
+  <ca2-cell title="Cell title" value="Content" />
+</ca2-cell-group>
 ```
 
 ### Use Slots
 
 ```html
-<zv-cell value="内容" is-link>
+<ca2-cell value="内容" is-link>
   <!-- Use the title slot to customize the title -->
   <template #title>
     <span class="custom-title">单元格</span>
-    <zv-tag type="danger">标签</zv-tag>
+    <ca2-tag type="danger">标签</ca2-tag>
   </template>
-</zv-cell>
+</ca2-cell>
 
-<zv-cell title="单元格" icon="shop-o">
+<ca2-cell title="单元格" icon="shop-o">
   <!-- Use the right-icon slot to customize the right icon -->
   <template #right-icon>
-    <zv-icon
+    <ca2-icon
       name="search"
       style="line-height: inherit;"
     />
   </template>
-</zv-cell>
+</ca2-cell>
 ```
 
 ### Vertical Center
 
 ```html
-<zv-cell center title="Cell title" value="Content" label="Description" />
+<ca2-cell center title="Cell title" value="Content" label="Description" />
 ```
 
 ## API
@@ -124,7 +124,7 @@ Vue.use(CellGroup);
 | label | Description below the title | *string* | - |
 | size | Size，can be set to `large` | *string* | - |
 | icon | Left Icon | *string* | - |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `ca2-icon` |
 | border | Whether to show inner border | *boolean* | `true` |
 | center | Whether to center content vertically | *boolean* | `true` |
 | url | Link URL | *string* | - |

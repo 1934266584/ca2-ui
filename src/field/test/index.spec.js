@@ -26,8 +26,8 @@ test('click icon event', () => {
     },
   });
 
-  wrapper.find('.zv-field__left-icon').trigger('click');
-  wrapper.find('.zv-field__right-icon').trigger('click');
+  wrapper.find('.ca2-field__left-icon').trigger('click');
+  wrapper.find('.ca2-field__right-icon').trigger('click');
   expect(wrapper.emitted('click').length).toEqual(2);
   expect(wrapper.emitted('click-left-icon')[0][0]).toBeTruthy();
   expect(wrapper.emitted('click-right-icon')[0][0]).toBeTruthy();
@@ -100,7 +100,7 @@ test('autosize textarea field', () => {
   });
 
   const value = '1'.repeat(20);
-  const textarea = wrapper.find('.zv-field__control');
+  const textarea = wrapper.find('.ca2-field__control');
 
   wrapper.setProps({ value });
   expect(textarea.element.value).toEqual(value);
@@ -117,7 +117,7 @@ test('autosize object', async () => {
     },
   });
 
-  const textarea = wrapper.find('.zv-field__control');
+  const textarea = wrapper.find('.ca2-field__control');
 
   await later();
   expect(textarea.element.style.height).toEqual('50px');
@@ -179,7 +179,7 @@ test('clearable', () => {
   input.trigger('focus');
   expect(wrapper).toMatchSnapshot();
 
-  wrapper.find('.zv-field__clear').trigger('touchstart');
+  wrapper.find('.ca2-field__clear').trigger('touchstart');
   expect(wrapper.emitted('input')[0][0]).toEqual('');
   expect(wrapper.emitted('clear')[0][0]).toBeTruthy();
 });

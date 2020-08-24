@@ -42,7 +42,7 @@ function Overlay(
   }
 
   return (
-    <transition name="zv-fade">
+    <transition name="ca2-fade">
       <div
         vShow={props.show}
         style={style}

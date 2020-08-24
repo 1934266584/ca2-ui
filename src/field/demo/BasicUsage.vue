@@ -1,8 +1,8 @@
 <template>
   <demo-block :title="t('basicUsage')">
-    <zv-cell-group>
-      <zv-field v-model="value" :placeholder="t('placeholder')" />
-    </zv-cell-group>
+    <ca2-cell-group>
+      <ca2-field v-model="value" :placeholder="t('placeholder')" />
+    </ca2-cell-group>
   </demo-block>
 </template>
 

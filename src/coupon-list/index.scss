@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-coupon-list {
+.ca2-coupon-list {
   position: relative;
   height: 100%;
   background-color: $coupon-list-background-color;
@@ -8,7 +8,7 @@
   &__field {
     padding: $coupon-list-field-padding;
 
-    .zv-field__body {
+    .ca2-field__body {
       height: 34px;
       padding-left: $padding-sm;
       line-height: 34px;
@@ -20,7 +20,7 @@
       }
     }
 
-    .zv-field__clear {
+    .ca2-field__clear {
       margin-right: 0;
     }
   }
@@ -39,7 +39,7 @@
     border: 0;
   }
 
-  .zv-tabs__wrap {
+  .ca2-tabs__wrap {
     box-shadow: 0 6px 12px -12px $gray-6;
   }
 

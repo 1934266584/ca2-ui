@@ -17,11 +17,11 @@ Vue.use(CollapseItem);
 Use `v-model` to control the name of active panels
 
 ```html
-<zv-collapse v-model="activeNames">
-  <zv-collapse-item title="Title1" name="1">Content</zv-collapse-item>
-  <zv-collapse-item title="Title2" name="2">Content</zv-collapse-item>
-  <zv-collapse-item title="Title3" name="3" disabled>Content</zv-collapse-item>
-</zv-collapse>
+<ca2-collapse v-model="activeNames">
+  <ca2-collapse-item title="Title1" name="1">Content</ca2-collapse-item>
+  <ca2-collapse-item title="Title2" name="2">Content</ca2-collapse-item>
+  <ca2-collapse-item title="Title3" name="3" disabled>Content</ca2-collapse-item>
+</ca2-collapse>
 ```
 
 ```js
@@ -39,11 +39,11 @@ export default {
 In accordion mode, only one panel can be expanded at the same time.
 
 ```html
-<zv-collapse v-model="activeName" accordion>
-  <zv-collapse-item title="Title1" name="1">Content</zv-collapse-item>
-  <zv-collapse-item title="Title2" name="2">Content</zv-collapse-item>
-  <zv-collapse-item title="Title3" name="3">Content</zv-collapse-item>
-</zv-collapse>
+<ca2-collapse v-model="activeName" accordion>
+  <ca2-collapse-item title="Title1" name="1">Content</ca2-collapse-item>
+  <ca2-collapse-item title="Title2" name="2">Content</ca2-collapse-item>
+  <ca2-collapse-item title="Title3" name="3">Content</ca2-collapse-item>
+</ca2-collapse>
 ```
 
 ```js
@@ -59,17 +59,17 @@ export default {
 ### Custom title
 
 ```html
-<zv-collapse v-model="activeNames">
-  <zv-collapse-item name="1">
+<ca2-collapse v-model="activeNames">
+  <ca2-collapse-item name="1">
     <template #title>
-      <div>Title1 <zv-icon name="question-o" /></div>
+      <div>Title1 <ca2-icon name="question-o" /></div>
     </template>
     Content
-  </zv-collapse-item>
-  <zv-collapse-item title="Title2" name="2" icon="shop-o">
+  </ca2-collapse-item>
+  <ca2-collapse-item title="Title2" name="2" icon="shop-o">
     Content
-  </zv-collapse-item>
-</zv-collapse>
+  </ca2-collapse-item>
+</ca2-collapse>
 ```
 
 ```js

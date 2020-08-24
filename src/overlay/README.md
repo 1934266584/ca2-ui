@@ -14,8 +14,8 @@ Vue.use(Overlay);
 ### Basic Usage
 
 ```html
-<zv-button type="primary" text="Show Overlay" @click="show = true" />
-<zv-overlay :show="show" @click="show = false" />
+<ca2-button type="primary" text="Show Overlay" @click="show = true" />
+<ca2-overlay :show="show" @click="show = false" />
 ```
 
 ```js
@@ -31,11 +31,11 @@ export default {
 ### Embedded Content
 
 ```html
-<zv-overlay :show="show" @click="show = false">
+<ca2-overlay :show="show" @click="show = false">
   <div class="wrapper" @click.stop>
     <div class="block" />
   </div>
-</zv-overlay>
+</ca2-overlay>
 
 <style>
   .wrapper {

@@ -16,7 +16,7 @@ Vue.use(ActionSheet);
 Use `actions` prop to set options of action-sheet.
 
 ```html
-<zv-action-sheet v-model="show" :actions="actions" @select="onSelect" />
+<ca2-action-sheet v-model="show" :actions="actions" @select="onSelect" />
 ```
 
 ```js
@@ -45,7 +45,7 @@ export default {
 ### Show Cancel Button
 
 ```html
-<zv-action-sheet
+<ca2-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -74,13 +74,13 @@ export default {
 ### Show Description
 
 ```html
-<zv-action-sheet v-model="show" :actions="actions" description="Description" />
+<ca2-action-sheet v-model="show" :actions="actions" description="Description" />
 ```
 
 ### Option Status
 
 ```html
-<zv-action-sheet
+<ca2-action-sheet
   v-model="show"
   :actions="actions"
   cancel-text="Cancel"
@@ -106,9 +106,9 @@ export default {
 ### Custom Panel
 
 ```html
-<zv-action-sheet v-model="show" title="Title">
+<ca2-action-sheet v-model="show" title="Title">
   <div class="content">Content</div>
-</zv-action-sheet>
+</ca2-action-sheet>
 
 <style>
 .content {

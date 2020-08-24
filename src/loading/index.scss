@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-loading {
+.ca2-loading {
   position: relative;
   color: $loading-spinner-color;
   font-size: 0;
@@ -15,7 +15,7 @@
     height: $loading-spinner-size;
     max-height: 100%;
     vertical-align: middle;
-    animation: zv-rotate $loading-spinner-animation-duration linear infinite;
+    animation: ca2-rotate $loading-spinner-animation-duration linear infinite;
 
     &--spinner {
       animation-timing-function: steps(12);
@@ -50,7 +50,7 @@
     height: 100%;
 
     circle {
-      animation: zv-circular 1.5s ease-in-out infinite;
+      animation: ca2-circular 1.5s ease-in-out infinite;
       stroke: currentColor;
       stroke-width: 3;
       stroke-linecap: round;
@@ -70,13 +70,13 @@
     flex-direction: column;
     align-items: center;
 
-    .zv-loading__text {
+    .ca2-loading__text {
       margin: $padding-xs 0 0;
     }
   }
 }
 
-@keyframes zv-circular {
+@keyframes ca2-circular {
   0% {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
@@ -95,7 +95,7 @@
 
 @mixin generate-spinner($n, $i: 1) {
   @while $i <= $n {
-    .zv-loading__spinner--spinner i:nth-of-type(#{$i}) {
+    .ca2-loading__spinner--spinner i:nth-of-type(#{$i}) {
       transform: rotate($i * 30deg);
       opacity: 1 - (0.75 / 12) * ($i - 1);
     }

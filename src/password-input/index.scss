@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-password-input {
+.ca2-password-input {
   position: relative;
   margin: $password-input-margin;
   user-select: none;
@@ -61,12 +61,12 @@
     height: $number-keyboard-cursor-height;
     background-color: $number-keyboard-cursor-color;
     transform: translate(-50%, -50%);
-    animation: $number-keyboard-cursor-animation-duration zv-cursor-flicker
+    animation: $number-keyboard-cursor-animation-duration ca2-cursor-flicker
       infinite;
   }
 }
 
-@keyframes zv-cursor-flicker {
+@keyframes ca2-cursor-flicker {
   from {
     opacity: 0;
   }

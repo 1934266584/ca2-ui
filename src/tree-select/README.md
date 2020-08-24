@@ -14,7 +14,7 @@ Vue.use(TreeSelect);
 ### Radio Mode
 
 ```html
-<zv-tree-select
+<ca2-tree-select
   :items="items"
   :active-id.sync="activeId"
   :main-active-index.sync="activeIndex"
@@ -36,7 +36,7 @@ export default {
 ### Multiple Mode
 
 ```html
-<zv-tree-select
+<ca2-tree-select
   :items="items"
   :active-id.sync="activeIds"
   :main-active-index.sync="activeIndex"
@@ -58,18 +58,18 @@ export default {
 ### Custom Content
 
 ```html
-<zv-tree-select height="55vw" :items="items" :main-active-index.sync="active">
+<ca2-tree-select height="55vw" :items="items" :main-active-index.sync="active">
   <template #content>
-    <zv-image
+    <ca2-image
       v-if="active === 0"
       src="https://img.yzcdn.cn/vant/apple-1.jpg"
     />
-    <zv-image
+    <ca2-image
       v-if="active === 1"
       src="https://img.yzcdn.cn/vant/apple-2.jpg"
     />
   </template>
-</zv-tree-select>
+</ca2-tree-select>
 ```
 
 ```js
@@ -86,7 +86,7 @@ export default {
 ### Show Badge
 
 ```html
-<zv-tree-select
+<ca2-tree-select
   height="55vw"
   :items="items"
   :main-active-index.sync="activeIndex"

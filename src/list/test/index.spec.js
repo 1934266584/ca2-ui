@@ -39,7 +39,7 @@ test('error loaded, click error-text and reload', async () => {
     });
   });
 
-  wrapper.find('.zv-list__error-text').trigger('click');
+  wrapper.find('.ca2-list__error-text').trigger('click');
 
   await later();
 
@@ -61,13 +61,13 @@ test('finished', async () => {
   await later();
   expect(wrapper.emitted('load')).toBeFalsy();
   expect(wrapper.emitted('input')).toBeFalsy();
-  expect(wrapper.contains('.zv-list__finished-text')).toBeTruthy();
+  expect(wrapper.contains('.ca2-list__finished-text')).toBeTruthy();
   wrapper.vm.finished = false;
 
   await later();
   expect(wrapper.emitted('load')).toBeTruthy();
   expect(wrapper.emitted('input')).toBeTruthy();
-  expect(wrapper.contains('.zv-list__finished-text')).toBeFalsy();
+  expect(wrapper.contains('.ca2-list__finished-text')).toBeFalsy();
 });
 
 test('finished slot', async () => {
@@ -144,8 +144,8 @@ test('check the direction props', () => {
     },
   });
 
-  let children = wrapper.findAll('.zv-list > div');
-  expect(children.at(0).is('.zv-list__placeholder')).toBeTruthy();
+  let children = wrapper.findAll('.ca2-list > div');
+  expect(children.at(0).is('.ca2-list__placeholder')).toBeTruthy();
   expect(children.at(1).is('.list-item')).toBeTruthy();
 
   // change the direction's value
@@ -153,7 +153,7 @@ test('check the direction props', () => {
     direction: 'down',
   });
 
-  children = wrapper.findAll('.zv-list > div');
+  children = wrapper.findAll('.ca2-list > div');
   expect(children.at(0).is('.list-item')).toBeTruthy();
-  expect(children.at(1).is('.zv-list__placeholder')).toBeTruthy();
+  expect(children.at(1).is('.ca2-list__placeholder')).toBeTruthy();
 });

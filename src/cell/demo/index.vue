@@ -1,17 +1,17 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-cell-group>
-        <zv-cell :title="t('cell')" :value="t('content')" />
-        <zv-cell :title="t('cell')" :value="t('content')" pur-display />
-        <zv-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
-        <zv-cell :title="t('cell')" :value="t('content')" :label="t('desc')" is-row />
-      </zv-cell-group>
+      <ca2-cell-group>
+        <ca2-cell :title="t('cell')" :value="t('content')" />
+        <ca2-cell :title="t('cell')" :value="t('content')" pur-display />
+        <ca2-cell :title="t('cell')" :value="t('content')" :label="t('desc')" />
+        <ca2-cell :title="t('cell')" :value="t('content')" :label="t('desc')" is-row />
+      </ca2-cell-group>
     </demo-block>
 
     <demo-block :title="t('largeSize')">
-      <zv-cell :title="t('cell')" :value="t('content')" size="large" />
-      <zv-cell
+      <ca2-cell :title="t('cell')" :value="t('content')" size="large" />
+      <ca2-cell
         :title="t('cell')"
         :value="t('content')"
         size="large"
@@ -20,17 +20,17 @@
     </demo-block>
 
     <demo-block :title="t('showIcon')">
-      <zv-cell :title="t('cell')" :value="t('content')" icon="location-o" />
+      <ca2-cell :title="t('cell')" :value="t('content')" icon="location-o" />
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('valueOnly')">
-      <zv-cell :value="t('content')" />
+      <ca2-cell :value="t('content')" />
     </demo-block>
 
     <demo-block :title="t('showArrow')">
-      <zv-cell :title="t('cell')" is-link />
-      <zv-cell :title="t('cell')" is-link :value="t('content')" />
-      <zv-cell
+      <ca2-cell :title="t('cell')" is-link />
+      <ca2-cell :title="t('cell')" is-link :value="t('content')" />
+      <ca2-cell
         :title="t('cell')"
         is-link
         arrow-direction="down"
@@ -39,42 +39,42 @@
     </demo-block>
 
     <demo-block :title="t('router')">
-      <zv-cell :title="t('urlRoute')" is-link url="/vant/mobile.html" />
-      <zv-cell :title="t('vueRoute')" is-link to="index" />
+      <ca2-cell :title="t('urlRoute')" is-link url="/vant/mobile.html" />
+      <ca2-cell :title="t('vueRoute')" is-link to="index" />
     </demo-block>
 
     <demo-block :title="t('groupTitle')">
-      <zv-cell-group :title="`${t('group')} 1`">
-        <zv-cell :title="t('cell')" :value="t('content')" />
-      </zv-cell-group>
-      <zv-cell-group :title="`${t('group')} 2`">
-        <zv-cell :title="t('cell')" :value="t('content')" />
-      </zv-cell-group>
+      <ca2-cell-group :title="`${t('group')} 1`">
+        <ca2-cell :title="t('cell')" :value="t('content')" />
+      </ca2-cell-group>
+      <ca2-cell-group :title="`${t('group')} 2`">
+        <ca2-cell :title="t('cell')" :value="t('content')" />
+      </ca2-cell-group>
     </demo-block>
 
     <demo-block :title="t('useSlots')">
-      <zv-cell :value="t('content')" is-link>
+      <ca2-cell :value="t('content')" is-link>
         <template #title>
           <span class="custom-title">{{ t('cell') }}</span>
-          <zv-tag type="danger">{{ t('tag') }}</zv-tag>
+          <ca2-tag type="danger">{{ t('tag') }}</ca2-tag>
         </template>
-      </zv-cell>
+      </ca2-cell>
 
-      <zv-cell icon="shop-o" :title="t('cell')">
+      <ca2-cell icon="shop-o" :title="t('cell')">
         <template #right-icon>
-          <zv-icon name="search" style="line-height: inherit;" />
+          <ca2-icon name="search" style="line-height: inherit;" />
         </template>
-      </zv-cell>
+      </ca2-cell>
 
-      <zv-cell icon="shop-o" :title="t('cell')">
+      <ca2-cell icon="shop-o" :title="t('cell')">
         <template #right-icon>
-          <zv-checkbox v-model="checked" />
+          <ca2-checkbox v-model="checked" />
         </template>
-      </zv-cell>
+      </ca2-cell>
     </demo-block>
 
     <demo-block :title="t('verticalCenter')">
-      <zv-cell
+      <ca2-cell
         center
         :title="t('cell')"
         :value="t('content')"

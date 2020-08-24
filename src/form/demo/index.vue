@@ -25,7 +25,7 @@ export default {
   width: 100vw;
   overflow: hidden;
 
-  .zv-hairline--bottom::after {
+  .ca2-hairline--bottom::after {
     margin-left: 16px;
   }
 }

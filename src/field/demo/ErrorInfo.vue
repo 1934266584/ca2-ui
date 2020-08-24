@@ -1,13 +1,13 @@
 <template>
   <demo-block :title="t('errorInfo')">
-    <zv-field
+    <ca2-field
       v-model="username"
       error
       required
       :label="t('username')"
       :placeholder="t('usernamePlaceholder')"
     />
-    <zv-field
+    <ca2-field
       v-model="phone"
       required
       :label="t('phone')"

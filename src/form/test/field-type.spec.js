@@ -6,12 +6,12 @@ function mountFormWithChild({ template, data }) {
 
   const wrapper = mountForm({
     template: `
-      <zv-form @submit="onSubmit" @failed="onFailed">
-        <zv-field name="A" :rules="[{ required: true, message: 'foo' }]">
+      <ca2-form @submit="onSubmit" @failed="onFailed">
+        <ca2-field name="A" :rules="[{ required: true, message: 'foo' }]">
           <template #input>${template}</template>
-        </zv-field>
-        <zv-button native-type="submit" />
-      </zv-form>
+        </ca2-field>
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data,
     methods: {
@@ -29,7 +29,7 @@ function mountFormWithChild({ template, data }) {
 
 test('use switch', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<zv-switch v-model="value" />',
+    template: '<ca2-switch v-model="value" />',
     data() {
       return { value: false };
     },
@@ -49,7 +49,7 @@ test('use switch', async () => {
 
 test('use checkbox', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<zv-checkbox v-model="value" />',
+    template: '<ca2-checkbox v-model="value" />',
     data() {
       return { value: false };
     },
@@ -70,10 +70,10 @@ test('use checkbox', async () => {
 test('use checkbox-group', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
     template: `
-      <zv-checkbox-group v-model="checkboxGroup">
-        <zv-checkbox name="1">1</zv-checkbox>
-        <zv-checkbox name="2">2</zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="checkboxGroup">
+        <ca2-checkbox name="1">1</ca2-checkbox>
+        <ca2-checkbox name="2">2</ca2-checkbox>
+      </ca2-checkbox-group>
     `,
     data() {
       return { checkboxGroup: [] };
@@ -95,10 +95,10 @@ test('use checkbox-group', async () => {
 test('use radio', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
     template: `
-      <zv-radio-group v-model="radio">
-        <zv-radio name="1">1</zv-radio>
-        <zv-radio name="2">2</zv-radio>
-      </zv-radio-group>
+      <ca2-radio-group v-model="radio">
+        <ca2-radio name="1">1</ca2-radio>
+        <ca2-radio name="2">2</ca2-radio>
+      </ca2-radio-group>
     `,
     data() {
       return { radio: '' };
@@ -119,7 +119,7 @@ test('use radio', async () => {
 
 test('use stepper', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<zv-stepper v-model="value" :min="0" />',
+    template: '<ca2-stepper v-model="value" :min="0" />',
     data() {
       return { value: 0 };
     },
@@ -139,7 +139,7 @@ test('use stepper', async () => {
 
 test('use rate', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<zv-rate v-model="value" />',
+    template: '<ca2-rate v-model="value" />',
     data() {
       return { value: 0 };
     },
@@ -159,7 +159,7 @@ test('use rate', async () => {
 
 test('use slider', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<zv-slider v-model="value" />',
+    template: '<ca2-slider v-model="value" />',
     data() {
       return { value: 0 };
     },
@@ -179,7 +179,7 @@ test('use slider', async () => {
 
 test('use uploader', async () => {
   const { wrapper, onSubmit, onFailed } = mountFormWithChild({
-    template: '<zv-uploader v-model="value" />',
+    template: '<ca2-uploader v-model="value" />',
     data() {
       return { value: [] };
     },
@@ -202,14 +202,14 @@ test('should not get formValue from button slot', async () => {
 
   const wrapper = mountForm({
     template: `
-      <zv-form @submit="onSubmit">
-        <zv-field name="A" value="foo" :rules="[{ required: true, message: 'foo' }]">
+      <ca2-form @submit="onSubmit">
+        <ca2-field name="A" value="foo" :rules="[{ required: true, message: 'foo' }]">
           <template #button>
-            <zv-checkbox :value="false" />
+            <ca2-checkbox :value="false" />
           </template>
-        </zv-field>
-        <zv-button native-type="submit" />
-      </zv-form>
+        </ca2-field>
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     methods: {
       onSubmit,

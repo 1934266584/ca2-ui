@@ -3,9 +3,9 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-coupon-cell">
-      <div class="zv-cell__title"><span>优惠券</span></div>
-      <div class="zv-cell__value"><span>2张可用</span></div><i class="zv-icon zv-icon-arrow zv-cell__right-icon">
+    <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-coupon-cell">
+      <div class="ca2-cell__title"><span>优惠券</span></div>
+      <div class="ca2-cell__value"><span>2张可用</span></div><i class="ca2-icon ca2-icon-arrow ca2-cell__right-icon">
         <!----></i>
     </div>
     <!---->

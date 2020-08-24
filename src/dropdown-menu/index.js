@@ -105,7 +105,7 @@ export default createComponent({
           ]}
           style={{ color: item.showPopup ? this.activeColor : '' }}
         >
-          <div class="zv-ellipsis">
+          <div class="ca2-ellipsis">
             {item.slots('title') || item.displayTitle}
           </div>
         </span>

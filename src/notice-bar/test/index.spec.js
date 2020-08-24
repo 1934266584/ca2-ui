@@ -14,7 +14,7 @@ test('close event', () => {
       mode: 'closeable',
     },
   });
-  const close = wrapper.find('.zv-notice-bar__right-icon');
+  const close = wrapper.find('.ca2-notice-bar__right-icon');
 
   close.trigger('click');
   expect(wrapper.emitted('close')[0][0]).toBeTruthy();

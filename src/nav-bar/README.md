@@ -14,7 +14,7 @@ Vue.use(NavBar);
 ### Basic Usage
 
 ```html
-<zv-nav-bar
+<ca2-nav-bar
   title="Title"
   left-text="Back"
   right-text="Button"
@@ -42,11 +42,11 @@ export default {
 ### Use Slot
 
 ```html
-<zv-nav-bar title="Title" left-text="Back" left-arrow>
+<ca2-nav-bar title="Title" left-text="Back" left-arrow>
   <template #right>
-    <zv-icon name="search" />
+    <ca2-icon name="search" />
   </template>
-</zv-nav-bar>
+</ca2-nav-bar>
 ```
 
 ## API

@@ -14,8 +14,8 @@ Vue.use(Popup);
 ### Basic Usage
 
 ```html
-<zv-cell is-link @click="showPopup">Show Popup</zv-cell>
-<zv-popup v-model="show">Content</zv-popup>
+<ca2-cell is-link @click="showPopup">Show Popup</ca2-cell>
+<ca2-popup v-model="show">Content</ca2-popup>
 ```
 
 ```js
@@ -39,20 +39,20 @@ export default {
 Use `position` prop to set popup display position
 
 ```html
-<zv-popup v-model="show" position="top" :style="{ height: '30%' }" />
+<ca2-popup v-model="show" position="top" :style="{ height: '30%' }" />
 ```
 
 ### Close Icon
 
 ```html
-<zv-popup
+<ca2-popup
   v-model="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- Custom Icon -->
-<zv-popup
+<ca2-popup
   v-model="show"
   closeable
   close-icon="close"
@@ -60,7 +60,7 @@ Use `position` prop to set popup display position
   :style="{ height: '30%' }"
 />
 <!-- Icon Position -->
-<zv-popup
+<ca2-popup
   v-model="show"
   closeable
   close-icon-position="top-left"
@@ -72,7 +72,7 @@ Use `position` prop to set popup display position
 ### Round Corner
 
 ```html
-<zv-popup v-model="show" round position="bottom" :style="{ height: '30%' }" />
+<ca2-popup v-model="show" round position="bottom" :style="{ height: '30%' }" />
 ```
 
 ### Get Container
@@ -81,13 +81,13 @@ Use `get-container` prop to specify mount location
 
 ```html
 <!-- mount to body -->
-<zv-popup v-model="show" get-container="body" />
+<ca2-popup v-model="show" get-container="body" />
 
 <!-- mount to #app -->
-<zv-popup v-model="show" get-container="#app" />
+<ca2-popup v-model="show" get-container="#app" />
 
 <!-- Specify the mount location by function -->
-<zv-popup v-model="show" :get-container="getContainer" />
+<ca2-popup v-model="show" :get-container="getContainer" />
 ```
 
 ```js

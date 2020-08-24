@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.zv-toast {
+.ca2-toast {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -45,7 +45,7 @@
     min-height: 0;
     padding: $toast-text-padding;
 
-    .zv-toast__text {
+    .ca2-toast__text {
       margin-top: 0;
     }
   }

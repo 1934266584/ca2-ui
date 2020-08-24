@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-pagination {
+.ca2-pagination {
   display: flex;
   font-size: $pagination-font-size;
   line-height: $pagination-height;
@@ -62,8 +62,8 @@
   }
 
   &--simple {
-    .zv-pagination__prev,
-    .zv-pagination__next {
+    .ca2-pagination__prev,
+    .ca2-pagination__next {
       &::after {
         border-width: $border-width-base;
       }

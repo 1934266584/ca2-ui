@@ -3,37 +3,37 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="zv-cell-group zv-hairline--top-bottom">
-      <div class="zv-cell zv-cell--center zv-switch-cell">
-        <div class="zv-cell__title"><span>标题</span></div>
-        <div class="zv-cell__value">
-          <div role="switch" aria-checked="true" class="zv-switch zv-switch--on" style="font-size: 24px;">
-            <div class="zv-switch__node"></div>
+    <div class="ca2-cell-group ca2-hairline--top-bottom">
+      <div class="ca2-cell ca2-cell--center ca2-switch-cell">
+        <div class="ca2-cell__title"><span>标题</span></div>
+        <div class="ca2-cell__value">
+          <div role="switch" aria-checked="true" class="ca2-switch ca2-switch--on" style="font-size: 24px;">
+            <div class="ca2-switch__node"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-cell-group zv-hairline--top-bottom">
-      <div class="zv-cell zv-cell--center zv-switch-cell">
-        <div class="zv-cell__title"><span>标题</span></div>
-        <div class="zv-cell__value">
-          <div role="switch" aria-checked="true" class="zv-switch zv-switch--on zv-switch--disabled" style="font-size: 24px;">
-            <div class="zv-switch__node"></div>
+    <div class="ca2-cell-group ca2-hairline--top-bottom">
+      <div class="ca2-cell ca2-cell--center ca2-switch-cell">
+        <div class="ca2-cell__title"><span>标题</span></div>
+        <div class="ca2-cell__value">
+          <div role="switch" aria-checked="true" class="ca2-switch ca2-switch--on ca2-switch--disabled" style="font-size: 24px;">
+            <div class="ca2-switch__node"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-cell-group zv-hairline--top-bottom">
-      <div class="zv-cell zv-cell--center zv-switch-cell">
-        <div class="zv-cell__title"><span>标题</span></div>
-        <div class="zv-cell__value">
-          <div role="switch" aria-checked="true" class="zv-switch zv-switch--on zv-switch--loading" style="font-size: 24px;">
-            <div class="zv-switch__node">
-              <div class="zv-loading zv-loading--circular zv-switch__loading"><span class="zv-loading__spinner zv-loading__spinner--circular"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+    <div class="ca2-cell-group ca2-hairline--top-bottom">
+      <div class="ca2-cell ca2-cell--center ca2-switch-cell">
+        <div class="ca2-cell__title"><span>标题</span></div>
+        <div class="ca2-cell__value">
+          <div role="switch" aria-checked="true" class="ca2-switch ca2-switch--on ca2-switch--loading" style="font-size: 24px;">
+            <div class="ca2-switch__node">
+              <div class="ca2-loading ca2-loading--circular ca2-switch__loading"><span class="ca2-loading__spinner ca2-loading__spinner--circular"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
             </div>
           </div>
         </div>

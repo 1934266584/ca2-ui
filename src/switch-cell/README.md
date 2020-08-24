@@ -18,9 +18,9 @@ Vue.use(SwitchCell);
 ### Basic Usage
 
 ```html
-<zv-cell-group>
-  <zv-switch-cell v-model="checked" title="Title" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-switch-cell v-model="checked" title="Title" />
+</ca2-cell-group>
 ```
 
 ```js
@@ -38,9 +38,9 @@ export default {
 use `disabled` property to disable the component
 
 ```html
-<zv-cell-group>
-  <zv-switch-cell v-model="checked" disabled title="Title" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-switch-cell v-model="checked" disabled title="Title" />
+</ca2-cell-group>
 ```
 
 ### Loading
@@ -48,9 +48,9 @@ use `disabled` property to disable the component
 use `loading` property to keep component in loading state
 
 ```html
-<zv-cell-group>
-  <zv-switch-cell v-model="checked" loading title="Title" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-switch-cell v-model="checked" loading title="Title" />
+</ca2-cell-group>
 ```
 
 ## API

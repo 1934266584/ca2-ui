@@ -1,6 +1,6 @@
 <template>
   <demo-block v-if="!isWeapp" :title="t('showWordLimit')">
-    <zv-field
+    <ca2-field
       v-model="value"
       autosize
       show-word-limit

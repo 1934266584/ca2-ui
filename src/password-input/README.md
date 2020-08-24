@@ -20,14 +20,14 @@ Vue.use(NumberKeyboard);
 
 ```html
 <!-- PasswordInput -->
-<zv-password-input
+<ca2-password-input
   :value="value"
   info="Some tips"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
 <!-- NumberKeyboard -->
-<zv-number-keyboard
+<ca2-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"
@@ -57,7 +57,7 @@ export default {
 ### Custom length
 
 ```html
-<zv-password-input
+<ca2-password-input
   :value="value"
   :length="4"
   :gutter="15"
@@ -69,7 +69,7 @@ export default {
 ### Without mask
 
 ```html
-<zv-password-input
+<ca2-password-input
   :value="value"
   :mask="false"
   :focused="showKeyboard"
@@ -83,7 +83,7 @@ Use `error-info` prop to set error message. For example, a password error is pro
 
 ```html
 <!-- PasswordInput -->
-<zv-password-input
+<ca2-password-input
   :value="value"
   :error-info="errorInfo"
   :focused="showKeyboard"
@@ -91,7 +91,7 @@ Use `error-info` prop to set error message. For example, a password error is pro
 />
 
 <!-- NumberKeyboard -->
-<zv-number-keyboard
+<ca2-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"

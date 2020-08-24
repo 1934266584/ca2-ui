@@ -15,7 +15,7 @@ Vue.use(Pagination);
 ### 基础用法
 
 ```html
-<zv-pagination 
+<ca2-pagination 
   v-model="currentPage" 
   :total-items="24" 
   :items-per-page="5"
@@ -35,7 +35,7 @@ export default {
 ### 简单模式
 
 ```html
-<zv-pagination 
+<ca2-pagination 
   v-model="currentPage" 
   :page-count="12"
   mode="simple" 
@@ -45,7 +45,7 @@ export default {
 ### 显示省略号
 
 ```html
-<zv-pagination 
+<ca2-pagination 
   v-model="currentPage" 
   :total-items="125" 
   :show-page-size="3" 

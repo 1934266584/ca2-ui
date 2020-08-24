@@ -1,29 +1,29 @@
 <template>
   <demo-block :title="t('customType')">
-    <zv-field
+    <ca2-field
       v-model="text"
       :label="t('text')"
       :placeholder="t('textPlaceholder')"
     />
-    <zv-field
+    <ca2-field
       v-model="phone"
       type="tel"
       :label="t('phone')"
       :placeholder="t('phonePlaceholder')"
     />
-    <zv-field
+    <ca2-field
       v-model="digit"
       type="digit"
       :label="t('digit')"
       :placeholder="t('digitPlaceholder')"
     />
-    <zv-field
+    <ca2-field
       v-model="number"
       type="number"
       :label="t('number')"
       :placeholder="t('numberPlaceholder')"
     />
-    <zv-field
+    <ca2-field
       v-model="password"
       type="password"
       :label="t('password')"

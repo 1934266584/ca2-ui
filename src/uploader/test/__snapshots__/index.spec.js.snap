@@ -1,66 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`delete preview image 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__upload" style="width: 30px; height: 30px;"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-        <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__upload" style="width: 30px; height: 30px;"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+        <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;
 
 exports[`disable preview image 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-        <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__upload"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+        <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;
 
 exports[`file message should be reactive 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__preview">
-      <div class="zv-image zv-uploader__preview-image"><img src="data:image/test" class="zv-image__img" style="object-fit: cover;">
-        <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__preview">
+      <div class="ca2-image ca2-uploader__preview-image"><img src="data:image/test" class="ca2-image__img" style="object-fit: cover;">
+        <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
             <!----></i></div>
       </div>
-      <div class="zv-uploader__mask">
-        <div class="zv-loading zv-loading--circular zv-uploader__loading"><span class="zv-loading__spinner zv-loading__spinner--circular"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
-        <div class="zv-uploader__mask-message">2</div>
+      <div class="ca2-uploader__mask">
+        <div class="ca2-loading ca2-loading--circular ca2-uploader__loading"><span class="ca2-loading__spinner ca2-loading__spinner--circular"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+        <div class="ca2-uploader__mask-message">2</div>
       </div>
     </div>
-    <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-        <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+    <div class="ca2-uploader__upload"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+        <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;
 
 exports[`image-fit prop 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__preview">
-      <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/cat.jpeg" class="zv-image__img" style="object-fit: contain;">
-        <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__preview">
+      <div class="ca2-image ca2-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/cat.jpeg" class="ca2-image__img" style="object-fit: contain;">
+        <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
             <!----></i></div>
-      </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+      </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
         <!----></i>
     </div>
-    <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-        <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+    <div class="ca2-uploader__upload"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+        <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;
 
 exports[`max-count prop 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__preview">
-      <div class="zv-image zv-uploader__preview-image"><img src="data:image/test" class="zv-image__img" style="object-fit: cover;">
-        <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__preview">
+      <div class="ca2-image ca2-uploader__preview-image"><img src="data:image/test" class="ca2-image__img" style="object-fit: cover;">
+        <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
             <!----></i></div>
-      </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+      </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
         <!----></i>
     </div>
   </div>
@@ -68,72 +68,72 @@ exports[`max-count prop 1`] = `
 `;
 
 exports[`preview-size prop 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__preview" style="">
-      <div class="zv-image zv-uploader__preview-image" style="width: 30px; height: 30px;"><img src="data:image/test" class="zv-image__img" style="object-fit: cover;">
-        <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__preview" style="">
+      <div class="ca2-image ca2-uploader__preview-image" style="width: 30px; height: 30px;"><img src="data:image/test" class="ca2-image__img" style="object-fit: cover;">
+        <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
             <!----></i></div>
-      </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+      </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
         <!----></i>
     </div>
-    <div class="zv-uploader__upload" style="width: 30px; height: 30px;"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-        <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+    <div class="ca2-uploader__upload" style="width: 30px; height: 30px;"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+        <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;
 
 exports[`render preview image 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__preview">
-      <div class="zv-image zv-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/cat.jpeg" class="zv-image__img" style="object-fit: cover;">
-        <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__preview">
+      <div class="ca2-image ca2-uploader__preview-image"><img src="https://img.yzcdn.cn/vant/cat.jpeg" class="ca2-image__img" style="object-fit: cover;">
+        <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
             <!----></i></div>
-      </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+      </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
         <!----></i>
     </div>
-    <div class="zv-uploader__preview">
-      <div class="zv-uploader__file"><i class="zv-icon zv-icon-description zv-uploader__file-icon">
+    <div class="ca2-uploader__preview">
+      <div class="ca2-uploader__file"><i class="ca2-icon ca2-icon-description ca2-uploader__file-icon">
           <!----></i>
-        <div class="zv-uploader__file-name zv-ellipsis">https://img.yzcdn.cn/vant/test.pdf</div>
-      </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+        <div class="ca2-uploader__file-name ca2-ellipsis">https://img.yzcdn.cn/vant/test.pdf</div>
+      </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
         <!----></i>
     </div>
-    <div class="zv-uploader__preview">
-      <div class="zv-uploader__file"><i class="zv-icon zv-icon-description zv-uploader__file-icon">
+    <div class="ca2-uploader__preview">
+      <div class="ca2-uploader__file"><i class="ca2-icon ca2-icon-description ca2-uploader__file-icon">
           <!----></i>
-        <div class="zv-uploader__file-name zv-ellipsis">test.pdf</div>
-      </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+        <div class="ca2-uploader__file-name ca2-ellipsis">test.pdf</div>
+      </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
         <!----></i>
     </div>
-    <div class="zv-uploader__preview">
-      <div class="zv-image zv-uploader__preview-image"><img src="data:image/test" class="zv-image__img" style="object-fit: cover;">
-        <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+    <div class="ca2-uploader__preview">
+      <div class="ca2-image ca2-uploader__preview-image"><img src="data:image/test" class="ca2-image__img" style="object-fit: cover;">
+        <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
             <!----></i></div>
-      </div><i class="zv-icon zv-icon-clear zv-uploader__preview-delete">
+      </div><i class="ca2-icon ca2-icon-clear ca2-uploader__preview-delete">
         <!----></i>
     </div>
-    <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-        <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+    <div class="ca2-uploader__upload"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+        <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;
 
 exports[`render upload-text 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__upload"><i class="zv-icon zv-icon-photograph zv-uploader__upload-icon">
-        <!----></i><span class="zv-uploader__upload-text">Text</span><input type="file" accept="image/*" class="zv-uploader__input"></div>
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__upload"><i class="ca2-icon ca2-icon-photograph ca2-uploader__upload-icon">
+        <!----></i><span class="ca2-uploader__upload-text">Text</span><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;
 
 exports[`upload-icon prop 1`] = `
-<div class="zv-uploader">
-  <div class="zv-uploader__wrapper">
-    <div class="zv-uploader__upload"><i class="zv-icon zv-icon-add zv-uploader__upload-icon">
-        <!----></i><input type="file" accept="image/*" class="zv-uploader__input"></div>
+<div class="ca2-uploader">
+  <div class="ca2-uploader__wrapper">
+    <div class="ca2-uploader__upload"><i class="ca2-icon ca2-icon-add ca2-uploader__upload-icon">
+        <!----></i><input type="file" accept="image/*" class="ca2-uploader__input"></div>
   </div>
 </div>
 `;

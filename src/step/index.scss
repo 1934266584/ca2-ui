@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-step {
+.ca2-step {
   position: relative;
   flex: 1;
   color: $step-text-color;
@@ -24,7 +24,7 @@
     float: left;
 
     &:first-child {
-      .zv-step__title {
+      .ca2-step__title {
         margin-left: 0;
         transform: none;
       }
@@ -35,18 +35,18 @@
       right: 1px;
       width: auto;
 
-      .zv-step__title {
+      .ca2-step__title {
         margin-left: 0;
         transform: none;
       }
 
-      .zv-step__circle-container {
+      .ca2-step__circle-container {
         right: -9px;
         left: auto;
       }
     }
 
-    .zv-step__circle-container {
+    .ca2-step__circle-container {
       position: absolute;
       top: 30px;
       left: -$padding-xs;
@@ -56,7 +56,7 @@
       transform: translateY(-50%);
     }
 
-    .zv-step__title {
+    .ca2-step__title {
       display: inline-block;
       margin-left: 3px;
       font-size: $step-horizontal-title-font-size;
@@ -67,19 +67,19 @@
       }
     }
 
-    .zv-step__line {
+    .ca2-step__line {
       top: 30px;
       left: 0;
       width: 100%;
       height: 1px;
     }
 
-    .zv-step__icon {
+    .ca2-step__icon {
       display: block;
       font-size: $step-icon-size;
     }
 
-    .zv-step--process {
+    .ca2-step--process {
       color: $step-process-text-color;
     }
   }
@@ -107,7 +107,7 @@
       }
     }
 
-    .zv-step__circle-container {
+    .ca2-step__circle-container {
       position: absolute;
       top: 19px;
       left: -15px;
@@ -117,7 +117,7 @@
       transform: translate(-50%, -50%);
     }
 
-    .zv-step__line {
+    .ca2-step__line {
       top: 16px;
       left: -15px;
       width: 1px;
@@ -126,7 +126,7 @@
   }
 
   &:last-child {
-    .zv-step__line {
+    .ca2-step__line {
       width: 0;
     }
   }
@@ -134,8 +134,8 @@
   &--finish {
     color: $step-finish-text-color;
 
-    .zv-step__circle,
-    .zv-step__line {
+    .ca2-step__circle,
+    .ca2-step__line {
       background-color: $step-finish-line-color;
     }
   }

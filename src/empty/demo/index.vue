@@ -1,25 +1,25 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-empty :description="t('description')" />
+      <ca2-empty :description="t('description')" />
     </demo-block>
 
     <demo-block :title="t('imageType')">
-      <zv-tabs v-model="active">
-        <zv-tab name="error" :title="t('error')">
-          <zv-empty image="error" :description="t('description')" />
-        </zv-tab>
-        <zv-tab name="network" :title="t('network')">
-          <zv-empty image="network" :description="t('description')" />
-        </zv-tab>
-        <zv-tab name="search" :title="t('search')">
-          <zv-empty image="search" :description="t('description')" />
-        </zv-tab>
-      </zv-tabs>
+      <ca2-tabs v-model="active">
+        <ca2-tab name="error" :title="t('error')">
+          <ca2-empty image="error" :description="t('description')" />
+        </ca2-tab>
+        <ca2-tab name="network" :title="t('network')">
+          <ca2-empty image="network" :description="t('description')" />
+        </ca2-tab>
+        <ca2-tab name="search" :title="t('search')">
+          <ca2-empty image="search" :description="t('description')" />
+        </ca2-tab>
+      </ca2-tabs>
     </demo-block>
 
     <demo-block :title="t('customImage')">
-      <zv-empty
+      <ca2-empty
         class="custom-image"
         image="https://img.yzcdn.cn/vant/custom-empty-image.png"
         :description="t('description')"
@@ -27,11 +27,11 @@
     </demo-block>
 
     <demo-block :title="t('bottomContent')">
-      <zv-empty :description="t('description')">
-        <zv-button round type="danger" class="bottom-button">
+      <ca2-empty :description="t('description')">
+        <ca2-button round type="danger" class="bottom-button">
           {{ t('button') }}
-        </zv-button>
-      </zv-empty>
+        </ca2-button>
+      </ca2-empty>
     </demo-block>
   </demo-section>
 </template>
@@ -74,7 +74,7 @@ export default {
   background: $white;
 
   .custom-image {
-    .zv-empty__image {
+    .ca2-empty__image {
       width: 90px;
       height: 90px;
     }

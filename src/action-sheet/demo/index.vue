@@ -1,9 +1,9 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-cell is-link :title="t('basicUsage')" @click="show.basic = true" />
-      <zv-cell is-link :title="t('showCancel')" @click="show.cancel = true" />
-      <zv-cell
+      <ca2-cell is-link :title="t('basicUsage')" @click="show.basic = true" />
+      <ca2-cell is-link :title="t('showCancel')" @click="show.cancel = true" />
+      <ca2-cell
         is-link
         :title="t('showDescription')"
         @click="show.description = true"
@@ -11,7 +11,7 @@
     </demo-block>
 
     <demo-block :title="t('optionStatus')">
-      <zv-cell
+      <ca2-cell
         is-link
         :title="t('optionStatus')"
         @click="show.status = true"
@@ -19,23 +19,23 @@
     </demo-block>
 
     <demo-block :title="t('customPanel')">
-      <zv-cell is-link :title="t('customPanel')" @click="show.title = true" />
+      <ca2-cell is-link :title="t('customPanel')" @click="show.title = true" />
     </demo-block>
 
-    <zv-action-sheet
+    <ca2-action-sheet
       v-model="show.basic"
       :actions="simpleActions"
       @select="onSelect"
     />
 
-    <zv-action-sheet
+    <ca2-action-sheet
       v-model="show.status"
       close-on-click-action
       :actions="statusActions"
       :cancel-text="t('cancel')"
     />
 
-    <zv-action-sheet
+    <ca2-action-sheet
       v-model="show.cancel"
       :actions="simpleActions"
       close-on-click-action
@@ -43,16 +43,16 @@
       @cancel="onCancel"
     />
 
-    <zv-action-sheet
+    <ca2-action-sheet
       v-model="show.description"
       :actions="simpleActions"
       close-on-click-action
       :description="t('description')"
     />
 
-    <zv-action-sheet v-model="show.title" :title="t('title')">
+    <ca2-action-sheet v-model="show.title" :title="t('title')">
       <div class="demo-action-sheet-content">{{ t('content') }}</div>
-    </zv-action-sheet>
+    </ca2-action-sheet>
   </demo-section>
 </template>
 

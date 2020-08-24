@@ -20,8 +20,8 @@ Vue.use(Popup);
 通过`v-model`控制弹出层是否展示
 
 ```html
-<zv-cell is-link @click="showPopup">展示弹出层</zv-cell>
-<zv-popup v-model="show">内容</zv-popup>
+<ca2-cell is-link @click="showPopup">展示弹出层</ca2-cell>
+<ca2-popup v-model="show">内容</ca2-popup>
 ```
 
 ```js
@@ -45,7 +45,7 @@ export default {
 通过`position`属性设置弹出位置，默认居中弹出，可以设置为`top`、`bottom`、`left`、`right`
 
 ```html
-<zv-popup v-model="show" position="top" :style="{ height: '30%' }" />
+<ca2-popup v-model="show" position="top" :style="{ height: '30%' }" />
 ```
 
 ### 关闭图标
@@ -53,14 +53,14 @@ export default {
 设置`closeable`属性后，会在弹出层的右上角显示关闭图标，并且可以通过`close-icon`属性自定义图标，使用`close-icon-position`属性可以自定义图标位置
 
 ```html
-<zv-popup
+<ca2-popup
   v-model="show"
   closeable
   position="bottom"
   :style="{ height: '30%' }"
 />
 <!-- 自定义图标 -->
-<zv-popup
+<ca2-popup
   v-model="show"
   closeable
   close-icon="close"
@@ -68,7 +68,7 @@ export default {
   :style="{ height: '30%' }"
 />
 <!-- 图标位置 -->
-<zv-popup
+<ca2-popup
   v-model="show"
   closeable
   close-icon-position="top-left"
@@ -82,7 +82,7 @@ export default {
 设置`round`属性后，弹窗会根据弹出位置添加不同的圆角样式
 
 ```html
-<zv-popup v-model="show" round position="bottom" :style="{ height: '30%' }" />
+<ca2-popup v-model="show" round position="bottom" :style="{ height: '30%' }" />
 ```
 
 ### 指定挂载位置
@@ -91,13 +91,13 @@ export default {
 
 ```html
 <!-- 挂载到 body 节点下 -->
-<zv-popup v-model="show" get-container="body" />
+<ca2-popup v-model="show" get-container="body" />
 
 <!-- 挂载到 #app 节点下 -->
-<zv-popup v-model="show" get-container="#app" />
+<ca2-popup v-model="show" get-container="#app" />
 
 <!-- 通过函数指定挂载位置 -->
-<zv-popup v-model="show" :get-container="getContainer" />
+<ca2-popup v-model="show" :get-container="getContainer" />
 ```
 
 ```js

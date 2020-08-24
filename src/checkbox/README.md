@@ -15,7 +15,7 @@ Vue.use(CheckboxGroup);
 ### Basic Usage
 
 ```html
-<zv-checkbox v-model="checked">Checkbox</zv-checkbox>
+<ca2-checkbox v-model="checked">Checkbox</ca2-checkbox>
 ```
 
 ```js
@@ -31,25 +31,25 @@ export default {
 ### Disabled
 
 ```html
-<zv-checkbox v-model="checked" disabled>Checkbox</zv-checkbox>
+<ca2-checkbox v-model="checked" disabled>Checkbox</ca2-checkbox>
 ```
 
 ### Custom Shape
 
 ```html
-<zv-checkbox v-model="checked" shape="square">Checkbox</zv-checkbox>
+<ca2-checkbox v-model="checked" shape="square">Checkbox</ca2-checkbox>
 ```
 
 ### Custom Color
 
 ```html
-<zv-checkbox v-model="checked" checked-color="#07c160">Checkbox</zv-checkbox>
+<ca2-checkbox v-model="checked" checked-color="#07c160">Checkbox</ca2-checkbox>
 ```
 
 ### Custom Icon Size
 
 ```html
-<zv-checkbox v-model="checked" icon-size="24px">Checkbox</zv-checkbox>
+<ca2-checkbox v-model="checked" icon-size="24px">Checkbox</ca2-checkbox>
 ```
 
 ### Custom Icon
@@ -57,12 +57,12 @@ export default {
 Use icon slot to custom icon
 
 ```html
-<zv-checkbox v-model="checked">
+<ca2-checkbox v-model="checked">
   customize icon
   <template #icon="props">
     <img class="img-icon" :src="props.checked ? activeIcon : inactiveIcon" />
   </template>
-</zv-checkbox>
+</ca2-checkbox>
 
 <style>
   .img-icon {
@@ -86,7 +86,7 @@ export default {
 ### Disable Label Click
 
 ```html
-<zv-checkbox v-model="checked" label-disabled>Checkbox</zv-checkbox>
+<ca2-checkbox v-model="checked" label-disabled>Checkbox</ca2-checkbox>
 ```
 
 ### Checkbox Group
@@ -94,10 +94,10 @@ export default {
 When Checkboxes are inside a CheckboxGroup, the checked checkboxes's name is an array and bound with CheckboxGroup by v-model.
 
 ```html
-<zv-checkbox-group v-model="result">
-  <zv-checkbox name="a">Checkbox a</zv-checkbox>
-  <zv-checkbox name="b">Checkbox b</zv-checkbox>
-</zv-checkbox-group>
+<ca2-checkbox-group v-model="result">
+  <ca2-checkbox name="a">Checkbox a</ca2-checkbox>
+  <ca2-checkbox name="b">Checkbox b</ca2-checkbox>
+</ca2-checkbox-group>
 ```
 
 ```js
@@ -113,10 +113,10 @@ export default {
 ### Horizontal
 
 ```html
-<zv-checkbox-group v-model="result" direction="horizontal">
-  <zv-checkbox name="a">Checkbox a</zv-checkbox>
-  <zv-checkbox name="b">Checkbox b</zv-checkbox>
-</zv-checkbox-group>
+<ca2-checkbox-group v-model="result" direction="horizontal">
+  <ca2-checkbox name="a">Checkbox a</ca2-checkbox>
+  <ca2-checkbox name="b">Checkbox b</ca2-checkbox>
+</ca2-checkbox-group>
 ```
 
 ```js
@@ -132,24 +132,24 @@ export default {
 ### Maximum amount of checked options
 
 ```html
-<zv-checkbox-group v-model="result" :max="2">
-  <zv-checkbox name="a">Checkbox a</zv-checkbox>
-  <zv-checkbox name="b">Checkbox b</zv-checkbox>
-  <zv-checkbox name="c">Checkbox c</zv-checkbox>
-</zv-checkbox-group>
+<ca2-checkbox-group v-model="result" :max="2">
+  <ca2-checkbox name="a">Checkbox a</ca2-checkbox>
+  <ca2-checkbox name="b">Checkbox b</ca2-checkbox>
+  <ca2-checkbox name="c">Checkbox c</ca2-checkbox>
+</ca2-checkbox-group>
 ```
 
 ### Toggle All
 
 ```html
-<zv-checkbox-group v-model="result" ref="checkboxGroup">
-  <zv-checkbox name="a">Checkbox a</zv-checkbox>
-  <zv-checkbox name="b">Checkbox b</zv-checkbox>
-  <zv-checkbox name="c">Checkbox c</zv-checkbox>
-</zv-checkbox-group>
+<ca2-checkbox-group v-model="result" ref="checkboxGroup">
+  <ca2-checkbox name="a">Checkbox a</ca2-checkbox>
+  <ca2-checkbox name="b">Checkbox b</ca2-checkbox>
+  <ca2-checkbox name="c">Checkbox c</ca2-checkbox>
+</ca2-checkbox-group>
 
-<zv-button type="primary" @click="checkAll">Check All</zv-button>
-<zv-button type="info" @click="toggleAll">Toggle All</zv-button>
+<ca2-button type="primary" @click="checkAll">Check All</ca2-button>
+<ca2-button type="info" @click="toggleAll">Toggle All</ca2-button>
 ```
 
 ```js
@@ -173,9 +173,9 @@ export default {
 ### Inside a Cell
 
 ```html
-<zv-checkbox-group v-model="result">
-  <zv-cell-group>
-    <zv-cell
+<ca2-checkbox-group v-model="result">
+  <ca2-cell-group>
+    <ca2-cell
       v-for="(item, index) in list"
       clickable
       :key="item"
@@ -183,11 +183,11 @@ export default {
       @click="toggle(index)"
     >
       <template #right-icon>
-        <zv-checkbox :name="item" ref="checkboxes" />
+        <ca2-checkbox :name="item" ref="checkboxes" />
       </template>
-    </zv-cell>
-  </zv-cell-group>
-</zv-checkbox-group>
+    </ca2-cell>
+  </ca2-cell-group>
+</ca2-checkbox-group>
 ```
 
 ```js

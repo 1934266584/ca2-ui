@@ -15,37 +15,37 @@ Vue.use(IndexAnchor);
 ### Basic Usage
 
 ```html
-<zv-index-bar>
-  <zv-index-anchor index="A" />
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
+<ca2-index-bar>
+  <ca2-index-anchor index="A" />
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
 
-  <zv-index-anchor index="B" />
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
+  <ca2-index-anchor index="B" />
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
 
   ...
-</zv-index-bar>
+</ca2-index-bar>
 ```
 
 ### Custom Index List
 
 ```html
-<zv-index-bar :index-list="indexList">
-  <zv-index-anchor index="1">Title 1</zv-index-anchor>
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
+<ca2-index-bar :index-list="indexList">
+  <ca2-index-anchor index="1">Title 1</ca2-index-anchor>
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
 
-  <zv-index-anchor index="2">Title 2</zv-index-anchor>
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
-  <zv-cell title="Text" />
+  <ca2-index-anchor index="2">Title 2</ca2-index-anchor>
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
+  <ca2-cell title="Text" />
 
   ...
-</zv-index-bar>
+</ca2-index-bar>
 ```
 
 ```js

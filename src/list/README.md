@@ -18,14 +18,14 @@ Vue.use(List);
 ### Basic Usage
 
 ```html
-<zv-list
+<ca2-list
   v-model="loading"
   :finished="finished"
   finished-text="Finished"
   @load="onLoad"
 >
-  <zv-cell v-for="item in list" :key="item" :title="item" />
-</zv-list>
+  <ca2-cell v-for="item in list" :key="item" :title="item" />
+</ca2-list>
 ```
 
 ```js
@@ -57,14 +57,14 @@ export default {
 ### Error Info
 
 ```html
-<zv-list
+<ca2-list
   v-model="loading"
   :error.sync="error"
   error-text="Request failed. Click to reload"
   @load="onLoad"
 >
-  <zv-cell v-for="item in list" :key="item" :title="item" />
-</zv-list>
+  <ca2-cell v-for="item in list" :key="item" :title="item" />
+</ca2-list>
 ```
 
 ```js
@@ -89,16 +89,16 @@ export default {
 ### PullRefresh
 
 ```html
-<zv-pull-refresh v-model="refreshing" @refresh="onRefresh">
-  <zv-list
+<ca2-pull-refresh v-model="refreshing" @refresh="onRefresh">
+  <ca2-list
     v-model="loading"
     :finished="finished"
     finished-text="Finished"
     @load="onLoad"
   >
-    <zv-cell v-for="item in list" :key="item" :title="item" />
-  </zv-list>
-</zv-pull-refresh>
+    <ca2-cell v-for="item in list" :key="item" :title="item" />
+  </ca2-list>
+</ca2-pull-refresh>
 ```
 
 ```js

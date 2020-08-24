@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-tag {
+.ca2-tag {
   display: inline-flex;
   align-items: center;
   padding: $tag-padding;
@@ -18,7 +18,7 @@
     color: $tag-default-text-color;
     background-color: $tag-default-color;
 
-    &.zv-tag--plain {
+    &.ca2-tag--plain {
       color: $tag-default-text-color;
     }
   }
@@ -27,7 +27,7 @@
     color: $tag-danger-text-color;
     background-color: $tag-danger-color;
 
-    &.zv-tag--plain {
+    &.ca2-tag--plain {
       color: $tag-danger-text-color;
     }
   }
@@ -36,7 +36,7 @@
     color: $tag-primary-text-color;
     background-color: $tag-primary-color;
 
-    &.zv-tag--plain {
+    &.ca2-tag--plain {
       color: $tag-primary-text-color;
     }
   }
@@ -45,7 +45,7 @@
     color: $tag-success-text-color;
     background-color: $tag-success-color;
 
-    &.zv-tag--plain {
+    &.ca2-tag--plain {
       color: $tag-success-text-color;
     }
   }
@@ -54,7 +54,7 @@
     color: $tag-warning-text-color;
     background-color: $tag-warning-color;
 
-    &.zv-tag--plain {
+    &.ca2-tag--plain {
       color: $tag-warning-text-color;
     }
   }

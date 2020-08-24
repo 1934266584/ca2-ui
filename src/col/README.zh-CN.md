@@ -2,7 +2,7 @@
 
 ### 介绍
 
-Layout 提供了`zv-row`和`zv-col`两个组件来进行行列布局
+Layout 提供了`ca2-row`和`ca2-col`两个组件来进行行列布局
 
 ### 引入
 
@@ -22,20 +22,20 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 此外，添加`offset`属性可以设置列的偏移宽度，计算方式与 span 相同
 
 ```html
-<zv-row>
-  <zv-col span="8">span: 8</zv-col>
-  <zv-col span="8">span: 8</zv-col>
-  <zv-col span="8">span: 8</zv-col>
-</zv-row>
+<ca2-row>
+  <ca2-col span="8">span: 8</ca2-col>
+  <ca2-col span="8">span: 8</ca2-col>
+  <ca2-col span="8">span: 8</ca2-col>
+</ca2-row>
 
-<zv-row>
-  <zv-col span="4">span: 4</zv-col>
-  <zv-col span="10" offset="4">offset: 4, span: 10</zv-col>
-</zv-row>
+<ca2-row>
+  <ca2-col span="4">span: 4</ca2-col>
+  <ca2-col span="10" offset="4">offset: 4, span: 10</ca2-col>
+</ca2-row>
 
-<zv-row>
-  <zv-col offset="12" span="12">offset: 12, span: 12</zv-col>
-</zv-row>
+<ca2-row>
+  <ca2-col offset="12" span="12">offset: 12, span: 12</ca2-col>
+</ca2-row>
 ```
 
 ### 设置列元素间距
@@ -43,11 +43,11 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 通过`gutter`属性可以设置列元素之间的间距，默认间距为 0
 
 ```html
-<zv-row gutter="20">
-  <zv-col span="8">span: 8</zv-col>
-  <zv-col span="8">span: 8</zv-col>
-  <zv-col span="8">span: 8</zv-col>
-</zv-row>
+<ca2-row gutter="20">
+  <ca2-col span="8">span: 8</ca2-col>
+  <ca2-col span="8">span: 8</ca2-col>
+  <ca2-col span="8">span: 8</ca2-col>
+</ca2-row>
 ```
 
 ### Flex 布局
@@ -56,39 +56,39 @@ Layout 组件提供了`24列栅格`，通过在`Col`上添加`span`属性设置�
 
 ```html
 <!-- 左对齐 -->
-<zv-row type="flex">
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-</zv-row>
+<ca2-row type="flex">
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+</ca2-row>
 
 <!-- 居中 -->
-<zv-row type="flex" justify="center">
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-</zv-row>
+<ca2-row type="flex" justify="center">
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+</ca2-row>
 
 <!-- 右对齐 -->
-<zv-row type="flex" justify="end">
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-</zv-row>
+<ca2-row type="flex" justify="end">
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+</ca2-row>
 
 <!-- 两端对齐 -->
-<zv-row type="flex" justify="space-between">
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-</zv-row>
+<ca2-row type="flex" justify="space-between">
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+</ca2-row>
 
 <!-- 每个元素的两侧间隔相等 -->
-<zv-row type="flex" justify="space-around">
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-  <zv-col span="6">span: 6</zv-col>
-</zv-row>
+<ca2-row type="flex" justify="space-around">
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+  <ca2-col span="6">span: 6</ca2-col>
+</ca2-row>
 ```
 
 ## API

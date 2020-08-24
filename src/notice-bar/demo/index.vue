@@ -1,24 +1,24 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-notice-bar :text="t('text')" left-icon="volume-o" />
+      <ca2-notice-bar :text="t('text')" left-icon="volume-o" />
     </demo-block>
 
     <demo-block :title="t('unscrollable')">
-      <zv-notice-bar :scrollable="false" :text="t('text')" />
+      <ca2-notice-bar :scrollable="false" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('wrapable')">
-      <zv-notice-bar wrapable :scrollable="false" :text="t('text')" />
+      <ca2-notice-bar wrapable :scrollable="false" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('mode')">
-      <zv-notice-bar mode="closeable" :text="t('text')" />
-      <zv-notice-bar mode="link" :text="t('text')" />
+      <ca2-notice-bar mode="closeable" :text="t('text')" />
+      <ca2-notice-bar mode="link" :text="t('text')" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-notice-bar
+      <ca2-notice-bar
         :text="t('text')"
         color="#1989fa"
         background="#ecf9ff"
@@ -57,7 +57,7 @@ export default {
 .demo-notice-bar {
   background: $white;
 
-  .zv-notice-bar:not(:first-of-type) {
+  .ca2-notice-bar:not(:first-of-type) {
     margin-top: 4px;
   }
 

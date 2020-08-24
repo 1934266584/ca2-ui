@@ -8,7 +8,7 @@ test('switch checkbox', async () => {
     wrapper.setData({ value });
   });
 
-  const icon = wrapper.find('.zv-checkbox__icon');
+  const icon = wrapper.find('.ca2-checkbox__icon');
   icon.trigger('click');
   await later();
   icon.trigger('click');
@@ -24,7 +24,7 @@ test('disabled', () => {
     },
   });
 
-  wrapper.find('.zv-checkbox__icon').trigger('click');
+  wrapper.find('.ca2-checkbox__icon').trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
 });
 
@@ -38,7 +38,7 @@ test('label disabled', () => {
     },
   });
 
-  wrapper.find('.zv-checkbox__label').trigger('click');
+  wrapper.find('.ca2-checkbox__label').trigger('click');
   expect(wrapper.emitted('input')).toBeFalsy();
   expect(wrapper).toMatchSnapshot();
 });
@@ -46,11 +46,11 @@ test('label disabled', () => {
 test('checkbox group', async () => {
   const wrapper = mount({
     template: `
-      <zv-checkbox-group v-model="result" :max="2">
-        <zv-checkbox name="a" />
-        <zv-checkbox name="b" />
-        <zv-checkbox name="c" />
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="result" :max="2">
+        <ca2-checkbox name="a" />
+        <ca2-checkbox name="b" />
+        <ca2-checkbox name="c" />
+      </ca2-checkbox-group>
     `,
     data() {
       return {
@@ -59,7 +59,7 @@ test('checkbox group', async () => {
     },
   });
 
-  const icons = wrapper.findAll('.zv-checkbox__icon');
+  const icons = wrapper.findAll('.ca2-checkbox__icon');
   icons.at(0).trigger('click');
   await later();
   icons.at(1).trigger('click');
@@ -85,7 +85,7 @@ test('click event', async () => {
   await later();
   expect(onClick).toHaveBeenCalledTimes(1);
 
-  const icon = wrapper.find('.zv-checkbox__icon');
+  const icon = wrapper.find('.ca2-checkbox__icon');
   icon.trigger('click');
   await later();
   expect(onClick).toHaveBeenCalledTimes(2);
@@ -107,10 +107,10 @@ test('label-position prop', () => {
 test('icon-size prop', () => {
   const wrapper = mount({
     template: `
-      <zv-checkbox-group icon-size="10rem">
-        <zv-checkbox>label</zv-checkbox>
-        <zv-checkbox icon-size="5rem">label</zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group icon-size="10rem">
+        <ca2-checkbox>label</ca2-checkbox>
+        <ca2-checkbox icon-size="5rem">label</ca2-checkbox>
+      </ca2-checkbox-group>
     `,
   });
 
@@ -120,10 +120,10 @@ test('icon-size prop', () => {
 test('checked-color prop', () => {
   const wrapper = mount({
     template: `
-      <zv-checkbox-group :value="['a', 'b']" checked-color="black">
-        <zv-checkbox name="a" :value="true">label</zv-checkbox>
-        <zv-checkbox name="b" :value="true" checked-color="white">label</zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group :value="['a', 'b']" checked-color="black">
+        <ca2-checkbox name="a" :value="true">label</ca2-checkbox>
+        <ca2-checkbox name="b" :value="true" checked-color="white">label</ca2-checkbox>
+      </ca2-checkbox-group>
     `,
   });
 
@@ -133,10 +133,10 @@ test('checked-color prop', () => {
 test('bind-group prop', async () => {
   const wrapper = mount({
     template: `
-      <zv-checkbox-group v-model="result">
-        <zv-checkbox v-model="value" :bind-group="false" />
-        <zv-checkbox v-for="item in list" :key="item" :name="item"></zv-checkbox>
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="result">
+        <ca2-checkbox v-model="value" :bind-group="false" />
+        <ca2-checkbox v-for="item in list" :key="item" :name="item"></ca2-checkbox>
+      </ca2-checkbox-group>
     `,
     data() {
       return {
@@ -147,7 +147,7 @@ test('bind-group prop', async () => {
     },
   });
 
-  const icons = wrapper.findAll('.zv-checkbox__icon');
+  const icons = wrapper.findAll('.ca2-checkbox__icon');
   icons.at(0).trigger('click');
   await later();
   expect(wrapper.vm.result).toEqual([]);
@@ -157,11 +157,11 @@ test('bind-group prop', async () => {
 test('toggleAll method', async () => {
   const wrapper = mount({
     template: `
-      <zv-checkbox-group v-model="result" ref="group">
-        <zv-checkbox name="a" />
-        <zv-checkbox name="b" />
-        <zv-checkbox name="c" />
-      </zv-checkbox-group>
+      <ca2-checkbox-group v-model="result" ref="group">
+        <ca2-checkbox name="a" />
+        <ca2-checkbox name="b" />
+        <ca2-checkbox name="c" />
+      </ca2-checkbox-group>
     `,
     data() {
       return {

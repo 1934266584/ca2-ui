@@ -1,18 +1,18 @@
 <template>
   <demo-section>
-    <zv-cell is-link @touchstart.native.stop="keyboard = 'default'">
+    <ca2-cell is-link @touchstart.native.stop="keyboard = 'default'">
       {{ t('button1') }}
-    </zv-cell>
-    <zv-cell is-link @touchstart.native.stop="keyboard = 'custom'">
+    </ca2-cell>
+    <ca2-cell is-link @touchstart.native.stop="keyboard = 'custom'">
       {{ t('button2') }}
-    </zv-cell>
-    <zv-cell is-link @touchstart.native.stop="keyboard = 'extraKey'">
+    </ca2-cell>
+    <ca2-cell is-link @touchstart.native.stop="keyboard = 'extraKey'">
       {{ t('button3') }}
-    </zv-cell>
-    <zv-cell is-link @touchstart.native.stop="keyboard = 'title'">
+    </ca2-cell>
+    <ca2-cell is-link @touchstart.native.stop="keyboard = 'title'">
       {{ t('button4') }}
-    </zv-cell>
-    <zv-field
+    </ca2-cell>
+    <ca2-field
       readonly
       clickable
       :value="value"
@@ -21,14 +21,14 @@
       @touchstart.native.stop="keyboard = 'bindValue'"
     />
 
-    <zv-number-keyboard
+    <ca2-number-keyboard
       :show="keyboard === 'default'"
       @blur="keyboard = ''"
       @input="onInput"
       @delete="onDelete"
     />
 
-    <zv-number-keyboard
+    <ca2-number-keyboard
       :show="keyboard === 'custom'"
       :close-button-text="t('close')"
       theme="custom"
@@ -38,7 +38,7 @@
       @delete="onDelete"
     />
 
-    <zv-number-keyboard
+    <ca2-number-keyboard
       :show="keyboard === 'extraKey'"
       :close-button-text="t('close')"
       extra-key="X"
@@ -47,7 +47,7 @@
       @delete="onDelete"
     />
 
-    <zv-number-keyboard
+    <ca2-number-keyboard
       :show="keyboard === 'title'"
       :close-button-text="t('close')"
       :title="t('title')"
@@ -57,7 +57,7 @@
       @delete="onDelete"
     />
 
-    <zv-number-keyboard
+    <ca2-number-keyboard
       v-model="value"
       :show="keyboard === 'bindValue'"
       maxlength="6"
@@ -120,7 +120,7 @@ export default {
 .demo-number-keyboard {
   padding-bottom: 300px;
 
-  .zv-button {
+  .ca2-button {
     margin-left: $padding-md;
   }
 }

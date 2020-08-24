@@ -15,13 +15,13 @@ test('create a forbidClick toast', async () => {
 
   await later();
   expect(
-    document.body.classList.contains('zv-toast--unclickable')
+    document.body.classList.contains('ca2-toast--unclickable')
   ).toBeTruthy();
   toast.forbidClick = false;
 
   await later();
   expect(
-    document.body.classList.contains('zv-toast--unclickable')
+    document.body.classList.contains('ca2-toast--unclickable')
   ).toBeFalsy();
 });
 
@@ -181,7 +181,7 @@ test('register component', () => {
 });
 
 test('lockClick function', () => {
-  const CLASSNAME = 'zv-toast--unclickable';
+  const CLASSNAME = 'ca2-toast--unclickable';
   expect(document.body.classList.contains(CLASSNAME)).toBeFalsy();
 
   lockClick(true);

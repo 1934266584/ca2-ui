@@ -1,16 +1,16 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-skeleton title :row="3" />
+      <ca2-skeleton title :row="3" />
     </demo-block>
 
     <demo-block :title="t('showAvatar')">
-      <zv-skeleton title avatar :row="3" />
+      <ca2-skeleton title avatar :row="3" />
     </demo-block>
 
     <demo-block :title="t('showChildren')">
-      <zv-switch v-model="show" size="24px" />
-      <zv-skeleton title avatar :row="3" :loading="!show">
+      <ca2-switch v-model="show" size="24px" />
+      <ca2-skeleton title avatar :row="3" :loading="!show">
         <div class="demo-preview">
           <img src="https://img.yzcdn.cn/vant/logo.png" />
           <div class="demo-content">
@@ -18,7 +18,7 @@
             <p>{{ t('desc') }}</p>
           </div>
         </div>
-      </zv-skeleton>
+      </ca2-skeleton>
     </demo-block>
   </demo-section>
 </template>
@@ -55,7 +55,7 @@ export default {
 .demo-skeleton {
   background-color: $white;
 
-  .zv-switch {
+  .ca2-switch {
     margin: 0 $padding-md $padding-xs;
   }
 

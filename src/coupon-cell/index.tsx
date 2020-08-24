@@ -40,7 +40,7 @@ function CouponCell(
   ctx: RenderContext<CouponCellProps>
 ) {
   const valueClass = props.coupons[+props.chosenCoupon]
-    ? 'zv-coupon-cell--selected'
+    ? 'ca2-coupon-cell--selected'
     : '';
   const value = formatValue(props);
 

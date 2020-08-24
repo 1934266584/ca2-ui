@@ -3,58 +3,58 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-cell--center zv-cell--borderless zv-contact-card zv-contact-card--add"><i class="zv-icon zv-icon-add-square zv-cell__left-icon">
+    <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-cell--center ca2-cell--borderless ca2-contact-card ca2-contact-card--add"><i class="ca2-icon ca2-icon-add-square ca2-cell__left-icon">
         <!----></i>
-      <div class="zv-cell__value zv-cell__value--alone zv-contact-card__value">添加联系人</div><i class="zv-icon zv-icon-arrow zv-cell__right-icon">
+      <div class="ca2-cell__value ca2-cell__value--alone ca2-contact-card__value">添加联系人</div><i class="ca2-icon ca2-icon-arrow ca2-cell__right-icon">
         <!----></i>
     </div>
-    <div class="zv-popup zv-popup--bottom" style="display: none;" name="zv-popup-slide-bottom">
-      <div class="zv-contact-list">
-        <div role="radiogroup" class="zv-radio-group zv-contact-list__group">
-          <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-cell--center zv-contact-list__item"><i class="zv-icon zv-icon-edit zv-contact-list__edit">
+    <div class="ca2-popup ca2-popup--bottom" style="display: none;" name="ca2-popup-slide-bottom">
+      <div class="ca2-contact-list">
+        <div role="radiogroup" class="ca2-radio-group ca2-contact-list__group">
+          <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-cell--center ca2-contact-list__item"><i class="ca2-icon ca2-icon-edit ca2-contact-list__edit">
               <!----></i>
-            <div class="zv-cell__value zv-cell__value--alone zv-contact-list__item-value">张三，13000000000<span class="zv-tag zv-tag--round zv-tag--danger zv-contact-list__item-tag">默认</span></div>
-            <div role="radio" tabindex="-1" aria-checked="false" class="zv-radio">
-              <div class="zv-radio__icon zv-radio__icon--round" style="font-size: 16px;"><i class="zv-icon zv-icon-success">
+            <div class="ca2-cell__value ca2-cell__value--alone ca2-contact-list__item-value">张三，13000000000<span class="ca2-tag ca2-tag--round ca2-tag--danger ca2-contact-list__item-tag">默认</span></div>
+            <div role="radio" tabindex="-1" aria-checked="false" class="ca2-radio">
+              <div class="ca2-radio__icon ca2-radio__icon--round" style="font-size: 16px;"><i class="ca2-icon ca2-icon-success">
                   <!----></i></div>
             </div>
           </div>
         </div>
-        <div class="zv-contact-list__bottom"><button class="zv-button zv-button--danger zv-button--normal zv-button--block zv-button--round zv-contact-list__add"><span class="zv-button__text">新建联系人</span></button></div>
+        <div class="ca2-contact-list__bottom"><button class="ca2-button ca2-button--danger ca2-button--normal ca2-button--block ca2-button--round ca2-contact-list__add"><span class="ca2-button__text">新建联系人</span></button></div>
       </div>
     </div>
-    <div class="zv-popup zv-popup--bottom" style="display: none;" name="zv-popup-slide-bottom">
-      <div class="zv-contact-edit">
-        <div class="zv-contact-edit__fields">
-          <div class="zv-cell zv-field">
-            <div class="zv-cell__title zv-field__label"><span>张三</span></div>
-            <div class="zv-cell__value zv-field__value">
-              <div class="zv-field__body"><input type="text" placeholder="请填写姓名" class="zv-field__control"></div>
+    <div class="ca2-popup ca2-popup--bottom" style="display: none;" name="ca2-popup-slide-bottom">
+      <div class="ca2-contact-edit">
+        <div class="ca2-contact-edit__fields">
+          <div class="ca2-cell ca2-field">
+            <div class="ca2-cell__title ca2-field__label"><span>张三</span></div>
+            <div class="ca2-cell__value ca2-field__value">
+              <div class="ca2-field__body"><input type="text" placeholder="请填写姓名" class="ca2-field__control"></div>
             </div>
           </div>
-          <div class="zv-cell zv-field">
-            <div class="zv-cell__title zv-field__label"><span>电话</span></div>
-            <div class="zv-cell__value zv-field__value">
-              <div class="zv-field__body"><input type="tel" placeholder="请填写电话" class="zv-field__control"></div>
-            </div>
-          </div>
-        </div>
-        <div class="zv-cell zv-cell--borderless zv-contact-edit__switch-cell">
-          <div class="zv-cell__title"><span>设为默认联系人</span></div>
-          <div class="zv-cell__value">
-            <div role="switch" aria-checked="false" class="zv-switch" style="font-size: 24px;">
-              <div class="zv-switch__node"></div>
+          <div class="ca2-cell ca2-field">
+            <div class="ca2-cell__title ca2-field__label"><span>电话</span></div>
+            <div class="ca2-cell__value ca2-field__value">
+              <div class="ca2-field__body"><input type="tel" placeholder="请填写电话" class="ca2-field__control"></div>
             </div>
           </div>
         </div>
-        <div class="zv-contact-edit__buttons"><button class="zv-button zv-button--danger zv-button--normal zv-button--block zv-button--round"><span class="zv-button__text">保存</span></button></div>
+        <div class="ca2-cell ca2-cell--borderless ca2-contact-edit__switch-cell">
+          <div class="ca2-cell__title"><span>设为默认联系人</span></div>
+          <div class="ca2-cell__value">
+            <div role="switch" aria-checked="false" class="ca2-switch" style="font-size: 24px;">
+              <div class="ca2-switch__node"></div>
+            </div>
+          </div>
+        </div>
+        <div class="ca2-contact-edit__buttons"><button class="ca2-button ca2-button--danger ca2-button--normal ca2-button--block ca2-button--round"><span class="ca2-button__text">保存</span></button></div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-cell zv-cell--center zv-cell--borderless zv-contact-card zv-contact-card--edit"><i class="zv-icon zv-icon-contact zv-cell__left-icon">
+    <div class="ca2-cell ca2-cell--center ca2-cell--borderless ca2-contact-card ca2-contact-card--edit"><i class="ca2-icon ca2-icon-contact ca2-cell__left-icon">
         <!----></i>
-      <div class="zv-cell__value zv-cell__value--alone zv-contact-card__value">
+      <div class="ca2-cell__value ca2-cell__value--alone ca2-contact-card__value">
         <div>张三：张三</div>
         <div>电话：13000000000</div>
       </div>

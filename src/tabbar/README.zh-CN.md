@@ -17,12 +17,12 @@ Vue.use(TabbarItem);
 `v-model`默认绑定选中标签的索引值，通过修改`v-model`即可切换选中的标签
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item icon="home-o">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="search">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="friends-o">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">标签</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item icon="home-o">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="friends-o">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">标签</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -40,12 +40,12 @@ export default {
 在标签指定`name`属性的情况下，`v-model`的值为当前标签的`name`
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item name="home" icon="home-o">标签</zv-tabbar-item>
-  <zv-tabbar-item name="search" icon="search">标签</zv-tabbar-item>
-  <zv-tabbar-item name="friends" icon="friends-o">标签</zv-tabbar-item>
-  <zv-tabbar-item name="setting" icon="setting-o">标签</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item name="home" icon="home-o">标签</ca2-tabbar-item>
+  <ca2-tabbar-item name="search" icon="search">标签</ca2-tabbar-item>
+  <ca2-tabbar-item name="friends" icon="friends-o">标签</ca2-tabbar-item>
+  <ca2-tabbar-item name="setting" icon="setting-o">标签</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -63,12 +63,12 @@ export default {
 设置`dot`属性后，会在图标右上角展示一个小红点。设置`badge`属性后，会在图标右上角展示相应的徽标
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item icon="home-o">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="search" dot>标签</zv-tabbar-item>
-  <zv-tabbar-item icon="friends-o" badge="5">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o" badge="20">标签</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item icon="home-o">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search" dot>标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="friends-o" badge="5">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o" badge="20">标签</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ### 自定义图标
@@ -76,16 +76,16 @@ export default {
 通过 icon 插槽自定义图标，可以通过 `slot-scope` 判断标签是否选中
 
 ```html
-<zv-tabbar v-model="active">
-  <zv-tabbar-item badge="3">
+<ca2-tabbar v-model="active">
+  <ca2-tabbar-item badge="3">
     <span>自定义</span>
     <template #icon="props">
       <img :src="props.active ? icon.active : icon.inactive" />
     </template>
-  </zv-tabbar-item>
-  <zv-tabbar-item icon="search">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">标签</zv-tabbar-item>
-</zv-tabbar>
+  </ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">标签</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -105,23 +105,23 @@ export default {
 ### 自定义颜色
 
 ```html
-<zv-tabbar v-model="active" active-color="#07c160" inactive-color="#000">
-  <zv-tabbar-item icon="home-o">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="search">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="freinds-o">标签</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">标签</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active" active-color="#07c160" inactive-color="#000">
+  <ca2-tabbar-item icon="home-o">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="freinds-o">标签</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">标签</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ### 监听切换事件
 
 ```html
-<zv-tabbar v-model="active" @change="onChange">
-  <zv-tabbar-item icon="home-o">标签1</zv-tabbar-item>
-  <zv-tabbar-item icon="search">标签2</zv-tabbar-item>
-  <zv-tabbar-item icon="freinds-o">标签3</zv-tabbar-item>
-  <zv-tabbar-item icon="setting-o">标签4</zv-tabbar-item>
-</zv-tabbar>
+<ca2-tabbar v-model="active" @change="onChange">
+  <ca2-tabbar-item icon="home-o">标签1</ca2-tabbar-item>
+  <ca2-tabbar-item icon="search">标签2</ca2-tabbar-item>
+  <ca2-tabbar-item icon="freinds-o">标签3</ca2-tabbar-item>
+  <ca2-tabbar-item icon="setting-o">标签4</ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ```js
@@ -143,14 +143,14 @@ export default {
 ```html
 <router-view />
 
-<zv-tabbar route>
-  <zv-tabbar-item replace to="/home" icon="home-o">
+<ca2-tabbar route>
+  <ca2-tabbar-item replace to="/home" icon="home-o">
     标签
-  </zv-tabbar-item>
-  <zv-tabbar-item replace to="/search" icon="search">
+  </ca2-tabbar-item>
+  <ca2-tabbar-item replace to="/search" icon="search">
     标签
-  </zv-tabbar-item>
-</zv-tabbar>
+  </ca2-tabbar-item>
+</ca2-tabbar>
 ```
 
 ## API
@@ -181,7 +181,7 @@ export default {
 | --- | --- | --- | --- |
 | name | 标签名称，作为匹配的标识符 | _number \| string_ | 当前标签的索引值 |
 | icon | [图标名称](#/zh-CN/icon)或图片链接 | _string_ | - |
-| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `zv-icon` |
+| icon-prefix `v2.5.3` | 图标类名前缀，同 Icon 组件的 [class-prefix 属性](#/zh-CN/icon#props) | _string_ | `ca2-icon` |
 | dot | 是否显示图标右上角小红点 | _boolean_ | `false` |
 | badge `v2.5.6` | 图标右上角徽标的内容 | _number \| string_ | - |
 | info | 图标右上角徽标的内容（已废弃，请使用 badge 属性） | _number \| string_ | - |

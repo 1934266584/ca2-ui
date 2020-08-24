@@ -1,7 +1,7 @@
 import { mount, later } from '../../../test';
 
 export async function submitForm(wrapper) {
-  wrapper.find('.zv-button').trigger('click');
+  wrapper.find('.ca2-button').trigger('click');
   return later();
 }
 
@@ -19,11 +19,11 @@ export function getSimpleRules() {
 export function mountSimpleRulesForm(options) {
   return mountForm({
     template: `
-      <zv-form ref="form" @failed="onFailed">
-        <zv-field name="A" :rules="rulesA" value="" />
-        <zv-field name="B" :rules="rulesB" value="" />
-        <zv-button native-type="submit" />
-      </zv-form>
+      <ca2-form ref="form" @failed="onFailed">
+        <ca2-field name="A" :rules="rulesA" value="" />
+        <ca2-field name="B" :rules="rulesB" value="" />
+        <ca2-button native-type="submit" />
+      </ca2-form>
     `,
     data: getSimpleRules,
     ...options,

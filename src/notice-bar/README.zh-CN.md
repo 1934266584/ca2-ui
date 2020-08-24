@@ -14,7 +14,7 @@ Vue.use(NoticeBar);
 ### 基础用法
 
 ```html
-<zv-notice-bar text="通知内容" left-icon="volume-o" />
+<ca2-notice-bar text="通知内容" left-icon="volume-o" />
 ```
 
 ### 禁用滚动
@@ -22,9 +22,9 @@ Vue.use(NoticeBar);
 文字内容多于一行时，可通过`scrollable`参数控制是否开启滚动
 
 ```html
-<zv-notice-bar :scrollable="false">
+<ca2-notice-bar :scrollable="false">
   通知内容
-</zv-notice-bar>
+</ca2-notice-bar>
 ```
 
 ### 多行展示
@@ -32,9 +32,9 @@ Vue.use(NoticeBar);
 禁用滚动时，可以设置`wrapable`来开启多行展示
 
 ```html
-<zv-notice-bar wrapable :scrollable="false">
+<ca2-notice-bar wrapable :scrollable="false">
   通知内容
-</zv-notice-bar>
+</ca2-notice-bar>
 ```
 
 ### 通知栏模式
@@ -43,26 +43,26 @@ Vue.use(NoticeBar);
 
 ```html
 <!-- closeable 模式，在右侧显示关闭按钮 -->
-<zv-notice-bar mode="closeable">
+<ca2-notice-bar mode="closeable">
   通知内容
-</zv-notice-bar>
+</ca2-notice-bar>
 
 <!-- link 模式，在右侧显示链接箭头 -->
-<zv-notice-bar mode="link">
+<ca2-notice-bar mode="link">
   通知内容
-</zv-notice-bar>
+</ca2-notice-bar>
 ```
 
 ### 自定义样式
 
 ```html
-<zv-notice-bar
+<ca2-notice-bar
   color="#1989fa"
   background="#ecf9ff"
   left-icon="info-o"
 >
   通知内容
-</zv-notice-bar>
+</ca2-notice-bar>
 ```
 
 ## API

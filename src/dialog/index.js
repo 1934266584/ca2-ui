@@ -52,7 +52,7 @@ Dialog.defaultOptions = {
   overlay: true,
   className: '',
   lockScroll: true,
-  transition: 'zv-dialog-bounce',
+  transition: 'ca2-dialog-bounce',
   beforeClose: null,
   overlayClass: '',
   overlayStyle: null,

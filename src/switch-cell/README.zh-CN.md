@@ -18,9 +18,9 @@ Vue.use(SwitchCell);
 ### 基础用法
 
 ```html
-<zv-cell-group>
-  <zv-switch-cell v-model="checked" title="标题" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-switch-cell v-model="checked" title="标题" />
+</ca2-cell-group>
 ```
 
 ```js
@@ -38,9 +38,9 @@ export default {
 通过`disabled`属性可以将组件设置为禁用状态
 
 ```html
-<zv-cell-group>
-  <zv-switch-cell v-model="checked" disabled title="标题" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-switch-cell v-model="checked" disabled title="标题" />
+</ca2-cell-group>
 ```
 
 ### 加载状态
@@ -48,9 +48,9 @@ export default {
 通过`loading`属性可以将组件设置为加载状态
 
 ```html
-<zv-cell-group>
-  <zv-switch-cell v-model="checked" loading title="标题" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-switch-cell v-model="checked" loading title="标题" />
+</ca2-cell-group>
 ```
 
 ## API

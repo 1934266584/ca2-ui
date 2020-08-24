@@ -1,29 +1,29 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-count-down :time="time" />
+      <ca2-count-down :time="time" />
     </demo-block>
 
     <demo-block :title="t('customFormat')">
-      <zv-count-down :time="time" :format="t('formatWithDay')" />
+      <ca2-count-down :time="time" :format="t('formatWithDay')" />
     </demo-block>
 
     <demo-block :title="t('millisecond')">
-      <zv-count-down millisecond :time="time" format="HH:mm:ss:SS" />
+      <ca2-count-down millisecond :time="time" format="HH:mm:ss:SS" />
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-count-down :time="time">
+      <ca2-count-down :time="time">
         <template v-slot="currentTime">
           <span class="item">{{ currentTime.hours }}</span>
           <span class="item">{{ currentTime.minutes }}</span>
           <span class="item">{{ currentTime.seconds }}</span>
         </template>
-      </zv-count-down>
+      </ca2-count-down>
     </demo-block>
 
     <demo-block :title="t('manualControl')">
-      <zv-count-down
+      <ca2-count-down
         ref="countDown"
         millisecond
         :time="3000"
@@ -31,15 +31,15 @@
         format="ss:SSS"
         @finish="$toast(t('finished'))"
       />
-      <zv-grid clickable :column-num="3">
-        <zv-grid-item icon="play-circle-o" :text="t('start')" @click="start" />
-        <zv-grid-item
+      <ca2-grid clickable :column-num="3">
+        <ca2-grid-item icon="play-circle-o" :text="t('start')" @click="start" />
+        <ca2-grid-item
           icon="pause-circle-o"
           :text="t('pause')"
           @click="pause"
         />
-        <zv-grid-item icon="replay" :text="t('reset')" @click="reset" />
-      </zv-grid>
+        <ca2-grid-item icon="replay" :text="t('reset')" @click="reset" />
+      </ca2-grid>
     </demo-block>
   </demo-section>
 </template>
@@ -99,7 +99,7 @@ export default {
 .demo-count-down {
   background-color: $white;
 
-  .zv-count-down {
+  .ca2-count-down {
     margin-left: $padding-md;
   }
 
@@ -114,7 +114,7 @@ export default {
     border-radius: 2px;
   }
 
-  .zv-grid {
+  .ca2-grid {
     margin-top: 10px;
   }
 }

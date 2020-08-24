@@ -270,7 +270,7 @@ export default createComponent({
             tabindex: disabled ? -1 : 0,
           },
           class: [
-            'zv-ellipsis',
+            'ca2-ellipsis',
             bem('item', {
               disabled,
               selected: index === this.currentIndex,

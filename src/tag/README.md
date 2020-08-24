@@ -14,65 +14,65 @@ Vue.use(Tag);
 ### Basic Usage
 
 ```html
-<zv-tag>Tag</zv-tag>
-<zv-tag type="primary">Tag</zv-tag>
-<zv-tag type="success">Tag</zv-tag>
-<zv-tag type="danger">Tag</zv-tag>
-<zv-tag type="warning">Tag</zv-tag>
+<ca2-tag>Tag</ca2-tag>
+<ca2-tag type="primary">Tag</ca2-tag>
+<ca2-tag type="success">Tag</ca2-tag>
+<ca2-tag type="danger">Tag</ca2-tag>
+<ca2-tag type="warning">Tag</ca2-tag>
 ```
 
 ### Round style
 
 ```html
-<zv-tag round>Tag</zv-tag>
-<zv-tag round type="primary">Tag</zv-tag>
-<zv-tag round type="success">Tag</zv-tag>
-<zv-tag round type="danger">Tag</zv-tag>
-<zv-tag round type="warning">Tag</zv-tag>
+<ca2-tag round>Tag</ca2-tag>
+<ca2-tag round type="primary">Tag</ca2-tag>
+<ca2-tag round type="success">Tag</ca2-tag>
+<ca2-tag round type="danger">Tag</ca2-tag>
+<ca2-tag round type="warning">Tag</ca2-tag>
 ```
 
 ### Mark style
 
 ```html
-<zv-tag mark>Tag</zv-tag>
-<zv-tag mark type="primary">Tag</zv-tag>
-<zv-tag mark type="success">Tag</zv-tag>
-<zv-tag mark type="danger">Tag</zv-tag>
-<zv-tag mark type="warning">Tag</zv-tag>
+<ca2-tag mark>Tag</ca2-tag>
+<ca2-tag mark type="primary">Tag</ca2-tag>
+<ca2-tag mark type="success">Tag</ca2-tag>
+<ca2-tag mark type="danger">Tag</ca2-tag>
+<ca2-tag mark type="warning">Tag</ca2-tag>
 ```
 
 ### Plain style
 
 ```html
-<zv-tag plain>Tag</zv-tag>
-<zv-tag plain type="primary">Tag</zv-tag>
-<zv-tag plain type="success">Tag</zv-tag>
-<zv-tag plain type="danger">Tag</zv-tag>
-<zv-tag plain type="warning">Tag</zv-tag>
+<ca2-tag plain>Tag</ca2-tag>
+<ca2-tag plain type="primary">Tag</ca2-tag>
+<ca2-tag plain type="success">Tag</ca2-tag>
+<ca2-tag plain type="danger">Tag</ca2-tag>
+<ca2-tag plain type="warning">Tag</ca2-tag>
 ```
 
 ### Custom Color
 
 ```html
-<zv-tag color="#f2826a">Tag</zv-tag>
-<zv-tag color="#f2826a" plain>Tag</zv-tag>
-<zv-tag color="#7232dd">Tag</zv-tag>
-<zv-tag color="#7232dd" plain>Tag</zv-tag>
-<zv-tag color="#ffe1e1" text-color="#ad0000">Tag</zv-tag>
+<ca2-tag color="#f2826a">Tag</ca2-tag>
+<ca2-tag color="#f2826a" plain>Tag</ca2-tag>
+<ca2-tag color="#7232dd">Tag</ca2-tag>
+<ca2-tag color="#7232dd" plain>Tag</ca2-tag>
+<ca2-tag color="#ffe1e1" text-color="#ad0000">Tag</ca2-tag>
 ```
 
 ### Custom Size
 
 ```html
-<zv-tag type="danger">Tag</zv-tag>
-<zv-tag type="danger" size="medium">Tag</zv-tag>
-<zv-tag type="danger" size="large">Tag</zv-tag>
+<ca2-tag type="danger">Tag</ca2-tag>
+<ca2-tag type="danger" size="medium">Tag</ca2-tag>
+<ca2-tag type="danger" size="large">Tag</ca2-tag>
 ```
 
 ### Closeable
 
 ```html
-<zv-tag
+<ca2-tag
   v-if="show.primary"
   closeable
   size="medium"
@@ -80,8 +80,8 @@ Vue.use(Tag);
   @close="close('primary')"
 >
   Tag
-</zv-tag>
-<zv-tag
+</ca2-tag>
+<ca2-tag
   v-if="show.success"
   closeable
   size="medium"
@@ -89,7 +89,7 @@ Vue.use(Tag);
   @close="close('success')"
 >
   Tag
-</zv-tag>
+</ca2-tag>
 ```
 
 ```js

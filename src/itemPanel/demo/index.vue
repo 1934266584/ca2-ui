@@ -8,13 +8,13 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-item-panel
+      <ca2-item-panel
         :item-object-list="t('itemObjectList')"
         @slot-event="slotEvent"
       />
     </demo-block>
     <demo-block :title="t('coreUsage')">
-      <zv-item-panel
+      <ca2-item-panel
         :item-object-list="t('itemObjectList2')"
         :line="1"
         :is-two-col="true"
@@ -60,9 +60,9 @@ export default {
           value: '插槽内容是组件',
           slot() {
             return (
-              <zv-tag round type="primary">
+              <ca2-tag round type="primary">
                 标签
-              </zv-tag>
+              </ca2-tag>
             );
           },
         },
@@ -175,9 +175,9 @@ export default {
           value: `slot's content is component`,
           slot() {
             return (
-              <zv-tag round type="primary">
+              <ca2-tag round type="primary">
                 tag
-              </zv-tag>
+              </ca2-tag>
             );
           },
         },
@@ -268,7 +268,7 @@ export default {
 
 <style lang="scss">
 .demo-item-panel {
-  .zv-item-panel {
+  .ca2-item-panel {
     background: #fff;
   }
 }

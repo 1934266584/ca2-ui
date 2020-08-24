@@ -14,40 +14,40 @@ Vue.use(Panel);
 ### Basic Usage
 
 ```html
-<zv-panel title="Title" desc="Description" status="Status">
+<ca2-panel title="Title" desc="Description" status="Status">
   <div>Content</div>
-</zv-panel>
+</ca2-panel>
 ```
 
 ### Advanced Usage
 
 ```html
-<zv-panel title=Title desc="Description" :status="Status" is-row>
+<ca2-panel title=Title desc="Description" :status="Status" is-row>
   <div>Content</div>
   <template #footer>
-    <zv-button size="small" plain type="primary">Button</zv-button>
-    <zv-button size="small" type="primary">
+    <ca2-button size="small" plain type="primary">Button</ca2-button>
+    <ca2-button size="small" type="primary">
       Button
-    </zv-button>
+    </ca2-button>
   </template>
-</zv-panel>
+</ca2-panel>
 
-<zv-panel>
+<ca2-panel>
   <template #header>
-    <zv-cell title="Title" label="Description">
+    <ca2-cell title="Title" label="Description">
       <template #right-icon>
-        <zv-checkbox v-model="checked" />
+        <ca2-checkbox v-model="checked" />
       </template>
-    </zv-cell>
+    </ca2-cell>
   </template>
   <div>Content</div>
   <template #footer>
-    <zv-button size="small" plain type="primary">Button</zv-button>
-    <zv-button size="small" type="primary">
+    <ca2-button size="small" plain type="primary">Button</ca2-button>
+    <ca2-button size="small" type="primary">
       Button
-    </zv-button>
+    </ca2-button>
   </template>
-</zv-panel>
+</ca2-panel>
 ```
 
 ## API

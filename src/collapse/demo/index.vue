@@ -1,49 +1,49 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-collapse v-model="active1">
-        <zv-collapse-item :title="t('title') + 1">
+      <ca2-collapse v-model="active1">
+        <ca2-collapse-item :title="t('title') + 1">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 2">
+        </ca2-collapse-item>
+        <ca2-collapse-item :title="t('title') + 2">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 3" disabled>
+        </ca2-collapse-item>
+        <ca2-collapse-item :title="t('title') + 3" disabled>
           {{ t('text') }}
-        </zv-collapse-item>
-      </zv-collapse>
+        </ca2-collapse-item>
+      </ca2-collapse>
     </demo-block>
 
     <demo-block :title="t('accordion')">
-      <zv-collapse v-model="active2" accordion>
-        <zv-collapse-item :title="t('title') + 1">
+      <ca2-collapse v-model="active2" accordion>
+        <ca2-collapse-item :title="t('title') + 1">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 2">
+        </ca2-collapse-item>
+        <ca2-collapse-item :title="t('title') + 2">
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item :title="t('title') + 3">
+        </ca2-collapse-item>
+        <ca2-collapse-item :title="t('title') + 3">
           {{ t('text') }}
-        </zv-collapse-item>
-      </zv-collapse>
+        </ca2-collapse-item>
+      </ca2-collapse>
     </demo-block>
 
     <demo-block :title="t('titleSlot')">
-      <zv-collapse v-model="active3">
-        <zv-collapse-item>
+      <ca2-collapse v-model="active3">
+        <ca2-collapse-item>
           <template #title>
-            {{ t('title') + 1 }}<zv-icon name="question-o" />
+            {{ t('title') + 1 }}<ca2-icon name="question-o" />
           </template>
           {{ t('text') }}
-        </zv-collapse-item>
-        <zv-collapse-item
+        </ca2-collapse-item>
+        <ca2-collapse-item
           :title="t('title') + 2"
           :value="t('content')"
           icon="shop-o"
         >
           {{ t('text') }}
-        </zv-collapse-item>
-      </zv-collapse>
+        </ca2-collapse-item>
+      </ca2-collapse>
     </demo-block>
   </demo-section>
 </template>
@@ -77,7 +77,7 @@ export default {
 @import '../../style/var.scss';
 
 .demo-collapse {
-  .zv-icon-question-o {
+  .ca2-icon-question-o {
     margin-left: 5px;
     color: $blue;
     font-size: 15px;

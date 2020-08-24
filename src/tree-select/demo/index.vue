@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('radioMode')">
-      <zv-tree-select
+      <ca2-tree-select
         :items="items"
         :active-id.sync="activeId"
         :main-active-index.sync="activeIndex"
@@ -9,7 +9,7 @@
     </demo-block>
 
     <demo-block :title="t('multipleMode')">
-      <zv-tree-select
+      <ca2-tree-select
         :items="items"
         :active-id.sync="activeIds"
         :main-active-index.sync="activeIndex2"
@@ -17,28 +17,28 @@
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <zv-tree-select
+      <ca2-tree-select
         height="55vw"
         :items="simpleItems"
         :main-active-index.sync="activeIndex3"
       >
         <template slot="content">
-          <zv-image
+          <ca2-image
             v-if="activeIndex3 === 0"
             :show-loading="false"
             src="https://img.yzcdn.cn/vant/apple-1.jpg"
           />
-          <zv-image
+          <ca2-image
             v-if="activeIndex3 === 1"
             :show-loading="false"
             src="https://img.yzcdn.cn/vant/apple-2.jpg"
           />
         </template>
-      </zv-tree-select>
+      </ca2-tree-select>
     </demo-block>
 
     <demo-block :title="t('showBadge')">
-      <zv-tree-select
+      <ca2-tree-select
         height="55vw"
         :items="badgeItems"
         :active-id.sync="activeId2"

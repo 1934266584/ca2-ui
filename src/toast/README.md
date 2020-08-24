@@ -142,7 +142,7 @@ Toast.resetDefaultOptions('loading');
 | position | Can be set to `top` `middle` `bottom` | _string_ | `middle` |
 | message | Message | _string_ | `''` |
 | icon `v2.0.1` | Custom icon | _string_ | - |
-| iconPrefix `v2.0.9` | Icon className prefix | _string_ | `zv-icon` |
+| iconPrefix `v2.0.9` | Icon className prefix | _string_ | `ca2-icon` |
 | overlay `v2.2.13` | Whether to show overlay | _boolean_ | `false` |
 | forbidClick | Whether to forbid click background | _boolean_ | `false` |
 | closeOnClick `v2.1.5` | Whether to close after clicked | _boolean_ | `false` |
@@ -152,5 +152,5 @@ Toast.resetDefaultOptions('loading');
 | className | Custom className | _any_ | - |
 | onOpened | Callback function after opened | _Function_ | - |
 | onClose | Callback function after close | _Function_ | - |
-| transition `v2.2.6` | Transition, equivalent to `name` prop of [transtion](https://vuejs.org/v2/api/#transition) | _string_ | `zv-fade` |
+| transition `v2.2.6` | Transition, equivalent to `name` prop of [transtion](https://vuejs.org/v2/api/#transition) | _string_ | `ca2-fade` |
 | getContainer | Return the mount node for Toast | _string \| () => Element_ | `body` |

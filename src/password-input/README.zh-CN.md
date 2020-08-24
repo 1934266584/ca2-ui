@@ -20,14 +20,14 @@ Vue.use(NumberKeyboard);
 
 ```html
 <!-- 密码输入框 -->
-<zv-password-input
+<ca2-password-input
   :value="value"
   info="密码为 6 位数字"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
 <!-- 数字键盘 -->
-<zv-number-keyboard
+<ca2-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"
@@ -57,7 +57,7 @@ export default {
 ### 自定义长度
 
 ```html
-<zv-password-input
+<ca2-password-input
   :value="value"
   :length="4"
   :gutter="15"
@@ -69,7 +69,7 @@ export default {
 ### 明文展示
 
 ```html
-<zv-password-input
+<ca2-password-input
   :value="value"
   :mask="false"
   :focused="showKeyboard"
@@ -83,14 +83,14 @@ export default {
 
 ```html
 <!-- 密码输入框 -->
-<zv-password-input
+<ca2-password-input
   :value="value"
   :error-info="errorInfo"
   :focused="showKeyboard"
   @focus="showKeyboard = true"
 />
 <!-- 数字键盘 -->
-<zv-number-keyboard
+<ca2-number-keyboard
   :show="showKeyboard"
   @input="onInput"
   @delete="onDelete"

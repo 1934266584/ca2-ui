@@ -1,66 +1,66 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-swipe :autoplay="3000" indicator-color="white">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+      <ca2-swipe :autoplay="3000" indicator-color="white">
+        <ca2-swipe-item>1</ca2-swipe-item>
+        <ca2-swipe-item>2</ca2-swipe-item>
+        <ca2-swipe-item>3</ca2-swipe-item>
+        <ca2-swipe-item>4</ca2-swipe-item>
+      </ca2-swipe>
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <zv-swipe :autoplay="3000">
-        <zv-swipe-item v-for="(image, index) in images" :key="index">
+      <ca2-swipe :autoplay="3000">
+        <ca2-swipe-item v-for="(image, index) in images" :key="index">
           <img v-lazy="image" />
-        </zv-swipe-item>
-      </zv-swipe>
+        </ca2-swipe-item>
+      </ca2-swipe>
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-swipe indicator-color="white" @change="onChange1">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+      <ca2-swipe indicator-color="white" @change="onChange1">
+        <ca2-swipe-item>1</ca2-swipe-item>
+        <ca2-swipe-item>2</ca2-swipe-item>
+        <ca2-swipe-item>3</ca2-swipe-item>
+        <ca2-swipe-item>4</ca2-swipe-item>
+      </ca2-swipe>
     </demo-block>
 
     <demo-block :title="t('title4')">
-      <zv-swipe
+      <ca2-swipe
         vertical
         :autoplay="3000"
         indicator-color="white"
         style="height: 200px;"
         class="demo-swipe--vertical"
       >
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+        <ca2-swipe-item>1</ca2-swipe-item>
+        <ca2-swipe-item>2</ca2-swipe-item>
+        <ca2-swipe-item>3</ca2-swipe-item>
+        <ca2-swipe-item>4</ca2-swipe-item>
+      </ca2-swipe>
     </demo-block>
 
     <demo-block :title="t('title5')">
-      <zv-swipe :width="300" :loop="false" indicator-color="white">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
-      </zv-swipe>
+      <ca2-swipe :width="300" :loop="false" indicator-color="white">
+        <ca2-swipe-item>1</ca2-swipe-item>
+        <ca2-swipe-item>2</ca2-swipe-item>
+        <ca2-swipe-item>3</ca2-swipe-item>
+        <ca2-swipe-item>4</ca2-swipe-item>
+      </ca2-swipe>
     </demo-block>
 
     <demo-block :title="t('title6')">
-      <zv-swipe @change="onChange2">
-        <zv-swipe-item>1</zv-swipe-item>
-        <zv-swipe-item>2</zv-swipe-item>
-        <zv-swipe-item>3</zv-swipe-item>
-        <zv-swipe-item>4</zv-swipe-item>
+      <ca2-swipe @change="onChange2">
+        <ca2-swipe-item>1</ca2-swipe-item>
+        <ca2-swipe-item>2</ca2-swipe-item>
+        <ca2-swipe-item>3</ca2-swipe-item>
+        <ca2-swipe-item>4</ca2-swipe-item>
 
         <template #indicator>
           <div class="custom-indicator">{{ current + 1 }}/4</div>
         </template>
-      </zv-swipe>
+      </ca2-swipe>
     </demo-block>
   </demo-section>
 </template>
@@ -116,7 +116,7 @@ export default {
 .demo-swipe {
   padding-bottom: 30px;
 
-  .zv-swipe {
+  .ca2-swipe {
     &-item {
       color: $white;
       font-size: 20px;
@@ -144,7 +144,7 @@ export default {
   }
 
   &--vertical {
-    .zv-swipe-item {
+    .ca2-swipe-item {
       line-height: 200px;
     }
   }

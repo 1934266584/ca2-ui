@@ -24,8 +24,8 @@ const createComponent = () => {
     },
   });
 
-  const button = wrapper.find('.zv-button');
-  const field = wrapper.findAll('.zv-field__control');
+  const button = wrapper.find('.ca2-button');
+  const field = wrapper.findAll('.ca2-field__control');
   const { errorInfo, data } = wrapper.vm;
   return {
     vm: wrapper.vm,
@@ -65,7 +65,7 @@ test('valid area placeholder confirm', async () => {
 
   const { data } = wrapper.vm;
 
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
 
   expect(data.areaCode).toBe('');
   await later(50);
@@ -75,13 +75,13 @@ test('valid area placeholder confirm', async () => {
 test('show area component', async () => {
   const { wrapper } = createComponent();
 
-  const field = wrapper.findAll('.zv-field').at(2);
+  const field = wrapper.findAll('.ca2-field').at(2);
   field.trigger('click');
 
   await later(50);
   expect(wrapper).toMatchSnapshot();
 
-  wrapper.find('.zv-picker__cancel').trigger('click');
+  wrapper.find('.ca2-picker__cancel').trigger('click');
 
   await later(50);
   expect(wrapper).toMatchSnapshot();
@@ -89,7 +89,7 @@ test('show area component', async () => {
 
 test('set-default', () => {
   const { wrapper } = createComponent();
-  wrapper.find('.zv-switch').trigger('click');
+  wrapper.find('.ca2-switch').trigger('click');
 
   expect(wrapper).toMatchSnapshot();
 });
@@ -106,7 +106,7 @@ test('validator props', async () => {
 
   const { errorInfo, data } = wrapper.vm;
   data.name = '';
-  const button = wrapper.find('.zv-button');
+  const button = wrapper.find('.ca2-button');
   button.trigger('click');
 
   expect(errorInfo.name).toBeTruthy();
@@ -177,7 +177,7 @@ test('valid postal code', () => {
 
 test('on change detail', () => {
   const wrapper = mount(AddressEdit);
-  const field = wrapper.findAll('.zv-field__control').at(3);
+  const field = wrapper.findAll('.ca2-field__control').at(3);
 
   field.element.value = '123';
   field.trigger('input');
@@ -245,11 +245,11 @@ test('show search result', async () => {
     },
   });
 
-  const field = wrapper.findAll('.zv-field__control').at(3);
+  const field = wrapper.findAll('.ca2-field__control').at(3);
   const input = field.element;
   field.trigger('focus');
 
-  const items = wrapper.findAll('.zv-icon-location-o');
+  const items = wrapper.findAll('.ca2-icon-location-o');
   items.at(0).element.parentNode.click();
   expect(input.value).toEqual('address1 name1');
   items.at(1).element.parentNode.click();
@@ -270,13 +270,13 @@ test('delete address', async () => {
     },
   });
 
-  const deleteButton = wrapper.findAll('.zv-button').at(1);
+  const deleteButton = wrapper.findAll('.ca2-button').at(1);
   deleteButton.trigger('click');
 
   await later();
-  document.querySelector('.zv-dialog__cancel').click();
+  document.querySelector('.ca2-dialog__cancel').click();
   deleteButton.trigger('click');
-  document.querySelector('.zv-dialog__confirm').click();
+  document.querySelector('.ca2-dialog__confirm').click();
 
   await later();
   expect(wrapper.emitted('delete')).toBeTruthy();
@@ -291,7 +291,7 @@ test('setAddressDetail method', () => {
 
 test('select area', () => {
   const { wrapper, data } = createComponent();
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(data.areaCode).toEqual('110101');
 });
 
@@ -302,7 +302,7 @@ test('click-area event', () => {
     },
   });
 
-  const field = wrapper.findAll('.zv-field').at(2);
+  const field = wrapper.findAll('.ca2-field').at(2);
   field.trigger('click');
   expect(wrapper.emitted('click-area')[0]).toBeTruthy();
 });

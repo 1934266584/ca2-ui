@@ -3,197 +3,197 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="zv-picker">
+    <div class="ca2-picker">
       <!---->
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">杭州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">宁波</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">温州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">嘉兴</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">湖州</li>
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">杭州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">宁波</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">温州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">嘉兴</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">湖州</li>
           </ul>
         </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
       </div>
       <!---->
     </div>
   </div>
   <div>
-    <div class="zv-picker">
+    <div class="ca2-picker">
       <!---->
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">杭州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">宁波</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">温州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">嘉兴</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">湖州</li>
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">杭州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">宁波</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">温州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">嘉兴</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">湖州</li>
           </ul>
         </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
       </div>
       <!---->
     </div>
   </div>
   <div>
-    <div class="zv-picker">
-      <div class="zv-hairline--top-bottom zv-picker__toolbar"><button type="button" class="zv-picker__cancel">取消</button>
-        <div class="zv-ellipsis zv-picker__title">标题</div><button type="button" class="zv-picker__confirm">确认</button>
+    <div class="ca2-picker">
+      <div class="ca2-hairline--top-bottom ca2-picker__toolbar"><button type="button" class="ca2-picker__cancel">取消</button>
+        <div class="ca2-ellipsis ca2-picker__title">标题</div><button type="button" class="ca2-picker__confirm">确认</button>
       </div>
       <!---->
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">杭州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">宁波</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">温州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">嘉兴</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">湖州</li>
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">杭州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">宁波</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">温州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">嘉兴</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">湖州</li>
           </ul>
         </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
-      </div>
-      <!---->
-    </div>
-  </div>
-  <div>
-    <div class="zv-picker">
-      <div class="zv-hairline--top-bottom zv-picker__toolbar"><button type="button" class="zv-picker__cancel">取消</button>
-        <div class="zv-ellipsis zv-picker__title">标题</div><button type="button" class="zv-picker__confirm">确认</button>
-      </div>
-      <!---->
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">周一</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">周二</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">周三</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">周四</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">周五</li>
-          </ul>
-        </div>
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 44px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">上午</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">下午</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">晚上</li>
-          </ul>
-        </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
       </div>
       <!---->
     </div>
   </div>
   <div>
-    <div class="zv-picker">
-      <div class="zv-hairline--top-bottom zv-picker__toolbar"><button type="button" class="zv-picker__cancel">取消</button>
-        <div class="zv-ellipsis zv-picker__title">标题</div><button type="button" class="zv-picker__confirm">确认</button>
+    <div class="ca2-picker">
+      <div class="ca2-hairline--top-bottom ca2-picker__toolbar"><button type="button" class="ca2-picker__cancel">取消</button>
+        <div class="ca2-ellipsis ca2-picker__title">标题</div><button type="button" class="ca2-picker__confirm">确认</button>
       </div>
       <!---->
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">浙江</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">福建</li>
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">周一</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">周二</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">周三</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">周四</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">周五</li>
           </ul>
         </div>
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">杭州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">温州</li>
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 44px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">上午</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">下午</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">晚上</li>
           </ul>
         </div>
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">西湖区</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">余杭区</li>
-          </ul>
-        </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
-      </div>
-      <!---->
-    </div>
-  </div>
-  <div>
-    <div class="zv-picker">
-      <!---->
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 44px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="-1" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--disabled" style="height: 44px;">杭州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">宁波</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">温州</li>
-          </ul>
-        </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
       </div>
       <!---->
     </div>
   </div>
   <div>
-    <div class="zv-picker">
+    <div class="ca2-picker">
+      <div class="ca2-hairline--top-bottom ca2-picker__toolbar"><button type="button" class="ca2-picker__cancel">取消</button>
+        <div class="ca2-ellipsis ca2-picker__title">标题</div><button type="button" class="ca2-picker__confirm">确认</button>
+      </div>
       <!---->
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column column1">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">浙江</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">福建</li>
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">浙江</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">福建</li>
           </ul>
         </div>
-        <div class="zv-picker-column column2">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">杭州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">宁波</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">温州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">嘉兴</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">湖州</li>
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">杭州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">温州</li>
           </ul>
         </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">西湖区</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">余杭区</li>
+          </ul>
+        </div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
       </div>
       <!---->
     </div>
   </div>
   <div>
-    <div class="zv-picker">
-      <div class="zv-loading zv-loading--circular zv-picker__loading"><span class="zv-loading__spinner zv-loading__spinner--circular"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
-      <div class="zv-picker__columns" style="height: 220px;">
-        <div class="zv-picker-column column1">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">浙江</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">福建</li>
+    <div class="ca2-picker">
+      <!---->
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 44px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="-1" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--disabled" style="height: 44px;">杭州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">宁波</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">温州</li>
           </ul>
         </div>
-        <div class="zv-picker-column column2">
-          <ul class="zv-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">杭州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">宁波</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item zv-picker-column__item--selected" style="height: 44px;">温州</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">嘉兴</li>
-            <li role="button" tabindex="0" class="zv-ellipsis zv-picker-column__item" style="height: 44px;">湖州</li>
-          </ul>
-        </div>
-        <div class="zv-picker__mask" style="background-size: 100% 88px;"></div>
-        <div class="zv-hairline-unset--top-bottom zv-picker__frame" style="height: 44px;"></div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
       </div>
       <!---->
     </div>
   </div>
   <div>
-    <div role="button" tabindex="0" class="zv-cell zv-cell--clickable zv-field">
-      <div class="zv-cell__title zv-field__label"><span>城市</span></div>
-      <div class="zv-cell__value zv-field__value">
-        <div class="zv-field__body"><input type="text" readonly="readonly" placeholder="选择城市" class="zv-field__control"></div>
+    <div class="ca2-picker">
+      <!---->
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column column1">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">浙江</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">福建</li>
+          </ul>
+        </div>
+        <div class="ca2-picker-column column2">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">杭州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">宁波</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">温州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">嘉兴</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">湖州</li>
+          </ul>
+        </div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div>
+    <div class="ca2-picker">
+      <div class="ca2-loading ca2-loading--circular ca2-picker__loading"><span class="ca2-loading__spinner ca2-loading__spinner--circular"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+      <div class="ca2-picker__columns" style="height: 220px;">
+        <div class="ca2-picker-column column1">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 88px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">浙江</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">福建</li>
+          </ul>
+        </div>
+        <div class="ca2-picker-column column2">
+          <ul class="ca2-picker-column__wrapper" style="transform: translate3d(0, 0px, 0); transition-duration: 0ms; transition-property: none; line-height: 44px;">
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">杭州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">宁波</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item ca2-picker-column__item--selected" style="height: 44px;">温州</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">嘉兴</li>
+            <li role="button" tabindex="0" class="ca2-ellipsis ca2-picker-column__item" style="height: 44px;">湖州</li>
+          </ul>
+        </div>
+        <div class="ca2-picker__mask" style="background-size: 100% 88px;"></div>
+        <div class="ca2-hairline-unset--top-bottom ca2-picker__frame" style="height: 44px;"></div>
+      </div>
+      <!---->
+    </div>
+  </div>
+  <div>
+    <div role="button" tabindex="0" class="ca2-cell ca2-cell--clickable ca2-field">
+      <div class="ca2-cell__title ca2-field__label"><span>城市</span></div>
+      <div class="ca2-cell__value ca2-field__value">
+        <div class="ca2-field__body"><input type="text" readonly="readonly" placeholder="选择城市" class="ca2-field__control"></div>
       </div>
     </div>
     <!---->

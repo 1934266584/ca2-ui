@@ -17,19 +17,19 @@ Vue.use(IndexAnchor);
 点击索引栏时，会自动跳转到对应的`IndexAnchor`锚点位置
 
 ```html
-<zv-index-bar>
-  <zv-index-anchor index="A" />
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
+<ca2-index-bar>
+  <ca2-index-anchor index="A" />
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
 
-  <zv-index-anchor index="B" />
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
+  <ca2-index-anchor index="B" />
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
 
   ...
-</zv-index-bar>
+</ca2-index-bar>
 ```
 
 ### 自定义索引列表
@@ -37,19 +37,19 @@ Vue.use(IndexAnchor);
 可以通过`index-list`属性自定义展示的索引字符列表，
 
 ```html
-<zv-index-bar :index-list="indexList">
-  <zv-index-anchor index="1">标题1</zv-index-anchor>
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
+<ca2-index-bar :index-list="indexList">
+  <ca2-index-anchor index="1">标题1</ca2-index-anchor>
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
 
-  <zv-index-anchor index="2">标题2</zv-index-anchor>
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
-  <zv-cell title="文本" />
+  <ca2-index-anchor index="2">标题2</ca2-index-anchor>
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
+  <ca2-cell title="文本" />
 
   ...
-</zv-index-bar>
+</ca2-index-bar>
 ```
 
 ```js

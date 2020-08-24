@@ -16,26 +16,26 @@ Vue.use(CouponList);
 
 ```html
 <!-- Coupon Cell -->
-<zv-coupon-cell
+<ca2-coupon-cell
   :coupons="coupons"
   :chosen-coupon="chosenCoupon"
   @click="showList = true"
 />
 <!-- Coupon List -->
-<zv-popup
+<ca2-popup
   v-model="showList"
   round
   position="bottom"
   style="height: 90%; padding-top: 4px;"
 >
-  <zv-coupon-list
+  <ca2-coupon-list
     :coupons="coupons"
     :chosen-coupon="chosenCoupon"
     :disabled-coupons="disabledCoupons"
     @change="onChange"
     @exchange="onExchange"
   />
-</zv-popup>
+</ca2-popup>
 ```
 
 ```js

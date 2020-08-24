@@ -80,7 +80,7 @@ function TreeSelect(
       <div
         key={item.id}
         class={[
-          'zv-ellipsis',
+          'ca2-ellipsis',
           bem('item', {
             active: isActiveItem(item.id),
             disabled: item.disabled,

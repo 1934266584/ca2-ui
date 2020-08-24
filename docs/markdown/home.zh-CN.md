@@ -1,7 +1,7 @@
 <div class="card">
-  <div class="zv-doc-intro">
-    <img class="zv-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/vant/logo.png">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">ZvUI</h2>
+  <div class="ca2-doc-intro">
+    <img class="ca2-doc-intro__logo" style="width: 120px; height: 120px;" src="https://img.yzcdn.cn/vant/logo.png">
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">Ca2UI</h2>
     <p>基于vant修改</p>
     <p>轻量、可靠的移动端 Vue 组件库</p>
   </div>
@@ -26,7 +26,7 @@
 
 修改代码请阅读我们的[开发指南](#/zh-CN/contribution)。
 
-使用过程中发现任何问题都可以提 [Issue](https://github.com/122687220/zv-ui/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://github.com/122687220/zv-ui/pulls)。
+使用过程中发现任何问题都可以提 [Issue](hhttps://github.com/1934266584/ca2-ui/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](hhttps://github.com/1934266584/ca2-ui/pulls)。
 
 ### 浏览器支持
 

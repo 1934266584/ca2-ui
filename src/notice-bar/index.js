@@ -144,7 +144,7 @@ export default createComponent({
             class={[
               bem('content'),
               this.animationClass,
-              { 'zv-ellipsis': !this.scrollable && !this.wrapable },
+              { 'ca2-ellipsis': !this.scrollable && !this.wrapable },
             ]}
             style={contentStyle}
             onAnimationend={this.onAnimationEnd}

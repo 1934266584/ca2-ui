@@ -1,40 +1,40 @@
 <template>
   <demo-section>
-    <zv-cell center :title="t('basicUsage')">
-      <zv-stepper v-model="stepper1" />
-    </zv-cell>
+    <ca2-cell center :title="t('basicUsage')">
+      <ca2-stepper v-model="stepper1" />
+    </ca2-cell>
 
-    <zv-cell center :title="t('step')">
-      <zv-stepper v-model="stepper2" step="2" />
-    </zv-cell>
+    <ca2-cell center :title="t('step')">
+      <ca2-stepper v-model="stepper2" step="2" />
+    </ca2-cell>
 
-    <zv-cell center :title="t('range')">
-      <zv-stepper v-model="stepper3" :min="5" :max="8" />
-    </zv-cell>
+    <ca2-cell center :title="t('range')">
+      <ca2-stepper v-model="stepper3" :min="5" :max="8" />
+    </ca2-cell>
 
-    <zv-cell center :title="t('integer')">
-      <zv-stepper v-model="stepper4" integer />
-    </zv-cell>
+    <ca2-cell center :title="t('integer')">
+      <ca2-stepper v-model="stepper4" integer />
+    </ca2-cell>
 
-    <zv-cell center :title="t('disabled')">
-      <zv-stepper v-model="stepper5" disabled />
-    </zv-cell>
+    <ca2-cell center :title="t('disabled')">
+      <ca2-stepper v-model="stepper5" disabled />
+    </ca2-cell>
 
-    <zv-cell center :title="t('disableInput')">
-      <zv-stepper v-model="disabledInput" disable-input />
-    </zv-cell>
+    <ca2-cell center :title="t('disableInput')">
+      <ca2-stepper v-model="disabledInput" disable-input />
+    </ca2-cell>
 
-    <zv-cell center :title="t('decimalLength')">
-      <zv-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
-    </zv-cell>
+    <ca2-cell center :title="t('decimalLength')">
+      <ca2-stepper v-model="stepper8" :decimal-length="1" step="0.2" />
+    </ca2-cell>
 
-    <zv-cell center :title="t('customSize')">
-      <zv-stepper v-model="stepper7" button-size="32px" input-width="40px" />
-    </zv-cell>
+    <ca2-cell center :title="t('customSize')">
+      <ca2-stepper v-model="stepper7" button-size="32px" input-width="40px" />
+    </ca2-cell>
 
-    <zv-cell center :title="t('asyncChange')">
-      <zv-stepper :value="stepper6" async-change @change="onChange" />
-    </zv-cell>
+    <ca2-cell center :title="t('asyncChange')">
+      <ca2-stepper :value="stepper6" async-change @change="onChange" />
+    </ca2-cell>
   </demo-section>
 </template>
 

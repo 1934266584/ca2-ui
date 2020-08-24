@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-dropdown-item {
+.ca2-dropdown-item {
   position: fixed;
   right: 0;
   left: 0;
@@ -13,7 +13,7 @@
     &--active {
       color: $dropdown-menu-option-active-color;
 
-      .zv-dropdown-item__icon {
+      .ca2-dropdown-item__icon {
         color: $dropdown-menu-option-active-color;
       }
     }

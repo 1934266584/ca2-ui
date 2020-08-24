@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-card
+      <ca2-card
         num="2"
         price="2.00"
         :desc="t('desc')"
@@ -11,7 +11,7 @@
     </demo-block>
 
     <demo-block :title="t('discountInfo')">
-      <zv-card
+      <ca2-card
         num="2"
         price="2.00"
         origin-price="10.00"
@@ -23,7 +23,7 @@
     </demo-block>
 
     <demo-block :title="t('customContent')">
-      <zv-card
+      <ca2-card
         num="2"
         price="2.00"
         :desc="t('desc')"
@@ -32,26 +32,26 @@
       >
         <template #tags>
           <div>
-            <zv-tag plain type="danger" style="margin-right: 5px;">
+            <ca2-tag plain type="danger" style="margin-right: 5px;">
               标签
-            </zv-tag>
-            <zv-tag plain type="danger">
+            </ca2-tag>
+            <ca2-tag plain type="danger">
               标签
-            </zv-tag>
+            </ca2-tag>
           </div>
         </template>
 
         <template #footer>
           <div>
-            <zv-button round size="mini">
+            <ca2-button round size="mini">
               {{ t('button') }}
-            </zv-button>
-            <zv-button round size="mini">
+            </ca2-button>
+            <ca2-button round size="mini">
               {{ t('button') }}
-            </zv-button>
+            </ca2-button>
           </div>
         </template>
-      </zv-card>
+      </ca2-card>
     </demo-block>
   </demo-section>
 </template>

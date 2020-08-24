@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-nav-bar
+      <ca2-nav-bar
         :title="t('title')"
         :left-text="t('back')"
         :right-text="t('button')"
@@ -12,11 +12,11 @@
     </demo-block>
 
     <demo-block :title="t('useSlot')">
-      <zv-nav-bar :title="t('title')" :left-text="t('back')" left-arrow>
+      <ca2-nav-bar :title="t('title')" :left-text="t('back')" left-arrow>
         <template #right>
-          <zv-icon name="search" size="18" />
+          <ca2-icon name="search" size="18" />
         </template>
-      </zv-nav-bar>
+      </ca2-nav-bar>
     </demo-block>
   </demo-section>
 </template>

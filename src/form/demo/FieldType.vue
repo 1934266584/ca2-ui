@@ -1,63 +1,63 @@
 <template>
   <demo-block :title="t('fieldType')">
-    <zv-form @submit="onSubmit">
-      <zv-field name="switch" :label="t('switch')">
+    <ca2-form @submit="onSubmit">
+      <ca2-field name="switch" :label="t('switch')">
         <template #input>
-          <zv-switch v-model="switchChecked" size="20" />
+          <ca2-switch v-model="switchChecked" size="20" />
         </template>
-      </zv-field>
+      </ca2-field>
 
-      <zv-field name="checkbox" :label="t('checkbox')">
+      <ca2-field name="checkbox" :label="t('checkbox')">
         <template #input>
-          <zv-checkbox v-model="checkbox" shape="square" />
+          <ca2-checkbox v-model="checkbox" shape="square" />
         </template>
-      </zv-field>
+      </ca2-field>
 
-      <zv-field name="checkboxGroup" :label="t('checkboxGroup')">
+      <ca2-field name="checkboxGroup" :label="t('checkboxGroup')">
         <template #input>
-          <zv-checkbox-group v-model="checkboxGroup" direction="horizontal">
-            <zv-checkbox name="1" shape="square">
+          <ca2-checkbox-group v-model="checkboxGroup" direction="horizontal">
+            <ca2-checkbox name="1" shape="square">
               {{ t('checkbox') }} 1
-            </zv-checkbox>
-            <zv-checkbox name="2" shape="square">
+            </ca2-checkbox>
+            <ca2-checkbox name="2" shape="square">
               {{ t('checkbox') }} 2
-            </zv-checkbox>
-          </zv-checkbox-group>
+            </ca2-checkbox>
+          </ca2-checkbox-group>
         </template>
-      </zv-field>
+      </ca2-field>
 
-      <zv-field name="radio" :label="t('radio')">
+      <ca2-field name="radio" :label="t('radio')">
         <template #input>
-          <zv-radio-group v-model="radio" direction="horizontal">
-            <zv-radio name="1">{{ t('radio') }} 1</zv-radio>
-            <zv-radio name="2">{{ t('radio') }} 2</zv-radio>
-          </zv-radio-group>
+          <ca2-radio-group v-model="radio" direction="horizontal">
+            <ca2-radio name="1">{{ t('radio') }} 1</ca2-radio>
+            <ca2-radio name="2">{{ t('radio') }} 2</ca2-radio>
+          </ca2-radio-group>
         </template>
-      </zv-field>
+      </ca2-field>
 
-      <zv-field name="stepper" :label="t('stepper')">
+      <ca2-field name="stepper" :label="t('stepper')">
         <template #input>
-          <zv-stepper v-model="stepper" />
+          <ca2-stepper v-model="stepper" />
         </template>
-      </zv-field>
+      </ca2-field>
 
-      <zv-field name="rate" :label="t('rate')">
+      <ca2-field name="rate" :label="t('rate')">
         <template #input>
-          <zv-rate v-model="rate" />
+          <ca2-rate v-model="rate" />
         </template>
-      </zv-field>
+      </ca2-field>
 
-      <zv-field name="slider" :label="t('slider')">
+      <ca2-field name="slider" :label="t('slider')">
         <template #input>
-          <zv-slider v-model="slider" />
+          <ca2-slider v-model="slider" />
         </template>
-      </zv-field>
+      </ca2-field>
 
-      <zv-field name="uploader" :label="t('uploader')">
+      <ca2-field name="uploader" :label="t('uploader')">
         <template #input>
-          <zv-uploader v-model="uploader" max-count="2" />
+          <ca2-uploader v-model="uploader" max-count="2" />
         </template>
-      </zv-field>
+      </ca2-field>
 
       <field-type-picker />
       <field-type-datetime-picker />
@@ -65,11 +65,11 @@
       <field-type-calendar />
 
       <div style="margin: 16px 16px 0;">
-        <zv-button round block type="info" native-type="submit">
+        <ca2-button round block type="info" native-type="submit">
           {{ t('submit') }}
-        </zv-button>
+        </ca2-button>
       </div>
-    </zv-form>
+    </ca2-form>
   </demo-block>
 </template>
 

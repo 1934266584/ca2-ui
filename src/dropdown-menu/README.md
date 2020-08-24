@@ -15,10 +15,10 @@ Vue.use(DropdownItem);
 ### Basic Usage
 
 ```html
-<zv-dropdown-menu>
-  <zv-dropdown-item v-model="value1" :options="option1" />
-  <zv-dropdown-item v-model="value2" :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu>
+  <ca2-dropdown-item v-model="value1" :options="option1" />
+  <ca2-dropdown-item v-model="value2" :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ```js
@@ -45,14 +45,14 @@ export default {
 ### Custom Content
 
 ```html
-<zv-dropdown-menu>
-  <zv-dropdown-item v-model="value" :options="option" />
-  <zv-dropdown-item title="Title" ref="item">
-    <zv-switch-cell v-model="switch1" title="Title" />
-    <zv-switch-cell v-model="switch2" title="Title" />
-    <zv-button block type="info" @click="onConfirm">Confirm</zv-button>
-  </zv-dropdown-item>
-</zv-dropdown-menu>
+<ca2-dropdown-menu>
+  <ca2-dropdown-item v-model="value" :options="option" />
+  <ca2-dropdown-item title="Title" ref="item">
+    <ca2-switch-cell v-model="switch1" title="Title" />
+    <ca2-switch-cell v-model="switch2" title="Title" />
+    <ca2-button block type="info" @click="onConfirm">Confirm</ca2-button>
+  </ca2-dropdown-item>
+</ca2-dropdown-menu>
 ```
 
 ```js
@@ -82,28 +82,28 @@ export default {
 Use `active-color` prop to custom active color of the title and options
 
 ```html
-<zv-dropdown-menu active-color="#ee0a24">
-  <zv-dropdown-item v-model="value1" :options="option1" />
-  <zv-dropdown-item v-model="value2" :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu active-color="#ee0a24">
+  <ca2-dropdown-item v-model="value1" :options="option1" />
+  <ca2-dropdown-item v-model="value2" :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ### Expand Direction
 
 ```html
-<zv-dropdown-menu direction="up">
-  <zv-dropdown-item v-model="value1" :options="option1" />
-  <zv-dropdown-item v-model="value2" :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu direction="up">
+  <ca2-dropdown-item v-model="value1" :options="option1" />
+  <ca2-dropdown-item v-model="value2" :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ### Disabled
 
 ```html
-<zv-dropdown-menu>
-  <zv-dropdown-item v-model="value1" disabled :options="option1" />
-  <zv-dropdown-item v-model="value2" disabled :options="option2" />
-</zv-dropdown-menu>
+<ca2-dropdown-menu>
+  <ca2-dropdown-item v-model="value1" disabled :options="option1" />
+  <ca2-dropdown-item v-model="value2" disabled :options="option2" />
+</ca2-dropdown-menu>
 ```
 
 ## API

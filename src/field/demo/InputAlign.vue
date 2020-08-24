@@ -1,6 +1,6 @@
 <template>
   <demo-block :title="t('inputAlign')">
-    <zv-field
+    <ca2-field
       v-model="value"
       :label="t('text')"
       :placeholder="t('alignPlaceHolder')"

@@ -14,15 +14,15 @@ Vue.use(Form);
 ### Basic Usage
 
 ```html
-<zv-form @submit="onSubmit">
-  <zv-field
+<ca2-form @submit="onSubmit">
+  <ca2-field
     v-model="username"
     name="Username"
     label="Username"
     placeholder="Username"
     :rules="[{ required: true, message: 'Username is required' }]"
   />
-  <zv-field
+  <ca2-field
     v-model="password"
     type="password"
     name="Password"
@@ -31,11 +31,11 @@ Vue.use(Form);
     :rules="[{ required: true, message: 'Password is required' }]"
   />
   <div style="margin: 16px;">
-    <zv-button round block type="info" native-type="submit">
+    <ca2-button round block type="info" native-type="submit">
       Submit
-    </zv-button>
+    </ca2-button>
   </div>
-</zv-form>
+</ca2-form>
 ```
 
 ```js
@@ -57,31 +57,31 @@ export default {
 ### Validate Rules
 
 ```html
-<zv-form validate-first @failed="onFailed">
-  <zv-field
+<ca2-form validate-first @failed="onFailed">
+  <ca2-field
     v-model="value1"
     name="pattern"
     placeholder="USe pattern"
     :rules="[{ pattern, message: 'Error message' }]"
   />
-  <zv-field
+  <ca2-field
     v-model="value2"
     name="validator"
     placeholder="Use validator"
     :rules="[{ validator, message: 'Error message' }]"
   />
-  <zv-field
+  <ca2-field
     v-model="value3"
     name="asyncValidator"
     placeholder="Use async validator"
     :rules="[{ validator: asyncValidator, message: 'Error message' }]"
   />
   <div style="margin: 16px;">
-    <zv-button round block type="info" native-type="submit">
+    <ca2-button round block type="info" native-type="submit">
       Submit
-    </zv-button>
+    </ca2-button>
   </div>
-</zv-form>
+</ca2-form>
 ```
 
 ```js
@@ -120,11 +120,11 @@ export default {
 ### Field Type - Switch
 
 ```html
-<zv-field name="switch" label="Switch">
+<ca2-field name="switch" label="Switch">
   <template #input>
-    <zv-switch v-model="switchChecked" size="20" />
+    <ca2-switch v-model="switchChecked" size="20" />
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ```js
@@ -140,19 +140,19 @@ export default {
 ### Field Type - Checkbox
 
 ```html
-<zv-field name="checkbox" label="Checkbox">
+<ca2-field name="checkbox" label="Checkbox">
   <template #input>
-    <zv-checkbox v-model="checkbox" shape="square" />
+    <ca2-checkbox v-model="checkbox" shape="square" />
   </template>
-</zv-field>
-<zv-field name="checkboxGroup" label="CheckboxGroup">
+</ca2-field>
+<ca2-field name="checkboxGroup" label="CheckboxGroup">
   <template #input>
-    <zv-checkbox-group v-model="checkboxGroup" direction="horizontal">
-      <zv-checkbox name="1" shape="square">Checkbox 1</zv-checkbox>
-      <zv-checkbox name="2" shape="square">Checkbox 2</zv-checkbox>
-    </zv-checkbox-group>
+    <ca2-checkbox-group v-model="checkboxGroup" direction="horizontal">
+      <ca2-checkbox name="1" shape="square">Checkbox 1</ca2-checkbox>
+      <ca2-checkbox name="2" shape="square">Checkbox 2</ca2-checkbox>
+    </ca2-checkbox-group>
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ```js
@@ -169,14 +169,14 @@ export default {
 ### Field Type - Radio
 
 ```html
-<zv-field name="radio" label="Radio">
+<ca2-field name="radio" label="Radio">
   <template #input>
-    <zv-radio-group v-model="radio" direction="horizontal">
-      <zv-radio name="1">Radio 1</zv-radio>
-      <zv-radio name="2">Radio 2</zv-radio>
-    </zv-radio-group>
+    <ca2-radio-group v-model="radio" direction="horizontal">
+      <ca2-radio name="1">Radio 1</ca2-radio>
+      <ca2-radio name="2">Radio 2</ca2-radio>
+    </ca2-radio-group>
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ```js
@@ -192,11 +192,11 @@ export default {
 ### Field Type - Stepper
 
 ```html
-<zv-field name="stepper" label="Stepper">
+<ca2-field name="stepper" label="Stepper">
   <template #input>
-    <zv-stepper v-model="stepper" />
+    <ca2-stepper v-model="stepper" />
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ```js
@@ -212,11 +212,11 @@ export default {
 ### Field Type - Rate
 
 ```html
-<zv-field name="rate" label="Rate">
+<ca2-field name="rate" label="Rate">
   <template #input>
-    <zv-rate v-model="rate" />
+    <ca2-rate v-model="rate" />
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ```js
@@ -232,11 +232,11 @@ export default {
 ### Field Type - Slider
 
 ```html
-<zv-field name="slider" label="Slider">
+<ca2-field name="slider" label="Slider">
   <template #input>
-    <zv-slider v-model="slider" />
+    <ca2-slider v-model="slider" />
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ```js
@@ -252,11 +252,11 @@ export default {
 ### Field Type - Uploader
 
 ```html
-<zv-field name="uploader" label="Uploader">
+<ca2-field name="uploader" label="Uploader">
   <template #input>
-    <zv-uploader v-model="uploader" />
+    <ca2-uploader v-model="uploader" />
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ```js
@@ -272,7 +272,7 @@ export default {
 ### Field Type - Picker
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   name="picker"
@@ -281,14 +281,14 @@ export default {
   placeholder="Select city"
   @click="showPicker = true"
 />
-<zv-popup v-model="showPicker" position="bottom">
-  <zv-picker
+<ca2-popup v-model="showPicker" position="bottom">
+  <ca2-picker
     show-toolbar
     :columns="columns"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</zv-popup>
+</ca2-popup>
 ```
 
 ```js
@@ -312,7 +312,7 @@ export default {
 ### Field Type - DatetimePicker
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   name="datetimePicker"
@@ -321,13 +321,13 @@ export default {
   placeholder="Select time"
   @click="showPicker = true"
 />
-<zv-popup v-model="showPicker" position="bottom">
-  <zv-datetime-picker
+<ca2-popup v-model="showPicker" position="bottom">
+  <ca2-datetime-picker
     type="time"
     @confirm="onConfirm"
     @cancel="showPicker = false"
   />
-</zv-popup>
+</ca2-popup>
 ```
 
 ```js
@@ -350,7 +350,7 @@ export default {
 ### Field Type - Area
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   name="area"
@@ -359,13 +359,13 @@ export default {
   placeholder="Select area"
   @click="showArea = true"
 />
-<zv-popup v-model="showArea" position="bottom">
-  <zv-area
+<ca2-popup v-model="showArea" position="bottom">
+  <ca2-area
     :area-list="areaList"
     @confirm="onConfirm"
     @cancel="showArea = false"
   />
-</zv-popup>
+</ca2-popup>
 ```
 
 ```js
@@ -389,7 +389,7 @@ export default {
 ### Field Type - Calendar
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   name="calendar"
@@ -398,7 +398,7 @@ export default {
   placeholder="Select date"
   @click="showCalendar = true"
 />
-<zv-calendar v-model="showCalendar" @confirm="onConfirm" />
+<ca2-calendar v-model="showCalendar" @confirm="onConfirm" />
 ```
 
 ```js

@@ -16,16 +16,16 @@ Vue.use(SwipeCell);
 `SwipeCell`组件提供了`left`和`right`两个插槽，用于定义两侧滑动区域的内容
 
 ```html
-<zv-swipe-cell>
+<ca2-swipe-cell>
   <template #left>
-    <zv-button square type="primary" text="选择" />
+    <ca2-button square type="primary" text="选择" />
   </template>
-  <zv-cell :border="false" title="单元格" value="内容" />
+  <ca2-cell :border="false" title="单元格" value="内容" />
   <template #right>
-    <zv-button square type="danger" text="删除" />
-    <zv-button square type="primary" text="收藏"/>
+    <ca2-button square type="danger" text="删除" />
+    <ca2-button square type="primary" text="收藏"/>
   </template>
-</zv-swipe-cell>
+</ca2-swipe-cell>
 ```
 
 ### 自定义内容
@@ -33,8 +33,8 @@ Vue.use(SwipeCell);
 `SwipeCell`内容可以嵌套任意内容，比如嵌套一个商品卡片
 
 ```html
-<zv-swipe-cell>
-  <zv-card
+<ca2-swipe-cell>
+  <ca2-card
     num="2"
     price="2.00"
     desc="描述信息"
@@ -43,14 +43,14 @@ Vue.use(SwipeCell);
     thumb="https://img.yzcdn.cn/vant/cat.jpeg"
   />
   <template #right>
-    <zv-button
+    <ca2-button
       square
       text="删除"
       type="danger"
       class="delete-button"
     />
   </template>
-</zv-swipe-cell>
+</ca2-swipe-cell>
 
 <style>
 .goods-card {
@@ -69,15 +69,15 @@ Vue.use(SwipeCell);
 通过传入`before-close`回调函数，可以自定义两侧滑动内容关闭时的行为
 
 ```html
-<zv-swipe-cell :before-close="beforeClose">
+<ca2-swipe-cell :before-close="beforeClose">
   <template #left>
-    <zv-button square type="primary" text="选择" />
+    <ca2-button square type="primary" text="选择" />
   </template>
-  <zv-cell :border="false" title="单元格" value="内容" />
+  <ca2-cell :border="false" title="单元格" value="内容" />
   <template #right>
-    <zv-button square type="danger" text="删除" />
+    <ca2-button square type="danger" text="删除" />
   </template>
-</zv-swipe-cell>
+</ca2-swipe-cell>
 ```
 
 ```js

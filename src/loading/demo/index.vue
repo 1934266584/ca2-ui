@@ -1,30 +1,30 @@
 <template>
   <demo-section>
     <demo-block :title="t('type')">
-      <zv-loading />
-      <zv-loading type="spinner" />
+      <ca2-loading />
+      <ca2-loading type="spinner" />
     </demo-block>
 
     <demo-block :title="t('color')">
-      <zv-loading color="#1989fa" />
-      <zv-loading type="spinner" color="#1989fa" />
+      <ca2-loading color="#1989fa" />
+      <ca2-loading type="spinner" color="#1989fa" />
     </demo-block>
 
     <demo-block :title="t('size')">
-      <zv-loading size="24" />
-      <zv-loading type="spinner" size="24" />
+      <ca2-loading size="24" />
+      <ca2-loading type="spinner" size="24" />
     </demo-block>
 
     <demo-block :title="t('text')">
-      <zv-loading size="24px">
+      <ca2-loading size="24px">
         {{ t('loading') }}
-      </zv-loading>
+      </ca2-loading>
     </demo-block>
 
     <demo-block :title="t('vertical')">
-      <zv-loading size="24px" vertical>
+      <ca2-loading size="24px" vertical>
         {{ t('loading') }}
-      </zv-loading>
+      </ca2-loading>
     </demo-block>
   </demo-section>
 </template>
@@ -56,7 +56,7 @@ export default {
 .demo-loading {
   background: $white;
 
-  .zv-loading {
+  .ca2-loading {
     display: inline-block;
     margin: 5px 0 5px 20px;
 

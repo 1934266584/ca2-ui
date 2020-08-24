@@ -15,85 +15,85 @@ Vue.use(GridItem);
 ### Basic Usage
 
 ```html
-<zv-grid>
-  <zv-grid-item icon="photo-o" text="Text" />
-  <zv-grid-item icon="photo-o" text="Text" />
-  <zv-grid-item icon="photo-o" text="Text" />
-  <zv-grid-item icon="photo-o" text="Text" />
-</zv-grid>
+<ca2-grid>
+  <ca2-grid-item icon="photo-o" text="Text" />
+  <ca2-grid-item icon="photo-o" text="Text" />
+  <ca2-grid-item icon="photo-o" text="Text" />
+  <ca2-grid-item icon="photo-o" text="Text" />
+</ca2-grid>
 ```
 
 ### Column Num
 
 ```html
-<zv-grid :column-num="3">
-  <zv-grid-item
+<ca2-grid :column-num="3">
+  <ca2-grid-item
     v-for="value in 6"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</zv-grid>
+</ca2-grid>
 ```
 
 ### Custom Content
 
 ```html
-<zv-grid :border="false" :column-num="3">
-  <zv-grid-item>
-    <zv-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
-  </zv-grid-item>
-  <zv-grid-item>
-    <zv-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
-  </zv-grid-item>
-  <zv-grid-item>
-    <zv-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
-  </zv-grid-item>
-</zv-grid>
+<ca2-grid :border="false" :column-num="3">
+  <ca2-grid-item>
+    <ca2-image src="https://img.yzcdn.cn/vant/apple-1.jpg" />
+  </ca2-grid-item>
+  <ca2-grid-item>
+    <ca2-image src="https://img.yzcdn.cn/vant/apple-2.jpg" />
+  </ca2-grid-item>
+  <ca2-grid-item>
+    <ca2-image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+  </ca2-grid-item>
+</ca2-grid>
 ```
 
 ### Square
 
 ```html
-<zv-grid square>
-  <zv-grid-item
+<ca2-grid square>
+  <ca2-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</zv-grid>
+</ca2-grid>
 ```
 
 ### Gutter
 
 ```html
-<zv-grid :gutter="10">
-  <zv-grid-item
+<ca2-grid :gutter="10">
+  <ca2-grid-item
     v-for="value in 8"
     :key="value"
     icon="photo-o"
     text="Text"
   />
-</zv-grid>
+</ca2-grid>
 ```
 
 ### Route
 
 ```html
-<zv-grid clickable :column-num="2">
-  <zv-grid-item icon="home-o" text="Vue Router" to="/" />
-  <zv-grid-item icon="search" text="URL" url="/vant/mobile.html" />
-</zv-grid>
+<ca2-grid clickable :column-num="2">
+  <ca2-grid-item icon="home-o" text="Vue Router" to="/" />
+  <ca2-grid-item icon="search" text="URL" url="/vant/mobile.html" />
+</ca2-grid>
 ```
 
 ### Show Badge
 
 ```html
-<zv-grid :column-num="2">
-  <zv-grid-item icon="home-o" text="Text" dot />
-  <zv-grid-item icon="search" text="Text" badge="99+" />
-</zv-grid>
+<ca2-grid :column-num="2">
+  <ca2-grid-item icon="home-o" text="Text" dot />
+  <ca2-grid-item icon="search" text="Text" badge="99+" />
+</ca2-grid>
 ```
 
 ## API
@@ -116,7 +116,7 @@ Vue.use(GridItem);
 |------|------|------|------|
 | text | Text | *string* | - |
 | icon | Icon name or URL | *string* | - |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `ca2-icon` |
 | dot `v2.2.1` | Whether to show red dot | *boolean* | `false` |
 | badge `v2.5.6` | Content of the badge | *number \| string* | - |
 | url | Link URL | *string* | - |

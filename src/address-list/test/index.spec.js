@@ -40,7 +40,7 @@ test('select event', () => {
     },
   });
 
-  wrapper.find('.zv-radio__icon').trigger('click');
+  wrapper.find('.ca2-radio__icon').trigger('click');
 
   expect(onSelect).toHaveBeenCalledTimes(1);
 });
@@ -58,7 +58,7 @@ test('click-item event', () => {
     },
   });
 
-  wrapper.find('.zv-address-item').trigger('click');
+  wrapper.find('.ca2-address-item').trigger('click');
 
   expect(onClickItem).toHaveBeenCalledTimes(1);
 });

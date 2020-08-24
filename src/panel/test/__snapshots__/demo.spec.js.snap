@@ -3,30 +3,30 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="zv-cell-group zv-hairline--top-bottom zv-panel">
-      <div class="zv-cell zv-panel__header">
-        <div class="zv-cell__title"><span>标题</span>
-          <div class="zv-cell__label">描述信息</div>
+    <div class="ca2-cell-group ca2-hairline--top-bottom ca2-panel">
+      <div class="ca2-cell ca2-panel__header">
+        <div class="ca2-cell__title"><span>标题</span>
+          <div class="ca2-cell__label">描述信息</div>
         </div>
-        <div class="zv-cell__value zv-panel__header-value"><span>状态</span></div>
+        <div class="ca2-cell__value ca2-panel__header-value"><span>状态</span></div>
       </div>
-      <div class="zv-panel__content">
+      <div class="ca2-panel__content">
         <div>内容</div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-cell-group zv-hairline--top-bottom zv-panel">
-      <div class="zv-cell zv-panel__header">
-        <div class="zv-cell__title"><span>标题</span>
-          <div class="zv-cell__label">描述信息</div>
+    <div class="ca2-cell-group ca2-hairline--top-bottom ca2-panel">
+      <div class="ca2-cell ca2-panel__header">
+        <div class="ca2-cell__title"><span>标题</span>
+          <div class="ca2-cell__label">描述信息</div>
         </div>
-        <div class="zv-cell__value zv-panel__header-value"><span>状态</span></div>
+        <div class="ca2-cell__value ca2-panel__header-value"><span>状态</span></div>
       </div>
-      <div class="zv-panel__content">
+      <div class="ca2-panel__content">
         <div>内容</div>
       </div>
-      <div class="zv-panel__footer zv-hairline--top"><button class="zv-button zv-button--default zv-button--small"><span class="zv-button__text">按钮</span></button> <button class="zv-button zv-button--danger zv-button--small"><span class="zv-button__text">
+      <div class="ca2-panel__footer ca2-hairline--top"><button class="ca2-button ca2-button--default ca2-button--small"><span class="ca2-button__text">按钮</span></button> <button class="ca2-button ca2-button--danger ca2-button--small"><span class="ca2-button__text">
           按钮
         </span></button></div>
     </div>

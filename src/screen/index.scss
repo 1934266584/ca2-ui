@@ -1,7 +1,7 @@
 @import '../style/var.scss';
 @import '../style/mixins/hairline.scss';
 
-.zv-screen {
+.ca2-screen {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -43,7 +43,7 @@
     height: 56px;
     padding: 0 16px;
 
-    .zv-button {
+    .ca2-button {
       width: 126px;
     }
   }

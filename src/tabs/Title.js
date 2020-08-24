@@ -69,7 +69,7 @@ export default createComponent({
             complete: !this.ellipsis,
           }),
           {
-            'zv-ellipsis': this.ellipsis,
+            'ca2-ellipsis': this.ellipsis,
           },
         ]}
         style={this.style}

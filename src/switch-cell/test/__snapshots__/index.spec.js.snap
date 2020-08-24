@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`border prop 1`] = `
-<div class="zv-cell zv-cell--center zv-cell--borderless zv-switch-cell">
-  <div class="zv-cell__value zv-cell__value--alone">
-    <div role="switch" aria-checked="false" class="zv-switch" style="font-size: 24px;">
-      <div class="zv-switch__node"></div>
+<div class="ca2-cell ca2-cell--center ca2-cell--borderless ca2-switch-cell">
+  <div class="ca2-cell__value ca2-cell__value--alone">
+    <div role="switch" aria-checked="false" class="ca2-switch" style="font-size: 24px;">
+      <div class="ca2-switch__node"></div>
     </div>
   </div>
 </div>
 `;
 
 exports[`cell-size prop 1`] = `
-<div class="zv-cell zv-cell--center zv-cell--large zv-switch-cell zv-switch-cell--large">
-  <div class="zv-cell__value zv-cell__value--alone">
-    <div role="switch" aria-checked="false" class="zv-switch" style="font-size: 24px;">
-      <div class="zv-switch__node"></div>
+<div class="ca2-cell ca2-cell--center ca2-cell--large ca2-switch-cell ca2-switch-cell--large">
+  <div class="ca2-cell__value ca2-cell__value--alone">
+    <div role="switch" aria-checked="false" class="ca2-switch" style="font-size: 24px;">
+      <div class="ca2-switch__node"></div>
     </div>
   </div>
 </div>

@@ -20,10 +20,10 @@ Vue.use(NumberKeyboard);
 数字键盘提供了 `input`、`delete`、`blur` 事件，分别对应输入内容、删除内容和失去焦点的动作
 
 ```html
-<zv-cell @touchstart.native.stop="show = true">
+<ca2-cell @touchstart.native.stop="show = true">
   弹出默认键盘
-</zv-cell>
-<zv-number-keyboard
+</ca2-cell>
+<ca2-number-keyboard
   :show="show"
   @blur="show = false"
   @input="onInput"
@@ -58,7 +58,7 @@ export default {
 将 theme 属性设置为 `custom` 来展示键盘的右侧栏，常用于输入金额的场景
 
 ```html
-<zv-number-keyboard
+<ca2-number-keyboard
   :show="show"
   theme="custom"
   extra-key="."
@@ -74,10 +74,10 @@ export default {
 通过 `extra-key` 属性可以设置左下角按键内容，比如需要输入身份证号时，可以将 `extra-key` 设置为 `X`
 
 ```html
-<zv-cell plain type="primary" @touchstart.native.stop="show = true">
+<ca2-cell plain type="primary" @touchstart.native.stop="show = true">
   弹出身份证号键盘
-</zv-cell>
-<zv-number-keyboard
+</ca2-cell>
+<ca2-number-keyboard
   :show="show"
   extra-key="X"
   close-button-text="完成"
@@ -92,10 +92,10 @@ export default {
 通过 `title` 属性可以设置键盘标题
 
 ```html
-<zv-cell plain type="info" @touchstart.native.stop="show = true">
+<ca2-cell plain type="info" @touchstart.native.stop="show = true">
   弹出带标题的键盘
-</zv-cell>
-<zv-number-keyboard
+</ca2-cell>
+<ca2-number-keyboard
   :show="show"
   title="键盘标题"
   extra-key="."
@@ -111,13 +111,13 @@ export default {
 可以通过 `v-model` 绑定键盘当前输入值
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   :value="value"
   @touchstart.native.stop="show = true"
 />
-<zv-number-keyboard
+<ca2-number-keyboard
   v-model="value"
   :show="show"
   :maxlength="6"

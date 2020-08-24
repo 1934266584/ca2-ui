@@ -1,7 +1,7 @@
 @import '../style/var.scss';
 @import '../style/mixins/hairline.scss';
 
-.zv-cell {
+.ca2-cell {
   position: relative;
   display: flex;
   box-sizing: border-box;
@@ -88,22 +88,22 @@
   }
 
   &--purdisplay {
-    .zv-cell__title {
+    .ca2-cell__title {
       color: $cell-value-color;
     }
 
-    .zv-cell__value {
+    .ca2-cell__value {
       color: $text-color;
     }
   }
 
   &--row {
-    .zv-cell__title {
+    .ca2-cell__title {
       display: flex;
       flex: 3;
     }
 
-    .zv-cell__label {
+    .ca2-cell__label {
       margin-top: $cell-label-margin-top;
       margin-left: 4px;
     }
@@ -113,11 +113,11 @@
     padding-top: $cell-large-vertical-padding;
     padding-bottom: $cell-large-vertical-padding;
 
-    .zv-cell__title {
+    .ca2-cell__title {
       font-size: $cell-large-title-font-size;
     }
 
-    .zv-cell__label {
+    .ca2-cell__label {
       font-size: $cell-large-label-font-size;
     }
   }

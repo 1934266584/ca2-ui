@@ -14,26 +14,26 @@ Vue.use(Skeleton);
 ### Basic Usage
 
 ```html
-<zv-skeleton title :row="3" />
+<ca2-skeleton title :row="3" />
 ```
 
 ### Show Avatar
 
 ```html
-<zv-skeleton title avatar :row="3" />
+<ca2-skeleton title avatar :row="3" />
 ```
 
 ### Show Children
 
 ```html
-<zv-skeleton
+<ca2-skeleton
   title
   avatar
   :row="3"
   :loading="loading"
 >
   <div>Content</div>
-</zv-skeleton>
+</ca2-skeleton>
 ```
 
 ```js

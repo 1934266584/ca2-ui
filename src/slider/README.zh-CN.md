@@ -14,7 +14,7 @@ Vue.use(Slider);
 ### 基本用法
 
 ```html
-<zv-slider v-model="value" @change="onChange" />
+<ca2-slider v-model="value" @change="onChange" />
 ```
 
 ```js
@@ -37,25 +37,25 @@ export default {
 ### 指定选择范围
 
 ```html
-<zv-slider v-model="value" :min="-50" :max="50" />
+<ca2-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### 禁用
 
 ```html
-<zv-slider v-model="value" disabled />
+<ca2-slider v-model="value" disabled />
 ```
 
 ### 指定步长
 
 ```html
-<zv-slider v-model="value" :step="10" />
+<ca2-slider v-model="value" :step="10" />
 ```
 
 ### 自定义样式
 
 ```html
-<zv-slider
+<ca2-slider
   v-model="value"
   bar-height="4px"
   active-color="#ee0a24"
@@ -65,13 +65,13 @@ export default {
 ### 自定义按钮
 
 ```html
-<zv-slider v-model="value" active-color="#ee0a24">
+<ca2-slider v-model="value" active-color="#ee0a24">
   <template #button>
     <div class="custom-button">
       {{ value }}
     </div>
   </template>
-</zv-slider>
+</ca2-slider>
 
 <style>
 .custom-button {
@@ -92,7 +92,7 @@ Slider 垂直展示时，高度为 100% 父元素高度
 
 ```html
 <div :style="{ height: '100px' }">
-  <zv-slider v-model="value" vertical />
+  <ca2-slider v-model="value" vertical />
 </div>
 ```
 

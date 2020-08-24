@@ -1,37 +1,37 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-divider />
+      <ca2-divider />
     </demo-block>
 
     <demo-block :title="t('withText')">
-      <zv-divider>
+      <ca2-divider>
         {{ t('text') }}
-      </zv-divider>
+      </ca2-divider>
     </demo-block>
 
     <demo-block :title="t('contentPosition')">
-      <zv-divider content-position="left">
+      <ca2-divider content-position="left">
         {{ t('text') }}
-      </zv-divider>
+      </ca2-divider>
 
-      <zv-divider content-position="right">
+      <ca2-divider content-position="right">
         {{ t('text') }}
-      </zv-divider>
+      </ca2-divider>
     </demo-block>
 
     <demo-block :title="t('dashed')">
-      <zv-divider dashed :hairline="false">
+      <ca2-divider dashed :hairline="false">
         {{ t('text') }}
-      </zv-divider>
+      </ca2-divider>
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-divider
+      <ca2-divider
         :style="{ borderColor: BLUE, color: BLUE, padding: '0 16px' }"
       >
         {{ t('text') }}
-      </zv-divider>
+      </ca2-divider>
     </demo-block>
   </demo-section>
 </template>

@@ -1,42 +1,42 @@
 <template>
   <demo-section>
-    <zv-tabs>
-      <zv-tab :title="t('basicUsage')">
-        <zv-list
+    <ca2-tabs>
+      <ca2-tab :title="t('basicUsage')">
+        <ca2-list
           v-model="list[0].loading"
           :finished="list[0].finished"
           :finished-text="t('finishedText')"
           @load="onLoad(0)"
         >
-          <zv-cell v-for="item in list[0].items" :key="item" :title="item" />
-        </zv-list>
-      </zv-tab>
+          <ca2-cell v-for="item in list[0].items" :key="item" :title="item" />
+        </ca2-list>
+      </ca2-tab>
 
-      <zv-tab :title="t('errorInfo')">
-        <zv-list
+      <ca2-tab :title="t('errorInfo')">
+        <ca2-list
           v-model="list[1].loading"
           :finished="list[1].finished"
           :error.sync="list[1].error"
           :error-text="t('errorText')"
           @load="onLoad(1)"
         >
-          <zv-cell v-for="item in list[1].items" :key="item" :title="item" />
-        </zv-list>
-      </zv-tab>
+          <ca2-cell v-for="item in list[1].items" :key="item" :title="item" />
+        </ca2-list>
+      </ca2-tab>
 
-      <zv-tab :title="t('pullRefresh')">
-        <zv-pull-refresh v-model="list[2].refreshing" @refresh="onRefresh(2)">
-          <zv-list
+      <ca2-tab :title="t('pullRefresh')">
+        <ca2-pull-refresh v-model="list[2].refreshing" @refresh="onRefresh(2)">
+          <ca2-list
             v-model="list[2].loading"
             :finished="list[2].finished"
             :finished-text="t('finishedText')"
             @load="onLoad(2)"
           >
-            <zv-cell v-for="item in list[2].items" :key="item" :title="item" />
-          </zv-list>
-        </zv-pull-refresh>
-      </zv-tab>
-    </zv-tabs>
+            <ca2-cell v-for="item in list[2].items" :key="item" :title="item" />
+          </ca2-list>
+        </ca2-pull-refresh>
+      </ca2-tab>
+    </ca2-tabs>
   </demo-section>
 </template>
 
@@ -129,7 +129,7 @@ export default {
 @import '../../style/var.scss';
 
 .demo-list {
-  .zv-cell {
+  .ca2-cell {
     text-align: center;
   }
 
@@ -149,7 +149,7 @@ export default {
     }
   }
 
-  .zv-checkbox__label {
+  .ca2-checkbox__label {
     color: $gray-7;
   }
 }

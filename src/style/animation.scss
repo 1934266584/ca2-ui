@@ -1,54 +1,54 @@
 @import './var';
 
-@keyframes zv-slide-up-enter {
+@keyframes ca2-slide-up-enter {
   from {
     transform: translate3d(0, 100%, 0);
   }
 }
 
-@keyframes zv-slide-up-leave {
+@keyframes ca2-slide-up-leave {
   to {
     transform: translate3d(0, 100%, 0);
   }
 }
 
-@keyframes zv-slide-down-enter {
+@keyframes ca2-slide-down-enter {
   from {
     transform: translate3d(0, -100%, 0);
   }
 }
 
-@keyframes zv-slide-down-leave {
+@keyframes ca2-slide-down-leave {
   to {
     transform: translate3d(0, -100%, 0);
   }
 }
 
-@keyframes zv-slide-left-enter {
+@keyframes ca2-slide-left-enter {
   from {
     transform: translate3d(-100%, 0, 0);
   }
 }
 
-@keyframes zv-slide-left-leave {
+@keyframes ca2-slide-left-leave {
   to {
     transform: translate3d(-100%, 0, 0);
   }
 }
 
-@keyframes zv-slide-right-enter {
+@keyframes ca2-slide-right-enter {
   from {
     transform: translate3d(100%, 0, 0);
   }
 }
 
-@keyframes zv-slide-right-leave {
+@keyframes ca2-slide-right-leave {
   to {
     transform: translate3d(100%, 0, 0);
   }
 }
 
-@keyframes zv-fade-in {
+@keyframes ca2-fade-in {
   from {
     opacity: 0;
   }
@@ -58,7 +58,7 @@
   }
 }
 
-@keyframes zv-fade-out {
+@keyframes ca2-fade-out {
   from {
     opacity: 1;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@keyframes zv-rotate {
+@keyframes ca2-rotate {
   from {
     transform: rotate(0deg);
   }
@@ -78,62 +78,62 @@
   }
 }
 
-.zv-fade {
+.ca2-fade {
   &-enter-active {
-    animation: $animation-duration-base zv-fade-in both
+    animation: $animation-duration-base ca2-fade-in both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: $animation-duration-base zv-fade-out both
+    animation: $animation-duration-base ca2-fade-out both
       $animation-timing-function-leave;
   }
 }
 
-.zv-slide-up {
+.ca2-slide-up {
   &-enter-active {
-    animation: zv-slide-up-enter $animation-duration-base both
+    animation: ca2-slide-up-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-up-leave $animation-duration-base both
+    animation: ca2-slide-up-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }
 
-.zv-slide-down {
+.ca2-slide-down {
   &-enter-active {
-    animation: zv-slide-down-enter $animation-duration-base both
+    animation: ca2-slide-down-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-down-leave $animation-duration-base both
+    animation: ca2-slide-down-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }
 
-.zv-slide-left {
+.ca2-slide-left {
   &-enter-active {
-    animation: zv-slide-left-enter $animation-duration-base both
+    animation: ca2-slide-left-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-left-leave $animation-duration-base both
+    animation: ca2-slide-left-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }
 
-.zv-slide-right {
+.ca2-slide-right {
   &-enter-active {
-    animation: zv-slide-right-enter $animation-duration-base both
+    animation: ca2-slide-right-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: zv-slide-right-leave $animation-duration-base both
+    animation: ca2-slide-right-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }

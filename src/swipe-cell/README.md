@@ -14,23 +14,23 @@ Vue.use(SwipeCell);
 ### Basic Usage
 
 ```html
-<zv-swipe-cell>
+<ca2-swipe-cell>
   <template #left>
-    <zv-button square type="primary" text="Select" />
+    <ca2-button square type="primary" text="Select" />
   </template>
-  <zv-cell :border="false" title="Cell" value="Cell Content" />
+  <ca2-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <zv-button square type="danger" text="Delete" />
-    <zv-button square type="primary" text="Collect"/>
+    <ca2-button square type="danger" text="Delete" />
+    <ca2-button square type="primary" text="Collect"/>
   </template>
-</zv-swipe-cell>
+</ca2-swipe-cell>
 ```
 
 ### Custom Content
 
 ```html
-<zv-swipe-cell>
-  <zv-card
+<ca2-swipe-cell>
+  <ca2-card
     num="2"
     price="2.00"
     desc="Description"
@@ -39,14 +39,14 @@ Vue.use(SwipeCell);
     thumb="https://img.yzcdn.cn/vant/cat.jpeg"
   />
   <template #right>
-    <zv-button
+    <ca2-button
       square
       text="Delete"
       type="danger"
       class="delete-button"
     />
   </template>
-</zv-swipe-cell>
+</ca2-swipe-cell>
 
 <style>
 .goods-card {
@@ -63,15 +63,15 @@ Vue.use(SwipeCell);
 ### Before Close
 
 ```html
-<zv-swipe-cell :before-close="beforeClose">
+<ca2-swipe-cell :before-close="beforeClose">
   <template #left>
-    <zv-button square type="primary" text="Select" />
+    <ca2-button square type="primary" text="Select" />
   </template>
-  <zv-cell :border="false" title="Cell" value="Cell Content" />
+  <ca2-cell :border="false" title="Cell" value="Cell Content" />
   <template #right>
-    <zv-button square type="danger" text="Delete" />
+    <ca2-button square type="danger" text="Delete" />
   </template>
-</zv-swipe-cell>
+</ca2-swipe-cell>
 ```
 
 ```js

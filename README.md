@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  🔥 <a href="https://122687220.github.io/zv-ui/">文档网站</a>
+  🔥 <a href="https://1934266584.github.io/ca2-ui/">文档网站</a>
   &nbsp;
   🇨🇳 <a href="./README.zh-CN.md">中文版介绍</a>
 </p>
@@ -35,10 +35,10 @@
 
 ```bash
 # Using npm
-npm i @zvalley/zv-ui -S
+npm i ca2-ui -S
 
 # Using yarn
-yarn add @zvalley/zv-ui
+yarn add ca2-ui
 ```
 
 ## Quickstart
@@ -51,7 +51,7 @@ import 'vant/lib/index.css';
 Vue.use(Button);
 ```
 
-See more in [Quickstart](https://122687220.github.io/zv-ui/#/en-US/quickstart).
+See more in [Quickstart](https://1934266584.github.io/ca2-ui/#/en-US/quickstart).
 
 ## Contribution
 

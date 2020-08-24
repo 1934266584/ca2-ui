@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-notice-bar {
+.ca2-notice-bar {
   position: relative;
   display: flex;
   align-items: center;
@@ -33,16 +33,16 @@
     position: absolute;
     white-space: nowrap;
 
-    &.zv-ellipsis {
+    &.ca2-ellipsis {
       max-width: 100%;
     }
   }
 
   &__play {
-    animation: zv-notice-bar-play linear both;
+    animation: ca2-notice-bar-play linear both;
 
     &--infinite {
-      animation: zv-notice-bar-play-infinite linear infinite both;
+      animation: ca2-notice-bar-play-infinite linear infinite both;
     }
   }
 
@@ -50,7 +50,7 @@
     height: auto;
     padding: $notice-bar-wrapable-padding;
 
-    .zv-notice-bar {
+    .ca2-notice-bar {
       &__wrap {
         height: auto;
       }
@@ -68,13 +68,13 @@
  * Declare two same keyframes
  * In case that some mobile browsers can continue animation when className changed
  */
-@keyframes zv-notice-bar-play {
+@keyframes ca2-notice-bar-play {
   to {
     transform: translate3d(-100%, 0, 0);
   }
 }
 
-@keyframes zv-notice-bar-play-infinite {
+@keyframes ca2-notice-bar-play-infinite {
   to {
     transform: translate3d(-100%, 0, 0);
   }

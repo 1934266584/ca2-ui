@@ -8,7 +8,7 @@ Sticky 组件与 CSS 中`position: sticky`属性实现的效果一致，当组�
 
 ```js
 import Vue from 'vue';
-import { Sticky } from 'zvt';
+import { Sticky } from 'ca2t';
 
 Vue.use(Sticky);
 ```
@@ -20,9 +20,9 @@ Vue.use(Sticky);
 将内容包裹在`Sticky`组件内即可
 
 ```html
-<zv-sticky>
-  <zv-button type="primary">基础用法</zv-button>
-</zv-sticky>
+<ca2-sticky>
+  <ca2-button type="primary">基础用法</ca2-button>
+</ca2-sticky>
 ```
 
 ### 吸顶距离
@@ -30,9 +30,9 @@ Vue.use(Sticky);
 通过`offset-top`属性可以设置组件在吸顶时与顶部的距离
 
 ```html
-<zv-sticky :offset-top="50">
-  <zv-button type="info">吸顶距离</zv-button>
-</zv-sticky>
+<ca2-sticky :offset-top="50">
+  <ca2-button type="info">吸顶距离</ca2-button>
+</ca2-sticky>
 ```
 
 ### 指定容器
@@ -41,9 +41,9 @@ Vue.use(Sticky);
 
 ```html
 <div ref="container" style="height: 150px;">
-  <zv-sticky :container="container">
-    <zv-button type="warning">指定容器</zv-button>
-  </zv-sticky>
+  <ca2-sticky :container="container">
+    <ca2-button type="warning">指定容器</ca2-button>
+  </ca2-sticky>
 </div>
 ```
 

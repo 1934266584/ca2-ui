@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  🔥 <a href="https://122687220.github.io/zv-ui/">文档网站</a>
+  🔥 <a href="https://1934266584.github.io/ca2-ui/">文档网站</a>
 </p>
 
 ---
@@ -32,18 +32,18 @@
 
 ```bash
 # 通过 npm 安装
-npm i @zvalley/zv-ui -S
+npm i ca2-ui -S
 
 # 通过 yarn 安装
-yarn add @zvalley/zv-ui
+yarn add ca2-ui
 ```
 
 ## 快速上手
 
 ```js
 import Vue from 'vue';
-import { Button } from '@zvalley/zv-ui';
-import '@zvalley/zv-ui/lib/index.css';
+import { Button } from 'ca2-ui';
+import 'ca2-ui/lib/index.css';
 
 Vue.use(Button);
 ```
@@ -52,7 +52,7 @@ Vue.use(Button);
 
 修改代码请阅读我们的 [开发指南](https://youzan.github.io/vant/#/zh-CN/contribution)。
 
-使用过程中发现任何问题都可以提 [Issue](https://122687220.github.io/zv-ui/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://122687220.github.io/zv-ui/pulls)。
+使用过程中发现任何问题都可以提 [Issue](https://122687220.github.io/ca2-ui/issues) 给我们，当然，我们也非常欢迎你给我们发 [PR](https://122687220.github.io/ca2-ui/pulls)。
 
 ## 浏览器支持
 

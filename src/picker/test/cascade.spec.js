@@ -38,14 +38,14 @@ test('cascade columns', () => {
     },
   });
 
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A1', 'B1', 'C1']);
 
-  triggerDrag(wrapper.find('.zv-picker-column'), 0, -100);
-  wrapper.find('.zv-picker-column ul').trigger('transitionend');
+  triggerDrag(wrapper.find('.ca2-picker-column'), 0, -100);
+  wrapper.find('.ca2-picker-column ul').trigger('transitionend');
   expect(wrapper.emitted('change')[0][1]).toEqual(['A2', 'B3', 'C5']);
 
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(['A2', 'B3', 'C5']);
 });
 
@@ -58,11 +58,11 @@ test('setColumnValue of cascade columns', () => {
   });
 
   wrapper.vm.setColumnValue(0, 'A2');
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B3', 'C5']);
 
   wrapper.vm.setColumnValue(1, 'B4');
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(['A2', 'B4', 'C7']);
 });
 
@@ -75,7 +75,7 @@ test('setValues of cascade columns', () => {
   });
 
   wrapper.vm.setValues(['A2', 'B4', 'C8']);
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B4', 'C8']);
 });
 
@@ -88,11 +88,11 @@ test('setColumnIndex of cascade columns', () => {
   });
 
   wrapper.vm.setColumnIndex(0, 1);
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B3', 'C5']);
 
   wrapper.vm.setColumnIndex(1, 1);
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[1][0]).toEqual(['A2', 'B4', 'C7']);
 });
 
@@ -105,6 +105,6 @@ test('setIndexes of cascade columns', () => {
   });
 
   wrapper.vm.setIndexes([1, 0, 1]);
-  wrapper.find('.zv-picker__confirm').trigger('click');
+  wrapper.find('.ca2-picker__confirm').trigger('click');
   expect(wrapper.emitted('confirm')[0][0]).toEqual(['A2', 'B3', 'C6']);
 });

@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-dialog {
+.ca2-dialog {
   position: fixed;
   top: 45%;
   left: 50%;
@@ -64,13 +64,13 @@
     &--buttons {
       display: flex;
 
-      .zv-button {
+      .ca2-button {
         flex: 1;
       }
     }
   }
 
-  .zv-button {
+  .ca2-button {
     border: 0;
   }
 

@@ -14,7 +14,7 @@ Vue.use(Sku);
 ### 基础用法
 
 ```html
-<zv-sku
+<ca2-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -50,7 +50,7 @@ export default {
 ### 自定义步进器
 
 ```html
-<zv-sku
+<ca2-sku
   v-model="show"
   :sku="sku"
   :goods="goods"
@@ -67,7 +67,7 @@ export default {
 ### 高级用法
 
 ```html
-<zv-sku
+<ca2-sku
   v-model="show"
   stepper-title="我要买"
   :sku="sku"
@@ -84,34 +84,34 @@ export default {
 >
   <!-- 自定义 sku-header-price -->
   <template #sku-header-price="props">
-    <div class="zv-sku__goods-price">
-      <span class="zv-sku__price-symbol">￥</span><span class="zv-sku__price-num">{{ props.price }}</span>
+    <div class="ca2-sku__goods-price">
+      <span class="ca2-sku__price-symbol">￥</span><span class="ca2-sku__price-num">{{ props.price }}</span>
     </div>
   </template>
 
   <!-- 自定义 sku actions -->
   <template #sku-actions="props">
-    <div class="zv-sku-actions">
-      <zv-button
+    <div class="ca2-sku-actions">
+      <ca2-button
         square
         size="large"
         type="warning"
         @click="onPointClicked"
       >
         积分兑换
-      </zv-button>
+      </ca2-button>
       <!-- 直接触发 sku 内部事件，通过内部事件执行 onBuyClicked 回调 -->
-      <zv-button
+      <ca2-button
         square
         size="large"
         type="danger"
         @click="props.skuEventBus.$emit('sku:buy')"
       >
         买买买
-      </zv-button>
+      </ca2-button>
     </div>
   </template>
-</zv-sku>
+</ca2-sku>
 ```
 
 ## API

@@ -16,9 +16,9 @@ Vue.use(Field);
 The value of field is bound with v-model.
 
 ```html
-<zv-cell-group>
-  <zv-field v-model="value" placeholder="Text" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-field v-model="value" placeholder="Text" />
+</ca2-cell-group>
 ```
 
 ```js
@@ -36,11 +36,11 @@ export default {
 Use `type` prop to custom different type fields.
 
 ```html
-<zv-field v-model="text" label="Text" />
-<zv-field v-model="tel" type="tel" label="Phone" />
-<zv-field v-model="digit" type="digit" label="Digit" />
-<zv-field v-model="number" type="number" label="Number" />
-<zv-field v-model="password" type="password" label="Password" />
+<ca2-field v-model="text" label="Text" />
+<ca2-field v-model="tel" type="tel" label="Phone" />
+<ca2-field v-model="digit" type="digit" label="Digit" />
+<ca2-field v-model="number" type="number" label="Number" />
+<ca2-field v-model="password" type="password" label="Password" />
 ```
 
 ```js
@@ -60,31 +60,31 @@ export default {
 ### Disabled
 
 ```html
-<zv-cell-group>
-  <zv-field label="Text" value="Input Readonly" readonly />
-  <zv-field label="Text" value="Input Disabled" disabled />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-field label="Text" value="Input Readonly" readonly />
+  <ca2-field label="Text" value="Input Disabled" disabled />
+</ca2-cell-group>
 ```
 
 ### Show Icon
 
 ```html
-<zv-cell-group>
-  <zv-field
+<ca2-cell-group>
+  <ca2-field
     v-model="value1"
     label="Text"
     left-icon="smile-o"
     right-icon="warning-o"
     placeholder="Show Icon"
   />
-  <zv-field
+  <ca2-field
     v-model="value2"
     clearable
     label="Text"
     left-icon="music-o"
     placeholder="Show Clear Icon"
   />
-</zv-cell-group>
+</ca2-cell-group>
 ```
 
 ```js
@@ -103,22 +103,22 @@ export default {
 Use `error` or `error-message` to show error info
 
 ```html
-<zv-cell-group>
-  <zv-field
+<ca2-cell-group>
+  <ca2-field
     v-model="username"
     error
     required
     label="Username"
     placeholder="Username"
   />
-  <zv-field
+  <ca2-field
     v-model="phone"
     required
     label="Phone"
     placeholder="Phone"
     error-message="Invalid phone"
   />
-</zv-cell-group>
+</ca2-cell-group>
 ```
 
 ### Insert Button
@@ -126,7 +126,7 @@ Use `error` or `error-message` to show error info
 Use button slot to insert button
 
 ```html
-<zv-field
+<ca2-field
   v-model="sms"
   center
   clearable
@@ -134,9 +134,9 @@ Use button slot to insert button
   placeholder="SMS"
 >
   <template #button>
-    <zv-button size="small" type="primary">Send SMS</zv-button>
+    <ca2-button size="small" type="primary">Send SMS</ca2-button>
   </template>
-</zv-field>
+</ca2-field>
 ```
 
 ### Format Value
@@ -144,7 +144,7 @@ Use button slot to insert button
 Use `formatter` prop to format the input value
 
 ```html
-<zv-field
+<ca2-field
   v-model="value"
   label="Text"
   :formatter="formatter"
@@ -172,7 +172,7 @@ export default {
 Textarea Field can be auto resize when has `autosize` prop
 
 ```html
-<zv-field
+<ca2-field
   v-model="message"
   label="Message"
   type="textarea"
@@ -185,7 +185,7 @@ Textarea Field can be auto resize when has `autosize` prop
 ### Show Word Limit
 
 ```html
-<zv-field
+<ca2-field
   v-model="message"
   rows="2"
   autosize
@@ -202,7 +202,7 @@ Textarea Field can be auto resize when has `autosize` prop
 Use `input-align` prop to align the input value
 
 ```html
-<zv-field
+<ca2-field
   v-model="value"
   :label="Text"
   :placeholder="Input Align Right"
@@ -244,7 +244,7 @@ Use `input-align` prop to align the input value
 | autosize | Textarea auto resize，can accpet an object,<br>e.g. { maxHeight: 100, minHeight: 50 } | *boolean \| object* | `false` |
 | left-icon | Left side icon name | *string* | - |
 | right-icon | Right side icon name | *string* | - |
-| icon-prefix `v2.5.3` | Icon className prefix | *string* | `zv-icon` |
+| icon-prefix `v2.5.3` | Icon className prefix | *string* | `ca2-icon` |
 | rules `v2.5.0` | Form validation rules | *Rule[]* | - |
 
 ### Events

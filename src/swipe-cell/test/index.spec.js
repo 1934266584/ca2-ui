@@ -63,10 +63,10 @@ test('on-close prop', () => {
   wrapper.trigger('click');
   expect(position).toEqual('cell');
 
-  wrapper.find('.zv-swipe-cell__left').trigger('click');
+  wrapper.find('.ca2-swipe-cell__left').trigger('click');
   expect(position).toEqual('left');
 
-  wrapper.find('.zv-swipe-cell__right').trigger('click');
+  wrapper.find('.ca2-swipe-cell__right').trigger('click');
   expect(position).toEqual('right');
 
   instance.close();
@@ -100,10 +100,10 @@ test('before-close prop', () => {
   wrapper.trigger('click');
   expect(position).toEqual('cell');
 
-  wrapper.find('.zv-swipe-cell__left').trigger('click');
+  wrapper.find('.ca2-swipe-cell__left').trigger('click');
   expect(position).toEqual('left');
 
-  wrapper.find('.zv-swipe-cell__right').trigger('click');
+  wrapper.find('.ca2-swipe-cell__right').trigger('click');
   expect(position).toEqual('right');
 
   instance.close();

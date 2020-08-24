@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Item } from '@zvalley/zv-ui';
+import { Item } from 'ca2-ui';
 
 Vue.use(Item);
 ```
@@ -14,7 +14,7 @@ Vue.use(Item);
 ### 基础用法和自动换行
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
 />
 ```
@@ -36,14 +36,14 @@ export default {
 ### 设置插槽
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObjectSlot"
   @slot-event="slotEvent"
 >
   <div>
     插槽
   </div>
-</zv-item>
+</ca2-item>
 ```
 
 ```js
@@ -68,7 +68,7 @@ export default {
 ### 设置显示行数
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
   :line="2"
 />
@@ -91,7 +91,7 @@ export default {
 ### 设置分栏显示
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
   :is-two-col="true"
 />
@@ -114,7 +114,7 @@ export default {
 ### 设置分栏及显示行数
 
 ```html
-<zv-item
+<ca2-item
   :item-object="itemObject"
   :line="2"
   :is-two-col="true"

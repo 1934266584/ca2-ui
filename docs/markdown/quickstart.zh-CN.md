@@ -2,7 +2,7 @@
 
 ### 脚手架
 
-在新项目中使用 ZvUI 时，推荐使用 Vue 官方提供的脚手架 [Vue Cli](https://cli.vuejs.org/zh/) 创建项目
+在新项目中使用 Ca2UI 时，推荐使用 Vue 官方提供的脚手架 [Vue Cli](https://cli.vuejs.org/zh/) 创建项目
 
 ```bash
 # 安装 Vue Cli
@@ -17,18 +17,18 @@ vue ui
 
 ![](https://img.yzcdn.cn/vant/vue-cli-demo-201809032000.png)
 
-在图形化界面中，点击`依赖` -> `安装依赖`，然后将 `@zvalley/zv-ui` 添加到依赖中即可。
+在图形化界面中，点击`依赖` -> `安装依赖`，然后将 `ca2-ui` 添加到依赖中即可。
 
 ### 通过 npm 安装
 
-在现有项目中使用 ZvUI 时，可以通过`npm`或`yarn`安装
+在现有项目中使用 Ca2UI 时，可以通过`npm`或`yarn`安装
 
 ```bash
 # 通过 npm 安装
-npm i @zvalley/zv-ui -S
+npm i ca2-ui -S
 
 # 通过 yarn 安装
-yarn add @zvalley/zv-ui
+yarn add ca2-ui
 ```
 
 ### 示例工程(参考Vant)
@@ -59,7 +59,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "@zvalley/zv-ui",
+      "libraryName": "ca2-ui",
       "libraryDirectory": "es",
       "style": true
     }]
@@ -70,18 +70,18 @@ npm i babel-plugin-import -D
 module.exports = {
   plugins: [
     ['import', {
-      libraryName: '@zvalley/zv-ui',
+      libraryName: 'ca2-ui',
       libraryDirectory: 'es',
       style: true
-    }, 'zv-ui']
+    }, 'ca2-ui']
   ]
 };
 ```
 
 ```js
-// 接着你可以在代码中直接引入 ZvUI 组件
+// 接着你可以在代码中直接引入 Ca2UI 组件
 // 插件会自动将代码转化为方式二中的按需引入形式
-import { Button } from '@zvalley/zv-ui';
+import { Button } from 'ca2-ui';
 ```
 
 > 如果你在使用 TypeScript，可以使用 [ts-import-plugin](https://github.com/Brooooooklyn/ts-import-plugin) 实现按需引入
@@ -91,20 +91,20 @@ import { Button } from '@zvalley/zv-ui';
 在不使用插件的情况下，可以手动引入需要的组件
 
 ```js
-import Button from '@zvalley/zv-ui/lib/button';
-import '@zvalley/zv-ui/lib/button/style';
+import Button from 'ca2-ui/lib/button';
+import 'ca2-ui/lib/button/style';
 ```
 
 ### 方式三. 导入所有组件
 
-ZvUI 支持一次性导入所有组件，引入所有组件会增加代码包体积，因此不推荐这种做法
+Ca2UI 支持一次性导入所有组件，引入所有组件会增加代码包体积，因此不推荐这种做法
 
 ```js
 import Vue from 'vue';
-import ZvUI from '@zvalley/zv-ui';
-import '@zvalley/zv-ui/lib/index.css';
+import Ca2UI from 'ca2-ui';
+import 'ca2-ui/lib/index.css';
 
-Vue.use(ZvUI);
+Vue.use(Ca2UI);
 ```
 
 > 配置按需引入后，将不允许直接导入所有组件
@@ -125,7 +125,7 @@ Vue.use(ZvUI);
 // 在 #app 标签下渲染一个按钮组件
 new Vue({
   el: '#app',
-  template: `<zv-button>按钮</zv-button>`
+  template: `<ca2-button>按钮</ca2-button>`
 });
 
 // 调用函数组件，弹出一个 Toast
@@ -137,7 +137,7 @@ vant.Toast('提示');
 
 ### Rem 适配
 
-ZvUI 中的样式默认使用`px`作为单位，如果需要使用`rem`单位，推荐使用以下两个工具：
+Ca2UI 中的样式默认使用`px`作为单位，如果需要使用`rem`单位，推荐使用以下两个工具：
 
 - [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem) 是一款 postcss 插件，用于将单位转化为 rem
 - [lib-flexible](https://github.com/amfe/lib-flexible) 用于设置 rem 基准值
@@ -164,9 +164,9 @@ module.exports = {
 
 ### 在桌面端使用
 
-ZvUI 是一个面向移动端的组件库，因此默认只适配了移动端设备，这意味着组件只监听了移动端的`touch`事件，没有监听桌面端的`mouse`事件。
+Ca2UI 是一个面向移动端的组件库，因此默认只适配了移动端设备，这意味着组件只监听了移动端的`touch`事件，没有监听桌面端的`mouse`事件。
 
-如果你需要在桌面端使用 ZvUI，可以引入我们提供的 [@vant/touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator)，这个库会在桌面端自动将`mouse`事件转换成对应的`touch`事件，使得组件能够在桌面端使用。
+如果你需要在桌面端使用 Ca2UI，可以引入我们提供的 [@vant/touch-emulator](https://github.com/youzan/vant/tree/dev/packages/vant-touch-emulator)，这个库会在桌面端自动将`mouse`事件转换成对应的`touch`事件，使得组件能够在桌面端使用。
 
 ```bash
 # 安装模块
@@ -180,27 +180,27 @@ import '@vant/touch-emulator';
 
 ### 底部安全区适配
 
-iPhone X 等机型底部存在底部指示条，指示条的操作区域与页面底部存在重合，容易导致用户误操作，因此我们需要针对这些机型进行底部安全区适配。ZvUI 中部分组件提供了`safe-area-inset-bottom`属性，设置该属性后，即可在对应的机型上开启适配，如下示例：
+iPhone X 等机型底部存在底部指示条，指示条的操作区域与页面底部存在重合，容易导致用户误操作，因此我们需要针对这些机型进行底部安全区适配。Ca2UI 中部分组件提供了`safe-area-inset-bottom`属性，设置该属性后，即可在对应的机型上开启适配，如下示例：
 
 ```html
 <!-- 在 head 标签中添加 meta 标签，并设置 viewport-fit=cover 值 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 
 <!-- 开启 safe-area-inset-bottom 属性 -->
-<zv-number-keyboard safe-area-inset-bottom />
+<ca2-number-keyboard safe-area-inset-bottom />
 ```
 
 <img src="https://b.yzcdn.cn/vant/safearea.png">
 
 ### 组件实例方法
 
-ZvUI 中的许多组件提供了实例方法，调用实例方法时，我们需要通过 [ref](https://cn.vuejs.org/v2/api/#ref) 来注册组件引用信息，引用信息将会注册在父组件的`$refs`对象上。注册完成后，我们可以通过`this.$refs.xxx`访问到对应的组件实例，并调用上面的实例方法。
+Ca2UI 中的许多组件提供了实例方法，调用实例方法时，我们需要通过 [ref](https://cn.vuejs.org/v2/api/#ref) 来注册组件引用信息，引用信息将会注册在父组件的`$refs`对象上。注册完成后，我们可以通过`this.$refs.xxx`访问到对应的组件实例，并调用上面的实例方法。
 
 ```html
 <!-- 将该组件绑定到 this.$refs.checkbox 上 -->
-<zv-checkbox v-model="checked" ref="checkbox">
+<ca2-checkbox v-model="checked" ref="checkbox">
   复选框
-</zv-checkbox>
+</ca2-checkbox>
 ```
 
 ```js
@@ -221,22 +221,22 @@ export default {
 
 ### 在 HTML 中无法正确渲染组件？
 
-在 HTML 中使用 ZvUI 组件时，你可能会碰到部分示例代码无法正确渲染的情况，比如下面的用法：
+在 HTML 中使用 Ca2UI 组件时，你可能会碰到部分示例代码无法正确渲染的情况，比如下面的用法：
 
 ```html
-<zv-cell-group>
-  <zv-cell title="单元格" value="内容" />
-  <zv-cell title="单元格" value="内容" />
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell title="单元格" value="内容" />
+  <ca2-cell title="单元格" value="内容" />
+</ca2-cell-group>
 ```
 
-这是因为 HTML 并不支持自闭合的自定义元素，也就是说 `<zv-cell />` 这样的语法是不被识别的，使用完整的闭合标签可以避免这个问题：
+这是因为 HTML 并不支持自闭合的自定义元素，也就是说 `<ca2-cell />` 这样的语法是不被识别的，使用完整的闭合标签可以避免这个问题：
 
 ```html
-<zv-cell-group>
-  <zv-cell title="单元格" value="内容"></zv-cell>
-  <zv-cell title="单元格" value="内容"></zv-cell>
-</zv-cell-group>
+<ca2-cell-group>
+  <ca2-cell title="单元格" value="内容"></ca2-cell>
+  <ca2-cell title="单元格" value="内容"></ca2-cell>
+</ca2-cell-group>
 ```
 
 在单文件组件、字符串模板和 JSX 中可以使用自闭合的自定义元素，因此不会出现这个问题。

@@ -11,7 +11,7 @@ test('change event', () => {
     },
   });
 
-  wrapper.find('.zv-switch').trigger('click');
+  wrapper.find('.ca2-switch').trigger('click');
 
   expect(onChange).toHaveBeenCalledWith(true);
 });

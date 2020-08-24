@@ -11,6 +11,6 @@ test('focus event', () => {
     },
   });
 
-  wrapper.find('.zv-password-input__security').trigger('touchstart');
+  wrapper.find('.ca2-password-input__security').trigger('touchstart');
   expect(focus).toHaveBeenCalledTimes(1);
 });

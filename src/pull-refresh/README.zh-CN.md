@@ -16,13 +16,13 @@ Vue.use(PullRefresh);
 下拉刷新时会触发 `refresh` 事件，在事件的回调函数中可以进行同步或异步操作，操作完成后将 `v-model` 设置为 `false`，表示加载完成。
 
 ```html
-<zv-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<ca2-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>刷新次数: {{ count }}</p>
-</zv-pull-refresh>
+</ca2-pull-refresh>
 ```
 
 ```js
-import { Toast } from 'zvt';
+import { Toast } from 'ca2t';
 
 export default {
   data() {
@@ -48,13 +48,13 @@ export default {
 通过`success-text`可以设置刷新成功后的顶部提示文案
 
 ```html
-<zv-pull-refresh
+<ca2-pull-refresh
   v-model="isLoading"
   success-text="刷新成功"
   @refresh="onRefresh"
 >
   <p>刷新次数: {{ count }}</p>
-</zv-pull-refresh>
+</ca2-pull-refresh>
 ```
 
 ### 自定义提示
@@ -62,27 +62,27 @@ export default {
 通过插槽可以自定义下拉刷新过程中的提示内容
 
 ```html
-<zv-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<ca2-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <!-- 下拉提示，通过 scale 实现一个缩放效果 -->
   <template #pulling="props">
     <img
       class="doge"
-      src="https://img.yzcdn.cn/zvt/doge.png"
+      src="https://img.yzcdn.cn/ca2t/doge.png"
       :style="{ transform: `scale(${props.distance / 80})` }"
     />
   </template>
 
   <!-- 释放提示 -->
   <template #loosing>
-    <img class="doge" src="https://img.yzcdn.cn/zvt/doge.png" />
+    <img class="doge" src="https://img.yzcdn.cn/ca2t/doge.png" />
   </template>
 
   <!-- 加载提示 -->
   <template #loading>
-    <img class="doge" src="https://img.yzcdn.cn/zvt/doge-fire.jpg" />
+    <img class="doge" src="https://img.yzcdn.cn/ca2t/doge-fire.jpg" />
   </template>
   <p>刷新次数: {{ count }}</p>
-</zv-pull-refresh>
+</ca2-pull-refresh>
 
 <style>
   .doge {

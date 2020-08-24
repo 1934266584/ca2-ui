@@ -16,13 +16,13 @@ Vue.use(PullRefresh);
 The `refresh` event will be triggered when pull refresh, you should set `v-model` to `false` to reset loading status after process refresh event.
 
 ```html
-<zv-pull-refresh v-model="isLoading" @refresh="onRefresh">
+<ca2-pull-refresh v-model="isLoading" @refresh="onRefresh">
   <p>Refresh Count: {{ count }}</p>
-</zv-pull-refresh>
+</ca2-pull-refresh>
 ```
 
 ```js
-import { Toast } from 'zvt';
+import { Toast } from 'ca2t';
 
 export default {
   data() {
@@ -48,13 +48,13 @@ export default {
 Use `success-text` to set the success prompt after the refresh is successful
 
 ```html
-<zv-pull-refresh
+<ca2-pull-refresh
   v-model="isLoading"
   success-text="Refresh success"
   @refresh="onRefresh"
 >
   <p>Refresh Count: {{ count }}</p>
-</zv-pull-refresh>
+</ca2-pull-refresh>
 ```
 
 ### Custom Tips
@@ -62,24 +62,24 @@ Use `success-text` to set the success prompt after the refresh is successful
 Use slots to custom tips
 
 ```html
-<zv-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
+<ca2-pull-refresh v-model="isLoading" :head-height="80" @refresh="onRefresh">
   <template #pulling="props">
     <img
       class="doge"
-      src="https://img.yzcdn.cn/zvt/doge.png"
+      src="https://img.yzcdn.cn/ca2t/doge.png"
       :style="{ transform: `scale(${props.distance / 80})` }"
     />
   </template>
 
   <template #loosing>
-    <img class="doge" src="https://img.yzcdn.cn/zvt/doge.png" />
+    <img class="doge" src="https://img.yzcdn.cn/ca2t/doge.png" />
   </template>
 
   <template #loading>
-    <img class="doge" src="https://img.yzcdn.cn/zvt/doge-fire.jpg" />
+    <img class="doge" src="https://img.yzcdn.cn/ca2t/doge-fire.jpg" />
   </template>
   <p>Refresh Count: {{ count }}</p>
-</zv-pull-refresh>
+</ca2-pull-refresh>
 
 <style>
   .doge {

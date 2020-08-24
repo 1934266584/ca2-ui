@@ -1,13 +1,13 @@
 <template>
   <demo-block :title="t('showIcon')">
-    <zv-field
+    <ca2-field
       v-model="icon1"
       :label="t('text')"
       left-icon="smile-o"
       right-icon="warning-o"
       :placeholder="t('showIcon')"
     />
-    <zv-field
+    <ca2-field
       v-model="icon2"
       clearable
       :label="t('text')"

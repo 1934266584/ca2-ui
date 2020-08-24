@@ -14,7 +14,7 @@ Vue.use(NavBar);
 ### 基础用法
 
 ```html
-<zv-nav-bar
+<ca2-nav-bar
   title="标题"
   left-text="返回"
   right-text="按钮"
@@ -44,11 +44,11 @@ export default {
 通过插槽自定义导航栏两侧的内容
 
 ```html
-<zv-nav-bar title="标题" left-text="返回" left-arrow>
+<ca2-nav-bar title="标题" left-text="返回" left-arrow>
   <template #right>
-    <zv-icon name="search" size="18" />
+    <ca2-icon name="search" size="18" />
   </template>
-</zv-nav-bar>
+</ca2-nav-bar>
 ```
 
 ## API

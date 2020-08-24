@@ -14,7 +14,7 @@ Vue.use(Slider);
 ### Basic Usage
 
 ```html
-<zv-slider v-model="value" @change="onChange" />
+<ca2-slider v-model="value" @change="onChange" />
 ```
 
 ```js
@@ -37,25 +37,25 @@ export default {
 ### Range
 
 ```html
-<zv-slider v-model="value" :min="-50" :max="50" />
+<ca2-slider v-model="value" :min="-50" :max="50" />
 ```
 
 ### Disabled
 
 ```html
-<zv-slider v-model="value" disabled />
+<ca2-slider v-model="value" disabled />
 ```
 
 ### Step size
 
 ```html
-<zv-slider v-model="value" :step="10" />
+<ca2-slider v-model="value" :step="10" />
 ```
 
 ### Custom style
 
 ```html
-<zv-slider
+<ca2-slider
   v-model="value"
   bar-height="4px"
   active-color="#ee0a24"
@@ -65,13 +65,13 @@ export default {
 ### Custom button
 
 ```html
-<zv-slider v-model="value" active-color="#ee0a24">
+<ca2-slider v-model="value" active-color="#ee0a24">
   <template #button>
     <div class="custom-button">
       {{ value }}
     </div>
   </template>
-</zv-slider>
+</ca2-slider>
 
 <style>
 .custom-button {
@@ -90,7 +90,7 @@ export default {
 
 ```html
 <div :style="{ height: '100px' }">
-  <zv-slider v-model="value" vertical />
+  <ca2-slider v-model="value" vertical />
 </div>
 ```
 

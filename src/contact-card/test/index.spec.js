@@ -64,7 +64,7 @@ describe('ContactList', () => {
       },
     });
 
-    wrapper.find('.zv-radio__icon').trigger('click');
+    wrapper.find('.ca2-radio__icon').trigger('click');
 
     expect(onSelect).toHaveBeenCalled();
   });
@@ -78,8 +78,8 @@ describe('ContactEdit', () => {
       },
     });
 
-    const button = wrapper.find('.zv-button');
-    const field = wrapper.findAll('.zv-field__control');
+    const button = wrapper.find('.ca2-button');
+    const field = wrapper.findAll('.ca2-field__control');
     const { errorInfo, data } = wrapper.vm;
     return {
       wrapper,
@@ -131,11 +131,11 @@ describe('ContactEdit', () => {
       },
     });
 
-    const deleteButton = wrapper.findAll('.zv-button').at(1);
+    const deleteButton = wrapper.findAll('.ca2-button').at(1);
     deleteButton.trigger('click');
 
     await later();
-    document.querySelector('.zv-dialog__confirm').click();
+    document.querySelector('.ca2-dialog__confirm').click();
 
     await later();
     expect(wrapper.emitted('delete')).toBeTruthy();

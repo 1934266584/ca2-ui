@@ -20,7 +20,7 @@ Vue.use(Area);
 To initailize `Area` component, `area-list` property is required. Data structure will be introduced later. 
 
 ```html
-<zv-area :area-list="areaList" />
+<ca2-area :area-list="areaList" />
 ```
 
 ### Initial Value
@@ -28,7 +28,7 @@ To initailize `Area` component, `area-list` property is required. Data structure
 To have a selected value，simply pass the `code` of target area to `value` property.
 
 ```html
-<zv-area :area-list="areaList" value="110101" />
+<ca2-area :area-list="areaList" value="110101" />
 ```
 
 ### Columns Number
@@ -37,7 +37,7 @@ To have a selected value，simply pass the `code` of target area to `value` prop
 Set `columns-num` with 2, you'll have a 2 level picker.
 
 ```html
-<zv-area :area-list="areaList" :columns-num="2" title="Title" />
+<ca2-area :area-list="areaList" :columns-num="2" title="Title" />
 ```
 
 ### Columns Placeholder
@@ -45,7 +45,7 @@ Set `columns-num` with 2, you'll have a 2 level picker.
 `columns-placeholder` property is used to config placeholder of columns.
 
 ```html
-<zv-area
+<ca2-area
   :area-list="areaList"
   :columns-placeholder="['Choose', 'Choose', 'Choose']"
   title="Title"

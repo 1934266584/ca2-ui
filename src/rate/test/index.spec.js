@@ -24,7 +24,7 @@ test('change event', () => {
       change: onChange,
     },
   });
-  const item4 = wrapper.findAll('.zv-rate__icon').at(3);
+  const item4 = wrapper.findAll('.ca2-rate__icon').at(3);
 
   item4.trigger('click');
   item4.trigger('click');
@@ -48,7 +48,7 @@ test('allow half', () => {
       change: onChange,
     },
   });
-  const item4 = wrapper.findAll('.zv-rate__icon--half').at(3);
+  const item4 = wrapper.findAll('.ca2-rate__icon--half').at(3);
 
   item4.trigger('click');
   expect(onInput).toHaveBeenCalledWith(3.5);
@@ -68,7 +68,7 @@ test('disabled', () => {
       change: onChange,
     },
   });
-  const item4 = wrapper.findAll('.zv-rate__item').at(3);
+  const item4 = wrapper.findAll('.ca2-rate__item').at(3);
 
   triggerDrag(wrapper, 100, 0);
   item4.trigger('click');
@@ -85,7 +85,7 @@ test('touchmove to select item', () => {
     },
   });
 
-  const icons = wrapper.findAll('.zv-rate__item');
+  const icons = wrapper.findAll('.ca2-rate__item');
 
   mockGetBoundingClientRect(icons);
   triggerDrag(wrapper, 100, 0);
@@ -107,7 +107,7 @@ test('touchmove to select half item', () => {
     },
   });
 
-  const icons = wrapper.findAll('.zv-rate__item');
+  const icons = wrapper.findAll('.ca2-rate__item');
 
   mockGetBoundingClientRect(icons);
   triggerDrag(wrapper, 100, 0);

@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-radio {
+.ca2-radio {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -26,7 +26,7 @@
     line-height: 1em;
     cursor: pointer;
 
-    .zv-icon {
+    .ca2-icon {
       display: block;
       box-sizing: border-box;
       width: 1.25em;
@@ -41,13 +41,13 @@
     }
 
     &--round {
-      .zv-icon {
+      .ca2-icon {
         border-radius: 100%;
       }
     }
 
     &--checked {
-      .zv-icon {
+      .ca2-icon {
         color: $white;
         background-color: $radio-checked-icon-color;
         border-color: $radio-checked-icon-color;
@@ -57,14 +57,14 @@
     &--disabled {
       cursor: not-allowed;
 
-      .zv-icon {
+      .ca2-icon {
         background-color: $radio-disabled-background-color;
         border-color: $radio-disabled-icon-color;
       }
     }
 
     &--disabled#{&}--checked {
-      .zv-icon {
+      .ca2-icon {
         color: $radio-disabled-icon-color;
       }
     }

@@ -19,12 +19,12 @@ test('resetSelectedSku method', () => {
     },
   });
 
-  wrapper.find('.zv-button--danger').trigger('click');
+  wrapper.find('.ca2-button--danger').trigger('click');
   expect(wrapper.emitted('buy-clicked').length).toEqual(1);
 
   wrapper.setProps({ initialSku: {} });
   wrapper.vm.resetSelectedSku();
 
-  wrapper.find('.zv-button--danger').trigger('click');
+  wrapper.find('.ca2-button--danger').trigger('click');
   expect(wrapper.emitted('buy-clicked').length).toEqual(1);
 });

@@ -18,7 +18,7 @@ Vue.use(Picker);
 ### Basic Usage
 
 ```html
-<zv-picker :columns="columns" @change="onChange" />
+<ca2-picker :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -41,13 +41,13 @@ export default {
 ### Default Index
 
 ```html
-<zv-picker :columns="columns" :default-index="2" @change="onChange" />
+<ca2-picker :columns="columns" :default-index="2" @change="onChange" />
 ```
 
 ### Show Toolbar
 
 ```html
-<zv-picker
+<ca2-picker
   show-toolbar
   title="Title"
   :columns="columns"
@@ -79,7 +79,7 @@ export default {
 ### Multiple Columns
 
 ```html
-<zv-picker show-toolbar title="Title" :columns="columns" />
+<ca2-picker show-toolbar title="Title" :columns="columns" />
 ```
 
 ```js
@@ -104,7 +104,7 @@ export default {
 ### Cascade
 
 ```html
-<zv-picker show-toolbar title="Title" :columns="columns" />
+<ca2-picker show-toolbar title="Title" :columns="columns" />
 ```
 
 ```js
@@ -147,7 +147,7 @@ export default {
 ### Disable option
 
 ```html
-<zv-picker :columns="columns" />
+<ca2-picker :columns="columns" />
 ```
 
 ```js
@@ -167,7 +167,7 @@ export default {
 ### Set Column Values
 
 ```html
-<zv-picker :columns="columns" @change="onChange" />
+<ca2-picker :columns="columns" @change="onChange" />
 ```
 
 ```js
@@ -195,7 +195,7 @@ export default {
 When Picker columns data is acquired asynchronously, use `loading` prop to show loading prompt
 
 ```html
-<zv-picker :columns="columns" :loading="loading" />
+<ca2-picker :columns="columns" :loading="loading" />
 ```
 
 ```js
@@ -218,7 +218,7 @@ export default {
 ### With Popup
 
 ```html
-<zv-field
+<ca2-field
   readonly
   clickable
   label="City"
@@ -226,14 +226,14 @@ export default {
   placeholder="Choose City"
   @click="showPicker = true"
 />
-<zv-popup v-model="showPicker" position="bottom">
-  <zv-picker
+<ca2-popup v-model="showPicker" position="bottom">
+  <ca2-picker
     show-toolbar
     :columns="columns"
     @cancel="showPicker = false"
     @confirm="onConfirm"
   />
-</zv-popup>
+</ca2-popup>
 ```
 
 ```js

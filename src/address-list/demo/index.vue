@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-address-list
+      <ca2-address-list
         v-model="chosenAddressId"
         :list="t('list')"
         :disabled-list="t('disabledList')"

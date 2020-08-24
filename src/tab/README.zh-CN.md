@@ -17,12 +17,12 @@ Vue.use(Tabs);
 通过`v-model`绑定当前激活标签对应的索引值，默认情况下启用第一个标签
 
 ```html
-<zv-tabs v-model="active">
-  <zv-tab title="标签 1">内容 1</zv-tab>
-  <zv-tab title="标签 2">内容 2</zv-tab>
-  <zv-tab title="标签 3">内容 3</zv-tab>
-  <zv-tab title="标签 4">内容 4</zv-tab>
-</zv-tabs>
+<ca2-tabs v-model="active">
+  <ca2-tab title="标签 1">内容 1</ca2-tab>
+  <ca2-tab title="标签 2">内容 2</ca2-tab>
+  <ca2-tab title="标签 3">内容 3</ca2-tab>
+  <ca2-tab title="标签 4">内容 4</ca2-tab>
+</ca2-tabs>
 ```
 
 ```js
@@ -40,11 +40,11 @@ export default {
 在标签指定`name`属性的情况下，`v-model`的值为当前标签的`name`（此时无法通过索引值来匹配标签）
 
 ```html
-<zv-tabs v-model="activeName">
-  <zv-tab title="标签 1" name="a">内容 1</zv-tab>
-  <zv-tab title="标签 2" name="b">内容 2</zv-tab>
-  <zv-tab title="标签 3" name="c">内容 3</zv-tab>
-</zv-tabs>
+<ca2-tabs v-model="activeName">
+  <ca2-tab title="标签 1" name="a">内容 1</ca2-tab>
+  <ca2-tab title="标签 2" name="b">内容 2</ca2-tab>
+  <ca2-tab title="标签 3" name="c">内容 3</ca2-tab>
+</ca2-tabs>
 ```
 
 ```js
@@ -62,23 +62,23 @@ export default {
 标签数量超过 4 个时，标签栏可以在水平方向上滚动，切换时会自动将当前标签居中
 
 ```html
-<zv-tabs>
-  <zv-tab v-for="index in 8" :title="'标签 ' + index">
+<ca2-tabs>
+  <ca2-tab v-for="index in 8" :title="'标签 ' + index">
     内容 {{ index }}
-  </zv-tab>
-</zv-tabs>
+  </ca2-tab>
+</ca2-tabs>
 ```
 
 ### 禁用标签
 
-设置`disabled`属性即可禁用标签。如果需要监听禁用标签的点击事件，可以在`zv-tabs`上监听`disabled`事件
+设置`disabled`属性即可禁用标签。如果需要监听禁用标签的点击事件，可以在`ca2-tabs`上监听`disabled`事件
 
 ```html
-<zv-tabs @disabled="onClickDisabled">
-  <zv-tab title="标签 1">内容 1</zv-tab>
-  <zv-tab title="标签 2" disabled>内容 2</zv-tab>
-  <zv-tab title="标签 3">内容 3</zv-tab>
-</zv-tabs>
+<ca2-tabs @disabled="onClickDisabled">
+  <ca2-tab title="标签 1">内容 1</ca2-tab>
+  <ca2-tab title="标签 2" disabled>内容 2</ca2-tab>
+  <ca2-tab title="标签 3">内容 3</ca2-tab>
+</ca2-tabs>
 ```
 
 ```js
@@ -98,22 +98,22 @@ export default {
 `Tab`支持两种样式风格：`line`和`card`，默认为`line`样式，可以通过`type`属性修改样式风格
 
 ```html
-<zv-tabs type="card">
-  <zv-tab title="标签 1">内容 1</zv-tab>
-  <zv-tab title="标签 2">内容 2</zv-tab>
-  <zv-tab title="标签 3">内容 3</zv-tab>
-</zv-tabs>
+<ca2-tabs type="card">
+  <ca2-tab title="标签 1">内容 1</ca2-tab>
+  <ca2-tab title="标签 2">内容 2</ca2-tab>
+  <ca2-tab title="标签 3">内容 3</ca2-tab>
+</ca2-tabs>
 ```
 
 ### 点击事件
 
-可以在`zv-tabs`上绑定`click`事件，事件传参为标签对应的索引和标题
+可以在`ca2-tabs`上绑定`click`事件，事件传参为标签对应的索引和标题
 
 ```html
-<zv-tabs @click="onClick">
-  <zv-tab title="标签 1">内容 1</zv-tab>
-  <zv-tab title="标签 2">内容 2</zv-tab>
-</zv-tabs>
+<ca2-tabs @click="onClick">
+  <ca2-tab title="标签 1">内容 1</ca2-tab>
+  <ca2-tab title="标签 2">内容 2</ca2-tab>
+</ca2-tabs>
 ```
 
 ```js
@@ -133,11 +133,11 @@ export default {
 通过`sticky`属性可以开启粘性布局，粘性布局下，当 Tab 滚动到顶部时会自动吸顶
 
 ```html
-<zv-tabs v-model="active" sticky>
-  <zv-tab v-for="index in 4" :title="'选项 ' + index">
+<ca2-tabs v-model="active" sticky>
+  <ca2-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </zv-tab>
-</zv-tabs>
+  </ca2-tab>
+</ca2-tabs>
 ```
 
 ### 自定义标签
@@ -145,12 +145,12 @@ export default {
 通过 title 插槽可以自定义标签内容
 
 ```html
-<zv-tabs v-model="active">
-  <zv-tab v-for="index in 2" :key="index">
-    <template #title> <zv-icon name="more-o" />选项 </template>
+<ca2-tabs v-model="active">
+  <ca2-tab v-for="index in 2" :key="index">
+    <template #title> <ca2-icon name="more-o" />选项 </template>
     内容 {{ index }}
-  </zv-tab>
-</zv-tabs>
+  </ca2-tab>
+</ca2-tabs>
 ```
 
 ### 自定义标签
@@ -158,15 +158,15 @@ export default {
 通过 title 插槽可以自定义标签内容
 
 ```html
-<zv-tabs v-model="active">
-  <zv-tab v-for="index in 2" :key="index">
+<ca2-tabs v-model="active">
+  <ca2-tab v-for="index in 2" :key="index">
     <template #title>
       选项
       <div class="my-tag">{{parseInt((index + Math.random() * 100))}}</div>
     </template>
     内容 {{ index }}
-  </zv-tab>
-</zv-tabs>
+  </ca2-tab>
+</ca2-tabs>
 ```
 ```css
 .my-tag {
@@ -186,11 +186,11 @@ export default {
 通过`animated`属性可以开启切换标签内容时的转场动画
 
 ```html
-<zv-tabs v-model="active" animated>
-  <zv-tab v-for="index in 4" :title="'选项 ' + index">
+<ca2-tabs v-model="active" animated>
+  <ca2-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </zv-tab>
-</zv-tabs>
+  </ca2-tab>
+</ca2-tabs>
 ```
 
 ### 滑动切换
@@ -198,11 +198,11 @@ export default {
 通过`swipeable`属性可以开启滑动切换标签页
 
 ```html
-<zv-tabs v-model="active" swipeable>
-  <zv-tab v-for="index in 4" :title="'选项 ' + index">
+<ca2-tabs v-model="active" swipeable>
+  <ca2-tab v-for="index in 4" :title="'选项 ' + index">
     内容 {{ index }}
-  </zv-tab>
-</zv-tabs>
+  </ca2-tab>
+</ca2-tabs>
 ```
 
 ### 滚动导航
@@ -210,11 +210,11 @@ export default {
 通过`scrollspy`属性可以开启滚动导航模式，该模式下，内容将会平铺展示
 
 ```html
-<zv-tabs v-model="active" scrollspy sticky>
-  <zv-tab v-for="index in 8" :title="'选项 ' + index">
+<ca2-tabs v-model="active" scrollspy sticky>
+  <ca2-tab v-for="index in 8" :title="'选项 ' + index">
     内容 {{ index }}
-  </zv-tab>
-</zv-tabs>
+  </ca2-tab>
+</ca2-tabs>
 ```
 
 ## API

@@ -14,34 +14,34 @@ Vue.use(Loading);
 ### Type
 
 ```html
-<zv-loading />
-<zv-loading type="spinner" />
+<ca2-loading />
+<ca2-loading type="spinner" />
 ```
 
 ### Color
 
 ```html
-<zv-loading color="#1989fa" />
-<zv-loading type="spinner" color="#1989fa" />
+<ca2-loading color="#1989fa" />
+<ca2-loading type="spinner" color="#1989fa" />
 ```
 
 ### Size
 
 ```html
-<zv-loading size="24" />
-<zv-loading type="spinner" size="24px" />
+<ca2-loading size="24" />
+<ca2-loading type="spinner" size="24px" />
 ```
 
 ### Text
 
 ```html
-<zv-loading size="24px">Loading...</zv-loading>
+<ca2-loading size="24px">Loading...</ca2-loading>
 ```
 
 ### Vertical
 
 ```html
-<zv-loading size="24px" vertical>Loading...</zv-loading>
+<ca2-loading size="24px" vertical>Loading...</ca2-loading>
 ```
 
 ## API

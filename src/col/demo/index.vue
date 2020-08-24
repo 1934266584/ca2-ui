@@ -1,64 +1,64 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-row>
-        <zv-col span="8">span: 8</zv-col>
-        <zv-col span="8">span: 8</zv-col>
-        <zv-col span="8">span: 8</zv-col>
-      </zv-row>
+      <ca2-row>
+        <ca2-col span="8">span: 8</ca2-col>
+        <ca2-col span="8">span: 8</ca2-col>
+        <ca2-col span="8">span: 8</ca2-col>
+      </ca2-row>
 
-      <zv-row>
-        <zv-col span="4">span: 4</zv-col>
-        <zv-col span="10" offset="4">
+      <ca2-row>
+        <ca2-col span="4">span: 4</ca2-col>
+        <ca2-col span="10" offset="4">
           offset: 4, span: 10
-        </zv-col>
-      </zv-row>
+        </ca2-col>
+      </ca2-row>
 
-      <zv-row>
-        <zv-col offset="12" span="12">
+      <ca2-row>
+        <ca2-col offset="12" span="12">
           offset: 12, span: 12
-        </zv-col>
-      </zv-row>
+        </ca2-col>
+      </ca2-row>
     </demo-block>
 
     <demo-block :title="t('title2')">
-      <zv-row gutter="20">
-        <zv-col span="8">span: 8</zv-col>
-        <zv-col span="8">span: 8</zv-col>
-        <zv-col span="8">span: 8</zv-col>
-      </zv-row>
+      <ca2-row gutter="20">
+        <ca2-col span="8">span: 8</ca2-col>
+        <ca2-col span="8">span: 8</ca2-col>
+        <ca2-col span="8">span: 8</ca2-col>
+      </ca2-row>
     </demo-block>
 
     <demo-block v-if="!isWeapp" :title="t('title3')">
-      <zv-row type="flex">
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-      </zv-row>
+      <ca2-row type="flex">
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+      </ca2-row>
 
-      <zv-row type="flex" justify="center">
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-      </zv-row>
+      <ca2-row type="flex" justify="center">
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+      </ca2-row>
 
-      <zv-row type="flex" justify="end">
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-      </zv-row>
+      <ca2-row type="flex" justify="end">
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+      </ca2-row>
 
-      <zv-row type="flex" justify="space-between">
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-      </zv-row>
+      <ca2-row type="flex" justify="space-between">
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+      </ca2-row>
 
-      <zv-row type="flex" justify="space-around">
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-        <zv-col span="6">span: 6</zv-col>
-      </zv-row>
+      <ca2-row type="flex" justify="space-around">
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+        <ca2-col span="6">span: 6</ca2-col>
+      </ca2-row>
     </demo-block>
   </demo-section>
 </template>
@@ -92,7 +92,7 @@ export default {
     padding-left: 0;
   }
 
-  .zv-col {
+  .ca2-col {
     margin-bottom: 10px;
     color: $white;
     font-size: 13px;

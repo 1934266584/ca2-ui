@@ -14,7 +14,7 @@ Vue.use(SubmitBar);
 ### Basic Usage
 
 ```html
-<zv-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
+<ca2-submit-bar :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ### Disabled
@@ -22,7 +22,7 @@ Vue.use(SubmitBar);
 `submit` event will not triggerd when disabled.
 
 ```html
-<zv-submit-bar
+<ca2-submit-bar
   disabled
   :price="3050"
   button-text="Submit"
@@ -37,7 +37,7 @@ Vue.use(SubmitBar);
 `submit` event will not triggerd when loading.
 
 ```html
-<zv-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
+<ca2-submit-bar loading :price="3050" button-text="Submit" @submit="onSubmit" />
 ```
 
 ### Advanced Usage
@@ -45,12 +45,12 @@ Vue.use(SubmitBar);
 Use slot to add custom contents.
 
 ```html
-<zv-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
-  <zv-checkbox v-model="checked">Check</zv-checkbox>
+<ca2-submit-bar :price="3050" button-text="Submit" @submit="onSubmit">
+  <ca2-checkbox v-model="checked">Check</ca2-checkbox>
   <template #tip>
     Some tips, <span @click="onClickEditAddress">Link</span>
   </template>
-</zv-submit-bar>
+</ca2-submit-bar>
 ```
 
 ## API

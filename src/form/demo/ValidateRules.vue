@@ -1,21 +1,21 @@
 <template>
   <demo-block :title="t('title')">
-    <zv-form validate-first @sumbit="onSubmit" @failed="onFailed">
-      <zv-field
+    <ca2-form validate-first @sumbit="onSubmit" @failed="onFailed">
+      <ca2-field
         v-model="value1"
         name="pattern"
         :label="t('label')"
         :rules="[{ pattern, message: t('message') }]"
         :placeholder="t('pattern')"
       />
-      <zv-field
+      <ca2-field
         v-model="value2"
         name="validator"
         :label="t('label')"
         :rules="[{ validator, message: t('message') }]"
         :placeholder="t('validator')"
       />
-      <zv-field
+      <ca2-field
         v-model="value3"
         name="asyncValidator"
         :label="t('label')"
@@ -23,11 +23,11 @@
         :placeholder="t('asyncValidator')"
       />
       <div style="margin: 16px 16px 0;">
-        <zv-button round block type="info" native-type="submit">
+        <ca2-button round block type="info" native-type="submit">
           {{ t('submit') }}
-        </zv-button>
+        </ca2-button>
       </div>
-    </zv-form>
+    </ca2-form>
   </demo-block>
 </template>
 

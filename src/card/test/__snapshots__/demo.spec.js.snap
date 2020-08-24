@@ -3,83 +3,83 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="zv-card">
-      <div class="zv-card__header"><a class="zv-card__thumb">
-          <div class="zv-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/ipad.jpeg" class="zv-image__img" style="object-fit: cover;">
-            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+    <div class="ca2-card">
+      <div class="ca2-card__header"><a class="ca2-card__thumb">
+          <div class="ca2-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/ipad.jpeg" class="ca2-image__img" style="object-fit: cover;">
+            <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
                 <!----></i></div>
           </div>
         </a>
-        <div class="zv-card__content">
+        <div class="ca2-card__content">
           <div>
-            <div class="zv-card__title zv-multi-ellipsis--l2">商品名称</div>
-            <div class="zv-card__desc zv-ellipsis">描述信息</div>
+            <div class="ca2-card__title ca2-multi-ellipsis--l2">商品名称</div>
+            <div class="ca2-card__desc ca2-ellipsis">描述信息</div>
           </div>
-          <div class="zv-card__bottom">
-            <div class="zv-card__price">
-              <div><span class="zv-card__price-currency">¥</span><span class="zv-card__price-integer">2</span>.<span class="zv-card__price-decimal">00</span></div>
+          <div class="ca2-card__bottom">
+            <div class="ca2-card__price">
+              <div><span class="ca2-card__price-currency">¥</span><span class="ca2-card__price-integer">2</span>.<span class="ca2-card__price-decimal">00</span></div>
             </div>
-            <div class="zv-card__num">x2</div>
+            <div class="ca2-card__num">x2</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-card">
-      <div class="zv-card__header"><a class="zv-card__thumb">
-          <div class="zv-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/ipad.jpeg" class="zv-image__img" style="object-fit: cover;">
-            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+    <div class="ca2-card">
+      <div class="ca2-card__header"><a class="ca2-card__thumb">
+          <div class="ca2-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/ipad.jpeg" class="ca2-image__img" style="object-fit: cover;">
+            <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
                 <!----></i></div>
           </div>
-          <div class="zv-card__tag"><span class="zv-tag zv-tag--mark zv-tag--danger">标签</span></div>
+          <div class="ca2-card__tag"><span class="ca2-tag ca2-tag--mark ca2-tag--danger">标签</span></div>
         </a>
-        <div class="zv-card__content">
+        <div class="ca2-card__content">
           <div>
-            <div class="zv-card__title zv-multi-ellipsis--l2">商品名称</div>
-            <div class="zv-card__desc zv-ellipsis">描述信息</div>
+            <div class="ca2-card__title ca2-multi-ellipsis--l2">商品名称</div>
+            <div class="ca2-card__desc ca2-ellipsis">描述信息</div>
           </div>
-          <div class="zv-card__bottom">
-            <div class="zv-card__price">
-              <div><span class="zv-card__price-currency">¥</span><span class="zv-card__price-integer">2</span>.<span class="zv-card__price-decimal">00</span></div>
+          <div class="ca2-card__bottom">
+            <div class="ca2-card__price">
+              <div><span class="ca2-card__price-currency">¥</span><span class="ca2-card__price-integer">2</span>.<span class="ca2-card__price-decimal">00</span></div>
             </div>
-            <div class="zv-card__origin-price">¥ 10.00</div>
-            <div class="zv-card__num">x2</div>
+            <div class="ca2-card__origin-price">¥ 10.00</div>
+            <div class="ca2-card__num">x2</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="zv-card">
-      <div class="zv-card__header"><a class="zv-card__thumb">
-          <div class="zv-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/ipad.jpeg" class="zv-image__img" style="object-fit: cover;">
-            <div class="zv-image__loading"><i class="zv-icon zv-icon-photo-o zv-image__loading-icon">
+    <div class="ca2-card">
+      <div class="ca2-card__header"><a class="ca2-card__thumb">
+          <div class="ca2-image" style="width: 100%; height: 100%;"><img src="https://img.yzcdn.cn/vant/ipad.jpeg" class="ca2-image__img" style="object-fit: cover;">
+            <div class="ca2-image__loading"><i class="ca2-icon ca2-icon-photo-o ca2-image__loading-icon">
                 <!----></i></div>
           </div>
         </a>
-        <div class="zv-card__content">
+        <div class="ca2-card__content">
           <div>
-            <div class="zv-card__title zv-multi-ellipsis--l2">商品名称</div>
-            <div class="zv-card__desc zv-ellipsis">描述信息</div>
-            <div><span class="zv-tag zv-tag--plain zv-tag--danger zv-hairline--surround" style="margin-right: 5px;">
+            <div class="ca2-card__title ca2-multi-ellipsis--l2">商品名称</div>
+            <div class="ca2-card__desc ca2-ellipsis">描述信息</div>
+            <div><span class="ca2-tag ca2-tag--plain ca2-tag--danger ca2-hairline--surround" style="margin-right: 5px;">
             标签
-          </span> <span class="zv-tag zv-tag--plain zv-tag--danger zv-hairline--surround">
+          </span> <span class="ca2-tag ca2-tag--plain ca2-tag--danger ca2-hairline--surround">
             标签
           </span></div>
           </div>
-          <div class="zv-card__bottom">
-            <div class="zv-card__price">
-              <div><span class="zv-card__price-currency">¥</span><span class="zv-card__price-integer">2</span>.<span class="zv-card__price-decimal">00</span></div>
+          <div class="ca2-card__bottom">
+            <div class="ca2-card__price">
+              <div><span class="ca2-card__price-currency">¥</span><span class="ca2-card__price-integer">2</span>.<span class="ca2-card__price-decimal">00</span></div>
             </div>
-            <div class="zv-card__num">x2</div>
+            <div class="ca2-card__num">x2</div>
           </div>
         </div>
       </div>
-      <div class="zv-card__footer">
-        <div><button class="zv-button zv-button--default zv-button--mini zv-button--round"><span class="zv-button__text">
+      <div class="ca2-card__footer">
+        <div><button class="ca2-button ca2-button--default ca2-button--mini ca2-button--round"><span class="ca2-button__text">
             按钮
-          </span></button> <button class="zv-button zv-button--default zv-button--mini zv-button--round"><span class="zv-button__text">
+          </span></button> <button class="ca2-button ca2-button--default ca2-button--mini ca2-button--round"><span class="ca2-button__text">
             按钮
           </span></button></div>
       </div>

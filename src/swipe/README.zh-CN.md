@@ -4,7 +4,7 @@
 
 ```js
 import Vue from 'vue';
-import { Swipe, SwipeItem } from 'zvt';
+import { Swipe, SwipeItem } from 'ca2t';
 
 Vue.use(Swipe);
 Vue.use(SwipeItem);
@@ -17,15 +17,15 @@ Vue.use(SwipeItem);
 每个 SwipeItem 代表一张轮播卡片，可以通过`autoplay`属性设置自动轮播的间隔
 
 ```html
-<zv-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-  <zv-swipe-item>1</zv-swipe-item>
-  <zv-swipe-item>2</zv-swipe-item>
-  <zv-swipe-item>3</zv-swipe-item>
-  <zv-swipe-item>4</zv-swipe-item>
-</zv-swipe>
+<ca2-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+  <ca2-swipe-item>1</ca2-swipe-item>
+  <ca2-swipe-item>2</ca2-swipe-item>
+  <ca2-swipe-item>3</ca2-swipe-item>
+  <ca2-swipe-item>4</ca2-swipe-item>
+</ca2-swipe>
 
 <style>
-  .my-swipe .zv-swipe-item {
+  .my-swipe .ca2-swipe-item {
     color: #fff;
     font-size: 20px;
     line-height: 150px;
@@ -40,16 +40,16 @@ Vue.use(SwipeItem);
 当 Swipe 中含有图片时，可以配合 [Lazyload](#/zh-CN/lazyload) 组件实现图片懒加载
 
 ```html
-<zv-swipe :autoplay="3000">
-  <zv-swipe-item v-for="(image, index) in images" :key="index">
+<ca2-swipe :autoplay="3000">
+  <ca2-swipe-item v-for="(image, index) in images" :key="index">
     <img v-lazy="image" />
-  </zv-swipe-item>
-</zv-swipe>
+  </ca2-swipe-item>
+</ca2-swipe>
 ```
 
 ```js
 import Vue from 'vue';
-import { Lazyload } from 'zvt';
+import { Lazyload } from 'ca2t';
 
 Vue.use(Lazyload);
 
@@ -57,8 +57,8 @@ export default {
   data() {
     return {
       images: [
-        'https://img.yzcdn.cn/zvt/apple-1.jpg',
-        'https://img.yzcdn.cn/zvt/apple-2.jpg',
+        'https://img.yzcdn.cn/ca2t/apple-1.jpg',
+        'https://img.yzcdn.cn/ca2t/apple-2.jpg',
       ],
     };
   },
@@ -68,16 +68,16 @@ export default {
 ### 监听 change 事件
 
 ```html
-<zv-swipe @change="onChange">
-  <zv-swipe-item>1</zv-swipe-item>
-  <zv-swipe-item>2</zv-swipe-item>
-  <zv-swipe-item>3</zv-swipe-item>
-  <zv-swipe-item>4</zv-swipe-item>
-</zv-swipe>
+<ca2-swipe @change="onChange">
+  <ca2-swipe-item>1</ca2-swipe-item>
+  <ca2-swipe-item>2</ca2-swipe-item>
+  <ca2-swipe-item>3</ca2-swipe-item>
+  <ca2-swipe-item>4</ca2-swipe-item>
+</ca2-swipe>
 ```
 
 ```js
-import { Toast } from 'zvt';
+import { Toast } from 'ca2t';
 
 export default {
   methods: {
@@ -93,12 +93,12 @@ export default {
 设置`vertical`属性后滑块会纵向排列，此时需要指定滑块容器的高度
 
 ```html
-<zv-swipe style="height: 200px;" vertical>
-  <zv-swipe-item>1</zv-swipe-item>
-  <zv-swipe-item>2</zv-swipe-item>
-  <zv-swipe-item>3</zv-swipe-item>
-  <zv-swipe-item>4</zv-swipe-item>
-</zv-swipe>
+<ca2-swipe style="height: 200px;" vertical>
+  <ca2-swipe-item>1</ca2-swipe-item>
+  <ca2-swipe-item>2</ca2-swipe-item>
+  <ca2-swipe-item>3</ca2-swipe-item>
+  <ca2-swipe-item>4</ca2-swipe-item>
+</ca2-swipe>
 ```
 
 ### 自定义滑块大小
@@ -106,12 +106,12 @@ export default {
 滑块默认宽度为`100%`，可以通过`width`属性设置单个滑块的宽度。纵向滚动模式下，可以通过`height`属性设置单个滑块的高度。
 
 ```html
-<zv-swipe :loop="false" :width="300">
-  <zv-swipe-item>1</zv-swipe-item>
-  <zv-swipe-item>2</zv-swipe-item>
-  <zv-swipe-item>3</zv-swipe-item>
-  <zv-swipe-item>4</zv-swipe-item>
-</zv-swipe>
+<ca2-swipe :loop="false" :width="300">
+  <ca2-swipe-item>1</ca2-swipe-item>
+  <ca2-swipe-item>2</ca2-swipe-item>
+  <ca2-swipe-item>3</ca2-swipe-item>
+  <ca2-swipe-item>4</ca2-swipe-item>
+</ca2-swipe>
 ```
 
 > 目前不支持在循环滚动模式下自定义滑块大小，因此需要将 loop 设置为 false
@@ -121,17 +121,17 @@ export default {
 通过`indicator`插槽可以自定义指示器的样式
 
 ```html
-<zv-swipe @change="onChange">
-  <zv-swipe-item>1</zv-swipe-item>
-  <zv-swipe-item>2</zv-swipe-item>
-  <zv-swipe-item>3</zv-swipe-item>
-  <zv-swipe-item>4</zv-swipe-item>
+<ca2-swipe @change="onChange">
+  <ca2-swipe-item>1</ca2-swipe-item>
+  <ca2-swipe-item>2</ca2-swipe-item>
+  <ca2-swipe-item>3</ca2-swipe-item>
+  <ca2-swipe-item>4</ca2-swipe-item>
   <template #indicator>
     <div class="custom-indicator">
       {{ current + 1 }}/4
     </div>
   </template>
-</zv-swipe>
+</ca2-swipe>
 
 <style>
   .custom-indicator {

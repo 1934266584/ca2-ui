@@ -9,7 +9,7 @@
     url('https://img.yzcdn.cn/vant/<%= cssClass %>.ttf') format('truetype');
 }
 
-.zv-icon {
+.ca2-icon {
   position: relative;
   display: inline-block;
   font: normal normal normal 14px/1 "<%= fontName %>";
@@ -22,7 +22,7 @@
   }
 }
 
-<% _.each(glyphs, function(glyph) { %>.zv-icon-<%= glyph.fileName %>::before {
+<% _.each(glyphs, function(glyph) { %>.ca2-icon-<%= glyph.fileName %>::before {
   content: "\<%= glyph.codePoint %>";
 }
 

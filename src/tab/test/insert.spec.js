@@ -5,13 +5,13 @@ import { mount, later } from '../../../test';
 test('insert tab dynamically', async () => {
   const wrapper = mount({
     template: `
-      <zv-tabs v-model="active">
-        <zv-tab title="1">1</zv-tab>
+      <ca2-tabs v-model="active">
+        <ca2-tab title="1">1</ca2-tab>
         <div v-if="insert">
-          <zv-tab title="2">2</zv-tab>
+          <ca2-tab title="2">2</ca2-tab>
         </div>
-        <zv-tab title="3">3</zv-tab>
-      </zv-tabs>
+        <ca2-tab title="3">3</ca2-tab>
+      </ca2-tabs>
     `,
     data() {
       return {
@@ -31,15 +31,15 @@ test('insert tab dynamically', async () => {
 test('insert tab with child component', async () => {
   const wrapper = mount({
     template: `
-      <zv-tabs v-model="active">
-        <zv-tab title="1">1</zv-tab>
+      <ca2-tabs v-model="active">
+        <ca2-tab title="1">1</ca2-tab>
         <my-tab />
-        <zv-tab title="3">3</zv-tab>
-      </zv-tabs>
+        <ca2-tab title="3">3</ca2-tab>
+      </ca2-tabs>
     `,
     components: {
       'my-tab': {
-        template: `<zv-tab title="2">2</zv-tab>`,
+        template: `<ca2-tab title="2">2</ca2-tab>`,
       },
     },
   });

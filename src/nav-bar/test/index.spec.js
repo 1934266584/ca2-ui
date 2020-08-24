@@ -44,7 +44,7 @@ test('click-left event', () => {
     },
   });
 
-  wrapper.find('.zv-nav-bar__left').trigger('click');
+  wrapper.find('.ca2-nav-bar__left').trigger('click');
   expect(wrapper.emitted('click-left')).toBeTruthy();
 });
 
@@ -55,6 +55,6 @@ test('click-right event', () => {
     },
   });
 
-  wrapper.find('.zv-nav-bar__right').trigger('click');
+  wrapper.find('.ca2-nav-bar__right').trigger('click');
   expect(wrapper.emitted('click-right')).toBeTruthy();
 });

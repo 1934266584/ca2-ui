@@ -29,10 +29,10 @@ test('callback events', () => {
     },
   });
 
-  const options = wrapper.findAll('.zv-action-sheet__item');
+  const options = wrapper.findAll('.ca2-action-sheet__item');
   options.at(0).trigger('click');
   options.at(1).trigger('click');
-  wrapper.find('.zv-action-sheet__cancel').trigger('click');
+  wrapper.find('.ca2-action-sheet__cancel').trigger('click');
 
   expect(callback).toHaveBeenCalled();
   expect(onCancel).toHaveBeenCalled();
@@ -73,7 +73,7 @@ test('click overlay and close', async () => {
 
   await later();
 
-  div.querySelector('.zv-overlay').click();
+  div.querySelector('.ca2-overlay').click();
   expect(onInput).toHaveBeenCalledWith(false);
   expect(onClickOverlay).toHaveBeenCalledTimes(1);
 });
@@ -132,7 +132,7 @@ test('close-on-click-action prop', () => {
     },
   });
 
-  const option = wrapper.find('.zv-action-sheet__item');
+  const option = wrapper.find('.ca2-action-sheet__item');
   option.trigger('click');
 
   expect(onInput).toHaveBeenCalledWith(false);

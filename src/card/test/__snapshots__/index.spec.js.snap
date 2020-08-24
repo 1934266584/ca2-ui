@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render bottom slot 1`] = `
-<div class="zv-card">
-  <div class="zv-card__header">
-    <div class="zv-card__content">
+<div class="ca2-card">
+  <div class="ca2-card__header">
+    <div class="ca2-card__content">
       <div></div>
-      <div class="zv-card__bottom">Custom Bottom</div>
+      <div class="ca2-card__bottom">Custom Bottom</div>
     </div>
   </div>
 </div>
 `;
 
 exports[`render origin-price slot 1`] = `
-<div class="zv-card">
-  <div class="zv-card__header">
-    <div class="zv-card__content">
+<div class="ca2-card">
+  <div class="ca2-card__header">
+    <div class="ca2-card__content">
       <div></div>
-      <div class="zv-card__bottom">
-        <div class="zv-card__origin-price">Custom Origin Price</div>
+      <div class="ca2-card__bottom">
+        <div class="ca2-card__origin-price">Custom Origin Price</div>
       </div>
     </div>
   </div>
@@ -25,13 +25,13 @@ exports[`render origin-price slot 1`] = `
 `;
 
 exports[`render price & num slot 1`] = `
-<div class="zv-card">
-  <div class="zv-card__header">
-    <div class="zv-card__content">
+<div class="ca2-card">
+  <div class="ca2-card__header">
+    <div class="ca2-card__content">
       <div></div>
-      <div class="zv-card__bottom">
-        <div class="zv-card__price">Custom Price</div>
-        <div class="zv-card__num">Custom Num</div>
+      <div class="ca2-card__bottom">
+        <div class="ca2-card__price">Custom Price</div>
+        <div class="ca2-card__num">Custom Num</div>
       </div>
     </div>
   </div>
@@ -39,9 +39,9 @@ exports[`render price & num slot 1`] = `
 `;
 
 exports[`render thumb & tag slot 1`] = `
-<div class="zv-card">
-  <div class="zv-card__header"><a class="zv-card__thumb">Custom Thumb<div class="zv-card__tag">Custom Tag</div></a>
-    <div class="zv-card__content">
+<div class="ca2-card">
+  <div class="ca2-card__header"><a class="ca2-card__thumb">Custom Thumb<div class="ca2-card__tag">Custom Tag</div></a>
+    <div class="ca2-card__content">
       <div></div>
     </div>
   </div>
@@ -49,9 +49,9 @@ exports[`render thumb & tag slot 1`] = `
 `;
 
 exports[`render title & desc slot 1`] = `
-<div class="zv-card">
-  <div class="zv-card__header">
-    <div class="zv-card__content">
+<div class="ca2-card">
+  <div class="ca2-card__header">
+    <div class="ca2-card__content">
       <div>Custom TitleCustom desc</div>
     </div>
   </div>
@@ -59,11 +59,11 @@ exports[`render title & desc slot 1`] = `
 `;
 
 exports[`render price & price-top slot 1`] = `
-<div class="zv-card">
-  <div class="zv-card__header">
-    <div class="zv-card__content">
+<div class="ca2-card">
+  <div class="ca2-card__header">
+    <div class="ca2-card__content">
       <div></div>
-      <div class="zv-card__bottom">Custom Price-top<div class="zv-card__price">Custom Price</div>
+      <div class="ca2-card__bottom">Custom Price-top<div class="ca2-card__price">Custom Price</div>
       </div>
     </div>
   </div>

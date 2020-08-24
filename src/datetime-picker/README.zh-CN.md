@@ -18,7 +18,7 @@ Vue.use(DatetimePicker);
 ### 选择完整时间
 
 ```html
-<zv-datetime-picker
+<ca2-datetime-picker
   v-model="currentDate"
   type="datetime"
   :min-date="minDate"
@@ -41,7 +41,7 @@ export default {
 ### 选择日期（年月日）
 
 ```html
-<zv-datetime-picker
+<ca2-datetime-picker
   v-model="currentDate"
   type="date"
   :min-date="minDate"
@@ -66,7 +66,7 @@ export default {
 通过传入`formatter`函数，可以对选项文字进行格式化处理
 
 ```html
-<zv-datetime-picker
+<ca2-datetime-picker
   v-model="currentDate"
   type="year-month"
   :min-date="minDate"
@@ -100,7 +100,7 @@ export default {
 ### 选择时间
 
 ```html
-<zv-datetime-picker
+<ca2-datetime-picker
   v-model="currentTime"
   type="time"
   :min-hour="10"
@@ -123,7 +123,7 @@ export default {
 通过传入`filter`函数，可以对选项数组进行过滤，实现自定义时间间隔
 
 ```html
-<zv-datetime-picker
+<ca2-datetime-picker
   v-model="currentTime"
   type="time"
   :filter="filter"

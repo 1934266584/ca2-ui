@@ -33,7 +33,7 @@ test('click-thumb event', () => {
     },
   });
 
-  wrapper.find('.zv-card__thumb').trigger('click');
+  wrapper.find('.ca2-card__thumb').trigger('click');
 
   expect(onClickThumb).toHaveBeenCalledWith(
     expect.objectContaining({

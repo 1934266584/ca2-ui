@@ -14,7 +14,7 @@ Vue.use(Search);
 ### Basic Usage
 
 ```html
-<zv-search v-model="value" placeholder="Placeholder" />
+<ca2-search v-model="value" placeholder="Placeholder" />
 ```
 
 ```js
@@ -31,7 +31,7 @@ export default {
 
 ```html
 <form action="/">
-  <zv-search
+  <ca2-search
     v-model="value"
     show-action
     placeholder="Placeholder"
@@ -66,7 +66,7 @@ export default {
 ### Input Align
 
 ```html
-<zv-search
+<ca2-search
   v-model="value"
   input-align="center"
   placeholder="Placeholder"
@@ -76,7 +76,7 @@ export default {
 ### Disabled
 
 ```html
-<zv-search
+<ca2-search
   v-model="value"
   disabled
   placeholder="Placeholder"
@@ -86,7 +86,7 @@ export default {
 ### Custom Background Color
 
 ```html
-<zv-search
+<ca2-search
   v-model="value" 
   shape="square"
   background="#4fc08d"
@@ -99,7 +99,7 @@ export default {
 Use `action` slot to custom right button, `cancel` event will no longer be triggered when use this slot
 
 ```html
-<zv-search
+<ca2-search
   v-model="value"
   show-action
   label="Address"
@@ -109,7 +109,7 @@ Use `action` slot to custom right button, `cancel` event will no longer be trigg
   <template #action>
     <div @click="onSearch">Search</div> 
   </template>
-</zv-search>
+</ca2-search>
 ```
 
 ## API

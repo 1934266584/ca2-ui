@@ -8,30 +8,30 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-item :item-object="t('itemObject')" />
+      <ca2-item :item-object="t('itemObject')" />
     </demo-block>
     <demo-block :title="t('auto')">
-      <zv-item :item-object="t('itemObjectLong')" />
+      <ca2-item :item-object="t('itemObjectLong')" />
     </demo-block>
     <demo-block :title="t('slot')">
-      <zv-item :item-object="t('itemObjectSlot')" @slot-event="slotEvent">
+      <ca2-item :item-object="t('itemObjectSlot')" @slot-event="slotEvent">
         <div>
           {{ t('slot') }}
         </div>
-      </zv-item>
+      </ca2-item>
     </demo-block>
     <demo-block :title="t('setLine')">
-      <zv-item
+      <ca2-item
         :item-object="t('itemObjectSet')"
         :is-two-col="false"
         :line="2"
       />
     </demo-block>
     <demo-block :title="t('setRow')">
-      <zv-item :item-object="t('itemObjectLong')" :is-two-col="true" />
+      <ca2-item :item-object="t('itemObjectLong')" :is-two-col="true" />
     </demo-block>
     <demo-block :title="t('setRowAndLine')">
-      <zv-item
+      <ca2-item
         :item-object="t('itemObjectLong')"
         :is-two-col="true"
         :line="2"
@@ -113,7 +113,7 @@ export default {
 
 <style lang="scss">
 .demo-item {
-  .zv-item {
+  .ca2-item {
     background: #fff;
   }
 }

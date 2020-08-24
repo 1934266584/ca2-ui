@@ -1,14 +1,14 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-password-input
+      <ca2-password-input
         :value="value1"
         :info="t('info')"
         :focused="keyboard === 'value1'"
         @focus="keyboard = 'value1'"
       />
 
-      <zv-number-keyboard
+      <ca2-number-keyboard
         :show="!!keyboard"
         @input="onInput"
         @delete="onDelete"
@@ -17,7 +17,7 @@
     </demo-block>
 
     <demo-block :title="t('customLength')">
-      <zv-password-input
+      <ca2-password-input
         :value="value2"
         :length="4"
         gutter="15"
@@ -27,7 +27,7 @@
     </demo-block>
 
     <demo-block :title="t('removeMask')">
-      <zv-password-input
+      <ca2-password-input
         :value="value3"
         :mask="false"
         :focused="keyboard === 'value3'"
@@ -36,7 +36,7 @@
     </demo-block>
 
     <demo-block :title="t('hintError')">
-      <zv-password-input
+      <ca2-password-input
         :value="value4"
         :error-info="errorInfo"
         :focused="keyboard === 'value4'"

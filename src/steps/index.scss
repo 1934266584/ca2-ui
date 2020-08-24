@@ -1,13 +1,13 @@
 @import '../style/var';
 
-.zv-steps {
+.ca2-steps {
   overflow: hidden;
   background-color: $steps-background-color;
 
   &--horizontal {
     padding: 10px 10px 0;
 
-    .zv-steps__items {
+    .ca2-steps__items {
       position: relative;
       display: flex;
       margin: 0 0 10px;

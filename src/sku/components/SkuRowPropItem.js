@@ -37,12 +37,12 @@ export default createComponent({
     return (
       <span
         class={[
-          'zv-sku-row__item',
-          { 'zv-sku-row__item--active': this.choosed },
+          'ca2-sku-row__item',
+          { 'ca2-sku-row__item--active': this.choosed },
         ]}
         onClick={this.onSelect}
       >
-        <span class="zv-sku-row__item-name">{this.skuValue.name}</span>
+        <span class="ca2-sku-row__item-name">{this.skuValue.name}</span>
       </span>
     );
   },

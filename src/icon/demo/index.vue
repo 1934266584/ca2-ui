@@ -1,83 +1,83 @@
 <template>
   <demo-section>
-    <zv-tabs v-model="tab" sticky :color="BLUE">
-      <zv-tab :title="t('demo')">
+    <ca2-tabs v-model="tab" sticky :color="BLUE">
+      <ca2-tab :title="t('demo')">
         <demo-block :title="t('basicUsage')">
-          <zv-col span="6" @click="copy(demoIcon)">
-            <zv-icon :name="demoIcon" />
-          </zv-col>
-          <zv-col span="6" @click="copy(demoImage)">
-            <zv-icon :name="demoImage" />
-          </zv-col>
+          <ca2-col span="6" @click="copy(demoIcon)">
+            <ca2-icon :name="demoIcon" />
+          </ca2-col>
+          <ca2-col span="6" @click="copy(demoImage)">
+            <ca2-icon :name="demoImage" />
+          </ca2-col>
         </demo-block>
 
         <demo-block :title="t('badge')">
-          <zv-col span="6" @click="copy(demoIcon, { dot: true })">
-            <zv-icon :name="demoIcon" dot />
-          </zv-col>
-          <zv-col span="6" @click="copy(demoIcon, { badge: '9' })">
-            <zv-icon :name="demoIcon" badge="9" />
-          </zv-col>
-          <zv-col span="6" @click="copy(demoIcon, { badge: '99+' })">
-            <zv-icon :name="demoIcon" badge="99+" />
-          </zv-col>
+          <ca2-col span="6" @click="copy(demoIcon, { dot: true })">
+            <ca2-icon :name="demoIcon" dot />
+          </ca2-col>
+          <ca2-col span="6" @click="copy(demoIcon, { badge: '9' })">
+            <ca2-icon :name="demoIcon" badge="9" />
+          </ca2-col>
+          <ca2-col span="6" @click="copy(demoIcon, { badge: '99+' })">
+            <ca2-icon :name="demoIcon" badge="99+" />
+          </ca2-col>
         </demo-block>
 
         <demo-block :title="t('color')">
-          <zv-col span="6" @click="copy(demoIcon, { color: BLUE })">
-            <zv-icon :name="demoIcon" :color="BLUE" />
-          </zv-col>
-          <zv-col span="6" @click="copy(demoIcon, { color: GREEN })">
-            <zv-icon :name="demoIcon" :color="GREEN" />
-          </zv-col>
+          <ca2-col span="6" @click="copy(demoIcon, { color: BLUE })">
+            <ca2-icon :name="demoIcon" :color="BLUE" />
+          </ca2-col>
+          <ca2-col span="6" @click="copy(demoIcon, { color: GREEN })">
+            <ca2-icon :name="demoIcon" :color="GREEN" />
+          </ca2-col>
         </demo-block>
 
         <demo-block :title="t('size')">
-          <zv-col span="6" @click="copy(demoIcon, { size: '40' })">
-            <zv-icon :name="demoIcon" size="40" />
-          </zv-col>
-          <zv-col span="6" @click="copy(demoIcon, { size: '3rem' })">
-            <zv-icon :name="demoIcon" size="3rem" />
-          </zv-col>
+          <ca2-col span="6" @click="copy(demoIcon, { size: '40' })">
+            <ca2-icon :name="demoIcon" size="40" />
+          </ca2-col>
+          <ca2-col span="6" @click="copy(demoIcon, { size: '3rem' })">
+            <ca2-icon :name="demoIcon" size="3rem" />
+          </ca2-col>
         </demo-block>
-      </zv-tab>
+      </ca2-tab>
 
-      <zv-tab :title="t('basic')">
-        <zv-col
+      <ca2-tab :title="t('basic')">
+        <ca2-col
           v-for="icon in icons.basic"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <zv-icon :name="icon" />
+          <ca2-icon :name="icon" />
           <span>{{ icon }}</span>
-        </zv-col>
-      </zv-tab>
+        </ca2-col>
+      </ca2-tab>
 
-      <zv-tab :title="t('outline')">
-        <zv-col
+      <ca2-tab :title="t('outline')">
+        <ca2-col
           v-for="icon in icons.outline"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <zv-icon :name="icon" />
+          <ca2-icon :name="icon" />
           <span>{{ icon }}</span>
-        </zv-col>
-      </zv-tab>
+        </ca2-col>
+      </ca2-tab>
 
-      <zv-tab :title="t('filled')">
-        <zv-col
+      <ca2-tab :title="t('filled')">
+        <ca2-col
           v-for="icon in icons.filled"
           :key="icon"
           span="6"
           @click="copy(icon)"
         >
-          <zv-icon :name="icon" />
+          <ca2-icon :name="icon" />
           <span>{{ icon }}</span>
-        </zv-col>
-      </zv-tab>
-    </zv-tabs>
+        </ca2-col>
+      </ca2-tab>
+    </ca2-tabs>
   </demo-section>
 </template>
 
@@ -148,7 +148,7 @@ export default {
 
   methods: {
     copy(icon, option = {}) {
-      let tag = `<zv-icon name="${icon}"`;
+      let tag = `<ca2-icon name="${icon}"`;
       if ('dot' in option) {
         tag = `${tag} ${option.dot ? 'dot' : ''}`;
       }
@@ -191,7 +191,7 @@ export default {
     font-size: 13px;
   }
 
-  .zv-col {
+  .ca2-col {
     display: inline-block;
     float: none;
     text-align: center;
@@ -213,13 +213,13 @@ export default {
     }
   }
 
-  .zv-icon {
+  .ca2-icon {
     margin: 16px 0 16px;
     color: $text-color;
     font-size: 32px;
   }
 
-  .zv-tab__pane {
+  .ca2-tab__pane {
     width: auto;
     margin: 20px;
     background-color: #fff;

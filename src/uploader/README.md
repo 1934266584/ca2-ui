@@ -14,7 +14,7 @@ Vue.use(Uploader);
 ### Basic Usage
 
 ```html
-<zv-uploader :after-read="afterRead" />
+<ca2-uploader :after-read="afterRead" />
 ```
 
 ```js
@@ -30,7 +30,7 @@ export default {
 ### Preview File
 
 ```html
-<zv-uploader v-model="fileList" multiple />
+<ca2-uploader v-model="fileList" multiple />
 ```
 
 ```js
@@ -46,13 +46,13 @@ export default {
 ### Disabled
 
 ```html
-<zv-uploader disabled />
+<ca2-uploader disabled />
 ```
 
 ### Upload Status
 
 ```html
-<zv-uploader v-model="fileList" :after-read="afterRead" />
+<ca2-uploader v-model="fileList" :after-read="afterRead" />
 ```
 
 ```js
@@ -90,7 +90,7 @@ export default {
 ### Max Count
 
 ```html
-<zv-uploader v-model="fileList" multiple :max-count="2" />
+<ca2-uploader v-model="fileList" multiple :max-count="2" />
 ```
 
 ```js
@@ -106,7 +106,7 @@ export default {
 ### Max Size
 
 ```html
-<zv-uploader
+<ca2-uploader
   multiple
   :max-count="5"
   :max-size="3 * 1024 * 1024"
@@ -127,15 +127,15 @@ export default {
 ### Upload Style
 
 ```html
-<zv-uploader>
-  <zv-button icon="photo" type="primary">Upload Image</zv-button>
-</zv-uploader>
+<ca2-uploader>
+  <ca2-button icon="photo" type="primary">Upload Image</ca2-button>
+</ca2-uploader>
 ```
 
 ### Before Read
 
 ```html
-<zv-uploader :before-read="beforeRead" />
+<ca2-uploader :before-read="beforeRead" />
 ```
 
 ```js

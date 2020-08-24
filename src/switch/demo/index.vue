@@ -1,23 +1,23 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-switch v-model="checked" />
+      <ca2-switch v-model="checked" />
     </demo-block>
 
     <demo-block :title="t('disabled')">
-      <zv-switch v-model="checked" disabled />
+      <ca2-switch v-model="checked" disabled />
     </demo-block>
 
     <demo-block :title="t('loadingStatus')">
-      <zv-switch v-model="checked" loading />
+      <ca2-switch v-model="checked" loading />
     </demo-block>
 
     <demo-block :title="t('customSize')">
-      <zv-switch v-model="checked2" size="24px" />
+      <ca2-switch v-model="checked2" size="24px" />
     </demo-block>
 
     <demo-block :title="t('customColor')">
-      <zv-switch
+      <ca2-switch
         v-model="checked3"
         active-color="#07c160"
         inactive-color="#ee0a24"
@@ -25,13 +25,13 @@
     </demo-block>
 
     <demo-block :title="t('asyncControl')">
-      <zv-switch :value="checked4" @input="onInput" />
+      <ca2-switch :value="checked4" @input="onInput" />
     </demo-block>
 
     <demo-block :title="t('withCell')">
-      <zv-cell center :title="t('title')">
-        <zv-switch v-model="checked5" slot="right-icon" size="24" />
-      </zv-cell>
+      <ca2-cell center :title="t('title')">
+        <ca2-switch v-model="checked5" slot="right-icon" size="24" />
+      </ca2-cell>
     </demo-block>
   </demo-section>
 </template>
@@ -89,7 +89,7 @@ export default {
 @import '../../style/var.scss';
 
 .demo-switch {
-  .zv-switch {
+  .ca2-switch {
     margin-left: $padding-md;
   }
 }

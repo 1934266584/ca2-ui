@@ -1,38 +1,38 @@
 <template>
   <demo-section>
     <demo-block :title="t('alert1')">
-      <zv-button type="primary" @click="onClickAlert">
+      <ca2-button type="primary" @click="onClickAlert">
         {{ t('alert1') }}
-      </zv-button>
-      <zv-button type="primary" @click="onClickAlert2">
+      </ca2-button>
+      <ca2-button type="primary" @click="onClickAlert2">
         {{ t('alert2') }}
-      </zv-button>
+      </ca2-button>
     </demo-block>
 
     <demo-block :title="t('confirm')">
-      <zv-button type="primary" @click="onClickConfirm">
+      <ca2-button type="primary" @click="onClickConfirm">
         {{ t('confirm') }}
-      </zv-button>
+      </ca2-button>
     </demo-block>
 
     <demo-block :title="t('asyncClose')">
-      <zv-button type="primary" @click="onClickAsyncClose">
+      <ca2-button type="primary" @click="onClickAsyncClose">
         {{ t('asyncClose') }}
-      </zv-button>
+      </ca2-button>
     </demo-block>
 
     <demo-block :title="t('componentCall')">
-      <zv-button type="primary" @click="show = true">
+      <ca2-button type="primary" @click="show = true">
         {{ t('componentCall') }}
-      </zv-button>
-      <zv-dialog
+      </ca2-button>
+      <ca2-dialog
         v-model="show"
         :title="t('title')"
         show-cancel-button
         :lazy-render="false"
       >
         <img :src="image" />
-      </zv-dialog>
+      </ca2-dialog>
     </demo-block>
   </demo-section>
 </template>
@@ -111,7 +111,7 @@ export default {
 .demo-dialog {
   background-color: $white;
 
-  .van-doc-demo-block > .zv-button {
+  .van-doc-demo-block > .ca2-button {
     margin-left: $padding-md;
   }
 

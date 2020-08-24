@@ -1,7 +1,7 @@
 <template>
   <demo-block :title="t('disabled')">
-    <zv-field :value="t('inputReadonly')" :label="t('text')" readonly />
-    <zv-field :value="t('inputDisabled')" :label="t('text')" disabled />
+    <ca2-field :value="t('inputReadonly')" :label="t('text')" readonly />
+    <ca2-field :value="t('inputDisabled')" :label="t('text')" disabled />
   </demo-block>
 </template>
 

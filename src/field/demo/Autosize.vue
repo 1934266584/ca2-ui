@@ -1,6 +1,6 @@
 <template>
   <demo-block :title="t('autosize')">
-    <zv-field
+    <ca2-field
       v-model="value"
       autosize
       rows="1"

@@ -1,7 +1,7 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-circle
+      <ca2-circle
         v-model="currentRate1"
         :rate="rate"
         :speed="100"
@@ -10,7 +10,7 @@
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-circle
+      <ca2-circle
         v-model="currentRate3"
         :rate="rate"
         :speed="100"
@@ -18,7 +18,7 @@
         :text="t('customWidth')"
       />
 
-      <zv-circle
+      <ca2-circle
         v-model="currentRate3"
         color="#ee0a24"
         :rate="rate"
@@ -27,7 +27,7 @@
         :text="t('customColor')"
       />
 
-      <zv-circle
+      <ca2-circle
         v-model="currentRate2"
         :rate="rate"
         :speed="100"
@@ -35,7 +35,7 @@
         :text="t('gradient')"
       />
 
-      <zv-circle
+      <ca2-circle
         v-model="currentRate4"
         color="#07c160"
         :rate="rate"
@@ -45,7 +45,7 @@
         style="margin-top: 15px;"
       />
 
-      <zv-circle
+      <ca2-circle
         v-model="currentRate4"
         color="#7232dd"
         :rate="rate"
@@ -58,8 +58,8 @@
     </demo-block>
 
     <div style="margin-top: 15px;">
-      <zv-button :text="t('add')" type="primary" size="small" @click="add" />
-      <zv-button
+      <ca2-button :text="t('add')" type="primary" size="small" @click="add" />
+      <ca2-button
         :text="t('decrease')"
         type="danger"
         size="small"
@@ -122,11 +122,11 @@ export default {
 @import '../../style/var.scss';
 
 .demo-circle {
-  .zv-circle {
+  .ca2-circle {
     margin-left: $padding-md;
   }
 
-  .zv-button {
+  .ca2-button {
     margin: $padding-md 0 0 10px;
 
     &:first-of-type {

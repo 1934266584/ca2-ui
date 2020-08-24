@@ -1,6 +1,6 @@
 @import '../style/var';
 
-.zv-nav-bar {
+.ca2-nav-bar {
   position: relative;
   z-index: $nav-bar-z-index;
   height: $nav-bar-height;
@@ -9,7 +9,7 @@
   background-color: $nav-bar-background-color;
   user-select: none;
 
-  .zv-icon {
+  .ca2-icon {
     color: $nav-bar-icon-color;
   }
 

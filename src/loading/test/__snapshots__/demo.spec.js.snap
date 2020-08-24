@@ -3,24 +3,24 @@
 exports[`renders demo correctly 1`] = `
 <div>
   <div>
-    <div class="zv-loading zv-loading--circular"><span class="zv-loading__spinner zv-loading__spinner--circular"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
-    <div class="zv-loading zv-loading--spinner"><span class="zv-loading__spinner zv-loading__spinner--spinner"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    <div class="ca2-loading ca2-loading--circular"><span class="ca2-loading__spinner ca2-loading__spinner--circular"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+    <div class="ca2-loading ca2-loading--spinner"><span class="ca2-loading__spinner ca2-loading__spinner--spinner"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
   </div>
   <div>
-    <div class="zv-loading zv-loading--circular"><span class="zv-loading__spinner zv-loading__spinner--circular" style="color: rgb(25, 137, 250);"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
-    <div class="zv-loading zv-loading--spinner"><span class="zv-loading__spinner zv-loading__spinner--spinner" style="color: rgb(25, 137, 250);"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    <div class="ca2-loading ca2-loading--circular"><span class="ca2-loading__spinner ca2-loading__spinner--circular" style="color: rgb(25, 137, 250);"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+    <div class="ca2-loading ca2-loading--spinner"><span class="ca2-loading__spinner ca2-loading__spinner--spinner" style="color: rgb(25, 137, 250);"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
   </div>
   <div>
-    <div class="zv-loading zv-loading--circular"><span class="zv-loading__spinner zv-loading__spinner--circular" style="width: 24px; height: 24px;"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
-    <div class="zv-loading zv-loading--spinner"><span class="zv-loading__spinner zv-loading__spinner--spinner" style="width: 24px; height: 24px;"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    <div class="ca2-loading ca2-loading--circular"><span class="ca2-loading__spinner ca2-loading__spinner--circular" style="width: 24px; height: 24px;"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span></div>
+    <div class="ca2-loading ca2-loading--spinner"><span class="ca2-loading__spinner ca2-loading__spinner--spinner" style="width: 24px; height: 24px;"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
   </div>
   <div>
-    <div class="zv-loading zv-loading--circular"><span class="zv-loading__spinner zv-loading__spinner--circular" style="width: 24px; height: 24px;"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span><span class="zv-loading__text">
+    <div class="ca2-loading ca2-loading--circular"><span class="ca2-loading__spinner ca2-loading__spinner--circular" style="width: 24px; height: 24px;"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span><span class="ca2-loading__text">
       加载中...
     </span></div>
   </div>
   <div>
-    <div class="zv-loading zv-loading--circular zv-loading--vertical"><span class="zv-loading__spinner zv-loading__spinner--circular" style="width: 24px; height: 24px;"><svg viewBox="25 25 50 50" class="zv-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span><span class="zv-loading__text">
+    <div class="ca2-loading ca2-loading--circular ca2-loading--vertical"><span class="ca2-loading__spinner ca2-loading__spinner--circular" style="width: 24px; height: 24px;"><svg viewBox="25 25 50 50" class="ca2-loading__circular"><circle cx="50" cy="50" r="20" fill="none"></circle></svg></span><span class="ca2-loading__text">
       加载中...
     </span></div>
   </div>

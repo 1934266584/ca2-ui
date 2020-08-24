@@ -76,7 +76,7 @@ test('lock-scroll prop', () => {
   const wrapper = mount({
     template: `
       <div @touchmove="onTouchMove">
-        <zv-overlay :lock-scroll="lockScroll" />
+        <ca2-overlay :lock-scroll="lockScroll" />
       </div>
     `,
     data() {
@@ -89,10 +89,10 @@ test('lock-scroll prop', () => {
     },
   });
 
-  wrapper.find('.zv-overlay').trigger('touchmove');
+  wrapper.find('.ca2-overlay').trigger('touchmove');
   expect(onTouchMove).toHaveBeenCalledTimes(0);
 
   wrapper.setData({ lockScroll: false });
-  wrapper.find('.zv-overlay').trigger('touchmove');
+  wrapper.find('.ca2-overlay').trigger('touchmove');
   expect(onTouchMove).toHaveBeenCalledTimes(1);
 });

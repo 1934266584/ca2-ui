@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`create a notify 1`] = `<div class="zv-popup zv-popup--top zv-notify zv-notify--danger" style="transition-duration: 0.2s; z-index: 2001;" name="zv-popup-slide-top">test</div>`;
+exports[`create a notify 1`] = `<div class="ca2-popup ca2-popup--top ca2-notify ca2-notify--danger" style="transition-duration: 0.2s; z-index: 2001;" name="ca2-popup-slide-top">test</div>`;
 
-exports[`notify disappear 1`] = `<div class="zv-popup zv-popup--top zv-notify zv-notify--danger" style="transition-duration: 0.2s; z-index: 2001; color: red; background: blue;" name="zv-popup-slide-top">test</div>`;
+exports[`notify disappear 1`] = `<div class="ca2-popup ca2-popup--top ca2-notify ca2-notify--danger" style="transition-duration: 0.2s; z-index: 2001; color: red; background: blue;" name="ca2-popup-slide-top">test</div>`;
 
-exports[`notify disappear 2`] = `<div class="zv-popup zv-popup--top zv-notify zv-notify--danger" style="transition-duration: 0.2s; z-index: 2001; color: red; background: blue; display: none;" name="zv-popup-slide-top">test</div>`;
+exports[`notify disappear 2`] = `<div class="ca2-popup ca2-popup--top ca2-notify ca2-notify--danger" style="transition-duration: 0.2s; z-index: 2001; color: red; background: blue; display: none;" name="ca2-popup-slide-top">test</div>`;
 
-exports[`notify disappear 3`] = `<div class="zv-popup zv-popup--top zv-notify zv-notify--danger" style="transition-duration: 0.2s; z-index: 2002;" name="zv-popup-slide-top">text2</div>`;
+exports[`notify disappear 3`] = `<div class="ca2-popup ca2-popup--top ca2-notify ca2-notify--danger" style="transition-duration: 0.2s; z-index: 2002;" name="ca2-popup-slide-top">text2</div>`;
 
-exports[`notify disappear 4`] = `<div class="zv-popup zv-popup--top zv-notify zv-notify--danger" style="transition-duration: 0.2s; z-index: 2002; display: none;" name="zv-popup-slide-top">text2</div>`;
+exports[`notify disappear 4`] = `<div class="ca2-popup ca2-popup--top ca2-notify ca2-notify--danger" style="transition-duration: 0.2s; z-index: 2002; display: none;" name="ca2-popup-slide-top">text2</div>`;
 
-exports[`type prop 1`] = `<div class="zv-popup zv-popup--top zv-notify zv-notify--primary" style="transition-duration: 0.2s; z-index: 2001;" name="zv-popup-slide-top">test</div>`;
+exports[`type prop 1`] = `<div class="ca2-popup ca2-popup--top ca2-notify ca2-notify--primary" style="transition-duration: 0.2s; z-index: 2001;" name="ca2-popup-slide-top">test</div>`;

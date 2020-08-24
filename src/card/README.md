@@ -14,7 +14,7 @@ Vue.use(Card);
 ### Basic Usage
 
 ```html
-<zv-card
+<ca2-card
   num="2"
   price="2.00"
   title="Title"
@@ -26,7 +26,7 @@ Vue.use(Card);
 ### Discount Info
 
 ```html
-<zv-card
+<ca2-card
   num="2"
   tag="Tag"
   price="2.00"
@@ -42,7 +42,7 @@ Vue.use(Card);
 Use slot to custom content.
 
 ```html
-<zv-card
+<ca2-card
   num="2"
   title="Title"
   desc="Description"
@@ -50,14 +50,14 @@ Use slot to custom content.
   thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
 >
   <template #tags>
-    <zv-tag plain type="danger">Tag</zv-tag>
-    <zv-tag plain type="danger">Tag</zv-tag>
+    <ca2-tag plain type="danger">Tag</ca2-tag>
+    <ca2-tag plain type="danger">Tag</ca2-tag>
   </template>
   <template #footer>
-    <zv-button size="mini">Button</zv-button>
-    <zv-button size="mini">Button</zv-button>
+    <ca2-button size="mini">Button</ca2-button>
+    <ca2-button size="mini">Button</ca2-button>
   </template>
-</zv-card>
+</ca2-card>
 ```
 
 ## API

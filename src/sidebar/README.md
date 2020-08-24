@@ -15,11 +15,11 @@ Vue.use(SidebarItem);
 ### Basic Usage
 
 ```html
-<zv-sidebar v-model="activeKey">
-  <zv-sidebar-item title="Title" />
-  <zv-sidebar-item title="Title" />
-  <zv-sidebar-item title="Title" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey">
+  <ca2-sidebar-item title="Title" />
+  <ca2-sidebar-item title="Title" />
+  <ca2-sidebar-item title="Title" />
+</ca2-sidebar>
 ```
 
 ```js
@@ -35,31 +35,31 @@ export default {
 ### Show Badge
 
 ```html
-<zv-sidebar v-model="activeKey">
-  <zv-sidebar-item title="Title" dot />
-  <zv-sidebar-item title="Title" badge="5" />
-  <zv-sidebar-item title="Title" badge="99+" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey">
+  <ca2-sidebar-item title="Title" dot />
+  <ca2-sidebar-item title="Title" badge="5" />
+  <ca2-sidebar-item title="Title" badge="99+" />
+</ca2-sidebar>
 ```
 
 ### Disabled
 
 ```html
-<zv-sidebar v-model="activeKey">
-  <zv-sidebar-item title="Title" />
-  <zv-sidebar-item title="Title" disabled />
-  <zv-sidebar-item title="Title" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey">
+  <ca2-sidebar-item title="Title" />
+  <ca2-sidebar-item title="Title" disabled />
+  <ca2-sidebar-item title="Title" />
+</ca2-sidebar>
 ```
 
 ### Change Event
 
 ```html
-<zv-sidebar v-model="activeKey" @change="onChange">
-  <zv-sidebar-item title="Title1" />
-  <zv-sidebar-item title="Title2" />
-  <zv-sidebar-item title="Title3" />
-</zv-sidebar>
+<ca2-sidebar v-model="activeKey" @change="onChange">
+  <ca2-sidebar-item title="Title1" />
+  <ca2-sidebar-item title="Title2" />
+  <ca2-sidebar-item title="Title3" />
+</ca2-sidebar>
 ```
 
 ```js

@@ -1,45 +1,45 @@
 <template>
   <demo-section>
     <demo-block :title="t('basicUsage')">
-      <zv-steps :active="active">
-        <zv-step>{{ t('step1') }}</zv-step>
-        <zv-step>{{ t('step2') }}</zv-step>
-        <zv-step>{{ t('step3') }}</zv-step>
-        <zv-step>{{ t('step4') }}</zv-step>
-      </zv-steps>
+      <ca2-steps :active="active">
+        <ca2-step>{{ t('step1') }}</ca2-step>
+        <ca2-step>{{ t('step2') }}</ca2-step>
+        <ca2-step>{{ t('step3') }}</ca2-step>
+        <ca2-step>{{ t('step4') }}</ca2-step>
+      </ca2-steps>
 
-      <zv-button @click="nextStep">{{ t('nextStep') }}</zv-button>
+      <ca2-button @click="nextStep">{{ t('nextStep') }}</ca2-button>
     </demo-block>
 
     <demo-block :title="t('customStyle')">
-      <zv-steps
+      <ca2-steps
         :active="active"
         active-icon="success"
         inactive-icon="arrow"
         active-color="#38f"
       >
-        <zv-step>{{ t('step1') }}</zv-step>
-        <zv-step>{{ t('step2') }}</zv-step>
-        <zv-step>{{ t('step3') }}</zv-step>
-        <zv-step>{{ t('step4') }}</zv-step>
-      </zv-steps>
+        <ca2-step>{{ t('step1') }}</ca2-step>
+        <ca2-step>{{ t('step2') }}</ca2-step>
+        <ca2-step>{{ t('step3') }}</ca2-step>
+        <ca2-step>{{ t('step4') }}</ca2-step>
+      </ca2-steps>
     </demo-block>
 
     <demo-block :title="t('title3')">
-      <zv-steps :active="0" direction="vertical">
-        <zv-step>
+      <ca2-steps :active="0" direction="vertical">
+        <ca2-step>
           <h3>{{ t('status1') }}</h3>
           <p>2016-07-12 12:40</p>
-        </zv-step>
-        <zv-step>
+        </ca2-step>
+        <ca2-step>
           <h3>{{ t('status2') }}</h3>
           <p>2016-07-11 10:00</p>
-        </zv-step>
-        <zv-step>
+        </ca2-step>
+        <ca2-step>
           <h3>{{ t('status3') }}</h3>
           <p>2016-07-10 09:30</p>
-        </zv-step>
-      </zv-steps>
+        </ca2-step>
+      </ca2-steps>
     </demo-block>
   </demo-section>
 </template>
@@ -94,11 +94,11 @@ export default {
 
 .demo-steps {
   .steps-success,
-  .zv-icon-location {
+  .ca2-icon-location {
     color: $green;
   }
 
-  .zv-button {
+  .ca2-button {
     margin: $padding-md 0 0 $padding-md;
   }
 
@@ -109,7 +109,7 @@ export default {
     font-size: inherit;
   }
 
-  .zv-steps__message + p {
+  .ca2-steps__message + p {
     margin-bottom: 10px;
   }
 }

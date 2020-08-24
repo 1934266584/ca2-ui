@@ -1,6 +1,6 @@
 @import '../style/var.scss';
 
-.zv-tab {
+.ca2-tab {
   position: relative;
   flex: 1;
   box-sizing: border-box;
@@ -27,7 +27,7 @@
   }
 }
 
-.zv-tabs {
+.ca2-tabs {
   position: relative;
 
   &__wrap {
@@ -43,7 +43,7 @@
     }
 
     &--scrollable {
-      .zv-tab {
+      .ca2-tab {
         flex: 0 0 22%;
 
         &--complete {
@@ -51,7 +51,7 @@
         }
       }
 
-      .zv-tabs__nav {
+      .ca2-tabs__nav {
         overflow: hidden;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
@@ -82,7 +82,7 @@
       border: $border-width-base solid $tabs-default-color;
       border-radius: $border-radius-sm;
 
-      .zv-tab {
+      .ca2-tab {
         color: $tabs-default-color;
         line-height: $tabs-card-height - 2px;
         border-right: $border-width-base solid $tabs-default-color;
@@ -91,7 +91,7 @@
           border-right: none;
         }
 
-        &.zv-tab--active {
+        &.ca2-tab--active {
           color: $white;
           background-color: $tabs-default-color;
         }
@@ -128,13 +128,13 @@
   }
 
   &--line {
-    .zv-tabs__wrap {
+    .ca2-tabs__wrap {
       height: $tabs-line-height;
     }
   }
 
   &--card {
-    > .zv-tabs__wrap {
+    > .ca2-tabs__wrap {
       height: $tabs-card-height;
     }
   }
